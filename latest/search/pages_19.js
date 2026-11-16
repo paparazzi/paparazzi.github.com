@@ -16,7 +16,7 @@ var searchData=
   ['pcap01_5fstatus_20id_20152_13',['PCAP01_STATUS (ID 152)',['../paparazzi_messages.html#PCAP01_STATUS',1,'']]],
   ['pdec_20module_14',['pdec module',['../module__pdec.html',1,'onboard_modules']]],
   ['pdec_20xml_20file_3a_15',['Raw pdec.xml file:',['../module__pdec.html#module_xml__pdec',1,'']]],
-  ['periodic_20functions_16',['Periodic Functions',['../module__airspeed_ads1114.html#periodic_functions',1,'']]],
+  ['periodic_20functions_16',['Periodic Functions',['../module__servo_lidar.html#periodic_functions',1,'']]],
   ['periodic_5ftelemetry_5ferr_20id_20226_17',['PERIODIC_TELEMETRY_ERR (ID 226)',['../paparazzi_messages.html#PERIODIC_TELEMETRY_ERR',1,'']]],
   ['pfc_5factuators_20module_18',['pfc_actuators module',['../module__pfc_actuators.html',1,'onboard_modules']]],
   ['pfc_5factuators_20xml_20file_3a_19',['Raw pfc_actuators.xml file:',['../module__pfc_actuators.html#module_xml__pfc_actuators',1,'']]],

@@ -667,6 +667,7 @@ var hierarchy =
     [ "imu_heater_t", "imu__heater_8h.html#structimu__heater__t", null ],
     [ "imu_mag_t", "imu_8h.html#structimu__mag__t", null ],
     [ "imu_quality_assessment_data_struct", "imu__quality__assessment_8h.html#structimu__quality__assessment__data__struct", null ],
+    [ "imu_rate_est_t", "imu_8h.html#structimu__rate__est__t", null ],
     [ "ImuApogee", "imu__apogee_8h.html#structImuApogee", null ],
     [ "ImuAspirin", "imu__aspirin_8h.html#structImuAspirin", null ],
     [ "ImuAspirin2Spi", "imu__aspirin__2__spi_8h.html#structImuAspirin2Spi", null ],

@@ -1,75 +1,106 @@
 <map id="imu_init" name="imu_init">
-<area shape="rect" id="Node000001" title="External functions." alt="" coords="5,809,80,837"/>
-<area shape="rect" id="Node000002" href="$imu_8c.html#a4a7dfb75ae6cff2054ab5e3764fa15dd" title=" " alt="" coords="158,135,298,162"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="41,809,45,694,57,513,68,417,82,328,101,253,113,224,126,200,144,181,168,167,165,172,147,185,130,203,117,226,106,255,87,329,73,418,62,513,50,694,47,809"/>
-<area shape="rect" id="Node000009" href="$imu_8c.html#a11d2b2eccda5e670f4d7d3f81d7abb3d" title=" " alt="" coords="161,377,296,405"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="42,809,49,728,64,610,89,493,106,446,126,415,148,401,145,405,130,418,111,449,94,494,70,611,54,729,47,809"/>
-<area shape="rect" id="Node000014" href="$imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2" title=" " alt="" coords="161,213,296,241"/>
-<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="42,809,46,738,58,627,83,495,102,429,125,365,142,332,162,301,204,250,202,255,166,304,146,335,130,367,107,430,88,497,63,627,51,738,47,809"/>
-<area shape="rect" id="Node000016" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="158,429,298,474"/>
-<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="43,808,53,740,70,643,94,548,109,510,126,484,146,470,143,474,130,488,114,513,99,550,75,645,58,741,48,809"/>
-<area shape="rect" id="Node000018" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="161,497,296,525"/>
-<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="41,809,43,758,53,684,64,644,79,605,99,568,126,536,148,522,145,527,129,540,104,571,84,607,69,646,58,685,48,758,46,809"/>
-<area shape="rect" id="Node000019" href="$group__math__algebra__int.html#gae3596ca433cdfa635eca7998911907ba" title="initialises a rotation matrix to identity" alt="" coords="154,549,303,577"/>
-<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="42,809,47,766,60,707,85,643,103,614,126,588,141,579,138,583,129,592,107,617,89,645,65,708,52,767,47,809"/>
-<area shape="rect" id="Node000020" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="148,601,308,629"/>
-<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="44,808,52,774,67,728,91,681,107,659,126,640,136,634,133,639,129,644,111,662,95,684,72,731,57,775,49,809"/>
-<area shape="rect" id="Node000023" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="146,653,311,681"/>
-<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="46,808,74,751,97,719,126,692,138,686,135,690,129,696,101,723,79,754,52,810"/>
-<area shape="rect" id="Node000024" href="$preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="140,705,317,733"/>
-<area shape="poly" id="edge25_Node000001_Node000024" title=" " alt="" coords="53,808,84,775,126,744,144,737,140,741,129,748,88,779,58,810"/>
-<area shape="rect" id="Node000025" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="128,757,329,785"/>
-<area shape="poly" id="edge26_Node000001_Node000025" title=" " alt="" coords="78,810,127,795,159,787,156,791,128,800,82,814"/>
-<area shape="rect" id="Node000026" href="$imu_8c.html#ad22c09e97d332fdf55989e3881b55322" title=" " alt="" coords="182,809,275,837"/>
-<area shape="poly" id="edge27_Node000001_Node000026" title=" " alt="" coords="79,821,168,821,164,825,81,825"/>
-<area shape="rect" id="Node000027" href="$imu_8c.html#a8bf5ba349fd3a82667acb22b90b3e53c" title=" " alt="" coords="166,861,290,889"/>
-<area shape="poly" id="edge28_Node000001_Node000027" title=" " alt="" coords="79,832,128,846,160,855,155,858,127,851,81,837"/>
-<area shape="rect" id="Node000028" href="$imu_8c.html#ade53e6d9e9c15bca1c045e744f28ef0b" title=" " alt="" coords="157,913,300,941"/>
-<area shape="poly" id="edge29_Node000001_Node000028" title=" " alt="" coords="55,835,88,867,129,898,145,907,140,909,126,903,84,871,56,840"/>
-<area shape="rect" id="Node000029" href="$imu_8c.html#aa41528f38e1f342b35ae31c21b51d803" title=" " alt="" coords="184,965,272,993"/>
-<area shape="poly" id="edge30_Node000001_Node000029" title=" " alt="" coords="49,835,79,892,101,924,129,950,149,961,171,970,167,972,146,966,126,955,97,927,74,895,49,840"/>
-<area shape="rect" id="Node000030" href="$imu_8c.html#aef1f95c9b1237a23530852c5ed12863a" title=" " alt="" coords="169,1017,288,1045"/>
-<area shape="poly" id="edge31_Node000001_Node000030" title=" " alt="" coords="46,835,57,871,72,916,95,963,111,984,129,1002,157,1019,152,1021,126,1007,107,987,91,965,67,918,52,872,46,840"/>
-<area shape="rect" id="Node000031" href="$imu_8c.html#aa1b2b69b4fcbae31921a2794700de0d1" title=" " alt="" coords="160,1069,297,1097"/>
-<area shape="poly" id="edge32_Node000001_Node000031" title=" " alt="" coords="45,834,52,879,65,938,89,1001,107,1030,129,1054,148,1068,143,1070,126,1059,103,1033,85,1003,60,940,47,880,45,840"/>
-<area shape="rect" id="Node000032" href="$imu_8c.html#ae7d9de96df316a3e4d1bf9306bf8eb0d" title=" " alt="" coords="184,1121,272,1149"/>
-<area shape="poly" id="edge33_Node000001_Node000032" title=" " alt="" coords="44,835,48,888,58,961,69,1000,84,1039,104,1075,129,1107,148,1119,171,1129,166,1131,146,1124,126,1110,99,1078,79,1041,64,1002,53,962,43,889,43,840"/>
-<area shape="rect" id="Node000033" href="$imu_8c.html#a73e1fbeb78986b684f07a6555ddae97d" title=" " alt="" coords="158,1173,299,1201"/>
-<area shape="poly" id="edge34_Node000001_Node000033" title=" " alt="" coords="45,835,57,905,74,1002,99,1097,113,1134,130,1159,146,1172,141,1173,126,1162,109,1137,93,1099,69,1003,52,906,45,840"/>
-<area shape="rect" id="Node000034" href="$imu_8c.html#a1899ba1b8e84b85be17e217efcf1e815" title=" " alt="" coords="169,1225,288,1253"/>
-<area shape="poly" id="edge35_Node000001_Node000034" title=" " alt="" coords="45,835,55,914,71,1027,96,1138,111,1182,130,1211,157,1229,151,1230,126,1214,107,1184,90,1140,66,1028,50,915,45,840"/>
-<area shape="rect" id="Node000035" href="$imu_8c.html#a63448db29d3d3265d23bb3c75c2ea671" title=" " alt="" coords="160,1277,297,1305"/>
-<area shape="poly" id="edge36_Node000001_Node000035" title=" " alt="" coords="45,835,53,923,68,1052,79,1118,92,1179,109,1229,130,1263,148,1278,143,1278,126,1266,105,1232,87,1181,73,1119,62,1053,48,924,44,840"/>
-<area shape="rect" id="Node000036" href="$shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry." alt="" coords="166,1329,290,1357"/>
-<area shape="poly" id="edge37_Node000001_Node000036" title=" " alt="" coords="44,835,52,933,65,1077,75,1152,89,1220,108,1277,130,1315,155,1333,149,1333,126,1318,103,1279,84,1222,70,1153,59,1077,46,933,44,840"/>
-<area shape="rect" id="Node000003" href="$group__math__algebra__float.html#gada020417563d6c63ded5627170f3ffc2" title="rotate 3D vector by transposed rotation matrix." alt="" coords="388,5,569,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,133,300,89,337,64,376,43,397,36,394,40,378,48,340,69,303,93,248,136"/>
-<area shape="rect" id="Node000004" href="$group__math__algebra__float.html#ga7f3236df004aa53416a334da7c765322" title="rotate 3D vector by rotation matrix." alt="" coords="412,57,545,85"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="267,132,376,95,408,88,404,91,378,100,271,136"/>
-<area shape="rect" id="Node000005" href="$imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="421,109,536,137"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="297,139,407,129,404,132,300,144"/>
-<area shape="rect" id="Node000006" href="$group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix." alt="" coords="386,161,571,189"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="297,154,373,162,368,165,300,158"/>
-<area shape="rect" id="Node000007" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="404,265,553,310"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="261,160,297,178,331,200,345,214,355,226,364,238,379,250,392,259,387,261,375,255,360,242,350,230,341,217,327,204,294,182,264,165"/>
-<area shape="rect" id="Node000008" href="$low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="628,265,789,310"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="552,285,615,286,611,289,555,289"/>
-<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="256,375,376,319,396,313,392,317,378,324,260,379"/>
-<area shape="rect" id="Node000010" href="$group__math__algebra__float.html#ga8fccbc7ef50f549b794f731f60184ac7" title="rotate anglular rates by rotation matrix." alt="" coords="403,333,554,361"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="294,377,389,361,386,365,298,381"/>
-<area shape="rect" id="Node000011" href="$group__math__algebra__float.html#ga2c8e98c79fa8cdb2d7d3bbbcebded439" title="rotate anglular rates by transposed rotation matrix." alt="" coords="379,385,578,413"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="295,391,366,394,361,397,297,396"/>
-<area shape="rect" id="Node000012" href="$imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="424,437,534,465"/>
-<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="288,403,411,433,406,436,290,408"/>
-<area shape="rect" id="Node000013" href="$group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix." alt="" coords="377,489,580,517"/>
-<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="295,399,330,414,347,429,355,445,364,460,379,474,390,482,385,484,375,479,359,463,351,448,342,433,328,419,297,404"/>
-<area shape="poly" id="edge16_Node000014_Node000006" title=" " alt="" coords="294,211,396,191,392,195,298,215"/>
-<area shape="rect" id="Node000015" href="$imu_8c.html#a9d352d575dc0e30a32e31b1b6fcd6211" title="Find or create the mag in the imu structure." alt="" coords="424,213,534,241"/>
-<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="295,225,410,225,406,229,297,229"/>
-<area shape="rect" id="Node000017" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="377,541,580,569"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="298,469,330,484,345,495,355,506,364,516,378,526,395,535,390,537,376,531,361,520,351,509,342,499,328,488,300,474"/>
-<area shape="rect" id="Node000021" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="396,601,561,629"/>
-<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="308,613,382,614,378,617,310,617"/>
-<area shape="rect" id="Node000022" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="634,601,783,629"/>
-<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="560,613,621,614,617,616,562,618"/>
+<area shape="rect" id="Node000001" title="External functions." alt="" coords="5,880,80,908"/>
+<area shape="rect" id="Node000002" href="$imu_8c.html#a4a7dfb75ae6cff2054ab5e3764fa15dd" title=" " alt="" coords="158,265,298,293"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,879,51,782,68,633,92,481,108,418,125,373,155,332,194,300,191,305,159,336,130,375,113,420,98,482,73,634,56,782,48,880"/>
+<area shape="rect" id="Node000039" href="$imu_8c.html#a11d2b2eccda5e670f4d7d3f81d7abb3d" title=" " alt="" coords="161,385,296,413"/>
+<area shape="poly" id="edge26_Node000001_Node000039" title=" " alt="" coords="41,880,41,813,51,709,61,650,76,590,97,531,125,476,153,444,189,419,186,423,157,448,130,479,102,534,81,592,66,652,56,710,47,813,46,880"/>
+<area shape="rect" id="Node000043" href="$imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2" title=" " alt="" coords="161,489,296,517"/>
+<area shape="poly" id="edge33_Node000001_Node000043" title=" " alt="" coords="43,879,51,806,67,701,92,597,108,556,126,528,148,514,145,519,130,532,112,558,97,599,73,702,56,807,48,880"/>
+<area shape="rect" id="Node000045" href="$group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="161,541,296,569"/>
+<area shape="poly" id="edge36_Node000001_Node000045" title=" " alt="" coords="40,880,41,824,50,744,60,700,76,657,97,616,126,580,148,566,145,571,129,584,102,619,80,659,65,702,55,745,46,825,46,880"/>
+<area shape="rect" id="Node000046" href="$group__math__algebra__int.html#gae3596ca433cdfa635eca7998911907ba" title="initialises a rotation matrix to identity" alt="" coords="154,593,303,621"/>
+<area shape="poly" id="edge37_Node000001_Node000046" title=" " alt="" coords="41,879,45,832,56,766,67,730,82,694,101,661,126,632,141,622,138,627,129,636,105,664,86,697,72,731,62,767,50,833,47,880"/>
+<area shape="rect" id="Node000047" href="$group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="148,645,308,673"/>
+<area shape="poly" id="edge38_Node000001_Node000047" title=" " alt="" coords="43,879,49,841,63,788,88,732,105,706,126,684,136,678,133,683,129,688,109,710,92,735,68,790,54,842,48,880"/>
+<area shape="rect" id="Node000050" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="146,697,311,725"/>
+<area shape="poly" id="edge41_Node000001_Node000050" title=" " alt="" coords="45,879,54,849,70,810,94,770,126,736,137,730,134,735,129,740,98,773,75,813,59,851,50,880"/>
+<area shape="rect" id="Node000051" href="$preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="140,749,317,777"/>
+<area shape="poly" id="edge42_Node000001_Node000051" title=" " alt="" coords="49,879,79,833,100,809,126,788,140,781,137,786,129,792,104,812,83,837,54,881"/>
+<area shape="rect" id="Node000052" href="$telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="128,801,329,829"/>
+<area shape="poly" id="edge43_Node000001_Node000052" title=" " alt="" coords="61,878,91,858,127,839,150,832,146,836,129,844,94,863,65,881"/>
+<area shape="rect" id="Node000053" href="$imu_8c.html#ad22c09e97d332fdf55989e3881b55322" title=" " alt="" coords="182,853,275,881"/>
+<area shape="poly" id="edge44_Node000001_Node000053" title=" " alt="" coords="78,886,168,874,165,878,82,891"/>
+<area shape="rect" id="Node000054" href="$imu_8c.html#a8bf5ba349fd3a82667acb22b90b3e53c" title=" " alt="" coords="166,905,290,933"/>
+<area shape="poly" id="edge45_Node000001_Node000054" title=" " alt="" coords="79,897,153,907,149,910,81,901"/>
+<area shape="rect" id="Node000055" href="$imu_8c.html#ade53e6d9e9c15bca1c045e744f28ef0b" title=" " alt="" coords="157,957,300,985"/>
+<area shape="poly" id="edge46_Node000001_Node000055" title=" " alt="" coords="63,906,95,925,129,942,150,951,146,953,127,947,92,929,65,911"/>
+<area shape="rect" id="Node000056" href="$imu_8c.html#aa41528f38e1f342b35ae31c21b51d803" title=" " alt="" coords="184,1009,272,1037"/>
+<area shape="poly" id="edge47_Node000001_Node000056" title=" " alt="" coords="51,906,83,950,104,974,129,994,171,1013,167,1015,126,999,101,978,79,954,52,911"/>
+<area shape="rect" id="Node000057" href="$imu_8c.html#aef1f95c9b1237a23530852c5ed12863a" title=" " alt="" coords="169,1061,288,1089"/>
+<area shape="poly" id="edge48_Node000001_Node000057" title=" " alt="" coords="47,906,59,937,75,975,98,1014,129,1046,157,1062,152,1064,126,1051,94,1017,71,977,54,939,48,911"/>
+<area shape="rect" id="Node000058" href="$imu_8c.html#aa1b2b69b4fcbae31921a2794700de0d1" title=" " alt="" coords="160,1113,297,1141"/>
+<area shape="poly" id="edge49_Node000001_Node000058" title=" " alt="" coords="45,905,54,946,68,997,92,1052,109,1077,129,1098,148,1111,143,1113,126,1103,105,1080,88,1055,63,999,49,947,45,910"/>
+<area shape="rect" id="Node000059" href="$imu_8c.html#ae7d9de96df316a3e4d1bf9306bf8eb0d" title=" " alt="" coords="184,1165,272,1193"/>
+<area shape="poly" id="edge50_Node000001_Node000059" title=" " alt="" coords="44,905,50,955,62,1020,72,1055,87,1090,105,1122,129,1151,148,1163,171,1173,167,1175,146,1168,126,1154,101,1126,82,1093,67,1057,56,1021,45,955,44,911"/>
+<area shape="rect" id="Node000060" href="$imu_8c.html#a73e1fbeb78986b684f07a6555ddae97d" title=" " alt="" coords="158,1217,299,1245"/>
+<area shape="poly" id="edge51_Node000001_Node000060" title=" " alt="" coords="43,906,46,963,55,1042,66,1086,81,1128,102,1168,130,1203,146,1216,141,1217,126,1206,97,1171,76,1130,60,1087,50,1043,41,964,43,911"/>
+<area shape="rect" id="Node000061" href="$imu_8c.html#a1899ba1b8e84b85be17e217efcf1e815" title=" " alt="" coords="169,1269,288,1297"/>
+<area shape="poly" id="edge52_Node000001_Node000061" title=" " alt="" coords="45,906,56,981,73,1085,97,1188,112,1228,130,1255,157,1273,152,1274,126,1258,108,1230,92,1190,67,1086,51,981,45,911"/>
+<area shape="rect" id="Node000062" href="$imu_8c.html#a63448db29d3d3265d23bb3c75c2ea671" title=" " alt="" coords="160,1321,297,1349"/>
+<area shape="poly" id="edge53_Node000001_Node000062" title=" " alt="" coords="45,905,54,989,69,1110,80,1172,94,1229,110,1276,130,1307,148,1322,143,1322,126,1310,106,1278,89,1230,75,1173,64,1111,49,990,45,911"/>
+<area shape="rect" id="Node000063" href="$shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry." alt="" coords="166,1373,290,1401"/>
+<area shape="poly" id="edge54_Node000001_Node000063" title=" " alt="" coords="45,906,53,999,66,1135,77,1206,91,1270,109,1323,130,1359,155,1377,149,1377,126,1362,104,1325,86,1272,72,1206,61,1136,47,999,44,911"/>
+<area shape="rect" id="Node000003" href="$group__math__algebra__float.html#gada020417563d6c63ded5627170f3ffc2" title="rotate 3D vector by transposed rotation matrix." alt="" coords="388,161,569,189"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,263,307,231,376,199,402,192,398,196,378,204,310,236,255,267"/>
+<area shape="rect" id="Node000004" href="$e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="459,213,498,241"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="297,263,446,232,443,236,300,267"/>
+<area shape="rect" id="Node000032" href="$imu_8c.html#ab532dd2107065a2e661099dbc9d2aaa3" title="Initialize the lowpass filters of a sensor on its first sample." alt="" coords="423,265,534,293"/>
+<area shape="poly" id="edge19_Node000002_Node000032" title=" " alt="" coords="297,277,409,277,405,281,300,281"/>
+<area shape="rect" id="Node000035" href="$imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="421,109,536,137"/>
+<area shape="poly" id="edge22_Node000002_Node000035" title=" " alt="" coords="240,263,295,207,333,175,376,147,408,136,404,140,378,152,336,179,298,211,244,266"/>
+<area shape="rect" id="Node000036" href="$group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix." alt="" coords="386,489,571,517"/>
+<area shape="poly" id="edge23_Node000002_Node000036" title=" " alt="" coords="248,291,290,326,331,372,346,402,352,428,360,451,379,475,387,481,381,482,375,478,355,454,347,429,341,403,327,375,286,330,249,296"/>
+<area shape="rect" id="Node000037" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="404,317,553,362"/>
+<area shape="poly" id="edge24_Node000002_Node000037" title=" " alt="" coords="288,291,391,316,386,319,290,296"/>
+<area shape="rect" id="Node000005" href="$e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="675,5,742,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="497,225,539,219,560,211,579,199,593,180,600,162,602,124,604,84,612,64,626,44,642,32,662,25,658,29,644,37,630,48,616,66,610,85,608,124,605,163,598,183,582,202,563,216,540,224,500,230"/>
+<area shape="rect" id="Node000006" href="$e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="628,57,789,85"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="497,225,538,218,560,210,579,198,590,187,596,175,602,149,608,123,615,109,626,96,636,91,633,95,630,100,619,112,613,124,607,150,601,176,594,190,582,203,562,215,539,223,500,229"/>
+<area shape="rect" id="Node000009" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="675,161,742,189"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="497,221,662,184,658,188,500,225"/>
+<area shape="rect" id="Node000021" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="640,109,777,137"/>
+<area shape="poly" id="edge10_Node000004_Node000021" title=" " alt="" coords="497,223,537,215,579,198,593,186,602,174,612,161,627,148,641,142,637,146,630,152,616,164,607,177,597,190,582,203,538,220,500,227"/>
+<area shape="rect" id="Node000026" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="674,213,743,241"/>
+<area shape="poly" id="edge13_Node000004_Node000026" title=" " alt="" coords="497,225,660,226,656,229,499,230"/>
+<area shape="rect" id="Node000027" href="$e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="667,265,750,293"/>
+<area shape="poly" id="edge15_Node000004_Node000027" title=" " alt="" coords="497,229,654,265,649,268,499,234"/>
+<area shape="rect" id="Node000030" href="$uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="648,317,769,345"/>
+<area shape="poly" id="edge17_Node000004_Node000030" title=" " alt="" coords="497,227,538,234,582,252,597,264,607,277,616,290,630,302,642,310,637,311,627,307,612,294,602,280,593,268,579,256,537,239,499,231"/>
+<area shape="rect" id="Node000007" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="837,57,1069,85"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="788,69,823,70,819,73,791,74"/>
+<area shape="rect" id="Node000008" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="1117,49,1306,94"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1068,69,1104,70,1099,72,1071,74"/>
+<area shape="rect" id="Node000010" href="$group__state__position.html#ga709cb674566082d71719884e61f21cb6" title="Get position in LLA coordinates (int)." alt="" coords="873,213,1032,241"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="741,180,872,208,868,211,743,185"/>
+<area shape="rect" id="Node000018" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="902,109,1004,137"/>
+<area shape="poly" id="edge11_Node000021_Node000018" title=" " alt="" coords="777,121,888,122,884,125,779,126"/>
+<area shape="rect" id="Node000022" href="$nav_2waypoints_8c.html#a3c92e53204c086a9e9104c84fe8b09ac" title="Get LLA coordinates of waypoint." alt="" coords="887,161,1019,189"/>
+<area shape="poly" id="edge12_Node000021_Node000022" title=" " alt="" coords="776,135,874,157,869,159,778,140"/>
+<area shape="poly" id="edge14_Node000026_Node000010" title=" " alt="" coords="742,225,860,226,855,229,745,230"/>
+<area shape="rect" id="Node000028" href="$group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="845,265,1060,293"/>
+<area shape="poly" id="edge16_Node000027_Node000028" title=" " alt="" coords="750,277,832,278,827,280,752,282"/>
+<area shape="rect" id="Node000031" href="$linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="897,317,1008,345"/>
+<area shape="poly" id="edge18_Node000030_Node000031" title=" " alt="" coords="768,329,884,330,879,332,770,334"/>
+<area shape="rect" id="Node000033" href="$low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="638,369,779,414"/>
+<area shape="poly" id="edge20_Node000032_Node000033" title=" " alt="" coords="534,285,559,292,582,302,598,315,607,328,616,341,630,354,637,360,632,361,627,359,612,345,603,331,594,319,579,307,557,297,536,289"/>
+<area shape="rect" id="Node000034" href="$low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="851,377,1054,405"/>
+<area shape="poly" id="edge21_Node000033_Node000034" title=" " alt="" coords="778,389,838,390,834,392,780,394"/>
+<area shape="rect" id="Node000038" href="$low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="628,438,789,483"/>
+<area shape="poly" id="edge25_Node000037_Node000038" title=" " alt="" coords="553,357,582,372,597,385,607,398,616,411,630,424,637,430,632,431,627,428,612,414,602,401,593,388,579,376,555,362"/>
+<area shape="poly" id="edge28_Node000039_Node000004" title=" " alt="" coords="243,384,327,303,349,275,360,263,376,252,410,237,446,229,442,233,411,242,378,256,363,267,353,279,331,306,247,386"/>
+<area shape="poly" id="edge29_Node000039_Node000032" title=" " alt="" coords="245,383,302,343,376,302,410,292,406,295,378,307,305,347,250,386"/>
+<area shape="poly" id="edge32_Node000039_Node000037" title=" " alt="" coords="287,383,390,359,387,363,291,387"/>
+<area shape="rect" id="Node000040" href="$group__math__algebra__float.html#ga2c8e98c79fa8cdb2d7d3bbbcebded439" title="rotate anglular rates by transposed rotation matrix." alt="" coords="379,437,578,465"/>
+<area shape="poly" id="edge27_Node000039_Node000040" title=" " alt="" coords="295,411,396,432,392,435,297,416"/>
+<area shape="rect" id="Node000041" href="$imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="424,541,534,569"/>
+<area shape="poly" id="edge30_Node000039_Node000041" title=" " alt="" coords="249,411,331,476,354,503,363,515,378,526,411,541,406,543,376,531,360,519,350,507,327,480,250,416"/>
+<area shape="rect" id="Node000042" href="$group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix." alt="" coords="377,385,580,413"/>
+<area shape="poly" id="edge31_Node000039_Node000042" title=" " alt="" coords="295,397,364,398,360,401,298,401"/>
+<area shape="poly" id="edge35_Node000043_Node000036" title=" " alt="" coords="295,501,373,502,368,505,297,505"/>
+<area shape="rect" id="Node000044" href="$imu_8c.html#a9d352d575dc0e30a32e31b1b6fcd6211" title="Find or create the mag in the imu structure." alt="" coords="424,593,534,621"/>
+<area shape="poly" id="edge34_Node000043_Node000044" title=" " alt="" coords="295,513,330,528,346,540,355,554,364,566,378,578,411,593,406,595,376,583,360,570,351,557,342,544,328,532,297,518"/>
+<area shape="rect" id="Node000048" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="396,645,561,673"/>
+<area shape="poly" id="edge39_Node000047_Node000048" title=" " alt="" coords="308,657,382,658,378,661,310,661"/>
+<area shape="rect" id="Node000049" href="$group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="634,645,783,673"/>
+<area shape="poly" id="edge40_Node000048_Node000049" title=" " alt="" coords="560,657,621,658,617,660,562,662"/>
 </map>

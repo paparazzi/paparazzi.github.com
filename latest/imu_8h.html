@@ -152,6 +152,8 @@ $(function(){initNavTree('imu_8h.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:imu_5Fcalib_5Ft_5Fstructimu_5F_5Fcalib_5F_5Ft" id="r_imu_5Fcalib_5Ft_5Fstructimu_5F_5Fcalib_5F_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#structimu__calib__t">imu_calib_t</a></td></tr>
+<tr class="memitem:imu_5Frate_5Fest_5Ft_5Fstructimu_5F_5Frate_5F_5Fest_5F_5Ft" id="r_imu_5Frate_5Fest_5Ft_5Fstructimu_5F_5Frate_5F_5Fest_5F_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#structimu__rate__est__t">imu_rate_est_t</a></td></tr>
+<tr class="memdesc:structimu__rate__est__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measured sample rate of a sensor, counted against the timestamps.  <a href="#structimu__rate__est__t">More...</a><br /></td></tr>
 <tr class="memitem:imu_5Fgyro_5Ft_5Fstructimu_5F_5Fgyro_5F_5Ft" id="r_imu_5Fgyro_5Ft_5Fstructimu_5F_5Fgyro_5F_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#structimu__gyro__t">imu_gyro_t</a></td></tr>
 <tr class="memitem:imu_5Faccel_5Ft_5Fstructimu_5F_5Faccel_5F_5Ft" id="r_imu_5Faccel_5Ft_5Fstructimu_5F_5Faccel_5F_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#structimu__accel__t">imu_accel_t</a></td></tr>
 <tr class="memitem:imu_5Fmag_5Ft_5Fstructimu_5F_5Fmag_5F_5Ft" id="r_imu_5Fmag_5Ft_5Fstructimu_5F_5Fmag_5F_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#structimu__mag__t">imu_mag_t</a></td></tr>
@@ -181,7 +183,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ac50fba336ca2c337f240bab0db44f64e" id="r_ac50fba336ca2c337f240bab0db44f64e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac50fba336ca2c337f240bab0db44f64e">imu_SetBodyToImuPhi</a> (float phi)</td></tr>
 <tr class="memitem:a3e25b56c5719a23e494568696083459e" id="r_a3e25b56c5719a23e494568696083459e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e25b56c5719a23e494568696083459e">imu_SetBodyToImuTheta</a> (float theta)</td></tr>
 <tr class="memitem:a88ec31da12a499ee7b47fe11b4ccfa4e" id="r_a88ec31da12a499ee7b47fe11b4ccfa4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88ec31da12a499ee7b47fe11b4ccfa4e">imu_SetBodyToImuPsi</a> (float psi)</td></tr>
-<tr class="memitem:a931916ce562dfa28e02e0a6001dddc43" id="r_a931916ce562dfa28e02e0a6001dddc43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a931916ce562dfa28e02e0a6001dddc43">imu_SetBodyToImuCurrent</a> (float set)</td></tr>
+<tr class="memitem:a3353fa552f17f0f33f42d48f40f6ebd7" id="r_a3353fa552f17f0f33f42d48f40f6ebd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3353fa552f17f0f33f42d48f40f6ebd7">imu_SetBodyToImuCurrent</a> (bool set)</td></tr>
 <tr class="memitem:ac9f5713ed33725e176e0501ecbe715a9" id="r_ac9f5713ed33725e176e0501ecbe715a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9f5713ed33725e176e0501ecbe715a9">imu_ResetBodyToImu</a> (float <a class="el" href="baro__MS5534A_8c.html#ae9f68c6af70342cbaad9f8500d0b6f23">reset</a>)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
@@ -220,7 +222,7 @@ Current calibrated. </td></tr>
 <td class="fieldname">
 filter: 1</td>
 <td class="fielddoc">
-Enable the lowpass filter. </td></tr>
+Enable the lowpass filter (gyro and accel only, ignored for the mag). </td></tr>
 <tr><td class="fieldtype">
 <a id="aa89853a532ad4adf771289eea8832bd6" name="aa89853a532ad4adf771289eea8832bd6"></a>bool</td>
 <td class="fieldname">
@@ -255,6 +257,56 @@ Scale calibrated with floating point. </td></tr>
 
 </div>
 </div>
+<a name="structimu__rate__est__t" id="structimu__rate__est__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structimu__rate__est__t">&#9670;&#160;</a></span>imu_rate_est_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct imu_rate_est_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Measured sample rate of a sensor, counted against the timestamps. </p>
+
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00056">56</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a32ab26c18bedecfa6751a88955195c60" name="a32ab26c18bedecfa6751a88955195c60"></a>float</td>
+<td class="fieldname">
+rate</td>
+<td class="fielddoc">
+Filtered measured sample rate (Hz), 0 until the first window. </td></tr>
+<tr><td class="fieldtype">
+<a id="a6da60db628373828f457d41ae14c626c" name="a6da60db628373828f457d41ae14c626c"></a>bool</td>
+<td class="fieldname">
+rejected</td>
+<td class="fielddoc">
+A window was rejected (out of bounds), only warned once. </td></tr>
+<tr><td class="fieldtype">
+<a id="a61b2c53c1eb6cc8c905d902a9b2326e0" name="a61b2c53c1eb6cc8c905d902a9b2326e0"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<td class="fieldname">
+samples</td>
+<td class="fielddoc">
+Samples received since the window start. </td></tr>
+<tr><td class="fieldtype">
+<a id="ae1b9f27dd74efb5ce66f352b45cb3fd0" name="ae1b9f27dd74efb5ce66f352b45cb3fd0"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<td class="fieldname">
+start</td>
+<td class="fielddoc">
+Timestamp of the current window start (us). </td></tr>
+<tr><td class="fieldtype">
+<a id="a7856ff3e2eec67c19a41092ee3b177e9" name="a7856ff3e2eec67c19a41092ee3b177e9"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+windows</td>
+<td class="fielddoc">
+Accepted windows, up to IMU_RATE_EST_REPORT when the rate is reported. </td></tr>
+</table>
+
+</div>
+</div>
 <a name="structimu__gyro__t" id="structimu__gyro__t"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structimu__gyro__t">&#9670;&#160;</a></span>imu_gyro_t</h2>
 
@@ -267,26 +319,30 @@ Scale calibrated with floating point. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00055">55</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00064">64</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
 </div><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for imu_gyro_t:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structimu__gyro__t__coll__graph.png" border="0" usemap="#aimu__gyro__t_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aimu__gyro__t_coll__map" id="aimu__gyro__t_coll__map">
-<area shape="rect" title=" " alt="" coords="284,173,378,201"/>
-<area shape="rect" href="imu_8h.html#structimu__calib__t" title=" " alt="" coords="5,5,102,33"/>
-<area shape="poly" title=" " alt="" coords="55,46,66,100,78,126,95,147,127,162,177,172,286,183,281,185,176,177,126,167,92,151,73,128,61,101,53,51"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32Rates" title="angular rates" alt="" coords="125,5,216,33"/>
-<area shape="poly" title=" " alt="" coords="173,46,184,99,194,125,211,147,227,160,245,169,286,182,280,182,243,174,224,164,207,151,190,127,179,100,170,51"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatRates" title="angular rates" alt="" coords="241,5,332,33"/>
-<area shape="poly" title=" " alt="" coords="284,47,283,97,286,123,294,148,302,160,314,173,309,172,298,164,289,150,281,124,277,97,280,51"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32RMat" title="rotation matrix" alt="" coords="356,5,444,33"/>
-<area shape="poly" title=" " alt="" coords="385,45,379,58,362,103,348,150,338,174,335,170,343,148,357,102,374,56,381,48"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatEulers" title="euler angles" alt="" coords="469,5,563,33"/>
-<area shape="poly" title=" " alt="" coords="520,47,515,100,505,127,489,151,470,162,443,171,379,183,378,177,441,165,468,157,485,147,500,125,510,99,516,50"/>
-<area shape="rect" href="low__pass__filter_8h.html#structSecondOrderLowPass" title="Second order low pass filter structure." alt="" coords="590,5,749,33"/>
-<area shape="poly" title=" " alt="" coords="674,47,669,101,659,128,642,151,622,163,595,172,524,183,447,188,379,189,378,184,447,183,524,178,594,167,620,158,638,147,655,126,664,100,670,51"/>
+<area shape="rect" title=" " alt="" coords="335,287,429,315"/>
+<area shape="rect" href="imu_8h.html#structimu__calib__t" title=" " alt="" coords="37,24,133,52"/>
+<area shape="poly" title=" " alt="" coords="147,28,188,27,232,32,275,45,312,68,335,93,352,121,365,152,374,184,382,244,383,288,379,286,377,244,368,185,360,154,347,124,331,96,309,72,272,50,231,38,188,33,150,33"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32Rates" title="angular rates" alt="" coords="39,147,131,175"/>
+<area shape="poly" title=" " alt="" coords="145,162,240,172,283,181,312,192,336,213,355,239,378,287,373,286,351,241,332,217,309,197,281,186,240,177,147,167"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatRates" title="angular rates" alt="" coords="39,203,131,231"/>
+<area shape="poly" title=" " alt="" coords="145,217,226,227,270,237,312,251,342,267,367,287,362,287,339,271,310,255,268,242,225,232,147,222"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32RMat" title="rotation matrix" alt="" coords="41,259,129,287"/>
+<area shape="poly" title=" " alt="" coords="145,276,336,295,332,299,145,281"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatEulers" title="euler angles" alt="" coords="38,315,132,343"/>
+<area shape="poly" title=" " alt="" coords="147,330,226,330,310,322,347,314,342,317,311,327,226,336,149,335"/>
+<area shape="rect" href="low__pass__filter_8h.html#structSecondOrderLowPass" title="Second order low pass filter structure." alt="" coords="5,371,165,399"/>
+<area shape="poly" title=" " alt="" coords="179,386,245,380,278,372,309,361,343,339,367,317,372,314,346,343,312,366,280,377,246,385,181,391"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatVect3" title=" " alt="" coords="40,450,130,477"/>
+<area shape="poly" title=" " alt="" coords="145,470,185,471,228,468,271,457,309,438,337,411,356,376,369,342,376,317,380,313,374,344,361,379,341,414,312,442,272,462,229,473,185,476,146,475"/>
+<area shape="rect" href="imu_8h.html#structimu__rate__est__t" title="Measured sample rate of a sensor, counted against the timestamps." alt="" coords="26,506,144,533"/>
+<area shape="poly" title=" " alt="" coords="160,531,197,533,237,530,275,520,309,501,329,482,345,458,366,405,375,354,379,317,382,313,380,354,371,407,350,461,333,485,312,505,277,525,238,535,197,538,159,536"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
@@ -302,13 +358,13 @@ ABI sensor ID. </td></tr>
 <td class="fieldname">
 body_to_sensor</td>
 <td class="fielddoc">
-Rotation from body to sensor frame (body to imu combined with imu to sensor). </td></tr>
+Rotation from body to sensor frame, set as imu to sensor in the airframe calibration and combined with body_to_imu at init. </td></tr>
 <tr><td class="fieldtype">
 <a id="ab164e32742967156d02d177f0280cdb8" name="ab164e32742967156d02d177f0280cdb8"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a></td>
 <td class="fieldname">
 body_to_sensor_f</td>
 <td class="fielddoc">
-Rotation from body to sensor frame (with floating points eulers). </td></tr>
+Rotation from imu to sensor frame in eulers (airframe calibration, only used at init). </td></tr>
 <tr><td class="fieldtype">
 <a id="aca02598e78983f91cb7658fca6dcec0d" name="aca02598e78983f91cb7658fca6dcec0d"></a>struct <a class="el" href="#structimu__calib__t">imu_calib_t</a></td>
 <td class="fieldname">
@@ -326,13 +382,19 @@ Lowpass filter optional. </td></tr>
 <td class="fieldname">
 filter_freq</td>
 <td class="fielddoc">
-Filter frequency. </td></tr>
+Lowpass filter cutoff frequency (Hz). </td></tr>
 <tr><td class="fieldtype">
-<a id="a3352b1d70080919208df42527dc2bdc6" name="a3352b1d70080919208df42527dc2bdc6"></a>float</td>
+<a id="a244afe4e8aab7b88a0404d4636ee2ed6" name="a244afe4e8aab7b88a0404d4636ee2ed6"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a></td>
 <td class="fieldname">
-filter_sample_freq</td>
+last_delta_alpha</td>
 <td class="fielddoc">
-Lowpass filter sample frequency (Hz). </td></tr>
+Last integrated sample delta angle in sensor frame for the coning correction (IMU_INTEGRATION). </td></tr>
+<tr><td class="fieldtype">
+<a id="a3d61e83a628c553120d7ecdd7ac555d5" name="a3d61e83a628c553120d7ecdd7ac555d5"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a></td>
+<td class="fieldname">
+last_sample</td>
+<td class="fielddoc">
+Last scaled sample in sensor frame for the integration (IMU_INTEGRATION). </td></tr>
 <tr><td class="fieldtype">
 <a id="a009f4bed304da8f96ca2b3bd2396d2eb" name="a009f4bed304da8f96ca2b3bd2396d2eb"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
@@ -345,6 +407,18 @@ Last measurement timestamp for integration. </td></tr>
 neutral</td>
 <td class="fielddoc">
 Neutral values, compensation on unscaled-&gt;scaled. </td></tr>
+<tr><td class="fieldtype">
+<a id="a2494106326ce5db48aedfc85a9aceebb" name="a2494106326ce5db48aedfc85a9aceebb"></a>struct <a class="el" href="#structimu__rate__est__t">imu_rate_est_t</a></td>
+<td class="fieldname">
+rate_est</td>
+<td class="fielddoc">
+Measured sample rate for the integration (IMU_INTEGRATION). </td></tr>
+<tr><td class="fieldtype">
+<a id="a14ffff4039b06d1575eb3e91e5eb96ba" name="a14ffff4039b06d1575eb3e91e5eb96ba"></a>float</td>
+<td class="fieldname">
+sample_freq</td>
+<td class="fielddoc">
+Calibrated sample frequency (Hz) for the filter, and reference of the measured integration rate (the driver rate if not set). </td></tr>
 <tr><td class="fieldtype">
 <a id="a6f6fa9e950ab651e2f75051dd1203ad4" name="a6f6fa9e950ab651e2f75051dd1203ad4"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
 <td class="fieldname">
@@ -391,26 +465,28 @@ Last unscaled values in sensor frame. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00072">72</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00084">84</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
 </div><div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for imu_accel_t:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structimu__accel__t__coll__graph.png" border="0" usemap="#aimu__accel__t_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aimu__accel__t_coll__map" id="aimu__accel__t_coll__map">
-<area shape="rect" title=" " alt="" coords="280,173,379,201"/>
-<area shape="rect" href="imu_8h.html#structimu__calib__t" title=" " alt="" coords="5,5,102,33"/>
-<area shape="poly" title=" " alt="" coords="55,46,66,100,78,126,95,147,127,161,174,171,282,183,277,184,174,177,125,166,92,151,73,128,61,101,53,51"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32Vect3" title=" " alt="" coords="126,5,216,33"/>
-<area shape="poly" title=" " alt="" coords="173,46,183,99,193,125,209,147,225,159,242,168,282,182,277,182,240,173,222,164,206,151,189,127,178,100,170,51"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatVect3" title=" " alt="" coords="240,5,331,33"/>
-<area shape="poly" title=" " alt="" coords="282,47,281,97,285,123,293,148,301,160,312,173,307,172,297,164,288,150,279,124,276,97,279,51"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32RMat" title="rotation matrix" alt="" coords="355,5,443,33"/>
-<area shape="poly" title=" " alt="" coords="383,45,378,58,361,103,347,150,337,174,333,170,342,148,356,102,373,56,379,48"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatEulers" title="euler angles" alt="" coords="468,5,562,33"/>
-<area shape="poly" title=" " alt="" coords="518,47,513,100,504,127,487,151,469,162,443,170,380,182,379,177,441,165,467,157,484,147,499,125,508,99,515,50"/>
-<area shape="rect" href="low__pass__filter_8h.html#structSecondOrderLowPass" title="Second order low pass filter structure." alt="" coords="588,5,748,33"/>
-<area shape="poly" title=" " alt="" coords="672,47,668,101,658,128,641,151,621,163,594,172,525,183,448,188,380,189,380,184,448,183,524,178,593,166,619,158,637,147,653,126,663,100,668,51"/>
+<area shape="rect" title=" " alt="" coords="335,283,434,311"/>
+<area shape="rect" href="imu_8h.html#structimu__calib__t" title=" " alt="" coords="37,26,133,53"/>
+<area shape="poly" title=" " alt="" coords="147,29,189,28,232,32,275,44,312,67,335,91,353,119,366,150,375,181,384,240,386,284,381,282,379,240,369,182,361,151,348,121,331,94,309,71,272,49,231,37,188,33,150,33"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32Vect3" title=" " alt="" coords="40,148,130,176"/>
+<area shape="poly" title=" " alt="" coords="144,157,185,158,228,164,271,176,312,195,336,214,355,237,380,283,374,282,350,240,332,218,309,199,270,181,227,169,184,164,147,162"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatVect3" title=" " alt="" coords="40,227,130,255"/>
+<area shape="poly" title=" " alt="" coords="145,242,225,251,311,268,351,282,346,283,310,273,224,257,146,248"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32RMat" title="rotation matrix" alt="" coords="41,283,129,311"/>
+<area shape="poly" title=" " alt="" coords="144,294,336,295,333,299,145,299"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatEulers" title="euler angles" alt="" coords="38,339,132,367"/>
+<area shape="poly" title=" " alt="" coords="147,348,225,340,310,325,356,310,351,312,311,330,226,346,148,353"/>
+<area shape="rect" href="low__pass__filter_8h.html#structSecondOrderLowPass" title="Second order low pass filter structure." alt="" coords="5,395,165,423"/>
+<area shape="poly" title=" " alt="" coords="180,408,246,398,279,389,309,376,330,361,347,344,373,313,377,310,351,347,333,366,312,380,280,394,247,404,181,413"/>
+<area shape="rect" href="imu_8h.html#structimu__rate__est__t" title="Measured sample rate of a sensor, counted against the timestamps." alt="" coords="26,451,144,479"/>
+<area shape="poly" title=" " alt="" coords="159,471,197,470,236,466,274,455,309,437,337,409,358,373,371,338,379,313,382,309,376,340,362,376,342,412,312,441,276,460,237,471,197,476,159,476"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
@@ -426,13 +502,13 @@ ABI sensor ID. </td></tr>
 <td class="fieldname">
 body_to_sensor</td>
 <td class="fielddoc">
-Rotation from body to sensor frame (body to imu combined with imu to sensor). </td></tr>
+Rotation from body to sensor frame, set as imu to sensor in the airframe calibration and combined with body_to_imu at init. </td></tr>
 <tr><td class="fieldtype">
 <a id="a1a58a23144ecf1518359b78ff298c205" name="a1a58a23144ecf1518359b78ff298c205"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a></td>
 <td class="fieldname">
 body_to_sensor_f</td>
 <td class="fielddoc">
-Rotation from body to sensor frame (with floating points eulers). </td></tr>
+Rotation from imu to sensor frame in eulers (airframe calibration, only used at init). </td></tr>
 <tr><td class="fieldtype">
 <a id="a574e4bce16579490161479d0d2f44458" name="a574e4bce16579490161479d0d2f44458"></a>struct <a class="el" href="#structimu__calib__t">imu_calib_t</a></td>
 <td class="fieldname">
@@ -450,13 +526,13 @@ Lowpass filter optional. </td></tr>
 <td class="fieldname">
 filter_freq</td>
 <td class="fielddoc">
-Lowpass filter frequency (Hz). </td></tr>
+Lowpass filter cutoff frequency (Hz). </td></tr>
 <tr><td class="fieldtype">
-<a id="a79cce8c9227c9107ed522e3d81c92b88" name="a79cce8c9227c9107ed522e3d81c92b88"></a>float</td>
+<a id="ab832451cce6278c4557ffa3290cb9373" name="ab832451cce6278c4557ffa3290cb9373"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a></td>
 <td class="fieldname">
-filter_sample_freq</td>
+last_sample</td>
 <td class="fielddoc">
-Lowpass filter sample frequency (Hz). </td></tr>
+Last scaled sample in sensor frame for the integration (IMU_INTEGRATION). </td></tr>
 <tr><td class="fieldtype">
 <a id="a30bce24a5723d6d6f09bb1c8b71ff5a8" name="a30bce24a5723d6d6f09bb1c8b71ff5a8"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
@@ -469,6 +545,18 @@ Last measurement timestamp for integration. </td></tr>
 neutral</td>
 <td class="fielddoc">
 Neutral values, compensation on unscaled-&gt;scaled. </td></tr>
+<tr><td class="fieldtype">
+<a id="ac6a2f369f602d6acce9f73676c56e705" name="ac6a2f369f602d6acce9f73676c56e705"></a>struct <a class="el" href="#structimu__rate__est__t">imu_rate_est_t</a></td>
+<td class="fieldname">
+rate_est</td>
+<td class="fielddoc">
+Measured sample rate for the integration (IMU_INTEGRATION). </td></tr>
+<tr><td class="fieldtype">
+<a id="aa2bda20265c142d44fa49fcabc305dbf" name="aa2bda20265c142d44fa49fcabc305dbf"></a>float</td>
+<td class="fieldname">
+sample_freq</td>
+<td class="fielddoc">
+Calibrated sample frequency (Hz) for the filter, and reference of the measured integration rate (the driver rate if not set). </td></tr>
 <tr><td class="fieldtype">
 <a id="aa87b0288f7f2adbad06b207bcf3b1a07" name="aa87b0288f7f2adbad06b207bcf3b1a07"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
 <td class="fieldname">
@@ -515,7 +603,7 @@ Last unscaled values in sensor frame. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00089">89</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00103">103</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
 </div><div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for imu_mag_t:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
@@ -548,13 +636,13 @@ ABI sensor ID. </td></tr>
 <td class="fieldname">
 body_to_sensor</td>
 <td class="fielddoc">
-Rotation from body to sensor frame (body to imu combined with imu to sensor). </td></tr>
+Rotation from body to sensor frame, set as imu to sensor in the airframe calibration and combined with body_to_imu at init. </td></tr>
 <tr><td class="fieldtype">
 <a id="a5133142cb8d5cc207a70508a954c8e34" name="a5133142cb8d5cc207a70508a954c8e34"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a></td>
 <td class="fieldname">
 body_to_sensor_f</td>
 <td class="fielddoc">
-Rotation from body to sensor frame (with floating points eulers). </td></tr>
+Rotation from imu to sensor frame in eulers (airframe calibration, only used at init). </td></tr>
 <tr><td class="fieldtype">
 <a id="a0b0df04048e552a2193a356c42cb2afb" name="a0b0df04048e552a2193a356c42cb2afb"></a>struct <a class="el" href="#structimu__calib__t">imu_calib_t</a></td>
 <td class="fieldname">
@@ -620,57 +708,61 @@ Last unscaled values in sensor frame. </td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>abstract IMU interface providing fixed point interface </p>
 
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00105">105</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00119">119</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
 </div><div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for Imu:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structImu__coll__graph.png" border="0" usemap="#aImu_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aImu_coll__map" id="aImu_coll__map">
-<area shape="rect" title="abstract IMU interface providing fixed point interface" alt="" coords="601,735,647,763"/>
-<area shape="rect" href="imu_8h.html#structimu__gyro__t" title=" " alt="" coords="351,316,445,344"/>
-<area shape="poly" title=" " alt="" coords="415,355,618,734,613,735,413,360"/>
-<area shape="rect" href="imu_8h.html#structimu__calib__t" title=" " alt="" coords="37,372,133,400"/>
-<area shape="poly" title=" " alt="" coords="146,367,188,357,274,342,352,333,348,337,275,348,189,362,150,371"/>
-<area shape="rect" href="imu_8h.html#structimu__accel__t" title=" " alt="" coords="348,708,448,736"/>
-<area shape="poly" title=" " alt="" coords="147,388,249,398,290,405,312,413,329,436,345,469,370,555,387,644,397,708,392,708,382,645,364,557,340,471,325,438,309,418,288,410,248,404,150,393"/>
-<area shape="rect" href="imu_8h.html#structimu__mag__t" title=" " alt="" coords="351,784,445,812"/>
-<area shape="poly" title=" " alt="" coords="118,406,153,426,189,443,225,450,255,448,284,450,298,457,313,470,325,493,330,526,330,606,327,688,330,721,337,746,353,766,373,783,368,784,349,770,332,749,324,722,322,688,325,606,325,526,320,495,309,473,296,461,283,455,255,453,224,455,188,448,151,431,120,411"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32Rates" title="angular rates" alt="" coords="39,148,131,176"/>
-<area shape="poly" title=" " alt="" coords="144,157,185,159,228,165,272,177,312,197,342,224,366,257,394,316,389,316,362,259,339,228,309,202,270,182,227,170,185,164,148,161"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatRates" title="angular rates" alt="" coords="39,26,131,53"/>
-<area shape="poly" title=" " alt="" coords="144,29,186,27,230,32,274,44,312,67,339,94,359,127,375,163,386,199,397,267,399,316,394,316,391,268,380,201,370,165,355,130,335,98,309,71,272,49,229,37,186,33,147,33"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32RMat" title="rotation matrix" alt="" coords="41,568,129,596"/>
-<area shape="poly" title=" " alt="" coords="124,559,188,529,223,520,253,517,280,512,309,494,341,458,365,416,381,375,392,347,394,342,386,377,370,418,346,461,312,498,282,517,253,522,224,525,190,534,128,562"/>
-<area shape="poly" title=" " alt="" coords="142,566,183,560,227,559,271,565,312,581,345,608,369,643,385,679,395,708,390,708,381,681,364,646,341,612,309,586,269,570,226,564,184,565,146,570"/>
-<area shape="poly" title=" " alt="" coords="143,599,189,611,225,615,255,614,283,618,298,625,313,637,323,651,328,664,329,691,328,717,330,731,337,746,354,766,375,783,369,784,350,770,332,749,325,733,322,718,323,691,323,665,318,654,309,641,295,630,282,623,255,620,225,621,188,616,145,603"/>
-<area shape="rect" href="group__math__orientation__representation.html#structOrientationReps" title=" " alt="" coords="335,1335,461,1363"/>
-<area shape="poly" title=" " alt="" coords="108,604,146,637,190,667,207,674,224,677,255,678,284,681,298,689,313,702,329,794,355,988,397,1335,392,1334,350,989,324,794,308,705,295,693,282,686,254,683,223,683,206,680,187,672,143,642,110,609"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatEulers" title="euler angles" alt="" coords="38,1172,132,1200"/>
-<area shape="poly" title=" " alt="" coords="121,1162,188,1129,225,1120,256,1118,283,1112,296,1104,308,1091,317,1067,322,1022,328,898,332,696,364,487,393,347,394,342,369,487,337,697,334,898,328,1022,322,1068,313,1094,299,1108,285,1117,257,1123,225,1125,190,1134,125,1166"/>
-<area shape="poly" title=" " alt="" coords="146,1184,243,1177,283,1168,309,1154,318,1141,324,1124,331,1081,331,1028,327,970,320,856,322,808,332,772,349,750,372,734,369,738,352,754,337,774,327,809,325,856,333,969,336,1027,336,1081,329,1126,322,1144,312,1158,285,1173,243,1182,149,1189"/>
-<area shape="poly" title=" " alt="" coords="126,1204,170,1220,218,1231,243,1232,266,1230,289,1223,309,1210,330,1182,348,1137,362,1080,373,1018,387,896,395,815,397,810,393,896,379,1018,368,1081,353,1138,335,1184,312,1214,291,1228,267,1235,243,1238,217,1236,168,1225,128,1209"/>
-<area shape="poly" title=" " alt="" coords="105,1210,143,1251,165,1271,190,1288,221,1303,248,1309,276,1312,311,1319,354,1334,349,1335,310,1325,275,1317,247,1314,220,1308,187,1293,162,1276,139,1255,105,1215"/>
-<area shape="rect" href="low__pass__filter_8h.html#structSecondOrderLowPass" title="Second order low pass filter structure." alt="" coords="5,232,165,260"/>
-<area shape="poly" title=" " alt="" coords="178,229,246,229,279,235,312,245,337,259,358,277,390,315,384,316,354,281,333,263,310,250,278,240,245,235,181,233"/>
-<area shape="poly" title=" " alt="" coords="144,263,189,275,225,281,256,282,284,288,313,308,324,332,337,374,362,494,397,708,392,708,357,494,332,376,320,334,309,312,282,292,255,287,225,286,188,280,147,267"/>
-<area shape="poly" title=" " alt="" coords="462,727,603,745,599,747,464,732"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32Vect3" title=" " alt="" coords="40,971,130,999"/>
-<area shape="poly" title=" " alt="" coords="142,963,249,926,309,901,319,886,324,871,323,840,321,808,324,790,332,771,350,750,373,734,370,738,353,754,337,774,329,792,326,808,328,840,329,871,324,888,312,905,250,931,146,967"/>
-<area shape="poly" title=" " alt="" coords="116,1005,159,1030,209,1051,235,1057,261,1059,286,1054,309,1043,335,1019,355,990,370,957,380,924,392,859,396,815,398,810,397,860,386,925,375,959,359,992,339,1022,312,1047,288,1059,262,1064,235,1063,208,1056,157,1035,118,1010"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatVect3" title=" " alt="" coords="40,748,130,776"/>
-<area shape="poly" title=" " alt="" coords="144,752,349,726,346,730,147,757"/>
-<area shape="poly" title=" " alt="" coords="130,780,189,796,274,803,352,801,348,804,274,808,188,801,133,784"/>
-<area shape="poly" title=" " alt="" coords="459,793,517,785,576,771,603,761,599,765,578,776,518,791,462,797"/>
-<area shape="poly" title=" " alt="" coords="407,1319,615,763,620,763,412,1321"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32Quat" title="Rotation quaternion." alt="" coords="42,1447,128,1475"/>
-<area shape="poly" title=" " alt="" coords="143,1459,224,1451,268,1442,310,1426,332,1412,353,1395,384,1364,388,1361,357,1399,336,1416,312,1431,270,1447,225,1457,144,1464"/>
-<area shape="rect" href="group__math__algebra__int.html#structInt32Eulers" title="euler angles" alt="" coords="38,1503,132,1531"/>
-<area shape="poly" title=" " alt="" coords="148,1520,186,1520,229,1515,271,1505,309,1486,340,1458,363,1424,380,1390,390,1365,394,1361,385,1392,368,1427,344,1462,312,1491,272,1510,230,1520,187,1525,148,1525"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatQuat" title="Roation quaternion." alt="" coords="42,1335,128,1363"/>
-<area shape="poly" title=" " alt="" coords="143,1346,336,1347,333,1351,144,1351"/>
-<area shape="rect" href="group__math__algebra__float.html#structFloatRMat" title="rotation matrix" alt="" coords="41,1391,129,1419"/>
-<area shape="poly" title=" " alt="" coords="144,1399,224,1391,310,1376,364,1362,359,1364,311,1382,225,1397,146,1404"/>
+<area shape="rect" title="abstract IMU interface providing fixed point interface" alt="" coords="601,979,647,1006"/>
+<area shape="rect" href="imu_8h.html#structimu__gyro__t" title=" " alt="" coords="351,395,445,422"/>
+<area shape="poly" title=" " alt="" coords="411,435,620,978,615,978,409,439"/>
+<area shape="rect" href="imu_8h.html#structimu__calib__t" title=" " alt="" coords="37,832,133,860"/>
+<area shape="poly" title=" " alt="" coords="108,819,138,781,162,736,167,713,169,683,168,611,170,541,176,513,187,492,201,480,216,473,244,471,275,473,292,471,310,466,348,444,382,420,379,425,351,448,312,471,293,477,275,478,244,476,217,478,204,484,191,496,181,515,175,542,173,611,174,683,172,714,167,737,142,784,113,821"/>
+<area shape="rect" href="imu_8h.html#structimu__accel__t" title=" " alt="" coords="348,893,448,921"/>
+<area shape="poly" title=" " alt="" coords="148,848,227,857,311,873,366,892,361,894,310,878,226,862,150,852"/>
+<area shape="rect" href="imu_8h.html#structimu__mag__t" title=" " alt="" coords="351,1196,445,1224"/>
+<area shape="poly" title=" " alt="" coords="95,872,145,1023,171,1095,191,1133,219,1150,246,1154,276,1155,312,1163,375,1194,370,1196,310,1168,275,1161,245,1160,217,1155,187,1137,166,1097,140,1025,95,878"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32Rates" title="angular rates" alt="" coords="39,92,131,120"/>
+<area shape="poly" title=" " alt="" coords="144,96,186,94,230,99,274,111,312,134,340,164,361,198,376,235,387,273,398,344,400,395,394,394,392,345,382,275,371,237,356,200,336,167,309,139,272,116,229,104,186,100,148,100"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatRates" title="angular rates" alt="" coords="39,148,131,176"/>
+<area shape="poly" title=" " alt="" coords="144,162,241,170,283,179,312,192,335,214,353,240,379,298,393,353,398,394,393,394,387,354,374,299,349,243,331,217,309,196,282,184,240,175,148,166"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32RMat" title="rotation matrix" alt="" coords="41,1395,129,1422"/>
+<area shape="poly" title=" " alt="" coords="121,1384,145,1363,162,1338,167,1319,171,1289,173,1202,167,968,165,736,171,652,178,623,187,604,201,592,216,586,247,587,278,590,293,587,309,578,327,561,343,541,367,497,383,455,393,425,394,420,388,456,372,500,347,544,331,565,312,582,295,592,278,595,246,592,217,591,204,596,191,607,183,624,177,653,170,736,173,968,178,1202,176,1289,173,1320,167,1340,149,1367,126,1387"/>
+<area shape="poly" title=" " alt="" coords="120,1384,144,1363,162,1338,168,1317,171,1289,170,1222,171,1155,176,1128,187,1108,201,1096,217,1091,247,1092,278,1094,293,1091,309,1082,328,1065,344,1044,368,998,383,954,393,924,395,919,388,956,373,1001,348,1047,332,1068,312,1086,295,1096,279,1099,247,1097,218,1096,204,1101,191,1112,181,1130,176,1156,175,1222,176,1290,174,1318,167,1340,148,1367,125,1387"/>
+<area shape="poly" title=" " alt="" coords="122,1427,165,1446,214,1461,239,1464,264,1463,287,1457,309,1446,334,1423,354,1395,369,1364,379,1331,391,1269,395,1226,398,1221,396,1270,384,1332,374,1366,358,1398,338,1427,312,1450,289,1462,264,1468,239,1469,213,1466,163,1451,123,1433"/>
+<area shape="rect" href="group__math__orientation__representation.html#structOrientationReps" title=" " alt="" coords="335,1548,461,1576"/>
+<area shape="poly" title=" " alt="" coords="107,1432,145,1469,190,1502,222,1516,248,1521,276,1525,311,1533,354,1547,349,1548,310,1538,275,1530,247,1527,220,1521,187,1506,141,1473,108,1437"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatEulers" title="euler angles" alt="" coords="38,1300,132,1328"/>
+<area shape="poly" title=" " alt="" coords="100,1286,133,1220,150,1180,162,1139,166,1097,166,1027,164,839,167,654,173,586,179,563,187,548,201,536,216,530,246,530,277,532,293,530,309,522,336,499,359,472,391,420,389,425,363,475,340,503,312,526,294,535,277,538,245,535,217,535,204,540,191,551,184,565,179,587,172,654,169,839,171,1027,171,1098,167,1140,155,1182,138,1222,105,1287"/>
+<area shape="poly" title=" " alt="" coords="98,1285,129,1219,162,1138,167,1114,168,1092,172,1072,187,1052,202,1041,218,1036,248,1036,278,1037,293,1034,309,1026,337,1002,360,973,392,919,389,924,364,976,341,1006,312,1030,295,1039,278,1042,247,1041,219,1041,205,1045,191,1056,177,1074,174,1093,173,1114,167,1140,134,1221,103,1287"/>
+<area shape="poly" title=" " alt="" coords="146,1321,186,1322,227,1321,270,1314,310,1300,335,1284,356,1263,387,1226,390,1222,360,1267,338,1288,312,1305,271,1319,228,1326,186,1328,149,1325"/>
+<area shape="poly" title=" " alt="" coords="119,1334,190,1375,224,1387,253,1393,281,1402,312,1421,342,1452,365,1487,394,1548,389,1547,361,1489,338,1455,309,1425,279,1406,252,1399,223,1393,188,1380,120,1339"/>
+<area shape="rect" href="low__pass__filter_8h.html#structSecondOrderLowPass" title="Second order low pass filter structure." alt="" coords="5,468,165,496"/>
+<area shape="poly" title=" " alt="" coords="97,453,133,401,158,376,187,357,221,345,249,343,277,347,312,357,349,372,380,393,376,395,346,377,310,362,276,353,248,348,222,350,190,362,161,380,137,405,102,455"/>
+<area shape="poly" title=" " alt="" coords="98,507,135,570,160,602,190,629,206,637,222,642,252,642,281,644,297,650,312,661,336,688,355,719,370,752,381,786,394,848,399,894,393,893,389,849,376,787,365,754,351,722,332,691,309,665,294,655,280,649,251,648,221,647,204,642,187,633,156,606,131,573,99,513"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatVect3" title=" " alt="" coords="40,697,130,725"/>
+<area shape="poly" title=" " alt="" coords="95,682,162,506,167,486,169,468,174,452,187,436,210,428,252,421,352,411,349,414,253,426,212,433,190,440,178,454,174,469,172,487,167,508,100,683"/>
+<area shape="poly" title=" " alt="" coords="144,711,240,718,283,726,312,738,331,755,348,774,372,818,388,860,396,893,391,893,383,862,367,820,343,777,327,758,309,743,281,731,240,723,147,715"/>
+<area shape="poly" title=" " alt="" coords="110,734,148,764,190,791,224,800,254,800,283,804,298,810,313,823,330,849,334,874,334,900,337,932,396,1195,391,1195,332,933,329,900,329,874,325,851,309,826,295,815,282,809,254,806,223,806,188,796,145,768,112,739"/>
+<area shape="rect" href="imu_8h.html#structimu__rate__est__t" title="Measured sample rate of a sensor, counted against the timestamps." alt="" coords="26,232,144,260"/>
+<area shape="poly" title=" " alt="" coords="154,227,193,222,234,222,274,229,312,245,332,260,348,278,373,320,388,361,397,394,391,394,383,363,368,322,344,281,328,264,309,249,273,234,233,227,193,227,157,231"/>
+<area shape="poly" title=" " alt="" coords="146,262,189,275,226,282,257,284,285,291,313,314,329,397,355,574,397,893,392,893,349,575,324,398,308,317,282,296,256,289,225,287,188,280,149,267"/>
+<area shape="poly" title=" " alt="" coords="451,924,603,983,598,985,452,930"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32Vect3" title=" " alt="" coords="40,1100,130,1128"/>
+<area shape="poly" title=" " alt="" coords="100,1086,136,1039,160,1015,187,996,220,983,249,981,277,980,310,970,349,946,384,919,380,924,352,950,312,975,278,985,249,986,221,988,190,1000,164,1019,140,1042,105,1088"/>
+<area shape="poly" title=" " alt="" coords="97,1139,113,1170,133,1202,158,1232,190,1256,221,1268,248,1270,276,1265,310,1255,346,1241,380,1222,376,1226,348,1245,312,1260,277,1270,248,1275,220,1273,187,1260,155,1236,128,1205,108,1173,97,1145"/>
+<area shape="poly" title=" " alt="" coords="423,1183,610,1004,607,1009,427,1187"/>
+<area shape="poly" title=" " alt="" coords="411,1532,484,1372,531,1263,574,1150,600,1069,618,1009,621,1004,605,1070,580,1152,536,1265,489,1374,415,1535"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32Quat" title="Rotation quaternion." alt="" coords="42,1716,128,1744"/>
+<area shape="poly" title=" " alt="" coords="143,1733,182,1733,226,1729,269,1718,309,1699,340,1672,363,1637,380,1603,390,1578,394,1574,385,1605,368,1640,344,1675,312,1704,271,1723,227,1734,183,1738,143,1738"/>
+<area shape="rect" href="group__math__algebra__int.html#structInt32Eulers" title="euler angles" alt="" coords="38,1548,132,1576"/>
+<area shape="poly" title=" " alt="" coords="148,1559,336,1560,333,1564,148,1564"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatQuat" title="Roation quaternion." alt="" coords="42,1604,128,1632"/>
+<area shape="poly" title=" " alt="" coords="143,1612,223,1605,310,1590,364,1575,359,1577,311,1595,224,1610,144,1617"/>
+<area shape="rect" href="group__math__algebra__float.html#structFloatRMat" title="rotation matrix" alt="" coords="41,1660,129,1688"/>
+<area shape="poly" title=" " alt="" coords="144,1672,225,1664,268,1655,310,1639,332,1625,353,1608,384,1577,388,1574,357,1612,336,1629,312,1644,270,1660,226,1670,145,1677"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
@@ -749,7 +841,7 @@ The magnetometer sensors. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00042">42</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu_8c_source.html#l01004">imu_get_accel()</a>, <a class="el" href="imu_8c_source.html#l00981">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l01028">imu_get_mag()</a>, <a class="el" href="imu_8c_source.html#l00470">imu_init()</a>, <a class="el" href="imu_8c_source.html#l01050">imu_set_body_to_imu_eulers()</a>, <a class="el" href="imu_8c_source.html#l00217">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00189">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00203">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00261">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00233">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00247">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00305">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00321">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00277">send_mag_raw()</a>, and <a class="el" href="imu_8c_source.html#l00291">send_mag_scaled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu_8c_source.html#l01193">imu_get_accel()</a>, <a class="el" href="imu_8c_source.html#l01170">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l01217">imu_get_mag()</a>, <a class="el" href="imu_8c_source.html#l00645">imu_init()</a>, <a class="el" href="imu_8c_source.html#l01239">imu_set_body_to_imu_eulers()</a>, <a class="el" href="imu_8c_source.html#l00242">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00214">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00228">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00286">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00258">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00272">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00330">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00346">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00302">send_mag_raw()</a>, and <a class="el" href="imu_8c_source.html#l00316">send_mag_scaled()</a>.</p>
 
 </div>
 </div>
@@ -791,11 +883,11 @@ The magnetometer sensors. </td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>struct imu_accel_t* The accel structure if found/created else NULL </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01004">1004</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01193">1193</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00080">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00086">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00073">imu_accel_t::abi_id</a>, <a class="el" href="imu_8c_source.html#l00432">imu</a>, and <a class="el" href="imu_8h_source.html#l00042">IMU_MAX_SENSORS</a>.</p>
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00080">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00086">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00085">imu_accel_t::abi_id</a>, <a class="el" href="imu_8c_source.html#l00465">imu</a>, and <a class="el" href="imu_8h_source.html#l00042">IMU_MAX_SENSORS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00850">imu_accel_raw_cb()</a>, <a class="el" href="imu__quality__assessment_8c_source.html#l00047">imu_quality_assessment_periodic()</a>, and <a class="el" href="imu_8c_source.html#l00705">imu_set_defaults_accel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l01029">imu_accel_raw_cb()</a>, <a class="el" href="imu__quality__assessment_8c_source.html#l00047">imu_quality_assessment_periodic()</a>, and <a class="el" href="imu_8c_source.html#l00871">imu_set_defaults_accel()</a>.</p>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
@@ -954,11 +1046,11 @@ The magnetometer sensors. </td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>struct imu_gyro_t* The gyro structure if found/created else NULL </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00981">981</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01170">1170</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00080">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00086">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00056">imu_gyro_t::abi_id</a>, <a class="el" href="imu_8c_source.html#l00432">imu</a>, and <a class="el" href="imu_8h_source.html#l00042">IMU_MAX_SENSORS</a>.</p>
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00080">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00086">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00065">imu_gyro_t::abi_id</a>, <a class="el" href="imu_8c_source.html#l00465">imu</a>, and <a class="el" href="imu_8h_source.html#l00042">IMU_MAX_SENSORS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00755">imu_gyro_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00676">imu_set_defaults_gyro()</a>, and <a class="el" href="ahrs__aligner_8c_source.html#l00066">send_aligner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00921">imu_gyro_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00842">imu_set_defaults_gyro()</a>, and <a class="el" href="ahrs__aligner_8c_source.html#l00066">send_aligner()</a>.</p>
 <div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1118,11 +1210,11 @@ The magnetometer sensors. </td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>struct imu_mag_t* The mag structure if found/created else NULL </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01028">1028</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01217">1217</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00080">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00086">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00090">imu_mag_t::abi_id</a>, <a class="el" href="imu_8c_source.html#l00432">imu</a>, and <a class="el" href="imu_8h_source.html#l00042">IMU_MAX_SENSORS</a>.</p>
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00080">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00086">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00104">imu_mag_t::abi_id</a>, <a class="el" href="imu_8c_source.html#l00465">imu</a>, and <a class="el" href="imu_8h_source.html#l00042">IMU_MAX_SENSORS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00946">imu_mag_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00734">imu_set_defaults_mag()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l01684">mag_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l01135">imu_mag_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00900">imu_set_defaults_mag()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l01684">mag_cb()</a>.</p>
 <div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1233,88 +1325,119 @@ The magnetometer sensors. </td></tr>
 
 <p>External functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00470">470</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00645">645</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00080">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00086">ABI_DISABLE</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__algebra_8h_source.html#l00715">EULERS_BFP_OF_REAL</a>, <a class="el" href="imu_8c_source.html#l00432">imu</a>, <a class="el" href="imu_8c_source.html#l00170">IMU_ACCEL_ABI_SEND_ID</a>, <a class="el" href="imu_8c_source.html#l00113">IMU_ACCEL_CALIB</a>, <a class="el" href="imu_8c_source.html#l00850">imu_accel_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00433">imu_accel_raw_ev</a>, <a class="el" href="imu_8c_source.html#l00086">IMU_ACCEL_X_SIGN</a>, <a class="el" href="imu_8c_source.html#l00089">IMU_ACCEL_Y_SIGN</a>, <a class="el" href="imu_8c_source.html#l00092">IMU_ACCEL_Z_SIGN</a>, <a class="el" href="imu_8c_source.html#l00154">IMU_BODY_TO_IMU_PHI</a>, <a class="el" href="imu_8c_source.html#l00156">IMU_BODY_TO_IMU_PSI</a>, <a class="el" href="imu_8c_source.html#l00155">IMU_BODY_TO_IMU_THETA</a>, <a class="el" href="imu_8c_source.html#l00164">IMU_GYRO_ABI_SEND_ID</a>, <a class="el" href="imu_8c_source.html#l00074">IMU_GYRO_CALIB</a>, <a class="el" href="imu_8c_source.html#l00047">IMU_GYRO_P_SIGN</a>, <a class="el" href="imu_8c_source.html#l00050">IMU_GYRO_Q_SIGN</a>, <a class="el" href="imu_8c_source.html#l00053">IMU_GYRO_R_SIGN</a>, <a class="el" href="imu_8c_source.html#l00755">imu_gyro_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00433">imu_gyro_raw_ev</a>, <a class="el" href="imu_8c_source.html#l00176">IMU_MAG_ABI_SEND_ID</a>, <a class="el" href="imu_8c_source.html#l00148">IMU_MAG_CALIB</a>, <a class="el" href="imu_8c_source.html#l00946">imu_mag_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00433">imu_mag_raw_ev</a>, <a class="el" href="max7456_8c_source.html#l00099">IMU_MAG_X_SIGN</a>, <a class="el" href="imu_8c_source.html#l00124">IMU_MAG_Y_SIGN</a>, <a class="el" href="imu_8c_source.html#l00127">IMU_MAG_Z_SIGN</a>, <a class="el" href="imu_8h_source.html#l00042">IMU_MAX_SENSORS</a>, <a class="el" href="low__pass__filter_8h_source.html#l00313">init_butterworth_2_low_pass()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00347">int32_rmat_identity()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00409">int32_rmat_of_eulers</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00576">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT_VECT3_ZERO</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00123">mag_calib</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00215">orientationGetRMat_i()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00197">orientationSetEulers_f()</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8c_source.html#l00217">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00189">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00203">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00261">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00233">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00247">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00305">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00321">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00277">send_mag_raw()</a>, <a class="el" href="imu_8c_source.html#l00291">send_mag_scaled()</a>, <a class="el" href="shell__arch_8c_source.html#l00091">shell_add_entry()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00080">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00086">ABI_DISABLE</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__algebra_8h_source.html#l00715">EULERS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00161">FLOAT_VECT3_ZERO</a>, <a class="el" href="imu_8c_source.html#l00465">imu</a>, <a class="el" href="imu_8c_source.html#l00195">IMU_ACCEL_ABI_SEND_ID</a>, <a class="el" href="imu_8c_source.html#l00138">IMU_ACCEL_CALIB</a>, <a class="el" href="imu_8c_source.html#l01029">imu_accel_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00466">imu_accel_raw_ev</a>, <a class="el" href="imu_8c_source.html#l00111">IMU_ACCEL_X_SIGN</a>, <a class="el" href="imu_8c_source.html#l00114">IMU_ACCEL_Y_SIGN</a>, <a class="el" href="imu_8c_source.html#l00117">IMU_ACCEL_Z_SIGN</a>, <a class="el" href="imu_8c_source.html#l00179">IMU_BODY_TO_IMU_PHI</a>, <a class="el" href="imu_8c_source.html#l00181">IMU_BODY_TO_IMU_PSI</a>, <a class="el" href="imu_8c_source.html#l00180">IMU_BODY_TO_IMU_THETA</a>, <a class="el" href="imu_8c_source.html#l00189">IMU_GYRO_ABI_SEND_ID</a>, <a class="el" href="imu_8c_source.html#l00099">IMU_GYRO_CALIB</a>, <a class="el" href="imu_8c_source.html#l00072">IMU_GYRO_P_SIGN</a>, <a class="el" href="imu_8c_source.html#l00075">IMU_GYRO_Q_SIGN</a>, <a class="el" href="imu_8c_source.html#l00078">IMU_GYRO_R_SIGN</a>, <a class="el" href="imu_8c_source.html#l00921">imu_gyro_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00466">imu_gyro_raw_ev</a>, <a class="el" href="imu_8c_source.html#l00201">IMU_MAG_ABI_SEND_ID</a>, <a class="el" href="imu_8c_source.html#l00173">IMU_MAG_CALIB</a>, <a class="el" href="imu_8c_source.html#l01135">imu_mag_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00466">imu_mag_raw_ev</a>, <a class="el" href="max7456_8c_source.html#l00099">IMU_MAG_X_SIGN</a>, <a class="el" href="imu_8c_source.html#l00149">IMU_MAG_Y_SIGN</a>, <a class="el" href="imu_8c_source.html#l00152">IMU_MAG_Z_SIGN</a>, <a class="el" href="imu_8h_source.html#l00042">IMU_MAX_SENSORS</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00347">int32_rmat_identity()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00409">int32_rmat_of_eulers</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00576">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT_VECT3_ZERO</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00123">mag_calib</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00215">orientationGetRMat_i()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00197">orientationSetEulers_f()</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8c_source.html#l00242">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00214">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00228">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00286">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00258">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00272">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00330">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00346">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00302">send_mag_raw()</a>, <a class="el" href="imu_8c_source.html#l00316">send_mag_scaled()</a>, <a class="el" href="shell__arch_8c_source.html#l00091">shell_add_entry()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
 <div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_a86a06fe7a9831292bd92867da2d12f80_cgraph.png" border="0" usemap="#aimu_8h_a86a06fe7a9831292bd92867da2d12f80_cgraph" loading="lazy" alt=""/></div>
 <map name="aimu_8h_a86a06fe7a9831292bd92867da2d12f80_cgraph" id="aimu_8h_a86a06fe7a9831292bd92867da2d12f80_cgraph">
-<area shape="rect" title="External functions." alt="" coords="5,809,80,837"/>
-<area shape="rect" href="imu_8c.html#a4a7dfb75ae6cff2054ab5e3764fa15dd" title=" " alt="" coords="158,135,298,162"/>
-<area shape="poly" title=" " alt="" coords="41,809,45,694,57,513,68,417,82,328,101,253,113,224,126,200,144,181,168,167,165,172,147,185,130,203,117,226,106,255,87,329,73,418,62,513,50,694,47,809"/>
-<area shape="rect" href="imu_8c.html#a11d2b2eccda5e670f4d7d3f81d7abb3d" title=" " alt="" coords="161,377,296,405"/>
-<area shape="poly" title=" " alt="" coords="42,809,49,728,64,610,89,493,106,446,126,415,148,401,145,405,130,418,111,449,94,494,70,611,54,729,47,809"/>
-<area shape="rect" href="imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2" title=" " alt="" coords="161,213,296,241"/>
-<area shape="poly" title=" " alt="" coords="42,809,46,738,58,627,83,495,102,429,125,365,142,332,162,301,204,250,202,255,166,304,146,335,130,367,107,430,88,497,63,627,51,738,47,809"/>
-<area shape="rect" href="low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="158,429,298,474"/>
-<area shape="poly" title=" " alt="" coords="43,808,53,740,70,643,94,548,109,510,126,484,146,470,143,474,130,488,114,513,99,550,75,645,58,741,48,809"/>
-<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="161,497,296,525"/>
-<area shape="poly" title=" " alt="" coords="41,809,43,758,53,684,64,644,79,605,99,568,126,536,148,522,145,527,129,540,104,571,84,607,69,646,58,685,48,758,46,809"/>
-<area shape="rect" href="group__math__algebra__int.html#gae3596ca433cdfa635eca7998911907ba" title="initialises a rotation matrix to identity" alt="" coords="154,549,303,577"/>
-<area shape="poly" title=" " alt="" coords="42,809,47,766,60,707,85,643,103,614,126,588,141,579,138,583,129,592,107,617,89,645,65,708,52,767,47,809"/>
-<area shape="rect" href="group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="148,601,308,629"/>
-<area shape="poly" title=" " alt="" coords="44,808,52,774,67,728,91,681,107,659,126,640,136,634,133,639,129,644,111,662,95,684,72,731,57,775,49,809"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="146,653,311,681"/>
-<area shape="poly" title=" " alt="" coords="46,808,74,751,97,719,126,692,138,686,135,690,129,696,101,723,79,754,52,810"/>
-<area shape="rect" href="preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="140,705,317,733"/>
-<area shape="poly" title=" " alt="" coords="53,808,84,775,126,744,144,737,140,741,129,748,88,779,58,810"/>
-<area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="128,757,329,785"/>
-<area shape="poly" title=" " alt="" coords="78,810,127,795,159,787,156,791,128,800,82,814"/>
-<area shape="rect" href="imu_8c.html#ad22c09e97d332fdf55989e3881b55322" title=" " alt="" coords="182,809,275,837"/>
-<area shape="poly" title=" " alt="" coords="79,821,168,821,164,825,81,825"/>
-<area shape="rect" href="imu_8c.html#a8bf5ba349fd3a82667acb22b90b3e53c" title=" " alt="" coords="166,861,290,889"/>
-<area shape="poly" title=" " alt="" coords="79,832,128,846,160,855,155,858,127,851,81,837"/>
-<area shape="rect" href="imu_8c.html#ade53e6d9e9c15bca1c045e744f28ef0b" title=" " alt="" coords="157,913,300,941"/>
-<area shape="poly" title=" " alt="" coords="55,835,88,867,129,898,145,907,140,909,126,903,84,871,56,840"/>
-<area shape="rect" href="imu_8c.html#aa41528f38e1f342b35ae31c21b51d803" title=" " alt="" coords="184,965,272,993"/>
-<area shape="poly" title=" " alt="" coords="49,835,79,892,101,924,129,950,149,961,171,970,167,972,146,966,126,955,97,927,74,895,49,840"/>
-<area shape="rect" href="imu_8c.html#aef1f95c9b1237a23530852c5ed12863a" title=" " alt="" coords="169,1017,288,1045"/>
-<area shape="poly" title=" " alt="" coords="46,835,57,871,72,916,95,963,111,984,129,1002,157,1019,152,1021,126,1007,107,987,91,965,67,918,52,872,46,840"/>
-<area shape="rect" href="imu_8c.html#aa1b2b69b4fcbae31921a2794700de0d1" title=" " alt="" coords="160,1069,297,1097"/>
-<area shape="poly" title=" " alt="" coords="45,834,52,879,65,938,89,1001,107,1030,129,1054,148,1068,143,1070,126,1059,103,1033,85,1003,60,940,47,880,45,840"/>
-<area shape="rect" href="imu_8c.html#ae7d9de96df316a3e4d1bf9306bf8eb0d" title=" " alt="" coords="184,1121,272,1149"/>
-<area shape="poly" title=" " alt="" coords="44,835,48,888,58,961,69,1000,84,1039,104,1075,129,1107,148,1119,171,1129,166,1131,146,1124,126,1110,99,1078,79,1041,64,1002,53,962,43,889,43,840"/>
-<area shape="rect" href="imu_8c.html#a73e1fbeb78986b684f07a6555ddae97d" title=" " alt="" coords="158,1173,299,1201"/>
-<area shape="poly" title=" " alt="" coords="45,835,57,905,74,1002,99,1097,113,1134,130,1159,146,1172,141,1173,126,1162,109,1137,93,1099,69,1003,52,906,45,840"/>
-<area shape="rect" href="imu_8c.html#a1899ba1b8e84b85be17e217efcf1e815" title=" " alt="" coords="169,1225,288,1253"/>
-<area shape="poly" title=" " alt="" coords="45,835,55,914,71,1027,96,1138,111,1182,130,1211,157,1229,151,1230,126,1214,107,1184,90,1140,66,1028,50,915,45,840"/>
-<area shape="rect" href="imu_8c.html#a63448db29d3d3265d23bb3c75c2ea671" title=" " alt="" coords="160,1277,297,1305"/>
-<area shape="poly" title=" " alt="" coords="45,835,53,923,68,1052,79,1118,92,1179,109,1229,130,1263,148,1278,143,1278,126,1266,105,1232,87,1181,73,1119,62,1053,48,924,44,840"/>
-<area shape="rect" href="shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry." alt="" coords="166,1329,290,1357"/>
-<area shape="poly" title=" " alt="" coords="44,835,52,933,65,1077,75,1152,89,1220,108,1277,130,1315,155,1333,149,1333,126,1318,103,1279,84,1222,70,1153,59,1077,46,933,44,840"/>
-<area shape="rect" href="group__math__algebra__float.html#gada020417563d6c63ded5627170f3ffc2" title="rotate 3D vector by transposed rotation matrix." alt="" coords="388,5,569,33"/>
-<area shape="poly" title=" " alt="" coords="244,133,300,89,337,64,376,43,397,36,394,40,378,48,340,69,303,93,248,136"/>
-<area shape="rect" href="group__math__algebra__float.html#ga7f3236df004aa53416a334da7c765322" title="rotate 3D vector by rotation matrix." alt="" coords="412,57,545,85"/>
-<area shape="poly" title=" " alt="" coords="267,132,376,95,408,88,404,91,378,100,271,136"/>
+<area shape="rect" title="External functions." alt="" coords="5,880,80,908"/>
+<area shape="rect" href="imu_8c.html#a4a7dfb75ae6cff2054ab5e3764fa15dd" title=" " alt="" coords="158,265,298,293"/>
+<area shape="poly" title=" " alt="" coords="42,879,51,782,68,633,92,481,108,418,125,373,155,332,194,300,191,305,159,336,130,375,113,420,98,482,73,634,56,782,48,880"/>
+<area shape="rect" href="imu_8c.html#a11d2b2eccda5e670f4d7d3f81d7abb3d" title=" " alt="" coords="161,385,296,413"/>
+<area shape="poly" title=" " alt="" coords="41,880,41,813,51,709,61,650,76,590,97,531,125,476,153,444,189,419,186,423,157,448,130,479,102,534,81,592,66,652,56,710,47,813,46,880"/>
+<area shape="rect" href="imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2" title=" " alt="" coords="161,489,296,517"/>
+<area shape="poly" title=" " alt="" coords="43,879,51,806,67,701,92,597,108,556,126,528,148,514,145,519,130,532,112,558,97,599,73,702,56,807,48,880"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="161,541,296,569"/>
+<area shape="poly" title=" " alt="" coords="40,880,41,824,50,744,60,700,76,657,97,616,126,580,148,566,145,571,129,584,102,619,80,659,65,702,55,745,46,825,46,880"/>
+<area shape="rect" href="group__math__algebra__int.html#gae3596ca433cdfa635eca7998911907ba" title="initialises a rotation matrix to identity" alt="" coords="154,593,303,621"/>
+<area shape="poly" title=" " alt="" coords="41,879,45,832,56,766,67,730,82,694,101,661,126,632,141,622,138,627,129,636,105,664,86,697,72,731,62,767,50,833,47,880"/>
+<area shape="rect" href="group__math__orientation__representation.html#gae493f3895306efdb545e40546699a732" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="148,645,308,673"/>
+<area shape="poly" title=" " alt="" coords="43,879,49,841,63,788,88,732,105,706,126,684,136,678,133,683,129,688,109,710,92,735,68,790,54,842,48,880"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="146,697,311,725"/>
+<area shape="poly" title=" " alt="" coords="45,879,54,849,70,810,94,770,126,736,137,730,134,735,129,740,98,773,75,813,59,851,50,880"/>
+<area shape="rect" href="preflight__checks_8c.html#ae94a1bda9186c9cfcde529873ce73550" title="Register a preflight check and add it to the linked list." alt="" coords="140,749,317,777"/>
+<area shape="poly" title=" " alt="" coords="49,879,79,833,100,809,126,788,140,781,137,786,129,792,104,812,83,837,54,881"/>
+<area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="128,801,329,829"/>
+<area shape="poly" title=" " alt="" coords="61,878,91,858,127,839,150,832,146,836,129,844,94,863,65,881"/>
+<area shape="rect" href="imu_8c.html#ad22c09e97d332fdf55989e3881b55322" title=" " alt="" coords="182,853,275,881"/>
+<area shape="poly" title=" " alt="" coords="78,886,168,874,165,878,82,891"/>
+<area shape="rect" href="imu_8c.html#a8bf5ba349fd3a82667acb22b90b3e53c" title=" " alt="" coords="166,905,290,933"/>
+<area shape="poly" title=" " alt="" coords="79,897,153,907,149,910,81,901"/>
+<area shape="rect" href="imu_8c.html#ade53e6d9e9c15bca1c045e744f28ef0b" title=" " alt="" coords="157,957,300,985"/>
+<area shape="poly" title=" " alt="" coords="63,906,95,925,129,942,150,951,146,953,127,947,92,929,65,911"/>
+<area shape="rect" href="imu_8c.html#aa41528f38e1f342b35ae31c21b51d803" title=" " alt="" coords="184,1009,272,1037"/>
+<area shape="poly" title=" " alt="" coords="51,906,83,950,104,974,129,994,171,1013,167,1015,126,999,101,978,79,954,52,911"/>
+<area shape="rect" href="imu_8c.html#aef1f95c9b1237a23530852c5ed12863a" title=" " alt="" coords="169,1061,288,1089"/>
+<area shape="poly" title=" " alt="" coords="47,906,59,937,75,975,98,1014,129,1046,157,1062,152,1064,126,1051,94,1017,71,977,54,939,48,911"/>
+<area shape="rect" href="imu_8c.html#aa1b2b69b4fcbae31921a2794700de0d1" title=" " alt="" coords="160,1113,297,1141"/>
+<area shape="poly" title=" " alt="" coords="45,905,54,946,68,997,92,1052,109,1077,129,1098,148,1111,143,1113,126,1103,105,1080,88,1055,63,999,49,947,45,910"/>
+<area shape="rect" href="imu_8c.html#ae7d9de96df316a3e4d1bf9306bf8eb0d" title=" " alt="" coords="184,1165,272,1193"/>
+<area shape="poly" title=" " alt="" coords="44,905,50,955,62,1020,72,1055,87,1090,105,1122,129,1151,148,1163,171,1173,167,1175,146,1168,126,1154,101,1126,82,1093,67,1057,56,1021,45,955,44,911"/>
+<area shape="rect" href="imu_8c.html#a73e1fbeb78986b684f07a6555ddae97d" title=" " alt="" coords="158,1217,299,1245"/>
+<area shape="poly" title=" " alt="" coords="43,906,46,963,55,1042,66,1086,81,1128,102,1168,130,1203,146,1216,141,1217,126,1206,97,1171,76,1130,60,1087,50,1043,41,964,43,911"/>
+<area shape="rect" href="imu_8c.html#a1899ba1b8e84b85be17e217efcf1e815" title=" " alt="" coords="169,1269,288,1297"/>
+<area shape="poly" title=" " alt="" coords="45,906,56,981,73,1085,97,1188,112,1228,130,1255,157,1273,152,1274,126,1258,108,1230,92,1190,67,1086,51,981,45,911"/>
+<area shape="rect" href="imu_8c.html#a63448db29d3d3265d23bb3c75c2ea671" title=" " alt="" coords="160,1321,297,1349"/>
+<area shape="poly" title=" " alt="" coords="45,905,54,989,69,1110,80,1172,94,1229,110,1276,130,1307,148,1322,143,1322,126,1310,106,1278,89,1230,75,1173,64,1111,49,990,45,911"/>
+<area shape="rect" href="shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry." alt="" coords="166,1373,290,1401"/>
+<area shape="poly" title=" " alt="" coords="45,906,53,999,66,1135,77,1206,91,1270,109,1323,130,1359,155,1377,149,1377,126,1362,104,1325,86,1272,72,1206,61,1136,47,999,44,911"/>
+<area shape="rect" href="group__math__algebra__float.html#gada020417563d6c63ded5627170f3ffc2" title="rotate 3D vector by transposed rotation matrix." alt="" coords="388,161,569,189"/>
+<area shape="poly" title=" " alt="" coords="251,263,307,231,376,199,402,192,398,196,378,204,310,236,255,267"/>
+<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="459,213,498,241"/>
+<area shape="poly" title=" " alt="" coords="297,263,446,232,443,236,300,267"/>
+<area shape="rect" href="imu_8c.html#ab532dd2107065a2e661099dbc9d2aaa3" title="Initialize the lowpass filters of a sensor on its first sample." alt="" coords="423,265,534,293"/>
+<area shape="poly" title=" " alt="" coords="297,277,409,277,405,281,300,281"/>
 <area shape="rect" href="imu_8c.html#a3bd2915a3c4a0e7965c5163398f3d00c" title="Find or create the accel in the imu structure." alt="" coords="421,109,536,137"/>
-<area shape="poly" title=" " alt="" coords="297,139,407,129,404,132,300,144"/>
-<area shape="rect" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix." alt="" coords="386,161,571,189"/>
-<area shape="poly" title=" " alt="" coords="297,154,373,162,368,165,300,158"/>
-<area shape="rect" href="low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="404,265,553,310"/>
-<area shape="poly" title=" " alt="" coords="261,160,297,178,331,200,345,214,355,226,364,238,379,250,392,259,387,261,375,255,360,242,350,230,341,217,327,204,294,182,264,165"/>
-<area shape="rect" href="low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="628,265,789,310"/>
-<area shape="poly" title=" " alt="" coords="552,285,615,286,611,289,555,289"/>
-<area shape="poly" title=" " alt="" coords="256,375,376,319,396,313,392,317,378,324,260,379"/>
-<area shape="rect" href="group__math__algebra__float.html#ga8fccbc7ef50f549b794f731f60184ac7" title="rotate anglular rates by rotation matrix." alt="" coords="403,333,554,361"/>
-<area shape="poly" title=" " alt="" coords="294,377,389,361,386,365,298,381"/>
-<area shape="rect" href="group__math__algebra__float.html#ga2c8e98c79fa8cdb2d7d3bbbcebded439" title="rotate anglular rates by transposed rotation matrix." alt="" coords="379,385,578,413"/>
-<area shape="poly" title=" " alt="" coords="295,391,366,394,361,397,297,396"/>
-<area shape="rect" href="imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="424,437,534,465"/>
-<area shape="poly" title=" " alt="" coords="288,403,411,433,406,436,290,408"/>
-<area shape="rect" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix." alt="" coords="377,489,580,517"/>
-<area shape="poly" title=" " alt="" coords="295,399,330,414,347,429,355,445,364,460,379,474,390,482,385,484,375,479,359,463,351,448,342,433,328,419,297,404"/>
-<area shape="poly" title=" " alt="" coords="294,211,396,191,392,195,298,215"/>
-<area shape="rect" href="imu_8c.html#a9d352d575dc0e30a32e31b1b6fcd6211" title="Find or create the mag in the imu structure." alt="" coords="424,213,534,241"/>
-<area shape="poly" title=" " alt="" coords="295,225,410,225,406,229,297,229"/>
-<area shape="rect" href="low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="377,541,580,569"/>
-<area shape="poly" title=" " alt="" coords="298,469,330,484,345,495,355,506,364,516,378,526,395,535,390,537,376,531,361,520,351,509,342,499,328,488,300,474"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="396,601,561,629"/>
-<area shape="poly" title=" " alt="" coords="308,613,382,614,378,617,310,617"/>
-<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="634,601,783,629"/>
-<area shape="poly" title=" " alt="" coords="560,613,621,614,617,616,562,618"/>
+<area shape="poly" title=" " alt="" coords="240,263,295,207,333,175,376,147,408,136,404,140,378,152,336,179,298,211,244,266"/>
+<area shape="rect" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix." alt="" coords="386,489,571,517"/>
+<area shape="poly" title=" " alt="" coords="248,291,290,326,331,372,346,402,352,428,360,451,379,475,387,481,381,482,375,478,355,454,347,429,341,403,327,375,286,330,249,296"/>
+<area shape="rect" href="low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="404,317,553,362"/>
+<area shape="poly" title=" " alt="" coords="288,291,391,316,386,319,290,296"/>
+<area shape="rect" href="e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="675,5,742,33"/>
+<area shape="poly" title=" " alt="" coords="497,225,539,219,560,211,579,199,593,180,600,162,602,124,604,84,612,64,626,44,642,32,662,25,658,29,644,37,630,48,616,66,610,85,608,124,605,163,598,183,582,202,563,216,540,224,500,230"/>
+<area shape="rect" href="e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="628,57,789,85"/>
+<area shape="poly" title=" " alt="" coords="497,225,538,218,560,210,579,198,590,187,596,175,602,149,608,123,615,109,626,96,636,91,633,95,630,100,619,112,613,124,607,150,601,176,594,190,582,203,562,215,539,223,500,229"/>
+<area shape="rect" href="e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="675,161,742,189"/>
+<area shape="poly" title=" " alt="" coords="497,221,662,184,658,188,500,225"/>
+<area shape="rect" href="e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="640,109,777,137"/>
+<area shape="poly" title=" " alt="" coords="497,223,537,215,579,198,593,186,602,174,612,161,627,148,641,142,637,146,630,152,616,164,607,177,597,190,582,203,538,220,500,227"/>
+<area shape="rect" href="e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="674,213,743,241"/>
+<area shape="poly" title=" " alt="" coords="497,225,660,226,656,229,499,230"/>
+<area shape="rect" href="e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="667,265,750,293"/>
+<area shape="poly" title=" " alt="" coords="497,229,654,265,649,268,499,234"/>
+<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="648,317,769,345"/>
+<area shape="poly" title=" " alt="" coords="497,227,538,234,582,252,597,264,607,277,616,290,630,302,642,310,637,311,627,307,612,294,602,280,593,268,579,256,537,239,499,231"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="837,57,1069,85"/>
+<area shape="poly" title=" " alt="" coords="788,69,823,70,819,73,791,74"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="1117,49,1306,94"/>
+<area shape="poly" title=" " alt="" coords="1068,69,1104,70,1099,72,1071,74"/>
+<area shape="rect" href="group__state__position.html#ga709cb674566082d71719884e61f21cb6" title="Get position in LLA coordinates (int)." alt="" coords="873,213,1032,241"/>
+<area shape="poly" title=" " alt="" coords="741,180,872,208,868,211,743,185"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="902,109,1004,137"/>
+<area shape="poly" title=" " alt="" coords="777,121,888,122,884,125,779,126"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a3c92e53204c086a9e9104c84fe8b09ac" title="Get LLA coordinates of waypoint." alt="" coords="887,161,1019,189"/>
+<area shape="poly" title=" " alt="" coords="776,135,874,157,869,159,778,140"/>
+<area shape="poly" title=" " alt="" coords="742,225,860,226,855,229,745,230"/>
+<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="845,265,1060,293"/>
+<area shape="poly" title=" " alt="" coords="750,277,832,278,827,280,752,282"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="897,317,1008,345"/>
+<area shape="poly" title=" " alt="" coords="768,329,884,330,879,332,770,334"/>
+<area shape="rect" href="low__pass__filter_8h.html#a650eb36277cbf3bc61c35996424d2193" title="Init a second order Butterworth filter." alt="" coords="638,369,779,414"/>
+<area shape="poly" title=" " alt="" coords="534,285,559,292,582,302,598,315,607,328,616,341,630,354,637,360,632,361,627,359,612,345,603,331,594,319,579,307,557,297,536,289"/>
+<area shape="rect" href="low__pass__filter_8h.html#afff9be932a7bc563f0f4ed35e149a50a" title="Init second order low pass filter." alt="" coords="851,377,1054,405"/>
+<area shape="poly" title=" " alt="" coords="778,389,838,390,834,392,780,394"/>
+<area shape="rect" href="low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="628,438,789,483"/>
+<area shape="poly" title=" " alt="" coords="553,357,582,372,597,385,607,398,616,411,630,424,637,430,632,431,627,428,612,414,602,401,593,388,579,376,555,362"/>
+<area shape="poly" title=" " alt="" coords="243,384,327,303,349,275,360,263,376,252,410,237,446,229,442,233,411,242,378,256,363,267,353,279,331,306,247,386"/>
+<area shape="poly" title=" " alt="" coords="245,383,302,343,376,302,410,292,406,295,378,307,305,347,250,386"/>
+<area shape="poly" title=" " alt="" coords="287,383,390,359,387,363,291,387"/>
+<area shape="rect" href="group__math__algebra__float.html#ga2c8e98c79fa8cdb2d7d3bbbcebded439" title="rotate anglular rates by transposed rotation matrix." alt="" coords="379,437,578,465"/>
+<area shape="poly" title=" " alt="" coords="295,411,396,432,392,435,297,416"/>
+<area shape="rect" href="imu_8c.html#a278e4263e3d1726cc0dd03ed8689f197" title="Find or create the gyro in the imu structure." alt="" coords="424,541,534,569"/>
+<area shape="poly" title=" " alt="" coords="249,411,331,476,354,503,363,515,378,526,411,541,406,543,376,531,360,519,350,507,327,480,250,416"/>
+<area shape="rect" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix." alt="" coords="377,385,580,413"/>
+<area shape="poly" title=" " alt="" coords="295,397,364,398,360,401,298,401"/>
+<area shape="poly" title=" " alt="" coords="295,501,373,502,368,505,297,505"/>
+<area shape="rect" href="imu_8c.html#a9d352d575dc0e30a32e31b1b6fcd6211" title="Find or create the mag in the imu structure." alt="" coords="424,593,534,621"/>
+<area shape="poly" title=" " alt="" coords="295,513,330,528,346,540,355,554,364,566,378,578,411,593,406,595,376,583,360,570,351,557,342,544,328,532,297,518"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="396,645,561,673"/>
+<area shape="poly" title=" " alt="" coords="308,657,382,658,378,661,310,661"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="634,645,783,673"/>
+<area shape="poly" title=" " alt="" coords="560,657,621,658,617,660,562,662"/>
 </map>
 </div>
 
@@ -1395,9 +1518,9 @@ The magnetometer sensors. </td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00705">705</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00871">871</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00073">imu_accel_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00082">imu_accel_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00075">imu_accel_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00432">imu</a>, <a class="el" href="imu_8c_source.html#l00086">IMU_ACCEL_X_SIGN</a>, <a class="el" href="imu_8c_source.html#l00089">IMU_ACCEL_Y_SIGN</a>, <a class="el" href="imu_8c_source.html#l00092">IMU_ACCEL_Z_SIGN</a>, <a class="el" href="imu_8c_source.html#l01004">imu_get_accel()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00079">imu_accel_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00046">imu_calib_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00215">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00049">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00081">imu_accel_t::scale_f</a>, <a class="el" href="imu_8h_source.html#l00048">imu_calib_t::scale_f</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00085">imu_accel_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00094">imu_accel_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00087">imu_accel_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00465">imu</a>, <a class="el" href="imu_8c_source.html#l00111">IMU_ACCEL_X_SIGN</a>, <a class="el" href="imu_8c_source.html#l00114">IMU_ACCEL_Y_SIGN</a>, <a class="el" href="imu_8c_source.html#l00117">IMU_ACCEL_Z_SIGN</a>, <a class="el" href="imu_8c_source.html#l01193">imu_get_accel()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00091">imu_accel_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00046">imu_calib_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00215">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00049">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00093">imu_accel_t::scale_f</a>, <a class="el" href="imu_8h_source.html#l00048">imu_calib_t::scale_f</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="imu__apogee_8c_source.html#l00095">imu_apogee_init()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00109">imu_aspirin2_init()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00085">imu_aspirin_i2c_init()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00070">imu_aspirin_init()</a>, <a class="el" href="imu__bebop_8c_source.html#l00086">imu_bebop_init()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00092">imu_bmi088_init()</a>, <a class="el" href="imu__cube_8c_source.html#l00053">imu_cube_init()</a>, <a class="el" href="imu__disco_8c_source.html#l00083">imu_disco_init()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00110">imu_mpu9250_init()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00132">imu_mpu_hmc_init()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00075">imu_mpu_i2c_init()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00123">imu_mpu_spi_init()</a>, <a class="el" href="imu__nps_8c_source.html#l00030">imu_nps_init()</a>, <a class="el" href="imu__pixhawk6x_8c_source.html#l00046">imu_pixhawk6x_init()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00041">imu_px4_init()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00070">imu_px4fmu_init()</a>, <a class="el" href="invensense2_8c_source.html#l00320">invensense2_fix_config()</a>, <a class="el" href="invensense3__456_8c_source.html#l00296">invensense3_456_set_scalings()</a>, <a class="el" href="invensense3_8c_source.html#l00540">invensense3_fix_config()</a>, and <a class="el" href="sensors__hitl_8c_source.html#l00052">sensors_hitl_init()</a>.</p>
 <div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -1543,9 +1666,9 @@ The magnetometer sensors. </td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00676">676</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00842">842</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00056">imu_gyro_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00065">imu_gyro_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00058">imu_gyro_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00432">imu</a>, <a class="el" href="imu_8c_source.html#l00981">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l00047">IMU_GYRO_P_SIGN</a>, <a class="el" href="imu_8c_source.html#l00050">IMU_GYRO_Q_SIGN</a>, <a class="el" href="imu_8c_source.html#l00053">IMU_GYRO_R_SIGN</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00046">imu_calib_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00062">imu_gyro_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00215">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00049">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00048">imu_calib_t::scale_f</a>, and <a class="el" href="imu_8h_source.html#l00064">imu_gyro_t::scale_f</a>.</p>
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00065">imu_gyro_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00074">imu_gyro_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00067">imu_gyro_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00465">imu</a>, <a class="el" href="imu_8c_source.html#l01170">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l00072">IMU_GYRO_P_SIGN</a>, <a class="el" href="imu_8c_source.html#l00075">IMU_GYRO_Q_SIGN</a>, <a class="el" href="imu_8c_source.html#l00078">IMU_GYRO_R_SIGN</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00046">imu_calib_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00071">imu_gyro_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00215">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00049">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00048">imu_calib_t::scale_f</a>, and <a class="el" href="imu_8h_source.html#l00073">imu_gyro_t::scale_f</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="imu__apogee_8c_source.html#l00095">imu_apogee_init()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00109">imu_aspirin2_init()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00085">imu_aspirin_i2c_init()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00070">imu_aspirin_init()</a>, <a class="el" href="imu__bebop_8c_source.html#l00086">imu_bebop_init()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00092">imu_bmi088_init()</a>, <a class="el" href="imu__cube_8c_source.html#l00053">imu_cube_init()</a>, <a class="el" href="imu__disco_8c_source.html#l00083">imu_disco_init()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00110">imu_mpu9250_init()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00132">imu_mpu_hmc_init()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00075">imu_mpu_i2c_init()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00123">imu_mpu_spi_init()</a>, <a class="el" href="imu__nps_8c_source.html#l00030">imu_nps_init()</a>, <a class="el" href="imu__pixhawk6x_8c_source.html#l00046">imu_pixhawk6x_init()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00041">imu_px4_init()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00070">imu_px4fmu_init()</a>, <a class="el" href="invensense2_8c_source.html#l00320">invensense2_fix_config()</a>, <a class="el" href="invensense3__456_8c_source.html#l00296">invensense3_456_set_scalings()</a>, <a class="el" href="invensense3_8c_source.html#l00540">invensense3_fix_config()</a>, and <a class="el" href="sensors__hitl_8c_source.html#l00052">sensors_hitl_init()</a>.</p>
 <div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -1691,9 +1814,9 @@ The magnetometer sensors. </td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00734">734</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00900">900</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00090">imu_mag_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00098">imu_mag_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00091">imu_mag_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00432">imu</a>, <a class="el" href="imu_8c_source.html#l01028">imu_get_mag()</a>, <a class="el" href="max7456_8c_source.html#l00099">IMU_MAG_X_SIGN</a>, <a class="el" href="imu_8c_source.html#l00124">IMU_MAG_Y_SIGN</a>, <a class="el" href="imu_8c_source.html#l00127">IMU_MAG_Z_SIGN</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00046">imu_calib_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00094">imu_mag_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00215">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00049">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00048">imu_calib_t::scale_f</a>, <a class="el" href="imu_8h_source.html#l00096">imu_mag_t::scale_f</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00104">imu_mag_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00112">imu_mag_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00105">imu_mag_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00465">imu</a>, <a class="el" href="imu_8c_source.html#l01217">imu_get_mag()</a>, <a class="el" href="max7456_8c_source.html#l00099">IMU_MAG_X_SIGN</a>, <a class="el" href="imu_8c_source.html#l00149">IMU_MAG_Y_SIGN</a>, <a class="el" href="imu_8c_source.html#l00152">IMU_MAG_Z_SIGN</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00046">imu_calib_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00108">imu_mag_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00215">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00049">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00048">imu_calib_t::scale_f</a>, <a class="el" href="imu_8h_source.html#l00110">imu_mag_t::scale_f</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="imu__nps_8c_source.html#l00030">imu_nps_init()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00055">mag_ist8310_module_init()</a>, <a class="el" href="mag__lis3mdl_8c_source.html#l00055">mag_lis3mdl_module_init()</a>, <a class="el" href="mag__uavcan_8c_source.html#l00093">mag_uavcan_init()</a>, and <a class="el" href="sensors__hitl_8c_source.html#l00052">sensors_hitl_init()</a>.</p>
 <div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -1737,8 +1860,8 @@ The magnetometer sensors. </td></tr>
 
 </div>
 </div>
-<a id="a931916ce562dfa28e02e0a6001dddc43" name="a931916ce562dfa28e02e0a6001dddc43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a931916ce562dfa28e02e0a6001dddc43">&#9670;&#160;</a></span>imu_SetBodyToImuCurrent()</h2>
+<a id="a3353fa552f17f0f33f42d48f40f6ebd7" name="a3353fa552f17f0f33f42d48f40f6ebd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3353fa552f17f0f33f42d48f40f6ebd7">&#9670;&#160;</a></span>imu_SetBodyToImuCurrent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1749,7 +1872,7 @@ The magnetometer sensors. </td></tr>
         <tr>
           <td class="memname">void imu_SetBodyToImuCurrent </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>set</em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>set</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1760,15 +1883,15 @@ The magnetometer sensors. </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01103">1103</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01292">1292</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8c_source.html#l00432">imu</a>, <a class="el" href="imu_8c_source.html#l00154">IMU_BODY_TO_IMU_PHI</a>, <a class="el" href="imu_8c_source.html#l00156">IMU_BODY_TO_IMU_PSI</a>, <a class="el" href="imu_8c_source.html#l00155">IMU_BODY_TO_IMU_THETA</a>, <a class="el" href="imu_8c_source.html#l01050">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00251">orientationGetEulers_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="state_8h_source.html#l01325">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01243">stateIsAttitudeValid()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+<p class="reference">References <a class="el" href="imu_8c_source.html#l00465">imu</a>, <a class="el" href="imu_8c_source.html#l00179">IMU_BODY_TO_IMU_PHI</a>, <a class="el" href="imu_8c_source.html#l00181">IMU_BODY_TO_IMU_PSI</a>, <a class="el" href="imu_8c_source.html#l00180">IMU_BODY_TO_IMU_THETA</a>, <a class="el" href="imu_8c_source.html#l01239">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00251">orientationGetEulers_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="state_8h_source.html#l01325">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01243">stateIsAttitudeValid()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 <div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="imu_8h_a931916ce562dfa28e02e0a6001dddc43_cgraph.png" border="0" usemap="#aimu_8h_a931916ce562dfa28e02e0a6001dddc43_cgraph" loading="lazy" alt=""/></div>
-<map name="aimu_8h_a931916ce562dfa28e02e0a6001dddc43_cgraph" id="aimu_8h_a931916ce562dfa28e02e0a6001dddc43_cgraph">
+<div class="center"><img src="imu_8h_a3353fa552f17f0f33f42d48f40f6ebd7_cgraph.png" border="0" usemap="#aimu_8h_a3353fa552f17f0f33f42d48f40f6ebd7_cgraph" loading="lazy" alt=""/></div>
+<map name="aimu_8h_a3353fa552f17f0f33f42d48f40f6ebd7_cgraph" id="aimu_8h_a3353fa552f17f0f33f42d48f40f6ebd7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,192,200,220"/>
 <area shape="rect" href="imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="267,98,431,143"/>
 <area shape="poly" title=" " alt="" coords="144,189,270,146,266,150,146,194"/>
@@ -1827,9 +1950,9 @@ The magnetometer sensors. </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01079">1079</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01268">1268</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8c_source.html#l00432">imu</a>, <a class="el" href="imu_8c_source.html#l01050">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00251">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>.</p>
+<p class="reference">References <a class="el" href="imu_8c_source.html#l00465">imu</a>, <a class="el" href="imu_8c_source.html#l01239">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00251">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>.</p>
 <div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1887,9 +2010,9 @@ The magnetometer sensors. </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01095">1095</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01284">1284</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8c_source.html#l00432">imu</a>, <a class="el" href="imu_8c_source.html#l01050">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00251">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>.</p>
+<p class="reference">References <a class="el" href="imu_8c_source.html#l00465">imu</a>, <a class="el" href="imu_8c_source.html#l01239">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00251">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>.</p>
 <div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1947,9 +2070,9 @@ The magnetometer sensors. </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01087">1087</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l01276">1276</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8c_source.html#l00432">imu</a>, <a class="el" href="imu_8c_source.html#l01050">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00251">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+<p class="reference">References <a class="el" href="imu_8c_source.html#l00465">imu</a>, <a class="el" href="imu_8c_source.html#l01239">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00251">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 <div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
@@ -2007,9 +2130,9 @@ The magnetometer sensors. </td></tr>
 
 <p>global IMU state </p>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00432">432</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00465">465</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="imu_8c_source.html#l01004">imu_get_accel()</a>, <a class="el" href="imu_8c_source.html#l00981">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l01028">imu_get_mag()</a>, <a class="el" href="imu_8c_source.html#l00470">imu_init()</a>, <a class="el" href="imu_8c_source.html#l01050">imu_set_body_to_imu_eulers()</a>, <a class="el" href="imu_8c_source.html#l00705">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00676">imu_set_defaults_gyro()</a>, <a class="el" href="imu_8c_source.html#l00734">imu_set_defaults_mag()</a>, <a class="el" href="imu_8c_source.html#l01103">imu_SetBodyToImuCurrent()</a>, <a class="el" href="imu_8c_source.html#l01079">imu_SetBodyToImuPhi()</a>, <a class="el" href="imu_8c_source.html#l01095">imu_SetBodyToImuPsi()</a>, <a class="el" href="imu_8c_source.html#l01087">imu_SetBodyToImuTheta()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00107">jevois_mavlink_filter_init()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00099">jevois_mavlink_filter_periodic()</a>, <a class="el" href="logger__uart_8c_source.html#l00037">logger_uart_periodic()</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00150">mag_calib_ukf_run()</a>, <a class="el" href="imu_8c_source.html#l00217">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00189">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00203">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00261">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00233">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00247">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00305">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00321">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00277">send_mag_raw()</a>, and <a class="el" href="imu_8c_source.html#l00291">send_mag_scaled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="imu_8c_source.html#l01193">imu_get_accel()</a>, <a class="el" href="imu_8c_source.html#l01170">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l01217">imu_get_mag()</a>, <a class="el" href="imu_8c_source.html#l00645">imu_init()</a>, <a class="el" href="imu_8c_source.html#l01239">imu_set_body_to_imu_eulers()</a>, <a class="el" href="imu_8c_source.html#l00871">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00842">imu_set_defaults_gyro()</a>, <a class="el" href="imu_8c_source.html#l00900">imu_set_defaults_mag()</a>, <a class="el" href="imu_8c_source.html#l01292">imu_SetBodyToImuCurrent()</a>, <a class="el" href="imu_8c_source.html#l01268">imu_SetBodyToImuPhi()</a>, <a class="el" href="imu_8c_source.html#l01284">imu_SetBodyToImuPsi()</a>, <a class="el" href="imu_8c_source.html#l01276">imu_SetBodyToImuTheta()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00107">jevois_mavlink_filter_init()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00099">jevois_mavlink_filter_periodic()</a>, <a class="el" href="logger__uart_8c_source.html#l00037">logger_uart_periodic()</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00150">mag_calib_ukf_run()</a>, <a class="el" href="imu_8c_source.html#l00242">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00214">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00228">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00286">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00258">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00272">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00330">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00346">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00302">send_mag_raw()</a>, and <a class="el" href="imu_8c_source.html#l00316">send_mag_scaled()</a>.</p>
 
 </div>
 </div>

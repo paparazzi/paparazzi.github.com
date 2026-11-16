@@ -698,6 +698,7 @@ var annotated_dup =
     [ "imu_heater_t", "imu__heater_8h.html#structimu__heater__t", "imu__heater_8h_structimu__heater__t" ],
     [ "imu_mag_t", "imu_8h.html#structimu__mag__t", "imu_8h_structimu__mag__t" ],
     [ "imu_quality_assessment_data_struct", "imu__quality__assessment_8h.html#structimu__quality__assessment__data__struct", "imu__quality__assessment_8h_structimu__quality__assessment__data__struct" ],
+    [ "imu_rate_est_t", "imu_8h.html#structimu__rate__est__t", "imu_8h_structimu__rate__est__t" ],
     [ "ImuApogee", "imu__apogee_8h.html#structImuApogee", "imu__apogee_8h_structImuApogee" ],
     [ "ImuAspirin", "imu__aspirin_8h.html#structImuAspirin", "imu__aspirin_8h_structImuAspirin" ],
     [ "ImuAspirin2Spi", "imu__aspirin__2__spi_8h.html#structImuAspirin2Spi", "imu__aspirin__2__spi_8h_structImuAspirin2Spi" ],
