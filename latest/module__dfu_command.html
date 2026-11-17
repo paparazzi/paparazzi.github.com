@@ -94,9 +94,7 @@ $(function(){initNavTree('module__dfu_command.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>THIS MODULE MUST BE PLACED ABOVE ANY USB SERIAL CONSUMERS IN THE AIRFRAME!</b></p>
-<p>Read USB serial for dfu command. Send '#<br  />
-', 'bl<br  />
-' to reset to DFU mode. The same command works with betaflight (tested with 4.1.1), allowing paparazzi to be uploaded directly to these boards.</p>
+<p>Read USB serial for dfu command. Send <span class="tt">#\n</span>, <span class="tt">bl\n</span> to reset to DFU mode. The same command works with betaflight (tested with 4.1.1), allowing paparazzi to be uploaded directly to these boards.</p>
 <p>The dfu command is automatically sent when uploading with DFU or DFU-UTIL (see configure below).</p>
 <h1 class="doxsection"><a class="anchor" id="module_load_example__dfu_command"></a>
 Example for airframe file</h1>
@@ -130,14 +128,14 @@ Raw dfu_command.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dfu_command&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;datalink&quot;</span>&gt;<span class="comment">&lt;!-- task=&quot;datalink&quot; to run before telemetry_transparent_usb --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    <span class="keyword">THIS</span> <span class="keyword">MODULE</span> <span class="keyword">MUST</span> <span class="keyword">BE</span> <span class="keyword">PLACED</span> <span class="keyword">ABOVE</span> <span class="keyword">ANY</span> <span class="keyword">USB</span> <span class="keyword">SERIAL</span> <span class="keyword">CONSUMERS</span> <span class="keyword">IN</span> <span class="keyword">THE</span> <span class="keyword">AIRFRAME</span>!</div>
-<div class="line">    </div>
-<div class="line">    <span class="keyword">Read</span> <span class="keyword">USB</span> <span class="keyword">serial</span> <span class="keyword">for</span> <span class="keyword">dfu</span> <span class="keyword">command.</span> <span class="keyword">Send</span> <span class="stringliteral">&#39;#\n&#39;</span>, <span class="stringliteral">&#39;bl\n&#39;</span> <span class="keyword">to</span> <span class="keyword">reset</span> <span class="keyword">to</span> <span class="keyword">DFU</span> <span class="keyword">mode.</span></div>
-<div class="line">    <span class="keyword">The</span> <span class="keyword">same</span> <span class="keyword">command</span> <span class="keyword">works</span> <span class="keyword">with</span> <span class="keyword">betaflight</span> (<span class="keyword">tested</span> <span class="keyword">with</span> 4.1.1), <span class="keyword">allowing</span></div>
-<div class="line">    <span class="keyword">paparazzi</span> <span class="keyword">to</span> <span class="keyword">be</span> <span class="keyword">uploaded</span> <span class="keyword">directly</span> <span class="keyword">to</span> <span class="keyword">these</span> <span class="keyword">boards.</span></div>
-<div class="line">    </div>
-<div class="line">    <span class="keyword">The</span> <span class="keyword">dfu</span> <span class="keyword">command</span> <span class="keyword">is</span> <span class="keyword">automatically</span> <span class="keyword">sent</span> <span class="keyword">when</span> <span class="keyword">uploading</span> <span class="keyword">with</span> <span class="keyword">DFU</span> <span class="keyword">or</span> <span class="keyword">DFU-UTIL</span></div>
-<div class="line">    (<span class="keyword">see</span> <span class="keyword">configure</span> <span class="keyword">below</span>).</div>
+<div class="line">      <span class="keyword">THIS</span> <span class="keyword">MODULE</span> <span class="keyword">MUST</span> <span class="keyword">BE</span> <span class="keyword">PLACED</span> <span class="keyword">ABOVE</span> <span class="keyword">ANY</span> <span class="keyword">USB</span> <span class="keyword">SERIAL</span> <span class="keyword">CONSUMERS</span> <span class="keyword">IN</span> <span class="keyword">THE</span> <span class="keyword">AIRFRAME</span>!</div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">Read</span> <span class="keyword">USB</span> <span class="keyword">serial</span> <span class="keyword">for</span> <span class="keyword">dfu</span> <span class="keyword">command.</span> <span class="keyword">Send</span> ``#\<span class="keyword">n</span>``, ``<span class="keyword">bl</span>\<span class="keyword">n</span>`` <span class="keyword">to</span> <span class="keyword">reset</span> <span class="keyword">to</span> <span class="keyword">DFU</span> <span class="keyword">mode.</span></div>
+<div class="line">      <span class="keyword">The</span> <span class="keyword">same</span> <span class="keyword">command</span> <span class="keyword">works</span> <span class="keyword">with</span> <span class="keyword">betaflight</span> (<span class="keyword">tested</span> <span class="keyword">with</span> 4.1.1), <span class="keyword">allowing</span></div>
+<div class="line">      <span class="keyword">paparazzi</span> <span class="keyword">to</span> <span class="keyword">be</span> <span class="keyword">uploaded</span> <span class="keyword">directly</span> <span class="keyword">to</span> <span class="keyword">these</span> <span class="keyword">boards.</span></div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">The</span> <span class="keyword">dfu</span> <span class="keyword">command</span> <span class="keyword">is</span> <span class="keyword">automatically</span> <span class="keyword">sent</span> <span class="keyword">when</span> <span class="keyword">uploading</span> <span class="keyword">with</span> <span class="keyword">DFU</span> <span class="keyword">or</span> <span class="keyword">DFU-UTIL</span></div>
+<div class="line">      (<span class="keyword">see</span> <span class="keyword">configure</span> <span class="keyword">below</span>).</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>

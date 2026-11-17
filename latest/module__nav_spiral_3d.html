@@ -95,18 +95,22 @@ $(function(){initNavTree('module__nav_spiral_3d.html','',''); });
 <div class="contents">
 <div class="textblock"><p><b>Fixedwing navigation in a 3D spiral.</b></p>
 <p><b></b></p>
-<p>creating a helix:</p><ul>
+<p>creating a helix:</p>
+<ul>
 <li>start center (X, Y)</li>
 <li>start and stop altitude</li>
 <li>start and stop radius</li>
 <li>3D speed of the circle<ul>
 <li>in case alt diff is too small, vz is used as expension speed at constant altitude</li>
 <li>in case of radius diff too small, doing a constant radius circle<ul>
-<li>if alt diff is too small, basic circle with horizontal speed (vz as no effect) setup will fail if:</li>
+<li>if alt diff is too small, basic circle with horizontal speed (vz as no effect)</li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<p>setup will fail if:</p>
+<ul>
 <li>alt diff and vz are not coherent</li>
 <li>vz is too small and not doing circle</li>
 </ul>
@@ -158,14 +162,19 @@ Raw nav_spiral_3D.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Fixedwing</span> <span class="keyword">navigation</span> <span class="keyword">in</span> <span class="keyword">a</span> 3<span class="keyword">D</span> <span class="keyword">spiral.</span></div>
 <div class="line">      <span class="keyword">creating</span> <span class="keyword">a</span> <span class="keyword">helix:</span></div>
+<div class="line"> </div>
 <div class="line">      - <span class="keyword">start</span> <span class="keyword">center</span> (<span class="keyword">X</span>, <span class="keyword">Y</span>)</div>
 <div class="line">      - <span class="keyword">start</span> <span class="keyword">and</span> <span class="keyword">stop</span> <span class="keyword">altitude</span></div>
 <div class="line">      - <span class="keyword">start</span> <span class="keyword">and</span> <span class="keyword">stop</span> <span class="keyword">radius</span></div>
 <div class="line">      - 3<span class="keyword">D</span> <span class="keyword">speed</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">circle</span></div>
+<div class="line"> </div>
 <div class="line">        - <span class="keyword">in</span> <span class="keyword">case</span> <span class="keyword">alt</span> <span class="keyword">diff</span> <span class="keyword">is</span> <span class="keyword">too</span> <span class="keyword">small</span>, <span class="keyword">vz</span> <span class="keyword">is</span> <span class="keyword">used</span> <span class="keyword">as</span> <span class="keyword">expension</span> <span class="keyword">speed</span> <span class="keyword">at</span> <span class="keyword">constant</span> <span class="keyword">altitude</span></div>
 <div class="line">        - <span class="keyword">in</span> <span class="keyword">case</span> <span class="keyword">of</span> <span class="keyword">radius</span> <span class="keyword">diff</span> <span class="keyword">too</span> <span class="keyword">small</span>, <span class="keyword">doing</span> <span class="keyword">a</span> <span class="keyword">constant</span> <span class="keyword">radius</span> <span class="keyword">circle</span></div>
+<div class="line"> </div>
 <div class="line">          - <span class="keyword">if</span> <span class="keyword">alt</span> <span class="keyword">diff</span> <span class="keyword">is</span> <span class="keyword">too</span> <span class="keyword">small</span>, <span class="keyword">basic</span> <span class="keyword">circle</span> <span class="keyword">with</span> <span class="keyword">horizontal</span> <span class="keyword">speed</span> (<span class="keyword">vz</span> <span class="keyword">as</span> <span class="keyword">no</span> <span class="keyword">effect</span>)</div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">setup</span> <span class="keyword">will</span> <span class="keyword">fail</span> <span class="keyword">if:</span></div>
+<div class="line"> </div>
 <div class="line">      - <span class="keyword">alt</span> <span class="keyword">diff</span> <span class="keyword">and</span> <span class="keyword">vz</span> <span class="keyword">are</span> <span class="keyword">not</span> <span class="keyword">coherent</span></div>
 <div class="line">      - <span class="keyword">vz</span> <span class="keyword">is</span> <span class="keyword">too</span> <span class="keyword">small</span> <span class="keyword">and</span> <span class="keyword">not</span> <span class="keyword">doing</span> <span class="keyword">circle</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>

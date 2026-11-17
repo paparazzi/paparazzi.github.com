@@ -95,12 +95,13 @@ $(function(){initNavTree('module__nav_survey_rectangle_rotorcraft.html','',''); 
 <div class="contents">
 <div class="textblock"><p><b>Survey a rectangle with a rotorcraft.</b></p>
 <p><b></b></p>
-<p>From Uni Stuttgart. Adapted to rotorcraft by Eduardo Reginato Lavratti In the flight plan, the survey blocks call init and run functions:</p><ol type="1">
+<p>From Uni Stuttgart. Adapted to rotorcraft by Eduardo Reginato Lavratti In the flight plan, the survey blocks call init and run functions:</p>
+<ol type="1">
 <li>Initialize the variables needed for the survey to start, with nav_survey_polygon_setup(WP1, WP2, sweep_width, orientation)<ul>
 <li>WP1 the first corner of the rectangle (WP_waypoint_name)</li>
-<li>WP2 the second corner of the rectangle (WP_waypoint_name)</li>
-<li>sweep_width distance between the sweeps</li>
-<li>angle NS or WE orientation</li>
+<li>WP2: the second corner of the rectangle (WP_waypoint_name)</li>
+<li>sweep_width: distance between the sweeps</li>
+<li>angle: NS or WE orientation</li>
 </ul>
 </li>
 <li>Run the survey with nav_survey_rectangle_rotorcraft_run(WP1,WP2)</li>
@@ -108,8 +109,8 @@ $(function(){initNavTree('module__nav_survey_rectangle_rotorcraft.html','',''); 
 <h1 class="doxsection"><a class="anchor" id="module_load_example__nav_survey_rectangle_rotorcraft"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nav_survey_rectangle_rotorcraft&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;RECTANGLE_SURVEY_DEFAULT_SWEEP&quot; value=&quot;25&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;NAV_SURVEY_RECTANGLE_DYNAMIC&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RECTANGLE_SURVEY_DEFAULT_SWEEP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;25&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NAV_SURVEY_RECTANGLE_DYNAMIC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__nav_survey_rectangle_rotorcraft"></a>
 Module configuration options</h1>
@@ -149,16 +150,19 @@ Raw nav_survey_rectangle_rotorcraft.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nav_survey_rectangle_rotorcraft&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;nav&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;control&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line"><span class="keyword">Survey</span> <span class="keyword">a</span> <span class="keyword">rectangle</span> <span class="keyword">with</span> <span class="keyword">a</span> <span class="keyword">rotorcraft.</span></div>
-<div class="line"><span class="keyword">From</span> <span class="keyword">Uni</span> <span class="keyword">Stuttgart.</span></div>
-<div class="line"><span class="keyword">Adapted</span> <span class="keyword">to</span> <span class="keyword">rotorcraft</span> <span class="keyword">by</span> <span class="keyword">Eduardo</span> <span class="keyword">Reginato</span> <span class="keyword">Lavratti</span></div>
-<div class="line"><span class="keyword">In</span> <span class="keyword">the</span> <span class="keyword">flight</span> <span class="keyword">plan</span>, <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">blocks</span> <span class="keyword">call</span> <span class="keyword">init</span> <span class="keyword">and</span> <span class="keyword">run</span> <span class="keyword">functions:</span></div>
-<div class="line">1. <span class="keyword">Initialize</span> <span class="keyword">the</span> <span class="keyword">variables</span> <span class="keyword">needed</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">to</span> <span class="keyword">start</span>, <span class="keyword">with</span> <span class="keyword">nav_survey_polygon_setup</span>(<span class="keyword">WP1</span>, <span class="keyword">WP2</span>, <span class="keyword">sweep_width</span>, <span class="keyword">orientation</span>)</div>
-<div class="line">  - <span class="keyword">WP1</span>           <span class="keyword">the</span> <span class="keyword">first</span> <span class="keyword">corner</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">rectangle</span> (<span class="keyword">WP_waypoint_name</span>)</div>
-<div class="line">  - <span class="keyword">WP2</span>           <span class="keyword">the</span> <span class="keyword">second</span> <span class="keyword">corner</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">rectangle</span> (<span class="keyword">WP_waypoint_name</span>)</div>
-<div class="line">  - <span class="keyword">sweep_width</span>   <span class="keyword">distance</span> <span class="keyword">between</span> <span class="keyword">the</span> <span class="keyword">sweeps</span></div>
-<div class="line">  - <span class="keyword">angle</span>         <span class="keyword">NS</span> <span class="keyword">or</span> <span class="keyword">WE</span> <span class="keyword">orientation</span></div>
-<div class="line">2. <span class="keyword">Run</span> <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">with</span> <span class="keyword">nav_survey_rectangle_rotorcraft_run</span>(<span class="keyword">WP1</span>,<span class="keyword">WP2</span>)</div>
+<div class="line">      <span class="keyword">Survey</span> <span class="keyword">a</span> <span class="keyword">rectangle</span> <span class="keyword">with</span> <span class="keyword">a</span> <span class="keyword">rotorcraft.</span></div>
+<div class="line">      <span class="keyword">From</span> <span class="keyword">Uni</span> <span class="keyword">Stuttgart.</span></div>
+<div class="line">      <span class="keyword">Adapted</span> <span class="keyword">to</span> <span class="keyword">rotorcraft</span> <span class="keyword">by</span> <span class="keyword">Eduardo</span> <span class="keyword">Reginato</span> <span class="keyword">Lavratti</span></div>
+<div class="line">      <span class="keyword">In</span> <span class="keyword">the</span> <span class="keyword">flight</span> <span class="keyword">plan</span>, <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">blocks</span> <span class="keyword">call</span> <span class="keyword">init</span> <span class="keyword">and</span> <span class="keyword">run</span> <span class="keyword">functions:</span></div>
+<div class="line"> </div>
+<div class="line">      1. <span class="keyword">Initialize</span> <span class="keyword">the</span> <span class="keyword">variables</span> <span class="keyword">needed</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">to</span> <span class="keyword">start</span>, <span class="keyword">with</span> <span class="keyword">nav_survey_polygon_setup</span>(<span class="keyword">WP1</span>, <span class="keyword">WP2</span>, <span class="keyword">sweep_width</span>, <span class="keyword">orientation</span>)</div>
+<div class="line"> </div>
+<div class="line">         - <span class="keyword">WP1</span>           <span class="keyword">the</span> <span class="keyword">first</span> <span class="keyword">corner</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">rectangle</span> (<span class="keyword">WP_waypoint_name</span>)</div>
+<div class="line">         - <span class="keyword">WP2:</span> <span class="keyword">the</span> <span class="keyword">second</span> <span class="keyword">corner</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">rectangle</span> (<span class="keyword">WP_waypoint_name</span>)</div>
+<div class="line">         - <span class="keyword">sweep_width:</span> <span class="keyword">distance</span> <span class="keyword">between</span> <span class="keyword">the</span> <span class="keyword">sweeps</span></div>
+<div class="line">         - <span class="keyword">angle:</span> <span class="keyword">NS</span> <span class="keyword">or</span> <span class="keyword">WE</span> <span class="keyword">orientation</span></div>
+<div class="line"> </div>
+<div class="line">      2. <span class="keyword">Run</span> <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">with</span> <span class="keyword">nav_survey_rectangle_rotorcraft_run</span>(<span class="keyword">WP1</span>,<span class="keyword">WP2</span>)</div>
 <div class="line"><span class="comment">&lt;!--</span></div>
 <div class="line"><span class="comment">Block example:</span></div>
 <div class="line"><span class="comment">@verbatim</span></div>

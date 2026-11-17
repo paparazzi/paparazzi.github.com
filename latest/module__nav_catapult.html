@@ -97,12 +97,8 @@ $(function(){initNavTree('module__nav_catapult.html','',''); });
 <p><b></b></p>
 <ul>
 <li>Phase 1: Zero Roll, Climb Pitch, Zero Throttle</li>
-<li>Phase 2: After detecting the Start Acceleration<br  />
- Zero Roll, Climb Pitch, Full Throttle</li>
-<li>Phase 3: After getting the GPS heading (time based)<br  />
- Place climb 300m in front of us<br  />
- GoTo(climb)<br  />
-</li>
+<li>Phase 2: After detecting the Start Acceleration: Zero Roll, Climb Pitch, Full Throttle</li>
+<li>Phase 3: After getting the GPS heading (time based): Place climb 300m in front of us, GoTo(climb)</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="module_load_example__nav_catapult"></a>
 Example for airframe file</h1>
@@ -172,12 +168,13 @@ Raw nav_catapult.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Catapult</span> <span class="keyword">launch</span> <span class="keyword">timing</span> <span class="keyword">system.</span></div>
+<div class="line"> </div>
 <div class="line">      - <span class="keyword">Phase</span> 1: <span class="keyword">Zero</span> <span class="keyword">Roll</span>, <span class="keyword">Climb</span> <span class="keyword">Pitch</span>, <span class="keyword">Zero</span> <span class="keyword">Throttle</span></div>
-<div class="line">      - <span class="keyword">Phase</span> 2: <span class="keyword">After</span> <span class="keyword">detecting</span> <span class="keyword">the</span> <span class="keyword">Start</span> <span class="keyword">Acceleration</span>\<span class="keyword">n</span></div>
-<div class="line">                 <span class="keyword">Zero</span> <span class="keyword">Roll</span>, <span class="keyword">Climb</span> <span class="keyword">Pitch</span>, <span class="keyword">Full</span> <span class="keyword">Throttle</span></div>
-<div class="line">      - <span class="keyword">Phase</span> 3: <span class="keyword">After</span> <span class="keyword">getting</span> <span class="keyword">the</span> <span class="keyword">GPS</span> <span class="keyword">heading</span> (<span class="keyword">time</span> <span class="keyword">based</span>)\<span class="keyword">n</span></div>
-<div class="line">                 <span class="keyword">Place</span> <span class="keyword">climb</span> 300<span class="keyword">m</span> <span class="keyword">in</span> <span class="keyword">front</span> <span class="keyword">of</span> <span class="keyword">us</span>\<span class="keyword">n</span></div>
-<div class="line">                 <span class="keyword">GoTo</span>(<span class="keyword">climb</span>)\<span class="keyword">n</span></div>
+<div class="line">      - <span class="keyword">Phase</span> 2: <span class="keyword">After</span> <span class="keyword">detecting</span> <span class="keyword">the</span> <span class="keyword">Start</span> <span class="keyword">Acceleration:</span></div>
+<div class="line">        <span class="keyword">Zero</span> <span class="keyword">Roll</span>, <span class="keyword">Climb</span> <span class="keyword">Pitch</span>, <span class="keyword">Full</span> <span class="keyword">Throttle</span></div>
+<div class="line">      - <span class="keyword">Phase</span> 3: <span class="keyword">After</span> <span class="keyword">getting</span> <span class="keyword">the</span> <span class="keyword">GPS</span> <span class="keyword">heading</span> (<span class="keyword">time</span> <span class="keyword">based</span>):</div>
+<div class="line">        <span class="keyword">Place</span> <span class="keyword">climb</span> 300<span class="keyword">m</span> <span class="keyword">in</span> <span class="keyword">front</span> <span class="keyword">of</span> <span class="keyword">us</span>,</div>
+<div class="line">        <span class="keyword">GoTo</span>(<span class="keyword">climb</span>)</div>
 <div class="line"><span class="comment">&lt;!--</span></div>
 <div class="line"><span class="comment">Block example:</span></div>
 <div class="line"><span class="comment">@verbatim</span></div>

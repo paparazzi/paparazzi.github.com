@@ -95,15 +95,16 @@ $(function(){initNavTree('module__nav_survey_polygon.html','',''); });
 <div class="contents">
 <div class="textblock"><p><b>Survey a polygon with a fixedwing.</b></p>
 <p><b></b></p>
-<p>From Uni Stuttgart. In the flight plan, the survey blocks call init and run functions:</p><ol type="1">
+<p>From Uni Stuttgart. In the flight plan, the survey blocks call init and run functions:</p>
+<ol type="1">
 <li>Initialize the variables needed for the survey to start, with nav_survey_polygon_setup(first_wp, size, angle, sweep_width, shot_dist, min_rad, altitude):<ul>
 <li>first_wp the first <a class="el" href="nav_2waypoints_8h.html#structWaypoint">Waypoint</a> of the polygon (WP_waypoint_name)</li>
-<li>size the number of points that make up the polygon</li>
-<li>angle angle in which to do the flyovers</li>
-<li>sweep_width distance between the sweeps</li>
-<li>shot_dist distance between the shots</li>
-<li>min_rad minimal radius when navigating</li>
-<li>altitude the altitude that must be reached before the flyover starts</li>
+<li>size: the number of points that make up the polygon</li>
+<li>angle: angle in which to do the flyovers</li>
+<li>sweep_width: distance between the sweeps</li>
+<li>shot_dist: distance between the shots</li>
+<li>min_rad: minimal radius when navigating</li>
+<li>altitude: the altitude that must be reached before the flyover starts</li>
 </ul>
 </li>
 <li>Run the survey with <a class="el" href="nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine.">nav_survey_polygon_run()</a> for employing the carrot guidance algorithm</li>
@@ -134,14 +135,17 @@ Raw nav_survey_polygon.xml file:</h2>
 <div class="line">      <span class="keyword">Survey</span> <span class="keyword">a</span> <span class="keyword">polygon</span> <span class="keyword">with</span> <span class="keyword">a</span> <span class="keyword">fixedwing.</span></div>
 <div class="line">      <span class="keyword">From</span> <span class="keyword">Uni</span> <span class="keyword">Stuttgart.</span></div>
 <div class="line">      <span class="keyword">In</span> <span class="keyword">the</span> <span class="keyword">flight</span> <span class="keyword">plan</span>, <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">blocks</span> <span class="keyword">call</span> <span class="keyword">init</span> <span class="keyword">and</span> <span class="keyword">run</span> <span class="keyword">functions:</span></div>
+<div class="line"> </div>
 <div class="line">      1. <span class="keyword">Initialize</span> <span class="keyword">the</span> <span class="keyword">variables</span> <span class="keyword">needed</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">to</span> <span class="keyword">start</span>, <span class="keyword">with</span> <span class="keyword">nav_survey_polygon_setup</span>(<span class="keyword">first_wp</span>, <span class="keyword">size</span>, <span class="keyword">angle</span>, <span class="keyword">sweep_width</span>, <span class="keyword">shot_dist</span>, <span class="keyword">min_rad</span>, <span class="keyword">altitude</span>):</div>
-<div class="line">        - <span class="keyword">first_wp</span>      <span class="keyword">the</span> <span class="keyword">first</span> <span class="keyword">Waypoint</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">polygon</span> (<span class="keyword">WP_waypoint_name</span>)</div>
-<div class="line">        - <span class="keyword">size</span>          <span class="keyword">the</span> <span class="keyword">number</span> <span class="keyword">of</span> <span class="keyword">points</span> <span class="keyword">that</span> <span class="keyword">make</span> <span class="keyword">up</span> <span class="keyword">the</span> <span class="keyword">polygon</span></div>
-<div class="line">        - <span class="keyword">angle</span>         <span class="keyword">angle</span> <span class="keyword">in</span> <span class="keyword">which</span> <span class="keyword">to</span> <span class="keyword">do</span> <span class="keyword">the</span> <span class="keyword">flyovers</span></div>
-<div class="line">        - <span class="keyword">sweep_width</span>   <span class="keyword">distance</span> <span class="keyword">between</span> <span class="keyword">the</span> <span class="keyword">sweeps</span></div>
-<div class="line">        - <span class="keyword">shot_dist</span>     <span class="keyword">distance</span> <span class="keyword">between</span> <span class="keyword">the</span> <span class="keyword">shots</span></div>
-<div class="line">        - <span class="keyword">min_rad</span>       <span class="keyword">minimal</span> <span class="keyword">radius</span> <span class="keyword">when</span> <span class="keyword">navigating</span></div>
-<div class="line">        - <span class="keyword">altitude</span>      <span class="keyword">the</span> <span class="keyword">altitude</span> <span class="keyword">that</span> <span class="keyword">must</span> <span class="keyword">be</span> <span class="keyword">reached</span> <span class="keyword">before</span> <span class="keyword">the</span> <span class="keyword">flyover</span> <span class="keyword">starts</span></div>
+<div class="line"> </div>
+<div class="line">         - <span class="keyword">first_wp</span>      <span class="keyword">the</span> <span class="keyword">first</span> <span class="keyword">Waypoint</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">polygon</span> (<span class="keyword">WP_waypoint_name</span>)</div>
+<div class="line">         - <span class="keyword">size:</span> <span class="keyword">the</span> <span class="keyword">number</span> <span class="keyword">of</span> <span class="keyword">points</span> <span class="keyword">that</span> <span class="keyword">make</span> <span class="keyword">up</span> <span class="keyword">the</span> <span class="keyword">polygon</span></div>
+<div class="line">         - <span class="keyword">angle:</span> <span class="keyword">angle</span> <span class="keyword">in</span> <span class="keyword">which</span> <span class="keyword">to</span> <span class="keyword">do</span> <span class="keyword">the</span> <span class="keyword">flyovers</span></div>
+<div class="line">         - <span class="keyword">sweep_width:</span> <span class="keyword">distance</span> <span class="keyword">between</span> <span class="keyword">the</span> <span class="keyword">sweeps</span></div>
+<div class="line">         - <span class="keyword">shot_dist:</span> <span class="keyword">distance</span> <span class="keyword">between</span> <span class="keyword">the</span> <span class="keyword">shots</span></div>
+<div class="line">         - <span class="keyword">min_rad:</span> <span class="keyword">minimal</span> <span class="keyword">radius</span> <span class="keyword">when</span> <span class="keyword">navigating</span></div>
+<div class="line">         - <span class="keyword">altitude:</span> <span class="keyword">the</span> <span class="keyword">altitude</span> <span class="keyword">that</span> <span class="keyword">must</span> <span class="keyword">be</span> <span class="keyword">reached</span> <span class="keyword">before</span> <span class="keyword">the</span> <span class="keyword">flyover</span> <span class="keyword">starts</span></div>
+<div class="line"> </div>
 <div class="line">      2. <span class="keyword">Run</span> <span class="keyword">the</span> <span class="keyword">survey</span> <span class="keyword">with</span> <span class="keyword">nav_survey_polygon_run</span>() <span class="keyword">for</span> <span class="keyword">employing</span> <span class="keyword">the</span> <span class="keyword">carrot</span> <span class="keyword">guidance</span> <span class="keyword">algorithm</span></div>
 <div class="line"><span class="comment">&lt;!--</span></div>
 <div class="line"><span class="comment">Block example:</span></div>

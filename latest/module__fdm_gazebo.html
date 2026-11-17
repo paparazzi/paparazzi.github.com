@@ -95,11 +95,14 @@ $(function(){initNavTree('module__fdm_gazebo.html','',''); });
 <div class="contents">
 <div class="textblock"><p><b>Gazebo backend for NPS simulator</b></p>
 <p>NPS doc: <a href="http://wiki.paparazziuav.org/wiki/NPS">http://wiki.paparazziuav.org/wiki/NPS</a></p>
-<p>Two versions are supported, selected with GAZEBO_VERSION:</p><ul>
+<p>Two versions are supported, selected with GAZEBO_VERSION:</p>
+<ul>
 <li>classic: Gazebo Classic (gazebo11, up to Ubuntu 22.04)</li>
-<li>gz: the new Gazebo, gz-sim (Harmonic or Jetty, Ubuntu 24.04 and newer). Not supported yet with gz: laser range array and sonar. By default Gazebo Classic is used when it is installed, gz otherwise.</li>
+<li>gz: the new Gazebo, gz-sim (Harmonic or Jetty, Ubuntu 24.04 and newer). Not supported yet with gz: laser range array and sonar.</li>
 </ul>
-<p>Usage:</p><ol type="1">
+<p>By default Gazebo Classic is used when it is installed, gz otherwise.</p>
+<p>Usage:</p>
+<ol type="1">
 <li>Make sure Gazebo is installed (sudo apt-get install gazebo libgazebo-dev, or gz-harmonic).</li>
 <li>Prepare the Gazebo world and model:<ol type="a">
 <li>Prepare the UAV model (see conf/simulator/gazebo/models/bebop/):<ul>
@@ -110,12 +113,14 @@ $(function(){initNavTree('module__fdm_gazebo.html','',''); });
 </ul>
 </li>
 <li>Prepare the world (see conf/simulator/gazebo/world/). Pay attention to the following:<ul>
-<li>The real-time update rate should be set to zero, as this is already handled by Paparazzi: <div class="fragment"><div class="line">&lt;<span class="keywordtype">physics</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;ode&quot;</span>&gt;</div>
+<li><p class="startli">The real-time update rate should be set to zero, as this is already handled by Paparazzi:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">physics</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;ode&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">max_step_size</span>&gt;0.001&lt;/<span class="keywordtype">max_step_size</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">real_time_update_rate</span>&gt;0&lt;/<span class="keywordtype">real_time_update_rate</span>&gt;<span class="comment">&lt;!-- Handled by Paparazzi! --&gt;</span></div>
 <div class="line">&lt;/<span class="keywordtype">physics</span>&gt;</div>
 </div><!-- fragment --></li>
-<li>Spherical coordinates should be provided for navigation. At this moment, there is an issue where Gazebo incorrectly uses a WSU coordinate system instead of ENU. This can be fixed by setting the heading to 180 degrees as shown below: <div class="fragment"><div class="line">&lt;<span class="keywordtype">spherical_coordinates</span>&gt;</div>
+<li><p class="startli">Spherical coordinates should be provided for navigation. At this moment, there is an issue where Gazebo incorrectly uses a WSU coordinate system instead of ENU. This can be fixed by setting the heading to 180 degrees as shown below:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">spherical_coordinates</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">surface_model</span>&gt;<span class="keyword">EARTH_WGS84</span>&lt;/<span class="keywordtype">surface_model</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">latitude_deg</span>&gt;51.9906&lt;/<span class="keywordtype">latitude_deg</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">longitude_deg</span>&gt;4.37679&lt;/<span class="keywordtype">longitude_deg</span>&gt;</div>
@@ -128,60 +133,68 @@ $(function(){initNavTree('module__fdm_gazebo.html','',''); });
 </ol>
 </li>
 <li>Prepare the airframe file (see examples/bebop.xml):<ol type="a">
-<li>Select Gazebo as the FDM (Flight Dynamics Model) <div class="fragment"><div class="line">&lt;<span class="keywordtype">target</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nps&quot;</span> <span class="keyword">board</span>=<span class="stringliteral">&quot;pc&quot;</span>&gt;</div>
+<li><p class="startli">Select Gazebo as the FDM (Flight Dynamics Model)</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">target</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nps&quot;</span> <span class="keyword">board</span>=<span class="stringliteral">&quot;pc&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fdm&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;gazebo&quot;</span>/&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">target</span>&gt;</div>
 </div><!-- fragment --></li>
-<li>Include the gazebo defines for the vehicle: <div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
+<li><p class="startli">Include the gazebo defines for the vehicle:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
 <div class="line">  ...</div>
 <div class="line">&lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">&lt;<span class="keywordtype">include</span> <span class="keyword">href</span>=<span class="stringliteral">&quot;conf/simulator/gazebo/airframes/bebop.xml&quot;</span>/&gt;</div>
-</div><!-- fragment --><ul>
-<li>If conf/simulator/gazebo/airframes does not contain an xml for the vehicle model, it should be created with the following contents:<ol type="i">
-<li>Actuator thrusts and torques <div class="fragment"><div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">airframe</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;../../../airframes/airframe.dtd&quot;</span>&gt;</div>
+</div><!-- fragment --><p class="startli">If conf/simulator/gazebo/airframes does not contain an xml for the vehicle model, it should be created with the following contents:</p><ol type="i">
+<li><p class="startli">Actuator thrusts and torques</p>
+<div class="fragment"><div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">airframe</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;../../../airframes/airframe.dtd&quot;</span>&gt;</div>
 <div class="line"> </div>
-<div class="line">  &lt;<span class="keywordtype">airframe</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_THRUSTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.55, 1.55, 1.55, 1.55&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_TORQUES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.155, 0.155, 0.155, 0.155&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&gt;</div>
-<div class="line">      ...</div>
-<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">airframe</span>&gt;</div>
-</div><!-- fragment --> The thrusts and torques are expressed in SI units (N, Nm) and should be in the same order as the ACTUATOR_NAMES defined in the airframe file. The torque direction is determined automatically from the motor mixing.</li>
-<li>(Optional) Add actuator dynamics to the SIMULATOR section: <div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
+<div class="line">&lt;<span class="keywordtype">airframe</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_THRUSTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.55, 1.55, 1.55, 1.55&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_TORQUES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.155, 0.155, 0.155, 0.155&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&gt;</div>
+<div class="line">    ...</div>
+<div class="line">  &lt;/<span class="keywordtype">section</span>&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">airframe</span>&gt;</div>
+</div><!-- fragment --><p class="startli">The thrusts and torques are expressed in SI units (N, Nm) and should be in the same order as the ACTUATOR_NAMES defined in the airframe file. The torque direction is determined automatically from the motor mixing.</p>
+</li>
+<li><p class="startli">(Optional) Add actuator dynamics to the SIMULATOR section:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
 <div class="line">  ...</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_TIME_CONSTANTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.02, 0.02, 0.02, 0.02&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_MAX_ANGULAR_MOMENTUM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.19, 0.19, 0.19, 0.19&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&gt;</div>
 <div class="line">  ...</div>
 <div class="line">&lt;/<span class="keywordtype">section</span>&gt;</div>
-</div><!-- fragment --> Actuator time constants can be provided without specifying the actuator's maximum angular momentum. If the maximum angular momentum is provided as well, it is used to calculate the rotor spin-up torque.</li>
-<li>In the same section, bypass the AHRS and INS as these are not supported yet: <div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
+</div><!-- fragment --><p class="startli">Actuator time constants can be provided without specifying the actuator's maximum angular momentum. If the maximum angular momentum is provided as well, it is used to calculate the rotor spin-up torque.</p>
+</li>
+<li><p class="startli">In the same section, bypass the AHRS and INS as these are not supported yet:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
 <div class="line">  ...</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BYPASS_AHRS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BYPASS_INS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  ...</div>
 <div class="line">&lt;/<span class="keywordtype">section</span>&gt;</div>
 </div><!-- fragment --></li>
-<li>If required, enable video thread simulation: <div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
+<li><p class="startli">If required, enable video thread simulation:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
 <div class="line">  ...</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATE_VIDEO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  ...</div>
 <div class="line">&lt;/<span class="keywordtype">section</span>&gt;</div>
 </div><!-- fragment --></li>
-<li>Set the aircraft model in the xml file: <div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
+<li><p class="startli">Set the aircraft model in the xml file:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&gt;</div>
 <div class="line">  ...</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GAZEBO_AC_NAME&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;my_uav&quot;</span>/&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">section</span>&gt;</div>
 </div><!-- fragment --></li>
 </ol>
 </li>
-</ul>
-</li>
-<li>Make sure all included modules work with nps. At the moment, most of the modules that depend on video_thread are only built when ap is selected as the target. To fix this, add nps to the target attribute in the module xml, e.g.: <div class="fragment"><div class="line">&lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
+<li><p class="startli">Make sure all included modules work with nps. At the moment, most of the modules that depend on video_thread are only built when ap is selected as the target. To fix this, add nps to the target attribute in the module xml, e.g.:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
 </div><!-- fragment --></li>
 </ol>
 </li>
-<li>The simulation environment is set in the flight plan file: <div class="fragment"><div class="line">&lt;<span class="keywordtype">flight_plan</span> ...&gt;</div>
+<li><p class="startli">The simulation environment is set in the flight plan file:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">flight_plan</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;...&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    ...</div>
 <div class="line">    #<span class="keyword">define</span> <span class="keyword">NPS_GAZEBO_WORLD</span> <span class="stringliteral">&quot;my.world&quot;</span></div>
@@ -193,9 +206,9 @@ $(function(){initNavTree('module__fdm_gazebo.html','',''); });
 <h1 class="doxsection"><a class="anchor" id="module_load_example__fdm_gazebo"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fdm_gazebo&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;GAZEBO_VERSION&quot; value=&quot;classic|gz&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;GZ_SIM_PKG&quot; value=&quot;gz-sim|gz-sim8&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;NPS_DEBUG_VIDEO&quot; value=&quot;0|1&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GAZEBO_VERSION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;classic|gz&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GZ_SIM_PKG&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;gz-sim|gz-sim8&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NPS_DEBUG_VIDEO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0|1&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__fdm_gazebo"></a>
 Module configuration options</h1>
@@ -228,134 +241,165 @@ Raw fdm_gazebo.xml file:</h2>
 <div class="line">      <span class="keyword">NPS</span> <span class="keyword">doc:</span> <span class="keyword">http:</span>//<span class="keyword">wiki.paparazziuav.org</span>/<span class="keyword">wiki</span>/<span class="keyword">NPS</span></div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">Two</span> <span class="keyword">versions</span> <span class="keyword">are</span> <span class="keyword">supported</span>, <span class="keyword">selected</span> <span class="keyword">with</span> <span class="keyword">GAZEBO_VERSION:</span></div>
+<div class="line"> </div>
 <div class="line">      - <span class="keyword">classic:</span> <span class="keyword">Gazebo</span> <span class="keyword">Classic</span> (<span class="keyword">gazebo11</span>, <span class="keyword">up</span> <span class="keyword">to</span> <span class="keyword">Ubuntu</span> 22.04)</div>
 <div class="line">      - <span class="keyword">gz:</span> <span class="keyword">the</span> <span class="keyword">new</span> <span class="keyword">Gazebo</span>, <span class="keyword">gz-sim</span> (<span class="keyword">Harmonic</span> <span class="keyword">or</span> <span class="keyword">Jetty</span>, <span class="keyword">Ubuntu</span> 24.04 <span class="keyword">and</span> <span class="keyword">newer</span>).</div>
 <div class="line">        <span class="keyword">Not</span> <span class="keyword">supported</span> <span class="keyword">yet</span> <span class="keyword">with</span> <span class="keyword">gz:</span> <span class="keyword">laser</span> <span class="keyword">range</span> <span class="keyword">array</span> <span class="keyword">and</span> <span class="keyword">sonar.</span></div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">By</span> <span class="keyword">default</span> <span class="keyword">Gazebo</span> <span class="keyword">Classic</span> <span class="keyword">is</span> <span class="keyword">used</span> <span class="keyword">when</span> <span class="keyword">it</span> <span class="keyword">is</span> <span class="keyword">installed</span>, <span class="keyword">gz</span> <span class="keyword">otherwise.</span></div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">Usage:</span></div>
+<div class="line"> </div>
 <div class="line">      1. <span class="keyword">Make</span> <span class="keyword">sure</span> <span class="keyword">Gazebo</span> <span class="keyword">is</span> <span class="keyword">installed</span> (<span class="keyword">sudo</span> <span class="keyword">apt-get</span> <span class="keyword">install</span> <span class="keyword">gazebo</span> <span class="keyword">libgazebo-dev</span>, <span class="keyword">or</span> <span class="keyword">gz-harmonic</span>).</div>
 <div class="line">      2. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">Gazebo</span> <span class="keyword">world</span> <span class="keyword">and</span> <span class="keyword">model:</span></div>
-<div class="line">        1. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">UAV</span> <span class="keyword">model</span> (<span class="keyword">see</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">models</span>/<span class="keyword">bebop</span>/):</div>
-<div class="line">          - <span class="keyword">Place</span> <span class="keyword">the</span> <span class="keyword">aircraft</span> <span class="keyword">model</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">models</span>/</div>
-<div class="line">            <span class="keyword">folder</span>, <span class="keyword">this</span> <span class="keyword">folder</span> <span class="keyword">is</span> <span class="keyword">added</span> <span class="keyword">to</span> <span class="keyword">Gazebo</span>&amp;<span class="keyword">apos</span>;<span class="keyword">s</span> <span class="keyword">search</span> <span class="keyword">path</span> <span class="keyword">when</span> <span class="keyword">NPS</span> <span class="keyword">is</span></div>
-<div class="line">            <span class="keyword">launched.</span></div>
-<div class="line">          - <span class="keyword">Gazebo</span> <span class="keyword">uses</span> <span class="keyword">a</span> <span class="keyword">Front</span>, <span class="keyword">Left</span>, <span class="keyword">Up</span> <span class="keyword">coordinate</span> <span class="keyword">system</span> <span class="keyword">for</span> <span class="keyword">aircraft</span>, <span class="keyword">so</span></div>
-<div class="line">            <span class="keyword">make</span> <span class="keyword">sure</span> <span class="keyword">the</span> +<span class="keyword">x</span> <span class="keyword">axis</span> <span class="keyword">points</span> <span class="keyword">forwards.</span></div>
-<div class="line">          - <span class="keyword">The</span> <span class="keyword">model</span> <span class="keyword">should</span> <span class="keyword">include</span> <span class="keyword">a</span> <span class="keyword">link</span> <span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">motor</span> <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">names</span></div>
-<div class="line">            <span class="keyword">as</span> <span class="keyword">those</span> <span class="keyword">listed</span> <span class="keyword">in</span> <span class="keyword">NPS_ACTUATOR_NAMES</span> (<span class="keyword">see</span> <span class="keyword">below</span>), <span class="keyword">e.g.</span> &amp;<span class="keyword">apos</span>;<span class="keyword">nw_motor</span>&amp;<span class="keyword">apos</span>;.</div>
-<div class="line">          - <span class="keyword">Camera</span> <span class="keyword">links</span> <span class="keyword">should</span> <span class="keyword">have</span> <span class="keyword">the</span> <span class="keyword">name</span> <span class="keyword">specified</span> <span class="keyword">in</span> .<span class="keyword">dev_name</span> <span class="keyword">in</span> <span class="keyword">the</span></div>
-<div class="line">            <span class="keyword">corresponding</span> <span class="keyword">video_config_t</span> <span class="keyword">struct</span>, <span class="keyword">see</span> <span class="keyword">sw</span>/<span class="keyword">airborne</span>/<span class="keyword">boards</span>/<span class="keyword">pc_sim.h</span></div>
-<div class="line">            <span class="keyword">and</span> <span class="keyword">sw</span>/<span class="keyword">airborne</span>/<span class="keyword">modules</span>/<span class="keyword">computer_vision</span>/<span class="keyword">video_thread_nps.c.</span></div>
-<div class="line">        2. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">world</span> (<span class="keyword">see</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">world</span>/).</div>
-<div class="line">          <span class="keyword">Pay</span> <span class="keyword">attention</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">following:</span></div>
-<div class="line">          - <span class="keyword">The</span> <span class="keyword">real-time</span> <span class="keyword">update</span> <span class="keyword">rate</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">set</span> <span class="keyword">to</span> <span class="keyword">zero</span>, <span class="keyword">as</span> <span class="keyword">this</span> <span class="keyword">is</span></div>
-<div class="line">            <span class="keyword">already</span> <span class="keyword">handled</span> <span class="keyword">by</span> <span class="keyword">Paparazzi:</span></div>
-<div class="line">            @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">              &amp;<span class="keyword">lt</span>;<span class="keyword">physics</span> <span class="keyword">type</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">ode</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">max_step_size</span>&amp;<span class="keyword">gt</span>;0.001&amp;<span class="keyword">lt</span>;/<span class="keyword">max_step_size</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">real_time_update_rate</span>&amp;<span class="keyword">gt</span>;0&amp;<span class="keyword">lt</span>;/<span class="keyword">real_time_update_rate</span>&amp;<span class="keyword">gt</span>;&amp;<span class="keyword">lt</span>;!-- <span class="keyword">Handled</span> <span class="keyword">by</span> <span class="keyword">Paparazzi</span>! --&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              &amp;<span class="keyword">lt</span>;/<span class="keyword">physics</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">            @<span class="keyword">endcode</span></div>
-<div class="line">          - <span class="keyword">Spherical</span> <span class="keyword">coordinates</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">provided</span> <span class="keyword">for</span> <span class="keyword">navigation.</span></div>
-<div class="line">            <span class="keyword">At</span> <span class="keyword">this</span> <span class="keyword">moment</span>, <span class="keyword">there</span> <span class="keyword">is</span> <span class="keyword">an</span> <span class="keyword">issue</span> <span class="keyword">where</span> <span class="keyword">Gazebo</span> <span class="keyword">incorrectly</span></div>
-<div class="line">            <span class="keyword">uses</span> <span class="keyword">a</span> <span class="keyword">WSU</span> <span class="keyword">coordinate</span> <span class="keyword">system</span> <span class="keyword">instead</span> <span class="keyword">of</span> <span class="keyword">ENU.</span> <span class="keyword">This</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">fixed</span></div>
-<div class="line">            <span class="keyword">by</span> <span class="keyword">setting</span> <span class="keyword">the</span> <span class="keyword">heading</span> <span class="keyword">to</span> 180 <span class="keyword">degrees</span> <span class="keyword">as</span> <span class="keyword">shown</span> <span class="keyword">below:</span></div>
-<div class="line">            @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">              &amp;<span class="keyword">lt</span>;<span class="keyword">spherical_coordinates</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">surface_model</span>&amp;<span class="keyword">gt</span>;<span class="keyword">EARTH_WGS84</span>&amp;<span class="keyword">lt</span>;/<span class="keyword">surface_model</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">latitude_deg</span>&amp;<span class="keyword">gt</span>;51.9906&amp;<span class="keyword">lt</span>;/<span class="keyword">latitude_deg</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">longitude_deg</span>&amp;<span class="keyword">gt</span>;4.37679&amp;<span class="keyword">lt</span>;/<span class="keyword">longitude_deg</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">elevation</span>&amp;<span class="keyword">gt</span>;0&amp;<span class="keyword">lt</span>;/<span class="keyword">elevation</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">heading_deg</span>&amp;<span class="keyword">gt</span>;180&amp;<span class="keyword">lt</span>;/<span class="keyword">heading_deg</span>&amp;<span class="keyword">gt</span>;&amp;<span class="keyword">lt</span>;!-- <span class="keyword">Temporary</span> <span class="keyword">fix</span> <span class="keyword">for</span> <span class="keyword">issue</span> <span class="keyword">https:</span>//<span class="keyword">bitbucket.org</span>/<span class="keyword">osrf</span>/<span class="keyword">gazebo</span>/<span class="keyword">issues</span>/2022/<span class="keyword">default-sphericalcoordinates-frame-should</span> --&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              &amp;<span class="keyword">lt</span>;/<span class="keyword">spherical_coordinates</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">            @<span class="keyword">endcode</span></div>
+<div class="line"> </div>
+<div class="line">         1. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">UAV</span> <span class="keyword">model</span> (<span class="keyword">see</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">models</span>/<span class="keyword">bebop</span>/):</div>
+<div class="line"> </div>
+<div class="line">            - <span class="keyword">Place</span> <span class="keyword">the</span> <span class="keyword">aircraft</span> <span class="keyword">model</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">models</span>/</div>
+<div class="line">              <span class="keyword">folder</span>, <span class="keyword">this</span> <span class="keyword">folder</span> <span class="keyword">is</span> <span class="keyword">added</span> <span class="keyword">to</span> <span class="keyword">Gazebo</span><span class="stringliteral">&#39;s search path when NPS is</span></div>
+<div class="line"><span class="stringliteral">              launched.</span></div>
+<div class="line"><span class="stringliteral">            - Gazebo uses a Front, Left, Up coordinate system for aircraft, so</span></div>
+<div class="line"><span class="stringliteral">              make sure the +x axis points forwards.</span></div>
+<div class="line"><span class="stringliteral">            - The model should include a link for each motor with the same names</span></div>
+<div class="line"><span class="stringliteral">              as those listed in NPS_ACTUATOR_NAMES (see below), e.g. &#39;</span><span class="keyword">nw_motor</span>&#39;.</div>
+<div class="line">            - <span class="keyword">Camera</span> <span class="keyword">links</span> <span class="keyword">should</span> <span class="keyword">have</span> <span class="keyword">the</span> <span class="keyword">name</span> <span class="keyword">specified</span> <span class="keyword">in</span> .<span class="keyword">dev_name</span> <span class="keyword">in</span> <span class="keyword">the</span></div>
+<div class="line">              <span class="keyword">corresponding</span> <span class="keyword">video_config_t</span> <span class="keyword">struct</span>, <span class="keyword">see</span> <span class="keyword">sw</span>/<span class="keyword">airborne</span>/<span class="keyword">boards</span>/<span class="keyword">pc_sim.h</span></div>
+<div class="line">              <span class="keyword">and</span> <span class="keyword">sw</span>/<span class="keyword">airborne</span>/<span class="keyword">modules</span>/<span class="keyword">computer_vision</span>/<span class="keyword">video_thread_nps.c.</span></div>
+<div class="line"> </div>
+<div class="line">         2. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">world</span> (<span class="keyword">see</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">world</span>/).</div>
+<div class="line">            <span class="keyword">Pay</span> <span class="keyword">attention</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">following:</span></div>
+<div class="line"> </div>
+<div class="line">            - <span class="keyword">The</span> <span class="keyword">real-time</span> <span class="keyword">update</span> <span class="keyword">rate</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">set</span> <span class="keyword">to</span> <span class="keyword">zero</span>, <span class="keyword">as</span> <span class="keyword">this</span> <span class="keyword">is</span></div>
+<div class="line">              <span class="keyword">already</span> <span class="keyword">handled</span> <span class="keyword">by</span> <span class="keyword">Paparazzi:</span></div>
+<div class="line"> </div>
+<div class="line">              .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">physics</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;ode&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">max_step_size</span>&amp;<span class="keyword">gt</span>;0.001&amp;<span class="keyword">lt</span>;/<span class="keyword">max_step_size</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">real_time_update_rate</span>&amp;<span class="keyword">gt</span>;0&amp;<span class="keyword">lt</span>;/<span class="keyword">real_time_update_rate</span>&amp;<span class="keyword">gt</span>;&amp;<span class="keyword">lt</span>;!-- <span class="keyword">Handled</span> <span class="keyword">by</span> <span class="keyword">Paparazzi</span>! --&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                &amp;<span class="keyword">lt</span>;/<span class="keyword">physics</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
+<div class="line">            - <span class="keyword">Spherical</span> <span class="keyword">coordinates</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">provided</span> <span class="keyword">for</span> <span class="keyword">navigation.</span></div>
+<div class="line">              <span class="keyword">At</span> <span class="keyword">this</span> <span class="keyword">moment</span>, <span class="keyword">there</span> <span class="keyword">is</span> <span class="keyword">an</span> <span class="keyword">issue</span> <span class="keyword">where</span> <span class="keyword">Gazebo</span> <span class="keyword">incorrectly</span></div>
+<div class="line">              <span class="keyword">uses</span> <span class="keyword">a</span> <span class="keyword">WSU</span> <span class="keyword">coordinate</span> <span class="keyword">system</span> <span class="keyword">instead</span> <span class="keyword">of</span> <span class="keyword">ENU.</span> <span class="keyword">This</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">fixed</span></div>
+<div class="line">              <span class="keyword">by</span> <span class="keyword">setting</span> <span class="keyword">the</span> <span class="keyword">heading</span> <span class="keyword">to</span> 180 <span class="keyword">degrees</span> <span class="keyword">as</span> <span class="keyword">shown</span> <span class="keyword">below:</span></div>
+<div class="line"> </div>
+<div class="line">              .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">spherical_coordinates</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">surface_model</span>&amp;<span class="keyword">gt</span>;<span class="keyword">EARTH_WGS84</span>&amp;<span class="keyword">lt</span>;/<span class="keyword">surface_model</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">latitude_deg</span>&amp;<span class="keyword">gt</span>;51.9906&amp;<span class="keyword">lt</span>;/<span class="keyword">latitude_deg</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">longitude_deg</span>&amp;<span class="keyword">gt</span>;4.37679&amp;<span class="keyword">lt</span>;/<span class="keyword">longitude_deg</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">elevation</span>&amp;<span class="keyword">gt</span>;0&amp;<span class="keyword">lt</span>;/<span class="keyword">elevation</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">heading_deg</span>&amp;<span class="keyword">gt</span>;180&amp;<span class="keyword">lt</span>;/<span class="keyword">heading_deg</span>&amp;<span class="keyword">gt</span>;&amp;<span class="keyword">lt</span>;!-- <span class="keyword">Temporary</span> <span class="keyword">fix</span> <span class="keyword">for</span> <span class="keyword">issue</span> <span class="keyword">https:</span>//<span class="keyword">bitbucket.org</span>/<span class="keyword">osrf</span>/<span class="keyword">gazebo</span>/<span class="keyword">issues</span>/2022/<span class="keyword">default-sphericalcoordinates-frame-should</span> --&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                &amp;<span class="keyword">lt</span>;/<span class="keyword">spherical_coordinates</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
 <div class="line">      3. <span class="keyword">Prepare</span> <span class="keyword">the</span> <span class="keyword">airframe</span> <span class="keyword">file</span> (<span class="keyword">see</span> <span class="keyword">examples</span>/<span class="keyword">bebop.xml</span>):</div>
-<div class="line">        1. <span class="keyword">Select</span> <span class="keyword">Gazebo</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">FDM</span> (<span class="keyword">Flight</span> <span class="keyword">Dynamics</span> <span class="keyword">Model</span>)</div>
-<div class="line">          @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">target</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">nps</span>&amp;<span class="keyword">quot</span>; <span class="keyword">board</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">pc</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              &amp;<span class="keyword">lt</span>;<span class="keyword">module</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">fdm</span>&amp;<span class="keyword">quot</span>; <span class="keyword">type</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">gazebo</span>&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;/<span class="keyword">target</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">          @<span class="keyword">endcode</span></div>
-<div class="line">        2. <span class="keyword">Include</span> <span class="keyword">the</span> <span class="keyword">gazebo</span> <span class="keyword">defines</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">vehicle:</span></div>
-<div class="line">          @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">SIMULATOR</span>&amp;<span class="keyword">quot</span>; <span class="keyword">prefix</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">NPS_</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              ...</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">include</span> <span class="keyword">href</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">airframes</span>/<span class="keyword">bebop.xml</span>&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">          @<span class="keyword">endcode</span></div>
-<div class="line">          - <span class="keyword">If</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">airframes</span> <span class="keyword">does</span> <span class="keyword">not</span> <span class="keyword">contain</span> <span class="keyword">an</span> <span class="keyword">xml</span> <span class="keyword">for</span> <span class="keyword">the</span></div>
-<div class="line">          <span class="keyword">vehicle</span> <span class="keyword">model</span>, <span class="keyword">it</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">created</span> <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">following</span> <span class="keyword">contents:</span></div>
+<div class="line"> </div>
+<div class="line">         1. <span class="keyword">Select</span> <span class="keyword">Gazebo</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">FDM</span> (<span class="keyword">Flight</span> <span class="keyword">Dynamics</span> <span class="keyword">Model</span>)</div>
+<div class="line"> </div>
+<div class="line">            .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">              &amp;<span class="keyword">lt</span>;<span class="keyword">target</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nps&quot;</span> <span class="keyword">board</span>=<span class="stringliteral">&quot;pc&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fdm&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;gazebo&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">              &amp;<span class="keyword">lt</span>;/<span class="keyword">target</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
+<div class="line">         2. <span class="keyword">Include</span> <span class="keyword">the</span> <span class="keyword">gazebo</span> <span class="keyword">defines</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">vehicle:</span></div>
+<div class="line"> </div>
+<div class="line">            .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">              &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                ...</div>
+<div class="line">              &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">              &amp;<span class="keyword">lt</span>;<span class="keyword">include</span> <span class="keyword">href</span>=<span class="stringliteral">&quot;conf/simulator/gazebo/airframes/bebop.xml&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
+<div class="line">            <span class="keyword">If</span> <span class="keyword">conf</span>/<span class="keyword">simulator</span>/<span class="keyword">gazebo</span>/<span class="keyword">airframes</span> <span class="keyword">does</span> <span class="keyword">not</span> <span class="keyword">contain</span> <span class="keyword">an</span> <span class="keyword">xml</span> <span class="keyword">for</span> <span class="keyword">the</span></div>
+<div class="line">            <span class="keyword">vehicle</span> <span class="keyword">model</span>, <span class="keyword">it</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">created</span> <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">following</span> <span class="keyword">contents:</span></div>
+<div class="line"> </div>
 <div class="line">            1. <span class="keyword">Actuator</span> <span class="keyword">thrusts</span> <span class="keyword">and</span> <span class="keyword">torques</span></div>
-<div class="line">              @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">              &amp;<span class="keyword">lt</span>;!<span class="keyword">DOCTYPE</span> <span class="keyword">airframe</span> <span class="keyword">SYSTEM</span> &amp;<span class="keyword">quot</span>;../../../<span class="keyword">airframes</span>/<span class="keyword">airframe.dtd</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">  </div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">airframe</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">SIMULATOR</span>&amp;<span class="keyword">quot</span>; <span class="keyword">prefix</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">NPS_</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                    &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">ACTUATOR_THRUSTS</span>&amp;<span class="keyword">quot</span>; <span class="keyword">value</span>=&amp;<span class="keyword">quot</span>;1.55, 1.55, 1.55, 1.55&amp;<span class="keyword">quot</span>; <span class="keyword">type</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">float</span>[]&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                    &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">ACTUATOR_TORQUES</span>&amp;<span class="keyword">quot</span>; <span class="keyword">value</span>=&amp;<span class="keyword">quot</span>;0.155, 0.155, 0.155, 0.155&amp;<span class="keyword">quot</span>; <span class="keyword">type</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">float</span>[]&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                    ...</div>
-<div class="line">                  &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;/<span class="keyword">airframe</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              @<span class="keyword">endcode</span></div>
-<div class="line">              <span class="keyword">The</span> <span class="keyword">thrusts</span> <span class="keyword">and</span> <span class="keyword">torques</span> <span class="keyword">are</span> <span class="keyword">expressed</span> <span class="keyword">in</span> <span class="keyword">SI</span> <span class="keyword">units</span> (<span class="keyword">N</span>, <span class="keyword">Nm</span>) <span class="keyword">and</span> <span class="keyword">should</span></div>
-<div class="line">              <span class="keyword">be</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">order</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">ACTUATOR_NAMES</span> <span class="keyword">defined</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">airframe</span> <span class="keyword">file.</span></div>
-<div class="line">              <span class="keyword">The</span> <span class="keyword">torque</span> <span class="keyword">direction</span> <span class="keyword">is</span> <span class="keyword">determined</span> <span class="keyword">automatically</span> <span class="keyword">from</span> <span class="keyword">the</span> <span class="keyword">motor</span> <span class="keyword">mixing.</span></div>
+<div class="line"> </div>
+<div class="line">               .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;!<span class="keyword">DOCTYPE</span> <span class="keyword">airframe</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;../../../airframes/airframe.dtd&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;<span class="keyword">airframe</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                     &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_THRUSTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.55, 1.55, 1.55, 1.55&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                     &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_TORQUES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.155, 0.155, 0.155, 0.155&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                     ...</div>
+<div class="line">                   &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;/<span class="keyword">airframe</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
+<div class="line">               <span class="keyword">The</span> <span class="keyword">thrusts</span> <span class="keyword">and</span> <span class="keyword">torques</span> <span class="keyword">are</span> <span class="keyword">expressed</span> <span class="keyword">in</span> <span class="keyword">SI</span> <span class="keyword">units</span> (<span class="keyword">N</span>, <span class="keyword">Nm</span>) <span class="keyword">and</span> <span class="keyword">should</span></div>
+<div class="line">               <span class="keyword">be</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">order</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">ACTUATOR_NAMES</span> <span class="keyword">defined</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">airframe</span> <span class="keyword">file.</span></div>
+<div class="line">               <span class="keyword">The</span> <span class="keyword">torque</span> <span class="keyword">direction</span> <span class="keyword">is</span> <span class="keyword">determined</span> <span class="keyword">automatically</span> <span class="keyword">from</span> <span class="keyword">the</span> <span class="keyword">motor</span> <span class="keyword">mixing.</span></div>
+<div class="line"> </div>
 <div class="line">            2. (<span class="keyword">Optional</span>) <span class="keyword">Add</span> <span class="keyword">actuator</span> <span class="keyword">dynamics</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">SIMULATOR</span> <span class="keyword">section:</span></div>
-<div class="line">              @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">SIMULATOR</span>&amp;<span class="keyword">quot</span>; <span class="keyword">prefix</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">NPS_</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  ...</div>
-<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">ACTUATOR_TIME_CONSTANTS</span>&amp;<span class="keyword">quot</span>; <span class="keyword">value</span>=&amp;<span class="keyword">quot</span>;0.02, 0.02, 0.02, 0.02&amp;<span class="keyword">quot</span>; <span class="keyword">type</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">float</span>[]&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">ACTUATOR_MAX_ANGULAR_MOMENTUM</span>&amp;<span class="keyword">quot</span>; <span class="keyword">value</span>=&amp;<span class="keyword">quot</span>;0.19, 0.19, 0.19, 0.19&amp;<span class="keyword">quot</span>; <span class="keyword">type</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">float</span>[]&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  ...</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              @<span class="keyword">endcode</span></div>
-<div class="line">              <span class="keyword">Actuator</span> <span class="keyword">time</span> <span class="keyword">constants</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">provided</span> <span class="keyword">without</span> <span class="keyword">specifying</span> <span class="keyword">the</span></div>
-<div class="line">              <span class="keyword">actuator</span>&#39;<span class="keyword">s</span> <span class="keyword">maximum</span> <span class="keyword">angular</span> <span class="keyword">momentum.</span> <span class="keyword">If</span> <span class="keyword">the</span> <span class="keyword">maximum</span> <span class="keyword">angular</span> <span class="keyword">momentum</span></div>
-<div class="line">              <span class="keyword">is</span> <span class="keyword">provided</span> <span class="keyword">as</span> <span class="keyword">well</span>, <span class="keyword">it</span> <span class="keyword">is</span> <span class="keyword">used</span> <span class="keyword">to</span> <span class="keyword">calculate</span> <span class="keyword">the</span> <span class="keyword">rotor</span> <span class="keyword">spin-up</span> <span class="keyword">torque.</span></div>
+<div class="line"> </div>
+<div class="line">               .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   ...</div>
+<div class="line">                   &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_TIME_CONSTANTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.02, 0.02, 0.02, 0.02&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_MAX_ANGULAR_MOMENTUM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.19, 0.19, 0.19, 0.19&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;float[]&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   ...</div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
+<div class="line">               <span class="keyword">Actuator</span> <span class="keyword">time</span> <span class="keyword">constants</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">provided</span> <span class="keyword">without</span> <span class="keyword">specifying</span> <span class="keyword">the</span></div>
+<div class="line">               <span class="keyword">actuator</span>&#39;<span class="keyword">s</span> <span class="keyword">maximum</span> <span class="keyword">angular</span> <span class="keyword">momentum.</span> <span class="keyword">If</span> <span class="keyword">the</span> <span class="keyword">maximum</span> <span class="keyword">angular</span> <span class="keyword">momentum</span></div>
+<div class="line">               <span class="keyword">is</span> <span class="keyword">provided</span> <span class="keyword">as</span> <span class="keyword">well</span>, <span class="keyword">it</span> <span class="keyword">is</span> <span class="keyword">used</span> <span class="keyword">to</span> <span class="keyword">calculate</span> <span class="keyword">the</span> <span class="keyword">rotor</span> <span class="keyword">spin-up</span> <span class="keyword">torque.</span></div>
+<div class="line"> </div>
 <div class="line">            3. <span class="keyword">In</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">section</span>, <span class="keyword">bypass</span> <span class="keyword">the</span> <span class="keyword">AHRS</span> <span class="keyword">and</span> <span class="keyword">INS</span> <span class="keyword">as</span> <span class="keyword">these</span> <span class="keyword">are</span> <span class="keyword">not</span></div>
-<div class="line">              <span class="keyword">supported</span> <span class="keyword">yet:</span></div>
-<div class="line">              @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">SIMULATOR</span>&amp;<span class="keyword">quot</span>; <span class="keyword">prefix</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">NPS_</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  ...</div>
-<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">BYPASS_AHRS</span>&amp;<span class="keyword">quot</span>; <span class="keyword">value</span>=&amp;<span class="keyword">quot</span>;1&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">BYPASS_INS</span>&amp;<span class="keyword">quot</span>; <span class="keyword">value</span>=&amp;<span class="keyword">quot</span>;1&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  ...</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              @<span class="keyword">endcode</span></div>
-<div class="line">    </div>
+<div class="line">               <span class="keyword">supported</span> <span class="keyword">yet:</span></div>
+<div class="line"> </div>
+<div class="line">               .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   ...</div>
+<div class="line">                   &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BYPASS_AHRS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BYPASS_INS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   ...</div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
 <div class="line">            4. <span class="keyword">If</span> <span class="keyword">required</span>, <span class="keyword">enable</span> <span class="keyword">video</span> <span class="keyword">thread</span> <span class="keyword">simulation:</span></div>
-<div class="line">              @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">SIMULATOR</span>&amp;<span class="keyword">quot</span>; <span class="keyword">prefix</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">NPS_</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  ...</div>
-<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">SIMULATE_VIDEO</span>&amp;<span class="keyword">quot</span>; <span class="keyword">value</span>=&amp;<span class="keyword">quot</span>;1&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  ...</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              @<span class="keyword">endcode</span></div>
+<div class="line"> </div>
+<div class="line">               .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   ...</div>
+<div class="line">                   &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATE_VIDEO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   ...</div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
 <div class="line">            5. <span class="keyword">Set</span> <span class="keyword">the</span> <span class="keyword">aircraft</span> <span class="keyword">model</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">xml</span> <span class="keyword">file:</span></div>
-<div class="line">              @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">SIMULATOR</span>&amp;<span class="keyword">quot</span>; <span class="keyword">prefix</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">NPS_</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                  ...</div>
-<div class="line">                  &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">GAZEBO_AC_NAME</span>&amp;<span class="keyword">quot</span>; <span class="keyword">value</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">my_uav</span>&amp;<span class="keyword">quot</span>;/&amp;<span class="keyword">gt</span>;</div>
-<div class="line">                &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              @<span class="keyword">endcode</span></div>
-<div class="line">        3. <span class="keyword">Make</span> <span class="keyword">sure</span> <span class="keyword">all</span> <span class="keyword">included</span> <span class="keyword">modules</span> <span class="keyword">work</span> <span class="keyword">with</span> <span class="keyword">nps.</span> <span class="keyword">At</span> <span class="keyword">the</span> <span class="keyword">moment</span>, <span class="keyword">most</span> <span class="keyword">of</span></div>
-<div class="line">          <span class="keyword">the</span> <span class="keyword">modules</span> <span class="keyword">that</span> <span class="keyword">depend</span> <span class="keyword">on</span> <span class="keyword">video_thread</span> <span class="keyword">are</span> <span class="keyword">only</span> <span class="keyword">built</span> <span class="keyword">when</span> <span class="keyword">ap</span> <span class="keyword">is</span></div>
-<div class="line">          <span class="keyword">selected</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">target.</span> <span class="keyword">To</span> <span class="keyword">fix</span> <span class="keyword">this</span>, <span class="keyword">add</span> <span class="keyword">nps</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">target</span> <span class="keyword">attribute</span></div>
-<div class="line">          <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">module</span> <span class="keyword">xml</span>, <span class="keyword">e.g.:</span></div>
-<div class="line">          @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">makefile</span> <span class="keyword">target</span>=&amp;<span class="keyword">quot</span>;<span class="keyword">ap</span>|<span class="keyword">nps</span>&amp;<span class="keyword">quot</span>;&amp;<span class="keyword">gt</span>;</div>
-<div class="line">          @<span class="keyword">endcode</span></div>
+<div class="line"> </div>
+<div class="line">               .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;<span class="keyword">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SIMULATOR&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NPS_&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                   ...</div>
+<div class="line">                   &amp;<span class="keyword">lt</span>;<span class="keyword">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GAZEBO_AC_NAME&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;my_uav&quot;</span>/&amp;<span class="keyword">gt</span>;</div>
+<div class="line">                 &amp;<span class="keyword">lt</span>;/<span class="keyword">section</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
+<div class="line">         3. <span class="keyword">Make</span> <span class="keyword">sure</span> <span class="keyword">all</span> <span class="keyword">included</span> <span class="keyword">modules</span> <span class="keyword">work</span> <span class="keyword">with</span> <span class="keyword">nps.</span> <span class="keyword">At</span> <span class="keyword">the</span> <span class="keyword">moment</span>, <span class="keyword">most</span> <span class="keyword">of</span></div>
+<div class="line">            <span class="keyword">the</span> <span class="keyword">modules</span> <span class="keyword">that</span> <span class="keyword">depend</span> <span class="keyword">on</span> <span class="keyword">video_thread</span> <span class="keyword">are</span> <span class="keyword">only</span> <span class="keyword">built</span> <span class="keyword">when</span> <span class="keyword">ap</span> <span class="keyword">is</span></div>
+<div class="line">            <span class="keyword">selected</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">target.</span> <span class="keyword">To</span> <span class="keyword">fix</span> <span class="keyword">this</span>, <span class="keyword">add</span> <span class="keyword">nps</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">target</span> <span class="keyword">attribute</span></div>
+<div class="line">            <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">module</span> <span class="keyword">xml</span>, <span class="keyword">e.g.:</span></div>
+<div class="line"> </div>
+<div class="line">            .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">              &amp;<span class="keyword">lt</span>;<span class="keyword">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line"> </div>
 <div class="line">      4. <span class="keyword">The</span> <span class="keyword">simulation</span> <span class="keyword">environment</span> <span class="keyword">is</span> <span class="keyword">set</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">flight</span> <span class="keyword">plan</span> <span class="keyword">file:</span></div>
-<div class="line">        @<span class="keyword">code</span>{.<span class="keyword">xml</span>}</div>
-<div class="line">          &amp;<span class="keyword">lt</span>;<span class="keyword">flight_plan</span> ...&amp;<span class="keyword">gt</span>;</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;<span class="keyword">header</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">              ...</div>
-<div class="line">              #<span class="keyword">define</span> <span class="keyword">NPS_GAZEBO_WORLD</span> &amp;<span class="keyword">quot</span>;<span class="keyword">my.world</span>&amp;<span class="keyword">quot</span>;</div>
-<div class="line">            &amp;<span class="keyword">lt</span>;/<span class="keyword">header</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">            ...</div>
-<div class="line">          &amp;<span class="keyword">lt</span>;/<span class="keyword">flight_plan</span>&amp;<span class="keyword">gt</span>;</div>
-<div class="line">        @<span class="keyword">endcode</span></div>
+<div class="line"> </div>
+<div class="line">         .. <span class="keyword">code-block::</span> <span class="keyword">xml</span></div>
+<div class="line"> </div>
+<div class="line">           &amp;<span class="keyword">lt</span>;<span class="keyword">flight_plan</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;...&quot;</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">             &amp;<span class="keyword">lt</span>;<span class="keyword">header</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">               ...</div>
+<div class="line">               #<span class="keyword">define</span> <span class="keyword">NPS_GAZEBO_WORLD</span> <span class="stringliteral">&quot;my.world&quot;</span></div>
+<div class="line">             &amp;<span class="keyword">lt</span>;/<span class="keyword">header</span>&amp;<span class="keyword">gt</span>;</div>
+<div class="line">             ...</div>
+<div class="line">           &amp;<span class="keyword">lt</span>;/<span class="keyword">flight_plan</span>&amp;<span class="keyword">gt</span>;</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GAZEBO_VERSION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;classic|gz&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Gazebo Classic or the new Gazebo (gz-sim), default: classic when installed&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GZ_SIM_PKG&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;gz-sim|gz-sim8&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;pkg-config name of gz-sim, default: the first one installed of gz-sim (Jetty) and gz-sim8 (Harmonic)&quot;</span>/&gt;</div>

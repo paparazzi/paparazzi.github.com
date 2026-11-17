@@ -94,12 +94,29 @@ $(function(){initNavTree('module__digital_cam_pwm.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Trigger using pwm cameras like MAPIR (<a href="https://www.mapir.camera/en-gb">https://www.mapir.camera/en-gb</a>)</b></p>
-<p>or ThermalCapture 2.0 from TeAx (<a href="https://thermalcapture.com/thermalcapture-2-0/">https://thermalcapture.com/thermalcapture-2-0/</a>) </p><pre class="fragment">                  MAPIR ****
-</pre><p> Duty cycle == 2000us : TRIGGER_ON Duty cycle == 1500us : SD Unmount Duty cycle == 1000us : TRIGGER_OFF Image capture frequency : 1.5s for JPG and 2.5-3.0s RAW+JPG</p>
+<p>or ThermalCapture 2.0 from TeAx (<a href="https://thermalcapture.com/thermalcapture-2-0/">https://thermalcapture.com/thermalcapture-2-0/</a>)</p>
+<p>MAPIR**</p>
+<ul>
+<li>Duty cycle == 2000us : TRIGGER_ON</li>
+<li>Duty cycle == 1500us : SD Unmount</li>
+<li>Duty cycle == 1000us : TRIGGER_OFF</li>
+<li>Image capture frequency : 1.5s for JPG and 2.5-3.0s RAW+JPG</li>
+</ul>
 <p>The quickest the 2000us command should be sent is about once every 1.5s as the camera cannot capture JPG images more quickly than 1.5s. For RAW+JPG mode we recommend a 2.5-3.0s wait time.</p>
 <p>RAW images are used for capturing data for reflectance measurements, otherwise the pixels in the JPG are not usable. im_freq_timer should therefore be superior 1.5s (TRIGGER_CAMERA_CAPTURE_IMAGE_PERIOD = 1.5 seconds)</p>
-<p>NMEA GPS data are stored in metadata </p><pre class="fragment">               ThermalCapture ****
-</pre><p> Duty cycle inferior 1500us : TRIGGER_OFF Duty cycle superior 1500us : TRIGGER_ON Image capture frequency up to 30 Hz Possibility to capture one frame per trigger in configurator : Trigger frame mode Convert 14-bit data into temperature values : High gain mode: temp [°C] = raw * 0.04 - 273.15 Low gain mode : temp [°C] = raw * 0.4 - 273.15</p>
+<p>NMEA GPS data are stored in metadata</p>
+<p>ThermalCapture**</p>
+<ul>
+<li>Duty cycle inferior 1500us : TRIGGER_OFF</li>
+<li>Duty cycle superior 1500us : TRIGGER_ON</li>
+<li>Image capture frequency up to 30 Hz</li>
+<li>Possibility to capture one frame per trigger in configurator : Trigger frame mode</li>
+<li>Convert 14-bit data into temperature values:<ul>
+<li>High gain mode: temp [°C] = raw * 0.04 - 273.15</li>
+<li>Low gain mode : temp [°C] = raw * 0.4 - 273.15</li>
+</ul>
+</li>
+</ul>
 <p>NMEA GPS data are stored in metadata</p>
 <h1 class="doxsection"><a class="anchor" id="module_load_example__digital_cam_pwm"></a>
 Example for airframe file</h1>
@@ -156,34 +173,36 @@ Raw digital_cam_pwm.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;digital_cam_pwm&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;digital_cam&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">Trigger</span> <span class="keyword">using</span> <span class="keyword">pwm</span> <span class="keyword">cameras</span> <span class="keyword">like</span> <span class="keyword">MAPIR</span> (<span class="keyword">https:</span>//<span class="keyword">www.mapir.camera</span>/<span class="keyword">en-gb</span>) </div>
+<div class="line">      <span class="keyword">Trigger</span> <span class="keyword">using</span> <span class="keyword">pwm</span> <span class="keyword">cameras</span> <span class="keyword">like</span> <span class="keyword">MAPIR</span> (<span class="keyword">https:</span>//<span class="keyword">www.mapir.camera</span>/<span class="keyword">en-gb</span>)</div>
 <div class="line">      <span class="keyword">or</span> <span class="keyword">ThermalCapture</span> 2.0 <span class="keyword">from</span> <span class="keyword">TeAx</span> (<span class="keyword">https:</span>//<span class="keyword">thermalcapture.com</span>/<span class="keyword">thermalcapture-2-0</span>/)</div>
 <div class="line"> </div>
-<div class="line">                       **** <span class="keyword">MAPIR</span> ****</div>
-<div class="line">      <span class="keyword">Duty</span> <span class="keyword">cycle</span> == 2000<span class="keyword">us</span> : <span class="keyword">TRIGGER_ON</span></div>
-<div class="line">      <span class="keyword">Duty</span> <span class="keyword">cycle</span> == 1500<span class="keyword">us</span> : <span class="keyword">SD</span> <span class="keyword">Unmount</span></div>
-<div class="line">      <span class="keyword">Duty</span> <span class="keyword">cycle</span> == 1000<span class="keyword">us</span> : <span class="keyword">TRIGGER_OFF</span></div>
-<div class="line">      <span class="keyword">Image</span> <span class="keyword">capture</span> <span class="keyword">frequency</span> : 1.5<span class="keyword">s</span> <span class="keyword">for</span> <span class="keyword">JPG</span> <span class="keyword">and</span> 2.5-3.0<span class="keyword">s</span> <span class="keyword">RAW</span>+<span class="keyword">JPG</span></div>
-<div class="line">  </div>
-<div class="line">      <span class="keyword">The</span> <span class="keyword">quickest</span> <span class="keyword">the</span> 2000<span class="keyword">us</span> <span class="keyword">command</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">sent</span> <span class="keyword">is</span> <span class="keyword">about</span> <span class="keyword">once</span> <span class="keyword">every</span> 1.5<span class="keyword">s</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">camera</span> <span class="keyword">cannot</span> </div>
+<div class="line">      **<span class="keyword">MAPIR</span>**</div>
+<div class="line"> </div>
+<div class="line">      - <span class="keyword">Duty</span> <span class="keyword">cycle</span> == 2000<span class="keyword">us</span> : <span class="keyword">TRIGGER_ON</span></div>
+<div class="line">      - <span class="keyword">Duty</span> <span class="keyword">cycle</span> == 1500<span class="keyword">us</span> : <span class="keyword">SD</span> <span class="keyword">Unmount</span></div>
+<div class="line">      - <span class="keyword">Duty</span> <span class="keyword">cycle</span> == 1000<span class="keyword">us</span> : <span class="keyword">TRIGGER_OFF</span></div>
+<div class="line">      - <span class="keyword">Image</span> <span class="keyword">capture</span> <span class="keyword">frequency</span> : 1.5<span class="keyword">s</span> <span class="keyword">for</span> <span class="keyword">JPG</span> <span class="keyword">and</span> 2.5-3.0<span class="keyword">s</span> <span class="keyword">RAW</span>+<span class="keyword">JPG</span></div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">The</span> <span class="keyword">quickest</span> <span class="keyword">the</span> 2000<span class="keyword">us</span> <span class="keyword">command</span> <span class="keyword">should</span> <span class="keyword">be</span> <span class="keyword">sent</span> <span class="keyword">is</span> <span class="keyword">about</span> <span class="keyword">once</span> <span class="keyword">every</span> 1.5<span class="keyword">s</span> <span class="keyword">as</span> <span class="keyword">the</span> <span class="keyword">camera</span> <span class="keyword">cannot</span></div>
 <div class="line">      <span class="keyword">capture</span> <span class="keyword">JPG</span> <span class="keyword">images</span> <span class="keyword">more</span> <span class="keyword">quickly</span> <span class="keyword">than</span> 1.5<span class="keyword">s.</span> <span class="keyword">For</span> <span class="keyword">RAW</span>+<span class="keyword">JPG</span> <span class="keyword">mode</span> <span class="keyword">we</span> <span class="keyword">recommend</span> <span class="keyword">a</span> 2.5-3.0<span class="keyword">s</span> <span class="keyword">wait</span> <span class="keyword">time.</span></div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">RAW</span> <span class="keyword">images</span> <span class="keyword">are</span> <span class="keyword">used</span> <span class="keyword">for</span> <span class="keyword">capturing</span> <span class="keyword">data</span> <span class="keyword">for</span> <span class="keyword">reflectance</span> <span class="keyword">measurements</span>, <span class="keyword">otherwise</span> <span class="keyword">the</span> <span class="keyword">pixels</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">JPG</span> <span class="keyword">are</span> <span class="keyword">not</span> <span class="keyword">usable.</span></div>
 <div class="line">      <span class="keyword">im_freq_timer</span> <span class="keyword">should</span> <span class="keyword">therefore</span> <span class="keyword">be</span> <span class="keyword">superior</span> 1.5<span class="keyword">s</span> (<span class="keyword">TRIGGER_CAMERA_CAPTURE_IMAGE_PERIOD</span> = 1.5 <span class="keyword">seconds</span>)</div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">NMEA</span> <span class="keyword">GPS</span> <span class="keyword">data</span> <span class="keyword">are</span> <span class="keyword">stored</span> <span class="keyword">in</span> <span class="keyword">metadata</span></div>
-<div class="line">  </div>
-<div class="line">                    **** <span class="keyword">ThermalCapture</span> ****</div>
-<div class="line">      <span class="keyword">Duty</span> <span class="keyword">cycle</span> <span class="keyword">inferior</span> 1500<span class="keyword">us</span> : <span class="keyword">TRIGGER_OFF</span></div>
-<div class="line">      <span class="keyword">Duty</span> <span class="keyword">cycle</span> <span class="keyword">superior</span> 1500<span class="keyword">us</span> : <span class="keyword">TRIGGER_ON</span></div>
-<div class="line">      <span class="keyword">Image</span> <span class="keyword">capture</span> <span class="keyword">frequency</span> <span class="keyword">up</span> <span class="keyword">to</span> 30 <span class="keyword">Hz</span></div>
-<div class="line">      <span class="keyword">Possibility</span> <span class="keyword">to</span> <span class="keyword">capture</span> <span class="keyword">one</span> <span class="keyword">frame</span> <span class="keyword">per</span> <span class="keyword">trigger</span> <span class="keyword">in</span> <span class="keyword">configurator</span> : <span class="keyword">Trigger</span> <span class="keyword">frame</span> <span class="keyword">mode</span></div>
-<div class="line">      <span class="keyword">Convert</span> 14-<span class="keyword">bit</span> <span class="keyword">data</span> <span class="keyword">into</span> <span class="keyword">temperature</span> <span class="keyword">values</span> : </div>
-<div class="line">      <span class="keyword">High</span> <span class="keyword">gain</span> <span class="keyword">mode:</span> <span class="keyword">temp</span> [<span class="keyword">°C</span>] = <span class="keyword">raw</span> * 0.04 - 273.15</div>
-<div class="line">      <span class="keyword">Low</span> <span class="keyword">gain</span> <span class="keyword">mode</span> : <span class="keyword">temp</span> [<span class="keyword">°C</span>] = <span class="keyword">raw</span> * 0.4  - 273.15</div>
-<div class="line">  </div>
+<div class="line"> </div>
+<div class="line">      **<span class="keyword">ThermalCapture</span>**</div>
+<div class="line"> </div>
+<div class="line">      - <span class="keyword">Duty</span> <span class="keyword">cycle</span> <span class="keyword">inferior</span> 1500<span class="keyword">us</span> : <span class="keyword">TRIGGER_OFF</span></div>
+<div class="line">      - <span class="keyword">Duty</span> <span class="keyword">cycle</span> <span class="keyword">superior</span> 1500<span class="keyword">us</span> : <span class="keyword">TRIGGER_ON</span></div>
+<div class="line">      - <span class="keyword">Image</span> <span class="keyword">capture</span> <span class="keyword">frequency</span> <span class="keyword">up</span> <span class="keyword">to</span> 30 <span class="keyword">Hz</span></div>
+<div class="line">      - <span class="keyword">Possibility</span> <span class="keyword">to</span> <span class="keyword">capture</span> <span class="keyword">one</span> <span class="keyword">frame</span> <span class="keyword">per</span> <span class="keyword">trigger</span> <span class="keyword">in</span> <span class="keyword">configurator</span> : <span class="keyword">Trigger</span> <span class="keyword">frame</span> <span class="keyword">mode</span></div>
+<div class="line">      - <span class="keyword">Convert</span> 14-<span class="keyword">bit</span> <span class="keyword">data</span> <span class="keyword">into</span> <span class="keyword">temperature</span> <span class="keyword">values:</span></div>
+<div class="line"> </div>
+<div class="line">        - <span class="keyword">High</span> <span class="keyword">gain</span> <span class="keyword">mode:</span> <span class="keyword">temp</span> [<span class="keyword">°C</span>] = <span class="keyword">raw</span> * 0.04 - 273.15</div>
+<div class="line">        - <span class="keyword">Low</span> <span class="keyword">gain</span> <span class="keyword">mode</span> : <span class="keyword">temp</span> [<span class="keyword">°C</span>] = <span class="keyword">raw</span> * 0.4  - 273.15</div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">NMEA</span> <span class="keyword">GPS</span> <span class="keyword">data</span> <span class="keyword">are</span> <span class="keyword">stored</span> <span class="keyword">in</span> <span class="keyword">metadata</span></div>
-<div class="line">      </div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_CAM_PWM&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_CAM_PWM_SHUTTER_DELAY&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;how long to push shutter in seconds&quot;</span>/&gt;    </div>

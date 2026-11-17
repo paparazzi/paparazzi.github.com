@@ -100,7 +100,8 @@ $(function(){initNavTree('module__dragspeed.html','',''); });
 </div>
 <p>During flight, gravity, thrust and drag act on the quadrotor. Gravity is not measured by accelerometers and the thrust only acts along the drone's vertical axis. Therefore, only the drag is measured along the quadrotor's horizontal axes. Using a simple linear drag model, this deceleration can be transformed back into an estimate of the drone's airspeed.</p>
 <p>The advantages of this method are that the acceleration is not integrated over time (the only source of drift is the drift of the sensor itself) and that no knowledge of the quadrotor's attitude or other states is required.</p>
-<p>This module makes the following assumptions:</p><ul>
+<p>This module makes the following assumptions:</p>
+<ul>
 <li>The drag acting on the quadrotor grows linearly with velocity.</li>
 <li>The size and weight of the drone are constant (changes in size and/or weight require re-calibration).</li>
 <li>Pitch and roll angles are small (less than ~20 deg).</li>
@@ -137,7 +138,8 @@ Example results</h2>
 <div class="image">
 <img src="example_result.png" alt=""/>
 </div>
-<p>The following settings were used:</p><ul>
+<p>The following settings were used:</p>
+<ul>
 <li>DRAGSPEED_COEFF_X = 0.62</li>
 <li>DRAGSPEED_COEFF_Y = 0.85</li>
 <li>DRAGSPEED_FILTER = 0.8</li>
@@ -145,14 +147,14 @@ Example results</h2>
 <h1 class="doxsection"><a class="anchor" id="module_load_example__dragspeed"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dragspeed&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DRAGSPEED_SEND_ABI_MESSAGE&quot; value=&quot;TRUE|FALSE (default: TRUE)&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DRAGSPEED_ACCEL_ID&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DRAGSPEED_COEFF_X&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DRAGSPEED_COEFF_Y&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DRAGSPEED_ZERO_X&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DRAGSPEED_ZERO_Y&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DRAGSPEED_R&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DRAGSPEED_FILTER&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_SEND_ABI_MESSAGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE (default: TRUE)&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_ACCEL_ID&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_COEFF_X&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_COEFF_Y&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_ZERO_X&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_ZERO_Y&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_R&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_FILTER&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__dragspeed"></a>
 Module configuration options</h1>
@@ -205,32 +207,35 @@ Raw dragspeed.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Estimate</span> <span class="keyword">the</span> <span class="keyword">velocity</span>/<span class="keyword">airspeed</span> <span class="keyword">of</span> <span class="keyword">rotorcraft</span> <span class="keyword">by</span> <span class="keyword">measuring</span> <span class="keyword">the</span> <span class="keyword">drag</span> <span class="keyword">force.</span></div>
-<div class="line">      </div>
-<div class="line">      @<span class="keyword">image</span> <span class="keyword">html</span> <span class="keyword">images</span>/<span class="keyword">airborne</span>/<span class="keyword">modules</span>/<span class="keyword">dragspeed</span>/<span class="keyword">dragspeed.png</span></div>
-<div class="line">   </div>
+<div class="line"> </div>
+<div class="line">      .. <span class="keyword">image::</span> /../../<span class="keyword">images</span>/<span class="keyword">airborne</span>/<span class="keyword">modules</span>/<span class="keyword">dragspeed</span>/<span class="keyword">dragspeed.png</span></div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">During</span> <span class="keyword">flight</span>, <span class="keyword">gravity</span>, <span class="keyword">thrust</span> <span class="keyword">and</span> <span class="keyword">drag</span> <span class="keyword">act</span> <span class="keyword">on</span> <span class="keyword">the</span> <span class="keyword">quadrotor.</span></div>
 <div class="line">      <span class="keyword">Gravity</span> <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">measured</span> <span class="keyword">by</span> <span class="keyword">accelerometers</span> <span class="keyword">and</span> <span class="keyword">the</span> <span class="keyword">thrust</span> <span class="keyword">only</span> <span class="keyword">acts</span> <span class="keyword">along</span></div>
 <div class="line">      <span class="keyword">the</span> <span class="keyword">drone</span><span class="stringliteral">&#39;s vertical axis. Therefore, only the drag is measured along the </span></div>
 <div class="line"><span class="stringliteral">      quadrotor&#39;</span><span class="keyword">s</span> <span class="keyword">horizontal</span> <span class="keyword">axes.</span> <span class="keyword">Using</span> <span class="keyword">a</span> <span class="keyword">simple</span> <span class="keyword">linear</span> <span class="keyword">drag</span> <span class="keyword">model</span>, <span class="keyword">this</span> </div>
 <div class="line">      <span class="keyword">deceleration</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">transformed</span> <span class="keyword">back</span> <span class="keyword">into</span> <span class="keyword">an</span> <span class="keyword">estimate</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">drone</span><span class="stringliteral">&#39;s</span></div>
 <div class="line"><span class="stringliteral">      airspeed.</span></div>
-<div class="line"><span class="stringliteral">      </span></div>
+<div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">      The advantages of this method are that the acceleration is not integrated</span></div>
 <div class="line"><span class="stringliteral">      over time (the only source of drift is the drift of the sensor itself)</span></div>
 <div class="line"><span class="stringliteral">      and that no knowledge of the quadrotor&#39;</span><span class="keyword">s</span> <span class="keyword">attitude</span> <span class="keyword">or</span> <span class="keyword">other</span> <span class="keyword">states</span> <span class="keyword">is</span></div>
 <div class="line">      <span class="keyword">required.</span></div>
-<div class="line">   </div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">makes</span> <span class="keyword">the</span> <span class="keyword">following</span> <span class="keyword">assumptions:</span></div>
+<div class="line"> </div>
 <div class="line">      - <span class="keyword">The</span> <span class="keyword">drag</span> <span class="keyword">acting</span> <span class="keyword">on</span> <span class="keyword">the</span> <span class="keyword">quadrotor</span> <span class="keyword">grows</span> <span class="keyword">linearly</span> <span class="keyword">with</span> <span class="keyword">velocity.</span></div>
 <div class="line">      - <span class="keyword">The</span> <span class="keyword">size</span> <span class="keyword">and</span> <span class="keyword">weight</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">drone</span> <span class="keyword">are</span> <span class="keyword">constant</span> (<span class="keyword">changes</span> <span class="keyword">in</span> <span class="keyword">size</span> <span class="keyword">and</span>/<span class="keyword">or</span></div>
 <div class="line">        <span class="keyword">weight</span> <span class="keyword">require</span> <span class="keyword">re-calibration</span>).</div>
 <div class="line">      - <span class="keyword">Pitch</span> <span class="keyword">and</span> <span class="keyword">roll</span> <span class="keyword">angles</span> <span class="keyword">are</span> <span class="keyword">small</span> (<span class="keyword">less</span> <span class="keyword">than</span> ~20 <span class="keyword">deg</span>).</div>
 <div class="line">      - <span class="keyword">No</span> <span class="keyword">wind</span> (<span class="keyword">when</span> <span class="keyword">used</span> <span class="keyword">as</span> <span class="keyword">ground</span> <span class="keyword">speed</span>).</div>
-<div class="line">      </div>
-<div class="line">      </div>
+<div class="line"> </div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">Usage</span> <span class="keyword">instructions</span></div>
 <div class="line">      ------------------</div>
+<div class="line"> </div>
 <div class="line">      1. <span class="keyword">Calibrate</span> <span class="keyword">zero</span> (<span class="keyword">recommended</span> <span class="keyword">before</span> <span class="keyword">each</span> <span class="keyword">flight</span>)</div>
+<div class="line"> </div>
 <div class="line">         1. <span class="keyword">For</span> <span class="keyword">the</span> <span class="keyword">best</span> <span class="keyword">results</span>, <span class="keyword">ensure</span> <span class="keyword">that</span> <span class="keyword">the</span> <span class="keyword">INS</span> <span class="keyword">velocity</span> <span class="keyword">is</span> <span class="keyword">as</span> <span class="keyword">accurate</span> <span class="keyword">as</span></div>
 <div class="line">            <span class="keyword">possible</span> (<span class="keyword">e.g.</span> <span class="keyword">use</span> <span class="keyword">Optitrack</span> <span class="keyword">and</span> <span class="keyword">set</span> <span class="keyword">the</span> <span class="keyword">INS</span> <span class="keyword">type</span> <span class="keyword">to</span></div>
 <div class="line">            <span class="keyword">gps_passthrough</span>) <span class="keyword">and</span> <span class="keyword">set</span> <span class="keyword">DRAGSPEED_SEND_ABI_MESSAGE</span> <span class="keyword">to</span> <span class="keyword">FALSE.</span></div>
@@ -239,8 +244,10 @@ Raw dragspeed.xml file:</h2>
 <div class="line">         4. <span class="keyword">Keep</span> <span class="keyword">the</span> <span class="keyword">drone</span> <span class="keyword">stationary</span> <span class="keyword">until</span> <span class="stringliteral">&quot;Calibrate Zero&quot;</span> <span class="keyword">returns</span> <span class="keyword">to</span> 0.</div>
 <div class="line">         5. (<span class="keyword">Optional</span>) <span class="keyword">Copy</span> <span class="keyword">the</span> <span class="keyword">new</span> <span class="keyword">Zero_X</span> <span class="keyword">and</span> <span class="keyword">Zero_Y</span> <span class="keyword">values</span> <span class="keyword">to</span> <span class="keyword">the</span></div>
 <div class="line">            <span class="keyword">DRAGSPEED_ZERO_X</span> <span class="keyword">and</span> <span class="keyword">_Y</span> <span class="keyword">defines</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">airframe</span> <span class="keyword">file.</span></div>
-<div class="line">      2. <span class="keyword">Calibrate</span> <span class="keyword">drag</span> <span class="keyword">coefficient</span> (<span class="keyword">new</span> <span class="keyword">airframes</span> <span class="keyword">or</span> <span class="keyword">after</span> <span class="keyword">change</span> <span class="keyword">in</span> <span class="keyword">weight</span> <span class="keyword">or</span> </div>
+<div class="line"> </div>
+<div class="line">      2. <span class="keyword">Calibrate</span> <span class="keyword">drag</span> <span class="keyword">coefficient</span> (<span class="keyword">new</span> <span class="keyword">airframes</span> <span class="keyword">or</span> <span class="keyword">after</span> <span class="keyword">change</span> <span class="keyword">in</span> <span class="keyword">weight</span> <span class="keyword">or</span></div>
 <div class="line">         <span class="keyword">shape</span>)</div>
+<div class="line"> </div>
 <div class="line">         1. <span class="keyword">For</span> <span class="keyword">the</span> <span class="keyword">best</span> <span class="keyword">results</span>, <span class="keyword">ensure</span> <span class="keyword">that</span> <span class="keyword">the</span> <span class="keyword">INS</span> <span class="keyword">velocity</span> <span class="keyword">is</span> <span class="keyword">as</span> <span class="keyword">accurate</span> <span class="keyword">as</span></div>
 <div class="line">            <span class="keyword">possible</span> (<span class="keyword">e.g.</span> <span class="keyword">use</span> <span class="keyword">Optitrack</span> <span class="keyword">and</span> <span class="keyword">set</span> <span class="keyword">the</span> <span class="keyword">INS</span> <span class="keyword">type</span> <span class="keyword">to</span> </div>
 <div class="line">            <span class="keyword">gps_passthrough</span>) <span class="keyword">and</span> <span class="keyword">set</span> <span class="keyword">DRAGSPEED_SEND_ABI_MESSAGE</span> <span class="keyword">to</span> <span class="keyword">FALSE.</span></div>
@@ -255,32 +262,33 @@ Raw dragspeed.xml file:</h2>
 <div class="line">            <span class="keyword">DRAGSPEED</span> <span class="keyword">telemetry</span> <span class="keyword">message.</span></div>
 <div class="line">         6. <span class="keyword">Copy</span> <span class="keyword">the</span> <span class="keyword">new</span> <span class="keyword">Coeff_X</span> <span class="keyword">and</span> <span class="keyword">Coeff_Y</span> <span class="keyword">values</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">DRAGSPEED_COEFF_X</span></div>
 <div class="line">            <span class="keyword">and</span> <span class="keyword">_Y</span> <span class="keyword">defines</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">airframe</span> <span class="keyword">file.</span></div>
+<div class="line"> </div>
 <div class="line">      3. <span class="keyword">By</span> <span class="keyword">default</span>, <span class="keyword">the</span> <span class="keyword">estimated</span> <span class="keyword">velocity</span> <span class="keyword">is</span> <span class="keyword">sent</span> <span class="keyword">through</span> <span class="keyword">the</span></div>
 <div class="line">         <span class="keyword">VELOCITY_ESTIMATE</span> <span class="keyword">ABI</span> <span class="keyword">message</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">INS.</span> <span class="keyword">The</span> <span class="keyword">estimated</span> <span class="keyword">velocity</span> <span class="keyword">can</span></div>
 <div class="line">         <span class="keyword">also</span> <span class="keyword">be</span> <span class="keyword">read</span> <span class="keyword">from</span> <span class="keyword">the</span> <span class="keyword">dragspeed</span> <span class="keyword">struct.</span></div>
-<div class="line">      </div>
-<div class="line">      </div>
+<div class="line"> </div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">Calibration</span> <span class="keyword">from</span> <span class="keyword">flight</span> <span class="keyword">plan</span></div>
 <div class="line">      ----------------------------</div>
 <div class="line">      <span class="keyword">Calibration</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">started</span> <span class="keyword">from</span> <span class="keyword">the</span> <span class="keyword">flight</span> <span class="keyword">plan</span> <span class="keyword">by</span> <span class="keyword">calling</span></div>
 <div class="line">      <span class="keyword">dragspeed_calibrate_zero</span>() <span class="keyword">or</span> <span class="keyword">dragspeed_calibrate_coeff</span>(). <span class="keyword">Progress</span> <span class="keyword">of</span> <span class="keyword">the</span></div>
 <div class="line">      <span class="keyword">calibration</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">monitored</span> <span class="keyword">through</span> <span class="keyword">dragspeed_is_calibrating</span>(), <span class="keyword">which</span></div>
 <div class="line">      <span class="keyword">returns</span> <span class="keyword">TRUE</span> <span class="keyword">while</span> <span class="keyword">either</span> <span class="keyword">calibration</span> <span class="keyword">routine</span> <span class="keyword">is</span> <span class="keyword">in</span> <span class="keyword">progress.</span></div>
-<div class="line">      </div>
-<div class="line">      </div>
+<div class="line"> </div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">Example</span> <span class="keyword">results</span></div>
 <div class="line">      ---------------</div>
 <div class="line">      <span class="keyword">The</span> <span class="keyword">following</span> <span class="keyword">results</span> <span class="keyword">were</span> <span class="keyword">obtained</span> <span class="keyword">from</span> <span class="keyword">a</span> <span class="keyword">flight</span> <span class="keyword">test</span> <span class="keyword">performed</span> <span class="keyword">on</span> <span class="keyword">a</span></div>
 <div class="line">      <span class="keyword">quadrotor</span> <span class="keyword">inside</span> <span class="keyword">the</span> <span class="keyword">TU</span> <span class="keyword">Delft</span> <span class="keyword">Cyberzoo.</span> <span class="keyword">The</span> <span class="keyword">ground-truth</span> <span class="keyword">velocities</span></div>
 <div class="line">      <span class="keyword">are</span> <span class="keyword">obtained</span> <span class="keyword">through</span> <span class="keyword">the</span> <span class="keyword">Optitrack</span> <span class="keyword">system.</span></div>
-<div class="line">      </div>
-<div class="line">      @<span class="keyword">image</span> <span class="keyword">html</span> <span class="keyword">images</span>/<span class="keyword">airborne</span>/<span class="keyword">modules</span>/<span class="keyword">dragspeed</span>/<span class="keyword">example_result.png</span></div>
-<div class="line">      </div>
+<div class="line"> </div>
+<div class="line">      .. <span class="keyword">image::</span> /../../<span class="keyword">images</span>/<span class="keyword">airborne</span>/<span class="keyword">modules</span>/<span class="keyword">dragspeed</span>/<span class="keyword">example_result.png</span></div>
+<div class="line"> </div>
 <div class="line">      <span class="keyword">The</span> <span class="keyword">following</span> <span class="keyword">settings</span> <span class="keyword">were</span> <span class="keyword">used:</span></div>
+<div class="line"> </div>
 <div class="line">      - <span class="keyword">DRAGSPEED_COEFF_X</span> = 0.62</div>
 <div class="line">      - <span class="keyword">DRAGSPEED_COEFF_Y</span> = 0.85</div>
 <div class="line">      - <span class="keyword">DRAGSPEED_FILTER</span> = 0.8</div>
-<div class="line">      </div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_SEND_ABI_MESSAGE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Send VELOCITY_ESTIMATE ABI messages&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE (default: TRUE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DRAGSPEED_ACCEL_ID&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Accelerometer ABI ID to subscribe to (default: ABI_BROADCAST)&quot;</span>/&gt;</div>

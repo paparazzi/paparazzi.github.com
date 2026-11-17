@@ -95,20 +95,21 @@ $(function(){initNavTree('module__ins_skeleton.html','',''); });
 <div class="contents">
 <div class="textblock"><p><b>INS module skeleton.</b></p>
 <p><b></b></p>
-<p>This module is meant to be used with an additional module which implements any of the following</p><ul>
-<li><a class="el" href="ins__skeleton_8c.html#aa56482e32e97c2e358ca2cdd9293f5c0">ins_module_init()</a></li>
-<li><a class="el" href="ins__skeleton_8c.html#a0beee2dfe3232be75bafb5f5dbd4d3ef">ins_module_propagate(struct Int32Vect3 *accel, float dt)</a></li>
-<li><a class="el" href="ins__skeleton_8c.html#ac73bf250ba772215adbe88d71bec0a8f">ins_module_update_gps(struct GpsState *gps_s, float dt)</a></li>
-<li><a class="el" href="ins__skeleton_8c.html#a5a13ebcd773aea5e000360c190f06606">ins_module_update_baro(float pressure)</a></li>
-<li><a class="el" href="ins__skeleton_8c.html#a2bd55249dfa83c5c38b83adb0d581697">ins_module_reset_local_origin(void)</a></li>
+<p>This module is meant to be used with an additional module which implements any of the following:</p>
+<ul>
+<li><span class="tt"><a class="el" href="ins__skeleton_8c.html#aa56482e32e97c2e358ca2cdd9293f5c0">ins_module_init()</a></span></li>
+<li><span class="tt"><a class="el" href="ins__skeleton_8c.html#a0beee2dfe3232be75bafb5f5dbd4d3ef">ins_module_propagate(struct Int32Vect3 *accel, float dt)</a></span></li>
+<li><span class="tt"><a class="el" href="ins__skeleton_8c.html#ac73bf250ba772215adbe88d71bec0a8f">ins_module_update_gps(struct GpsState *gps_s, float dt)</a></span></li>
+<li><span class="tt"><a class="el" href="ins__skeleton_8c.html#a5a13ebcd773aea5e000360c190f06606">ins_module_update_baro(float pressure)</a></span></li>
+<li><span class="tt"><a class="el" href="ins__skeleton_8c.html#a2bd55249dfa83c5c38b83adb0d581697">ins_module_reset_local_origin(void)</a></span></li>
 </ul>
 <p>In each of those functions the updated estimate has to be written to the ins_module struct, which is then used to update the state interface.</p>
 <h1 class="doxsection"><a class="anchor" id="module_load_example__ins_skeleton"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ins_skeleton&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_MODULE_IMU_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_MODULE_BARO_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_MODULE_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_MODULE_IMU_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_MODULE_BARO_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_MODULE_GPS_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;GPS_MULTI_ID&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__ins_skeleton"></a>
 Module configuration options</h1>
@@ -152,12 +153,13 @@ Raw ins_skeleton.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">INS</span> <span class="keyword">module</span> <span class="keyword">skeleton.</span></div>
-<div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">is</span> <span class="keyword">meant</span> <span class="keyword">to</span> <span class="keyword">be</span> <span class="keyword">used</span> <span class="keyword">with</span> <span class="keyword">an</span> <span class="keyword">additional</span> <span class="keyword">module</span> <span class="keyword">which</span> <span class="keyword">implements</span> <span class="keyword">any</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">following</span></div>
-<div class="line">        - <span class="keyword">ins_module_init</span>()</div>
-<div class="line">        - <span class="keyword">ins_module_propagate</span>(<span class="keyword">struct</span> <span class="keyword">Int32Vect3</span> *<span class="keyword">accel</span>, <span class="keyword">float</span> <span class="keyword">dt</span>)</div>
-<div class="line">        - <span class="keyword">ins_module_update_gps</span>(<span class="keyword">struct</span> <span class="keyword">GpsState</span> *<span class="keyword">gps_s</span>, <span class="keyword">float</span> <span class="keyword">dt</span>)</div>
-<div class="line">        - <span class="keyword">ins_module_update_baro</span>(<span class="keyword">float</span> <span class="keyword">pressure</span>)</div>
-<div class="line">        - <span class="keyword">ins_module_reset_local_origin</span>(<span class="keyword">void</span>)</div>
+<div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">is</span> <span class="keyword">meant</span> <span class="keyword">to</span> <span class="keyword">be</span> <span class="keyword">used</span> <span class="keyword">with</span> <span class="keyword">an</span> <span class="keyword">additional</span> <span class="keyword">module</span> <span class="keyword">which</span> <span class="keyword">implements</span> <span class="keyword">any</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">following:</span></div>
+<div class="line"> </div>
+<div class="line">      - ``<span class="keyword">ins_module_init</span>()``</div>
+<div class="line">      - ``<span class="keyword">ins_module_propagate</span>(<span class="keyword">struct</span> <span class="keyword">Int32Vect3</span> *<span class="keyword">accel</span>, <span class="keyword">float</span> <span class="keyword">dt</span>)``</div>
+<div class="line">      - ``<span class="keyword">ins_module_update_gps</span>(<span class="keyword">struct</span> <span class="keyword">GpsState</span> *<span class="keyword">gps_s</span>, <span class="keyword">float</span> <span class="keyword">dt</span>)``</div>
+<div class="line">      - ``<span class="keyword">ins_module_update_baro</span>(<span class="keyword">float</span> <span class="keyword">pressure</span>)``</div>
+<div class="line">      - ``<span class="keyword">ins_module_reset_local_origin</span>(<span class="keyword">void</span>)``</div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">In</span> <span class="keyword">each</span> <span class="keyword">of</span> <span class="keyword">those</span> <span class="keyword">functions</span> <span class="keyword">the</span> <span class="keyword">updated</span> <span class="keyword">estimate</span> <span class="keyword">has</span> <span class="keyword">to</span> <span class="keyword">be</span> <span class="keyword">written</span> <span class="keyword">to</span> <span class="keyword">the</span> <span class="keyword">ins_module</span> <span class="keyword">struct</span>,</div>
 <div class="line">      <span class="keyword">which</span> <span class="keyword">is</span> <span class="keyword">then</span> <span class="keyword">used</span> <span class="keyword">to</span> <span class="keyword">update</span> <span class="keyword">the</span> <span class="keyword">state</span> <span class="keyword">interface.</span></div>

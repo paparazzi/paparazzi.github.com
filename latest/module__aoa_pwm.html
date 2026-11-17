@@ -99,19 +99,19 @@ $(function(){initNavTree('module__aoa_pwm.html','',''); });
 <h1 class="doxsection"><a class="anchor" id="module_load_example__aoa_pwm"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AOA_pwm&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AOA_SENS&quot; value=&quot;(2*3.14)/AOA_PWM_PERIOD&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AOA_OFFSET&quot; value=&quot;0.&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AOA_ANGLE_OFFSET&quot; value=&quot;3.14&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AOA_REVERSE&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AOA_PWM_PERIOD&quot; value=&quot;4096&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AOA_PWM_OFFSET&quot; value=&quot;1&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SEND_AOA&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;LOG_AOA&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SSA_SENS&quot; value=&quot;(2*3.14)/AOA_PWM_PERIOD&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SSA_OFFSET&quot; value=&quot;0.&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SSA_REVERSE&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n  &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;AOA_PWM_CHANNEL&quot; value=&quot;PWM_INPUTX&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SSA_PWM_CHANNEL&quot; value=&quot;PWM_INPUTX&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AOA_SENS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;(2*3.14)/AOA_PWM_PERIOD&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AOA_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AOA_ANGLE_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3.14&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AOA_REVERSE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AOA_PWM_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4096&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AOA_PWM_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SEND_AOA&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LOG_AOA&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SSA_SENS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;(2*3.14)/AOA_PWM_PERIOD&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SSA_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SSA_REVERSE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AOA_PWM_CHANNEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;PWM_INPUTX&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SSA_PWM_CHANNEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;PWM_INPUTX&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__aoa_pwm"></a>
 Module configuration options</h1>
