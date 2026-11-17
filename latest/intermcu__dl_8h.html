@@ -136,9 +136,9 @@ Data Structures</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a88a0036361c3680adee00030e08b426c" id="r_a88a0036361c3680adee00030e08b426c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88a0036361c3680adee00030e08b426c">intermcu_dl_init</a> (void)</td></tr>
 <tr class="memdesc:a88a0036361c3680adee00030e08b426c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <br /></td></tr>
-<tr class="memitem:a1c1dcd938c8994f397cab17772b15d3f" id="r_a1c1dcd938c8994f397cab17772b15d3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c1dcd938c8994f397cab17772b15d3f">intermcu_dl_repack</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size)</td></tr>
+<tr class="memitem:a1c1dcd938c8994f397cab17772b15d3f" id="r_a1c1dcd938c8994f397cab17772b15d3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c1dcd938c8994f397cab17772b15d3f">intermcu_dl_repack</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *msg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size)</td></tr>
 <tr class="memdesc:a1c1dcd938c8994f397cab17772b15d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">repack a message and send on device  <br /></td></tr>
-<tr class="memitem:a2efff3165b0d4eddb2f01d93b456aed3" id="r_a2efff3165b0d4eddb2f01d93b456aed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2efff3165b0d4eddb2f01d93b456aed3">intermcu_dl_on_msg</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size)</td></tr>
+<tr class="memitem:a2efff3165b0d4eddb2f01d93b456aed3" id="r_a2efff3165b0d4eddb2f01d93b456aed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2efff3165b0d4eddb2f01d93b456aed3">intermcu_dl_on_msg</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *msg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size)</td></tr>
 <tr class="memdesc:a2efff3165b0d4eddb2f01d93b456aed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to forward telemetry on new message  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
@@ -252,7 +252,7 @@ Forwarding transport. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="intermcu__dl_8c_source.html#l00079">79</a> of file <a class="el" href="intermcu__dl_8c_source.html">intermcu_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="intermcu__dl_8c_source.html#l00037">intermcu_dl</a>, <a class="el" href="intermcu__dl_8c_source.html#l00057">intermcu_dl_repack()</a>, and <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>.</p>
+<p class="reference">References <a class="el" href="intermcu__dl_8c_source.html#l00037">intermcu_dl</a>, and <a class="el" href="intermcu__dl_8c_source.html#l00057">intermcu_dl_repack()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="intermcu__ap_8c_source.html#l00095">intermcu_event()</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -333,7 +333,7 @@ Forwarding transport. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="intermcu__dl_8c_source.html#l00057">57</a> of file <a class="el" href="intermcu__dl_8c_source.html">intermcu_dl.c</a>.</p>
 
-<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, and <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>.</p>
+<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="intermcu__dl_8c_source.html#l00079">intermcu_dl_on_msg()</a>, and <a class="el" href="intermcu__fbw_8c_source.html#l00197">intermcu_forward_uplink()</a>.</p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>

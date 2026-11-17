@@ -15,8 +15,6 @@ var searchData=
   ['video_5frtp_5fstream_20xml_20file_3a_12',['Raw video_rtp_stream.xml file:',['../module__video_rtp_stream.html#module_xml__video_rtp_stream',1,'']]],
   ['video_5fthread_20module_13',['video_thread module',['../module__video_thread.html',1,'onboard_modules']]],
   ['video_5fthread_20xml_20file_3a_14',['Raw video_thread.xml file:',['../module__video_thread.html#module_xml__video_thread',1,'']]],
-  ['video_5fusb_5flogger_20module_15',['video_usb_logger module',['../module__video_usb_logger.html',1,'onboard_modules']]],
-  ['video_5fusb_5flogger_20xml_20file_3a_16',['Raw video_usb_logger.xml file:',['../module__video_usb_logger.html#module_xml__video_usb_logger',1,'']]],
-  ['vision_5fposition_5festimate_20id_2090_17',['VISION_POSITION_ESTIMATE (ID 90)',['../paparazzi_messages.html#VISION_POSITION_ESTIMATE',1,'']]],
-  ['visualtarget_20id_20235_18',['VISUALTARGET (ID 235)',['../paparazzi_messages.html#VISUALTARGET',1,'']]]
+  ['vision_5fposition_5festimate_20id_2090_15',['VISION_POSITION_ESTIMATE (ID 90)',['../paparazzi_messages.html#VISION_POSITION_ESTIMATE',1,'']]],
+  ['visualtarget_20id_20235_16',['VISUALTARGET (ID 235)',['../paparazzi_messages.html#VISUALTARGET',1,'']]]
 ];

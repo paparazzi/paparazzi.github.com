@@ -48,8 +48,6 @@ var dir_304e79c9f5d09ea65a2f55aafb6a6b9d =
     [ "video_thread.h", "video__thread_8h.html", "video__thread_8h" ],
     [ "video_thread_nps.c", "video__thread__nps_8c.html", "video__thread__nps_8c" ],
     [ "video_thread_nps.h", "video__thread__nps_8h.html", "video__thread__nps_8h" ],
-    [ "video_usb_logger.c", "video__usb__logger_8c.html", "video__usb__logger_8c" ],
-    [ "video_usb_logger.h", "video__usb__logger_8h.html", "video__usb__logger_8h" ],
     [ "viewvideo.c", "viewvideo_8c.html", "viewvideo_8c" ],
     [ "viewvideo.h", "viewvideo_8h.html", "viewvideo_8h" ]
 ];

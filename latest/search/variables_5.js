@@ -226,13 +226,10 @@ var searchData=
   ['extiio_223',['extiIo',['../cc2500__settings_8c.html#aa049a862a7363fc394cfe7a8adcea389',1,'cc2500_settings.c']]],
   ['extiiotag_224',['extiIoTag',['../cc2500__settings_8h.html#a46a3401c9047425fdcfe639aae6f0ade',1,'rxSpiConfig_s']]],
   ['extra_225',['extra',['../digital__cam_2catia_2protocol_8h.html#a79eb2b18c7aba84dcc49d817bc61e9ca',1,'mora_status_union::mora_status_struct::extra'],['../jevois_8c.html#a20e24cf7a2f6e89336bb12fa5069901e',1,'jevois_msg_t::extra']]],
-  ['extra1_226',['extra1',['../high__speed__logger__spi__link_8h.html#a361a21715443119cae28a7f19178d337',1,'high_speed_logger_spi_link_data']]],
-  ['extra2_227',['extra2',['../high__speed__logger__spi__link_8h.html#a8ee9dfe264f3fdce73a574b6599ce7ba',1,'high_speed_logger_spi_link_data']]],
-  ['extra3_228',['extra3',['../high__speed__logger__spi__link_8h.html#ae9976c332f606390637001b55916ae25',1,'high_speed_logger_spi_link_data']]],
-  ['extra_5fdl_5fbuffer_229',['extra_dl_buffer',['../extra__pprz__dl_8c.html#a37ae171c6e8cb590c675c5f22d5d8361',1,'extra_pprz_dl.c']]],
-  ['extra_5fdl_5fmsg_5favailable_230',['extra_dl_msg_available',['../extra__pprz__dl_8c.html#a54a5f64737d71d4cb541d4c97bc4bbcc',1,'extra_pprz_dl.c']]],
-  ['extra_5fpprz_5ftp_231',['extra_pprz_tp',['../extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90',1,'extra_pprz_tp:&#160;extra_pprz_dl.c'],['../extra__pprz__dl_8h.html#a23d92289aeb262d1f2dfa1362e583e90',1,'extra_pprz_tp:&#160;extra_pprz_dl.c']]],
-  ['ey_232',['Ey',['../trilateration_8c.html#a42807c9801696434a57f4f6cd127edd6',1,'trilateration.c']]],
-  ['ez_233',['Ez',['../trilateration_8c.html#abc320dbeb3dc3e7fbda35611354245cc',1,'trilateration.c']]],
-  ['ezcurrent_5fi2c_5ftrans_234',['ezcurrent_i2c_trans',['../ezcurrent_8c.html#aace3bfef7af597fc8329642617405759',1,'ezcurrent.c']]]
+  ['extra_5fdl_5fbuffer_226',['extra_dl_buffer',['../extra__pprz__dl_8c.html#a37ae171c6e8cb590c675c5f22d5d8361',1,'extra_pprz_dl.c']]],
+  ['extra_5fdl_5fmsg_5favailable_227',['extra_dl_msg_available',['../extra__pprz__dl_8c.html#a54a5f64737d71d4cb541d4c97bc4bbcc',1,'extra_pprz_dl.c']]],
+  ['extra_5fpprz_5ftp_228',['extra_pprz_tp',['../extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90',1,'extra_pprz_tp:&#160;extra_pprz_dl.c'],['../extra__pprz__dl_8h.html#a23d92289aeb262d1f2dfa1362e583e90',1,'extra_pprz_tp:&#160;extra_pprz_dl.c']]],
+  ['ey_229',['Ey',['../trilateration_8c.html#a42807c9801696434a57f4f6cd127edd6',1,'trilateration.c']]],
+  ['ez_230',['Ez',['../trilateration_8c.html#abc320dbeb3dc3e7fbda35611354245cc',1,'trilateration.c']]],
+  ['ezcurrent_5fi2c_5ftrans_231',['ezcurrent_i2c_trans',['../ezcurrent_8c.html#aace3bfef7af597fc8329642617405759',1,'ezcurrent.c']]]
 ];

@@ -1,80 +1,76 @@
 <map id="image_create" name="image_create">
-<area shape="rect" id="Node000001" title="Create a new image." alt="" coords="1527,441,1637,469"/>
-<area shape="rect" id="Node000002" href="$opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame." alt="" coords="642,261,825,289"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1543,433,1512,419,1478,406,1420,390,1371,380,1285,372,1197,368,1087,355,927,323,793,292,793,287,928,318,1087,350,1198,363,1285,367,1371,375,1421,385,1480,401,1515,414,1548,434"/>
-<area shape="rect" id="Node000006" href="$cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title=" " alt="" coords="1322,415,1464,442"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1508,445,1464,441,1464,436,1514,445"/>
-<area shape="rect" id="Node000008" href="$video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a separate thread,..." alt="" coords="873,467,1039,494"/>
-<area shape="poly" id="edge42_Node000001_Node000008" title=" " alt="" coords="1549,476,1515,496,1479,508,1417,520,1353,526,1227,525,1112,513,1022,498,1021,492,1113,508,1227,519,1353,520,1417,514,1478,503,1513,491,1544,478"/>
-<area shape="rect" id="Node000011" href="$cv__blob__locator_8c.html#a922c40d2a25e1519548f0d62094d13e0" title=" " alt="" coords="1314,209,1472,237"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1572,425,1559,388,1540,341,1513,293,1477,252,1459,240,1459,235,1480,248,1517,290,1545,338,1565,386,1576,428"/>
-<area shape="rect" id="Node000013" href="$cv__blob__locator_8c.html#a8a8fe89100e06413aa2d6ac8fe864904" title=" " alt="" coords="1329,261,1457,289"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1566,426,1532,365,1507,332,1477,304,1457,292,1457,287,1480,300,1511,329,1537,362,1571,428"/>
-<area shape="rect" id="Node000014" href="$detect__window_8c.html#a95bed831780969bf022d690ce4f2361c" title=" " alt="" coords="1333,313,1453,341"/>
-<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="1556,429,1521,396,1477,361,1442,344,1442,339,1480,357,1525,392,1561,430"/>
-<area shape="rect" id="Node000016" href="$image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements." alt="" coords="1322,5,1464,33"/>
-<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="1575,424,1562,339,1541,226,1512,118,1495,76,1477,48,1462,36,1463,31,1481,44,1500,74,1517,116,1546,225,1567,338,1579,427"/>
-<area shape="rect" id="Node000018" href="$lucas__kanade_8c.html#adc6992dd246333565509c082600de8d2" title=" " alt="" coords="906,133,1006,161"/>
-<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="1578,424,1573,367,1559,294,1546,256,1528,220,1506,187,1477,160,1441,143,1390,133,1327,128,1258,127,1119,133,1007,144,1006,139,1118,128,1258,121,1328,122,1391,128,1443,138,1480,156,1510,184,1533,217,1551,254,1564,292,1579,367,1583,427"/>
-<area shape="rect" id="Node000019" href="$video__usb__logger_8c.html#a6e6d050f1d846a0c5de7966f7e70da6e" title=" " alt="" coords="1348,467,1438,494"/>
-<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="1509,465,1438,477,1437,472,1514,464"/>
-<area shape="rect" id="Node000021" href="$lucas__kanade_8c.html#ade0d457b31d464e5e9c2e8ca6309474e" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="1109,159,1237,186"/>
-<area shape="poly" id="edge24_Node000001_Node000021" title=" " alt="" coords="1576,424,1568,375,1552,313,1539,281,1523,250,1502,223,1477,200,1450,183,1420,171,1357,158,1294,157,1238,162,1237,157,1294,152,1357,153,1422,166,1452,179,1480,196,1506,219,1527,248,1544,279,1557,311,1574,374,1581,427"/>
-<area shape="rect" id="Node000022" href="$pano__unwrap_8c.html#a2038ddd6c9204939f22d0879640b52e6" title=" " alt="" coords="888,695,1024,722"/>
-<area shape="poly" id="edge26_Node000001_Node000022" title=" " alt="" coords="1557,478,1521,508,1480,532,1423,553,1372,564,1326,569,1283,570,1239,572,1194,577,1144,588,1088,610,1053,629,1021,653,972,696,970,692,1018,648,1050,625,1086,605,1143,583,1193,571,1239,566,1282,565,1326,564,1371,559,1421,548,1478,527,1518,504,1552,480"/>
-<area shape="rect" id="Node000023" href="$image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding." alt="" coords="1318,57,1468,85"/>
-<area shape="poly" id="edge27_Node000001_Node000023" title=" " alt="" coords="1578,425,1573,361,1559,276,1546,230,1528,185,1506,143,1477,105,1453,88,1454,83,1481,101,1510,140,1533,183,1551,228,1564,274,1579,360,1583,427"/>
-<area shape="rect" id="Node000024" href="$qr__code_8c.html#aec8991dec262f424ee1f88d64de28f22" title=" " alt="" coords="1361,619,1425,646"/>
-<area shape="poly" id="edge29_Node000001_Node000024" title=" " alt="" coords="1570,481,1535,543,1510,575,1480,603,1454,618,1426,628,1425,623,1451,613,1477,598,1506,571,1530,540,1565,484"/>
-<area shape="rect" id="Node000026" href="$pano__unwrap_8c.html#a30fd9eed01039f2c0f6375c224a051d2" title=" " alt="" coords="1307,671,1479,698"/>
-<area shape="poly" id="edge32_Node000001_Node000026" title=" " alt="" coords="1576,482,1564,524,1545,571,1517,619,1480,660,1460,673,1458,668,1477,656,1513,616,1540,569,1559,522,1572,486"/>
-<area shape="rect" id="Node000028" href="$undistort__image_8c.html#a50247426160650698734913d712d4514" title=" " alt="" coords="1312,723,1474,750"/>
-<area shape="poly" id="edge36_Node000001_Node000028" title=" " alt="" coords="1579,482,1570,534,1552,594,1523,657,1504,686,1480,712,1462,725,1460,720,1477,708,1500,683,1519,655,1547,593,1565,532,1575,486"/>
-<area shape="rect" id="Node000030" href="$video__capture_8c.html#a827eff900b2ec2115c0098701f7a2706" title=" " alt="" coords="1317,775,1469,802"/>
-<area shape="poly" id="edge38_Node000001_Node000030" title=" " alt="" coords="1581,483,1575,543,1559,618,1546,657,1529,696,1508,732,1480,764,1462,777,1460,772,1477,760,1503,729,1525,693,1541,655,1554,616,1570,542,1577,487"/>
-<area shape="rect" id="Node000033" href="$viewvideo_8c.html#a039dda8322a14ef1a03cba29f91a5ca0" title="Handles all the video streaming and saving of the image shots This is a separate thread,..." alt="" coords="1319,827,1467,854"/>
-<area shape="poly" id="edge43_Node000001_Node000033" title=" " alt="" coords="1583,483,1580,552,1566,640,1553,687,1535,734,1511,777,1481,816,1463,829,1461,824,1477,812,1507,774,1530,731,1548,686,1561,639,1575,551,1579,487"/>
-<area shape="rect" id="Node000034" href="$wedgebug_8c.html#a0c18ae7d0b7a7e2d1983a6529bced941" title=" " alt="" coords="1335,879,1451,906"/>
-<area shape="poly" id="edge44_Node000001_Node000034" title=" " alt="" coords="1579,483,1567,572,1546,686,1517,795,1500,838,1481,868,1452,886,1451,881,1477,864,1495,836,1512,794,1541,685,1562,572,1575,487"/>
-<area shape="rect" id="Node000003" href="$opticflow__calculator_8c.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame." alt="" coords="435,261,594,289"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="624,276,596,278,594,273,629,274"/>
-<area shape="rect" id="Node000004" href="$opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread." alt="" coords="218,261,387,289"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="417,277,389,278,386,273,422,274"/>
-<area shape="rect" id="Node000005" href="$opticflow__module_8c.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera." alt="" coords="5,261,170,289"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="200,277,172,277,168,273,204,273"/>
-<area shape="rect" id="Node000007" href="$cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title=" " alt="" coords="1116,415,1230,442"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1304,429,1231,431,1230,426,1309,428"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1098,447,1018,469,1016,463,1103,445"/>
-<area shape="rect" id="Node000009" href="$video__thread_8c.html#ab813e16de6bb4fcba1ac803cd51e722d" title=" " alt="" coords="662,467,805,494"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="854,481,806,483,805,478,860,480"/>
-<area shape="rect" id="Node000010" href="$video__thread_8c.html#a0cbac7b8c5125087e4da17b3374f0a1e" title="Starts the streaming of a all cameras." alt="" coords="443,467,586,494"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="644,481,588,483,586,478,649,480"/>
-<area shape="rect" id="Node000012" href="$cv__blob__locator_8c.html#a03040f93fee504200fd409c45f488e4d" title=" " alt="" coords="1098,224,1249,252"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1296,230,1250,235,1248,230,1301,229"/>
-<area shape="poly" id="edge13_Node000013_Node000012" title=" " alt="" coords="1311,262,1250,253,1249,248,1316,261"/>
-<area shape="rect" id="Node000015" href="$detect__window_8c.html#acd7643219a35e96f1dbd1a28a2c2237e" title=" " alt="" coords="1100,313,1247,341"/>
-<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1315,328,1248,330,1247,325,1320,327"/>
-<area shape="poly" id="edge16_Node000015_Node000015" title=" " alt="" coords="1209,298,1197,294,1173,292,1151,294,1138,299,1135,304,1141,313,1136,312,1130,304,1135,295,1149,289,1173,287,1199,289,1214,298"/>
-<area shape="rect" id="Node000017" href="$image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="1116,57,1230,85"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1314,38,1232,60,1230,55,1319,36"/>
-<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="1115,92,999,135,997,130,1119,89"/>
-<area shape="poly" id="edge20_Node000018_Node000002" title=" " alt="" coords="915,171,761,263,758,259,919,168"/>
-<area shape="rect" id="Node000020" href="$video__usb__logger_8c.html#a371634939fbb925daf5f698a8f9fad1f" title="Start the file logger and open a new file." alt="" coords="1087,467,1259,494"/>
-<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="1330,481,1260,483,1259,478,1335,480"/>
-<area shape="poly" id="edge25_Node000021_Node000018" title=" " alt="" coords="1091,164,1007,156,1006,150,1096,163"/>
-<area shape="poly" id="edge28_Node000023_Node000017" title=" " alt="" coords="1300,72,1232,74,1230,69,1305,70"/>
-<area shape="rect" id="Node000025" href="$qr__code_8c.html#ac2cd906083090c455a8cf7bb2b491dee" title=" " alt="" coords="1126,643,1220,670"/>
-<area shape="poly" id="edge30_Node000024_Node000025" title=" " alt="" coords="1343,638,1221,654,1220,649,1348,637"/>
-<area shape="poly" id="edge31_Node000025_Node000025" title=" " alt="" coords="1209,627,1197,624,1173,621,1151,623,1138,628,1135,633,1141,643,1136,641,1130,634,1135,624,1149,618,1173,616,1199,619,1214,628"/>
-<area shape="poly" id="edge35_Node000026_Node000022" title=" " alt="" coords="1331,703,1308,714,1285,726,1260,736,1194,745,1126,743,1064,736,1012,726,1012,720,1065,730,1127,738,1193,739,1259,731,1283,721,1306,709,1325,704"/>
-<area shape="rect" id="Node000027" href="$pano__unwrap_8c.html#acd37c838f1cfa2f2704f604fcfc45a90" title=" " alt="" coords="1127,695,1219,722"/>
-<area shape="poly" id="edge33_Node000026_Node000027" title=" " alt="" coords="1289,696,1220,706,1219,701,1295,695"/>
-<area shape="poly" id="edge34_Node000027_Node000022" title=" " alt="" coords="1109,709,1025,711,1024,706,1114,708"/>
-<area shape="rect" id="Node000029" href="$undistort__image_8c.html#a2fe19ff135bf0c4edca40d4f630b973f" title=" " alt="" coords="1096,796,1251,824"/>
-<area shape="poly" id="edge37_Node000028_Node000029" title=" " alt="" coords="1334,755,1308,766,1215,798,1214,793,1306,761,1328,756"/>
-<area shape="rect" id="Node000031" href="$video__capture_8c.html#a3e437d208a036f18893d795ea51bad16" title=" " alt="" coords="1099,848,1247,876"/>
-<area shape="poly" id="edge39_Node000030_Node000031" title=" " alt="" coords="1332,807,1308,818,1260,838,1224,850,1223,845,1258,833,1306,813,1327,808"/>
-<area shape="rect" id="Node000032" href="$video__capture_8c.html#afd5936d0a4d5e8abd118dfac97638829" title=" " alt="" coords="885,848,1026,876"/>
-<area shape="poly" id="edge40_Node000031_Node000032" title=" " alt="" coords="1081,862,1027,864,1027,859,1086,862"/>
-<area shape="poly" id="edge41_Node000032_Node000032" title=" " alt="" coords="991,832,980,829,956,827,933,829,921,833,918,839,923,849,918,846,912,839,917,829,932,823,956,821,981,824,997,833"/>
+<area shape="rect" id="Node000001" title="Create a new image." alt="" coords="1510,421,1620,449"/>
+<area shape="rect" id="Node000002" href="$opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame." alt="" coords="642,242,825,270"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1492,427,1309,403,1198,384,1086,362,914,316,778,273,777,268,915,311,1088,356,1199,379,1310,398,1497,426"/>
+<area shape="rect" id="Node000006" href="$cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title=" " alt="" coords="1305,472,1447,499"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1493,454,1431,474,1430,469,1499,453"/>
+<area shape="rect" id="Node000008" href="$video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a separate thread,..." alt="" coords="873,446,1039,474"/>
+<area shape="poly" id="edge40_Node000001_Node000008" title=" " alt="" coords="1492,439,1040,460,1039,454,1497,437"/>
+<area shape="rect" id="Node000011" href="$cv__blob__locator_8c.html#a922c40d2a25e1519548f0d62094d13e0" title=" " alt="" coords="1297,268,1455,295"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1546,407,1511,359,1487,333,1460,311,1438,299,1438,293,1463,306,1491,329,1515,355,1551,408"/>
+<area shape="rect" id="Node000013" href="$cv__blob__locator_8c.html#a8a8fe89100e06413aa2d6ac8fe864904" title=" " alt="" coords="1312,216,1440,243"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1552,405,1539,373,1519,333,1493,293,1460,258,1441,247,1441,241,1463,254,1497,289,1524,330,1544,371,1557,407"/>
+<area shape="rect" id="Node000014" href="$detect__window_8c.html#a95bed831780969bf022d690ce4f2361c" title=" " alt="" coords="1316,320,1436,347"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="1531,411,1460,368,1421,351,1421,345,1463,363,1536,412"/>
+<area shape="rect" id="Node000016" href="$image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements." alt="" coords="1305,164,1447,191"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="1556,404,1545,362,1527,308,1499,253,1481,228,1460,206,1443,195,1443,189,1463,202,1485,225,1503,251,1532,306,1550,360,1561,407"/>
+<area shape="rect" id="Node000018" href="$lucas__kanade_8c.html#adc6992dd246333565509c082600de8d2" title=" " alt="" coords="906,88,1006,115"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="1558,404,1545,324,1525,219,1496,121,1479,85,1460,61,1432,42,1402,28,1370,18,1337,12,1269,9,1201,17,1135,33,1075,52,986,90,984,85,1073,47,1133,28,1200,12,1269,4,1338,6,1372,13,1404,23,1435,37,1463,57,1484,82,1501,119,1530,218,1551,323,1562,407"/>
+<area shape="rect" id="Node000019" href="$lucas__kanade_8c.html#ade0d457b31d464e5e9c2e8ca6309474e" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="1100,61,1229,89"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="1562,404,1559,341,1546,257,1533,214,1515,172,1491,134,1460,102,1434,85,1406,73,1345,60,1284,59,1230,64,1229,59,1284,53,1346,55,1408,68,1437,81,1463,98,1495,131,1520,170,1538,212,1551,256,1565,340,1567,407"/>
+<area shape="rect" id="Node000020" href="$pano__unwrap_8c.html#a2038ddd6c9204939f22d0879640b52e6" title=" " alt="" coords="888,573,1024,601"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="1560,462,1551,507,1532,559,1504,610,1485,633,1463,653,1415,686,1370,710,1327,724,1284,731,1240,730,1193,722,1086,691,1049,673,1015,649,969,604,970,599,1019,645,1052,668,1088,686,1194,717,1240,724,1284,725,1326,719,1368,705,1412,682,1460,649,1481,630,1499,607,1527,557,1546,506,1557,466"/>
+<area shape="rect" id="Node000021" href="$image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding." alt="" coords="1301,112,1451,139"/>
+<area shape="poly" id="edge25_Node000001_Node000021" title=" " alt="" coords="1559,405,1551,353,1534,285,1505,215,1485,183,1460,154,1444,143,1444,137,1463,150,1489,179,1510,212,1539,283,1556,352,1564,407"/>
+<area shape="rect" id="Node000022" href="$qr__code_8c.html#aec8991dec262f424ee1f88d64de28f22" title=" " alt="" coords="1344,612,1408,639"/>
+<area shape="poly" id="edge27_Node000001_Node000022" title=" " alt="" coords="1548,460,1511,512,1464,565,1432,592,1401,614,1399,609,1428,588,1460,561,1507,509,1543,463"/>
+<area shape="rect" id="Node000024" href="$pano__unwrap_8c.html#a30fd9eed01039f2c0f6375c224a051d2" title=" " alt="" coords="1290,524,1462,551"/>
+<area shape="poly" id="edge30_Node000001_Node000024" title=" " alt="" coords="1539,458,1503,488,1463,513,1433,526,1432,521,1460,509,1500,484,1534,460"/>
+<area shape="rect" id="Node000026" href="$undistort__image_8c.html#a50247426160650698734913d712d4514" title=" " alt="" coords="1295,750,1457,778"/>
+<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="1563,462,1557,520,1540,592,1527,630,1510,667,1489,703,1463,734,1437,752,1435,747,1460,730,1485,700,1505,665,1522,628,1535,591,1551,519,1560,466"/>
+<area shape="rect" id="Node000028" href="$video__capture_8c.html#a827eff900b2ec2115c0098701f7a2706" title=" " alt="" coords="1300,802,1452,830"/>
+<area shape="poly" id="edge36_Node000001_Node000028" title=" " alt="" coords="1566,462,1563,531,1549,618,1536,665,1518,710,1494,753,1464,792,1446,804,1444,799,1460,788,1490,750,1513,708,1531,663,1544,617,1558,530,1562,466"/>
+<area shape="rect" id="Node000031" href="$viewvideo_8c.html#a039dda8322a14ef1a03cba29f91a5ca0" title="Handles all the video streaming and saving of the image shots This is a separate thread,..." alt="" coords="1302,854,1450,882"/>
+<area shape="poly" id="edge41_Node000001_Node000031" title=" " alt="" coords="1562,462,1550,551,1529,664,1500,772,1483,814,1464,843,1446,856,1445,851,1460,840,1478,812,1495,770,1524,663,1545,550,1558,466"/>
+<area shape="rect" id="Node000032" href="$wedgebug_8c.html#a0c18ae7d0b7a7e2d1983a6529bced941" title=" " alt="" coords="1318,906,1434,934"/>
+<area shape="poly" id="edge42_Node000001_Node000032" title=" " alt="" coords="1563,462,1552,561,1532,690,1519,754,1503,813,1485,862,1464,895,1451,906,1435,914,1434,908,1448,902,1460,892,1480,859,1498,812,1514,753,1527,689,1547,560,1559,466"/>
+<area shape="rect" id="Node000003" href="$opticflow__calculator_8c.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame." alt="" coords="435,242,594,270"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="624,257,596,259,594,254,629,255"/>
+<area shape="rect" id="Node000004" href="$opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread." alt="" coords="218,242,387,270"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="417,258,389,259,386,254,422,255"/>
+<area shape="rect" id="Node000005" href="$opticflow__module_8c.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera." alt="" coords="5,242,170,270"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="200,258,172,258,168,254,204,255"/>
+<area shape="rect" id="Node000007" href="$cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title=" " alt="" coords="1108,472,1222,499"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1288,486,1223,488,1222,483,1293,485"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1089,477,1040,473,1039,468,1094,476"/>
+<area shape="rect" id="Node000009" href="$video__thread_8c.html#ab813e16de6bb4fcba1ac803cd51e722d" title=" " alt="" coords="662,446,805,474"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="855,461,806,463,805,458,860,460"/>
+<area shape="rect" id="Node000010" href="$video__thread_8c.html#a0cbac7b8c5125087e4da17b3374f0a1e" title="Starts the streaming of a all cameras." alt="" coords="443,446,586,474"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="644,461,588,463,586,458,649,459"/>
+<area shape="rect" id="Node000012" href="$cv__blob__locator_8c.html#a03040f93fee504200fd409c45f488e4d" title=" " alt="" coords="1089,229,1240,257"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1280,265,1241,260,1241,254,1285,264"/>
+<area shape="poly" id="edge13_Node000013_Node000012" title=" " alt="" coords="1294,235,1241,241,1240,236,1299,234"/>
+<area shape="rect" id="Node000015" href="$detect__window_8c.html#acd7643219a35e96f1dbd1a28a2c2237e" title=" " alt="" coords="1091,320,1238,347"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1298,334,1239,336,1238,331,1304,333"/>
+<area shape="poly" id="edge16_Node000015_Node000015" title=" " alt="" coords="1199,305,1188,301,1165,298,1143,300,1131,305,1128,311,1134,320,1128,319,1123,311,1128,301,1142,295,1165,293,1189,296,1204,304"/>
+<area shape="rect" id="Node000017" href="$image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="1108,113,1222,141"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1298,160,1223,143,1222,138,1303,159"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="1089,119,1007,110,1006,105,1094,117"/>
+<area shape="poly" id="edge20_Node000018_Node000002" title=" " alt="" coords="920,126,757,244,753,240,924,123"/>
+<area shape="poly" id="edge23_Node000019_Node000018" title=" " alt="" coords="1083,86,1007,98,1005,93,1088,84"/>
+<area shape="poly" id="edge26_Node000021_Node000017" title=" " alt="" coords="1283,127,1223,129,1221,124,1288,125"/>
+<area shape="rect" id="Node000023" href="$qr__code_8c.html#ac2cd906083090c455a8cf7bb2b491dee" title=" " alt="" coords="1118,649,1211,677"/>
+<area shape="poly" id="edge28_Node000022_Node000023" title=" " alt="" coords="1326,634,1212,657,1211,652,1331,633"/>
+<area shape="poly" id="edge29_Node000023_Node000023" title=" " alt="" coords="1199,634,1188,630,1165,628,1143,630,1131,634,1128,640,1134,650,1129,648,1123,640,1128,631,1142,625,1165,622,1189,625,1204,634"/>
+<area shape="poly" id="edge33_Node000024_Node000020" title=" " alt="" coords="1272,544,1087,564,1025,575,1023,570,1087,559,1277,543"/>
+<area shape="rect" id="Node000025" href="$pano__unwrap_8c.html#acd37c838f1cfa2f2704f604fcfc45a90" title=" " alt="" coords="1118,573,1211,601"/>
+<area shape="poly" id="edge31_Node000024_Node000025" title=" " alt="" coords="1297,556,1212,579,1211,574,1302,555"/>
+<area shape="poly" id="edge32_Node000025_Node000020" title=" " alt="" coords="1100,587,1025,590,1024,584,1106,587"/>
+<area shape="rect" id="Node000027" href="$undistort__image_8c.html#a2fe19ff135bf0c4edca40d4f630b973f" title=" " alt="" coords="1087,750,1242,778"/>
+<area shape="poly" id="edge35_Node000026_Node000027" title=" " alt="" coords="1277,764,1243,767,1243,762,1282,764"/>
+<area shape="rect" id="Node000029" href="$video__capture_8c.html#a3e437d208a036f18893d795ea51bad16" title=" " alt="" coords="1090,802,1239,830"/>
+<area shape="poly" id="edge37_Node000028_Node000029" title=" " alt="" coords="1282,816,1239,819,1239,814,1288,816"/>
+<area shape="rect" id="Node000030" href="$video__capture_8c.html#afd5936d0a4d5e8abd118dfac97638829" title=" " alt="" coords="885,802,1026,830"/>
+<area shape="poly" id="edge38_Node000029_Node000030" title=" " alt="" coords="1072,816,1027,819,1027,814,1078,816"/>
+<area shape="poly" id="edge39_Node000030_Node000030" title=" " alt="" coords="990,787,979,783,956,781,934,783,922,788,919,793,925,803,920,801,914,794,919,784,933,778,956,776,980,778,995,788"/>
 </map>
