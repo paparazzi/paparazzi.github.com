@@ -108,7 +108,8 @@ Required software</h2>
 <div class="fragment"><div class="line">git clone https://github.com/paparazzi/paparazzi.git</div>
 <div class="line">cd ./paparazzi</div>
 <div class="line">./install.sh</div>
-</div><!-- fragment --><p>For Ubuntu users, required packages are available in the [paparazzi-uav PPA] (<a href="https://launchpad.net/~paparazzi-uav/+archive/ppa">https://launchpad.net/~paparazzi-uav/+archive/ppa</a>), Debian users can use the [OpenSUSE Build Service repository] (<a href="http://download.opensuse.org/repositories/home:/flixr:/paparazzi-uav/Debian_7.0/">http://download.opensuse.org/repositories/home:/flixr:/paparazzi-uav/Debian_7.0/</a>)</p>
+</div><!-- fragment --><p><span class="tt">./install.sh</span> opens a window to choose what to install; <span class="tt">./install.sh --all</span> installs everything without the window. In an active conda environment the Python packages are installed there (<span class="tt">./install.sh --help</span> for the other options).</p>
+<p>For Ubuntu users, required packages are available in the [paparazzi-uav PPA] (<a href="https://launchpad.net/~paparazzi-uav/+archive/ppa">https://launchpad.net/~paparazzi-uav/+archive/ppa</a>), Debian users can use the [OpenSUSE Build Service repository] (<a href="http://download.opensuse.org/repositories/home:/flixr:/paparazzi-uav/Debian_7.0/">http://download.opensuse.org/repositories/home:/flixr:/paparazzi-uav/Debian_7.0/</a>)</p>
 <p>Debian/Ubuntu packages:</p><ul>
 <li><b>paparazzi-dev</b> is the meta-package on which the Paparazzi software depends to compile and run the ground segment and simulator.</li>
 <li><b>paparazzi-jsbsim</b> is needed for using JSBSim as flight dynamics model for the simulator.</li>
