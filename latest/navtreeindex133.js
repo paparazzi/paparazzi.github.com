@@ -1,6 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__cv_target_localization.html#functions__cv_target_localization":[1,66,2],
 "module__cv_target_localization.html#module_load_example__cv_target_localization":[1,66,0],
 "module__cv_target_localization.html#module_xml__cv_target_localization":[1,66,2,0],
 "module__cv_textons.html":[1,67],
@@ -249,5 +248,6 @@ var NAVTREEINDEX133 =
 "module__geiger_counter.html#module_load_example__geiger_counter":[1,292,0],
 "module__geiger_counter.html#module_xml__geiger_counter":[1,292,1,0],
 "module__generic_com.html":[1,53],
-"module__generic_com.html#configuration__generic_com":[1,53,1]
+"module__generic_com.html#configuration__generic_com":[1,53,1],
+"module__generic_com.html#functions__generic_com":[1,53,2]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__baro_bmp.html#functions__baro_bmp":[1,406,2],
 "module__baro_bmp.html#module_load_example__baro_bmp":[1,406,0],
 "module__baro_bmp.html#module_xml__baro_bmp":[1,406,2,0],
 "module__baro_bmp280.html":[1,407],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "module__cv_qrcode.html#module_load_example__cv_qrcode":[1,487,0],
 "module__cv_qrcode.html#module_xml__cv_qrcode":[1,487,2,0],
 "module__cv_target_localization.html":[1,66],
-"module__cv_target_localization.html#configuration__cv_target_localization":[1,66,1]
+"module__cv_target_localization.html#configuration__cv_target_localization":[1,66,1],
+"module__cv_target_localization.html#functions__cv_target_localization":[1,66,2]
 };

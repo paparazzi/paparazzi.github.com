@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"module__ins_gps_passthrough.html":[1,247],
+"module__ins_gps_passthrough.html#configuration__ins_gps_passthrough":[1,247,1],
 "module__ins_gps_passthrough.html#functions__ins_gps_passthrough":[1,247,2],
 "module__ins_gps_passthrough.html#module_load_example__ins_gps_passthrough":[1,247,0],
 "module__ins_gps_passthrough.html#module_xml__ins_gps_passthrough":[1,247,2,0],
@@ -231,10 +233,9 @@ var NAVTREEINDEX136 =
 "module__mcp355x.html#module_load_example__mcp355x":[1,25,0],
 "module__mcp355x.html#module_xml__mcp355x":[1,25,1,0],
 "module__mcu.html":[1,280],
-"module__mcu.html#event_functions":[1,280,1,0],
 "module__mcu.html#functions__mcu":[1,280,1],
 "module__mcu.html#module_load_example__mcu":[1,280,0],
-"module__mcu.html#module_xml__mcu":[1,280,1,1],
+"module__mcu.html#module_xml__mcu":[1,280,1,0],
 "module__meteo_france_daq.html":[1,303],
 "module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,303,2],
 "module__meteo_france_daq.html#functions__meteo_france_daq":[1,303,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__mf_ptu.html":[1,305],
 "module__mf_ptu.html#configuration__mf_ptu":[1,305,1],
 "module__mf_ptu.html#functions__mf_ptu":[1,305,2],
-"module__mf_ptu.html#module_load_example__mf_ptu":[1,305,0],
-"module__mf_ptu.html#module_xml__mf_ptu":[1,305,2,0]
+"module__mf_ptu.html#module_load_example__mf_ptu":[1,305,0]
 };

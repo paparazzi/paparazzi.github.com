@@ -1061,8 +1061,6 @@ var onboard_modules =
     [ "gpio_ext_pca95xx module", "module__gpio_ext_pca95xx.html", [
       [ "Example for airframe file", "module__gpio_ext_pca95xx.html#module_load_example__gpio_ext_pca95xx", null ],
       [ "Module configuration options", "module__gpio_ext_pca95xx.html#configuration__gpio_ext_pca95xx", [
-        [ "Configure Options", "module__gpio_ext_pca95xx.html#configure", null ],
-        [ "Define Options", "module__gpio_ext_pca95xx.html#define", null ],
         [ "Raw gpio_ext_pca95xx.xml file:", "module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx", null ]
       ] ]
     ] ],
@@ -1359,12 +1357,12 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
@@ -1375,12 +1373,12 @@ var onboard_modules =
       ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1391,7 +1389,9 @@ var onboard_modules =
     ] ],
     [ "imu_bebop module", "module__imu_bebop.html", [
       [ "Example for airframe file", "module__imu_bebop.html#module_load_example__imu_bebop", null ],
-      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
+      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", [
+        [ "Airframe file section", "module__imu_bebop.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
         [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
       ] ]
@@ -1437,7 +1437,9 @@ var onboard_modules =
     ] ],
     [ "imu_icm42688 module", "module__imu_icm42688.html", [
       [ "Example for airframe file", "module__imu_icm42688.html#module_load_example__imu_icm42688", null ],
-      [ "Module configuration options", "module__imu_icm42688.html#configuration__imu_icm42688", null ],
+      [ "Module configuration options", "module__imu_icm42688.html#configuration__imu_icm42688", [
+        [ "Configure Options", "module__imu_icm42688.html#configure", null ]
+      ] ],
       [ "Module functions", "module__imu_icm42688.html#functions__imu_icm42688", [
         [ "Raw imu_icm42688.xml file:", "module__imu_icm42688.html#module_xml__imu_icm42688", null ]
       ] ]
@@ -1840,7 +1842,6 @@ var onboard_modules =
     [ "mcu module", "module__mcu.html", [
       [ "Example for airframe file", "module__mcu.html#module_load_example__mcu", null ],
       [ "Module functions", "module__mcu.html#functions__mcu", [
-        [ "Event Functions", "module__mcu.html#event_functions", null ],
         [ "Raw mcu.xml file:", "module__mcu.html#module_xml__mcu", null ]
       ] ]
     ] ],
@@ -2134,8 +2135,12 @@ var onboard_modules =
     ] ],
     [ "ground_detect module", "module__ground_detect.html", [
       [ "Example for airframe file", "module__ground_detect.html#module_load_example__ground_detect", null ],
-      [ "Module configuration options", "module__ground_detect.html#configuration__ground_detect", null ],
+      [ "Module configuration options", "module__ground_detect.html#configuration__ground_detect", [
+        [ "Define Options", "module__ground_detect.html#define", null ]
+      ] ],
       [ "Module functions", "module__ground_detect.html#functions__ground_detect", [
+        [ "Init Functions", "module__ground_detect.html#init_functions", null ],
+        [ "Periodic Functions", "module__ground_detect.html#periodic_functions", null ],
         [ "Raw ground_detect.xml file:", "module__ground_detect.html#module_xml__ground_detect", null ]
       ] ]
     ] ],
@@ -2178,15 +2183,8 @@ var onboard_modules =
     ] ],
     [ "nav_fish module", "module__nav_fish.html", [
       [ "Example for airframe file", "module__nav_fish.html#module_load_example__nav_fish", null ],
-      [ "Module configuration options", "module__nav_fish.html#configuration__nav_fish", [
-        [ "Airframe file section", "module__nav_fish.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__nav_fish.html#configuration__nav_fish", null ],
       [ "Module functions", "module__nav_fish.html#functions__nav_fish", [
-        [ "Init Functions", "module__nav_fish.html#init_functions", null ]
-      ] ],
-      [ "Files", "module__nav_fish.html#files", [
-        [ "Header Files", "module__nav_fish.html#headers", null ],
-        [ "Source Files", "module__nav_fish.html#sources", null ],
         [ "Raw nav_fish.xml file:", "module__nav_fish.html#module_xml__nav_fish", null ]
       ] ]
     ] ],
@@ -2622,7 +2620,6 @@ var onboard_modules =
     [ "alt_srf08 module", "module__alt_srf08.html", [
       [ "Example for airframe file", "module__alt_srf08.html#module_load_example__alt_srf08", null ],
       [ "Module functions", "module__alt_srf08.html#functions__alt_srf08", [
-        [ "Periodic Functions", "module__alt_srf08.html#periodic_functions", null ],
         [ "Raw alt_srf08.xml file:", "module__alt_srf08.html#module_xml__alt_srf08", null ]
       ] ]
     ] ],
@@ -2914,6 +2911,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__sonar_bebop.html#module_load_example__sonar_bebop", null ],
       [ "Module configuration options", "module__sonar_bebop.html#configuration__sonar_bebop", null ],
       [ "Module functions", "module__sonar_bebop.html#functions__sonar_bebop", [
+        [ "Event Functions", "module__sonar_bebop.html#event_functions", null ],
         [ "Raw sonar_bebop.xml file:", "module__sonar_bebop.html#module_xml__sonar_bebop", null ]
       ] ]
     ] ],
@@ -3020,7 +3018,10 @@ var onboard_modules =
       ] ]
     ] ],
     [ "stabilization_passthrough module", "module__stabilization_passthrough.html", [
-      [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", [
+      [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", null ],
+      [ "Files", "module__stabilization_passthrough.html#files", [
+        [ "Header Files", "module__stabilization_passthrough.html#headers", null ],
+        [ "Source Files", "module__stabilization_passthrough.html#sources", null ],
         [ "Raw stabilization_passthrough.xml file:", "module__stabilization_passthrough.html#module_xml__stabilization_passthrough", null ]
       ] ]
     ] ],

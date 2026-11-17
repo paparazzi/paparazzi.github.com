@@ -1,9 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"module__parachute.html#module_load_example__parachute":[1,516,0],
-"module__parachute.html#module_xml__parachute":[1,516,2,0],
-"module__pca9685.html":[1,517],
-"module__pca9685.html#functions__pca9685":[1,517,1],
 "module__pca9685.html#module_load_example__pca9685":[1,517,0],
 "module__pca9685.html#module_xml__pca9685":[1,517,1,0],
 "module__pdec.html":[1,134],
@@ -229,9 +225,10 @@ var NAVTREEINDEX138 =
 "module__sonar_adc.html#module_xml__sonar_adc":[1,444,2,0],
 "module__sonar_bebop.html":[1,445],
 "module__sonar_bebop.html#configuration__sonar_bebop":[1,445,1],
+"module__sonar_bebop.html#event_functions":[1,445,2,0],
 "module__sonar_bebop.html#functions__sonar_bebop":[1,445,2],
 "module__sonar_bebop.html#module_load_example__sonar_bebop":[1,445,0],
-"module__sonar_bebop.html#module_xml__sonar_bebop":[1,445,2,0],
+"module__sonar_bebop.html#module_xml__sonar_bebop":[1,445,2,1],
 "module__sonar_i2c.html":[1,446],
 "module__sonar_i2c.html#configuration__sonar_i2c":[1,446,1],
 "module__sonar_i2c.html#functions__sonar_i2c":[1,446,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX138 =
 "module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x":[1,448,2,0],
 "module__spektrum_soft_bind.html":[1,528],
 "module__spektrum_soft_bind.html#functions__spektrum_soft_bind":[1,528,1],
-"module__spektrum_soft_bind.html#module_load_example__spektrum_soft_bind":[1,528,0]
+"module__spektrum_soft_bind.html#module_load_example__spektrum_soft_bind":[1,528,0],
+"module__spektrum_soft_bind.html#module_xml__spektrum_soft_bind":[1,528,1,0],
+"module__spi_master.html":[1,283],
+"module__spi_master.html#module_load_example__spi_master":[1,283,0]
 };
