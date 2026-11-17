@@ -1,8 +1,5 @@
 var NAVTREEINDEX140 =
 {
-"module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,459,0],
-"module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,459,2,0],
-"module__stabilization_float_quat.html":[1,460],
 "module__stabilization_float_quat.html#configuration__stabilization_float_quat":[1,460,1],
 "module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,460,2],
 "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,460,0],
@@ -40,8 +37,11 @@ var NAVTREEINDEX140 =
 "module__stabilization_oneloop.html#module_load_example__stabilization_oneloop":[1,467,0],
 "module__stabilization_oneloop.html#module_xml__stabilization_oneloop":[1,467,0,0],
 "module__stabilization_passthrough.html":[1,468],
+"module__stabilization_passthrough.html#files":[1,468,1],
+"module__stabilization_passthrough.html#headers":[1,468,1,0],
 "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough":[1,468,0],
-"module__stabilization_passthrough.html#module_xml__stabilization_passthrough":[1,468,0,0],
+"module__stabilization_passthrough.html#module_xml__stabilization_passthrough":[1,468,1,2],
+"module__stabilization_passthrough.html#sources":[1,468,1,1],
 "module__stabilization_plane_pid.html":[1,469],
 "module__stabilization_plane_pid.html#configuration__stabilization_plane_pid":[1,469,1],
 "module__stabilization_plane_pid.html#functions__stabilization_plane_pid":[1,469,2],

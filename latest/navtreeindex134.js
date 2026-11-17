@@ -1,6 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__digital_cam_i2c.html#module_load_example__digital_cam_i2c":[1,141,0],
 "module__digital_cam_i2c.html#module_xml__digital_cam_i2c":[1,141,3,0],
 "module__digital_cam_pprzlink.html":[1,142],
 "module__digital_cam_pprzlink.html#datalink_functions__digital_cam_pprzlink":[1,142,2],
@@ -229,10 +228,8 @@ var NAVTREEINDEX134 =
 "module__gpio_ext_common.html#module_xml__gpio_ext_common":[1,159,0,0],
 "module__gpio_ext_pca95xx.html":[1,160],
 "module__gpio_ext_pca95xx.html#configuration__gpio_ext_pca95xx":[1,160,1],
-"module__gpio_ext_pca95xx.html#configure":[1,160,1,0],
-"module__gpio_ext_pca95xx.html#define":[1,160,1,1],
 "module__gpio_ext_pca95xx.html#module_load_example__gpio_ext_pca95xx":[1,160,0],
-"module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx":[1,160,1,2],
+"module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx":[1,160,1,0],
 "module__gps.html":[1,161],
 "module__gps.html#configuration__gps":[1,161,1],
 "module__gps.html#datalink_functions__gps":[1,161,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX134 =
 "module__gps_furuno.html#functions__gps_furuno":[1,163,2],
 "module__gps_furuno.html#module_load_example__gps_furuno":[1,163,0],
 "module__gps_furuno.html#module_xml__gps_furuno":[1,163,2,0],
-"module__gps_intermcu.html":[1,164]
+"module__gps_intermcu.html":[1,164],
+"module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,164,2],
+"module__gps_intermcu.html#functions__gps_intermcu":[1,164,1],
+"module__gps_intermcu.html#module_load_example__gps_intermcu":[1,164,0]
 };

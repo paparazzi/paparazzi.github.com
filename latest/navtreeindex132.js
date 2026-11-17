@@ -148,8 +148,7 @@ var NAVTREEINDEX132 =
 "module__alt_srf08.html":[1,409],
 "module__alt_srf08.html#functions__alt_srf08":[1,409,1],
 "module__alt_srf08.html#module_load_example__alt_srf08":[1,409,0],
-"module__alt_srf08.html#module_xml__alt_srf08":[1,409,1,1],
-"module__alt_srf08.html#periodic_functions":[1,409,1,0],
+"module__alt_srf08.html#module_xml__alt_srf08":[1,409,1,0],
 "module__aoa_adc.html":[1,398],
 "module__aoa_adc.html#configuration__aoa_adc":[1,398,1],
 "module__aoa_adc.html#functions__aoa_adc":[1,398,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "module__baro_ms5611_i2c.html#functions__baro_ms5611_i2c":[1,422,2],
 "module__baro_ms5611_i2c.html#module_load_example__baro_ms5611_i2c":[1,422,0],
 "module__baro_ms5611_i2c.html#module_xml__baro_ms5611_i2c":[1,422,2,0],
-"module__baro_ms5611_spi.html":[1,423]
+"module__baro_ms5611_spi.html":[1,423],
+"module__baro_ms5611_spi.html#configuration__baro_ms5611_spi":[1,423,1]
 };
