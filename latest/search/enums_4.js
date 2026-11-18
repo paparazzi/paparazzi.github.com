@@ -10,8 +10,5 @@ var searchData=
   ['ekf_5fstatein_7',['ekf_statein',['../discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2',1,'discrete_ekf_no_north.c']]],
   ['ekfawcovvar_8',['ekfAwCovVar',['../ekf__aw_8cpp.html#a726ed8820bd14d8cb45a0ece1921de11',1,'ekf_aw.cpp']]],
   ['ekfawqvar_9',['ekfAwQVar',['../ekf__aw_8cpp.html#a16c351c9a4f57d20e316a37400868c70',1,'ekf_aw.cpp']]],
-  ['ekfawrvar_10',['ekfAwRVar',['../ekf__aw_8cpp.html#a613967b72799cff2ad75e88f0a22140d',1,'ekf_aw.cpp']]],
-  ['esc32_5fconfig_5fcmd_11',['ESC32_config_cmd',['../actuators__esc32_8h.html#a769334d87c7785ac3d5e86e5a7031e0d',1,'actuators_esc32.h']]],
-  ['esc32_5fesc_5fstatus_12',['ESC32_esc_status',['../actuators__esc32_8h.html#ac095295c2c5a8d1f39a04215f7903785',1,'actuators_esc32.h']]],
-  ['esc32_5fstatus_13',['ESC32_status',['../actuators__esc32_8h.html#a39f411040960c9ad72a8081fd3046414',1,'actuators_esc32.h']]]
+  ['ekfawrvar_10',['ekfAwRVar',['../ekf__aw_8cpp.html#a613967b72799cff2ad75e88f0a22140d',1,'ekf_aw.cpp']]]
 ];

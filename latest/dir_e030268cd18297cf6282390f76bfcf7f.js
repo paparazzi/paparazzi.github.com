@@ -9,11 +9,9 @@ var dir_e030268cd18297cf6282390f76bfcf7f =
     [ "disco", "dir_cbcb990d5f2f1cb4eb127eac39be5277.html", "dir_cbcb990d5f2f1cb4eb127eac39be5277" ],
     [ "holybro", "dir_625f21b8b478b3f07f7b994d90f21459.html", "dir_625f21b8b478b3f07f7b994d90f21459" ],
     [ "lia", "dir_61f9b35e17072e817ba1b199e0e0fa7c.html", "dir_61f9b35e17072e817ba1b199e0e0fa7c" ],
-    [ "lisa_l", "dir_58f803b20293fcf9accb3156b13a6ed5.html", "dir_58f803b20293fcf9accb3156b13a6ed5" ],
     [ "lisa_m", "dir_145fb4f8ee0a9eed1c6459cedb494b89.html", "dir_145fb4f8ee0a9eed1c6459cedb494b89" ],
     [ "lisa_mx", "dir_13f821e2f8bff88178f2fd4f9016e4b4.html", "dir_13f821e2f8bff88178f2fd4f9016e4b4" ],
     [ "lisa_mxs", "dir_90ae65582e264cb543676e812d131a6a.html", "dir_90ae65582e264cb543676e812d131a6a" ],
-    [ "lisa_s", "dir_bcb78b89155ca066c5a0666240dabcfd.html", "dir_bcb78b89155ca066c5a0666240dabcfd" ],
     [ "mateksys", "dir_8ac24fb6e8483987b2ade80e823ec3a9.html", "dir_8ac24fb6e8483987b2ade80e823ec3a9" ],
     [ "nucleo", "dir_3a7735853c2e0da45622dafdded2b7a3.html", "dir_3a7735853c2e0da45622dafdded2b7a3" ],
     [ "px4fmu", "dir_a047bcdfdfeeaf1b1eee45d5b84ca8be.html", "dir_a047bcdfdfeeaf1b1eee45d5b84ca8be" ],
@@ -25,9 +23,5 @@ var dir_e030268cd18297cf6282390f76bfcf7f =
     [ "beagle_bone_black.h", "beagle__bone__black_8h.html", "beagle__bone__black_8h" ],
     [ "bebop.h", "bebop_8h.html", "bebop_8h" ],
     [ "disco.h", "disco_8h.html", "disco_8h" ],
-    [ "krooz_sd.h", "krooz__sd_8h.html", "krooz__sd_8h" ],
-    [ "lisa_mx_common.h", "lisa__mx__common_8h.html", "lisa__mx__common_8h" ],
-    [ "navstik_1.0.h", "navstik__1_80_8h.html", "navstik__1_80_8h" ],
-    [ "olimex_stm32-h103.h", "olimex__stm32-h103_8h.html", "olimex__stm32-h103_8h" ],
     [ "pc_sim.h", "pc__sim_8h.html", "pc__sim_8h" ]
 ];

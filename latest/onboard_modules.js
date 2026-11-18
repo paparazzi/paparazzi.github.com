@@ -8,7 +8,6 @@ var onboard_modules =
       [ "Boards modules", "onboard_modules.html#modules_category_boards", null ],
       [ "Cam_Control modules", "onboard_modules.html#modules_category_cam_control", null ],
       [ "Checks modules", "onboard_modules.html#modules_category_checks", null ],
-      [ "Com modules", "onboard_modules.html#modules_category_com", null ],
       [ "Computer_Vision modules", "onboard_modules.html#modules_category_computer_vision", null ],
       [ "Control modules", "onboard_modules.html#modules_category_control", null ],
       [ "Core modules", "onboard_modules.html#modules_category_core", null ],
@@ -84,11 +83,6 @@ var onboard_modules =
     [ "actuators_dummy module", "module__actuators_dummy.html", [
       [ "Example for airframe file", "module__actuators_dummy.html#module_load_example__actuators_dummy", [
         [ "Raw actuators_dummy.xml file:", "module__actuators_dummy.html#module_xml__actuators_dummy", null ]
-      ] ]
-    ] ],
-    [ "actuators_esc32 module", "module__actuators_esc32.html", [
-      [ "Example for airframe file", "module__actuators_esc32.html#module_load_example__actuators_esc32", [
-        [ "Raw actuators_esc32.xml file:", "module__actuators_esc32.html#module_xml__actuators_esc32", null ]
       ] ]
     ] ],
     [ "actuators_faulhaber module", "module__actuators_faulhaber.html", [
@@ -276,6 +270,7 @@ var onboard_modules =
     ] ],
     [ "i2c_abuse_test module", "module__i2c_abuse_test.html", [
       [ "Example for airframe file", "module__i2c_abuse_test.html#module_load_example__i2c_abuse_test", null ],
+      [ "Module configuration options", "module__i2c_abuse_test.html#configuration__i2c_abuse_test", null ],
       [ "Module functions", "module__i2c_abuse_test.html#functions__i2c_abuse_test", [
         [ "Raw i2c_abuse_test.xml file:", "module__i2c_abuse_test.html#module_xml__i2c_abuse_test", null ]
       ] ]
@@ -368,25 +363,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__preflight_checks.html#module_load_example__preflight_checks", null ],
       [ "Module configuration options", "module__preflight_checks.html#configuration__preflight_checks", [
         [ "Raw preflight_checks.xml file:", "module__preflight_checks.html#module_xml__preflight_checks", null ]
-      ] ]
-    ] ],
-    [ "generic_com module", "module__generic_com.html", [
-      [ "Example for airframe file", "module__generic_com.html#module_load_example__generic_com", null ],
-      [ "Module configuration options", "module__generic_com.html#configuration__generic_com", null ],
-      [ "Module functions", "module__generic_com.html#functions__generic_com", [
-        [ "Raw generic_com.xml file:", "module__generic_com.html#module_xml__generic_com", null ]
-      ] ]
-    ] ],
-    [ "usb_serial_stm32_example1 module", "module__usb_serial_stm32_example1.html", [
-      [ "Example for airframe file", "module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1", null ],
-      [ "Module functions", "module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1", [
-        [ "Raw usb_serial_stm32_example1.xml file:", "module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1", null ]
-      ] ]
-    ] ],
-    [ "usb_serial_stm32_example2 module", "module__usb_serial_stm32_example2.html", [
-      [ "Example for airframe file", "module__usb_serial_stm32_example2.html#module_load_example__usb_serial_stm32_example2", null ],
-      [ "Module functions", "module__usb_serial_stm32_example2.html#functions__usb_serial_stm32_example2", [
-        [ "Raw usb_serial_stm32_example2.xml file:", "module__usb_serial_stm32_example2.html#module_xml__usb_serial_stm32_example2", null ]
       ] ]
     ] ],
     [ "bebop_ae_awb module", "module__bebop_ae_awb.html", [
@@ -3255,6 +3231,13 @@ var onboard_modules =
       [ "Example for airframe file", "module__gas_engine_idle.html#module_load_example__gas_engine_idle", null ],
       [ "Module functions", "module__gas_engine_idle.html#functions__gas_engine_idle", [
         [ "Raw gas_engine_idle.xml file:", "module__gas_engine_idle.html#module_xml__gas_engine_idle", null ]
+      ] ]
+    ] ],
+    [ "generic_com module", "module__generic_com.html", [
+      [ "Example for airframe file", "module__generic_com.html#module_load_example__generic_com", null ],
+      [ "Module configuration options", "module__generic_com.html#configuration__generic_com", null ],
+      [ "Module functions", "module__generic_com.html#functions__generic_com", [
+        [ "Raw generic_com.xml file:", "module__generic_com.html#module_xml__generic_com", null ]
       ] ]
     ] ],
     [ "geo_mag module", "module__geo_mag.html", [

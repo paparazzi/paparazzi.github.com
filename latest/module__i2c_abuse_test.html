@@ -93,12 +93,25 @@ $(function(){initNavTree('module__i2c_abuse_test.html','',''); });
   <div class="headertitle"><div class="title">i2c_abuse_test module </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>I2C Abuse Test</b></p>
+<div class="textblock"><p><b>Stress test of an I2C bus</b></p>
 <p>No detailed description...</p>
 <h1 class="doxsection"><a class="anchor" id="module_load_example__i2c_abuse_test"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;i2c_abuse_test&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="functions__i2c_abuse_test"></a>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;i2c_abuse_test&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;I2C_ABUSE_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;i2c2&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;I2C_ABUSE_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;7&quot;</span> /&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
+</div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__i2c_abuse_test"></a>
+Module configuration options</h1>
+<h2 class="doxsection"><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>I2C_ABUSE_PORT</code> <b>value:</b> <em>i2c2</em> <br  />
+ Description: I2C port to abuse</li>
+<li><b>name:</b> <code>I2C_ABUSE_LED</code> <b>value:</b> <em>7</em> <br  />
+ Description: LED toggled while running</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="functions__i2c_abuse_test"></a>
 Module functions</h1>
 <h2 class="doxsection"><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -142,7 +155,9 @@ Raw i2c_abuse_test.xml file:</h2>
 <div class="line"> </div>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;i2c_abuse_test&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;benchmark&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">description</span>&gt;&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">Stress</span> <span class="keyword">test</span> <span class="keyword">of</span> <span class="keyword">an</span> <span class="keyword">I2C</span> <span class="keyword">bus</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;I2C_ABUSE_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;i2c2&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;I2C port to abuse&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;I2C_ABUSE_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;7&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED toggled while running&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;i2c_abuse_test.h&quot;</span>/&gt;</div>
@@ -152,13 +167,6 @@ Raw i2c_abuse_test.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;event_i2c_abuse_test()&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;i2c_abuse_test.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
-<div class="line"><span class="keyword">ifeq</span> ($(<span class="keyword">ARCH</span>), <span class="keyword">stm32</span>)</div>
-<div class="line">$(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DI2C_ABUSE_LED</span>=7</div>
-<div class="line">$(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DI2C_ABUSE_PORT</span>=<span class="keyword">i2c2</span></div>
-<div class="line"><span class="keyword">endif</span></div>
-<div class="line"> </div>
-<div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>

@@ -31,9 +31,8 @@ var searchData=
   ['usb_5fmsd_2eh_28',['usb_msd.h',['../usb__msd_8h.html',1,'']]],
   ['usb_5fser_5fhw_2ec_29',['usb_ser_hw.c',['../usb__ser__hw_8c.html',1,'']]],
   ['usb_5fserial_2eh_30',['usb_serial.h',['../usb__serial_8h.html',1,'']]],
-  ['usb_5ftunnel_2ec_31',['usb_tunnel.c',['../usb__tunnel_8c.html',1,'']]],
-  ['usbstorage_2ec_32',['usbStorage.c',['../usbStorage_8c.html',1,'']]],
-  ['usbstorage_2eh_33',['usbStorage.h',['../usbStorage_8h.html',1,'']]],
-  ['uwb_5fpositioning_2ec_34',['uwb_positioning.c',['../uwb__positioning_8c.html',1,'']]],
-  ['uwb_5fpositioning_2eh_35',['uwb_positioning.h',['../uwb__positioning_8h.html',1,'']]]
+  ['usbstorage_2ec_31',['usbStorage.c',['../usbStorage_8c.html',1,'']]],
+  ['usbstorage_2eh_32',['usbStorage.h',['../usbStorage_8h.html',1,'']]],
+  ['uwb_5fpositioning_2ec_33',['uwb_positioning.c',['../uwb__positioning_8c.html',1,'']]],
+  ['uwb_5fpositioning_2eh_34',['uwb_positioning.h',['../uwb__positioning_8h.html',1,'']]]
 ];

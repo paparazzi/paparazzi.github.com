@@ -1,5 +1,7 @@
 var i2c__abuse__test_8h =
 [
+    [ "I2C_ABUSE_LED", "i2c__abuse__test_8h.html#aae9adc8cf8cd1ed117493232e549e805", null ],
+    [ "I2C_ABUSE_PORT", "i2c__abuse__test_8h.html#a06c76dbf538fbb0d1fd9b7f51b8de7be", null ],
     [ "I2C_ABUSE_SHORT_SCL_LED", "i2c__abuse__test_8h.html#ae7991d1610eb1583bffc4c56581a8545", null ],
     [ "I2C_ABUSE_SHORT_SDA_LED", "i2c__abuse__test_8h.html#adf215671db6dfa799ef1d73287881a0f", null ],
     [ "event_i2c_abuse_test", "i2c__abuse__test_8h.html#a70dbb3f79a41f5e301aee164bfeaf7de", null ],

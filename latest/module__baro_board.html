@@ -133,10 +133,7 @@ Raw baro_board.xml file:</h2>
 <div class="line"> </div>
 <div class="line"># <span class="keyword">Lisa</span>/<span class="keyword">M</span> <span class="keyword">baro</span></div>
 <div class="line"><span class="keyword">ifeq</span> ($(<span class="keyword">BOARD</span>), <span class="keyword">lisa_m</span>)</div>
-<div class="line">  <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD_VERSION</span>), 1.0)</div>
-<div class="line">    # <span class="keyword">on</span> <span class="keyword">lisa_m_1.0:</span> <span class="keyword">defaults</span> <span class="keyword">to</span> <span class="keyword">i2c</span> <span class="keyword">baro</span> <span class="keyword">bmp085</span> <span class="keyword">on</span> <span class="keyword">the</span> <span class="keyword">board</span></div>
-<div class="line">    <span class="keyword">LISA_M_BARO</span> ?= <span class="keyword">BARO_BOARD_BMP085</span></div>
-<div class="line">  <span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD_VERSION</span>), 2.0)</div>
+<div class="line">  <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD_VERSION</span>), 2.0)</div>
 <div class="line">    # <span class="keyword">on</span> <span class="keyword">lisa_m_2.0:</span> <span class="keyword">defaults</span> <span class="keyword">to</span> <span class="keyword">MS5611</span> <span class="keyword">baro</span> <span class="keyword">connected</span> <span class="keyword">via</span> <span class="keyword">SPI</span> <span class="keyword">on</span> <span class="keyword">Aspirin2.2</span></div>
 <div class="line">    <span class="keyword">LISA_M_BARO</span> ?= <span class="keyword">BARO_MS5611_SPI</span></div>
 <div class="line">  <span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD_VERSION</span>), 2.1)</div>
@@ -159,11 +156,6 @@ Raw baro_board.xml file:</h2>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611.c</span></div>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611_i2c.c</span></div>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">boards</span>/<span class="keyword">baro_board_ms5611_i2c.c</span></div>
-<div class="line">  <span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">LISA_M_BARO</span>), <span class="keyword">BARO_BOARD_BMP085</span>)</div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBARO_BOARD</span>=<span class="keyword">BARO_BOARD_BMP085</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DUSE_I2C2</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">bmp085.c</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += $(<span class="keyword">SRC_BOARD</span>)/<span class="keyword">baro_board.c</span></div>
 <div class="line">  <span class="keyword">endif</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD</span>), <span class="keyword">lisa_mx</span>)</div>
@@ -185,11 +177,6 @@ Raw baro_board.xml file:</h2>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611.c</span></div>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611_i2c.c</span></div>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">boards</span>/<span class="keyword">baro_board_ms5611_i2c.c</span></div>
-<div class="line">  <span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">LISA_MX_BARO</span>), <span class="keyword">BARO_BOARD_BMP085</span>)</div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBARO_BOARD</span>=<span class="keyword">BARO_BOARD_BMP085</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DUSE_I2C2</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">bmp085.c</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += $(<span class="keyword">SRC_BOARD</span>)/<span class="keyword">baro_board.c</span></div>
 <div class="line">  <span class="keyword">endif</span></div>
 <div class="line"> </div>
 <div class="line"> <span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD</span>), <span class="keyword">lisa_mxs</span>)</div>
@@ -211,11 +198,6 @@ Raw baro_board.xml file:</h2>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611.c</span></div>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611_i2c.c</span></div>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">boards</span>/<span class="keyword">baro_board_ms5611_i2c.c</span></div>
-<div class="line">  <span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">LISA_MXS_BARO</span>), <span class="keyword">BARO_BOARD_BMP085</span>)</div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBARO_BOARD</span>=<span class="keyword">BARO_BOARD_BMP085</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DUSE_I2C2</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">bmp085.c</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += $(<span class="keyword">SRC_BOARD</span>)/<span class="keyword">baro_board.c</span></div>
 <div class="line">  <span class="keyword">endif</span></div>
 <div class="line"> </div>
 <div class="line"># <span class="keyword">Lia</span> <span class="keyword">baro</span> (<span class="keyword">no</span> <span class="keyword">bmp</span> <span class="keyword">onboard</span>)</div>
@@ -243,16 +225,7 @@ Raw baro_board.xml file:</h2>
 <div class="line"> </div>
 <div class="line"># <span class="keyword">PX4FMU</span></div>
 <div class="line"><span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD</span>),$(<span class="keyword">filter</span> $(<span class="keyword">BOARD</span>),<span class="keyword">px4fmu</span>))</div>
-<div class="line">  <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD_VERSION</span>), 1.7)</div>
-<div class="line">    # <span class="keyword">PX4FMU</span> 1.7</div>
-<div class="line">    <span class="keyword">include</span> $(<span class="keyword">CFG_SHARED</span>)/<span class="keyword">spi_master.makefile</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611.c</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611_spi.c</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">boards</span>/<span class="keyword">baro_board_ms5611_spi.c</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DUSE_SPI1</span> -<span class="keyword">DUSE_SPI_SLAVE3</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_SPI_DEV</span>=<span class="keyword">spi1</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_SLAVE_IDX</span>=<span class="keyword">SPI_SLAVE3</span></div>
-<div class="line">  <span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD_VERSION</span>), 2.4)</div>
+<div class="line">  <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD_VERSION</span>), 2.4)</div>
 <div class="line">    # <span class="keyword">PX4FMU</span> 2.4 <span class="keyword">a.k.a.</span> <span class="keyword">PIXHAWK</span></div>
 <div class="line">    <span class="keyword">include</span> $(<span class="keyword">CFG_SHARED</span>)/<span class="keyword">spi_master.makefile</span></div>
 <div class="line">    <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611.c</span></div>
@@ -280,40 +253,6 @@ Raw baro_board.xml file:</h2>
 <div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_SPI_DEV</span>=<span class="keyword">spi4</span></div>
 <div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_SLAVE_IDX</span>=<span class="keyword">SPI_SLAVE4</span></div>
 <div class="line">  <span class="keyword">endif</span></div>
-<div class="line"> </div>
-<div class="line"># <span class="keyword">Naze32</span></div>
-<div class="line"><span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD</span>), <span class="keyword">naze32</span>)</div>
-<div class="line">  <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBARO_BOARD</span>=<span class="keyword">BARO_MS5611_I2C</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DUSE_I2C2</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_I2C_DEV</span>=<span class="keyword">i2c2</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611.c</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611_i2c.c</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">boards</span>/<span class="keyword">baro_board_ms5611_i2c.c</span></div>
-<div class="line"> </div>
-<div class="line"># <span class="keyword">OPA</span> (<span class="keyword">AP</span>)</div>
-<div class="line"><span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD</span>), <span class="keyword">opa_ap</span>)</div>
-<div class="line">  <span class="keyword">include</span> $(<span class="keyword">CFG_SHARED</span>)/<span class="keyword">spi_master.makefile</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DUSE_SPI2</span> -<span class="keyword">DUSE_SPI_SLAVE2</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_SPI_DEV</span>=<span class="keyword">spi2</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_SLAVE_IDX</span>=<span class="keyword">SPI_SLAVE2</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611.c</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611_spi.c</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">boards</span>/<span class="keyword">baro_board_ms5611_spi.c</span></div>
-<div class="line"> </div>
-<div class="line"># <span class="keyword">OpenPilot</span> <span class="keyword">Revo</span></div>
-<div class="line"><span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD</span>), <span class="keyword">openpilot_revo</span>)</div>
-<div class="line">  <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD_VERSION</span>), <span class="keyword">nano</span>)</div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DUSE_I2C3</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_I2C_DEV</span>=<span class="keyword">i2c3</span></div>
-<div class="line">    #<span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_SLAVE_ADDR</span>=0<span class="keyword">xEC</span></div>
-<div class="line">  <span class="keyword">else</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DUSE_I2C1</span></div>
-<div class="line">    <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBB_MS5611_I2C_DEV</span>=<span class="keyword">i2c1</span></div>
-<div class="line">  <span class="keyword">endif</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBARO_BOARD</span>=<span class="keyword">BARO_MS5611_I2C</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611.c</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">peripherals</span>/<span class="keyword">ms5611_i2c.c</span></div>
-<div class="line">  <span class="keyword">BARO_BOARD_SRCS</span> += <span class="keyword">boards</span>/<span class="keyword">baro_board_ms5611_i2c.c</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">else</span> <span class="keyword">ifeq</span> ($(<span class="keyword">BOARD</span>), <span class="keyword">chimera</span>)</div>
 <div class="line">  <span class="keyword">BARO_BOARD_CFLAGS</span> += -<span class="keyword">DBARO_BOARD</span>=<span class="keyword">BARO_MS5611_I2C</span></div>

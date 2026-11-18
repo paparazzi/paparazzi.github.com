@@ -13,12 +13,8 @@ var searchData=
   ['udp_20xml_20file_3a_10',['Raw udp.xml file:',['../module__udp.html#module_xml__udp',1,'']]],
   ['uploading_20the_20embedded_20software_11',['Uploading the embedded software',['../index.html#autotoc_md5',1,'']]],
   ['usage_20instructions_12',['Usage instructions',['../module__dragspeed.html#autotoc_md7',1,'']]],
-  ['usb_5fserial_5fstm32_5fexample1_20module_13',['usb_serial_stm32_example1 module',['../module__usb_serial_stm32_example1.html',1,'onboard_modules']]],
-  ['usb_5fserial_5fstm32_5fexample1_20xml_20file_3a_14',['Raw usb_serial_stm32_example1.xml file:',['../module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1',1,'']]],
-  ['usb_5fserial_5fstm32_5fexample2_20module_15',['usb_serial_stm32_example2 module',['../module__usb_serial_stm32_example2.html',1,'onboard_modules']]],
-  ['usb_5fserial_5fstm32_5fexample2_20xml_20file_3a_16',['Raw usb_serial_stm32_example2.xml file:',['../module__usb_serial_stm32_example2.html#module_xml__usb_serial_stm32_example2',1,'']]],
-  ['use_20in_20other_20projects_17',['HOWTO install a shared library to use in other projects',['../dir_29343b6f5fcd4b75a5dfbb985ff56864.html#autotoc_md12',1,'']]],
-  ['use_20the_20shared_20library_18',['HOWTO use the shared library',['../dir_29343b6f5fcd4b75a5dfbb985ff56864.html#autotoc_md13',1,'']]],
-  ['uwb_5fpositioning_20module_19',['uwb_positioning module',['../module__uwb_positioning.html',1,'onboard_modules']]],
-  ['uwb_5fpositioning_20xml_20file_3a_20',['Raw uwb_positioning.xml file:',['../module__uwb_positioning.html#module_xml__uwb_positioning',1,'']]]
+  ['use_20in_20other_20projects_13',['HOWTO install a shared library to use in other projects',['../dir_29343b6f5fcd4b75a5dfbb985ff56864.html#autotoc_md12',1,'']]],
+  ['use_20the_20shared_20library_14',['HOWTO use the shared library',['../dir_29343b6f5fcd4b75a5dfbb985ff56864.html#autotoc_md13',1,'']]],
+  ['uwb_5fpositioning_20module_15',['uwb_positioning module',['../module__uwb_positioning.html',1,'onboard_modules']]],
+  ['uwb_5fpositioning_20xml_20file_3a_16',['Raw uwb_positioning.xml file:',['../module__uwb_positioning.html#module_xml__uwb_positioning',1,'']]]
 ];

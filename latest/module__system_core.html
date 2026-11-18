@@ -132,7 +132,6 @@ Source Files</h2>
 <li><a class="el" href="sys__time_8c.html">mcu_periph/sys_time.c</a></li>
 <li><a class="el" href="commands_8c.html">modules/core/commands.c</a></li>
 <li>arch dependent: mcu_periph/sys_time_arch.c</li>
-<li>arch dependent: ./led_hw.c</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="module_xml__system_core"></a>
 Raw system_core.xml file:</h2>
@@ -168,7 +167,6 @@ Raw system_core.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;commands.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_COMMANDS&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sys_time_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;led_hw.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(ARCH), stm32)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">flag</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LDFLAGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;lrt&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(ARCH), linux)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
 <div class="line"><span class="keyword">VPATH</span> += $(<span class="keyword">PAPARAZZI_HOME</span>)/<span class="keyword">var</span>/<span class="keyword">share</span></div>

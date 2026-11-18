@@ -1,93 +1,91 @@
 <map id="sw/airborne/modules/core/commands.h" name="sw/airborne/modules/core/commands.h">
-<area shape="rect" id="Node000001" title="Hardware independent code for commands handling." alt="" coords="3289,5,3446,50"/>
+<area shape="rect" id="Node000001" title="Hardware independent code for commands handling." alt="" coords="3138,5,3296,50"/>
 <area shape="rect" id="Node000002" href="$autopilot_8c.html" title="Core autopilot interface common to all firmwares." alt="" coords="5,115,176,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3271,30,2627,37,1661,49,1170,58,731,69,388,83,267,92,187,101,127,117,124,112,186,95,267,86,388,78,730,64,1170,52,1661,43,2627,32,3276,29"/>
-<area shape="rect" id="Node000003" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="199,106,416,151"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="3271,29,2725,31,1901,37,1464,45,1052,58,697,76,550,87,430,101,387,108,385,103,429,95,550,82,697,71,1052,53,1464,40,1901,32,2725,25,3276,28"/>
-<area shape="rect" id="Node000004" href="$fixedwing_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="441,98,607,160"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="3271,30,2705,39,1876,52,1082,72,791,85,619,101,608,103,606,98,618,95,790,80,1082,67,1876,46,2705,33,3276,30"/>
-<area shape="rect" id="Node000005" href="$main__recovery_8c.html" title="Recovery mode: run manual mode in case of hardfault Based on legacy FBW." alt="" coords="630,106,828,151"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="3272,29,2794,32,2089,39,1718,48,1368,60,1067,78,840,101,801,108,800,103,839,95,1067,72,1368,55,1718,42,2089,34,2794,26,3277,28"/>
-<area shape="rect" id="Node000006" href="$rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="851,98,1018,160"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="3271,29,2825,31,2176,38,1835,46,1515,59,1239,77,1125,88,1031,101,1019,103,1017,98,1030,95,1124,82,1238,71,1514,53,1835,41,2176,32,2825,26,3277,28"/>
-<area shape="rect" id="Node000007" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="1042,98,1208,160"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="3271,29,2858,32,2264,41,1953,49,1662,61,1411,78,1222,101,1209,103,1208,98,1221,95,1410,73,1661,56,1953,44,2264,35,2858,27,3277,29"/>
-<area shape="rect" id="Node000008" href="$rotorcraft_2autopilot__utils_8h.html" title="Utility functions and includes for autopilots." alt="" coords="1233,98,1399,160"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="3271,29,2891,34,2352,43,2071,52,1808,64,1582,80,1411,101,1400,103,1399,98,1410,95,1581,75,1808,58,2071,46,2352,38,2891,29,3276,29"/>
-<area shape="rect" id="Node000011" href="$oneloop__andi_8c.html" title=" " alt="" coords="1422,98,1620,160"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="3271,30,2930,38,2456,50,1980,70,1782,84,1632,101,1621,103,1620,97,1631,95,1781,79,1979,65,2455,45,2930,33,3276,30"/>
-<area shape="rect" id="Node000012" href="$oneloop__nB_8c.html" title=" " alt="" coords="1644,106,1876,151"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="3271,31,2576,56,2179,76,2013,87,1888,101,1844,109,1843,103,1887,95,2013,82,2178,70,2576,51,3276,31"/>
-<area shape="rect" id="Node000013" href="$stabilization__andi_8c.html" title="ANDI stabilization controller for tiltbody rotorcraft." alt="" coords="1900,98,2070,160"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="3271,31,3011,41,2668,54,2329,74,2189,86,2083,101,2071,103,2070,98,2082,95,2189,81,2329,69,2667,49,3011,36,3276,31"/>
-<area shape="rect" id="Node000014" href="$rover_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="2094,106,2300,151"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="3271,29,3095,36,2856,46,2585,66,2447,82,2312,101,2273,109,2272,103,2311,95,2446,76,2584,61,2855,41,3095,30,3277,29"/>
-<area shape="rect" id="Node000015" href="$rover_2autopilot__utils_8h.html" title="Utility functions and includes for autopilots." alt="" coords="2324,106,2492,151"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="3271,30,3125,37,2933,48,2719,68,2610,83,2504,101,2472,108,2471,103,2503,95,2609,77,2718,63,2933,42,3125,32,3277,30"/>
-<area shape="rect" id="Node000016" href="$modules_2actuators_2actuators_8c.html" title="Hardware independent actuators code." alt="" coords="2516,106,2678,151"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="3271,33,3156,42,3010,54,2850,73,2691,101,2660,109,2659,103,2690,95,2849,68,3010,49,3156,37,3276,32"/>
-<area shape="rect" id="Node000017" href="$actuators__hitl_8c.html" title=" " alt="" coords="2702,98,2860,160"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="3277,37,3087,62,2979,79,2872,101,2861,104,2860,98,2871,95,2978,74,3087,57,3271,37"/>
-<area shape="rect" id="Node000018" href="$cam__gimbal_8c.html" title="Pan/Tilt camera gimbal control." alt="" coords="2884,106,3084,151"/>
-<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="3277,52,3096,101,3066,109,3065,103,3095,95,3271,53"/>
-<area shape="rect" id="Node000019" href="$generic__com_8c.html" title=" " alt="" coords="3108,106,3265,151"/>
-<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="3317,57,3227,108,3225,103,3312,59"/>
-<area shape="rect" id="Node000020" href="$commands_8c.html" title="Hardware independent data structures for commands handling." alt="" coords="3289,106,3446,151"/>
-<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="3370,64,3370,108,3366,104,3366,67"/>
-<area shape="rect" id="Node000021" href="$control__mixing__heewing_8c.html" title=" " alt="" coords="3470,98,3628,160"/>
-<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="3421,55,3496,98,3491,97,3420,60"/>
-<area shape="rect" id="Node000022" href="$mavlink_8c.html" title="Basic MAVLink datalink implementation." alt="" coords="3652,106,3809,151"/>
-<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="3462,49,3641,95,3668,106,3663,106,3639,101,3461,54"/>
-<area shape="rect" id="Node000023" href="$servo__cam__ctrl_8c.html" title="Digital Camera Control." alt="" coords="3833,98,4009,160"/>
-<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="3462,37,3630,60,3822,95,3835,101,3830,100,3821,101,3630,65,3462,42"/>
-<area shape="rect" id="Node000024" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver." alt="" coords="4033,106,4190,151"/>
-<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="3462,30,3576,37,3716,50,3869,68,4022,95,4054,106,4049,106,4021,101,3869,74,3716,55,3576,42,3462,35"/>
-<area shape="rect" id="Node000025" href="$electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc." alt="" coords="4214,106,4372,151"/>
-<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="3462,27,3606,31,3791,42,3997,63,4101,77,4203,95,4236,106,4231,106,4202,101,4101,83,3997,68,3791,48,3606,37,3462,32"/>
-<area shape="rect" id="Node000026" href="$gas__engine__idle__trim_8c.html" title=" " alt="" coords="4396,98,4574,160"/>
-<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="3462,26,3635,29,3865,39,4124,60,4256,75,4384,95,4399,101,4393,100,4383,101,4255,81,4123,65,3865,44,3635,34,3462,31"/>
-<area shape="rect" id="Node000027" href="$glide__wing__lock_8c.html" title=" " alt="" coords="4598,98,4764,160"/>
-<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="3462,29,3712,36,4036,50,4355,69,4487,82,4587,95,4601,101,4596,100,4586,101,4486,87,4354,75,4036,55,3712,42,3462,34"/>
-<area shape="rect" id="Node000028" href="$throttle__curve_8c.html" title=" " alt="" coords="4788,98,4945,160"/>
-<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="3462,28,3747,34,4127,46,4502,66,4658,79,4776,95,4790,101,4785,100,4775,101,4658,85,4502,71,4126,51,3747,39,3462,33"/>
-<area shape="rect" id="Node000029" href="$modules_2ins_2ins__arduimu__basic_8c.html" title=" " alt="" coords="4970,106,5150,151"/>
-<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="3462,28,3780,33,4212,45,4643,65,4822,79,4958,95,4996,106,4991,106,4957,101,4821,84,4643,71,4212,51,3780,39,3463,33"/>
-<area shape="rect" id="Node000030" href="$intermcu_8h.html" title="Inter&#45;MCU interface." alt="" coords="5174,106,5332,151"/>
-<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="3462,27,3817,29,4308,39,4564,48,4802,60,5008,75,5163,95,5197,106,5192,106,5162,101,5007,81,4802,65,4563,53,4308,45,3816,35,3462,32"/>
-<area shape="rect" id="Node000041" href="$nav__drop_8c.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed." alt="" coords="5356,106,5513,151"/>
-<area shape="poly" id="edge40_Node000001_Node000041" title=" " alt="" coords="3462,26,3849,28,4393,36,4677,45,4943,57,5172,74,5344,95,5379,106,5373,106,5343,101,5171,79,4942,62,4677,50,4393,42,3849,33,3462,31"/>
-<area shape="rect" id="Node000042" href="$rotwing__state_8c.html" title=" " alt="" coords="5537,98,5708,160"/>
-<area shape="poly" id="edge41_Node000001_Node000042" title=" " alt="" coords="3462,26,3879,27,4476,35,4789,44,5082,56,5335,73,5526,95,5539,100,5534,100,5525,101,5334,78,5082,62,4789,49,4476,41,3879,33,3462,31"/>
-<area shape="rect" id="Node000043" href="$servo__tester_8c.html" title="Module that has a setting to change the input to a servo Call the servo that you want to test SERVO_T..." alt="" coords="5732,98,5889,160"/>
-<area shape="poly" id="edge42_Node000001_Node000043" title=" " alt="" coords="3462,28,3957,35,4661,49,5330,69,5575,81,5720,95,5734,100,5729,100,5719,101,5575,87,5330,74,4661,54,3957,40,3462,33"/>
-<area shape="rect" id="Node000044" href="$auto1__commands_8c.html" title=" " alt="" coords="5913,106,6132,151"/>
-<area shape="poly" id="edge43_Node000001_Node000044" title=" " alt="" coords="3462,26,3943,28,4649,36,5021,45,5371,57,5674,74,5902,95,5947,106,5941,106,5901,101,5673,79,5371,63,5021,50,4649,42,3943,33,3462,32"/>
-<area shape="rect" id="Node000045" href="$uav__recovery_8c.html" title=" " alt="" coords="6155,106,6370,151"/>
-<area shape="poly" id="edge44_Node000001_Node000045" title=" " alt="" coords="3462,26,3984,26,4761,33,5172,41,5559,54,5893,72,6030,83,6144,95,6189,106,6184,106,6143,101,6030,88,5892,77,5558,59,5172,47,4761,38,3984,31,3462,31"/>
-<area shape="rect" id="Node000046" href="$nps__autopilot__fixedwing_8c.html" title=" " alt="" coords="6394,106,6560,151"/>
-<area shape="poly" id="edge45_Node000001_Node000046" title=" " alt="" coords="3462,27,4079,32,4991,45,5869,65,6191,79,6306,87,6382,95,6418,106,6413,106,6381,101,6305,92,6191,84,5869,70,4991,50,4079,38,3462,32"/>
-<area shape="rect" id="Node000009" href="$rotorcraft_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1137,208,1303,269"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1281,170,1248,209,1245,205,1277,172"/>
-<area shape="rect" id="Node000010" href="$rover_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1327,216,1494,261"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1353,169,1394,217,1389,215,1351,174"/>
-<area shape="rect" id="Node000031" href="$opa__controller__ap_8c.html" title=" " alt="" coords="4712,216,4912,261"/>
-<area shape="poly" id="edge30_Node000030_Node000031" title=" " alt="" coords="5178,156,5163,162,5044,187,4924,210,4892,218,4891,213,4923,205,5043,182,5162,157,5173,156"/>
-<area shape="rect" id="Node000032" href="$opa__controller__fbw_8c.html" title=" " alt="" coords="4936,216,5144,261"/>
-<area shape="poly" id="edge31_Node000030_Node000032" title=" " alt="" coords="5199,158,5084,218,5082,213,5194,159"/>
-<area shape="rect" id="Node000033" href="$intermcu__dl_8c.html" title="datalink forwarder for InterMCU" alt="" coords="5168,216,5338,261"/>
-<area shape="poly" id="edge32_Node000030_Node000033" title=" " alt="" coords="5255,165,5255,217,5251,214,5251,169"/>
-<area shape="rect" id="Node000034" href="$intermcu__ap_8h.html" title="Inter&#45;MCU on the AP side." alt="" coords="5363,216,5543,261"/>
-<area shape="poly" id="edge33_Node000030_Node000034" title=" " alt="" coords="5307,156,5415,216,5410,215,5306,161"/>
-<area shape="rect" id="Node000038" href="$intermcu__fbw_8h.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="5670,216,5858,261"/>
-<area shape="poly" id="edge37_Node000030_Node000038" title=" " alt="" coords="5331,153,5344,157,5517,194,5672,224,5667,223,5516,200,5343,162,5330,159"/>
-<area shape="rect" id="Node000035" href="$intermcu__ap_8c.html" title="Inter&#45;MCU on the AP side." alt="" coords="5068,326,5247,370"/>
-<area shape="poly" id="edge34_Node000034_Node000035" title=" " alt="" coords="5382,266,5217,328,5216,323,5376,267"/>
-<area shape="rect" id="Node000036" href="$px4__flash_8c.html" title=" " alt="" coords="5271,326,5435,370"/>
-<area shape="poly" id="edge35_Node000034_Node000036" title=" " alt="" coords="5425,272,5374,328,5372,323,5420,274"/>
-<area shape="rect" id="Node000037" href="$spektrum__soft__bind__ap_8c.html" title=" " alt="" coords="5460,317,5647,379"/>
-<area shape="poly" id="edge36_Node000034_Node000037" title=" " alt="" coords="5485,270,5527,318,5523,316,5483,275"/>
-<area shape="rect" id="Node000039" href="$intermcu__fbw_8c.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="5671,326,5857,370"/>
-<area shape="poly" id="edge38_Node000038_Node000039" title=" " alt="" coords="5766,275,5766,327,5762,323,5762,279"/>
-<area shape="rect" id="Node000040" href="$spektrum__soft__bind__fbw_8c.html" title=" " alt="" coords="5881,317,6076,379"/>
-<area shape="poly" id="edge39_Node000038_Node000040" title=" " alt="" coords="5822,266,5921,317,5915,316,5820,271"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3120,30,2503,38,1586,50,704,71,379,84,264,92,188,101,127,117,124,112,187,95,264,87,379,79,703,65,1586,45,2503,32,3126,29"/>
+<area shape="rect" id="Node000003" href="$fixedwing_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="199,98,366,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="3120,30,2538,38,1680,51,858,71,555,85,378,101,367,103,365,98,377,95,555,80,857,66,1680,46,2538,33,3126,29"/>
+<area shape="rect" id="Node000004" href="$main__recovery_8c.html" title="Recovery mode: run manual mode in case of hardfault Based on legacy FBW." alt="" coords="389,106,586,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="3120,29,2627,31,1896,38,1510,46,1147,59,835,77,705,88,599,101,560,109,558,103,598,95,705,83,834,71,1147,54,1510,41,1896,33,2627,26,3126,28"/>
+<area shape="rect" id="Node000005" href="$rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="610,98,776,160"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="3120,30,2614,40,1886,54,1193,75,939,87,790,101,777,103,776,98,789,95,939,82,1193,69,1886,49,2614,35,3126,30"/>
+<area shape="rect" id="Node000006" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="801,98,967,160"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="3120,29,2692,32,2071,39,1746,48,1441,60,1178,78,980,101,968,103,967,98,979,95,1178,72,1441,55,1746,42,2071,34,2692,26,3126,28"/>
+<area shape="rect" id="Node000007" href="$rotorcraft_2autopilot__utils_8h.html" title="Utility functions and includes for autopilots." alt="" coords="991,98,1158,160"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="3120,29,2724,33,2159,42,1864,50,1587,62,1349,79,1170,101,1158,103,1157,98,1169,95,1349,74,1587,57,1863,45,2159,36,2724,28,3126,29"/>
+<area shape="rect" id="Node000010" href="$oneloop__andi_8c.html" title=" " alt="" coords="1181,98,1378,160"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="3120,30,2763,37,2262,49,1759,69,1549,83,1391,101,1380,103,1379,97,1390,95,1549,78,1759,64,2262,43,2763,32,3126,30"/>
+<area shape="rect" id="Node000011" href="$oneloop__nB_8c.html" title=" " alt="" coords="1402,106,1635,151"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="3120,31,2383,55,1957,75,1781,87,1647,101,1603,108,1602,103,1646,95,1780,81,1957,69,2382,49,3125,31"/>
+<area shape="rect" id="Node000012" href="$stabilization__andi_8c.html" title="ANDI stabilization controller for tiltbody rotorcraft." alt="" coords="1659,98,1828,160"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="3120,31,2844,40,2474,53,2108,73,1956,86,1842,101,1829,103,1829,98,1841,95,1956,80,2108,67,2474,48,2844,35,3126,31"/>
+<area shape="rect" id="Node000013" href="$rover_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="1853,106,2058,151"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="3121,29,2930,34,2669,43,2371,64,2219,80,2071,101,2032,109,2031,103,2070,95,2219,75,2371,59,2668,38,2930,28,3126,28"/>
+<area shape="rect" id="Node000014" href="$rover_2autopilot__utils_8h.html" title="Utility functions and includes for autopilots." alt="" coords="2082,106,2251,151"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="3121,29,2960,35,2745,45,2505,65,2382,81,2263,101,2230,109,2229,103,2262,95,2381,76,2504,60,2745,39,2960,29,3126,29"/>
+<area shape="rect" id="Node000015" href="$modules_2actuators_2actuators_8c.html" title="Hardware independent actuators code." alt="" coords="2275,106,2437,151"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="3120,31,2990,39,2821,51,2635,71,2450,101,2418,109,2417,103,2449,95,2635,65,2821,45,2990,34,3126,31"/>
+<area shape="rect" id="Node000016" href="$actuators__hitl_8c.html" title=" " alt="" coords="2461,98,2618,160"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="3120,35,2897,58,2764,76,2631,101,2619,103,2618,98,2630,95,2763,71,2897,52,3126,34"/>
+<area shape="rect" id="Node000017" href="$cam__gimbal_8c.html" title="Pan/Tilt camera gimbal control." alt="" coords="2642,106,2843,151"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="3126,45,2855,101,2822,108,2821,103,2854,95,3121,45"/>
+<area shape="rect" id="Node000018" href="$generic__com_8c.html" title=" " alt="" coords="2866,106,3024,151"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="3146,55,3005,109,3004,103,3141,56"/>
+<area shape="rect" id="Node000019" href="$commands_8c.html" title="Hardware independent data structures for commands handling." alt="" coords="3048,106,3205,151"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="3190,60,3147,109,3145,104,3185,63"/>
+<area shape="rect" id="Node000020" href="$control__mixing__heewing_8c.html" title=" " alt="" coords="3229,98,3386,160"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="3248,59,3283,99,3278,97,3246,64"/>
+<area shape="rect" id="Node000021" href="$mavlink_8c.html" title="Basic MAVLink datalink implementation." alt="" coords="3410,106,3568,151"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="3292,53,3432,106,3427,106,3291,58"/>
+<area shape="rect" id="Node000022" href="$servo__cam__ctrl_8c.html" title="Digital Camera Control." alt="" coords="3592,98,3768,160"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="3311,42,3439,65,3580,95,3594,101,3588,101,3579,101,3438,70,3311,47"/>
+<area shape="rect" id="Node000023" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver." alt="" coords="3792,106,3949,151"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="3311,32,3527,53,3654,71,3780,95,3812,106,3807,106,3779,101,3653,77,3526,59,3311,38"/>
+<area shape="rect" id="Node000024" href="$electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc." alt="" coords="3973,106,4130,151"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="3311,28,3440,34,3603,46,3783,65,3962,95,3995,106,3989,106,3961,101,3782,71,3603,51,3440,39,3311,34"/>
+<area shape="rect" id="Node000025" href="$gas__engine__idle__trim_8c.html" title=" " alt="" coords="4155,98,4332,160"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="3312,27,3470,31,3678,42,3910,62,4028,77,4143,95,4157,101,4152,100,4142,101,4027,82,3909,67,3677,47,3470,36,3312,32"/>
+<area shape="rect" id="Node000026" href="$glide__wing__lock_8c.html" title=" " alt="" coords="4357,98,4522,160"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="3312,29,3842,52,4134,71,4254,82,4346,95,4360,101,4354,100,4345,101,4253,88,4133,76,3842,57,3312,35"/>
+<area shape="rect" id="Node000027" href="$throttle__curve_8c.html" title=" " alt="" coords="4546,98,4704,160"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="3311,28,3579,35,3933,47,4281,67,4425,80,4535,95,4549,101,4543,100,4534,101,4425,85,4281,73,3932,53,3579,40,3311,33"/>
+<area shape="rect" id="Node000028" href="$modules_2ins_2ins__arduimu__basic_8c.html" title=" " alt="" coords="4728,106,4909,151"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="3311,28,3612,34,4018,47,4422,67,4589,80,4716,95,4754,106,4749,106,4715,101,4589,85,4421,72,4018,52,3612,39,3311,33"/>
+<area shape="rect" id="Node000029" href="$intermcu_8h.html" title="Inter&#45;MCU interface." alt="" coords="4933,106,5090,151"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="3311,27,3650,30,4115,41,4356,49,4581,61,4775,76,4922,95,4956,106,4951,106,4921,101,4775,82,4581,67,4356,55,4115,46,3650,36,3311,32"/>
+<area shape="rect" id="Node000040" href="$nav__drop_8c.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed." alt="" coords="5114,106,5272,151"/>
+<area shape="poly" id="edge39_Node000001_Node000040" title=" " alt="" coords="3312,26,3682,29,4200,38,4470,46,4722,58,4939,75,5103,95,5137,106,5132,106,5102,101,4939,80,4722,64,4470,52,4200,43,3682,34,3312,32"/>
+<area shape="rect" id="Node000041" href="$rotwing__state_8c.html" title=" " alt="" coords="5296,98,5467,160"/>
+<area shape="poly" id="edge40_Node000001_Node000041" title=" " alt="" coords="3311,26,3713,28,4284,37,4582,45,4862,58,5102,74,5284,95,5298,100,5292,100,5283,101,5102,79,4861,63,4582,51,4284,42,3713,33,3311,32"/>
+<area shape="rect" id="Node000042" href="$servo__tester_8c.html" title="Module that has a setting to change the input to a servo Call the servo that you want to test SERVO_T..." alt="" coords="5490,98,5648,160"/>
+<area shape="poly" id="edge41_Node000001_Node000042" title=" " alt="" coords="3311,28,3788,35,4464,50,5105,70,5340,82,5479,95,5493,100,5487,100,5478,101,5340,87,5105,75,4464,55,3788,41,3311,33"/>
+<area shape="rect" id="Node000043" href="$auto1__commands_8c.html" title=" " alt="" coords="5672,106,5890,151"/>
+<area shape="poly" id="edge42_Node000001_Node000043" title=" " alt="" coords="3311,26,3778,29,4457,38,4815,46,5151,58,5441,74,5660,95,5705,106,5700,106,5659,101,5441,80,5151,64,4815,51,4457,43,3777,34,3312,32"/>
+<area shape="rect" id="Node000044" href="$uav__recovery_8c.html" title=" " alt="" coords="5914,106,6128,151"/>
+<area shape="poly" id="edge43_Node000001_Node000044" title=" " alt="" coords="3311,26,3818,27,4568,34,4965,42,5338,55,5660,72,5903,95,5947,106,5942,106,5902,101,5660,78,5338,60,4965,48,4568,39,3818,32,3311,31"/>
+<area shape="rect" id="Node000045" href="$nps__autopilot__fixedwing_8c.html" title=" " alt="" coords="6153,106,6319,151"/>
+<area shape="poly" id="edge44_Node000001_Node000045" title=" " alt="" coords="3311,27,3912,33,4795,45,5644,66,5956,79,6140,95,6177,106,6172,106,6139,101,5956,85,5644,71,4795,51,3912,38,3312,32"/>
+<area shape="rect" id="Node000008" href="$rotorcraft_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="895,208,1062,269"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1040,170,1007,209,1004,205,1035,172"/>
+<area shape="rect" id="Node000009" href="$rover_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1086,216,1253,261"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="1112,169,1153,216,1148,215,1110,174"/>
+<area shape="rect" id="Node000030" href="$opa__controller__ap_8c.html" title=" " alt="" coords="4470,216,4671,261"/>
+<area shape="poly" id="edge29_Node000029_Node000030" title=" " alt="" coords="4937,156,4922,162,4803,187,4683,210,4650,218,4650,213,4682,205,4802,182,4921,157,4932,156"/>
+<area shape="rect" id="Node000031" href="$opa__controller__fbw_8c.html" title=" " alt="" coords="4695,216,4902,261"/>
+<area shape="poly" id="edge30_Node000029_Node000031" title=" " alt="" coords="4958,158,4842,218,4841,213,4952,159"/>
+<area shape="rect" id="Node000032" href="$intermcu__dl_8c.html" title="datalink forwarder for InterMCU" alt="" coords="4927,216,5097,261"/>
+<area shape="poly" id="edge31_Node000029_Node000032" title=" " alt="" coords="5014,165,5014,217,5010,214,5010,169"/>
+<area shape="rect" id="Node000033" href="$intermcu__ap_8h.html" title="Inter&#45;MCU on the AP side." alt="" coords="5122,216,5302,261"/>
+<area shape="poly" id="edge32_Node000029_Node000033" title=" " alt="" coords="5066,156,5174,216,5169,215,5065,161"/>
+<area shape="rect" id="Node000037" href="$intermcu__fbw_8h.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="5429,216,5616,261"/>
+<area shape="poly" id="edge36_Node000029_Node000037" title=" " alt="" coords="5089,153,5103,157,5275,194,5431,224,5426,223,5274,200,5102,162,5089,159"/>
+<area shape="rect" id="Node000034" href="$intermcu__ap_8c.html" title="Inter&#45;MCU on the AP side." alt="" coords="4826,326,5006,370"/>
+<area shape="poly" id="edge33_Node000033_Node000034" title=" " alt="" coords="5140,266,4976,328,4975,323,5135,267"/>
+<area shape="rect" id="Node000035" href="$px4__flash_8c.html" title=" " alt="" coords="5030,326,5194,370"/>
+<area shape="poly" id="edge34_Node000033_Node000035" title=" " alt="" coords="5184,272,5133,328,5131,323,5179,274"/>
+<area shape="rect" id="Node000036" href="$spektrum__soft__bind__ap_8c.html" title=" " alt="" coords="5218,317,5406,379"/>
+<area shape="poly" id="edge35_Node000033_Node000036" title=" " alt="" coords="5244,270,5286,318,5281,316,5241,275"/>
+<area shape="rect" id="Node000038" href="$intermcu__fbw_8c.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="5429,326,5616,370"/>
+<area shape="poly" id="edge37_Node000037_Node000038" title=" " alt="" coords="5524,275,5524,327,5521,323,5521,279"/>
+<area shape="rect" id="Node000039" href="$spektrum__soft__bind__fbw_8c.html" title=" " alt="" coords="5640,317,5834,379"/>
+<area shape="poly" id="edge38_Node000037_Node000039" title=" " alt="" coords="5580,266,5679,317,5674,316,5579,271"/>
 </map>
