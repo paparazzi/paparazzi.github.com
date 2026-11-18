@@ -1,5 +1,8 @@
 var NAVTREEINDEX162 =
 {
+"onboard_modules.html#modules_category_gps":[1,0,17],
+"onboard_modules.html#modules_category_guidance":[1,0,18],
+"onboard_modules.html#modules_category_helicopter":[1,0,19],
 "onboard_modules.html#modules_category_imu":[1,0,20],
 "onboard_modules.html#modules_category_ins":[1,0,21],
 "onboard_modules.html#modules_category_intermcu":[1,0,22],
@@ -246,8 +249,5 @@ var NAVTREEINDEX162 =
 "oneloop__andi_8h.html#a2179243fed077775d133c5fc8e130639":[9,0,1,0,3,1,1,1,53],
 "oneloop__andi_8h.html#a220bb859f2933240f886cccc7394368a":[9,0,1,0,3,1,1,1,48],
 "oneloop__andi_8h.html#a2a570f6e547821d329abdf88fa2f43f2":[9,0,1,0,3,1,1,1,42],
-"oneloop__andi_8h.html#a2f546110bdf79f4c9b22a67d17c9296d":[9,0,1,0,3,1,1,1,69],
-"oneloop__andi_8h.html#a31680f9db24857adabfe7723c6ca9bef":[9,0,1,0,3,1,1,1,16],
-"oneloop__andi_8h.html#a352f06b221e04ab07375357a9eae29db":[9,0,1,0,3,1,1,1,46],
-"oneloop__andi_8h.html#a3d68f4cda03f5178fcf94c5e68e38167":[9,0,1,0,3,1,1,1,22]
+"oneloop__andi_8h.html#a2f546110bdf79f4c9b22a67d17c9296d":[9,0,1,0,3,1,1,1,69]
 };

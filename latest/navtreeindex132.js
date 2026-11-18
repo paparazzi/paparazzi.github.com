@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__formation_flight.html":[1,317],
+"module__formation_flight.html#datalink_functions__formation_flight":[1,317,2],
 "module__formation_flight.html#functions__formation_flight":[1,317,1],
 "module__formation_flight.html#module_load_example__formation_flight":[1,317,0],
 "module__formation_flight.html#module_xml__formation_flight":[1,317,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__gvf_parametric.html#functions__gvf_parametric":[1,500,1],
 "module__gvf_parametric.html#module_load_example__gvf_parametric":[1,500,0],
 "module__gvf_parametric.html#module_xml__gvf_parametric":[1,500,1,0],
-"module__hackhd.html":[1,143],
-"module__hackhd.html#configuration__hackhd":[1,143,1],
-"module__hackhd.html#functions__hackhd":[1,143,2]
+"module__hackhd.html":[1,143]
 };

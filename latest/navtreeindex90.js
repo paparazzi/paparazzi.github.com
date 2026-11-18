@@ -1,5 +1,6 @@
 var NAVTREEINDEX90 =
 {
+"ins__arduimu__basic_8h_source.html":[9,0,1,0,6,37,15],
 "ins__ekf2_8cpp.html":[9,0,1,0,6,37,16],
 "ins__ekf2_8cpp.html#a021d4b12e8e9a8307d34bf716a971cb3":[9,0,1,0,6,37,16,13],
 "ins__ekf2_8cpp.html#a04fcf5e7ada3ac652a773b49391c4fb1":[9,0,1,0,6,37,16,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX90 =
 "ins__ext__pose_8h.html#a426c1336f00958967ed78303643ab4b4":[9,0,1,0,6,37,19,11],
 "ins__ext__pose_8h.html#a50f3a4860e66b6159730a220793c4442":[9,0,1,0,6,37,19,4],
 "ins__ext__pose_8h.html#a653034a7ef12add1f029b617dc202afb":[9,0,1,0,6,37,19,3],
-"ins__ext__pose_8h.html#a6e00fb1fd031a295fe133ea103431280":[9,0,1,0,6,37,19,2],
-"ins__ext__pose_8h.html#a6e00fb1fd031a295fe133ea103431280a184176ad35336fbd79d2bde4ec8be252":[9,0,1,0,6,37,19,2,5]
+"ins__ext__pose_8h.html#a6e00fb1fd031a295fe133ea103431280":[9,0,1,0,6,37,19,2]
 };

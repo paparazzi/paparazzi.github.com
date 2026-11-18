@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"dshot__erps_8c.html#a8e516f66d4de4c9077709ccf441de966":[9,0,1,0,0,0,1,0,5,5],
 "dshot__erps_8c.html#a90f045135c4e7930f330a14af57cc0fe":[9,0,1,0,0,0,1,0,5,13],
 "dshot__erps_8c.html#a976e2bd110ad446c0a443fcf2fd7509c":[9,0,1,0,0,0,1,0,5,10],
 "dshot__erps_8c.html#aaa203e2637effb8fc3253f23dd4310d0":[9,0,1,0,0,0,1,0,5,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "eff__scheduling__cyfoam_8c.html":[9,0,1,0,6,14,10],
 "eff__scheduling__cyfoam_8c.html#a1d1aeaf06e7e0c96b63e3d51301c5752":[9,0,1,0,6,14,10,2],
 "eff__scheduling__cyfoam_8c.html#a555bfe6f47c0d8f447a7f8857e91aa28":[9,0,1,0,6,14,10,5],
-"eff__scheduling__cyfoam_8c.html#a5a8a267b3be5096e08713f334da0f35c":[9,0,1,0,6,14,10,6],
-"eff__scheduling__cyfoam_8c.html#a78011bdae9428b428747e2b101d433b1":[9,0,1,0,6,14,10,1]
+"eff__scheduling__cyfoam_8c.html#a5a8a267b3be5096e08713f334da0f35c":[9,0,1,0,6,14,10,6]
 };

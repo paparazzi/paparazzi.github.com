@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"glide__wing__lock_8c.html#a8f9d799b811e5bbe4e4a411cb6786bd9":[9,0,1,0,6,27,0,9],
 "glide__wing__lock_8c.html#aa415e804d1abe388b9cb19ce79189828":[9,0,1,0,6,27,0,8],
 "glide__wing__lock_8c.html#aad3170b4005943ff924e12ac87530c4f":[9,0,1,0,6,27,0,4],
 "glide__wing__lock_8c.html#ac8aeb305f0c7abfa9b418edb2448db24":[9,0,1,0,6,27,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "gpio__ext__common_8c.html#a2cb7ae7c310070cc9b119825954bce1b":[9,0,1,0,6,28,0,2],
 "gpio__ext__common_8c.html#a311ac96cea5dda529289063168901abb":[9,0,1,0,6,28,0,17],
 "gpio__ext__common_8c.html#a3a2c2fdd49b260d3171f9ae1e8266d4b":[9,0,1,0,6,28,0,1],
-"gpio__ext__common_8c.html#a4c1c419a83a246803f2c8cbe49a82a62":[9,0,1,0,6,28,0,8],
-"gpio__ext__common_8c.html#a55920ec968d9dcd1973529c15cbdf5b1":[9,0,1,0,6,28,0,3]
+"gpio__ext__common_8c.html#a4c1c419a83a246803f2c8cbe49a82a62":[9,0,1,0,6,28,0,8]
 };

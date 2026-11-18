@@ -1,6 +1,5 @@
 var sdlog__chibios_8c =
 [
-    [ "GPS_LEAP_SECONDS", "sdlog__chibios_8c.html#a669b871bb9f27ed42467ccaa76cec412", null ],
     [ "SDLOG_AUTO_FLUSH_PERIOD", "sdlog__chibios_8c.html#a936f5a74e8b8aa15309464eb51b1c1f4", null ],
     [ "SDLOG_CONF", "sdlog__chibios_8c.html#aa49fd1aa4c54ff8fa78acee506265c91", null ],
     [ "SDLOG_CONTIGUOUS_STORAGE_MEM", "sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"functions_y.html":[8,3,0,25],
 "functions_z.html":[8,3,0,26],
 "gaia_8py.html":[9,0,1,1,4],
 "gaia_8py_source.html":[9,0,1,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "glide__wing__lock_8c.html":[9,0,1,0,6,27,0],
 "glide__wing__lock_8c.html#a14bf7a1cf2995c9a0c27fbff4fa628e2":[9,0,1,0,6,27,0,2],
 "glide__wing__lock_8c.html#a1b02dd995c5c8907cb4278fea658974a":[9,0,1,0,6,27,0,10],
-"glide__wing__lock_8c.html#a4bc143fe844932b1a873e9d6b9ed5009":[9,0,1,0,6,27,0,6],
-"glide__wing__lock_8c.html#a8f9d799b811e5bbe4e4a411cb6786bd9":[9,0,1,0,6,27,0,9]
+"glide__wing__lock_8c.html#a4bc143fe844932b1a873e9d6b9ed5009":[9,0,1,0,6,27,0,6]
 };

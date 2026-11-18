@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"datalink_8c.html#a61d3db27cf64e56c9011bef1de4df9ac":[9,0,1,0,6,15,3,10],
 "datalink_8c.html#a81d7d876d42a3de808caa5b47ba600c6":[9,0,1,0,6,15,3,2],
 "datalink_8c.html#aa339c817b28d34ab69c529090598d800":[9,0,1,0,6,15,3,5],
 "datalink_8c.html#aacfed4b549cef92b64292050638f4c58":[9,0,1,0,6,15,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "decawave__anchorless__communication_8c.html#aecf9a1ac4caf973a360cfb57507eeecf":[9,0,1,0,6,16,0,10],
 "decawave__anchorless__communication_8c.html#aedc72b5d54316dab173d46ab838a5e26":[9,0,1,0,6,16,0,0,8],
 "decawave__anchorless__communication_8c.html#aef52e3177bc36c2d8ab670d8cb1f14b5":[9,0,1,0,6,16,0,21],
-"decawave__anchorless__communication_8c.html#affd8576bee651268d03c9874f7bb71ac":[9,0,1,0,6,16,0,25],
-"decawave__anchorless__communication_8c.html#structnodeState":[9,0,1,0,6,16,0,0]
+"decawave__anchorless__communication_8c.html#affd8576bee651268d03c9874f7bb71ac":[9,0,1,0,6,16,0,25]
 };

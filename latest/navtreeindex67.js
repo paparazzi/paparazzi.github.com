@@ -1,5 +1,6 @@
 var NAVTREEINDEX67 =
 {
+"gps__ubx__i2c_8c.html#a7d765c07aa171aca913bd5e9832d53b6":[9,0,1,0,6,29,28,2],
 "gps__ubx__i2c_8c.html#a83ac056eaf39eaf7a5d1647718905dd1":[9,0,1,0,6,29,28,13],
 "gps__ubx__i2c_8c.html#aee916f88f710ec46463e53d9350df177":[9,0,1,0,6,29,28,9],
 "gps__ubx__i2c_8c.html#af038668157161a873a764a7edc0a367b":[9,0,1,0,6,29,28,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX67 =
 "ground__detect_8h.html#ae9f5fc867d5bf407ec572e60d89bd612":[9,0,1,0,6,47,7,2,1],
 "ground__detect_8h.html#af04e8401e115cb4aa544618c9cb9288e":[9,0,1,0,6,47,7,8],
 "ground__detect_8h.html#structground__detect__bitmask__t_8____unnamed0____":[9,0,1,0,6,47,7,2],
-"ground__detect_8h.html#structground__detect__values__t":[9,0,1,0,6,47,7,1],
-"ground__detect_8h.html#unionground__detect__bitmask__t":[9,0,1,0,6,47,7,0]
+"ground__detect_8h.html#structground__detect__values__t":[9,0,1,0,6,47,7,1]
 };

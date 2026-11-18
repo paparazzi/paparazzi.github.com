@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"flight__gear_8h.html#ac725935bd880986b53aa1efed3307240":[9,0,1,1,2,1,1,37],
 "flight__gear_8h.html#ac74ebfd766f4158fbc5ad7f09b3b5b8b":[9,0,1,1,2,1,23],
 "flight__gear_8h.html#ac9636722fe2f8ec3df6f305ebb6113c9":[9,0,1,1,2,1,3,12],
 "flight__gear_8h.html#acff779139a8f42c568672b2788965a54":[9,0,1,1,2,1,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "functions_vars_y.html":[8,3,2,25],
 "functions_vars_z.html":[8,3,2,26],
 "functions_w.html":[8,3,0,23],
-"functions_x.html":[8,3,0,24],
-"functions_y.html":[8,3,0,25]
+"functions_x.html":[8,3,0,24]
 };

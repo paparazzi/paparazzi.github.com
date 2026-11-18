@@ -205,7 +205,6 @@ $(function(){initNavTree('sdlog__chibios_8c.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a669b871bb9f27ed42467ccaa76cec412" id="r_a669b871bb9f27ed42467ccaa76cec412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a669b871bb9f27ed42467ccaa76cec412">GPS_LEAP_SECONDS</a>&#160;&#160;&#160;18</td></tr>
 <tr class="memitem:abb202e6b58d213508879a54bf05251bb" id="r_abb202e6b58d213508879a54bf05251bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb202e6b58d213508879a54bf05251bb">SDLOG_START_DELAY</a>&#160;&#160;&#160;30</td></tr>
 <tr class="memitem:a936f5a74e8b8aa15309464eb51b1c1f4" id="r_a936f5a74e8b8aa15309464eb51b1c1f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a936f5a74e8b8aa15309464eb51b1c1f4">SDLOG_AUTO_FLUSH_PERIOD</a>&#160;&#160;&#160;10</td></tr>
 <tr class="memitem:ad046b524185790197e59a701e851d8d6" id="r_ad046b524185790197e59a701e851d8d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad046b524185790197e59a701e851d8d6">SDLOG_CONTIGUOUS_STORAGE_MEM</a>&#160;&#160;&#160;50</td></tr>
@@ -263,24 +262,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ac4906480516463672f35682ae66f139b" id="r_ac4906480516463672f35682ae66f139b"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4906480516463672f35682ae66f139b">NO_FILE_NAME</a> [] = &quot;none&quot;</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
-<a id="a669b871bb9f27ed42467ccaa76cec412" name="a669b871bb9f27ed42467ccaa76cec412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669b871bb9f27ed42467ccaa76cec412">&#9670;&#160;</a></span>GPS_LEAP_SECONDS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GPS_LEAP_SECONDS&#160;&#160;&#160;18</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00045">45</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
-
-</div>
-</div>
 <a id="a936f5a74e8b8aa15309464eb51b1c1f4" name="a936f5a74e8b8aa15309464eb51b1c1f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a936f5a74e8b8aa15309464eb51b1c1f4">&#9670;&#160;</a></span>SDLOG_AUTO_FLUSH_PERIOD</h2>
 
@@ -293,9 +274,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00062">62</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00054">54</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__linux_8c_source.html#l00132">sdlog_write()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__linux_8c_source.html#l00132">sdlog_write()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +294,7 @@ Variables</h2></td></tr>
 
 <p>Write the configuration of the firmware next to the logs (PPRZ/&lt;md5&gt;_&lt;aircraft&gt;.conf.gz), so sd2log can decode them without the var/conf of the computer that built the firmware. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00086">86</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00078">78</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -329,9 +310,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00067">67</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00059">59</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -347,7 +328,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00072">72</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00064">64</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -363,9 +344,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00053">53</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00045">45</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -389,7 +370,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ac41aa33da5988d5d8545c40539bf968ba08a31ba2db7b38b09104ea752c3dbdf6" name="ac41aa33da5988d5d8545c40539bf968ba08a31ba2db7b38b09104ea752c3dbdf6"></a>SDLOG_ERROR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00122">122</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00114">114</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -415,11 +396,11 @@ Variables</h2></td></tr>
 
 <p>init <a class="el" href="sdlog__chibios_8h.html#structchibios__sdlog" title="chibios_sdlog structure">chibios_sdlog</a> structure </p>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00247">247</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00239">239</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8h_source.html#l00088">chibios_sdlog::device</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00086">chibios_sdlog::file</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00237">null_byte_function()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00236">null_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00211">sdlog_check_free_space()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00238">sdlog_send()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00223">sdlog_transmit()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00231">sdlog_transmit_buffer()</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8h_source.html#l00088">chibios_sdlog::device</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00086">chibios_sdlog::file</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00237">null_byte_function()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00236">null_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00203">sdlog_check_free_space()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00230">sdlog_send()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00215">sdlog_transmit()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00223">sdlog_transmit_buffer()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="flight__recorder_8c_source.html#l00052">flight_recorder_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="flight__recorder_8c_source.html#l00052">flight_recorder_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
@@ -499,7 +480,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00482">482</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00455">455</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="sdlog__chibios_8h_source.html#l00048">DEST_INFO_MSG_ALL</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00050">DEST_INFO_MSG_PPRZLOG</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00040">pprzLogFile</a>, <a class="el" href="sdlog__linux_8c_source.html#l00176">sdLogWriteByte()</a>, and <a class="el" href="sdlog__linux_8c_source.html#l00170">sdLogWriteRaw()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -552,7 +533,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00245">245</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00237">237</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
 
@@ -581,7 +562,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00244">244</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00236">236</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
 
@@ -619,11 +600,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00211">211</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00203">203</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00239">chibios_sdlog_init()</a>.</p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
@@ -659,9 +640,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00282">282</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00274">274</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00040">pprzLogFile</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00123">SDLOG_STOPPED</a>, and <a class="el" href="sdLog_8c_source.html#l00307">sdLogFinish()</a>.</p>
+<p class="reference">References <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00040">pprzLogFile</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00115">SDLOG_STOPPED</a>, and <a class="el" href="sdLog_8c_source.html#l00307">sdLogFinish()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="usbStorage_8c_source.html#l00100">thdUsbStorage()</a>.</p>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -708,9 +689,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00262">262</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00254">254</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00123">SDLOG_STOPPED</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>, and <a class="el" href="usbStorage_8c_source.html#l00076">usbStorageStartPolling()</a>.</p>
+<p class="reference">References <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="preflight__checks_8c_source.html#l00068">preflight_check_register()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00115">SDLOG_STOPPED</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00184">send_sdlog_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>, and <a class="el" href="usbStorage_8c_source.html#l00076">usbStorageStartPolling()</a>.</p>
 <div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
@@ -858,11 +839,11 @@ Variables</h2></td></tr>
 <p>Tell the GCS in words why the logger does not run (no SD card, card full, ...): at the start and every time it goes into error later, and when the configuration could not be written. </p>
 <p>A normal start is not reported. Sent with the LOGGER_STATUS message, from the main thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00160">160</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00152">152</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00092">sdlog_conf_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00099">sdlog_error_events</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00063">sdlog_error_string()</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00094">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00096">sdlog_start_fatfs</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00095">sdlog_start_step</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00123">SDLOG_STOPPED</a>.</p>
+<p class="reference">References <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00084">sdlog_conf_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00092">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00091">sdlog_error_events</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00063">sdlog_error_string()</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00088">sdlog_start_fatfs</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00087">sdlog_start_step</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00115">SDLOG_STOPPED</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00184">send_sdlog_status()</a>.</p>
 <div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
@@ -925,11 +906,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00238">238</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00230">230</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00239">chibios_sdlog_init()</a>.</p>
 <div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
@@ -979,11 +960,11 @@ Variables</h2></td></tr>
 
 <p>Keep why the start failed (the first failing step only). </p>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00361">361</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00353">353</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00094">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00096">sdlog_start_fatfs</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00095">sdlog_start_step</a>, <a class="el" href="sdLog_8c_source.html#l00227">sdLogGetFatfsResult()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00108">sdOk</a>, and <a class="el" href="max7456_8c_source.html#l00140">step</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00092">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00088">sdlog_start_fatfs</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00087">sdlog_start_step</a>, <a class="el" href="sdLog_8c_source.html#l00227">sdLogGetFatfsResult()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdOk</a>, and <a class="el" href="max7456_8c_source.html#l00140">step</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 <div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1043,11 +1024,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00223">223</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00215">215</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00239">chibios_sdlog_init()</a>.</p>
 <div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1105,11 +1086,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00231">231</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00223">223</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p class="reference">References <a class="el" href="serial_8c_source.html#l00026">fd</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00239">chibios_sdlog_init()</a>.</p>
 <div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1157,11 +1138,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00192">192</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00184">184</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00130">chibios_sdlog_filenames</a>, <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00131">NO_FILE_NAME</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00201">sdLogGetNbBytesWrittenToStorage()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00206">sdLogGetStorageStatus()</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00122">chibios_sdlog_filenames</a>, <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00123">NO_FILE_NAME</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_report_status()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00201">sdLogGetNbBytesWrittenToStorage()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00206">sdLogGetStorageStatus()</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00060">status</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00262">sdlog_chibios_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00254">sdlog_chibios_init()</a>.</p>
 <div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1224,11 +1205,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00372">372</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00364">364</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00130">chibios_sdlog_filenames</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00247">chibios_sdlog_init()</a>, <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="gps_8c_source.html#l00074">gps</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00045">GPS_LEAP_SECONDS</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sdLog_8h_source.html#l00105">LOG_APPEND_TAG_AT_CLOSE_DISABLED</a>, <a class="el" href="sdLog_8h_source.html#l00103">LOG_PREALLOCATION_DISABLED</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00081">PPRZ_LOG_DIR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00080">PPRZ_LOG_NAME</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00040">pprzLogFile</a>, <a class="el" href="sdLog_8c_source.html#l00837">removeEmptyLogs()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00062">SDLOG_AUTO_FLUSH_PERIOD</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00092">sdlog_conf_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00067">SDLOG_CONTIGUOUS_STORAGE_MEM</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00125">SDLOG_ERROR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00099">sdlog_error_events</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00124">SDLOG_RUNNING</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00053">SDLOG_START_DELAY</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00094">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00206">sdLogGetStorageStatus()</a>, <a class="el" href="sdLog_8c_source.html#l00245">sdLogInit()</a>, <a class="el" href="sdLog_8c_source.html#l00882">sdLogWriteFile()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00108">sdOk</a>, and <a class="el" href="usbStorage_8c_source.html#l00163">usbStorageIsItRunning()</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8c_source.html#l00122">chibios_sdlog_filenames</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00239">chibios_sdlog_init()</a>, <a class="el" href="#a23e6d8c2cffd9d0a2d1c6ce7a60740bc">chibios_sdlog_status</a>, <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="sdLog_8h_source.html#l00105">LOG_APPEND_TAG_AT_CLOSE_DISABLED</a>, <a class="el" href="sdLog_8h_source.html#l00103">LOG_PREALLOCATION_DISABLED</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00073">PPRZ_LOG_DIR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00072">PPRZ_LOG_NAME</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00040">pprzLogFile</a>, <a class="el" href="sdLog_8c_source.html#l00837">removeEmptyLogs()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00054">SDLOG_AUTO_FLUSH_PERIOD</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00084">sdlog_conf_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00059">SDLOG_CONTIGUOUS_STORAGE_MEM</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00117">SDLOG_ERROR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00092">sdlog_error_cause</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00091">sdlog_error_events</a>, <a class="el" href="sdLog_8h_source.html#l00112">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00116">SDLOG_RUNNING</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00045">SDLOG_START_DELAY</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">sdlog_start_error</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00353">sdlog_start_failed()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00206">sdLogGetStorageStatus()</a>, <a class="el" href="sdLog_8c_source.html#l00245">sdLogInit()</a>, <a class="el" href="sdLog_8c_source.html#l00882">sdLogWriteFile()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdOk</a>, and <a class="el" href="usbStorage_8c_source.html#l00163">usbStorageIsItRunning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00262">sdlog_chibios_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00254">sdlog_chibios_init()</a>.</p>
 <div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1310,7 +1291,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00112">112</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00104">104</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -1336,9 +1317,9 @@ Variables</h2></td></tr>
 
 <p>sdlog filenames </p>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00130">130</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00122">122</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00184">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1356,7 +1337,7 @@ Variables</h2></td></tr>
 
 <p>sdlog status </p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00282">sdlog_chibios_finish()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00262">sdlog_chibios_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00274">sdlog_chibios_finish()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00254">sdlog_chibios_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00184">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1380,9 +1361,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00131">131</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00123">123</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00192">send_sdlog_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00184">send_sdlog_status()</a>.</p>
 
 </div>
 </div>
@@ -1406,9 +1387,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00081">81</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00073">73</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__linux_8c_source.html#l00455">sdlog_chibios_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__linux_8c_source.html#l00455">sdlog_chibios_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1432,9 +1413,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00080">80</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00072">72</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__linux_8c_source.html#l00455">sdlog_chibios_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__linux_8c_source.html#l00455">sdlog_chibios_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1431,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00110">110</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00102">102</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -1476,9 +1457,9 @@ Variables</h2></td></tr>
 
 <p>Result of writing the configuration, reported to the GCS. </p>
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00092">92</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00084">84</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__linux_8c_source.html#l00455">sdlog_chibios_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00411">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__linux_8c_source.html#l00455">sdlog_chibios_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_report_status()</a>, <a class="el" href="sdlog__linux_8c_source.html#l00411">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1502,9 +1483,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00100">100</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00092">92</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00353">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1528,9 +1509,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00099">99</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00091">91</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1554,9 +1535,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00094">94</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00086">86</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_report_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00353">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1580,9 +1561,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00096">96</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00088">88</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00353">sdlog_start_failed()</a>.</p>
 
 </div>
 </div>
@@ -1606,9 +1587,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00095">95</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00087">87</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00160">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00152">sdlog_report_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00353">sdlog_start_failed()</a>.</p>
 
 </div>
 </div>
@@ -1624,9 +1605,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00108">108</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00100">100</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00361">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00372">thd_startlog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00353">sdlog_start_failed()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00364">thd_startlog()</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"decawave__anchorless__communication_8c.html#structnodeState":[9,0,1,0,6,16,0,0],
 "decawave__anchorless__communication_8c_source.html":[9,0,1,0,6,16,0],
 "decawave__anchorless__communication_8h.html":[9,0,1,0,6,16,1],
 "decawave__anchorless__communication_8h.html#a666f8ed1285e6941cc47eeef8857a2bd":[9,0,1,0,6,16,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "dir_227931f8886fc6a6dfaec1c2d3d7d81a.html":[9,0,1,0,6,70,1],
 "dir_24cf6086042171dbb948d3baa866052c.html":[9,0,1,0,6,10],
 "dir_256d15306e6294a270a01332f8a704ab.html":[9,0,1,0,0,1,1,0],
-"dir_25b954d33a095fb5e1d439288cfceb4f.html":[9,0,1,0,6,28],
-"dir_280ddc4eab531a6a77fbd73e72656568.html":[9,0,1,0,6,46]
+"dir_25b954d33a095fb5e1d439288cfceb4f.html":[9,0,1,0,6,28]
 };

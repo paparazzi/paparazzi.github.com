@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"cv__detect__color__object_8c.html#a70307ecabe6c4c372fdf4875a5f2fe3d":[9,0,1,0,6,12,12,2],
 "cv__detect__color__object_8c.html#a748debe3b80a5d33e620c7ebfb69a757":[9,0,1,0,6,12,12,17],
 "cv__detect__color__object_8c.html#a7ea703dd37ed53cba591ffc0e06350ed":[9,0,1,0,6,12,12,18],
 "cv__detect__color__object_8c.html#a829efe2335f030822042cb3db69c3c5f":[9,0,1,0,6,12,12,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "datalink_2missionlib_2waypoints_8h_source.html":[9,0,1,0,6,15,2,5],
 "datalink_8c.html":[9,0,1,0,6,15,3],
 "datalink_8c.html#a554cac6546bc91d21ff99268001d4010":[9,0,1,0,6,15,3,8],
-"datalink_8c.html#a61a78640fdc8d9db8e70b9b36d216df9":[9,0,1,0,6,15,3,7],
-"datalink_8c.html#a61d3db27cf64e56c9011bef1de4df9ac":[9,0,1,0,6,15,3,10]
+"datalink_8c.html#a61a78640fdc8d9db8e70b9b36d216df9":[9,0,1,0,6,15,3,7]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX73 =
 {
+"group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba32d98a42e45177c17732d3388c7db470":[6,0,1,15,0],
 "group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba5d633b4ee4d696627a0c4b437a20e2a9":[6,0,1,15,7],
 "group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba82c78797afbfbba58ef1f977ef52691f":[6,0,1,15,6],
 "group__spi.html#ggaaabe4f085d398b1dabe6526437d0069baa2b44a4b5e42910ff3ac1243d150ef8f":[6,0,1,15,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX73 =
 "group__state__wind__airspeed.html#gac66f1a9684122eaae083c3dae67a8ed2":[6,4,4,40],
 "group__state__wind__airspeed.html#gac9681f92ab85054b4d08e9bc8ae11e01":[6,4,4,45],
 "group__state__wind__airspeed.html#gac9957602767f1a6c2a00c97e999ce48c":[6,4,4,10],
-"group__state__wind__airspeed.html#gad430fea6159fef9711364d012d0d6862":[6,4,4,20],
-"group__state__wind__airspeed.html#gad9567026a45b1f7fb64bf761243a8864":[6,4,4,15]
+"group__state__wind__airspeed.html#gad430fea6159fef9711364d012d0d6862":[6,4,4,20]
 };

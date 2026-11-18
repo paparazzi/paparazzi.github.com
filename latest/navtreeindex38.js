@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"chimera_8h.html#ae74a702840b15e71530a2716b1ef497c":[9,0,1,0,1,3,0,0,1,151],
 "chimera_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[9,0,1,0,1,3,0,0,1,145],
 "chimera_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf":[9,0,1,0,1,3,0,0,1,75],
 "chimera_8h.html#aead66bc65b8e434c97f28429baeb2800":[9,0,1,0,1,3,0,0,1,81],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "cloud__sensor_8c.html#ae744c2165e21d499f7b00f558df28a9b":[9,0,1,0,6,44,3,2,3],
 "cloud__sensor_8c.html#ae92ffdb0ab10d817f5becbad098b47e8":[9,0,1,0,6,44,3,49],
 "cloud__sensor_8c.html#aea22e06e44e79512b836b3da220c4dbb":[9,0,1,0,6,44,3,28],
-"cloud__sensor_8c.html#aecdcfd07408ee7e797c686d92651ed03":[9,0,1,0,6,44,3,2,2],
-"cloud__sensor_8c.html#af38618b8cf4fe9dc7ce3d27b8fde2838":[9,0,1,0,6,44,3,4]
+"cloud__sensor_8c.html#aecdcfd07408ee7e797c686d92651ed03":[9,0,1,0,6,44,3,2,2]
 };

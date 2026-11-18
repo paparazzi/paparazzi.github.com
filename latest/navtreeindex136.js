@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"module__orange_avoider_guided.html#configuration__orange_avoider_guided":[1,369,1],
+"module__orange_avoider_guided.html#functions__orange_avoider_guided":[1,369,2],
 "module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,369,0],
 "module__orange_avoider_guided.html#module_xml__orange_avoider_guided":[1,369,2,0],
 "module__osd_max7456.html":[1,511],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "module__sonar_bebop.html#event_functions":[1,441,2,0],
 "module__sonar_bebop.html#functions__sonar_bebop":[1,441,2],
 "module__sonar_bebop.html#module_load_example__sonar_bebop":[1,441,0],
-"module__sonar_bebop.html#module_xml__sonar_bebop":[1,441,2,1],
-"module__sonar_i2c.html":[1,442],
-"module__sonar_i2c.html#configuration__sonar_i2c":[1,442,1]
+"module__sonar_bebop.html#module_xml__sonar_bebop":[1,441,2,1]
 };

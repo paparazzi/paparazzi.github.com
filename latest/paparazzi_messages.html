@@ -4740,6 +4740,17 @@ BLOCK (ID 5)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ac_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2 class="doxsection"><a class="anchor" id="TIME_SYNC"></a>
+TIME_SYNC (ID 6)</h2>
+<p>Ground UTC time, to sync the aircraft time without GPS</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">unix_time  </td><td class="markdownTableBodyNone">uint32  </td><td class="markdownTableBodyNone">s  </td><td class="markdownTableBodyNone">Ground UTC unix time, corrected by the sender with half the round trip  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">unix_ms  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone">ms  </td><td class="markdownTableBodyNone">Milliseconds part of unix_time  </td></tr>
+</table>
 <h2 class="doxsection"><a class="anchor" id="PING"></a>
 PING (ID 8)</h2>
 <p>message has no fields</p>

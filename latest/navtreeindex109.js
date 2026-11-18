@@ -1,5 +1,7 @@
 var NAVTREEINDEX109 =
 {
+"lps25h_8h.html#aef1a8994b62b0056b2cd33aa5f95ec80":[9,0,1,0,7,76,2],
+"lps25h_8h.html#structLps25hConfig":[9,0,1,0,7,76,0],
 "lps25h_8h_source.html":[9,0,1,0,7,76],
 "lps25h__i2c_8c.html":[9,0,1,0,7,77],
 "lps25h__i2c_8c.html#a05f15627f1c63b473d7a262610837495":[9,0,1,0,7,77,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX109 =
 "lsm303d__spi_8h.html#ac0b025eef4f446e794b523ba01e7d657":[9,0,1,0,7,83,0,11],
 "lsm303d__spi_8h.html#aed687119cc5a219108a4ddbcacc70380":[9,0,1,0,7,83,6],
 "lsm303d__spi_8h.html#structLsm303d__Spi":[9,0,1,0,7,83,0],
-"lsm303d__spi_8h.html#unionLsm303d__Spi_8data__accel":[9,0,1,0,7,83,1],
-"lsm303d__spi_8h.html#unionLsm303d__Spi_8data__mag":[9,0,1,0,7,83,2],
-"lsm303d__spi_8h_source.html":[9,0,1,0,7,83]
+"lsm303d__spi_8h.html#unionLsm303d__Spi_8data__accel":[9,0,1,0,7,83,1]
 };

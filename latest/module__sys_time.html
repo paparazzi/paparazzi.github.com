@@ -108,6 +108,12 @@ Configure Options</h2>
 <li><b>name:</b> <code>SYS_TIME_LED</code> <b>value:</b> <em>none|num</em> <br  />
  Description: LED number used for systime heartbeat or 'none' to disable</li>
 </ul>
+<h1 class="doxsection"><a class="anchor" id="datalink_functions__sys_time"></a>
+Datalink Functions</h1>
+<p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
+<ul>
+<li>on message <b>TIME_SYNC</b> call sys_time_parse_TIME_SYNC(buf) </li>
+</ul>
 <h1 class="doxsection"><a class="anchor" id="files"></a>
 Files</h1>
 <h2 class="doxsection"><a class="anchor" id="headers"></a>
@@ -139,6 +145,7 @@ Raw sys_time.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sys_time.h&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;TIME_SYNC&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;sys_time_parse_TIME_SYNC(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SYS_TIME_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SYS_TIME_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SYS_TIME_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(SYS_TIME_LED), none)&quot;</span>/&gt;</div>

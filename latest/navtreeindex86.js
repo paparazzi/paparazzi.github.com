@@ -1,5 +1,6 @@
 var NAVTREEINDEX86 =
 {
+"i2c__smbus_8h.html#aef3b905e021dbe7aaf98da89c4648764":[9,0,1,0,0,1,0,8,11],
 "i2c__smbus_8h.html#aef52b94d71c11d2849c6f3ae62d0e29b":[9,0,1,0,0,1,0,8,5],
 "i2c__smbus_8h.html#af023c6b90cc950f3673e98462ff52a59":[9,0,1,0,0,1,0,8,4],
 "i2c__smbus_8h.html#af0c92c143c24c0c49902f705a1ebe65c":[9,0,1,0,0,1,0,8,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX86 =
 "imu_8h.html#a278e4263e3d1726cc0dd03ed8689f197":[9,0,1,0,6,36,3,8],
 "imu_8h.html#a2c5f159a0be98431bfbb62962c4d4fcb":[9,0,1,0,6,36,3,2,13],
 "imu_8h.html#a30bce24a5723d6d6f09bb1c8b71ff5a8":[9,0,1,0,6,36,3,3,7],
-"imu_8h.html#a32ab26c18bedecfa6751a88955195c60":[9,0,1,0,6,36,3,1,0],
-"imu_8h.html#a3353fa552f17f0f33f42d48f40f6ebd7":[9,0,1,0,6,36,3,15]
+"imu_8h.html#a32ab26c18bedecfa6751a88955195c60":[9,0,1,0,6,36,3,1,0]
 };

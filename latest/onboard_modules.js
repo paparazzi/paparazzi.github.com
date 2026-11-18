@@ -1839,7 +1839,8 @@ var onboard_modules =
     ] ],
     [ "sys_time module", "module__sys_time.html", [
       [ "Example for airframe file", "module__sys_time.html#module_load_example__sys_time", null ],
-      [ "Module configuration options", "module__sys_time.html#configuration__sys_time", [
+      [ "Module configuration options", "module__sys_time.html#configuration__sys_time", null ],
+      [ "Datalink Functions", "module__sys_time.html#datalink_functions__sys_time", [
         [ "Raw sys_time.xml file:", "module__sys_time.html#module_xml__sys_time", null ]
       ] ]
     ] ],

@@ -1,10 +1,20 @@
 <map id="gps_cb" name="gps_cb">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,72,58"/>
-<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="318,5,464,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,40,303,23,303,28,72,45"/>
-<area shape="rect" id="Node000003" href="$sys__time_8c.html#a320ed821bd0a51c0649dd5acc7fe6f44" title="Synchronize the time of week with a GPS measurement." alt="" coords="120,56,268,84"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="72,47,107,54,102,56,72,53"/>
-<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="250,53,317,38,322,37,251,58"/>
-<area shape="rect" id="Node000004" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="316,57,466,85"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="268,68,303,70,298,71,268,73"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,72,84"/>
+<area shape="rect" id="Node000002" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="487,5,633,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,64,472,25,472,30,73,69"/>
+<area shape="rect" id="Node000003" href="$sys__time_8c.html#a74825f59fdc79b6d7c0d18927a60ae44" title="Synchronize the time with a GPS measurement (has priority over the ground)." alt="" coords="120,81,267,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="71,73,106,79,102,82,73,78"/>
+<area shape="rect" id="Node000004" href="$sys__time_8c.html#a5b44b75cfd7b50e9315b6c226ab836f2" title="uptime_msec() at the moment of the timestamp in usec the usec stamp wraps after ~71 min,..." alt="" coords="315,56,439,84"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="267,82,302,80,297,81,268,88"/>
+<area shape="rect" id="Node000007" href="$sys__time_8c.html#ad613fc87a58d00e249c12c5aba55cbbc" title=" " alt="" coords="341,108,413,136"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="267,103,328,114,323,115,267,109"/>
+<area shape="rect" id="Node000008" href="$sys__time_8c.html#a5d372caeaae7131e046e6166313fcb3e" title=" " alt="" coords="339,160,415,188"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="228,107,332,153,326,154,227,112"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="429,53,495,37,490,38,430,58"/>
+<area shape="rect" id="Node000005" href="$sys__time_8c.html#af39c602daacc81780947496c7b347bc5" title="Milliseconds since startup without the ~49.7 days wrap of get_sys_time_msec() nb_sec gives the number..." alt="" coords="505,57,615,85"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="440,68,492,70,487,71,440,73"/>
+<area shape="rect" id="Node000006" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="681,57,831,85"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="615,69,668,71,663,71,615,74"/>
+<area shape="rect" id="Node000009" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a8842f3dd404f21168f5e08176017bd55" title="Set the RTC to the UTC unix time (architecture specific, may do nothing)." alt="" coords="494,160,626,188"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="416,171,481,174,476,174,416,176"/>
 </map>

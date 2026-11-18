@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"ground__detect_8h.html#unionground__detect__bitmask__t":[9,0,1,0,6,47,7,0],
 "ground__detect_8h_source.html":[9,0,1,0,6,47,7],
 "group__HAL__CONF.html":[6,6],
 "group__HAL__CONF.html#ga06f315a18b911f426da736c42ab20325":[6,6,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "group__config.html#gab93d9ee904f15d4f2c26ef2a1394a1d7":[6,5,65],
 "group__config.html#gab9a61e9638af4b918ebad4e177dead4d":[6,5,53],
 "group__config.html#gabcfd6612c445e7dfbef53f0ff5f73eb8":[6,5,36],
-"group__config.html#gac7a7942b6c4ef2f79416971688a49c40":[6,5,19],
-"group__config.html#gacae5f1969a3b894cc3eea9807c07bd2c":[6,5,70]
+"group__config.html#gac7a7942b6c4ef2f79416971688a49c40":[6,5,19]
 };

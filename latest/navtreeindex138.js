@@ -1,5 +1,8 @@
 var NAVTREEINDEX138 =
 {
+"module__telemetry_xbee_api.html":[1,125],
+"module__telemetry_xbee_api.html#configuration__telemetry_xbee_api":[1,125,1],
+"module__telemetry_xbee_api.html#functions__telemetry_xbee_api":[1,125,2],
 "module__telemetry_xbee_api.html#module_load_example__telemetry_xbee_api":[1,125,0],
 "module__telemetry_xbee_api.html#module_xml__telemetry_xbee_api":[1,125,2,0],
 "module__temp_adc.html":[1,435],
@@ -246,8 +249,5 @@ var NAVTREEINDEX138 =
 "modules_2datalink_2superbitrf_8h.html#a2b81404765e0fa5adb99074dc577655a":[9,0,1,0,0,2,1,2,1,0,14],
 "modules_2datalink_2superbitrf_8h.html#a2b81404765e0fa5adb99074dc577655a":[9,0,1,0,6,15,24,0,14],
 "modules_2datalink_2superbitrf_8h.html#a3555152215e84393787b670fe68d553d":[9,0,1,0,0,2,1,2,1,0,33],
-"modules_2datalink_2superbitrf_8h.html#a3555152215e84393787b670fe68d553d":[9,0,1,0,6,15,24,0,33],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3":[9,0,1,0,6,15,24,10],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed":[9,0,1,0,6,15,24,10,3],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a":[9,0,1,0,6,15,24,10,5]
+"modules_2datalink_2superbitrf_8h.html#a3555152215e84393787b670fe68d553d":[9,0,1,0,6,15,24,0,33]
 };
