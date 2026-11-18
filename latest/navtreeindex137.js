@@ -1,5 +1,9 @@
 var NAVTREEINDEX137 =
 {
+"module__sonar_i2c.html#functions__sonar_i2c":[1,442,2],
+"module__sonar_i2c.html#module_load_example__sonar_i2c":[1,442,0],
+"module__sonar_i2c.html#module_xml__sonar_i2c":[1,442,2,0],
+"module__sonar_pwm.html":[1,443],
 "module__sonar_pwm.html#configuration__sonar_pwm":[1,443,1],
 "module__sonar_pwm.html#functions__sonar_pwm":[1,443,2],
 "module__sonar_pwm.html#module_load_example__sonar_pwm":[1,443,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX137 =
 "module__telemetry_w5100.html#module_xml__telemetry_w5100":[1,124,2,0],
 "module__telemetry_xbee_api.html":[1,125],
 "module__telemetry_xbee_api.html#configuration__telemetry_xbee_api":[1,125,1],
-"module__telemetry_xbee_api.html#functions__telemetry_xbee_api":[1,125,2],
-"module__telemetry_xbee_api.html#module_load_example__telemetry_xbee_api":[1,125,0],
-"module__telemetry_xbee_api.html#module_xml__telemetry_xbee_api":[1,125,2,0],
-"module__temp_adc.html":[1,435],
-"module__temp_adc.html#configuration__temp_adc":[1,435,1]
+"module__telemetry_xbee_api.html#functions__telemetry_xbee_api":[1,125,2]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX136 =
 {
+"module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,369,0],
+"module__orange_avoider_guided.html#module_xml__orange_avoider_guided":[1,369,2,0],
+"module__osd_max7456.html":[1,511],
+"module__osd_max7456.html#configuration__osd_max7456":[1,511,1],
 "module__osd_max7456.html#functions__osd_max7456":[1,511,2],
 "module__osd_max7456.html#module_load_example__osd_max7456":[1,511,0],
 "module__osd_max7456.html#module_xml__osd_max7456":[1,511,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX136 =
 "module__sonar_bebop.html#module_load_example__sonar_bebop":[1,441,0],
 "module__sonar_bebop.html#module_xml__sonar_bebop":[1,441,2,1],
 "module__sonar_i2c.html":[1,442],
-"module__sonar_i2c.html#configuration__sonar_i2c":[1,442,1],
-"module__sonar_i2c.html#functions__sonar_i2c":[1,442,2],
-"module__sonar_i2c.html#module_load_example__sonar_i2c":[1,442,0],
-"module__sonar_i2c.html#module_xml__sonar_i2c":[1,442,2,0],
-"module__sonar_pwm.html":[1,443]
+"module__sonar_i2c.html#configuration__sonar_i2c":[1,442,1]
 };

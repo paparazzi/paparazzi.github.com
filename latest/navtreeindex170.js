@@ -1,5 +1,9 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#WLS_V":[2,0,171],
+"paparazzi_messages.html#WORLD_ENV":[2,2,18],
+"paparazzi_messages.html#WORLD_ENV_REQ":[2,2,19],
+"paparazzi_messages.html#WP_MOVED":[2,0,31],
 "paparazzi_messages.html#WP_MOVED_ENU":[2,0,44],
 "paparazzi_messages.html#WP_MOVED_LLA":[2,0,42],
 "paparazzi_messages.html#XTEND_RSSI":[2,0,63],
@@ -245,9 +249,5 @@ var NAVTREEINDEX170 =
 "pdec_8c.html#aee579c63e15e3f68d28bd6b9971573a6":[9,0,1,0,6,16,6,14],
 "pdec_8c.html#aeecea1a7d6af955c77fdd910ea2c1658":[9,0,1,0,6,16,6,6,1],
 "pdec_8c.html#af65105fe1c19dcf6cdb454615468d264":[9,0,1,0,6,16,6,5,0],
-"pdec_8c.html#af72cd00119bb5bc3d666050b3709e44a":[9,0,1,0,6,16,6,13],
-"pdec_8c.html#af8fffdd5638217188a32a9d71678c043":[9,0,1,0,6,16,6,19],
-"pdec_8c.html#structpdec__cmd__payload":[9,0,1,0,6,16,6,0],
-"pdec_8c.html#structpdec__device__list__payload":[9,0,1,0,6,16,6,4],
-"pdec_8c.html#structpdec__distance__payload":[9,0,1,0,6,16,6,3]
+"pdec_8c.html#af72cd00119bb5bc3d666050b3709e44a":[9,0,1,0,6,16,6,13]
 };

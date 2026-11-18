@@ -1,5 +1,9 @@
 var NAVTREEINDEX197 =
 {
+"sim_2mcu__periph_2gpio__arch_8h.html#a02a2a23a32f9b02166a8c64012842414":[9,0,1,0,0,2,0,5,38],
+"sim_2mcu__periph_2gpio__arch_8h.html#a0a715cbedcbaadfd991b28b3ce1caa07":[9,0,1,0,0,2,0,5,20],
+"sim_2mcu__periph_2gpio__arch_8h.html#a1471cf2ee224d707874fa19c68b3d5dc":[9,0,1,0,0,2,0,5,19],
+"sim_2mcu__periph_2gpio__arch_8h.html#a1a96368c99d63b0e715b7e0421f4a209":[9,0,1,0,0,2,0,5,27],
 "sim_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce":[9,0,1,0,0,2,0,5,4],
 "sim_2mcu__periph_2gpio__arch_8h.html#a209f1a013588f481824ff0f57d2fc21e":[9,0,1,0,0,2,0,5,8],
 "sim_2mcu__periph_2gpio__arch_8h.html#a20f88dbc839eb32b5fec903474befdd7":[9,0,1,0,0,2,0,5,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX197 =
 "sim_2modules_2core_2threads__arch_8h.html#af416732838426293e131f8feff844cc7":[9,0,1,0,0,2,1,1,5,0,1],
 "sim_2modules_2core_2threads__arch_8h.html#structpprzBSem":[9,0,1,0,0,0,1,1,6,1],
 "sim_2modules_2core_2threads__arch_8h.html#structpprzBSem":[9,0,1,0,0,1,1,1,2,1],
-"sim_2modules_2core_2threads__arch_8h.html#structpprzBSem":[9,0,1,0,0,2,1,1,5,1],
-"sim_2modules_2core_2threads__arch_8h.html#structpprzMutex":[9,0,1,0,0,0,1,1,6,0],
-"sim_2modules_2core_2threads__arch_8h.html#structpprzMutex":[9,0,1,0,0,1,1,1,2,0],
-"sim_2modules_2core_2threads__arch_8h.html#structpprzMutex":[9,0,1,0,0,2,1,1,5,0],
-"sim_2modules_2core_2threads__arch_8h_source.html":[9,0,1,0,0,2,1,1,5]
+"sim_2modules_2core_2threads__arch_8h.html#structpprzBSem":[9,0,1,0,0,2,1,1,5,1]
 };

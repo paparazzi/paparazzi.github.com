@@ -1,5 +1,9 @@
 var NAVTREEINDEX161 =
 {
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#ae65a4622a3bf2b4807b3fcd5c06d3c51":[9,0,1,0,1,13,0,1,53],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#ae7589580542df9ac572fdc7aaa61ae94":[9,0,1,0,1,13,0,1,132],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#ae84e1a989b1da284186186a43b5d9c2c":[9,0,1,0,1,13,0,1,239],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#ae98fcb3612d26b3cf74c2d28e4994249":[9,0,1,0,1,13,0,1,182],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#aea17e07d4f22e7757ac6193ab9d72a15":[9,0,1,0,1,13,0,1,16],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#aea50a21db71009ebc7951180dc0d29ea":[9,0,1,0,1,13,0,1,189],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#aeadb80a063dd3d4975ca3947a18ff995":[9,0,1,0,1,13,0,1,144],
@@ -245,9 +249,5 @@ var NAVTREEINDEX161 =
 "onboard_modules.html#modules_category_gpio_ext":[1,0,16],
 "onboard_modules.html#modules_category_gps":[1,0,17],
 "onboard_modules.html#modules_category_guidance":[1,0,18],
-"onboard_modules.html#modules_category_helicopter":[1,0,19],
-"onboard_modules.html#modules_category_imu":[1,0,20],
-"onboard_modules.html#modules_category_ins":[1,0,21],
-"onboard_modules.html#modules_category_intermcu":[1,0,22],
-"onboard_modules.html#modules_category_lidar":[1,0,23]
+"onboard_modules.html#modules_category_helicopter":[1,0,19]
 };

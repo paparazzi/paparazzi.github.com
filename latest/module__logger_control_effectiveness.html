@@ -114,11 +114,19 @@ Airframe file section</h2>
  Description: log speed (ENU frame, integer representation)</li>
 <li><b>name</b> <code>AIRSPEED</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
  Description: log airspeed (float)</li>
+<li><b>name</b> <code>RPM</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: log motor RPM (float)</li>
 </ul>
 </li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="functions__logger_control_effectiveness"></a>
 Module functions</h1>
+<h2 class="doxsection"><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="logger__control__effectiveness_8c.html#a686838d30a959d6bda1d1d64573637c8" title="Init module.">logger_control_effectiveness_init()</a></li>
+</ul>
 <h2 class="doxsection"><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
@@ -164,6 +172,7 @@ Raw logger_control_effectiveness.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;POS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;log position (ENU frame, integer representation)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;log speed (ENU frame, integer representation)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;log airspeed (float)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RPM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;log motor RPM (float)&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
@@ -172,6 +181,7 @@ Raw logger_control_effectiveness.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;logger_control_effectiveness.h&quot;</span> /&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;logger_control_effectiveness_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;logger_control_effectiveness_periodic()&quot;</span> <span class="keyword">start</span>=<span class="stringliteral">&quot;logger_control_effectiveness_start()&quot;</span> <span class="keyword">stop</span>=<span class="stringliteral">&quot;logger_control_effectiveness_stop()&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;FALSE&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;logger_control_effectiveness.c&quot;</span>/&gt;</div>

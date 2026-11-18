@@ -1,5 +1,9 @@
 var NAVTREEINDEX135 =
 {
+"module__mcp355x.html#module_xml__mcp355x":[1,24,1,0],
+"module__mcu.html":[1,276],
+"module__mcu.html#functions__mcu":[1,276,1],
+"module__mcu.html#module_load_example__mcu":[1,276,0],
 "module__mcu.html#module_xml__mcu":[1,276,1,0],
 "module__meteo_france_daq.html":[1,299],
 "module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,299,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX135 =
 "module__orange_avoider.html#module_xml__orange_avoider":[1,368,2,0],
 "module__orange_avoider_guided.html":[1,369],
 "module__orange_avoider_guided.html#configuration__orange_avoider_guided":[1,369,1],
-"module__orange_avoider_guided.html#functions__orange_avoider_guided":[1,369,2],
-"module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,369,0],
-"module__orange_avoider_guided.html#module_xml__orange_avoider_guided":[1,369,2,0],
-"module__osd_max7456.html":[1,511],
-"module__osd_max7456.html#configuration__osd_max7456":[1,511,1]
+"module__orange_avoider_guided.html#functions__orange_avoider_guided":[1,369,2]
 };

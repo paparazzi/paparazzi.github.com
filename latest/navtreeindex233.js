@@ -1,5 +1,9 @@
 var NAVTREEINDEX233 =
 {
+"wls__alloc_8c.html#a7fad13367373b7b994de75bdd817d58d":[9,0,1,0,4,1,0,4],
+"wls__alloc_8c.html#ad8969b66ad8e977f10a7addea167d5cb":[9,0,1,0,4,1,0,2],
+"wls__alloc_8c_source.html":[9,0,1,0,4,1,0],
+"wls__alloc_8h.html":[9,0,1,0,4,1,1],
 "wls__alloc_8h.html#a151e8be1490f4a3638fa4f2b904b23ba":[9,0,1,0,4,1,1,0,0],
 "wls__alloc_8h.html#a35e279b4af056ce5e107048b0e6d0f8e":[9,0,1,0,4,1,1,0,6],
 "wls__alloc_8h.html#a48fcef69aeb52546604a157693864d33":[9,0,1,0,4,1,1,2],

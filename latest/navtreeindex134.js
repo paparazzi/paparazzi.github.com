@@ -1,5 +1,9 @@
 var NAVTREEINDEX134 =
 {
+"module__ins_ext_pose.html":[1,239],
+"module__ins_ext_pose.html#configuration__ins_ext_pose":[1,239,1],
+"module__ins_ext_pose.html#datalink_functions__ins_ext_pose":[1,239,3],
+"module__ins_ext_pose.html#functions__ins_ext_pose":[1,239,2],
 "module__ins_ext_pose.html#module_load_example__ins_ext_pose":[1,239,0],
 "module__ins_ext_pose.html#module_xml__ins_ext_pose":[1,239,3,0],
 "module__ins_extended.html":[1,240],
@@ -245,9 +249,5 @@ var NAVTREEINDEX134 =
 "module__max11040.html#module_xml__max11040":[1,23,1,0],
 "module__mcp355x.html":[1,24],
 "module__mcp355x.html#functions__mcp355x":[1,24,1],
-"module__mcp355x.html#module_load_example__mcp355x":[1,24,0],
-"module__mcp355x.html#module_xml__mcp355x":[1,24,1,0],
-"module__mcu.html":[1,276],
-"module__mcu.html#functions__mcu":[1,276,1],
-"module__mcu.html#module_load_example__mcu":[1,276,0]
+"module__mcp355x.html#module_load_example__mcp355x":[1,24,0]
 };

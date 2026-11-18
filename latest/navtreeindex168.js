@@ -1,5 +1,9 @@
 var NAVTREEINDEX168 =
 {
+"opticflow__pmw3901_8h.html#a5fb2c15d2dacf06185977f580770b596":[9,0,1,0,6,65,82,3],
+"opticflow__pmw3901_8h.html#a77f73cb7bff9883bc73d53decde4b0d5":[9,0,1,0,6,65,82,0,4],
+"opticflow__pmw3901_8h.html#a792c68d7762fc6c20bc73fca663ea813":[9,0,1,0,6,65,82,0,1],
+"opticflow__pmw3901_8h.html#aba2275e6b649023575b3bac9fd5104ff":[9,0,1,0,6,65,82,0,2],
 "opticflow__pmw3901_8h.html#abe5ad65e14456805dca97f78767ef811":[9,0,1,0,6,65,82,1],
 "opticflow__pmw3901_8h.html#structopticflow__pmw3901__t":[9,0,1,0,6,65,82,0],
 "opticflow__pmw3901_8h_source.html":[9,0,1,0,6,65,82],
@@ -245,9 +249,5 @@ var NAVTREEINDEX168 =
 "paparazzi_messages.html#EXTERNAL_FILTER_SOLUTION":[2,1,50],
 "paparazzi_messages.html#EXTERNAL_MAG_RAW":[2,1,53],
 "paparazzi_messages.html#EXTERNAL_POSE":[2,1,34],
-"paparazzi_messages.html#EXTERNAL_POSE_DOWN":[2,0,41],
-"paparazzi_messages.html#EXTERNAL_POSE_SMALL":[2,1,35],
-"paparazzi_messages.html#FBW_STATUS":[2,0,94],
-"paparazzi_messages.html#FILTER_ALIGNER":[2,0,126],
-"paparazzi_messages.html#FLIGHT_BENCHMARK":[2,0,60]
+"paparazzi_messages.html#EXTERNAL_POSE_DOWN":[2,0,41]
 };
