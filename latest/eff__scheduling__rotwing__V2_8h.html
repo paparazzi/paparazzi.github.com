@@ -196,9 +196,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__rotwing_8h_source.html#l00031">31</a> of file <a class="el" href="eff__scheduling__rotwing_8h_source.html">eff_scheduling_rotwing.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__rotwing_8h_source.html#l00037">37</a> of file <a class="el" href="eff__scheduling__rotwing_8h_source.html">eff_scheduling_rotwing.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a416421b62baa61feca7e259ad3bc35ba" name="a416421b62baa61feca7e259ad3bc35ba"></a>float</td>
+<td class="fieldname">
+CT_hover</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae6c8ad3cc9051c3530fb62c37e226a3a" name="ae6c8ad3cc9051c3530fb62c37e226a3a"></a>float</td>
+<td class="fieldname">
+CT_pusher</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a798734538843c605aad9f86a25bb8145" name="a798734538843c605aad9f86a25bb8145"></a>float</td>
 <td class="fieldname">
@@ -218,6 +230,12 @@ DMdpprz_hover_roll[2]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="a24db2939fcbbb4e90c8de0ca6385d4d2" name="a24db2939fcbbb4e90c8de0ca6385d4d2"></a>float</td>
+<td class="fieldname">
+hover_max_rpm_squared</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="aaac78eb0473dd7a8ff209d2c500ec001" name="aaac78eb0473dd7a8ff209d2c500ec001"></a>float</td>
 <td class="fieldname">
 hover_roll_pitch_coef[2]</td>
@@ -227,6 +245,12 @@ hover_roll_pitch_coef[2]</td>
 <a id="afd11789d80fc7535ac51c87251982280" name="afd11789d80fc7535ac51c87251982280"></a>float</td>
 <td class="fieldname">
 hover_roll_roll_coef[2]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a2e2f0316316287803bcf228dbd175cba" name="a2e2f0316316287803bcf228dbd175cba"></a>float</td>
+<td class="fieldname">
+hover_rpm_lim_coef[2]</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -323,6 +347,18 @@ k_rudder[3]</td>
 <a id="a6420134f3f9066b178e82ad8ec1309bc" name="a6420134f3f9066b178e82ad8ec1309bc"></a>float</td>
 <td class="fieldname">
 m</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab17572da35b65f305d22aec21cc92862" name="ab17572da35b65f305d22aec21cc92862"></a>float</td>
+<td class="fieldname">
+pusher_max_rpm_squared</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a44aec0925da414b909efaa7f6d043f9b" name="a44aec0925da414b909efaa7f6d043f9b"></a>float</td>
+<td class="fieldname">
+pusher_rpm_lim_coef[2]</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -1288,7 +1324,7 @@ wing</td>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__plusquad_8c_source.html#l00236">236</a> of file <a class="el" href="eff__scheduling__plusquad_8c_source.html">eff_scheduling_plusquad.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eff__scheduling__plusquad_8c_source.html#l00188">calc_G1_G2_RW()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00435">eff_scheduling_rotwing_schedule_liftd()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00399">eff_scheduling_rotwing_update_aileron_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00301">eff_scheduling_rotwing_update_airspeed()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00292">eff_scheduling_rotwing_update_cmd()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00359">eff_scheduling_rotwing_update_elevator_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00412">eff_scheduling_rotwing_update_flaperon_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00309">eff_scheduling_rotwing_update_hover_motor_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00282">eff_scheduling_rotwing_update_MMOI()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00420">eff_scheduling_rotwing_update_pusher_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00381">eff_scheduling_rotwing_update_rudder_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00267">eff_scheduling_rotwing_update_wing_angle()</a>, <a class="el" href="eff__scheduling__rotwing__nB_8c_source.html#l00479">ele_pref_sched()</a>, <a class="el" href="eff__scheduling__plusquad_8c_source.html#l00250">sum_EFF_MAT_RW()</a>, and <a class="el" href="eff__scheduling__plusquad_8c_source.html#l00162">update_attitude()</a>.</p>
+<p class="reference">References <a class="el" href="eff__scheduling__plusquad_8c_source.html#l00188">calc_G1_G2_RW()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00431">eff_scheduling_rotwing_schedule_liftd()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00395">eff_scheduling_rotwing_update_aileron_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00301">eff_scheduling_rotwing_update_airspeed()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00292">eff_scheduling_rotwing_update_cmd()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00355">eff_scheduling_rotwing_update_elevator_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00408">eff_scheduling_rotwing_update_flaperon_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00309">eff_scheduling_rotwing_update_hover_motor_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00282">eff_scheduling_rotwing_update_MMOI()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00416">eff_scheduling_rotwing_update_pusher_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00377">eff_scheduling_rotwing_update_rudder_effectiveness()</a>, <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00267">eff_scheduling_rotwing_update_wing_angle()</a>, <a class="el" href="eff__scheduling__rotwing__nB_8c_source.html#l00479">ele_pref_sched()</a>, <a class="el" href="eff__scheduling__plusquad_8c_source.html#l00250">sum_EFF_MAT_RW()</a>, and <a class="el" href="eff__scheduling__plusquad_8c_source.html#l00162">update_attitude()</a>.</p>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1463,7 +1499,7 @@ wing</td>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00172">172</a> of file <a class="el" href="eff__scheduling__rotwing_8c_source.html">eff_scheduling_rotwing.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00454">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__rotwing_8c_source.html#l00450">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>

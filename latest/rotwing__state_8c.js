@@ -1,5 +1,6 @@
 var rotwing__state_8c =
 [
+    [ "ASSERT_EQUIVALENCE", "rotwing__state_8c.html#a9f131d98a22349b2f0bd1132148a0fa5", null ],
     [ "GUIDANCE_INDI_FWD_CLIMB_SPEED", "rotwing__state_8c.html#a71e3b14f8db69012ea206ccfef8602b5", null ],
     [ "GUIDANCE_INDI_FWD_DESCEND_SPEED", "rotwing__state_8c.html#a49907b02d3aa2df932ba7805080b3f11", null ],
     [ "GUIDANCE_INDI_QUAD_CLIMB_SPEED", "rotwing__state_8c.html#a5ff8d7061879dbc7b0e38259a81588dd", null ],
@@ -25,6 +26,10 @@ var rotwing__state_8c =
     [ "ROTWING_TRANSITION_MAX_DESCEND_SPEED", "rotwing__state_8c.html#a5b8e2e70d4db0282291887f99cbe69fc", null ],
     [ "SERVO_BMOTOR_PUSH_IDX", "rotwing__state_8c.html#a744a977efd4b8247c4a803d4b9539741", null ],
     [ "SERVO_BROTATION_MECH_IDX", "rotwing__state_8c.html#a968b5f46df3b12299ca24e62a09bfe6d", null ],
+    [ "ASSERT_EQUIVALENCE", "rotwing__state_8c.html#a5ccbcbfc4a3ffbe6835fb922be09003b", null ],
+    [ "ASSERT_EQUIVALENCE", "rotwing__state_8c.html#af2cd066fceb6db4c0bf2d7192fcc85a1", null ],
+    [ "ASSERT_EQUIVALENCE", "rotwing__state_8c.html#a8c233496dd63015e67dba048f85dab3e", null ],
+    [ "ASSERT_EQUIVALENCE", "rotwing__state_8c.html#a70aa4ba7bbeb9718de0cdf321aee487b", null ],
     [ "rotwing_state_choose_circle_direction", "rotwing__state_8c.html#ae046087f644a3e732de4bd9a920dd5d5", null ],
     [ "rotwing_state_choose_state_by_dist", "rotwing__state_8c.html#ac855fe558b428b1f53aa53c8361ce08f", null ],
     [ "rotwing_state_feedback_cb", "rotwing__state_8c.html#a062e84c60cb72e31fe49433c2f302096", null ],

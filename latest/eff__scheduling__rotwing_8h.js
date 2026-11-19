@@ -1,11 +1,15 @@
 var eff__scheduling__rotwing_8h =
 [
     [ "rotwing_eff_sched_param_t", "eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__param__t", [
+      [ "CT_hover", "eff__scheduling__rotwing__V2_8h.html#a416421b62baa61feca7e259ad3bc35ba", null ],
+      [ "CT_pusher", "eff__scheduling__rotwing__V2_8h.html#ae6c8ad3cc9051c3530fb62c37e226a3a", null ],
       [ "d_rudder_d_pprz", "eff__scheduling__rotwing__V2_8h.html#a798734538843c605aad9f86a25bb8145", null ],
       [ "DMdpprz_hover_pitch", "eff__scheduling__rotwing__V2_8h.html#ad85d8e2073910b3bb947abab7495b26b", null ],
       [ "DMdpprz_hover_roll", "eff__scheduling__rotwing__V2_8h.html#a0e6bfb06a0f82797246ffcf6a79c1155", null ],
+      [ "hover_max_rpm_squared", "eff__scheduling__rotwing__V2_8h.html#a24db2939fcbbb4e90c8de0ca6385d4d2", null ],
       [ "hover_roll_pitch_coef", "eff__scheduling__rotwing__V2_8h.html#aaac78eb0473dd7a8ff209d2c500ec001", null ],
       [ "hover_roll_roll_coef", "eff__scheduling__rotwing__V2_8h.html#afd11789d80fc7535ac51c87251982280", null ],
+      [ "hover_rpm_lim_coef", "eff__scheduling__rotwing__V2_8h.html#a2e2f0316316287803bcf228dbd175cba", null ],
       [ "Ixx_body", "eff__scheduling__rotwing__V2_8h.html#a53839cfdf786ef43f4516ecef53b2926", null ],
       [ "Ixx_wing", "eff__scheduling__rotwing__V2_8h.html#af5830b8dac305d4dbc074f80ab37b1bb", null ],
       [ "Iyy_body", "eff__scheduling__rotwing__V2_8h.html#ae59c390a4286eef373075b37684e2c90", null ],
@@ -21,7 +25,9 @@ var eff__scheduling__rotwing_8h =
       [ "k_pusher", "eff__scheduling__rotwing__V2_8h.html#ab56d8df2f1bab0fcc7decb025a2387f7", null ],
       [ "k_rpm_pprz_pusher", "eff__scheduling__rotwing__V2_8h.html#aaa5265fce3dc19c02582b06f8b50c78b", null ],
       [ "k_rudder", "eff__scheduling__rotwing__V2_8h.html#a7a643b80bf9f566ec768af64a9309224", null ],
-      [ "m", "eff__scheduling__rotwing__V2_8h.html#a6420134f3f9066b178e82ad8ec1309bc", null ]
+      [ "m", "eff__scheduling__rotwing__V2_8h.html#a6420134f3f9066b178e82ad8ec1309bc", null ],
+      [ "pusher_max_rpm_squared", "eff__scheduling__rotwing__V2_8h.html#ab17572da35b65f305d22aec21cc92862", null ],
+      [ "pusher_rpm_lim_coef", "eff__scheduling__rotwing__V2_8h.html#a44aec0925da414b909efaa7f6d043f9b", null ]
     ] ],
     [ "rotwing_eff_sched_var_t", "eff__scheduling__rotwing__V2_8h.html#structrotwing__eff__sched__var__t", [
       [ "airspeed", "eff__scheduling__rotwing__V2_8h.html#a42166e745fe239093bdc57c0e5ba7d59", null ],
@@ -43,6 +49,11 @@ var eff__scheduling__rotwing_8h =
       [ "wing_rotation_deg", "eff__scheduling__rotwing__V2_8h.html#a1cfb88d6bd7327ee3a5628de357ec831", null ],
       [ "wing_rotation_rad", "eff__scheduling__rotwing__V2_8h.html#a88876bed0535b6c4371f0e553c056dee", null ]
     ] ],
+    [ "RW_ap", "eff__scheduling__rotwing_8h.html#a6859c9d94beeda6b0964643d827dccd4", null ],
+    [ "RW_aq", "eff__scheduling__rotwing_8h.html#ac4ddf9adeb580a0e8b2014781c54840a", null ],
+    [ "RW_ar", "eff__scheduling__rotwing_8h.html#a75745af2d5ff37b592f2fad23006202b", null ],
+    [ "RW_aX", "eff__scheduling__rotwing_8h.html#a600c5653b94db0ec2fa76648503f6735", null ],
+    [ "RW_aZ", "eff__scheduling__rotwing_8h.html#a26f3e36874a86634ca1a4747bf1f2f4d", null ],
     [ "eff_scheduling_rotwing_init", "eff__scheduling__rotwing_8h.html#ab2dcedfcf1d84e9abe6f3e140d047ea9", null ],
     [ "eff_scheduling_rotwing_periodic", "eff__scheduling__rotwing_8h.html#ad07d6465b5984ad54d8f45c4729ec5b8", null ],
     [ "eff_sched_p", "eff__scheduling__rotwing_8h.html#a92c1c93ceecb2794850a21fbcb70e976", null ],

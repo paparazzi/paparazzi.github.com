@@ -1,10 +1,14 @@
 var eff__scheduling__rotwing__V2_8h_structrotwing__eff__sched__param__t =
 [
+    [ "CT_hover", "eff__scheduling__rotwing__V2_8h.html#a416421b62baa61feca7e259ad3bc35ba", null ],
+    [ "CT_pusher", "eff__scheduling__rotwing__V2_8h.html#ae6c8ad3cc9051c3530fb62c37e226a3a", null ],
     [ "d_rudder_d_pprz", "eff__scheduling__rotwing__V2_8h.html#a798734538843c605aad9f86a25bb8145", null ],
     [ "DMdpprz_hover_pitch", "eff__scheduling__rotwing__V2_8h.html#ad85d8e2073910b3bb947abab7495b26b", null ],
     [ "DMdpprz_hover_roll", "eff__scheduling__rotwing__V2_8h.html#a0e6bfb06a0f82797246ffcf6a79c1155", null ],
+    [ "hover_max_rpm_squared", "eff__scheduling__rotwing__V2_8h.html#a24db2939fcbbb4e90c8de0ca6385d4d2", null ],
     [ "hover_roll_pitch_coef", "eff__scheduling__rotwing__V2_8h.html#aaac78eb0473dd7a8ff209d2c500ec001", null ],
     [ "hover_roll_roll_coef", "eff__scheduling__rotwing__V2_8h.html#afd11789d80fc7535ac51c87251982280", null ],
+    [ "hover_rpm_lim_coef", "eff__scheduling__rotwing__V2_8h.html#a2e2f0316316287803bcf228dbd175cba", null ],
     [ "Ixx_body", "eff__scheduling__rotwing__V2_8h.html#a53839cfdf786ef43f4516ecef53b2926", null ],
     [ "Ixx_wing", "eff__scheduling__rotwing__V2_8h.html#af5830b8dac305d4dbc074f80ab37b1bb", null ],
     [ "Iyy_body", "eff__scheduling__rotwing__V2_8h.html#ae59c390a4286eef373075b37684e2c90", null ],
@@ -20,5 +24,7 @@ var eff__scheduling__rotwing__V2_8h_structrotwing__eff__sched__param__t =
     [ "k_pusher", "eff__scheduling__rotwing__V2_8h.html#ab56d8df2f1bab0fcc7decb025a2387f7", null ],
     [ "k_rpm_pprz_pusher", "eff__scheduling__rotwing__V2_8h.html#aaa5265fce3dc19c02582b06f8b50c78b", null ],
     [ "k_rudder", "eff__scheduling__rotwing__V2_8h.html#a7a643b80bf9f566ec768af64a9309224", null ],
-    [ "m", "eff__scheduling__rotwing__V2_8h.html#a6420134f3f9066b178e82ad8ec1309bc", null ]
+    [ "m", "eff__scheduling__rotwing__V2_8h.html#a6420134f3f9066b178e82ad8ec1309bc", null ],
+    [ "pusher_max_rpm_squared", "eff__scheduling__rotwing__V2_8h.html#ab17572da35b65f305d22aec21cc92862", null ],
+    [ "pusher_rpm_lim_coef", "eff__scheduling__rotwing__V2_8h.html#a44aec0925da414b909efaa7f6d043f9b", null ]
 ];

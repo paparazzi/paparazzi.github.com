@@ -24,6 +24,8 @@ var dir_94757629c544be2d6d24b01569be56e6 =
     [ "eff_scheduling_rotwing.h", "eff__scheduling__rotwing_8h.html", "eff__scheduling__rotwing_8h" ],
     [ "eff_scheduling_rotwing_nB.c", "eff__scheduling__rotwing__nB_8c.html", "eff__scheduling__rotwing__nB_8c" ],
     [ "eff_scheduling_rotwing_nB.h", "eff__scheduling__rotwing__nB_8h.html", "eff__scheduling__rotwing__nB_8h" ],
+    [ "eff_scheduling_rotwing_rpm_ctrl.c", "eff__scheduling__rotwing__rpm__ctrl_8c.html", "eff__scheduling__rotwing__rpm__ctrl_8c" ],
+    [ "eff_scheduling_rotwing_rpm_ctrl.h", "eff__scheduling__rotwing__rpm__ctrl_8h.html", "eff__scheduling__rotwing__rpm__ctrl_8h" ],
     [ "eff_scheduling_rotwing_V2.c", "eff__scheduling__rotwing__V2_8c.html", "eff__scheduling__rotwing__V2_8c" ],
     [ "eff_scheduling_rotwing_V2.h", "eff__scheduling__rotwing__V2_8h.html", "eff__scheduling__rotwing__V2_8h" ],
     [ "follow_me.c", "ctrl_2follow__me_8c.html", "ctrl_2follow__me_8c" ],
