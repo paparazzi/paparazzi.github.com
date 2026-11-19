@@ -1,5 +1,12 @@
 var NAVTREEINDEX204 =
 {
+"stabilization__attitude__ref__euler__int_8h.html#a3bd67d73d13be2503c211c5a6f7909d1":[9,0,1,0,3,1,2,31,1],
+"stabilization__attitude__ref__euler__int_8h.html#a4f4ca56ad5fc254379ccec2566a61980":[9,0,1,0,3,1,2,31,0,0],
+"stabilization__attitude__ref__euler__int_8h.html#a82761a6ed4f8cf84e615943e93f0ab86":[9,0,1,0,3,1,2,31,0,2],
+"stabilization__attitude__ref__euler__int_8h.html#aae3bc71c17408186daa1e4675c574edf":[9,0,1,0,3,1,2,31,2],
+"stabilization__attitude__ref__euler__int_8h.html#abb8bfe53e5b1b63afadf9c9f80e8b17c":[9,0,1,0,3,1,2,31,0,1],
+"stabilization__attitude__ref__euler__int_8h.html#structAttRefEulerInt":[9,0,1,0,3,1,2,31,0],
+"stabilization__attitude__ref__euler__int_8h_source.html":[9,0,1,0,3,1,2,31],
 "stabilization__attitude__ref__int_8h.html":[9,0,1,0,3,1,2,32],
 "stabilization__attitude__ref__int_8h.html#a6a9ac7c2e058fdcfbd5ec56c9979944e":[9,0,1,0,3,1,2,32,2],
 "stabilization__attitude__ref__int_8h.html#a94a3fc964bb686c26cc9fe01d9c7a50f":[9,0,1,0,3,1,2,32,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX204 =
 "stabilization__indi_8h.html#aeb1f6bcc1fe9582a45bc07a5d4b2710f":[9,0,1,0,3,1,2,40,14],
 "stabilization__indi_8h.html#af7b49650aef8a59b88d8b9e68aabb915":[9,0,1,0,3,1,2,40,23],
 "stabilization__indi_8h.html#af99a0439f0598bdbce1ad28854646f6e":[9,0,1,0,3,1,2,40,22],
-"stabilization__indi_8h_source.html":[9,0,1,0,3,1,2,40],
-"stabilization__indi__hinf_8c.html":[9,0,1,0,3,1,2,41],
-"stabilization__indi__hinf_8c.html#a114b100ad6a2d4e752c4489db1bedd22":[9,0,1,0,3,1,2,41,2],
-"stabilization__indi__hinf_8c.html#a1402a0036b052ce0b0b7e0b0e955aec8":[9,0,1,0,3,1,2,41,10],
-"stabilization__indi__hinf_8c.html#a15c5666501490db38bac78bfc77394d3":[9,0,1,0,3,1,2,41,0],
-"stabilization__indi__hinf_8c.html#a5d43ac35c48eb14da0f0c3577cf1b6ed":[9,0,1,0,3,1,2,41,8],
-"stabilization__indi__hinf_8c.html#a7e992fb38d3aae46abc6dfa31d525744":[9,0,1,0,3,1,2,41,5],
-"stabilization__indi__hinf_8c.html#a912be943330a6374d39e36d4e4c2dbec":[9,0,1,0,3,1,2,41,3]
+"stabilization__indi_8h_source.html":[9,0,1,0,3,1,2,40]
 };

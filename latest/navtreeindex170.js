@@ -1,5 +1,12 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#VISUALTARGET":[2,0,214],
+"paparazzi_messages.html#WAYPOINT_MOVED":[2,2,28],
+"paparazzi_messages.html#WEATHER":[2,0,200],
+"paparazzi_messages.html#WIND":[2,2,7],
+"paparazzi_messages.html#WINDTUNNEL_MEAS":[2,0,192],
+"paparazzi_messages.html#WINDTURBINE_STATUS":[2,1,34],
+"paparazzi_messages.html#WINDTURBINE_STATUS_":[2,0,45],
 "paparazzi_messages.html#WIND_CLEAR":[2,2,6],
 "paparazzi_messages.html#WIND_INFO":[2,1,2],
 "paparazzi_messages.html#WIND_INFO_RET":[2,0,79],
@@ -242,12 +249,5 @@ var NAVTREEINDEX170 =
 "pdec_8c.html#aa2632d255fd59168c978e21bcfff5114":[9,0,1,0,6,16,6,8,5],
 "pdec_8c.html#ab2ab4de9eae062259b615fc1d89356ac":[9,0,1,0,6,16,6,3,2],
 "pdec_8c.html#ac050672f6c90a7210bac847d4e0f5c57":[9,0,1,0,6,16,6,8,0],
-"pdec_8c.html#ac425c1ca9da56ced0b777ca7223292db":[9,0,1,0,6,16,6,2,1],
-"pdec_8c.html#ad2833c035fa18b9a65298cecc209fa29":[9,0,1,0,6,16,6,8,1],
-"pdec_8c.html#ad32e27cba035d283589fd82c0e221d18":[9,0,1,0,6,16,6,6,0],
-"pdec_8c.html#ad9a8a94ada58b78b9ebda7e814c19bcf":[9,0,1,0,6,16,6,18],
-"pdec_8c.html#adce3b314edfe897c639e32104bf57a45":[9,0,1,0,6,16,6,15],
-"pdec_8c.html#adeb782205bdf876514fd5d7fbaa06cfc":[9,0,1,0,6,16,6,9],
-"pdec_8c.html#ae1a082ea79bd66134e31aaf5d2d33e68":[9,0,1,0,6,16,6,3,0],
-"pdec_8c.html#aea2f2d67a2877696d384cf70dcf525aa":[9,0,1,0,6,16,6,11]
+"pdec_8c.html#ac425c1ca9da56ced0b777ca7223292db":[9,0,1,0,6,16,6,2,1]
 };

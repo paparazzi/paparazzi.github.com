@@ -1,5 +1,12 @@
 var NAVTREEINDEX161 =
 {
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#adc27d1e2fcdedcb56fc15a41e5f43d91":[9,0,1,0,1,13,0,1,157],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#addcd7b72b6811260a2a9a6ce03756b29":[9,0,1,0,1,13,0,1,139],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#adef65938285beae9672cebaafe1fc00a":[9,0,1,0,1,13,0,1,152],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#adfcd2fc6dcb56cd4ed66b2308d4b58e3":[9,0,1,0,1,13,0,1,235],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#adfdd029a5a6ccdf27dbb44496687794a":[9,0,1,0,1,13,0,1,112],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#ae2ca237e2d8b40cf029e4cfc5156539d":[9,0,1,0,1,13,0,1,158],
+"nucleo_2144__f767zi_2mcuconf__board_8h.html#ae32ac88b3b64552f9ecec5a038dfc544":[9,0,1,0,1,13,0,1,280],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#ae4258a650515c19e5df92b5917399195":[9,0,1,0,1,13,0,1,259],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#ae4ffb9c3ba8d88b6367b675054e3c710":[9,0,1,0,1,13,0,1,107],
 "nucleo_2144__f767zi_2mcuconf__board_8h.html#ae56e2de32e00c7684a6996f14b2be348":[9,0,1,0,1,13,0,1,266],
@@ -242,12 +249,5 @@ var NAVTREEINDEX161 =
 "onboard_modules.html#modules_category_checks":[1,0,6],
 "onboard_modules.html#modules_category_computer_vision":[1,0,7],
 "onboard_modules.html#modules_category_control":[1,0,8],
-"onboard_modules.html#modules_category_core":[1,0,9],
-"onboard_modules.html#modules_category_ctrl":[1,0,10],
-"onboard_modules.html#modules_category_datalink":[1,0,11],
-"onboard_modules.html#modules_category_decawave":[1,0,12],
-"onboard_modules.html#modules_category_digital_cam":[1,0,13],
-"onboard_modules.html#modules_category_energy":[1,0,14],
-"onboard_modules.html#modules_category_fdm":[1,0,15],
-"onboard_modules.html#modules_category_gpio_ext":[1,0,16]
+"onboard_modules.html#modules_category_core":[1,0,9]
 };

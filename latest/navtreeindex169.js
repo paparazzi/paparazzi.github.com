@@ -1,5 +1,12 @@
 var NAVTREEINDEX169 =
 {
+"paparazzi_messages.html#EMERGENCY_CMD":[2,1,56],
+"paparazzi_messages.html#END_MISSION":[2,1,28],
+"paparazzi_messages.html#ENERGY":[2,0,9],
+"paparazzi_messages.html#ENGINE_STATUS":[2,2,14],
+"paparazzi_messages.html#ESC":[2,0,224],
+"paparazzi_messages.html#ESTIMATOR":[2,0,37],
+"paparazzi_messages.html#EXTERNAL_FILTER_SOLUTION":[2,1,51],
 "paparazzi_messages.html#EXTERNAL_MAG_RAW":[2,1,54],
 "paparazzi_messages.html#EXTERNAL_POSE":[2,1,35],
 "paparazzi_messages.html#EXTERNAL_POSE_DOWN":[2,0,41],
@@ -242,12 +249,5 @@ var NAVTREEINDEX169 =
 "paparazzi_messages.html#VFF":[2,0,151],
 "paparazzi_messages.html#VFF_EXTENDED":[2,0,150],
 "paparazzi_messages.html#VIDEO_ROI":[2,1,55],
-"paparazzi_messages.html#VISION_POSITION_ESTIMATE":[2,0,82],
-"paparazzi_messages.html#VISUALTARGET":[2,0,214],
-"paparazzi_messages.html#WAYPOINT_MOVED":[2,2,28],
-"paparazzi_messages.html#WEATHER":[2,0,200],
-"paparazzi_messages.html#WIND":[2,2,7],
-"paparazzi_messages.html#WINDTUNNEL_MEAS":[2,0,192],
-"paparazzi_messages.html#WINDTURBINE_STATUS":[2,1,34],
-"paparazzi_messages.html#WINDTURBINE_STATUS_":[2,0,45]
+"paparazzi_messages.html#VISION_POSITION_ESTIMATE":[2,0,82]
 };

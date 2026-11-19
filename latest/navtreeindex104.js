@@ -1,5 +1,12 @@
 var NAVTREEINDEX104 =
 {
+"linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749":[9,0,1,0,0,1,0,16,3],
+"linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5":[9,0,1,0,0,1,0,16,10],
+"linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587":[9,0,1,0,0,1,0,16,2],
+"linux_2mcu__periph_2uart__arch_8c.html#a8d3d1662ef64e539d843aa5060cffbfd":[9,0,1,0,0,1,0,16,7],
+"linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e":[9,0,1,0,0,1,0,16,5],
+"linux_2mcu__periph_2uart__arch_8c.html#ad95c5a3d78475744ae1e8792b8d73e43":[9,0,1,0,0,1,0,16,11],
+"linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039":[9,0,1,0,0,1,0,16,4],
 "linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512":[9,0,1,0,0,1,0,16,6],
 "linux_2mcu__periph_2uart__arch_8c.html#af4447deb79d63086867d3d7286da403d":[9,0,1,0,0,1,0,16,1],
 "linux_2mcu__periph_2uart__arch_8c_source.html":[9,0,1,0,0,1,0,16],
@@ -242,12 +249,5 @@ var NAVTREEINDEX104 =
 "lisa__mx_2chibios_2v2_81_2board_8h.html#a24beff62231ef97276e94d1b9a3fa7e3":[9,0,1,0,1,10,0,0,0,124],
 "lisa__mx_2chibios_2v2_81_2board_8h.html#a250f4c63cbd770a83e2186d130b5f41b":[9,0,1,0,1,10,0,0,0,96],
 "lisa__mx_2chibios_2v2_81_2board_8h.html#a27509d84ec428c3ec26142905c3f011f":[9,0,1,0,1,10,0,0,0,137],
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a2781f04e2f6682d822e9fca6a8aa4ed3":[9,0,1,0,1,10,0,0,0,133],
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a2af19c2902f24de647310be4b8154d4d":[9,0,1,0,1,10,0,0,0,47],
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a2b4cf249750949761abdc7880b551b73":[9,0,1,0,1,10,0,0,0,140],
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95":[9,0,1,0,1,10,0,0,0,87],
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a2e620d487db2d7240e759f66c3a68efa":[9,0,1,0,1,10,0,0,0,122],
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a32770ebb67e9c7ff6ce165259765d471":[9,0,1,0,1,10,0,0,0,136],
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a3363d6a26078e8da07f98b521ce50d76":[9,0,1,0,1,10,0,0,0,30],
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a3560895143a3b808990b3b6204fc98c1":[9,0,1,0,1,10,0,0,0,151]
+"lisa__mx_2chibios_2v2_81_2board_8h.html#a2781f04e2f6682d822e9fca6a8aa4ed3":[9,0,1,0,1,10,0,0,0,133]
 };

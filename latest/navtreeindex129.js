@@ -1,5 +1,12 @@
 var NAVTREEINDEX129 =
 {
+"mission__rotorcraft__nav_8c.html#a77c170761e804706933b8eccce1e93ea":[9,0,1,0,6,45,7,9],
+"mission__rotorcraft__nav_8c.html#a7acc766194f30b5ae4c48a0b2addbb9f":[9,0,1,0,6,45,7,8],
+"mission__rotorcraft__nav_8c.html#a7c8b310a7c7fc4c0a38adfd771de3f98":[9,0,1,0,6,45,7,0],
+"mission__rotorcraft__nav_8c.html#a92032860fee41019bb05444dec447451":[9,0,1,0,6,45,7,11],
+"mission__rotorcraft__nav_8c.html#a99c9ce9d206dd38d8a92316c5f437c9d":[9,0,1,0,6,45,7,2],
+"mission__rotorcraft__nav_8c.html#aa8f5e01954042e24fc602d1de265a30f":[9,0,1,0,6,45,7,5],
+"mission__rotorcraft__nav_8c.html#ac81f100541ff8d232ac2750f626fec12":[9,0,1,0,6,45,7,1],
 "mission__rotorcraft__nav_8c.html#af52e94b6fc7933932b718c6489d4a549":[9,0,1,0,6,45,7,13],
 "mission__rotorcraft__nav_8c_source.html":[9,0,1,0,6,45,7],
 "mission__rover__nav_8c.html":[9,0,1,0,6,45,8],
@@ -220,7 +227,8 @@ var NAVTREEINDEX129 =
 "module__alt_srf08.html":[1,398],
 "module__alt_srf08.html#functions__alt_srf08":[1,398,1],
 "module__alt_srf08.html#module_load_example__alt_srf08":[1,398,0],
-"module__alt_srf08.html#module_xml__alt_srf08":[1,398,1,0],
+"module__alt_srf08.html#module_xml__alt_srf08":[1,398,1,1],
+"module__alt_srf08.html#periodic_functions":[1,398,1,0],
 "module__aoa_adc.html":[1,387],
 "module__aoa_adc.html#configuration__aoa_adc":[1,387,1],
 "module__aoa_adc.html#functions__aoa_adc":[1,387,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX129 =
 "module__approach_moving_target.html#functions__approach_moving_target":[1,85,2],
 "module__approach_moving_target.html#module_load_example__approach_moving_target":[1,85,0],
 "module__approach_moving_target.html#module_xml__approach_moving_target":[1,85,2,0],
-"module__auto1_commands.html":[1,466],
-"module__auto1_commands.html#functions__auto1_commands":[1,466,1],
-"module__auto1_commands.html#module_load_example__auto1_commands":[1,466,0],
-"module__auto1_commands.html#module_xml__auto1_commands":[1,466,1,0],
-"module__autopilot_gnc.html":[1,475],
-"module__autopilot_gnc.html#datalink_functions__autopilot_gnc":[1,475,2],
-"module__autopilot_gnc.html#functions__autopilot_gnc":[1,475,1],
-"module__autopilot_gnc.html#module_load_example__autopilot_gnc":[1,475,0],
-"module__autopilot_gnc.html#module_xml__autopilot_gnc":[1,475,2,0]
+"module__auto1_commands.html":[1,466]
 };

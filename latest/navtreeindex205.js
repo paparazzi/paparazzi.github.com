@@ -1,5 +1,12 @@
 var NAVTREEINDEX205 =
 {
+"stabilization__indi__hinf_8c.html":[9,0,1,0,3,1,2,41],
+"stabilization__indi__hinf_8c.html#a114b100ad6a2d4e752c4489db1bedd22":[9,0,1,0,3,1,2,41,2],
+"stabilization__indi__hinf_8c.html#a1402a0036b052ce0b0b7e0b0e955aec8":[9,0,1,0,3,1,2,41,10],
+"stabilization__indi__hinf_8c.html#a15c5666501490db38bac78bfc77394d3":[9,0,1,0,3,1,2,41,0],
+"stabilization__indi__hinf_8c.html#a5d43ac35c48eb14da0f0c3577cf1b6ed":[9,0,1,0,3,1,2,41,8],
+"stabilization__indi__hinf_8c.html#a7e992fb38d3aae46abc6dfa31d525744":[9,0,1,0,3,1,2,41,5],
+"stabilization__indi__hinf_8c.html#a912be943330a6374d39e36d4e4c2dbec":[9,0,1,0,3,1,2,41,3],
 "stabilization__indi__hinf_8c.html#a94b2a2c01f0ce33c392971504a5cb505":[9,0,1,0,3,1,2,41,6],
 "stabilization__indi__hinf_8c.html#a960a11cde326329a10bf91c077784d4c":[9,0,1,0,3,1,2,41,4],
 "stabilization__indi__hinf_8c.html#ab265886b72180b2a92059d897f4090c8":[9,0,1,0,3,1,2,41,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX205 =
 "structStabilizationSetpoint.html#ac57f55b89f461022b874a931693b45e8":[8,0,1061,3],
 "structStabilizationSetpoint.html#ad1d97e8fa6580437a08084ebc8de7a27":[8,0,1061,0],
 "structThrustSetpoint.html":[8,0,1108],
-"structThrustSetpoint.html#a5d6bd20e77e9394af9e6f25d3d7fd251":[8,0,1108,1],
-"structThrustSetpoint.html#a72248ffa5bbf8fafff9a831b7d5925dd":[8,0,1108,2],
-"structThrustSetpoint.html#abdfa8971f33df0a0b2d1e5007aa7272d":[8,0,1108,0],
-"sts3032__regs_8h.html":[9,0,1,0,7,138],
-"sts3032__regs_8h.html#a00548ba075cd44d4ce044d4e36ce30f4":[9,0,1,0,7,138,37],
-"sts3032__regs_8h.html#a04a3c3411bdcd311ba9e4355f42a50cc":[9,0,1,0,7,138,21],
-"sts3032__regs_8h.html#a177d9ebf698878e8b46b02265e71c59d":[9,0,1,0,7,138,16],
-"sts3032__regs_8h.html#a1bab75e01514263eea46938fcc95a23a":[9,0,1,0,7,138,7]
+"structThrustSetpoint.html#a5d6bd20e77e9394af9e6f25d3d7fd251":[8,0,1108,1]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX134 =
 {
+"module__ins_arduimu_basic.html#module_xml__ins_arduimu_basic":[1,237,2,0],
+"module__ins_ekf2.html":[1,238],
+"module__ins_ekf2.html#configuration__ins_ekf2":[1,238,1],
+"module__ins_ekf2.html#datalink_functions__ins_ekf2":[1,238,3],
+"module__ins_ekf2.html#functions__ins_ekf2":[1,238,2],
 "module__ins_ekf2.html#module_load_example__ins_ekf2":[1,238,0],
 "module__ins_ekf2.html#module_xml__ins_ekf2":[1,238,3,0],
 "module__ins_ext_pose.html":[1,239],
@@ -244,10 +249,5 @@ var NAVTREEINDEX134 =
 "module__mavlink_decoder.html#configuration__mavlink_decoder":[1,111,1],
 "module__mavlink_decoder.html#functions__mavlink_decoder":[1,111,2],
 "module__mavlink_decoder.html#module_load_example__mavlink_decoder":[1,111,0],
-"module__mavlink_decoder.html#module_xml__mavlink_decoder":[1,111,2,0],
-"module__max11040.html":[1,23],
-"module__max11040.html#functions__max11040":[1,23,1],
-"module__max11040.html#module_load_example__max11040":[1,23,0],
-"module__max11040.html#module_xml__max11040":[1,23,1,0],
-"module__mcp355x.html":[1,24]
+"module__mavlink_decoder.html#module_xml__mavlink_decoder":[1,111,2,0]
 };

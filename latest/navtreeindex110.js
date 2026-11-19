@@ -1,5 +1,12 @@
 var NAVTREEINDEX110 =
 {
+"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[9,0,1,0,7,83,1,0],
+"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[9,0,1,0,7,83,2,0],
+"lsm303d__spi_8h.html#ab4e49df07264189a6344fe0772d14f9f":[9,0,1,0,7,83,7],
+"lsm303d__spi_8h.html#ac0b025eef4f446e794b523ba01e7d657":[9,0,1,0,7,83,0,11],
+"lsm303d__spi_8h.html#aed687119cc5a219108a4ddbcacc70380":[9,0,1,0,7,83,6],
+"lsm303d__spi_8h.html#structLsm303d__Spi":[9,0,1,0,7,83,0],
+"lsm303d__spi_8h.html#unionLsm303d__Spi_8data__accel":[9,0,1,0,7,83,1],
 "lsm303d__spi_8h.html#unionLsm303d__Spi_8data__mag":[9,0,1,0,7,83,2],
 "lsm303d__spi_8h_source.html":[9,0,1,0,7,83],
 "lsm303dlhc_8h.html":[9,0,1,0,7,84],
@@ -242,12 +249,5 @@ var NAVTREEINDEX110 =
 "lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4a4209a7318637b4e9f7702a405526a378":[9,0,1,0,7,91,63,8],
 "lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4a431a04938ccbdb14c5be95a5d23b802d":[9,0,1,0,7,91,63,6],
 "lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4a4f7a39eded11becd688104328e08f8c3":[9,0,1,0,7,91,63,4],
-"lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4a7a5d6d9acec0f7bdf1cabb747559a9a1":[9,0,1,0,7,91,63,10],
-"lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4a7f62df70780ea79cadfd730fab1802e9":[9,0,1,0,7,91,63,7],
-"lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4a859969a9d216287c9210a402036d311f":[9,0,1,0,7,91,63,3],
-"lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4aee668ff6a8e07d1c49488fbae4e02b63":[9,0,1,0,7,91,63,2],
-"lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4afc11f40d5f5909824021da5331f77312":[9,0,1,0,7,91,63,0],
-"lsm6ds33__regs_8h.html#a1e920ec3b05faa07691d1a4640d6afa3":[9,0,1,0,7,91,39],
-"lsm6ds33__regs_8h.html#a1f9ba8c71a1abf28199a36aca384b6b2":[9,0,1,0,7,91,66],
-"lsm6ds33__regs_8h.html#a1f9ba8c71a1abf28199a36aca384b6b2a1589d6177bce998c532a51e6df280336":[9,0,1,0,7,91,66,0]
+"lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4a7a5d6d9acec0f7bdf1cabb747559a9a1":[9,0,1,0,7,91,63,10]
 };

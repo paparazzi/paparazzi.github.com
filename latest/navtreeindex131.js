@@ -1,5 +1,13 @@
 var NAVTREEINDEX131 =
 {
+"module__cv_detect_gate.html#module_xml__cv_detect_gate":[1,57,2,0],
+"module__cv_detect_window.html":[1,58],
+"module__cv_detect_window.html#configuration__cv_detect_window":[1,58,1],
+"module__cv_detect_window.html#functions__cv_detect_window":[1,58,2],
+"module__cv_detect_window.html#module_load_example__cv_detect_window":[1,58,0],
+"module__cv_detect_window.html#module_xml__cv_detect_window":[1,58,2,0],
+"module__cv_georeference.html":[1,59],
+"module__cv_georeference.html#functions__cv_georeference":[1,59,1],
 "module__cv_georeference.html#module_load_example__cv_georeference":[1,59,0],
 "module__cv_georeference.html#module_xml__cv_georeference":[1,59,1,0],
 "module__cv_opencvdemo.html":[1,60],
@@ -241,13 +249,5 @@ var NAVTREEINDEX131 =
 "module__flight_recorder.html#module_xml__flight_recorder":[1,267,3,0],
 "module__follow.html":[1,316],
 "module__follow.html#configuration__follow":[1,316,1],
-"module__follow.html#functions__follow":[1,316,2],
-"module__follow.html#module_load_example__follow":[1,316,0],
-"module__follow.html#module_xml__follow":[1,316,2,0],
-"module__follow_me.html":[1,98],
-"module__follow_me.html#configuration__follow_me":[1,98,1],
-"module__follow_me.html#datalink_functions__follow_me":[1,98,3],
-"module__follow_me.html#functions__follow_me":[1,98,2],
-"module__follow_me.html#module_load_example__follow_me":[1,98,0],
-"module__follow_me.html#module_xml__follow_me":[1,98,3,0]
+"module__follow.html#functions__follow":[1,316,2]
 };

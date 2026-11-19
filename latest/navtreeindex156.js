@@ -1,5 +1,12 @@
 var NAVTREEINDEX156 =
 {
+"nps__radio__control_8h.html#ab5a5474c2a7f030e4da8c4e93e7c5cc4":[9,0,1,1,2,28,0,5],
+"nps__radio__control_8h.html#ad7a30d461a21aefdb959128d5245d835":[9,0,1,1,2,28,0,2],
+"nps__radio__control_8h.html#adb14ab0ea7d774c59246591a02662dd9":[9,0,1,1,2,28,0,0],
+"nps__radio__control_8h.html#af724cbe6945f9fc23dbc6a6ff79d6ec7":[9,0,1,1,2,28,0,3],
+"nps__radio__control_8h.html#af7449dc6a7bc211dda84224dfed2cb05":[9,0,1,1,2,28,7],
+"nps__radio__control_8h.html#structNpsRadioControl":[9,0,1,1,2,28,0],
+"nps__radio__control_8h_source.html":[9,0,1,1,2,28],
 "nps__radio__control__joystick_8c.html":[9,0,1,1,2,29],
 "nps__radio__control__joystick_8c.html#a1a151842137fa61f5fdf80e57efa1c97":[9,0,1,1,2,29,10],
 "nps__radio__control__joystick_8c.html#a1d35d6302d621f311c5c2e21ccef21b7":[9,0,1,1,2,29,12],
@@ -242,12 +249,5 @@ var NAVTREEINDEX156 =
 "nps__sensor__temperature_8h.html#a606b03894e27a6ad81bdd3394ea33843":[9,0,1,1,2,54,0,1],
 "nps__sensor__temperature_8h.html#a9b3050705f61f467495ad96d989afd0c":[9,0,1,1,2,54,2],
 "nps__sensor__temperature_8h.html#a9ce30fd2c828197a6c272aa00f2855a9":[9,0,1,1,2,54,0,0],
-"nps__sensor__temperature_8h.html#aee4d4e7e3ba9ca4fbebd71604870ec4d":[9,0,1,1,2,54,0,3],
-"nps__sensor__temperature_8h.html#structNpsSensorTemperature":[9,0,1,1,2,54,0],
-"nps__sensor__temperature_8h_source.html":[9,0,1,1,2,54],
-"nps__sensors_8c.html":[9,0,1,1,2,55],
-"nps__sensors_8c.html#a09b47018a69d874a1e3d3876e04f8a8f":[9,0,1,1,2,55,5],
-"nps__sensors_8c.html#a11a29c2b4957ab1fb998c5e40b4f96d7":[9,0,1,1,2,55,11],
-"nps__sensors_8c.html#a25bed254695b7ef285fef3b65a0e70c8":[9,0,1,1,2,55,0],
-"nps__sensors_8c.html#a315436c4d4ba6802a27789ffd4ec148d":[9,0,1,1,2,55,9]
+"nps__sensor__temperature_8h.html#aee4d4e7e3ba9ca4fbebd71604870ec4d":[9,0,1,1,2,54,0,3]
 };

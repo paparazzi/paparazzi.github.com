@@ -1,5 +1,16 @@
 var NAVTREEINDEX136 =
 {
+"module__opticflow_pmw3901.html":[1,430],
+"module__opticflow_pmw3901.html#configuration__opticflow_pmw3901":[1,430,1],
+"module__opticflow_pmw3901.html#functions__opticflow_pmw3901":[1,430,2],
+"module__opticflow_pmw3901.html#module_load_example__opticflow_pmw3901":[1,430,0],
+"module__opticflow_pmw3901.html#module_xml__opticflow_pmw3901":[1,430,2,0],
+"module__orange_avoider.html":[1,368],
+"module__orange_avoider.html#configuration__orange_avoider":[1,368,1],
+"module__orange_avoider.html#functions__orange_avoider":[1,368,2],
+"module__orange_avoider.html#module_load_example__orange_avoider":[1,368,0],
+"module__orange_avoider.html#module_xml__orange_avoider":[1,368,2,0],
+"module__orange_avoider_guided.html":[1,369],
 "module__orange_avoider_guided.html#configuration__orange_avoider_guided":[1,369,1],
 "module__orange_avoider_guided.html#functions__orange_avoider_guided":[1,369,2],
 "module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,369,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX136 =
 "module__slcan.html#configuration__slcan":[1,79,1],
 "module__slcan.html#functions__slcan":[1,79,2],
 "module__slcan.html#module_load_example__slcan":[1,79,0],
-"module__slcan.html#module_xml__slcan":[1,79,2,0],
-"module__sonar_adc.html":[1,440],
-"module__sonar_adc.html#configuration__sonar_adc":[1,440,1],
-"module__sonar_adc.html#functions__sonar_adc":[1,440,2],
-"module__sonar_adc.html#module_load_example__sonar_adc":[1,440,0],
-"module__sonar_adc.html#module_xml__sonar_adc":[1,440,2,0],
-"module__sonar_bebop.html":[1,441],
-"module__sonar_bebop.html#configuration__sonar_bebop":[1,441,1],
-"module__sonar_bebop.html#event_functions":[1,441,2,0],
-"module__sonar_bebop.html#functions__sonar_bebop":[1,441,2],
-"module__sonar_bebop.html#module_load_example__sonar_bebop":[1,441,0],
-"module__sonar_bebop.html#module_xml__sonar_bebop":[1,441,2,1]
+"module__slcan.html#module_xml__slcan":[1,79,2,0]
 };
