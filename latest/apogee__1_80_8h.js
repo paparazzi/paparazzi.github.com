@@ -158,7 +158,6 @@ var apogee__1_80_8h =
     [ "UART6_GPIO_TX", "apogee__1_80_8h.html#a6313fd7ca8972bdfc8516ad63c842d1b", null ],
     [ "USE_AD_TIM4", "apogee__1_80_8h.html#ab6b81c459bdf550c04821e4e7f300c27", null ],
     [ "USE_ADC_4", "apogee__1_80_8h.html#a3c7828080fe4221adb89ff72d286254d", null ],
-    [ "USE_BARO_BOARD", "apogee__1_80_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_LED_1", "apogee__1_80_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "apogee__1_80_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],
     [ "USE_LED_3", "apogee__1_80_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ],

@@ -1,90 +1,91 @@
 <map id="ecef_of_enu_point_f" name="ecef_of_enu_point_f">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1799,161,1951,189"/>
-<area shape="rect" id="Node000002" href="$pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title=" " alt="" coords="1599,136,1751,164"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1781,164,1751,162,1751,157,1786,163"/>
-<area shape="rect" id="Node000011" href="$group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title=" " alt="" coords="1381,213,1546,241"/>
-<area shape="poly" id="edge46_Node000001_Node000011" title=" " alt="" coords="1781,187,1547,219,1546,214,1786,186"/>
-<area shape="rect" id="Node000003" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="1411,5,1516,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1648,125,1605,87,1549,48,1516,34,1516,29,1552,43,1608,83,1653,126"/>
-<area shape="rect" id="Node000005" href="$group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e" title=" " alt="" coords="1376,57,1551,85"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1626,129,1550,100,1514,88,1514,83,1552,95,1631,130"/>
-<area shape="rect" id="Node000007" href="$group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title=" " alt="" coords="1377,109,1550,137"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1580,139,1551,137,1550,131,1586,138"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="1628,169,1552,203,1515,215,1513,210,1550,198,1623,171"/>
-<area shape="rect" id="Node000042" href="$tag__tracking_8c.html#a83bc355253cdc366490766133f756279" title=" " alt="" coords="1389,161,1538,189"/>
-<area shape="poly" id="edge45_Node000002_Node000042" title=" " alt="" coords="1581,161,1539,169,1538,164,1586,160"/>
-<area shape="rect" id="Node000004" href="$cv__target__localization_8c.html#a985eb3daada07ed9f76cf8dceb5300b4" title=" " alt="" coords="1158,5,1328,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1394,20,1329,22,1328,17,1399,19"/>
-<area shape="rect" id="Node000006" href="$group__state__position.html#gaaf2ec6d57063dc0a1c9c90dfcb1cbde2" title="Get position in ECEF coordinates (float)." alt="" coords="1158,57,1328,85"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1358,72,1329,74,1328,69,1364,71"/>
-<area shape="rect" id="Node000008" href="$group__state__position.html#ga42be9e4a0550bf670ff4975aec623d48" title="Get position in ECEF coordinates (int)." alt="" coords="1159,109,1327,137"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1359,124,1328,126,1327,121,1364,123"/>
-<area shape="rect" id="Node000009" href="$ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine." alt="" coords="925,31,1110,58"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1175,104,1157,99,1109,74,1075,62,1075,56,1111,69,1159,94,1180,104"/>
-<area shape="rect" id="Node000010" href="$ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav." alt="" coords="706,31,862,58"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="907,45,863,47,862,42,912,44"/>
-<area shape="rect" id="Node000012" href="$group__state__position.html#ga1079cbda74a805c577953981e58943fa" title="Get position in LLA coordinates (float)." alt="" coords="1163,316,1323,344"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1420,247,1276,318,1274,313,1415,249"/>
-<area shape="rect" id="Node000013" href="$air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel)." alt="" coords="947,291,1088,318"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1145,319,1089,315,1088,310,1150,319"/>
-<area shape="rect" id="Node000027" href="$cv__target__localization_8c.html#a4ef50542f56ec3b378f5fd0664dbd4ca" title=" " alt="" coords="935,444,1100,488"/>
-<area shape="poly" id="edge28_Node000012_Node000027" title=" " alt="" coords="1215,353,1167,391,1111,427,1075,445,1073,440,1109,422,1164,386,1210,355"/>
-<area shape="rect" id="Node000028" href="$mavlink_8c.html#a8c8fd474a91b126a5f74296017672ddc" title="Send Metrics typically displayed on a HUD for fixed wing aircraft." alt="" coords="933,512,1102,540"/>
-<area shape="poly" id="edge29_Node000012_Node000028" title=" " alt="" coords="1230,356,1184,431,1151,470,1111,503,1090,514,1088,509,1109,498,1147,466,1180,428,1226,359"/>
-<area shape="rect" id="Node000031" href="$meteo__france__DAQ_8c.html#a428cd9287f9e24f69dd92d696e0a053a" title=" " alt="" coords="943,564,1092,592"/>
-<area shape="poly" id="edge32_Node000012_Node000031" title=" " alt="" coords="1235,357,1218,402,1192,455,1157,508,1135,532,1112,553,1089,566,1088,561,1108,549,1132,528,1153,504,1188,452,1213,400,1231,360"/>
-<area shape="rect" id="Node000032" href="$nav__takeoff__and__landing__fw_8c.html#af141bbdcbbb3149419fb156e764336d1" title="Takeoff from lat long location." alt="" coords="937,616,1098,644"/>
-<area shape="poly" id="edge33_Node000012_Node000032" title=" " alt="" coords="1238,357,1224,412,1200,478,1163,547,1139,578,1112,605,1091,618,1090,613,1108,601,1135,574,1158,544,1195,476,1219,411,1234,361"/>
-<area shape="rect" id="Node000033" href="$meteo__france__DAQ_8c.html#a5eac3ac3a7ca67f41b81350f2d0f7f0d" title=" " alt="" coords="943,83,1092,110"/>
-<area shape="poly" id="edge34_Node000012_Node000033" title=" " alt="" coords="1229,301,1212,263,1186,215,1151,167,1108,125,1088,114,1088,108,1112,121,1155,163,1190,212,1216,261,1234,303"/>
-<area shape="rect" id="Node000034" href="$air__data_8c.html#aca0d080f4ac927cd0096741f520e68bf" title=" " alt="" coords="514,348,643,376"/>
-<area shape="poly" id="edge35_Node000012_Node000034" title=" " alt="" coords="1145,336,644,361,644,356,1150,333"/>
-<area shape="rect" id="Node000035" href="$gps__nmea__send_8c.html#a55cbc5d084f409bb39369ae05436f09b" title="Function to recover data available onboard from GPS." alt="" coords="949,135,1086,162"/>
-<area shape="poly" id="edge37_Node000012_Node000035" title=" " alt="" coords="1223,302,1177,240,1145,206,1109,177,1085,166,1085,160,1111,173,1149,202,1181,237,1228,303"/>
-<area shape="rect" id="Node000037" href="$traffic__info_8c.html#a50d3aab8b829d507ebca8080ebc742c2" title=" " alt="" coords="956,187,1078,214"/>
-<area shape="poly" id="edge39_Node000012_Node000037" title=" " alt="" coords="1214,305,1167,267,1109,230,1079,217,1079,212,1111,225,1171,263,1219,306"/>
-<area shape="rect" id="Node000039" href="$air__data_8c.html#aae97369dd0a4cdc549c69a2767b9c76b" title=" " alt="" coords="533,424,624,452"/>
-<area shape="poly" id="edge41_Node000012_Node000039" title=" " alt="" coords="1146,347,625,433,624,428,1150,344"/>
-<area shape="rect" id="Node000040" href="$autopilot_8c.html#ab2ea9756339de58fcb8d06e845605597" title=" " alt="" coords="943,239,1092,266"/>
-<area shape="poly" id="edge43_Node000012_Node000040" title=" " alt="" coords="1190,310,1109,282,1071,270,1071,264,1111,277,1195,310"/>
-<area shape="rect" id="Node000014" href="$air__data_8c.html#a4035dda781bc016f24033b67116330b5" title="Internal utility function to compute current tas factor if needed." alt="" coords="709,291,859,318"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="928,305,860,307,859,302,934,304"/>
-<area shape="rect" id="Node000015" href="$air__data_8c.html#a63b7d4cb201d930ccf74c1ee6ec6c877" title="Calculate equivalent airspeed from true airspeed." alt="" coords="524,120,633,148"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="699,284,690,280,654,249,623,212,586,151,588,146,628,209,657,245,693,276,704,284"/>
-<area shape="rect" id="Node000018" href="$air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed." alt="" coords="524,284,633,312"/>
-<area shape="poly" id="edge17_Node000014_Node000018" title=" " alt="" coords="691,302,635,302,633,297,696,301"/>
-<area shape="rect" id="Node000016" href="$air__data_8c.html#abdd14cec10b066ee747da35cbab63334" title="Parse datalink wind info message." alt="" coords="263,60,464,88"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="516,116,465,102,426,91,424,86,467,97,521,114"/>
-<area shape="rect" id="Node000017" href="$wind__estimation__quadrotor_8c.html#a1a51ee96e2d65f6f7986aba14209781c" title=" " alt="" coords="264,112,463,156"/>
-<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="506,135,464,136,462,131,511,133"/>
-<area shape="rect" id="Node000019" href="$ins__mekf__wind__wrapper_8c.html#a01f1ac7a540ba839e6b5773c93418970" title=" " alt="" coords="314,180,413,208"/>
-<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="547,274,510,248,465,223,414,206,413,200,467,218,512,244,552,274"/>
-<area shape="rect" id="Node000020" href="$air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title=" " alt="" coords="314,284,413,312"/>
-<area shape="poly" id="edge19_Node000018_Node000020" title=" " alt="" coords="506,299,414,300,413,295,511,297"/>
-<area shape="rect" id="Node000024" href="$air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title=" " alt="" coords="300,336,427,364"/>
-<area shape="poly" id="edge23_Node000018_Node000024" title=" " alt="" coords="507,316,425,338,423,333,511,313"/>
-<area shape="rect" id="Node000025" href="$air__data_8c.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure." alt="" coords="261,232,466,260"/>
-<area shape="poly" id="edge26_Node000018_Node000025" title=" " alt="" coords="506,282,424,263,424,258,511,280"/>
-<area shape="rect" id="Node000021" href="$air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization." alt="" coords="58,388,160,416"/>
-<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="297,310,262,327,248,339,239,351,230,365,214,377,188,389,162,397,159,392,186,384,211,373,226,361,234,348,244,335,259,322,301,307"/>
-<area shape="rect" id="Node000022" href="$ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="57,284,161,312"/>
-<area shape="poly" id="edge21_Node000020_Node000022" title=" " alt="" coords="297,300,163,300,161,295,300,296"/>
-<area shape="rect" id="Node000023" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="5,336,213,364"/>
-<area shape="poly" id="edge22_Node000020_Node000023" title=" " alt="" coords="297,313,181,338,179,333,300,309"/>
-<area shape="poly" id="edge24_Node000024_Node000021" title=" " alt="" coords="282,368,162,394,159,389,286,364"/>
-<area shape="poly" id="edge25_Node000024_Node000023" title=" " alt="" coords="282,351,214,352,212,347,286,348"/>
-<area shape="rect" id="Node000026" href="$ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title=" " alt="" coords="45,232,173,260"/>
-<area shape="poly" id="edge27_Node000025_Node000026" title=" " alt="" coords="243,247,174,248,172,243,247,244"/>
-<area shape="rect" id="Node000029" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="733,539,835,566"/>
-<area shape="poly" id="edge30_Node000028_Node000029" title=" " alt="" coords="915,538,836,549,835,544,920,537"/>
-<area shape="rect" id="Node000030" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="717,487,851,514"/>
-<area shape="poly" id="edge31_Node000028_Node000030" title=" " alt="" coords="915,515,851,510,851,505,921,515"/>
-<area shape="poly" id="edge36_Node000034_Node000021" title=" " alt="" coords="496,373,466,378,161,401,160,396,466,373,501,371"/>
-<area shape="rect" id="Node000036" href="$gps__nmea__send_8c.html#afd0e78a5c8b41c97c7ea228247ab3749" title="Periodic function to send data." alt="" coords="691,135,877,162"/>
-<area shape="poly" id="edge38_Node000035_Node000036" title=" " alt="" coords="931,149,878,151,877,146,936,148"/>
-<area shape="rect" id="Node000038" href="$group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2" title=" " alt="" coords="724,187,844,214"/>
-<area shape="poly" id="edge40_Node000037_Node000038" title=" " alt="" coords="938,201,845,203,844,198,944,200"/>
-<area shape="poly" id="edge42_Node000039_Node000021" title=" " alt="" coords="515,437,260,422,161,411,160,406,261,417,519,433"/>
-<area shape="rect" id="Node000041" href="$autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot initialization function." alt="" coords="730,239,838,266"/>
-<area shape="poly" id="edge44_Node000040_Node000041" title=" " alt="" coords="925,253,839,255,838,250,931,252"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1957,161,2110,189"/>
+<area shape="rect" id="Node000002" href="$pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title=" " alt="" coords="1757,136,1909,164"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1939,164,1910,162,1909,157,1944,163"/>
+<area shape="rect" id="Node000011" href="$group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title=" " alt="" coords="1539,213,1704,241"/>
+<area shape="poly" id="edge46_Node000001_Node000011" title=" " alt="" coords="1939,187,1705,219,1704,214,1944,186"/>
+<area shape="rect" id="Node000003" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="1570,57,1674,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1784,129,1708,100,1672,88,1672,83,1710,95,1789,130"/>
+<area shape="rect" id="Node000005" href="$group__state__position.html#ga8d51d94f0e5c5733d215eb307ef4846e" title=" " alt="" coords="1535,109,1709,137"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1739,139,1710,137,1709,132,1744,138"/>
+<area shape="rect" id="Node000007" href="$group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title=" " alt="" coords="1535,161,1708,189"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1739,161,1710,167,1708,162,1744,160"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="1786,169,1710,203,1673,215,1672,210,1708,198,1781,171"/>
+<area shape="rect" id="Node000043" href="$tag__tracking_8c.html#a83bc355253cdc366490766133f756279" title=" " alt="" coords="1548,5,1696,33"/>
+<area shape="poly" id="edge45_Node000002_Node000043" title=" " alt="" coords="1806,125,1763,87,1708,48,1681,36,1681,31,1710,44,1766,83,1811,126"/>
+<area shape="rect" id="Node000004" href="$cv__target__localization_8c.html#a985eb3daada07ed9f76cf8dceb5300b4" title=" " alt="" coords="1316,57,1487,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1552,72,1488,74,1487,69,1557,71"/>
+<area shape="rect" id="Node000006" href="$group__state__position.html#gaaf2ec6d57063dc0a1c9c90dfcb1cbde2" title="Get position in ECEF coordinates (float)." alt="" coords="1317,109,1486,137"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1517,124,1487,126,1486,121,1522,123"/>
+<area shape="rect" id="Node000008" href="$group__state__position.html#ga42be9e4a0550bf670ff4975aec623d48" title="Get position in ECEF coordinates (int)." alt="" coords="1317,161,1486,189"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1517,176,1487,178,1486,173,1522,175"/>
+<area shape="rect" id="Node000009" href="$ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine." alt="" coords="1083,36,1268,64"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1322,154,1315,151,1298,132,1290,113,1282,96,1267,79,1246,67,1246,61,1270,74,1287,93,1295,111,1302,129,1318,146,1327,154"/>
+<area shape="rect" id="Node000010" href="$ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav." alt="" coords="864,36,1020,64"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1065,51,1022,52,1020,47,1070,49"/>
+<area shape="rect" id="Node000012" href="$group__state__position.html#ga1079cbda74a805c577953981e58943fa" title="Get position in LLA coordinates (float)." alt="" coords="1321,339,1482,366"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1585,248,1429,341,1427,336,1580,250"/>
+<area shape="rect" id="Node000013" href="$air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel)." alt="" coords="1105,140,1246,168"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1384,324,1338,254,1305,215,1267,183,1244,171,1245,166,1270,178,1309,212,1342,251,1389,325"/>
+<area shape="rect" id="Node000027" href="$air__data_8c.html#ace863c525f25f3895281d8a993f9a93f" title=" " alt="" coords="1094,192,1258,220"/>
+<area shape="poly" id="edge27_Node000012_Node000027" title=" " alt="" coords="1376,326,1330,280,1300,255,1267,234,1243,223,1243,218,1270,229,1303,251,1333,276,1382,327"/>
+<area shape="rect" id="Node000029" href="$cv__target__localization_8c.html#a4ef50542f56ec3b378f5fd0664dbd4ca" title=" " alt="" coords="1094,244,1258,288"/>
+<area shape="poly" id="edge30_Node000012_Node000029" title=" " alt="" coords="1347,332,1267,303,1237,291,1238,286,1269,298,1352,332"/>
+<area shape="rect" id="Node000030" href="$mavlink_8c.html#a8c8fd474a91b126a5f74296017672ddc" title="Send Metrics typically displayed on a HUD for fixed wing aircraft." alt="" coords="1092,312,1260,340"/>
+<area shape="poly" id="edge31_Node000012_Node000030" title=" " alt="" coords="1303,341,1260,338,1260,333,1309,341"/>
+<area shape="rect" id="Node000033" href="$meteo__france__DAQ_8c.html#a428cd9287f9e24f69dd92d696e0a053a" title=" " alt="" coords="1102,364,1250,392"/>
+<area shape="poly" id="edge34_Node000012_Node000033" title=" " alt="" coords="1304,364,1251,372,1250,367,1309,363"/>
+<area shape="rect" id="Node000034" href="$nav__takeoff__and__landing__fw_8c.html#af141bbdcbbb3149419fb156e764336d1" title="Takeoff from lat long location." alt="" coords="1095,416,1256,444"/>
+<area shape="poly" id="edge35_Node000012_Node000034" title=" " alt="" coords="1354,372,1269,406,1230,418,1229,413,1267,401,1348,373"/>
+<area shape="rect" id="Node000035" href="$meteo__france__DAQ_8c.html#a5eac3ac3a7ca67f41b81350f2d0f7f0d" title=" " alt="" coords="1102,468,1250,496"/>
+<area shape="poly" id="edge36_Node000012_Node000035" title=" " alt="" coords="1377,376,1329,419,1270,458,1239,470,1237,465,1267,453,1326,415,1372,378"/>
+<area shape="rect" id="Node000036" href="$gps__nmea__send_8c.html#a55cbc5d084f409bb39369ae05436f09b" title="Function to recover data available onboard from GPS." alt="" coords="1108,520,1244,548"/>
+<area shape="poly" id="edge37_Node000012_Node000036" title=" " alt="" coords="1386,378,1339,446,1307,480,1270,509,1244,522,1243,517,1267,505,1303,476,1335,442,1382,381"/>
+<area shape="rect" id="Node000038" href="$traffic__info_8c.html#a50d3aab8b829d507ebca8080ebc742c2" title=" " alt="" coords="1114,572,1237,600"/>
+<area shape="poly" id="edge39_Node000012_Node000038" title=" " alt="" coords="1392,379,1375,422,1348,470,1313,519,1270,561,1238,577,1237,572,1267,557,1309,516,1344,467,1370,419,1388,382"/>
+<area shape="rect" id="Node000040" href="$air__data_8c.html#aae97369dd0a4cdc549c69a2767b9c76b" title=" " alt="" coords="701,519,793,546"/>
+<area shape="poly" id="edge41_Node000012_Node000040" title=" " alt="" coords="1397,380,1385,435,1362,499,1345,532,1324,563,1299,591,1270,613,1213,644,1161,663,1113,672,1065,673,1017,666,966,653,849,614,821,601,796,583,759,549,761,544,799,579,824,596,851,609,968,648,1018,661,1066,668,1112,667,1160,658,1211,639,1267,609,1296,587,1320,560,1340,529,1357,497,1380,433,1393,383"/>
+<area shape="rect" id="Node000041" href="$autopilot_8c.html#ab2ea9756339de58fcb8d06e845605597" title=" " alt="" coords="1102,88,1250,116"/>
+<area shape="poly" id="edge43_Node000012_Node000041" title=" " alt="" coords="1383,324,1320,212,1288,158,1267,130,1247,119,1247,114,1270,127,1292,155,1324,209,1388,326"/>
+<area shape="rect" id="Node000014" href="$air__data_8c.html#a4035dda781bc016f24033b67116330b5" title="Internal utility function to compute the current tas factor." alt="" coords="867,140,1018,168"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1087,154,1019,156,1018,151,1092,153"/>
+<area shape="rect" id="Node000015" href="$air__data_8c.html#a63b7d4cb201d930ccf74c1ee6ec6c877" title="Calculate equivalent airspeed from true airspeed." alt="" coords="692,93,802,121"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="864,136,802,123,802,118,870,135"/>
+<area shape="rect" id="Node000018" href="$air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed." alt="" coords="692,173,802,201"/>
+<area shape="poly" id="edge17_Node000014_Node000018" title=" " alt="" coords="849,170,803,180,801,175,854,168"/>
+<area shape="rect" id="Node000016" href="$air__data_8c.html#abdd14cec10b066ee747da35cbab63334" title="Parse datalink wind info message." alt="" coords="442,93,642,121"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="674,108,643,110,641,105,679,106"/>
+<area shape="rect" id="Node000017" href="$wind__estimation__quadrotor_8c.html#a1a51ee96e2d65f6f7986aba14209781c" title=" " alt="" coords="442,25,641,70"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="680,89,621,73,620,67,685,88"/>
+<area shape="rect" id="Node000019" href="$air__data_8c.html#afd13e85a2620e95f974ec39d4b3644f4" title=" " alt="" coords="460,197,624,225"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="674,196,625,204,623,199,679,194"/>
+<area shape="rect" id="Node000023" href="$ins__mekf__wind__wrapper_8c.html#a01f1ac7a540ba839e6b5773c93418970" title=" " alt="" coords="492,249,591,277"/>
+<area shape="poly" id="edge23_Node000018_Node000023" title=" " alt="" coords="704,210,645,239,593,255,590,250,643,234,709,207"/>
+<area shape="rect" id="Node000024" href="$air__data_8c.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure." alt="" coords="439,145,644,173"/>
+<area shape="poly" id="edge24_Node000018_Node000024" title=" " alt="" coords="674,178,645,176,644,171,679,177"/>
+<area shape="rect" id="Node000020" href="$air__data_8c.html#a65c345f7df654fe8c978b96a3223d956" title=" " alt="" coords="261,197,391,225"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="442,212,393,214,391,209,447,210"/>
+<area shape="rect" id="Node000022" href="$air__data_8c.html#a2216c6b47abb59f3925a6aa820f2d8f4" title=" " alt="" coords="278,249,374,277"/>
+<area shape="poly" id="edge21_Node000019_Node000022" title=" " alt="" coords="464,231,375,254,373,249,468,228"/>
+<area shape="rect" id="Node000021" href="$air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization." alt="" coords="58,275,160,302"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="269,233,152,276,149,272,272,229"/>
+<area shape="poly" id="edge22_Node000022_Node000021" title=" " alt="" coords="261,272,162,285,159,280,265,269"/>
+<area shape="rect" id="Node000025" href="$ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title=" " alt="" coords="262,145,390,173"/>
+<area shape="poly" id="edge25_Node000024_Node000025" title=" " alt="" coords="421,160,391,162,389,157,426,158"/>
+<area shape="rect" id="Node000026" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="5,145,213,173"/>
+<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="245,161,215,161,212,157,249,158"/>
+<area shape="rect" id="Node000028" href="$air__data_8c.html#ae45565856793d37cbdef462d4da5fb91" title=" " alt="" coords="695,251,799,278"/>
+<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="1076,220,800,260,798,255,1081,218"/>
+<area shape="poly" id="edge29_Node000028_Node000021" title=" " alt="" coords="678,283,645,291,508,301,372,303,161,295,160,290,372,298,507,296,644,286,683,281"/>
+<area shape="rect" id="Node000031" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="891,295,994,322"/>
+<area shape="poly" id="edge32_Node000030_Node000031" title=" " alt="" coords="1073,319,994,315,994,310,1079,318"/>
+<area shape="rect" id="Node000032" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="876,347,1009,374"/>
+<area shape="poly" id="edge33_Node000030_Node000032" title=" " alt="" coords="1074,341,1010,353,1009,348,1079,340"/>
+<area shape="rect" id="Node000037" href="$gps__nmea__send_8c.html#afd0e78a5c8b41c97c7ea228247ab3749" title="Periodic function to send data." alt="" coords="850,520,1035,548"/>
+<area shape="poly" id="edge38_Node000036_Node000037" title=" " alt="" coords="1089,534,1036,536,1035,531,1095,534"/>
+<area shape="rect" id="Node000039" href="$group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2" title=" " alt="" coords="883,572,1002,600"/>
+<area shape="poly" id="edge40_Node000038_Node000039" title=" " alt="" coords="1097,586,1003,588,1002,583,1102,586"/>
+<area shape="poly" id="edge42_Node000040_Node000021" title=" " alt="" coords="692,515,148,306,149,300,696,511"/>
+<area shape="rect" id="Node000042" href="$autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot initialization function." alt="" coords="889,88,996,116"/>
+<area shape="poly" id="edge44_Node000041_Node000042" title=" " alt="" coords="1084,103,997,104,996,99,1089,101"/>
 </map>

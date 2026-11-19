@@ -79,7 +79,6 @@ var holybro__kakute__f7_8h =
     [ "UART6_GPIO_PORT_RX", "holybro__kakute__f7_8h.html#a5839c6584034c6fe16e4267590a994b5", null ],
     [ "UART6_GPIO_RX", "holybro__kakute__f7_8h.html#a1a657746fc043e286c637302b06024a1", null ],
     [ "USE_ADC_2", "holybro__kakute__f7_8h.html#aa8cec6176c74ddb15142542d304aa6a7", null ],
-    [ "USE_BARO_BOARD", "holybro__kakute__f7_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_DSHOT_TIM", "holybro__kakute__f7_8h.html#a980e314eee7f7daad6020173769fc811", null ],
     [ "USE_LED_1", "holybro__kakute__f7_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_PWM1", "holybro__kakute__f7_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65", null ],

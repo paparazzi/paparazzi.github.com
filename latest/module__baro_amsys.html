@@ -102,7 +102,6 @@ Example for airframe file</h1>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_MAX_PRESSURE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;103400&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_SCALE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_FILTER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.&quot;</span> /&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_SYNC_SEND&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_I2C_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;i2cX&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__baro_amsys"></a>
@@ -122,8 +121,6 @@ Define Options</h2>
  Description: sensor scale factor (default: 1)</li>
 <li><b>name:</b> <code>BARO_AMSYS_FILTER</code> <b>value:</b> <em>0.</em> <br  />
  Description: sensor filter (default: 0. max:1)</li>
-<li><b>name:</b> <code>BARO_AMSYS_SYNC_SEND</code> <b>value:</b> <em>None</em> <br  />
- Description: flag to transmit the data as it is acquired</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="functions__baro_amsys"></a>
 Module functions</h1>
@@ -177,7 +174,6 @@ Raw baro_amsys.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_MAX_PRESSURE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;103400&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;max sensor pressure (Pa) (default: 103400 for -0150)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_SCALE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor scale factor (default: 1)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_FILTER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor filter (default: 0. max:1)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BARO_AMSYS_SYNC_SEND&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;flag to transmit the data as it is acquired&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
@@ -189,7 +185,7 @@ Raw baro_amsys.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">i2c</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">i2c</span>,<span class="keyword">air_data</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">baro</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line"> </div>

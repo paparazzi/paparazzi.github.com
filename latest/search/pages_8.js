@@ -5,10 +5,8 @@ var searchData=
   ['81_2',['81',['../paparazzi_messages.html#GENERIC_COM',1,'GENERIC_COM (ID 81)'],['../paparazzi_messages.html#STEREOCAM_VELOCITY',1,'STEREOCAM_VELOCITY (ID 81)']]],
   ['82_3',['82',['../paparazzi_messages.html#FORMATION_SLOT_TM',1,'FORMATION_SLOT_TM (ID 82)'],['../paparazzi_messages.html#STEREOCAM_STATE',1,'STEREOCAM_STATE (ID 82)']]],
   ['83_4',['83',['../paparazzi_messages.html#FORMATION_STATUS_TM',1,'FORMATION_STATUS_TM (ID 83)'],['../paparazzi_messages.html#STEREOCAM_FOLLOW_ME',1,'STEREOCAM_FOLLOW_ME (ID 83)']]],
-  ['84_5',['BMP_STATUS (ID 84)',['../paparazzi_messages.html#BMP_STATUS',1,'']]],
-  ['85_6',['MLX_STATUS (ID 85)',['../paparazzi_messages.html#MLX_STATUS',1,'']]],
-  ['86_7',['TMP_STATUS (ID 86)',['../paparazzi_messages.html#TMP_STATUS',1,'']]],
-  ['87_8',['WIND_INFO_RET (ID 87)',['../paparazzi_messages.html#WIND_INFO_RET',1,'']]],
-  ['88_9',['SCP_STATUS (ID 88)',['../paparazzi_messages.html#SCP_STATUS',1,'']]],
-  ['89_10',['SHT_STATUS (ID 89)',['../paparazzi_messages.html#SHT_STATUS',1,'']]]
+  ['85_5',['MLX_STATUS (ID 85)',['../paparazzi_messages.html#MLX_STATUS',1,'']]],
+  ['86_6',['TMP_STATUS (ID 86)',['../paparazzi_messages.html#TMP_STATUS',1,'']]],
+  ['87_7',['WIND_INFO_RET (ID 87)',['../paparazzi_messages.html#WIND_INFO_RET',1,'']]],
+  ['89_8',['SHT_STATUS (ID 89)',['../paparazzi_messages.html#SHT_STATUS',1,'']]]
 ];

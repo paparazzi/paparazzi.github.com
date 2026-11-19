@@ -116,7 +116,6 @@ var nucleo144__f767zi_8h =
     [ "UART8_GPIO_PORT_RX", "nucleo144__f767zi_8h.html#a0347be15f136fd48ab8192fa101109db", null ],
     [ "UART8_GPIO_RX", "nucleo144__f767zi_8h.html#afe9c0c4cb75f1c36995b5d548b23e6cf", null ],
     [ "USE_ADC_9", "nucleo144__f767zi_8h.html#adfaeefbfc9ae1699e43972664d02c72c", null ],
-    [ "USE_BARO_BOARD", "nucleo144__f767zi_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_DSHOT_TIM4", "nucleo144__f767zi_8h.html#aabdfad895e4e3a16cdf8226a64aa0ed5", null ],
     [ "USE_LED_1", "nucleo144__f767zi_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "nucleo144__f767zi_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],

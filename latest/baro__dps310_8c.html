@@ -98,40 +98,50 @@ $(function(){initNavTree('baro__dps310_8c.html','',''); });
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="baro__dps310_8h_source.html">baro_dps310.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for baro_dps310.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__dps310_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2sensors_2baro__dps310_8c" loading="lazy" alt=""/></div>
 <map name="asw_2airborne_2modules_2sensors_2baro__dps310_8c" id="asw_2airborne_2modules_2sensors_2baro__dps310_8c">
-<area shape="rect" title="Infineon DPS310 I2C sensor interface." alt="" coords="153,5,326,50"/>
-<area shape="rect" href="baro__dps310_8h.html" title="Infineon DPS310 I2C sensor interface." alt="" coords="104,98,220,126"/>
-<area shape="poly" title=" " alt="" coords="218,53,187,88,183,85,220,48"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="245,98,391,126"/>
-<area shape="poly" title=" " alt="" coords="260,48,297,86,292,87,260,53"/>
-<area shape="rect" href="dps310__i2c_8h.html" title="Driver for the Infineon DPS310 barometer (I2C)." alt="" coords="87,174,232,218"/>
-<area shape="poly" title=" " alt="" coords="162,124,163,158,158,157,161,129"/>
-<area shape="rect" href="dps310__regs_8h.html" title="Register definitions for Infineon DPS310 pressure sensor." alt="" coords="5,266,151,311"/>
-<area shape="poly" title=" " alt="" coords="139,221,109,257,105,254,141,216"/>
-<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="174,275,307,302"/>
-<area shape="poly" title=" " alt="" coords="179,216,221,263,216,264,178,221"/>
-<area shape="rect" title=" " alt="" coords="65,359,118,387"/>
-<area shape="poly" title=" " alt="" coords="82,309,89,344,84,343,81,314"/>
-<area shape="poly" title=" " alt="" coords="215,305,130,353,127,349,218,301"/>
-<area shape="rect" title=" " alt="" coords="149,359,316,387"/>
-<area shape="poly" title=" " alt="" coords="241,301,238,345,233,342,238,305"/>
-<area shape="rect" href="threads_8h.html" title=" " alt="" coords="340,359,514,387"/>
-<area shape="poly" title=" " alt="" coords="271,300,386,352,381,353,270,306"/>
-<area shape="rect" title=" " alt="" coords="171,443,252,471"/>
-<area shape="poly" title=" " alt="" coords="393,387,264,437,258,440,256,435,262,432,388,388"/>
-<area shape="rect" title=" " alt="" coords="276,435,438,479"/>
-<area shape="poly" title=" " alt="" coords="418,386,387,425,384,420,414,388"/>
-<area shape="rect" title=" " alt="" coords="462,443,532,471"/>
-<area shape="poly" title=" " alt="" coords="440,385,478,432,473,431,437,390"/>
-<area shape="rect" title=" " alt="" coords="556,443,629,471"/>
-<area shape="poly" title=" " alt="" coords="455,385,555,436,550,436,453,390"/>
-<area shape="rect" title=" " alt="" coords="256,182,382,210"/>
-<area shape="poly" title=" " alt="" coords="319,124,321,168,316,166,317,129"/>
+<area shape="rect" title="Infineon DPS310 I2C sensor interface." alt="" coords="247,5,420,50"/>
+<area shape="rect" href="baro__dps310_8h.html" title="Infineon DPS310 I2C sensor interface." alt="" coords="509,98,625,126"/>
+<area shape="poly" title=" " alt="" coords="396,48,518,91,513,93,396,53"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="50,98,196,126"/>
+<area shape="poly" title=" " alt="" coords="276,53,173,94,170,90,280,49"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="248,98,420,126"/>
+<area shape="poly" title=" " alt="" coords="335,48,336,83,331,82,333,53"/>
+<area shape="rect" href="dps310__i2c_8h.html" title="Driver for the Infineon DPS310 barometer (I2C)." alt="" coords="560,174,705,218"/>
+<area shape="poly" title=" " alt="" coords="578,124,608,162,603,161,577,129"/>
+<area shape="rect" href="dps310__regs_8h.html" title="Register definitions for Infineon DPS310 pressure sensor." alt="" coords="397,266,542,311"/>
+<area shape="poly" title=" " alt="" coords="596,218,523,261,520,256,591,220"/>
+<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="566,275,699,302"/>
+<area shape="poly" title=" " alt="" coords="634,217,635,261,630,258,631,221"/>
+<area shape="rect" title=" " alt="" coords="443,359,496,387"/>
+<area shape="poly" title=" " alt="" coords="472,309,472,345,468,342,468,313"/>
+<area shape="poly" title=" " alt="" coords="609,302,510,354,508,349,604,304"/>
+<area shape="rect" title=" " alt="" coords="534,359,702,387"/>
+<area shape="poly" title=" " alt="" coords="632,301,625,346,621,342,628,305"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="725,359,900,387"/>
+<area shape="poly" title=" " alt="" coords="662,300,772,352,767,352,661,306"/>
+<area shape="rect" title=" " alt="" coords="556,443,637,471"/>
+<area shape="poly" title=" " alt="" coords="779,387,649,437,643,440,642,434,648,432,773,388"/>
+<area shape="rect" title=" " alt="" coords="661,435,823,479"/>
+<area shape="poly" title=" " alt="" coords="804,386,772,425,769,420,799,388"/>
+<area shape="rect" title=" " alt="" coords="847,443,917,471"/>
+<area shape="poly" title=" " alt="" coords="825,385,864,432,859,430,823,390"/>
+<area shape="rect" title=" " alt="" coords="941,443,1014,471"/>
+<area shape="poly" title=" " alt="" coords="840,385,940,436,935,436,838,390"/>
+<area shape="rect" title=" " alt="" coords="5,182,132,210"/>
+<area shape="poly" title=" " alt="" coords="113,129,88,171,83,168,115,124"/>
+<area shape="poly" title=" " alt="" coords="262,128,226,146,210,159,196,175,189,196,196,217,218,247,245,273,275,295,307,314,373,343,431,362,425,363,371,348,305,319,272,300,241,277,214,250,191,220,183,196,192,172,206,155,224,142,266,124"/>
+<area shape="rect" title=" " alt="" coords="449,182,536,210"/>
+<area shape="poly" title=" " alt="" coords="359,124,456,174,451,175,359,129"/>
+<area shape="rect" title=" " alt="" coords="206,182,275,210"/>
+<area shape="poly" title=" " alt="" coords="317,128,268,174,265,170,321,124"/>
+<area shape="rect" title=" " alt="" coords="299,182,425,210"/>
+<area shape="poly" title=" " alt="" coords="339,124,355,168,350,167,338,129"/>
 </map>
 </div>
 </div>
@@ -172,9 +182,9 @@ Variables</h2></td></tr>
 
 <p>default slave address </p>
 
-<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00040">40</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00036">36</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__dps310_8c_source.html#l00045">baro_dps310_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__dps310_8c_source.html#l00041">baro_dps310_init()</a>.</p>
 
 </div>
 </div>
@@ -194,9 +204,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00055">55</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00051">51</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__dps310_8c_source.html#l00043">baro_dps310</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00080">BARO_DPS310_SENDER_ID</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="dps310__i2c_8c_source.html#l00290">dps310_i2c_event()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>.</p>
+<p class="reference">References <a class="el" href="baro__dps310_8c_source.html#l00039">baro_dps310</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00086">BARO_DPS310_SENDER_ID</a>, <a class="el" href="dps310__i2c_8c_source.html#l00290">dps310_i2c_event()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, and <a class="el" href="abi__common_8h_source.html#l00091">TEMPERATURE_TYPE_BARO</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
@@ -238,9 +248,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00045">45</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00041">41</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__dps310_8c_source.html#l00043">baro_dps310</a>, <a class="el" href="dps310__i2c_8c_source.html#l00174">dps310_i2c_init()</a>, and <a class="el" href="baro__dps310_8c_source.html#l00040">DPS310_SLAVE_ADDR</a>.</p>
+<p class="reference">References <a class="el" href="baro__dps310_8c_source.html#l00039">baro_dps310</a>, <a class="el" href="dps310__i2c_8c_source.html#l00174">dps310_i2c_init()</a>, and <a class="el" href="baro__dps310_8c_source.html#l00036">DPS310_SLAVE_ADDR</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
@@ -270,9 +280,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00050">50</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00046">46</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__dps310_8c_source.html#l00043">baro_dps310</a>, and <a class="el" href="dps310__i2c_8c_source.html#l00199">dps310_i2c_periodic()</a>.</p>
+<p class="reference">References <a class="el" href="baro__dps310_8c_source.html#l00039">baro_dps310</a>, and <a class="el" href="dps310__i2c_8c_source.html#l00199">dps310_i2c_periodic()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
@@ -309,9 +319,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00043">43</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__dps310_8c_source.html#l00039">39</a> of file <a class="el" href="baro__dps310_8c_source.html">baro_dps310.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__dps310_8c_source.html#l00055">baro_dps310_event()</a>, <a class="el" href="baro__dps310_8c_source.html#l00045">baro_dps310_init()</a>, and <a class="el" href="baro__dps310_8c_source.html#l00050">baro_dps310_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__dps310_8c_source.html#l00051">baro_dps310_event()</a>, <a class="el" href="baro__dps310_8c_source.html#l00041">baro_dps310_init()</a>, and <a class="el" href="baro__dps310_8c_source.html#l00046">baro_dps310_periodic()</a>.</p>
 
 </div>
 </div>

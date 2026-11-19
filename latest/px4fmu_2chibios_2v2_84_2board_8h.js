@@ -67,7 +67,6 @@ var px4fmu_2chibios_2v2_84_2board_8h =
     [ "STM32_VDD", "px4fmu_2chibios_2v2_84_2board_8h.html#a839559aab882ed0a1b6d46aa9c228378", null ],
     [ "STM32F407xx", "px4fmu_2chibios_2v2_84_2board_8h.html#a50c9eef9a46dd72bc1e487791702f09c", null ],
     [ "USE_ADC_4", "px4fmu_2chibios_2v2_84_2board_8h.html#a3c7828080fe4221adb89ff72d286254d", null ],
-    [ "USE_BARO_BOARD", "px4fmu_2chibios_2v2_84_2board_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_LED_1", "px4fmu_2chibios_2v2_84_2board_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_PWM0", "px4fmu_2chibios_2v2_84_2board_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95", null ],
     [ "USE_PWM1", "px4fmu_2chibios_2v2_84_2board_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65", null ],

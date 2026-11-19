@@ -144,7 +144,6 @@ var chimera_8h =
     [ "UART8_GPIO_RX", "chimera_8h.html#afe9c0c4cb75f1c36995b5d548b23e6cf", null ],
     [ "UART8_GPIO_TX", "chimera_8h.html#adaa9756d35caf4f05302140e2a98e0d3", null ],
     [ "USE_ADC_7", "chimera_8h.html#a51010b913733e15b47c9ec508b8a22d6", null ],
-    [ "USE_BARO_BOARD", "chimera_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_LED_1", "chimera_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_10", "chimera_8h.html#a14968d73aee030658455890a5d05af4a", null ],
     [ "USE_LED_11", "chimera_8h.html#a9b8cecba72f570c36985133671eb04e5", null ],

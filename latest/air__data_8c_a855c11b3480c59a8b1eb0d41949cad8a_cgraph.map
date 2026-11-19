@@ -1,0 +1,13 @@
+<map id="air_data_finish_calibration" name="air_data_finish_calibration">
+<area shape="rect" id="Node000001" title="Zero the differential pressures (otherwise only check the ones with an offset at rest) and/or line up..." alt="" coords="5,57,198,85"/>
+<area shape="rect" id="Node000002" href="$air__data_8c.html#a51b37a7e917d54e9112b5bbb44b18a1c" title=" " alt="" coords="246,31,402,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,57,233,55,228,56,198,62"/>
+<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="252,83,396,110"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="198,79,239,86,233,87,198,85"/>
+<area shape="rect" id="Node000003" href="$air__data_8c.html#a6c2b5625ad9b65e9d86e7cd37c9aab55" title="Barometers: first the calibrated ones (a barometer that starts late is lined up before it is used)." alt="" coords="450,5,596,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,32,437,30,432,31,403,37"/>
+<area shape="rect" id="Node000004" href="$air__data_8c.html#a73e7a5379d953dbb9b8d5a8714c31ffe" title="Select a sensor: the one of the setting (id) if healthy, otherwise the healthy one with the lowest ra..." alt="" coords="463,57,583,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,52,450,61,445,61,402,58"/>
+<area shape="rect" id="Node000005" href="$air__data_8c.html#a27506607dccc132147824c98fbd24a2b" title="Is the sensor sending valid values." alt="" coords="644,57,825,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="584,69,631,71,626,71,584,74"/>
+</map>

@@ -1,29 +1,28 @@
 <map id="compute_tas_factor" name="compute_tas_factor">
-<area shape="rect" id="Node000001" title="Internal utility function to compute current tas factor if needed." alt="" coords="671,121,822,149"/>
-<area shape="rect" id="Node000002" href="$air__data_8c.html#a63b7d4cb201d930ccf74c1ee6ec6c877" title="Calculate equivalent airspeed from true airspeed." alt="" coords="514,65,623,93"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="683,116,615,96,615,91,689,116"/>
-<area shape="rect" id="Node000005" href="$air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed." alt="" coords="514,177,623,205"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="689,153,616,179,614,174,683,155"/>
-<area shape="rect" id="Node000003" href="$air__data_8c.html#abdd14cec10b066ee747da35cbab63334" title="Parse datalink wind info message." alt="" coords="263,5,464,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="511,60,465,47,426,36,426,31,467,42,516,59"/>
-<area shape="rect" id="Node000004" href="$wind__estimation__quadrotor_8c.html#a1a51ee96e2d65f6f7986aba14209781c" title=" " alt="" coords="264,57,463,102"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="496,80,464,82,463,77,501,79"/>
-<area shape="rect" id="Node000006" href="$ins__mekf__wind__wrapper_8c.html#a01f1ac7a540ba839e6b5773c93418970" title=" " alt="" coords="314,229,413,257"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="501,208,414,233,413,228,496,209"/>
-<area shape="rect" id="Node000007" href="$air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title=" " alt="" coords="314,177,413,205"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="496,192,414,194,413,189,501,191"/>
-<area shape="rect" id="Node000011" href="$air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title=" " alt="" coords="300,125,427,153"/>
-<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="496,174,421,156,421,151,501,173"/>
-<area shape="rect" id="Node000012" href="$air__data_8c.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure." alt="" coords="261,281,466,309"/>
-<area shape="poly" id="edge13_Node000005_Node000012" title=" " alt="" coords="544,214,509,245,467,271,435,283,433,278,465,266,506,241,539,216"/>
-<area shape="rect" id="Node000008" href="$air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization." alt="" coords="58,177,160,205"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="296,193,161,194,160,189,300,189"/>
-<area shape="rect" id="Node000009" href="$ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="57,229,161,257"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="296,206,162,235,161,230,301,203"/>
-<area shape="rect" id="Node000010" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="5,125,213,153"/>
-<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="296,179,180,156,180,151,301,177"/>
-<area shape="poly" id="edge11_Node000011_Node000008" title=" " alt="" coords="282,157,161,183,160,178,286,153"/>
-<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="282,140,214,142,212,137,286,138"/>
-<area shape="rect" id="Node000013" href="$ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title=" " alt="" coords="45,281,173,309"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="242,295,173,298,173,293,247,295"/>
+<area shape="rect" id="Node000001" title="Internal utility function to compute the current tas factor." alt="" coords="850,121,1000,149"/>
+<area shape="rect" id="Node000002" href="$air__data_8c.html#a63b7d4cb201d930ccf74c1ee6ec6c877" title="Calculate equivalent airspeed from true airspeed." alt="" coords="692,65,802,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="862,116,793,96,794,91,867,116"/>
+<area shape="rect" id="Node000005" href="$air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed." alt="" coords="692,151,802,178"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="837,150,802,158,802,153,832,151"/>
+<area shape="rect" id="Node000003" href="$air__data_8c.html#abdd14cec10b066ee747da35cbab63334" title="Parse datalink wind info message." alt="" coords="442,5,642,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="689,60,644,47,604,36,604,31,645,42,695,60"/>
+<area shape="rect" id="Node000004" href="$wind__estimation__quadrotor_8c.html#a1a51ee96e2d65f6f7986aba14209781c" title=" " alt="" coords="442,57,641,102"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="674,80,642,82,641,77,680,79"/>
+<area shape="rect" id="Node000006" href="$air__data_8c.html#afd13e85a2620e95f974ec39d4b3644f4" title=" " alt="" coords="460,125,624,153"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="674,156,624,152,624,147,679,156"/>
+<area shape="rect" id="Node000010" href="$ins__mekf__wind__wrapper_8c.html#a01f1ac7a540ba839e6b5773c93418970" title=" " alt="" coords="492,177,591,205"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="679,173,592,187,591,182,674,174"/>
+<area shape="rect" id="Node000011" href="$air__data_8c.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure." alt="" coords="439,229,644,257"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="711,186,645,219,607,231,606,226,643,214,705,187"/>
+<area shape="rect" id="Node000007" href="$air__data_8c.html#a65c345f7df654fe8c978b96a3223d956" title=" " alt="" coords="261,125,391,153"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="442,140,392,142,391,137,447,139"/>
+<area shape="rect" id="Node000009" href="$air__data_8c.html#a2216c6b47abb59f3925a6aa820f2d8f4" title=" " alt="" coords="278,177,374,205"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="469,157,375,182,373,177,464,158"/>
+<area shape="rect" id="Node000008" href="$air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization." alt="" coords="58,152,160,180"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="243,150,161,162,160,157,248,148"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="260,185,161,174,161,169,265,183"/>
+<area shape="rect" id="Node000012" href="$ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title=" " alt="" coords="262,229,390,257"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="421,243,390,246,390,241,426,243"/>
+<area shape="rect" id="Node000013" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="5,229,213,257"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="244,243,213,246,213,241,250,243"/>
 </map>

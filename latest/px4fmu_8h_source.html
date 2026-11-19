@@ -479,42 +479,38 @@ $(function(){initNavTree('px4fmu_8h_source.html','',''); });
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">  397</a></span><span class="preprocessor">#define SPI_SELECT_SLAVE4_PORT GPIOD</span></div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aaaf3b422873946314dfec6703a3a5580">  398</a></span><span class="preprocessor">#define SPI_SELECT_SLAVE4_PIN GPIO10</span></div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span></div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  407</a></span><span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span></div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aead66bc65b8e434c97f28429baeb2800">  413</a></span><span class="preprocessor">#define SDIO_D0_PORT GPIOC</span></div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">  414</a></span><span class="preprocessor">#define SDIO_D0_PIN GPIO8</span></div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#abf25aa536f76d47dc6dc73da99210ac7">  415</a></span><span class="preprocessor">#define SDIO_D1_PORT GPIOC</span></div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7769af3a5d7785eb756c5d0378ed7051">  416</a></span><span class="preprocessor">#define SDIO_D1_PIN GPIO9</span></div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a719da4653e9f8f406b223235e09bf853">  417</a></span><span class="preprocessor">#define SDIO_D2_PORT GPIOC</span></div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9f35b196f10e4942483d526f7f25df31">  418</a></span><span class="preprocessor">#define SDIO_D2_PIN GPIO10</span></div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a1307338bc6abca9bbc5a1b217eee257e">  419</a></span><span class="preprocessor">#define SDIO_D3_PORT GPIOC</span></div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad62e199253d055f0de7aa50ee2492263">  420</a></span><span class="preprocessor">#define SDIO_D3_PIN GPIO11</span></div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">  421</a></span><span class="preprocessor">#define SDIO_CK_PORT GPIOC</span></div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7306050aa843659659499bde3429b417">  422</a></span><span class="preprocessor">#define SDIO_CK_PIN GPIO12</span></div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a2f973750f9134ee2fa55e004db3c6edc">  423</a></span><span class="preprocessor">#define SDIO_CMD_PORT GPIOD</span></div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">  424</a></span><span class="preprocessor">#define SDIO_CMD_PIN GPIO2</span></div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">  425</a></span><span class="preprocessor">#define SDIO_AF 12</span></div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="comment">// bat monitoring for file closing</span></div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a10df201a6a0340fdb61816a617b6bab9">  427</a></span><span class="preprocessor">#define SDLOG_BAT_ADC ADCD1</span></div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afa171425c899787769e5d3612c80acd2">  428</a></span><span class="preprocessor">#define SDLOG_BAT_CHAN AD1_1_CHANNEL</span></div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="comment">// usb led status</span></div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3eca81ff4917508b17002a96844e0904">  430</a></span><span class="preprocessor">#define SDLOG_USB_LED 3</span></div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">  431</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_PORT GPIOA</span></div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a22e2edaeffd24afc57074815c42628d7">  432</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_PIN GPIO9</span></div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="comment"> * Actuators for fixedwing</span></div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> <span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  438</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">  439</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorPwmSet</span></div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  440</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  441</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span> </div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_PX4FMU_4_00_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aead66bc65b8e434c97f28429baeb2800">  403</a></span><span class="preprocessor">#define SDIO_D0_PORT GPIOC</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">  404</a></span><span class="preprocessor">#define SDIO_D0_PIN GPIO8</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#abf25aa536f76d47dc6dc73da99210ac7">  405</a></span><span class="preprocessor">#define SDIO_D1_PORT GPIOC</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7769af3a5d7785eb756c5d0378ed7051">  406</a></span><span class="preprocessor">#define SDIO_D1_PIN GPIO9</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a719da4653e9f8f406b223235e09bf853">  407</a></span><span class="preprocessor">#define SDIO_D2_PORT GPIOC</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9f35b196f10e4942483d526f7f25df31">  408</a></span><span class="preprocessor">#define SDIO_D2_PIN GPIO10</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a1307338bc6abca9bbc5a1b217eee257e">  409</a></span><span class="preprocessor">#define SDIO_D3_PORT GPIOC</span></div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad62e199253d055f0de7aa50ee2492263">  410</a></span><span class="preprocessor">#define SDIO_D3_PIN GPIO11</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">  411</a></span><span class="preprocessor">#define SDIO_CK_PORT GPIOC</span></div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7306050aa843659659499bde3429b417">  412</a></span><span class="preprocessor">#define SDIO_CK_PIN GPIO12</span></div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a2f973750f9134ee2fa55e004db3c6edc">  413</a></span><span class="preprocessor">#define SDIO_CMD_PORT GPIOD</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">  414</a></span><span class="preprocessor">#define SDIO_CMD_PIN GPIO2</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">  415</a></span><span class="preprocessor">#define SDIO_AF 12</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment">// bat monitoring for file closing</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a10df201a6a0340fdb61816a617b6bab9">  417</a></span><span class="preprocessor">#define SDLOG_BAT_ADC ADCD1</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afa171425c899787769e5d3612c80acd2">  418</a></span><span class="preprocessor">#define SDLOG_BAT_CHAN AD1_1_CHANNEL</span></div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="comment">// usb led status</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3eca81ff4917508b17002a96844e0904">  420</a></span><span class="preprocessor">#define SDLOG_USB_LED 3</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">  421</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_PORT GPIOA</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a22e2edaeffd24afc57074815c42628d7">  422</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_PIN GPIO9</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="comment"> * Actuators for fixedwing</span></div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> <span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  428</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">  429</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorPwmSet</span></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  430</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  431</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_PX4FMU_4_00_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
 <div class="ttc" id="apx4fmu_2chibios_2v4_80_2board_8h_html"><div class="ttname"><a href="px4fmu_2chibios_2v4_80_2board_8h.html">board.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

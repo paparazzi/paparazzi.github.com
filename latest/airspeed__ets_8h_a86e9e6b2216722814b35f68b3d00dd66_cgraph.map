@@ -1,23 +1,19 @@
 <map id="AirspeedEtsEvent" name="AirspeedEtsEvent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,136,141,164"/>
-<area shape="rect" id="Node000002" href="$airspeed__ets_8c.html#a7f798514c3a1c93dcadd33c6ca0d9c5c" title=" " alt="" coords="189,136,373,164"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,147,176,149,171,151,141,152"/>
-<area shape="rect" id="Node000003" href="$sdlog__linux_8c.html#a5dbab0fc3aaf5e3d764409bf7ee63283" title=" " alt="" coords="437,84,554,112"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,133,425,115,419,116,342,138"/>
-<area shape="rect" id="Node000009" href="$group__state__wind__airspeed.html#gae607b9737122008e72eef0c6f6babc7d" title="Set airspeed (float)." alt="" coords="424,136,568,164"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="373,147,410,150,405,150,374,152"/>
-<area shape="rect" id="Node000010" href="$low__pass__filter_8h.html#a9cd545abc016cee074132754efe761c8" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="421,188,570,232"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="333,162,409,185,403,185,333,167"/>
-<area shape="rect" id="Node000004" href="$sdlog__linux_8c.html#a54463e3eaef7b3a74b09bf7c3e7493e9" title=" " alt="" coords="650,84,747,112"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="555,95,637,97,632,98,555,100"/>
-<area shape="rect" id="Node000005" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="827,5,971,33"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="733,81,826,43,842,40,847,38,828,48,735,86"/>
-<area shape="rect" id="Node000006" href="$sdlog__linux_8c.html#a1c7978b19b9c48780aa2c0f4b1f5ea0c" title="Error of a failed write or close: only a full disk is &quot;SD card full&quot;." alt="" coords="831,57,966,85"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="747,89,818,82,813,83,748,94"/>
-<area shape="rect" id="Node000007" href="$sdlog__linux_8c.html#a34c8df496ed3bfb2b84bddfb7331bad0" title=" " alt="" coords="857,109,940,137"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="747,101,844,116,839,116,747,107"/>
-<area shape="rect" id="Node000008" href="$sdlog__linux_8c.html#a2228c14619046b4abaf1d9eeb0da6f9c" title=" " alt="" coords="828,161,970,189"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="736,110,828,146,847,156,842,155,826,151,735,115"/>
-<area shape="rect" id="Node000011" href="$low__pass__filter_8h.html#a3f571d87b033250fbd690646b2533835" title="Update second order low pass filter state with a new value." alt="" coords="618,188,779,232"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="571,207,605,210,600,210,571,212"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,141,86"/>
+<area shape="rect" id="Node000002" href="$airspeed__ets_8c.html#a7f798514c3a1c93dcadd33c6ca0d9c5c" title=" " alt="" coords="189,59,373,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,70,176,71,171,74,142,75"/>
+<area shape="rect" id="Node000003" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="421,32,566,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,58,408,56,403,57,374,64"/>
+<area shape="rect" id="Node000004" href="$sdlog__linux_8c.html#a5dbab0fc3aaf5e3d764409bf7ee63283" title=" " alt="" coords="435,84,552,112"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="373,81,422,89,417,89,373,86"/>
+<area shape="rect" id="Node000005" href="$sdlog__linux_8c.html#a54463e3eaef7b3a74b09bf7c3e7493e9" title=" " alt="" coords="614,84,711,112"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="552,95,601,98,596,98,553,100"/>
+<area shape="rect" id="Node000006" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="759,5,903,33"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="687,81,758,43,772,40,777,38,760,48,689,86"/>
+<area shape="rect" id="Node000007" href="$sdlog__linux_8c.html#a1c7978b19b9c48780aa2c0f4b1f5ea0c" title="Error of a failed write or close: only a full disk is &quot;SD card full&quot;." alt="" coords="763,57,898,85"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="711,88,745,85,750,84,712,93"/>
+<area shape="rect" id="Node000008" href="$sdlog__linux_8c.html#a34c8df496ed3bfb2b84bddfb7331bad0" title=" " alt="" coords="789,109,872,137"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="711,102,776,115,771,115,711,108"/>
+<area shape="rect" id="Node000009" href="$sdlog__linux_8c.html#a2228c14619046b4abaf1d9eeb0da6f9c" title=" " alt="" coords="760,161,902,189"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="689,110,760,146,777,156,772,155,758,151,688,115"/>
 </map>

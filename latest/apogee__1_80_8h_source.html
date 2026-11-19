@@ -311,230 +311,225 @@ $(function(){initNavTree('apogee__1_80_8h_source.html','',''); });
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a39794b2e20b2fa0d893184f67a399fe8">  216</a></span><span class="preprocessor">#define I2C2_GPIO_SDA GPIO11</span></div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">/* by default activate onboard baro */</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  221</a></span><span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">/* PWM */</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aa64d6812e84e3875d3747aeb000cb49c">  221</a></span><span class="preprocessor">#define PWM_USE_TIM2 1</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab8668b847469a8d3041eb77d7f1e5a78">  222</a></span><span class="preprocessor">#define PWM_USE_TIM3 1</span></div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">/* PWM */</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aa64d6812e84e3875d3747aeb000cb49c">  226</a></span><span class="preprocessor">#define PWM_USE_TIM2 1</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab8668b847469a8d3041eb77d7f1e5a78">  227</a></span><span class="preprocessor">#define PWM_USE_TIM3 1</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">// PWM_SERVO_x is the index of the servo in the actuators_pwm_values array</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">// enable PWM connectors by default</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#ifndef USE_PWM0</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95">  233</a></span><span class="preprocessor">#define USE_PWM0 1</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">#if USE_PWM0</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">#define PWM_SERVO_0 0</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="preprocessor">#define PWM_SERVO_0_TIMER TIM3</span></div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="preprocessor">#define PWM_SERVO_0_GPIO GPIOB</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#define PWM_SERVO_0_PIN GPIO0</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">#define PWM_SERVO_0_AF GPIO_AF2</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">#define PWM_SERVO_0_OC TIM_OC3</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#define PWM_SERVO_0_OC_BIT (1&lt;&lt;2)</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a955e1cba6d6d06d2c7ac600f7397f181">  244</a></span><span class="preprocessor">#define PWM_SERVO_0_OC_BIT 0</span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#ifndef USE_PWM1</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65">  248</a></span><span class="preprocessor">#define USE_PWM1 1</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="preprocessor">#if USE_PWM1</span></div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="preprocessor">#define PWM_SERVO_1 1</span></div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#define PWM_SERVO_1_TIMER TIM2</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">#define PWM_SERVO_1_GPIO GPIOA</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="preprocessor">#define PWM_SERVO_1_PIN GPIO2</span></div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="preprocessor">#define PWM_SERVO_1_AF GPIO_AF1</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">#define PWM_SERVO_1_OC TIM_OC3</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">#define PWM_SERVO_1_OC_BIT (1&lt;&lt;2)</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ae40a4e27a94283e513359632ceea8de0">  259</a></span><span class="preprocessor">#define PWM_SERVO_1_OC_BIT 0</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#ifndef USE_PWM2</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737">  263</a></span><span class="preprocessor">#define USE_PWM2 1</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="preprocessor">#if USE_PWM2</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="preprocessor">#define PWM_SERVO_2 2</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">#define PWM_SERVO_2_TIMER TIM3</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="preprocessor">#define PWM_SERVO_2_GPIO GPIOB</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="preprocessor">#define PWM_SERVO_2_PIN GPIO5</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#define PWM_SERVO_2_AF GPIO_AF2</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="preprocessor">#define PWM_SERVO_2_OC TIM_OC2</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">#define PWM_SERVO_2_OC_BIT (1&lt;&lt;1)</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a50227ddde1342cae56494d8cedfde915">  274</a></span><span class="preprocessor">#define PWM_SERVO_2_OC_BIT 0</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">#ifndef USE_PWM3</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a">  278</a></span><span class="preprocessor">#define USE_PWM3 1</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">#if USE_PWM3</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">#define PWM_SERVO_3 3</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">#define PWM_SERVO_3_TIMER TIM3</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="preprocessor">#define PWM_SERVO_3_GPIO GPIOB</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="preprocessor">#define PWM_SERVO_3_PIN GPIO4</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#define PWM_SERVO_3_AF GPIO_AF2</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">#define PWM_SERVO_3_OC TIM_OC1</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">#define PWM_SERVO_3_OC_BIT (1&lt;&lt;0)</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a665cb015c3504e5dcfd386c518de25c0">  289</a></span><span class="preprocessor">#define PWM_SERVO_3_OC_BIT 0</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">#ifndef USE_PWM4</span></div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8899afdbd830cb0b81968fc660291934">  293</a></span><span class="preprocessor">#define USE_PWM4 1</span></div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#if USE_PWM4</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="preprocessor">#define PWM_SERVO_4 4</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#define PWM_SERVO_4_TIMER TIM2</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="preprocessor">#define PWM_SERVO_4_GPIO GPIOB</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="preprocessor">#define PWM_SERVO_4_PIN GPIO3</span></div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="preprocessor">#define PWM_SERVO_4_AF GPIO_AF1</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="preprocessor">#define PWM_SERVO_4_OC TIM_OC2</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="preprocessor">#define PWM_SERVO_4_OC_BIT (1&lt;&lt;1)</span></div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d">  304</a></span><span class="preprocessor">#define PWM_SERVO_4_OC_BIT 0</span></div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">#ifndef USE_PWM5</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a402c216e512bc4a39616400af32b7c7f">  308</a></span><span class="preprocessor">#define USE_PWM5 1</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="preprocessor">#if USE_PWM5</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="preprocessor">#define PWM_SERVO_5 5</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">#define PWM_SERVO_5_TIMER TIM2</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="preprocessor">#define PWM_SERVO_5_GPIO GPIOA</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="preprocessor">#define PWM_SERVO_5_PIN GPIO15</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="preprocessor">#define PWM_SERVO_5_AF GPIO_AF1</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="preprocessor">#define PWM_SERVO_5_OC TIM_OC1</span></div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT (1&lt;&lt;0)</span></div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a5d2f3465213306fd37370c884444e5e5">  319</a></span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT 0</span></div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment">// PWM AUX1 (conflict with ADC0)</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">#if USE_PWM6</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="preprocessor">#define PWM_SERVO_6 6</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">#define PWM_SERVO_6_TIMER TIM3</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="preprocessor">#define PWM_SERVO_6_GPIO GPIOB</span></div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">#define PWM_SERVO_6_PIN GPIO1</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="preprocessor">#define PWM_SERVO_6_AF GPIO_AF2</span></div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="preprocessor">#define PWM_SERVO_6_OC TIM_OC4</span></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;3)</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#af94fd6d4d1273791ff04578e48f27857">  332</a></span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT 0</span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#acf01597bf941d804ee26f03eeb763a60">  336</a></span><span class="preprocessor">#define PWM_TIM2_CHAN_MASK (PWM_SERVO_1_OC_BIT|PWM_SERVO_4_OC_BIT|PWM_SERVO_5_OC_BIT)</span></div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a59305d3ed1cc7b7ab5184b1652b0c7d5">  337</a></span><span class="preprocessor">#define PWM_TIM3_CHAN_MASK (PWM_SERVO_0_OC_BIT|PWM_SERVO_2_OC_BIT|PWM_SERVO_3_OC_BIT|PWM_SERVO_6_OC_BIT)</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">// PWM_SERVO_x is the index of the servo in the actuators_pwm_values array</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">// enable PWM connectors by default</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#ifndef USE_PWM0</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95">  228</a></span><span class="preprocessor">#define USE_PWM0 1</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">#if USE_PWM0</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">#define PWM_SERVO_0 0</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#define PWM_SERVO_0_TIMER TIM3</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">#define PWM_SERVO_0_GPIO GPIOB</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#define PWM_SERVO_0_PIN GPIO0</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">#define PWM_SERVO_0_AF GPIO_AF2</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">#define PWM_SERVO_0_OC TIM_OC3</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="preprocessor">#define PWM_SERVO_0_OC_BIT (1&lt;&lt;2)</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a955e1cba6d6d06d2c7ac600f7397f181">  239</a></span><span class="preprocessor">#define PWM_SERVO_0_OC_BIT 0</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#ifndef USE_PWM1</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65">  243</a></span><span class="preprocessor">#define USE_PWM1 1</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="preprocessor">#if USE_PWM1</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">#define PWM_SERVO_1 1</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#define PWM_SERVO_1_TIMER TIM2</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#define PWM_SERVO_1_GPIO GPIOA</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">#define PWM_SERVO_1_PIN GPIO2</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="preprocessor">#define PWM_SERVO_1_AF GPIO_AF1</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="preprocessor">#define PWM_SERVO_1_OC TIM_OC3</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#define PWM_SERVO_1_OC_BIT (1&lt;&lt;2)</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ae40a4e27a94283e513359632ceea8de0">  254</a></span><span class="preprocessor">#define PWM_SERVO_1_OC_BIT 0</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">#ifndef USE_PWM2</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737">  258</a></span><span class="preprocessor">#define USE_PWM2 1</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="preprocessor">#if USE_PWM2</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#define PWM_SERVO_2 2</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#define PWM_SERVO_2_TIMER TIM3</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="preprocessor">#define PWM_SERVO_2_GPIO GPIOB</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="preprocessor">#define PWM_SERVO_2_PIN GPIO5</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="preprocessor">#define PWM_SERVO_2_AF GPIO_AF2</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="preprocessor">#define PWM_SERVO_2_OC TIM_OC2</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">#define PWM_SERVO_2_OC_BIT (1&lt;&lt;1)</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a50227ddde1342cae56494d8cedfde915">  269</a></span><span class="preprocessor">#define PWM_SERVO_2_OC_BIT 0</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">#ifndef USE_PWM3</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a">  273</a></span><span class="preprocessor">#define USE_PWM3 1</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">#if USE_PWM3</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="preprocessor">#define PWM_SERVO_3 3</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">#define PWM_SERVO_3_TIMER TIM3</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="preprocessor">#define PWM_SERVO_3_GPIO GPIOB</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="preprocessor">#define PWM_SERVO_3_PIN GPIO4</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">#define PWM_SERVO_3_AF GPIO_AF2</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">#define PWM_SERVO_3_OC TIM_OC1</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">#define PWM_SERVO_3_OC_BIT (1&lt;&lt;0)</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a665cb015c3504e5dcfd386c518de25c0">  284</a></span><span class="preprocessor">#define PWM_SERVO_3_OC_BIT 0</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">#ifndef USE_PWM4</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8899afdbd830cb0b81968fc660291934">  288</a></span><span class="preprocessor">#define USE_PWM4 1</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">#if USE_PWM4</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="preprocessor">#define PWM_SERVO_4 4</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">#define PWM_SERVO_4_TIMER TIM2</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">#define PWM_SERVO_4_GPIO GPIOB</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#define PWM_SERVO_4_PIN GPIO3</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#define PWM_SERVO_4_AF GPIO_AF1</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="preprocessor">#define PWM_SERVO_4_OC TIM_OC2</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#define PWM_SERVO_4_OC_BIT (1&lt;&lt;1)</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d">  299</a></span><span class="preprocessor">#define PWM_SERVO_4_OC_BIT 0</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="preprocessor">#ifndef USE_PWM5</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a402c216e512bc4a39616400af32b7c7f">  303</a></span><span class="preprocessor">#define USE_PWM5 1</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="preprocessor">#if USE_PWM5</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="preprocessor">#define PWM_SERVO_5 5</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">#define PWM_SERVO_5_TIMER TIM2</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="preprocessor">#define PWM_SERVO_5_GPIO GPIOA</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="preprocessor">#define PWM_SERVO_5_PIN GPIO15</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="preprocessor">#define PWM_SERVO_5_AF GPIO_AF1</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="preprocessor">#define PWM_SERVO_5_OC TIM_OC1</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT (1&lt;&lt;0)</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a5d2f3465213306fd37370c884444e5e5">  314</a></span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT 0</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">// PWM AUX1 (conflict with ADC0)</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="preprocessor">#if USE_PWM6</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="preprocessor">#define PWM_SERVO_6 6</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="preprocessor">#define PWM_SERVO_6_TIMER TIM3</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">#define PWM_SERVO_6_GPIO GPIOB</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="preprocessor">#define PWM_SERVO_6_PIN GPIO1</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">#define PWM_SERVO_6_AF GPIO_AF2</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="preprocessor">#define PWM_SERVO_6_OC TIM_OC4</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;3)</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#af94fd6d4d1273791ff04578e48f27857">  327</a></span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT 0</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#acf01597bf941d804ee26f03eeb763a60">  331</a></span><span class="preprocessor">#define PWM_TIM2_CHAN_MASK (PWM_SERVO_1_OC_BIT|PWM_SERVO_4_OC_BIT|PWM_SERVO_5_OC_BIT)</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a59305d3ed1cc7b7ab5184b1652b0c7d5">  332</a></span><span class="preprocessor">#define PWM_TIM3_CHAN_MASK (PWM_SERVO_0_OC_BIT|PWM_SERVO_2_OC_BIT|PWM_SERVO_3_OC_BIT|PWM_SERVO_6_OC_BIT)</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment"> * PPM</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a928661c4b9e032ff7d05f38a3bb952cb">  337</a></span><span class="preprocessor">#define USE_PPM_TIM1 1</span></div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment"> * PPM</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a928661c4b9e032ff7d05f38a3bb952cb">  342</a></span><span class="preprocessor">#define USE_PPM_TIM1 1</span></div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a">  344</a></span><span class="preprocessor">#define PPM_CHANNEL         TIM_IC1</span></div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a9937fa84b1fa330638ac7ce9dd00bf32">  345</a></span><span class="preprocessor">#define PPM_TIMER_INPUT     TIM_IC_IN_TI1</span></div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a5c71cefbac7158c9005191835cc22eed">  346</a></span><span class="preprocessor">#define PPM_IRQ             NVIC_TIM1_CC_IRQ</span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ac96945f89e03dfaf7ac91033ef7f965b">  347</a></span><span class="preprocessor">#define PPM_IRQ2            NVIC_TIM1_UP_TIM10_IRQ</span></div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="comment">// Capture/Compare InteruptEnable and InterruptFlag</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a61e841d4653b41dcbcd5b7f968bba24c">  349</a></span><span class="preprocessor">#define PPM_CC_IE           TIM_DIER_CC1IE</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a582f6248d8a6e48e6acb4fedbe175078">  350</a></span><span class="preprocessor">#define PPM_CC_IF           TIM_SR_CC1IF</span></div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aa47f9c9324344581ee684b4bf0834693">  351</a></span><span class="preprocessor">#define PPM_GPIO_PORT       GPIOA</span></div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ad3ff6dacdc7e56a330541bbbb49911ce">  352</a></span><span class="preprocessor">#define PPM_GPIO_PIN        GPIO8</span></div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a9bc80e11e3a131466e4a223108b55b6c">  353</a></span><span class="preprocessor">#define PPM_GPIO_AF         GPIO_AF1</span></div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment"> * PWM input</span></div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment">// PWM_INPUT1 on TIM1</span></div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab0e09cfcd093956163aaccb0819a955a">  359</a></span><span class="preprocessor">#define PWM_INPUT1_TIMER          TIM1</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="preprocessor">#ifdef PWM_INPUT1_TICKS_PER_USEC</span></div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="preprocessor">#define TIM1_TICKS_PER_USEC PWM_INPUT1_TICKS_PER_USEC</span></div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8838c57ad3a67b5371963cb31183f0d3">  363</a></span><span class="preprocessor">#define PWM_INPUT1_CHANNEL_PERIOD TIM_IC1</span></div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab532f788b8d3b9945d3c85bda5cd7582">  364</a></span><span class="preprocessor">#define PWM_INPUT1_CHANNEL_DUTY   TIM_IC2</span></div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a1e4dda23f41648a28d0e628d151fd0be">  365</a></span><span class="preprocessor">#define PWM_INPUT1_TIMER_INPUT    TIM_IC_IN_TI1</span></div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a7ae25aa665012615939294aa32fb9512">  366</a></span><span class="preprocessor">#define PWM_INPUT1_SLAVE_TRIG     TIM_SMCR_TS_TI1FP1</span></div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab6eab5b8428b7c6b23edb8d599974485">  367</a></span><span class="preprocessor">#define PWM_INPUT1_IRQ            NVIC_TIM1_CC_IRQ</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#adc531387649423a46452300dd2cb530f">  368</a></span><span class="preprocessor">#define PWM_INPUT1_IRQ2           NVIC_TIM1_UP_TIM10_IRQ</span></div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#acfa7ab553a4e786fe58337136a5e628e">  369</a></span><span class="preprocessor">#define PWM_INPUT1_CC_IE          (TIM_DIER_CC1IE | TIM_DIER_CC2IE)</span></div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4c4ac4255adc99302a7ae7ad828a121c">  370</a></span><span class="preprocessor">#define USE_PWM_INPUT_TIM1        TRUE</span></div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aa5e0d0fac0491be02ee61a2a43f789bc">  371</a></span><span class="preprocessor">#define TIM1_PWM_INPUT_IDX        0</span></div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a5fadaf9b075f99f0b3573cdd9b35ab21">  372</a></span><span class="preprocessor">#define TIM1_CC_IF_PERIOD         TIM_SR_CC1IF</span></div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a880bc48c4436c16e8f402ff84b2073e9">  373</a></span><span class="preprocessor">#define TIM1_CC_IF_DUTY           TIM_SR_CC2IF</span></div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4e4f1c1886d0b984d1e0bb2c9b811a0d">  374</a></span><span class="preprocessor">#define TIM1_CCR_PERIOD           TIM1_CCR1</span></div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ad3715e7563120a9b7c0d19ace8282eae">  375</a></span><span class="preprocessor">#define TIM1_CCR_DUTY             TIM1_CCR2</span></div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="comment">// PPM in (aka PA8) is used: not compatible with PPM RC receiver</span></div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a57082fbd09cf4ffb36ede12de84055f5">  377</a></span><span class="preprocessor">#define PWM_INPUT1_GPIO_PORT      GPIOA</span></div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#abbd91072dca14f3f3733e4dda439b11e">  378</a></span><span class="preprocessor">#define PWM_INPUT1_GPIO_PIN       GPIO8</span></div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a781fe04b3bde53d0b15b6eefbc1a8794">  379</a></span><span class="preprocessor">#define PWM_INPUT1_GPIO_AF        GPIO_AF1</span></div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="comment">// PWM_INPUT2 on TIM9</span></div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#af2cc0de7ac6b7c6eb9f3825d3048e0b1">  382</a></span><span class="preprocessor">#define PWM_INPUT2_TIMER          TIM9</span></div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="preprocessor">#ifdef PWM_INPUT2_TICKS_PER_USEC</span></div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="preprocessor">#define TIM9_TICKS_PER_USEC PWM_INPUT2_TICKS_PER_USEC</span></div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aedd96df2e92a495b064752d501423656">  386</a></span><span class="preprocessor">#define PWM_INPUT2_CHANNEL_PERIOD TIM_IC1</span></div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ac238fe8096bda1b11594f9cf70fe3b5d">  387</a></span><span class="preprocessor">#define PWM_INPUT2_CHANNEL_DUTY   TIM_IC2</span></div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aeeaaf5dc4630f383ef772f5f05ec256d">  388</a></span><span class="preprocessor">#define PWM_INPUT2_TIMER_INPUT    TIM_IC_IN_TI1</span></div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4e6612fa4fa8cc1698e656005d2de2ff">  389</a></span><span class="preprocessor">#define PWM_INPUT2_SLAVE_TRIG     TIM_SMCR_TS_TI1FP1</span></div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a014d43e3328cc28c16e39491152058b4">  390</a></span><span class="preprocessor">#define PWM_INPUT2_IRQ            NVIC_TIM1_BRK_TIM9_IRQ</span></div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a482acded9a8cbb84c375d12b83ae51db">  391</a></span><span class="preprocessor">#define PWM_INPUT2_CC_IE          (TIM_DIER_CC3IE | TIM_DIER_CC4IE)</span></div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="preprocessor">#ifdef USE_PWM_INPUT2</span></div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="preprocessor">#define USE_PWM_INPUT_TIM9        TRUE</span></div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a25769db22ad0492afe302ab460f1bff8">  395</a></span><span class="preprocessor">#define USE_PWM_INPUT_TIM9        FALSE</span></div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a2555b099b63f3dba83c104de095ec356">  397</a></span><span class="preprocessor">#define TIM9_PWM_INPUT_IDX        1</span></div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a68354f5339df4082a3db5d585e89df10">  398</a></span><span class="preprocessor">#define TIM9_CC_IF_PERIOD         TIM_SR_CC1IF</span></div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4b686c1d8e5f86059d4fbd7ab9f44908">  399</a></span><span class="preprocessor">#define TIM9_CC_IF_DUTY           TIM_SR_CC2IF</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a823b2be2dd3859f3e8196512fe6076d2">  400</a></span><span class="preprocessor">#define TIM9_CCR_PERIOD           TIM9_CCR1</span></div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#afe58ad92c51cced0ef2d2bffd3639d61">  401</a></span><span class="preprocessor">#define TIM9_CCR_DUTY             TIM9_CCR2</span></div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">// Servo 1 (aka PA2) is used: not compatible with PWM1 (and should be disabled)</span></div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="preprocessor">#if (USE_PWM1 &amp;&amp; USE_PWM_INPUT2)</span></div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="preprocessor">#error &quot;PW1 and PWM_INPUT2 are not compatible&quot;</span></div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a2b514928ef703832ce4e5fbc14056ba3">  406</a></span><span class="preprocessor">#define PWM_INPUT2_GPIO_PORT      GPIOA</span></div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a720d34950af7c141340f0e3e18abd55c">  407</a></span><span class="preprocessor">#define PWM_INPUT2_GPIO_PIN       GPIO2</span></div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a328d996e4247f8d93183a9d01c8d7137">  408</a></span><span class="preprocessor">#define PWM_INPUT2_GPIO_AF        GPIO_AF3</span></div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="comment"> * Spektrum</span></div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="comment">/* The line that is pulled low at power up to initiate the bind process</span></div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="comment"> * PB15: AUX4</span></div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a787b5d0dff7658e5e923331317635545">  417</a></span><span class="preprocessor">#define SPEKTRUM_BIND_PIN GPIO15</span></div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">  418</a></span><span class="preprocessor">#define SPEKTRUM_BIND_PIN_PORT GPIOB</span></div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="comment">/* The line used to send the pulse train for the bind process</span></div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="comment"> * When using UART2 on Apogee, this as to be a different pin than the uart2 rx</span></div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="comment"> * Default pin for this is PA8: PPM_IN</span></div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="preprocessor">#ifndef SPEKTRUM_PRIMARY_BIND_CONF_PORT</span></div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aacd8bd236c914e45e55a7fe73fa569a9">  425</a></span><span class="preprocessor">#define SPEKTRUM_PRIMARY_BIND_CONF_PORT GPIOA</span></div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a6c01b610a4ef6d66079fcbdc464e6208">  426</a></span><span class="preprocessor">#define SPEKTRUM_PRIMARY_BIND_CONF_PIN GPIO8</span></div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span> </div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span><span class="comment"> * IRQ Priorities</span></div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#abf336788eac71daef505f432e8f80602">  432</a></span><span class="preprocessor">#define RTOS_PRIO 2</span></div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a166470e13d9423555f00bf7cc19e2958">  433</a></span><span class="preprocessor">#define NVIC_TIM_IRQ_PRIO (RTOS_PRIO+1)</span></div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a636ff5041f4e741fddf95be4529be2a7">  434</a></span><span class="preprocessor">#define NVIC_I2C_IRQ_PRIO (RTOS_PRIO+2)</span></div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8994f7c1ff31dac6203cb108c17f037b">  435</a></span><span class="preprocessor">#define NVIC_SPI_IRQ_PRIO (RTOS_PRIO+3)</span></div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a02d423d44bf8b1b9ee1b3e0745fc119d">  436</a></span><span class="preprocessor">#define NVIC_UART_IRQ_PRIO (RTOS_PRIO+4)</span></div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#addc98a0d456a1a674054a78239b38059">  437</a></span><span class="preprocessor">#define NVIC_USART_IRQ_PRIO (RTOS_PRIO+4)</span></div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a006a3e3f3935299ac3dfc03cb283c41e">  438</a></span><span class="preprocessor">#define NVIC_ADC_IRQ_PRIO (RTOS_PRIO+5)</span></div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ad1b25396f3821ed53d02ea3e9eebb8fd">  439</a></span><span class="preprocessor">#define NVIC_TIM6_DAC_IRQ_PRIO (RTOS_PRIO+6)</span></div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span> </div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span> </div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_APOGEE_1_00_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a">  339</a></span><span class="preprocessor">#define PPM_CHANNEL         TIM_IC1</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a9937fa84b1fa330638ac7ce9dd00bf32">  340</a></span><span class="preprocessor">#define PPM_TIMER_INPUT     TIM_IC_IN_TI1</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a5c71cefbac7158c9005191835cc22eed">  341</a></span><span class="preprocessor">#define PPM_IRQ             NVIC_TIM1_CC_IRQ</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ac96945f89e03dfaf7ac91033ef7f965b">  342</a></span><span class="preprocessor">#define PPM_IRQ2            NVIC_TIM1_UP_TIM10_IRQ</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="comment">// Capture/Compare InteruptEnable and InterruptFlag</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a61e841d4653b41dcbcd5b7f968bba24c">  344</a></span><span class="preprocessor">#define PPM_CC_IE           TIM_DIER_CC1IE</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a582f6248d8a6e48e6acb4fedbe175078">  345</a></span><span class="preprocessor">#define PPM_CC_IF           TIM_SR_CC1IF</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aa47f9c9324344581ee684b4bf0834693">  346</a></span><span class="preprocessor">#define PPM_GPIO_PORT       GPIOA</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ad3ff6dacdc7e56a330541bbbb49911ce">  347</a></span><span class="preprocessor">#define PPM_GPIO_PIN        GPIO8</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a9bc80e11e3a131466e4a223108b55b6c">  348</a></span><span class="preprocessor">#define PPM_GPIO_AF         GPIO_AF1</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment"> * PWM input</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment">// PWM_INPUT1 on TIM1</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab0e09cfcd093956163aaccb0819a955a">  354</a></span><span class="preprocessor">#define PWM_INPUT1_TIMER          TIM1</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="preprocessor">#ifdef PWM_INPUT1_TICKS_PER_USEC</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="preprocessor">#define TIM1_TICKS_PER_USEC PWM_INPUT1_TICKS_PER_USEC</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8838c57ad3a67b5371963cb31183f0d3">  358</a></span><span class="preprocessor">#define PWM_INPUT1_CHANNEL_PERIOD TIM_IC1</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab532f788b8d3b9945d3c85bda5cd7582">  359</a></span><span class="preprocessor">#define PWM_INPUT1_CHANNEL_DUTY   TIM_IC2</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a1e4dda23f41648a28d0e628d151fd0be">  360</a></span><span class="preprocessor">#define PWM_INPUT1_TIMER_INPUT    TIM_IC_IN_TI1</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a7ae25aa665012615939294aa32fb9512">  361</a></span><span class="preprocessor">#define PWM_INPUT1_SLAVE_TRIG     TIM_SMCR_TS_TI1FP1</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab6eab5b8428b7c6b23edb8d599974485">  362</a></span><span class="preprocessor">#define PWM_INPUT1_IRQ            NVIC_TIM1_CC_IRQ</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#adc531387649423a46452300dd2cb530f">  363</a></span><span class="preprocessor">#define PWM_INPUT1_IRQ2           NVIC_TIM1_UP_TIM10_IRQ</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#acfa7ab553a4e786fe58337136a5e628e">  364</a></span><span class="preprocessor">#define PWM_INPUT1_CC_IE          (TIM_DIER_CC1IE | TIM_DIER_CC2IE)</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4c4ac4255adc99302a7ae7ad828a121c">  365</a></span><span class="preprocessor">#define USE_PWM_INPUT_TIM1        TRUE</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aa5e0d0fac0491be02ee61a2a43f789bc">  366</a></span><span class="preprocessor">#define TIM1_PWM_INPUT_IDX        0</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a5fadaf9b075f99f0b3573cdd9b35ab21">  367</a></span><span class="preprocessor">#define TIM1_CC_IF_PERIOD         TIM_SR_CC1IF</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a880bc48c4436c16e8f402ff84b2073e9">  368</a></span><span class="preprocessor">#define TIM1_CC_IF_DUTY           TIM_SR_CC2IF</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4e4f1c1886d0b984d1e0bb2c9b811a0d">  369</a></span><span class="preprocessor">#define TIM1_CCR_PERIOD           TIM1_CCR1</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ad3715e7563120a9b7c0d19ace8282eae">  370</a></span><span class="preprocessor">#define TIM1_CCR_DUTY             TIM1_CCR2</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="comment">// PPM in (aka PA8) is used: not compatible with PPM RC receiver</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a57082fbd09cf4ffb36ede12de84055f5">  372</a></span><span class="preprocessor">#define PWM_INPUT1_GPIO_PORT      GPIOA</span></div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#abbd91072dca14f3f3733e4dda439b11e">  373</a></span><span class="preprocessor">#define PWM_INPUT1_GPIO_PIN       GPIO8</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a781fe04b3bde53d0b15b6eefbc1a8794">  374</a></span><span class="preprocessor">#define PWM_INPUT1_GPIO_AF        GPIO_AF1</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="comment">// PWM_INPUT2 on TIM9</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#af2cc0de7ac6b7c6eb9f3825d3048e0b1">  377</a></span><span class="preprocessor">#define PWM_INPUT2_TIMER          TIM9</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="preprocessor">#ifdef PWM_INPUT2_TICKS_PER_USEC</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="preprocessor">#define TIM9_TICKS_PER_USEC PWM_INPUT2_TICKS_PER_USEC</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aedd96df2e92a495b064752d501423656">  381</a></span><span class="preprocessor">#define PWM_INPUT2_CHANNEL_PERIOD TIM_IC1</span></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ac238fe8096bda1b11594f9cf70fe3b5d">  382</a></span><span class="preprocessor">#define PWM_INPUT2_CHANNEL_DUTY   TIM_IC2</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aeeaaf5dc4630f383ef772f5f05ec256d">  383</a></span><span class="preprocessor">#define PWM_INPUT2_TIMER_INPUT    TIM_IC_IN_TI1</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4e6612fa4fa8cc1698e656005d2de2ff">  384</a></span><span class="preprocessor">#define PWM_INPUT2_SLAVE_TRIG     TIM_SMCR_TS_TI1FP1</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a014d43e3328cc28c16e39491152058b4">  385</a></span><span class="preprocessor">#define PWM_INPUT2_IRQ            NVIC_TIM1_BRK_TIM9_IRQ</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a482acded9a8cbb84c375d12b83ae51db">  386</a></span><span class="preprocessor">#define PWM_INPUT2_CC_IE          (TIM_DIER_CC3IE | TIM_DIER_CC4IE)</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">#ifdef USE_PWM_INPUT2</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="preprocessor">#define USE_PWM_INPUT_TIM9        TRUE</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a25769db22ad0492afe302ab460f1bff8">  390</a></span><span class="preprocessor">#define USE_PWM_INPUT_TIM9        FALSE</span></div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a2555b099b63f3dba83c104de095ec356">  392</a></span><span class="preprocessor">#define TIM9_PWM_INPUT_IDX        1</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a68354f5339df4082a3db5d585e89df10">  393</a></span><span class="preprocessor">#define TIM9_CC_IF_PERIOD         TIM_SR_CC1IF</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4b686c1d8e5f86059d4fbd7ab9f44908">  394</a></span><span class="preprocessor">#define TIM9_CC_IF_DUTY           TIM_SR_CC2IF</span></div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a823b2be2dd3859f3e8196512fe6076d2">  395</a></span><span class="preprocessor">#define TIM9_CCR_PERIOD           TIM9_CCR1</span></div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#afe58ad92c51cced0ef2d2bffd3639d61">  396</a></span><span class="preprocessor">#define TIM9_CCR_DUTY             TIM9_CCR2</span></div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="comment">// Servo 1 (aka PA2) is used: not compatible with PWM1 (and should be disabled)</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="preprocessor">#if (USE_PWM1 &amp;&amp; USE_PWM_INPUT2)</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="preprocessor">#error &quot;PW1 and PWM_INPUT2 are not compatible&quot;</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a2b514928ef703832ce4e5fbc14056ba3">  401</a></span><span class="preprocessor">#define PWM_INPUT2_GPIO_PORT      GPIOA</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a720d34950af7c141340f0e3e18abd55c">  402</a></span><span class="preprocessor">#define PWM_INPUT2_GPIO_PIN       GPIO2</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a328d996e4247f8d93183a9d01c8d7137">  403</a></span><span class="preprocessor">#define PWM_INPUT2_GPIO_AF        GPIO_AF3</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="comment"> * Spektrum</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span><span class="comment">/* The line that is pulled low at power up to initiate the bind process</span></div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="comment"> * PB15: AUX4</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a787b5d0dff7658e5e923331317635545">  412</a></span><span class="preprocessor">#define SPEKTRUM_BIND_PIN GPIO15</span></div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">  413</a></span><span class="preprocessor">#define SPEKTRUM_BIND_PIN_PORT GPIOB</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="comment">/* The line used to send the pulse train for the bind process</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment"> * When using UART2 on Apogee, this as to be a different pin than the uart2 rx</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="comment"> * Default pin for this is PA8: PPM_IN</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="preprocessor">#ifndef SPEKTRUM_PRIMARY_BIND_CONF_PORT</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aacd8bd236c914e45e55a7fe73fa569a9">  420</a></span><span class="preprocessor">#define SPEKTRUM_PRIMARY_BIND_CONF_PORT GPIOA</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a6c01b610a4ef6d66079fcbdc464e6208">  421</a></span><span class="preprocessor">#define SPEKTRUM_PRIMARY_BIND_CONF_PIN GPIO8</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="comment"> * IRQ Priorities</span></div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#abf336788eac71daef505f432e8f80602">  427</a></span><span class="preprocessor">#define RTOS_PRIO 2</span></div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a166470e13d9423555f00bf7cc19e2958">  428</a></span><span class="preprocessor">#define NVIC_TIM_IRQ_PRIO (RTOS_PRIO+1)</span></div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a636ff5041f4e741fddf95be4529be2a7">  429</a></span><span class="preprocessor">#define NVIC_I2C_IRQ_PRIO (RTOS_PRIO+2)</span></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8994f7c1ff31dac6203cb108c17f037b">  430</a></span><span class="preprocessor">#define NVIC_SPI_IRQ_PRIO (RTOS_PRIO+3)</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a02d423d44bf8b1b9ee1b3e0745fc119d">  431</a></span><span class="preprocessor">#define NVIC_UART_IRQ_PRIO (RTOS_PRIO+4)</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#addc98a0d456a1a674054a78239b38059">  432</a></span><span class="preprocessor">#define NVIC_USART_IRQ_PRIO (RTOS_PRIO+4)</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a006a3e3f3935299ac3dfc03cb283c41e">  433</a></span><span class="preprocessor">#define NVIC_ADC_IRQ_PRIO (RTOS_PRIO+5)</span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ad1b25396f3821ed53d02ea3e9eebb8fd">  434</a></span><span class="preprocessor">#define NVIC_TIM6_DAC_IRQ_PRIO (RTOS_PRIO+6)</span></div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_APOGEE_1_00_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

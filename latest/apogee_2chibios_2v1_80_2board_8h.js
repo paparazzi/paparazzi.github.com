@@ -457,7 +457,6 @@ var apogee_2chibios_2v1_80_2board_8h =
     [ "USART6_RX", "apogee_2chibios_2v1_80_2board_8h.html#ab47c80a001d5a00ada370a940eaca3cd", null ],
     [ "USART6_TX", "apogee_2chibios_2v1_80_2board_8h.html#ade2e6917da3b1d720b15219427442b0b", null ],
     [ "USE_ADC_4", "apogee_2chibios_2v1_80_2board_8h.html#a3c7828080fe4221adb89ff72d286254d", null ],
-    [ "USE_BARO_BOARD", "apogee_2chibios_2v1_80_2board_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_DSHOT_TIM2", "apogee_2chibios_2v1_80_2board_8h.html#af100426ea5476ef62a78723a2b02ed21", null ],
     [ "USE_DSHOT_TIM3", "apogee_2chibios_2v1_80_2board_8h.html#a71c683b6011228d3539e045fa723ce65", null ],
     [ "USE_LED_1", "apogee_2chibios_2v1_80_2board_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],

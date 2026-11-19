@@ -705,18 +705,6 @@ TUNE_ROLL (ID 43)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">phi_sp  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="BARO_MS5534A"></a>
-BARO_MS5534A (ID 44)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pressure  </td><td class="markdownTableBodyNone">uint32  </td><td class="markdownTableBodyNone">P  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">temp  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone">dC  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">alt  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
 <h2 class="doxsection"><a class="anchor" id="CHIRP"></a>
 CHIRP (ID 45)</h2>
 <table class="markdownTable">
@@ -945,18 +933,6 @@ METEO_STICK (ID 55)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">airspeed  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">calibrated airspeed  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="BARO_ETS"></a>
-BARO_ETS (ID 56)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">adc  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">offset  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">scaled  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
 <h2 class="doxsection"><a class="anchor" id="GPS_LLA"></a>
 GPS_LLA (ID 59)</h2>
 <table class="markdownTable">
@@ -1116,42 +1092,6 @@ DC_INFO (ID 64)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">shutter  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone">decisec  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="AMSYS_BARO"></a>
-AMSYS_BARO (ID 65)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pBaroRaw  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pBaro  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Pa  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pHomePressure  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Pa  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">AltOffset  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">aktuell  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Over_Ground  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tempBaro  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">°C  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="AMSYS_AIRSPEED"></a>
-AMSYS_AIRSPEED (ID 66)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">asRaw  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">asPresure  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Pa  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">asAirspeed  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">asAirsFilt  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">asTemp  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">°C  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
 <h2 class="doxsection"><a class="anchor" id="FLIGHT_BENCHMARK"></a>
 FLIGHT_BENCHMARK (ID 67)</h2>
 <table class="markdownTable">
@@ -1169,18 +1109,6 @@ FLIGHT_BENCHMARK (ID 67)</h2>
 <td class="markdownTableBodyNone">Err_Alt  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Err_Pos  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="MPL3115_BARO"></a>
-MPL3115_BARO (ID 68)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pressure  </td><td class="markdownTableBodyNone">uint32  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">temp  </td><td class="markdownTableBodyNone">int16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">alt  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="AOA"></a>
 AOA (ID 69)</h2>
@@ -1456,20 +1384,6 @@ FORMATION_STATUS_TM (ID 83)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">status  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="BMP_STATUS"></a>
-BMP_STATUS (ID 84)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">UP  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">UT  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">press  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone">Pa  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">temp  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone">10x_deg_celsius  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
 <h2 class="doxsection"><a class="anchor" id="MLX_STATUS"></a>
 MLX_STATUS (ID 85)</h2>
 <table class="markdownTable">
@@ -1514,16 +1428,6 @@ WIND_INFO_RET (ID 87)</h2>
 <td class="markdownTableBodyNone">up  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">vertical component of the wind  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">airspeed  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">local airspeed norm  </td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="SCP_STATUS"></a>
-SCP_STATUS (ID 88)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">press  </td><td class="markdownTableBodyNone">uint32  </td><td class="markdownTableBodyNone">Pa  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">temp  </td><td class="markdownTableBodyNone">int16  </td><td class="markdownTableBodyNone">100x_deg_celsius  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="SHT_STATUS"></a>
 SHT_STATUS (ID 89)</h2>
@@ -1864,42 +1768,6 @@ HTM_STATUS (ID 115)</h2>
 <td class="markdownTableBodyNone">humid  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">rel_hum  </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">temp  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">deg_celsius  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="BARO_MS5611"></a>
-BARO_MS5611 (ID 116)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">d1  </td><td class="markdownTableBodyNone">uint32  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">d2  </td><td class="markdownTableBodyNone">uint32  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pressure  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">hPa  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">temp  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">deg_celsius  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="MS5611_COEFF"></a>
-MS5611_COEFF (ID 117)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">c0  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">c1  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">c2  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">c3  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">c4  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">c5  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">c6  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">c7  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="ATMOSPHERE_CHARGE"></a>
 ATMOSPHERE_CHARGE (ID 118)</h2>
@@ -4040,13 +3908,20 @@ IMU_TURNTABLE (ID 220)</h2>
 </table>
 <h2 class="doxsection"><a class="anchor" id="BARO_RAW"></a>
 BARO_RAW (ID 221)</h2>
+<p>Barometer of air_data, one sensor per message</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">abs  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">sensor_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ABI sender id of the barometer  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">diff  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">raw  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Pa  </td><td class="markdownTableBodyNone">uncalibrated static pressure  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pressure  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Pa  </td><td class="markdownTableBodyNone">calibrated static pressure  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">offset  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Pa  </td><td class="markdownTableBodyNone">calibration offset  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">temperature  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">deg_celcius  </td><td class="markdownTableBodyNone">temperature of the sensor (NaN if unknown)  </td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="AIR_DATA"></a>
 AIR_DATA (ID 222)</h2>
@@ -4067,6 +3942,10 @@ AIR_DATA (ID 222)</h2>
 <td class="markdownTableBodyNone">airspeed  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">Equivalent Air Speed (or Calibrated Air Speed at low speed/altitude)  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tas  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">True Air Speed (when P, T and P_diff are available)  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">baro_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ABI sender id of the barometer in use (0 if none)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">airspeed_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ABI sender id of the airspeed sensor in use (0 if none)  </td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="AMSL"></a>
 AMSL (ID 223)</h2>

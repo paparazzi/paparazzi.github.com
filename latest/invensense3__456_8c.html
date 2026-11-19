@@ -103,6 +103,7 @@ $(function(){initNavTree('invensense3__456_8c.html','',''); });
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;mcu_periph/gpio_arch.h&quot;</code><br />
 <code>#include &quot;std.h&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
@@ -113,117 +114,118 @@ $(function(){initNavTree('invensense3__456_8c.html','',''); });
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="invensense3__456_8c__incl.png" border="0" usemap="#asw_2airborne_2peripherals_2invensense3__456_8c" loading="lazy" alt=""/></div>
 <map name="asw_2airborne_2peripherals_2invensense3__456_8c" id="asw_2airborne_2peripherals_2invensense3__456_8c">
-<area shape="rect" title="Driver for the Invensense 456XY IMUs:" alt="" coords="822,5,996,50"/>
-<area shape="rect" href="invensense3__456_8h.html" title="Driver for the Invensense 456XY IMUs:" alt="" coords="1371,98,1552,143"/>
-<area shape="poly" title=" " alt="" coords="997,41,1358,101,1353,102,997,46"/>
-<area shape="rect" title=" " alt="" coords="1695,452,1748,479"/>
-<area shape="poly" title=" " alt="" coords="997,28,1630,50,1989,70,2138,82,2251,95,2363,107,2465,110,2557,109,2643,112,2723,124,2762,136,2799,152,2836,174,2873,203,2910,238,2946,282,2960,304,2969,333,2969,351,2964,368,2955,387,2939,406,2920,414,2884,421,2765,433,2413,451,2029,462,1763,466,1763,461,2029,456,2413,446,2765,428,2883,416,2919,409,2936,402,2950,384,2959,367,2963,350,2963,334,2955,306,2942,285,2906,242,2870,207,2833,179,2797,157,2760,141,2722,129,2642,117,2557,114,2465,115,2363,113,2250,101,2137,87,1988,75,1629,55,997,34"/>
-<area shape="rect" href="invensense3__456__regs_8h.html" title="Register and address definitions for the Invensense V3 ICM456xy sensors from ardupilot." alt="" coords="290,98,470,143"/>
-<area shape="poly" title=" " alt="" coords="819,44,490,101,486,101,484,96,489,95,824,41"/>
-<area shape="rect" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities." alt="" coords="43,368,168,395"/>
-<area shape="poly" title=" " alt="" coords="820,30,685,35,526,46,449,55,379,66,321,82,279,100,245,126,216,157,190,191,168,227,135,298,115,354,111,351,130,296,164,225,186,188,212,154,242,122,276,96,319,76,378,61,448,49,526,41,685,30,825,28"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="716,283,895,311"/>
-<area shape="poly" title=" " alt="" coords="873,49,847,73,826,99,810,143,803,189,802,232,804,269,799,266,796,232,798,188,805,141,822,97,843,69,868,52"/>
-<area shape="rect" title=" " alt="" coords="24,452,94,479"/>
-<area shape="poly" title=" " alt="" coords="819,29,599,37,464,46,329,61,204,84,150,98,102,116,63,136,33,158,14,183,8,212,8,298,12,337,22,375,47,437,42,439,17,376,7,338,3,299,3,211,10,181,29,154,60,131,100,111,148,93,203,78,328,55,464,40,598,31,824,27"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="412,283,604,311"/>
-<area shape="poly" title=" " alt="" coords="819,46,753,66,676,96,602,137,569,163,539,192,528,210,520,229,511,269,507,266,515,228,523,207,535,189,565,159,599,133,674,91,751,61,824,44"/>
-<area shape="rect" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="836,106,983,134"/>
-<area shape="poly" title=" " alt="" coords="911,48,912,92,907,90,908,53"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1642,106,1787,134"/>
-<area shape="poly" title=" " alt="" coords="997,35,1252,60,1564,95,1629,106,1624,106,1564,101,1251,66,997,40"/>
-<area shape="rect" title=" " alt="" coords="2062,106,2239,134"/>
-<area shape="poly" title=" " alt="" coords="997,27,1188,32,1450,43,1749,63,2051,95,2083,103,2078,103,2050,101,1748,68,1449,48,1188,37,997,33"/>
-<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1826,106,2038,134"/>
-<area shape="poly" title=" " alt="" coords="997,31,1349,53,1573,72,1800,95,1844,103,1839,104,1800,101,1573,77,1348,59,997,36"/>
-<area shape="poly" title=" " alt="" coords="1509,141,1667,216,1737,254,1774,282,1790,313,1795,342,1790,371,1778,405,1767,426,1750,444,1748,439,1762,423,1774,403,1785,369,1789,342,1785,315,1770,285,1735,259,1664,221,1508,146"/>
-<area shape="rect" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="1395,199,1528,227"/>
-<area shape="poly" title=" " alt="" coords="1463,141,1463,185,1459,182,1460,145"/>
-<area shape="poly" title=" " alt="" coords="1506,225,1535,233,1568,239,1599,240,1653,237,1678,239,1702,245,1726,258,1749,282,1760,300,1765,321,1765,363,1753,405,1738,440,1735,435,1748,403,1759,362,1760,321,1755,302,1745,285,1722,263,1700,250,1677,244,1653,243,1599,245,1568,244,1534,238,1505,230"/>
-<area shape="rect" title=" " alt="" coords="1371,283,1538,311"/>
-<area shape="poly" title=" " alt="" coords="1462,226,1459,270,1455,266,1458,229"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1562,283,1734,311"/>
-<area shape="poly" title=" " alt="" coords="1492,225,1607,277,1601,276,1491,230"/>
-<area shape="rect" href="threads_8h.html" title=" " alt="" coords="1173,283,1347,311"/>
-<area shape="poly" title=" " alt="" coords="1432,227,1307,280,1306,275,1426,228"/>
-<area shape="poly" title=" " alt="" coords="1662,309,1681,331,1698,358,1713,398,1720,438,1716,435,1708,400,1694,360,1677,334,1660,314"/>
-<area shape="rect" title=" " alt="" coords="1860,368,1946,395"/>
-<area shape="poly" title=" " alt="" coords="1689,309,1850,363,1845,362,1689,314"/>
-<area shape="rect" title=" " alt="" coords="981,368,1051,395"/>
-<area shape="poly" title=" " alt="" coords="1564,309,1551,314,1413,324,1305,326,1199,334,1137,345,1065,362,1056,364,1055,359,1063,356,1136,340,1198,329,1305,321,1413,318,1550,308,1559,310"/>
-<area shape="rect" title=" " alt="" coords="1558,368,1684,395"/>
-<area shape="poly" title=" " alt="" coords="1646,310,1632,355,1628,351,1642,313"/>
-<area shape="rect" title=" " alt="" coords="1075,368,1157,395"/>
-<area shape="poly" title=" " alt="" coords="1239,311,1153,362,1152,357,1234,312"/>
-<area shape="rect" title=" " alt="" coords="1180,359,1342,404"/>
-<area shape="poly" title=" " alt="" coords="1262,310,1263,345,1259,341,1258,314"/>
-<area shape="rect" title=" " alt="" coords="1366,368,1436,395"/>
-<area shape="poly" title=" " alt="" coords="1283,309,1368,360,1363,359,1282,314"/>
-<area shape="rect" title=" " alt="" coords="1461,368,1534,395"/>
-<area shape="poly" title=" " alt="" coords="1305,309,1449,356,1457,362,1452,361,1447,362,1304,314"/>
-<area shape="poly" title=" " alt="" coords="168,392,231,401,450,421,673,436,1103,454,1459,461,1682,464,1677,464,1459,466,1103,459,673,441,450,426,230,406,168,397"/>
-<area shape="rect" title=" " alt="" coords="172,452,239,479"/>
-<area shape="poly" title=" " alt="" coords="122,393,181,441,175,443,120,398"/>
-<area shape="poly" title=" " alt="" coords="820,309,880,364,927,401,992,420,1081,435,1187,446,1300,453,1520,461,1682,464,1676,464,1520,466,1300,459,1186,451,1081,440,991,426,924,406,877,368,818,314"/>
-<area shape="poly" title=" " alt="" coords="840,309,971,362,965,361,839,314"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="424,368,579,395"/>
-<area shape="poly" title=" " alt="" coords="759,311,565,366,564,360,754,312"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="704,368,856,395"/>
-<area shape="poly" title=" " alt="" coords="803,310,790,355,787,351,799,313"/>
-<area shape="poly" title=" " alt="" coords="580,392,648,401,958,427,1260,444,1682,463,1677,463,1259,450,957,432,648,406,580,398"/>
-<area shape="poly" title=" " alt="" coords="456,396,255,453,253,448,451,395"/>
-<area shape="rect" title=" " alt="" coords="528,452,590,479"/>
-<area shape="poly" title=" " alt="" coords="512,393,543,440,538,438,509,398"/>
-<area shape="poly" title=" " alt="" coords="451,395,413,406,247,437,110,459,109,454,246,432,411,401,445,396"/>
-<area shape="poly" title=" " alt="" coords="833,393,875,401,1112,429,1345,447,1544,456,1682,463,1676,463,1544,462,1345,452,1112,434,874,406,833,398"/>
-<area shape="poly" title=" " alt="" coords="409,310,305,330,261,344,232,361,220,377,213,397,207,437,202,434,208,395,216,375,229,357,259,339,304,325,414,308"/>
-<area shape="poly" title=" " alt="" coords="509,310,506,354,501,350,505,314"/>
-<area shape="poly" title=" " alt="" coords="538,309,569,329,582,342,593,358,599,379,596,401,579,441,575,436,591,400,593,379,588,360,578,346,566,333,537,314"/>
-<area shape="rect" title=" " alt="" coords="243,368,400,395"/>
-<area shape="poly" title=" " alt="" coords="481,311,366,363,364,358,475,312"/>
-<area shape="poly" title=" " alt="" coords="904,133,822,272,819,268,899,136"/>
-<area shape="poly" title=" " alt="" coords="833,123,777,130,712,142,646,162,585,193,565,210,548,230,522,271,518,267,544,226,561,206,583,188,644,157,711,137,777,125,838,122"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="596,191,761,235"/>
-<area shape="poly" title=" " alt="" coords="873,136,749,187,747,182,878,134"/>
-<area shape="rect" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="887,199,1057,227"/>
-<area shape="poly" title=" " alt="" coords="919,132,957,187,952,186,917,137"/>
-<area shape="rect" title=" " alt="" coords="1911,283,2070,311"/>
-<area shape="poly" title=" " alt="" coords="983,123,1232,144,1386,163,1541,188,1620,209,1699,233,1909,280,1903,280,1698,238,1619,214,1539,193,1385,168,1231,149,983,128"/>
-<area shape="poly" title=" " alt="" coords="674,234,667,273,664,318,671,363,680,384,694,402,708,408,737,414,835,425,1128,442,1450,454,1682,463,1677,463,1450,460,1128,448,835,430,737,419,706,413,690,406,676,387,666,365,659,318,662,272,670,238"/>
-<area shape="poly" title=" " alt="" coords="712,233,775,275,770,274,711,238"/>
-<area shape="poly" title=" " alt="" coords="636,235,550,279,548,274,631,237"/>
-<area shape="poly" title=" " alt="" coords="968,226,957,263,948,310,947,335,950,359,958,382,971,402,985,411,1008,419,1080,432,1176,443,1286,450,1511,459,1682,464,1677,464,1511,464,1286,456,1175,448,1079,438,1007,424,982,415,967,406,953,384,945,361,942,335,943,309,952,262,964,229"/>
-<area shape="poly" title=" " alt="" coords="948,227,847,279,845,274,943,228"/>
-<area shape="rect" title=" " alt="" coords="1710,199,1836,227"/>
-<area shape="poly" title=" " alt="" coords="1724,132,1759,187,1754,185,1722,137"/>
-<area shape="poly" title=" " alt="" coords="1927,133,1912,168,1897,212,1891,262,1893,287,1901,310,1914,325,1929,333,1946,341,1960,358,1968,382,1966,393,1959,405,1946,417,1927,427,1875,443,1764,462,1764,457,1874,437,1925,422,1943,412,1955,402,1961,392,1962,382,1955,360,1942,345,1927,337,1910,329,1896,312,1888,288,1885,262,1892,211,1907,166,1922,136"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="3029,368,3168,395"/>
-<area shape="poly" title=" " alt="" coords="2002,132,2051,140,2188,157,2306,166,2506,177,2602,187,2703,205,2815,235,2945,281,3015,317,3073,359,3068,357,3013,322,2943,286,2814,240,2702,210,2601,192,2506,182,2305,171,2188,162,2050,145,2002,137"/>
-<area shape="rect" title=" " alt="" coords="2306,191,2449,235"/>
-<area shape="poly" title=" " alt="" coords="2004,132,2293,190,2288,190,2004,137"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="2073,199,2282,227"/>
-<area shape="poly" title=" " alt="" coords="1968,132,2130,194,2125,193,1967,137"/>
-<area shape="poly" title=" " alt="" coords="3054,395,3011,406,2894,419,2738,430,2366,448,1763,466,1763,461,2366,442,2738,425,2893,414,3010,401,3048,396"/>
-<area shape="rect" title=" " alt="" coords="2908,452,3082,479"/>
-<area shape="poly" title=" " alt="" coords="3084,395,3024,444,3022,439,3079,397"/>
-<area shape="rect" title=" " alt="" coords="3106,452,3297,479"/>
-<area shape="poly" title=" " alt="" coords="3116,393,3176,442,3170,441,3114,398"/>
-<area shape="poly" title=" " alt="" coords="2170,226,2135,270,2111,293,2084,313,2023,345,1961,367,1960,362,2020,340,2081,309,2107,289,2131,266,2165,229"/>
-<area shape="poly" title=" " alt="" coords="2150,227,2035,279,2034,274,2145,228"/>
-<area shape="rect" title=" " alt="" coords="2556,283,2711,311"/>
-<area shape="poly" title=" " alt="" coords="2250,225,2294,233,2547,280,2541,280,2293,238,2250,230"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="2145,283,2348,311"/>
-<area shape="poly" title=" " alt="" coords="2190,225,2228,272,2223,270,2187,230"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2735,283,2932,311"/>
-<area shape="poly" title=" " alt="" coords="2245,225,2294,233,2505,259,2722,283,2717,283,2504,264,2293,238,2245,230"/>
-<area shape="rect" title=" " alt="" coords="2372,283,2532,311"/>
-<area shape="poly" title=" " alt="" coords="2222,225,2396,279,2391,278,2221,230"/>
-<area shape="poly" title=" " alt="" coords="2223,311,2127,358,2002,406,1873,440,1764,460,1763,455,1872,435,2001,401,2124,353,2218,312"/>
-<area shape="rect" title=" " alt="" coords="2166,368,2327,395"/>
-<area shape="poly" title=" " alt="" coords="2249,310,2249,354,2245,350,2245,314"/>
-<area shape="poly" title=" " alt="" coords="2876,309,3045,363,3039,362,2876,314"/>
-<area shape="rect" title=" " alt="" coords="2742,368,2925,395"/>
-<area shape="poly" title=" " alt="" coords="2835,310,2835,354,2831,350,2831,314"/>
+<area shape="rect" title="Driver for the Invensense 456XY IMUs:" alt="" coords="1572,5,1746,50"/>
+<area shape="rect" href="invensense3__456_8h.html" title="Driver for the Invensense 456XY IMUs:" alt="" coords="438,98,618,143"/>
+<area shape="poly" title=" " alt="" coords="1570,39,634,113,633,108,1572,33"/>
+<area shape="rect" title=" " alt="" coords="1169,452,1223,479"/>
+<area shape="poly" title=" " alt="" coords="1568,30,1182,39,925,49,660,65,411,87,300,102,202,119,121,139,60,161,21,185,11,198,8,212,8,298,9,332,15,358,28,380,52,401,77,412,117,422,235,438,389,449,564,456,912,462,1157,465,1152,465,912,467,564,461,389,454,234,443,116,427,75,417,49,406,24,384,10,360,4,333,3,299,3,211,6,196,17,181,57,156,120,133,201,114,299,97,410,82,660,59,925,44,1182,34,1574,29"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="687,283,860,311"/>
+<area shape="poly" title=" " alt="" coords="1569,31,1424,38,1249,50,1085,70,1019,84,970,100,941,117,912,137,862,184,821,232,791,272,788,268,817,228,858,180,909,133,938,113,968,96,1018,78,1084,64,1249,44,1424,33,1574,30"/>
+<area shape="rect" href="invensense3__456__regs_8h.html" title="Register and address definitions for the Invensense V3 ICM456xy sensors from ardupilot." alt="" coords="2703,98,2884,143"/>
+<area shape="poly" title=" " alt="" coords="1746,29,2153,47,2417,67,2684,95,2691,99,2685,99,2684,101,2417,72,2152,53,1747,34"/>
+<area shape="rect" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities." alt="" coords="827,368,952,395"/>
+<area shape="poly" title=" " alt="" coords="1568,29,1493,36,1403,47,1309,68,1263,82,1218,100,1168,127,1119,159,1031,231,960,302,910,358,908,353,956,299,1027,228,1116,155,1165,123,1216,96,1261,77,1307,63,1402,42,1493,31,1573,28"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="1090,283,1270,311"/>
+<area shape="poly" title=" " alt="" coords="1569,30,1475,43,1421,53,1367,68,1313,89,1262,116,1217,150,1180,192,1171,210,1169,229,1173,270,1169,267,1163,229,1166,208,1175,189,1214,146,1260,111,1311,84,1365,63,1420,48,1474,37,1574,29"/>
+<area shape="rect" title=" " alt="" coords="2144,452,2214,479"/>
+<area shape="poly" title=" " alt="" coords="1746,25,1979,29,2124,36,2275,49,2420,70,2549,98,2604,117,2652,138,2691,162,2719,189,2758,244,2772,271,2781,298,2785,325,2781,352,2770,379,2750,406,2722,420,2672,431,2526,448,2362,459,2229,465,2229,460,2361,454,2525,443,2671,426,2720,414,2746,402,2765,376,2776,350,2779,325,2776,299,2767,273,2754,247,2715,192,2688,166,2650,142,2603,122,2547,104,2419,75,2274,55,2124,42,1979,34,1747,30"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1398,283,1589,311"/>
+<area shape="poly" title=" " alt="" coords="1661,48,1660,89,1653,138,1638,190,1626,214,1611,237,1584,262,1552,280,1550,275,1581,258,1607,234,1622,212,1633,188,1648,137,1655,88,1657,52"/>
+<area shape="rect" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="1474,106,1622,134"/>
+<area shape="poly" title=" " alt="" coords="1635,49,1577,99,1575,94,1630,51"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="2907,106,3053,134"/>
+<area shape="poly" title=" " alt="" coords="1746,26,1952,27,2237,36,2565,57,2732,74,2896,95,2922,102,2917,102,2896,101,2732,79,2564,62,2237,41,1951,32,1747,31"/>
+<area shape="rect" title=" " alt="" coords="3077,106,3254,134"/>
+<area shape="poly" title=" " alt="" coords="1746,26,1976,28,2303,37,2681,58,2876,74,3066,95,3099,103,3093,103,3065,101,2875,79,2681,63,2303,42,1976,33,1747,31"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="2287,106,2500,134"/>
+<area shape="poly" title=" " alt="" coords="1746,37,2275,104,2269,104,1746,42"/>
+<area shape="poly" title=" " alt="" coords="435,143,297,183,222,210,154,241,99,277,79,296,65,315,58,336,58,357,66,379,83,402,98,408,130,415,237,427,557,444,907,456,1156,463,1151,464,907,461,557,450,237,432,130,420,97,413,80,406,61,381,52,358,52,335,60,313,75,292,96,272,151,237,220,205,295,178,440,140"/>
+<area shape="rect" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="462,199,594,227"/>
+<area shape="poly" title=" " alt="" coords="529,141,530,185,526,182,527,145"/>
+<area shape="poly" title=" " alt="" coords="536,225,589,321,622,371,652,401,693,419,749,432,891,450,1039,459,1156,464,1151,464,1039,464,891,456,748,437,691,424,649,406,618,374,585,323,533,230"/>
+<area shape="rect" title=" " alt="" coords="384,283,552,311"/>
+<area shape="poly" title=" " alt="" coords="520,226,488,273,485,269,516,229"/>
+<area shape="poly" title=" " alt="" coords="568,225,722,278,717,278,567,230"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="186,283,360,311"/>
+<area shape="poly" title=" " alt="" coords="485,229,329,281,327,276,489,226"/>
+<area shape="poly" title=" " alt="" coords="731,311,695,332,680,345,668,360,659,382,661,392,667,402,692,414,739,425,877,442,1031,454,1156,463,1151,462,1031,459,876,447,738,430,690,419,664,406,656,394,654,382,663,358,676,341,692,328,726,312"/>
+<area shape="rect" title=" " alt="" coords="1577,368,1663,395"/>
+<area shape="poly" title=" " alt="" coords="860,299,1229,320,1423,336,1565,356,1578,362,1573,362,1563,362,1423,342,1228,325,860,305"/>
+<area shape="rect" title=" " alt="" coords="976,368,1045,395"/>
+<area shape="poly" title=" " alt="" coords="820,309,965,356,972,361,967,361,963,362,819,314"/>
+<area shape="rect" title=" " alt="" coords="677,368,803,395"/>
+<area shape="poly" title=" " alt="" coords="770,310,753,355,749,351,766,313"/>
+<area shape="rect" title=" " alt="" coords="285,368,366,395"/>
+<area shape="poly" title=" " alt="" coords="283,309,312,355,306,354,281,314"/>
+<area shape="rect" title=" " alt="" coords="390,359,552,404"/>
+<area shape="poly" title=" " alt="" coords="305,309,407,352,402,353,305,314"/>
+<area shape="rect" title=" " alt="" coords="93,368,163,395"/>
+<area shape="poly" title=" " alt="" coords="248,313,166,362,163,357,252,310"/>
+<area shape="rect" title=" " alt="" coords="187,368,261,395"/>
+<area shape="poly" title=" " alt="" coords="267,310,242,356,238,352,263,313"/>
+<area shape="poly" title=" " alt="" coords="936,393,965,401,1157,454,1152,453,963,406,935,398"/>
+<area shape="rect" title=" " alt="" coords="1441,452,1508,479"/>
+<area shape="poly" title=" " alt="" coords="932,393,965,401,1094,423,1224,440,1428,461,1423,461,1223,445,1094,428,963,406,931,398"/>
+<area shape="poly" title=" " alt="" coords="1158,311,1131,333,1110,360,1104,381,1110,402,1131,427,1158,448,1153,447,1127,431,1106,405,1099,381,1106,358,1127,329,1153,313"/>
+<area shape="poly" title=" " alt="" coords="1155,311,1052,363,1051,358,1150,312"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1397,368,1552,395"/>
+<area shape="poly" title=" " alt="" coords="1228,309,1416,363,1410,363,1227,314"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="1120,368,1272,395"/>
+<area shape="poly" title=" " alt="" coords="1184,309,1193,354,1188,351,1181,314"/>
+<area shape="poly" title=" " alt="" coords="1433,395,1238,455,1237,450,1427,396"/>
+<area shape="poly" title=" " alt="" coords="1477,394,1477,438,1473,434,1473,398"/>
+<area shape="rect" title=" " alt="" coords="1717,452,1779,479"/>
+<area shape="poly" title=" " alt="" coords="1519,393,1705,451,1700,450,1518,398"/>
+<area shape="poly" title=" " alt="" coords="1526,393,1566,401,1726,424,1885,440,2130,461,2125,461,1884,446,1725,429,1565,406,1526,398"/>
+<area shape="poly" title=" " alt="" coords="1198,394,1198,438,1194,434,1194,398"/>
+<area shape="poly" title=" " alt="" coords="1589,309,1759,334,1826,347,1858,357,1866,369,1868,381,1866,393,1858,406,1841,415,1809,424,1719,440,1524,463,1523,457,1718,435,1808,419,1839,410,1854,402,1861,391,1863,381,1861,371,1854,361,1825,352,1758,339,1589,314"/>
+<area shape="poly" title=" " alt="" coords="1492,310,1483,354,1479,351,1488,313"/>
+<area shape="poly" title=" " alt="" coords="1589,308,1773,333,1847,346,1882,357,1889,369,1892,381,1882,405,1865,425,1843,440,1795,459,1794,453,1840,436,1861,421,1878,402,1886,380,1884,371,1878,361,1846,351,1772,339,1589,313"/>
+<area shape="rect" title=" " alt="" coords="1687,368,1844,395"/>
+<area shape="poly" title=" " alt="" coords="1537,309,1710,363,1705,362,1537,314"/>
+<area shape="poly" title=" " alt="" coords="1471,128,1400,138,1320,151,1250,169,1224,180,1206,193,1194,209,1186,228,1181,269,1177,266,1181,227,1189,206,1202,189,1221,175,1249,164,1319,146,1399,133,1476,127"/>
+<area shape="poly" title=" " alt="" coords="1560,132,1576,153,1590,179,1597,208,1595,223,1590,237,1571,261,1545,278,1543,273,1567,257,1586,234,1590,221,1591,208,1585,181,1572,156,1558,137"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="1411,191,1576,235"/>
+<area shape="poly" title=" " alt="" coords="1542,133,1516,179,1513,175,1538,136"/>
+<area shape="rect" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="1216,199,1386,227"/>
+<area shape="poly" title=" " alt="" coords="1515,134,1352,196,1350,191,1510,135"/>
+<area shape="rect" title=" " alt="" coords="1614,283,1773,311"/>
+<area shape="poly" title=" " alt="" coords="1561,132,1611,189,1676,272,1671,270,1607,192,1559,137"/>
+<area shape="poly" title=" " alt="" coords="1453,235,1418,259,1387,285,1364,316,1352,345,1339,374,1314,406,1277,433,1238,452,1236,447,1274,428,1310,402,1334,372,1347,343,1360,314,1383,282,1415,255,1448,237"/>
+<area shape="poly" title=" " alt="" coords="1413,235,1245,282,1244,276,1408,236"/>
+<area shape="poly" title=" " alt="" coords="1495,234,1495,269,1491,266,1492,238"/>
+<area shape="poly" title=" " alt="" coords="1305,225,1310,260,1311,306,1305,357,1297,382,1286,405,1265,430,1238,449,1236,444,1261,426,1282,402,1292,380,1300,356,1306,306,1305,261,1302,230"/>
+<area shape="poly" title=" " alt="" coords="1284,226,1213,277,1211,272,1279,228"/>
+<area shape="rect" title=" " alt="" coords="2917,199,3043,227"/>
+<area shape="poly" title=" " alt="" coords="2982,133,2982,186,2978,182,2978,137"/>
+<area shape="poly" title=" " alt="" coords="2437,132,2489,153,2549,184,2605,227,2629,253,2649,282,2654,297,2649,312,2636,330,2622,341,2605,349,2587,361,2564,386,2553,397,2536,406,2505,414,2460,421,2331,432,1985,445,1429,454,1239,464,1238,459,1429,449,1985,440,2331,427,2459,416,2504,409,2534,401,2550,393,2560,382,2584,357,2603,344,2619,336,2633,327,2644,310,2648,297,2644,284,2625,256,2602,231,2546,188,2487,158,2436,137"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2597,368,2736,395"/>
+<area shape="poly" title=" " alt="" coords="2500,130,2559,139,2615,152,2662,168,2680,178,2693,189,2704,209,2710,230,2710,276,2698,319,2682,356,2679,352,2693,317,2704,275,2705,231,2699,211,2689,192,2677,182,2660,173,2614,157,2558,144,2500,135"/>
+<area shape="rect" title=" " alt="" coords="2322,191,2465,235"/>
+<area shape="poly" title=" " alt="" coords="2395,133,2395,177,2391,173,2392,137"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="2069,199,2278,227"/>
+<area shape="poly" title=" " alt="" coords="2364,134,2220,195,2219,190,2359,135"/>
+<area shape="poly" title=" " alt="" coords="2622,396,2579,406,2405,428,2257,440,2127,446,2006,448,1753,446,1605,448,1429,454,1239,464,1238,459,1429,449,1605,443,1753,441,2006,442,2127,441,2257,435,2405,422,2578,401,2616,396"/>
+<area shape="rect" title=" " alt="" coords="2476,452,2650,479"/>
+<area shape="poly" title=" " alt="" coords="2652,395,2592,444,2590,439,2647,397"/>
+<area shape="rect" title=" " alt="" coords="2674,452,2865,479"/>
+<area shape="poly" title=" " alt="" coords="2684,393,2744,442,2738,441,2682,398"/>
+<area shape="poly" title=" " alt="" coords="2176,225,2173,270,2165,293,2150,313,2132,325,2110,334,2055,347,1990,353,1920,354,1781,353,1721,355,1675,362,1664,365,1664,359,1674,356,1721,350,1781,348,1920,349,1990,347,2054,341,2108,329,2129,320,2146,309,2160,291,2168,269,2172,229"/>
+<area shape="poly" title=" " alt="" coords="2099,227,1786,283,1785,278,2094,228"/>
+<area shape="rect" title=" " alt="" coords="1797,283,1952,311"/>
+<area shape="poly" title=" " alt="" coords="2128,227,1938,281,1937,276,2123,228"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="2432,283,2635,311"/>
+<area shape="poly" title=" " alt="" coords="2231,225,2464,280,2458,279,2231,230"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2211,283,2408,311"/>
+<area shape="poly" title=" " alt="" coords="2196,225,2277,276,2272,274,2195,230"/>
+<area shape="rect" title=" " alt="" coords="1976,283,2136,311"/>
+<area shape="poly" title=" " alt="" coords="2157,227,2088,277,2086,272,2152,228"/>
+<area shape="poly" title=" " alt="" coords="2477,311,2413,333,2351,361,2336,373,2326,384,2315,396,2298,406,1238,465,1238,459,2297,401,2312,392,2322,381,2332,369,2348,357,2411,328,2471,312"/>
+<area shape="rect" title=" " alt="" coords="2361,368,2522,395"/>
+<area shape="poly" title=" " alt="" coords="2521,311,2468,360,2466,355,2516,313"/>
+<area shape="poly" title=" " alt="" coords="2367,309,2597,364,2592,363,2366,314"/>
+<area shape="rect" title=" " alt="" coords="2102,368,2285,395"/>
+<area shape="poly" title=" " alt="" coords="2293,311,2225,361,2223,356,2288,312"/>
 </map>
 </div>
 </div>
@@ -294,11 +296,11 @@ Functions</h2></td></tr>
 <dd>
 false Still busy configuring </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00414">414</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00415">415</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
-<p class="reference">References <a class="el" href="invensense2__regs_8h_source.html#l00192">ACCEL_FS_SEL_SHIFT</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00034">ACCEL_ODR_SHIFT</a>, <a class="el" href="invensense3__456_8h_source.html#l00109">invensense3_456_t::config_idx</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, <a class="el" href="invensense2__regs_8h_source.html#l00164">GYRO_FS_SEL_SHIFT</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00035">GYRO_ODR_SHIFT</a>, <a class="el" href="invensense3__456_8h_source.html#l00112">invensense3_456_t::imu_odr</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00069">INV3BANK_456_IPREG_SYS1_ADDR</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00070">INV3BANK_456_IPREG_SYS2_ADDR</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00068">INV3BANK_456_IPREG_TOP1_ADDR</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00045">INV3REG_456_ACCEL_CONFIG0</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00047">INV3REG_456_FIFO_CONFIG0</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00049">INV3REG_456_FIFO_CONFIG3</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00046">INV3REG_456_GYRO_CONFIG0</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00043">INV3REG_456_PWR_MGMT0</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00063">INV3REG_456_REG_MISC2</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00072">INV_456_BASE_FIFO3_CONFIG_VALUE</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00073">INV_456_FIFO_IF_EN</a>, <a class="el" href="invensense3__456_8c_source.html#l00348">invensense3_456_register_write()</a>, <a class="el" href="invensense3__456_8c_source.html#l00370">invensense3_register_write_bank()</a>, and <a class="el" href="invensense3__456_8h_source.html#l00110">invensense3_456_t::timer</a>.</p>
+<p class="reference">References <a class="el" href="invensense2__regs_8h_source.html#l00192">ACCEL_FS_SEL_SHIFT</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00034">ACCEL_ODR_SHIFT</a>, <a class="el" href="invensense3__456_8h_source.html#l00109">invensense3_456_t::config_idx</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, <a class="el" href="invensense2__regs_8h_source.html#l00164">GYRO_FS_SEL_SHIFT</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00035">GYRO_ODR_SHIFT</a>, <a class="el" href="invensense3__456_8h_source.html#l00112">invensense3_456_t::imu_odr</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00069">INV3BANK_456_IPREG_SYS1_ADDR</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00070">INV3BANK_456_IPREG_SYS2_ADDR</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00068">INV3BANK_456_IPREG_TOP1_ADDR</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00045">INV3REG_456_ACCEL_CONFIG0</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00047">INV3REG_456_FIFO_CONFIG0</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00049">INV3REG_456_FIFO_CONFIG3</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00046">INV3REG_456_GYRO_CONFIG0</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00043">INV3REG_456_PWR_MGMT0</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00063">INV3REG_456_REG_MISC2</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00072">INV_456_BASE_FIFO3_CONFIG_VALUE</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00073">INV_456_FIFO_IF_EN</a>, <a class="el" href="invensense3__456_8c_source.html#l00349">invensense3_456_register_write()</a>, <a class="el" href="invensense3__456_8c_source.html#l00371">invensense3_register_write_bank()</a>, and <a class="el" href="invensense3__456_8h_source.html#l00110">invensense3_456_t::timer</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00137">invensense3_456_event()</a>, and <a class="el" href="invensense3__456_8c_source.html#l00095">invensense3_456_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00138">invensense3_456_event()</a>, and <a class="el" href="invensense3__456_8c_source.html#l00096">invensense3_456_periodic()</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
@@ -371,9 +373,9 @@ false Still busy configuring </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00137">137</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00138">138</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
-<p class="reference">References <a class="el" href="invensense3__456_8h_source.html#l00102">invensense3_456_t::device</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00040">INV3_456_WHOAMI_ICM45686</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00052">INV3REG_456_FIFO_COUNTH</a>, <a class="el" href="invensense3__456_8h_source.html#l00071">INVENSENSE3_456_CONFIG</a>, <a class="el" href="invensense3__456_8c_source.html#l00414">invensense3_456_config()</a>, <a class="el" href="invensense3__456_8h_source.html#l00077">INVENSENSE3_456_ICM45686</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8c_source.html#l00395">invensense3_456_register_read()</a>, <a class="el" href="invensense3__456_8h_source.html#l00072">INVENSENSE3_456_RUNNING</a>, <a class="el" href="invensense3__456_8c_source.html#l00296">invensense3_456_set_scalings()</a>, <a class="el" href="detect__gate_8c_source.html#l00085">n_samples</a>, <a class="el" href="invensense3__456_8h_source.html#l00105">invensense3_456_t::rx_buffer</a>, <a class="el" href="invensense3__456_8h_source.html#l00107">invensense3_456_t::rx_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00096">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransSuccess</a>, <a class="el" href="invensense3__456_8h_source.html#l00101">invensense3_456_t::status</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::status</a>, <a class="el" href="invensense3__456_8h_source.html#l00110">invensense3_456_t::timer</a>, and <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>.</p>
+<p class="reference">References <a class="el" href="invensense3__456_8h_source.html#l00102">invensense3_456_t::device</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00040">INV3_456_WHOAMI_ICM45686</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00052">INV3REG_456_FIFO_COUNTH</a>, <a class="el" href="invensense3__456_8h_source.html#l00071">INVENSENSE3_456_CONFIG</a>, <a class="el" href="invensense3__456_8c_source.html#l00415">invensense3_456_config()</a>, <a class="el" href="invensense3__456_8h_source.html#l00077">INVENSENSE3_456_ICM45686</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8c_source.html#l00396">invensense3_456_register_read()</a>, <a class="el" href="invensense3__456_8h_source.html#l00072">INVENSENSE3_456_RUNNING</a>, <a class="el" href="invensense3__456_8c_source.html#l00297">invensense3_456_set_scalings()</a>, <a class="el" href="detect__gate_8c_source.html#l00085">n_samples</a>, <a class="el" href="invensense3__456_8h_source.html#l00105">invensense3_456_t::rx_buffer</a>, <a class="el" href="invensense3__456_8h_source.html#l00107">invensense3_456_t::rx_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00096">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransSuccess</a>, <a class="el" href="invensense3__456_8h_source.html#l00101">invensense3_456_t::status</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::status</a>, <a class="el" href="invensense3__456_8h_source.html#l00110">invensense3_456_t::timer</a>, and <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00202">imu_cube_event()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00184">imu_pixhawk6x_event()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -460,9 +462,9 @@ false Still busy configuring </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00057">57</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00058">58</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
-<p class="reference">References <a class="el" href="spi_8h_source.html#l00157">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cdiv</a>, <a class="el" href="invensense3__456_8h_source.html#l00109">invensense3_456_t::config_idx</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::cpol</a>, <a class="el" href="invensense3__456_8h_source.html#l00102">invensense3_456_t::device</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::dss</a>, <a class="el" href="invensense3__456_8h_source.html#l00112">invensense3_456_t::imu_odr</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::input_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8h_source.html#l00076">INVENSENSE3_456_UNKOWN</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::output_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00065">invensense3_456_spi_t::rx_buf</a>, <a class="el" href="invensense3__456_8h_source.html#l00105">invensense3_456_t::rx_buffer</a>, <a class="el" href="invensense3__456_8h_source.html#l00107">invensense3_456_t::rx_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00114">invensense3_456_t::sample_numbers</a>, <a class="el" href="invensense3__456_8c_source.html#l00494">samples_from_odr()</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::select</a>, <a class="el" href="invensense3__456_8h_source.html#l00061">invensense3_456_spi_t::slave_idx</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::slave_idx</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="spi_8h_source.html#l00071">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00080">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv16</a>, <a class="el" href="spi_8h_source.html#l00086">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00108">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00059">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="invensense3__456_8h_source.html#l00101">invensense3_456_t::status</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::status</a>, <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>, <a class="el" href="invensense3__456_8h_source.html#l00064">invensense3_456_spi_t::tx_buf</a>, and <a class="el" href="invensense3__456_8h_source.html#l00106">invensense3_456_t::tx_buffer</a>.</p>
+<p class="reference">References <a class="el" href="spi_8h_source.html#l00157">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cdiv</a>, <a class="el" href="invensense3__456_8h_source.html#l00109">invensense3_456_t::config_idx</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::cpol</a>, <a class="el" href="invensense3__456_8h_source.html#l00102">invensense3_456_t::device</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::dss</a>, <a class="el" href="invensense3__456_8h_source.html#l00112">invensense3_456_t::imu_odr</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::input_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8h_source.html#l00076">INVENSENSE3_456_UNKOWN</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::output_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00065">invensense3_456_spi_t::rx_buf</a>, <a class="el" href="invensense3__456_8h_source.html#l00105">invensense3_456_t::rx_buffer</a>, <a class="el" href="invensense3__456_8h_source.html#l00107">invensense3_456_t::rx_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00114">invensense3_456_t::sample_numbers</a>, <a class="el" href="invensense3__456_8c_source.html#l00495">samples_from_odr()</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::select</a>, <a class="el" href="invensense3__456_8h_source.html#l00061">invensense3_456_spi_t::slave_idx</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::slave_idx</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="spi_8h_source.html#l00071">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00080">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv16</a>, <a class="el" href="spi_8h_source.html#l00086">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00108">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00059">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="invensense3__456_8h_source.html#l00101">invensense3_456_t::status</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::status</a>, <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>, <a class="el" href="invensense3__456_8h_source.html#l00064">invensense3_456_spi_t::tx_buf</a>, and <a class="el" href="invensense3__456_8h_source.html#l00106">invensense3_456_t::tx_buffer</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00053">imu_cube_init()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00046">imu_pixhawk6x_init()</a>.</p>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -534,9 +536,9 @@ false Still busy configuring </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00247">247</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00248">248</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
-<p class="reference">References <a class="el" href="invensense3__456_8h_source.html#l00100">invensense3_456_t::abi_id</a>, <a class="el" href="invensense3__456_8h_source.html#l00050">FIFODataHighRes::accel</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::ax</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::ay</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::az</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::gx</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::gy</a>, <a class="el" href="invensense3__456_8h_source.html#l00051">FIFODataHighRes::gyro</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::gz</a>, <a class="el" href="invensense3__456_8h_source.html#l00049">FIFODataHighRes::header</a>, <a class="el" href="invensense3__456_8h_source.html#l00115">invensense3_456_t::imu_samplerate</a>, <a class="el" href="invensense3__456_8h_source.html#l00044">INVENSENSE3_456_FIFO_BUFFER_LEN</a>, <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>, <a class="el" href="invensense3__456_8c_source.html#l00225">reassemble_uint20()</a>, and <a class="el" href="invensense3__456_8h_source.html#l00052">FIFODataHighRes::temperature</a>.</p>
+<p class="reference">References <a class="el" href="invensense3__456_8h_source.html#l00100">invensense3_456_t::abi_id</a>, <a class="el" href="invensense3__456_8h_source.html#l00050">FIFODataHighRes::accel</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::ax</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::ay</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::az</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::gx</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::gy</a>, <a class="el" href="invensense3__456_8h_source.html#l00051">FIFODataHighRes::gyro</a>, <a class="el" href="invensense3__456_8h_source.html#l00054">FIFODataHighRes::gz</a>, <a class="el" href="invensense3__456_8h_source.html#l00049">FIFODataHighRes::header</a>, <a class="el" href="invensense3__456_8h_source.html#l00115">invensense3_456_t::imu_samplerate</a>, <a class="el" href="invensense3__456_8h_source.html#l00044">INVENSENSE3_456_FIFO_BUFFER_LEN</a>, <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>, <a class="el" href="invensense3__456_8c_source.html#l00226">reassemble_uint20()</a>, <a class="el" href="invensense3__456_8h_source.html#l00052">FIFODataHighRes::temperature</a>, and <a class="el" href="abi__common_8h_source.html#l00092">TEMPERATURE_TYPE_IMU</a>.</p>
 <div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
@@ -581,9 +583,9 @@ false Still busy configuring </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00095">95</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00096">96</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
-<p class="reference">References <a class="el" href="invensense3__456__regs_8h_source.html#l00052">INV3REG_456_FIFO_COUNTH</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00042">INV3REG_456_WHOAMI</a>, <a class="el" href="invensense3__456_8h_source.html#l00071">INVENSENSE3_456_CONFIG</a>, <a class="el" href="invensense3__456_8c_source.html#l00414">invensense3_456_config()</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8c_source.html#l00395">invensense3_456_register_read()</a>, <a class="el" href="invensense3__456_8h_source.html#l00072">INVENSENSE3_456_RUNNING</a>, <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>, <a class="el" href="invensense3__456_8h_source.html#l00065">invensense3_456_spi_t::rx_buf</a>, <a class="el" href="invensense3__456_8h_source.html#l00114">invensense3_456_t::sample_numbers</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="invensense3__456_8h_source.html#l00101">invensense3_456_t::status</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::status</a>, <a class="el" href="invensense3__456_8h_source.html#l00110">invensense3_456_t::timer</a>, and <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>.</p>
+<p class="reference">References <a class="el" href="invensense3__456__regs_8h_source.html#l00052">INV3REG_456_FIFO_COUNTH</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00042">INV3REG_456_WHOAMI</a>, <a class="el" href="invensense3__456_8h_source.html#l00071">INVENSENSE3_456_CONFIG</a>, <a class="el" href="invensense3__456_8c_source.html#l00415">invensense3_456_config()</a>, <a class="el" href="invensense3__456_8h_source.html#l00070">INVENSENSE3_456_IDLE</a>, <a class="el" href="invensense3__456_8c_source.html#l00396">invensense3_456_register_read()</a>, <a class="el" href="invensense3__456_8h_source.html#l00072">INVENSENSE3_456_RUNNING</a>, <a class="el" href="esc__dshot_8c_source.html#l00110">Min</a>, <a class="el" href="invensense3__456_8h_source.html#l00065">invensense3_456_spi_t::rx_buf</a>, <a class="el" href="invensense3__456_8h_source.html#l00114">invensense3_456_t::sample_numbers</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransDone</a>, <a class="el" href="invensense3__456_8h_source.html#l00101">invensense3_456_t::status</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::status</a>, <a class="el" href="invensense3__456_8h_source.html#l00110">invensense3_456_t::timer</a>, and <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="imu__cube_8c_source.html#l00185">imu_cube_periodic()</a>, and <a class="el" href="imu__pixhawk6x_8c_source.html#l00171">imu_pixhawk6x_periodic()</a>.</p>
 <div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
@@ -672,11 +674,11 @@ false Still busy configuring </dd></dl>
 <dd>
 false First we are busy switching the register bank </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00395">395</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00396">396</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
 <p class="reference">References <a class="el" href="spi_8h_source.html#l00147">spi_transaction::input_length</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00031">INV3_456_READ_FLAG</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::output_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00060">invensense3_456_spi_t::p</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_submit()</a>, <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>, and <a class="el" href="invensense3__456_8h_source.html#l00106">invensense3_456_t::tx_buffer</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00137">invensense3_456_event()</a>, and <a class="el" href="invensense3__456_8c_source.html#l00095">invensense3_456_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00138">invensense3_456_event()</a>, and <a class="el" href="invensense3__456_8c_source.html#l00096">invensense3_456_periodic()</a>.</p>
 <div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
@@ -757,11 +759,11 @@ false First we are busy switching the register bank </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true Whenever the register write was started </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00348">348</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00349">349</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
 <p class="reference">References <a class="el" href="spi_8h_source.html#l00147">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::output_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00060">invensense3_456_spi_t::p</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_submit()</a>, <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>, and <a class="el" href="invensense3__456_8h_source.html#l00106">invensense3_456_t::tx_buffer</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00414">invensense3_456_config()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00415">invensense3_456_config()</a>.</p>
 <div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
@@ -832,11 +834,11 @@ false First we are busy switching the register bank </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00296">296</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00297">297</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
 <p class="reference">References <a class="el" href="invensense3__456_8h_source.html#l00100">invensense3_456_t::abi_id</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00221">ACCEL_BFP_OF_REAL</a>, <a class="el" href="invensense3__456_8h_source.html#l00112">invensense3_456_t::imu_odr</a>, <a class="el" href="invensense3__456_8h_source.html#l00115">invensense3_456_t::imu_samplerate</a>, <a class="el" href="imu_8c_source.html#l00871">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00842">imu_set_defaults_gyro()</a>, <a class="el" href="invensense3__456_8h_source.html#l00089">INVENSENSE3_456_ODR_100HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00085">INVENSENSE3_456_ODR_1_6KHZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00088">INVENSENSE3_456_ODR_200HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00091">INVENSENSE3_456_ODR_25HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00084">INVENSENSE3_456_ODR_3_2KHZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00087">INVENSENSE3_456_ODR_400HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00090">INVENSENSE3_456_ODR_50HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00083">INVENSENSE3_456_ODR_6_4KHZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00086">INVENSENSE3_456_ODR_800HZ</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00209">RATE_BFP_OF_REAL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00137">invensense3_456_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00138">invensense3_456_event()</a>.</p>
 <div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
@@ -931,11 +933,11 @@ false First we are busy switching the register bank </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true Whenever the register write was started </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00370">370</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00371">371</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
 <p class="reference">References <a class="el" href="spi_8h_source.html#l00147">spi_transaction::input_length</a>, <a class="el" href="invensense3__456__regs_8h_source.html#l00060">INV3REG_456_IREG_ADDRH</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::output_length</a>, <a class="el" href="invensense3__456_8h_source.html#l00060">invensense3_456_spi_t::p</a>, <a class="el" href="invensense3__456_8h_source.html#l00104">invensense3_456_t::spi</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_submit()</a>, <a class="el" href="invensense3__456_8h_source.html#l00062">invensense3_456_spi_t::trans</a>, <a class="el" href="invensense3__456_8h_source.html#l00106">invensense3_456_t::tx_buffer</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00414">invensense3_456_config()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00415">invensense3_456_config()</a>.</p>
 <div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1007,9 +1009,9 @@ false First we are busy switching the register bank </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00225">225</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00226">226</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00247">invensense3_456_parse_fifo_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00248">invensense3_456_parse_fifo_data()</a>.</p>
 <div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1047,11 +1049,11 @@ false First we are busy switching the register bank </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00494">494</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="invensense3__456_8c_source.html#l00495">495</a> of file <a class="el" href="invensense3__456_8c_source.html">invensense3_456.c</a>.</p>
 
 <p class="reference">References <a class="el" href="invensense3__456_8h_source.html#l00089">INVENSENSE3_456_ODR_100HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00085">INVENSENSE3_456_ODR_1_6KHZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00088">INVENSENSE3_456_ODR_200HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00091">INVENSENSE3_456_ODR_25HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00084">INVENSENSE3_456_ODR_3_2KHZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00087">INVENSENSE3_456_ODR_400HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00090">INVENSENSE3_456_ODR_50HZ</a>, <a class="el" href="invensense3__456_8h_source.html#l00083">INVENSENSE3_456_ODR_6_4KHZ</a>, and <a class="el" href="invensense3__456_8h_source.html#l00086">INVENSENSE3_456_ODR_800HZ</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00057">invensense3_456_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="invensense3__456_8c_source.html#l00058">invensense3_456_init()</a>.</p>
 <div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>

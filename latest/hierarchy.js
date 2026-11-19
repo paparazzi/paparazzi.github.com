@@ -47,6 +47,8 @@ var hierarchy =
     [ "AhrsMadgwick", "ahrs__madgwick_8h.html#structAhrsMadgwick", null ],
     [ "AhrsMlkf", "ahrs__float__mlkf_8h.html#structAhrsMlkf", null ],
     [ "AhrsVectornav", "ahrs__vectornav_8h.html#structAhrsVectornav", null ],
+    [ "air_data_calib_t", "air__data_8h.html#structair__data__calib__t", null ],
+    [ "air_data_sensor_t", "air__data_8h.html#structair__data__sensor__t", null ],
     [ "AirData", "air__data_8h.html#structAirData", null ],
     [ "airspeed_uavcan_t", "airspeed__uavcan_8h.html#structairspeed__uavcan__t", null ],
     [ "AirspeedAdc", "airspeed__adc_8h.html#structAirspeedAdc", null ],

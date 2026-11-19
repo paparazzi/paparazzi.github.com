@@ -1,0 +1,32 @@
+<map id="air_data_periodic" name="air_data_periodic">
+<area shape="rect" id="Node000001" title="Check health." alt="" coords="5,112,139,140"/>
+<area shape="rect" id="Node000002" href="$air__data_8c.html#a855c11b3480c59a8b1eb0d41949cad8a" title="Zero the differential pressures (otherwise only check the ones with an offset at rest) and/or line up..." alt="" coords="187,36,379,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,109,186,79,225,67,221,71,188,84,111,114"/>
+<area shape="rect" id="Node000003" href="$air__data_8c.html#a51b37a7e917d54e9112b5bbb44b18a1c" title=" " alt="" coords="440,33,597,61"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="81,110,123,64,152,40,186,22,221,11,257,5,331,4,401,13,461,28,456,29,400,18,331,10,258,11,222,17,188,27,155,44,126,68,86,113"/>
+<area shape="rect" id="Node000007" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="446,85,591,113"/>
+<area shape="poly" id="edge17_Node000001_Node000007" title=" " alt="" coords="139,119,432,102,430,107,140,124"/>
+<area shape="rect" id="Node000008" href="$air__data_8c.html#ad8f952a79ea7971bfa25b818899114fb" title=" " alt="" coords="191,189,374,217"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="102,138,188,174,213,184,208,185,186,179,102,143"/>
+<area shape="rect" id="Node000010" href="$air__data_8c.html#a7c67891cbed7c7388c88d4a306499bbb" title=" " alt="" coords="202,291,364,318"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="89,138,188,226,254,280,248,281,185,231,88,143"/>
+<area shape="rect" id="Node000012" href="$air__data_8c.html#ad13ed1ae2983b209c3366da9caad878a" title=" " alt="" coords="189,137,376,165"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="138,131,176,137,171,139,140,136"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,46,427,47,422,49,380,51"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="352,62,437,81,432,83,353,67"/>
+<area shape="rect" id="Node000004" href="$air__data_8c.html#a6c2b5625ad9b65e9d86e7cd37c9aab55" title="Barometers: first the calibrated ones (a barometer that starts late is lined up before it is used)." alt="" coords="658,33,805,61"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="596,45,646,46,640,48,598,50"/>
+<area shape="rect" id="Node000005" href="$air__data_8c.html#a73e7a5379d953dbb9b8d5a8714c31ffe" title="Select a sensor: the one of the setting (id) if healthy, otherwise the healthy one with the lowest ra..." alt="" coords="671,240,792,268"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="588,59,612,72,650,107,681,148,705,190,721,227,716,225,700,192,676,151,646,111,609,76,588,64"/>
+<area shape="rect" id="Node000006" href="$air__data_8c.html#a27506607dccc132147824c98fbd24a2b" title="Is the sensor sending valid values." alt="" coords="853,240,1033,268"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="792,251,839,254,834,254,792,257"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="358,215,427,226,548,239,658,249,653,250,547,244,427,231,358,220"/>
+<area shape="rect" id="Node000009" href="$air__data_8c.html#a8198721f386242dc3f5760c4acc84dc8" title="Airspeed: first the differential pressures, then the airspeed sensors, then an airspeed estimate." alt="" coords="432,189,605,217"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="375,201,419,203,413,204,375,206"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="364,293,658,261,653,263,364,298"/>
+<area shape="rect" id="Node000011" href="$air__data_8c.html#a1baa49a7d313846645c76a174082da15" title="Temperature: first an air temperature probe, then a differential pressure sensor, then a barometer." alt="" coords="443,341,594,369"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="351,316,439,337,434,338,350,322"/>
+<area shape="poly" id="edge16_Node000012_Node000007" title=" " alt="" coords="348,134,440,116,435,118,350,139"/>
+<area shape="rect" id="Node000013" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="427,137,610,165"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="376,149,414,150,409,152,378,154"/>
+</map>

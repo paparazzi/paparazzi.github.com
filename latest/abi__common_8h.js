@@ -12,6 +12,11 @@ var abi__common_8h =
     [ "ABI_EXTERN", "abi__common_8h.html#a432938e91d249b13ae6e0d15f51b9fb3", null ],
     [ "ABI_FOREACH", "abi__common_8h.html#ac90a3c737b2277bc87d97c927db20f2f", null ],
     [ "ABI_PREPEND", "abi__common_8h.html#a8930c13ddeafcf5d6d9c9eb23595e7bb", null ],
+    [ "TEMPERATURE_TYPE_AIR", "abi__common_8h.html#a3569c49aa578338b109a6def1cb5312e", null ],
+    [ "TEMPERATURE_TYPE_BARO", "abi__common_8h.html#a7f5b50ce7ff656a0f1a39df970505f51", null ],
+    [ "TEMPERATURE_TYPE_DIFF", "abi__common_8h.html#a1624061156c449436e85ac907a835512", null ],
+    [ "TEMPERATURE_TYPE_IMU", "abi__common_8h.html#ad9f592e0b0df6344b43aa300173bde97", null ],
+    [ "TEMPERATURE_TYPE_OTHER", "abi__common_8h.html#aa639571ad46544fa812cfcd5f6289637", null ],
     [ "abi_callback", "abi__common_8h.html#ae5236ff2a6c26168b88e7d6feebc8de1", null ],
     [ "abi_event", "abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814", null ]
 ];

@@ -98,7 +98,6 @@ $(function(){initNavTree('module__baro_ms5611_spi.html','',''); });
 <h1 class="doxsection"><a class="anchor" id="module_load_example__baro_ms5611_spi"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;baro_ms5611_spi&quot;</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MS5611_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spiX&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MS5611_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SPI_SLAVE0&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -111,12 +110,6 @@ Configure Options</h2>
  Description: select spi peripheral to use (default spi1)</li>
 <li><b>name:</b> <code>MS5611_SLAVE_IDX</code> <b>value:</b> <em>SPI_SLAVE0</em> <br  />
  Description: SPI slave select index</li>
-</ul>
-<h2 class="doxsection"><a class="anchor" id="define"></a>
-Define Options</h2>
-<ul>
-<li><b>name:</b> <code>SENSOR_SYNC_SEND</code> <b>value:</b> <em>None</em> <br  />
- Description: flag to enable sending BARO_MS5611 message on every new measurement</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="functions__baro_ms5611_spi"></a>
 Module functions</h1>
@@ -176,10 +169,9 @@ Raw baro_ms5611_spi.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MS5611_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spiX&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;select spi peripheral to use (default spi1)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MS5611_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SPI_SLAVE0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;SPI slave select index&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;flag to enable sending BARO_MS5611 message on every new measurement&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>,<span class="keyword">air_data</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">baro</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>

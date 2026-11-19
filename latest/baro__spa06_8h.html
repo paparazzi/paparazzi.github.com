@@ -197,11 +197,11 @@ Variables</h2></td></tr>
 
 <p>Process finished bus transactions and publish new measurements (module event hook). </p>
 <p>Process finished bus transactions and publish new measurements (module event hook).</p>
-<p>When the driver flags a valid sample: sends ABI BARO_ABS [Pa] and TEMPERATURE [deg Celcius], updates the baro_* globals (including the ISA pressure altitude) and clears data_available for the next sample. </p>
+<p>When the driver flags a valid sample: sends ABI BARO_ABS [Pa] and TEMPERATURE [deg Celcius], updates the baro_spa06_alt globals (including the ISA pressure altitude) and clears data_available for the next sample. </p>
 
-<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00127">127</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00094">94</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__spa06_8c_source.html#l00071">baro_spa06</a>, <a class="el" href="baro__spa06_8c_source.html#l00065">baro_spa06_alt</a>, <a class="el" href="baro__spa06_8c_source.html#l00066">baro_spa06_alt_valid</a>, <a class="el" href="baro__spa06_8c_source.html#l00068">baro_spa06_press</a>, <a class="el" href="baro__spa06_8c_source.html#l00067">baro_spa06_temp</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00084">BARO_SPA_SENDER_ID</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="pprz__isa_8h_source.html#l00082">pprz_isa_altitude_of_pressure()</a>, <a class="el" href="spa06_8c_source.html#l00230">spa06_event()</a>, and <a class="el" href="light__solar_8c_source.html#l00048">up</a>.</p>
+<p class="reference">References <a class="el" href="baro__spa06_8c_source.html#l00058">baro_spa06</a>, <a class="el" href="baro__spa06_8c_source.html#l00054">baro_spa06_alt</a>, <a class="el" href="baro__spa06_8c_source.html#l00055">baro_spa06_alt_valid</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00090">BARO_SPA_SENDER_ID</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, <a class="el" href="pprz__isa_8h_source.html#l00082">pprz_isa_altitude_of_pressure()</a>, <a class="el" href="spa06_8c_source.html#l00230">spa06_event()</a>, and <a class="el" href="abi__common_8h_source.html#l00091">TEMPERATURE_TYPE_BARO</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
@@ -251,22 +251,18 @@ Variables</h2></td></tr>
 <p>Bind the driver to the configured bus and register telemetry (module init hook).</p>
 <p>Bus selection is compile time: SPA06_USE_SPI picks SPI (SPA06_DEV + SPA06_SLAVE_IDX) or I2C (SPA06_DEV + SPA06_SLAVE_ADDR). The sensor itself is detected and configured asynchronously by the periodic/event pair. </p>
 
-<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00097">97</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00067">67</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__spa06_8c_source.html#l00071">baro_spa06</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="baro__spa06_8c_source.html#l00080">send_baro_spa_data()</a>, <a class="el" href="spa06_8h_source.html#l00056">SPA06_I2C</a>, <a class="el" href="spa06_8c_source.html#l00071">spa06_init()</a>, <a class="el" href="baro__spa06_8c_source.html#l00057">SPA06_SLAVE_ADDR</a>, <a class="el" href="baro__spa06_8c_source.html#l00062">SPA06_SLAVE_IDX</a>, and <a class="el" href="spa06_8h_source.html#l00055">SPA06_SPI</a>.</p>
+<p class="reference">References <a class="el" href="baro__spa06_8c_source.html#l00058">baro_spa06</a>, <a class="el" href="spa06_8h_source.html#l00056">SPA06_I2C</a>, <a class="el" href="spa06_8c_source.html#l00071">spa06_init()</a>, <a class="el" href="baro__spa06_8c_source.html#l00046">SPA06_SLAVE_ADDR</a>, <a class="el" href="baro__spa06_8c_source.html#l00051">SPA06_SLAVE_IDX</a>, and <a class="el" href="spa06_8h_source.html#l00055">SPA06_SPI</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__spa06_8h_ab8fa8b2119a81b1a2b6c645d2d68b13b_cgraph.png" border="0" usemap="#abaro__spa06_8h_ab8fa8b2119a81b1a2b6c645d2d68b13b_cgraph" loading="lazy" alt=""/></div>
 <map name="abaro__spa06_8h_ab8fa8b2119a81b1a2b6c645d2d68b13b_cgraph" id="abaro__spa06_8h_ab8fa8b2119a81b1a2b6c645d2d68b13b_cgraph">
-<area shape="rect" title="Bind the driver to the configured bus and register telemetry (module init hook)." alt="" coords="5,57,130,85"/>
-<area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="178,5,379,33"/>
-<area shape="poly" title=" " alt="" coords="126,54,207,36,202,39,128,59"/>
-<area shape="rect" href="baro__spa06_8c.html#a6da63d82ab635210dc1fa2f8fd8b13cb" title="Periodic telemetry: report the latest barometer data." alt="" coords="201,57,356,85"/>
-<area shape="poly" title=" " alt="" coords="130,69,188,70,183,72,131,74"/>
-<area shape="rect" href="spa06_8c.html#a42dcdb83fa5ad9fcde616f83aef90569" title="Initialize the spa06 sensor instance." alt="" coords="234,109,322,137"/>
-<area shape="poly" title=" " alt="" coords="127,83,221,107,217,110,127,88"/>
+<area shape="rect" title="Bind the driver to the configured bus and register telemetry (module init hook)." alt="" coords="5,5,130,33"/>
+<area shape="rect" href="spa06_8c.html#a42dcdb83fa5ad9fcde616f83aef90569" title="Initialize the spa06 sensor instance." alt="" coords="178,5,266,33"/>
+<area shape="poly" title=" " alt="" coords="130,17,165,19,159,19,130,22"/>
 </map>
 </div>
 
@@ -290,9 +286,9 @@ Variables</h2></td></tr>
 <p>Drive the sensor state machine (module periodic hook). </p>
 <p>Drive the sensor state machine (module periodic hook). </p>
 
-<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00115">115</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00082">82</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__spa06_8c_source.html#l00071">baro_spa06</a>, and <a class="el" href="spa06_8c_source.html#l00131">spa06_periodic()</a>.</p>
+<p class="reference">References <a class="el" href="baro__spa06_8c_source.html#l00058">baro_spa06</a>, and <a class="el" href="spa06_8c_source.html#l00131">spa06_periodic()</a>.</p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
@@ -355,9 +351,9 @@ Variables</h2></td></tr>
 <p>The barometer driver instance, exposed for debugging/telemetry. </p>
 <p>The barometer driver instance, exposed for debugging/telemetry. </p>
 
-<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00071">71</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00058">58</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__spa06_8c_source.html#l00127">baro_spa06_event()</a>, <a class="el" href="baro__spa06_8c_source.html#l00097">baro_spa06_init()</a>, <a class="el" href="baro__spa06_8c_source.html#l00115">baro_spa06_periodic()</a>, and <a class="el" href="baro__spa06_8c_source.html#l00080">send_baro_spa_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__spa06_8c_source.html#l00094">baro_spa06_event()</a>, <a class="el" href="baro__spa06_8c_source.html#l00067">baro_spa06_init()</a>, and <a class="el" href="baro__spa06_8c_source.html#l00082">baro_spa06_periodic()</a>.</p>
 
 </div>
 </div>
@@ -383,9 +379,9 @@ Variables</h2></td></tr>
 
 <p>ISA pressure altitude of the last sample [m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00065">65</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00054">54</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__spa06_8c_source.html#l00127">baro_spa06_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__spa06_8c_source.html#l00094">baro_spa06_event()</a>.</p>
 
 </div>
 </div>
@@ -411,9 +407,9 @@ Variables</h2></td></tr>
 
 <p>true once the first valid sample has been processed </p>
 
-<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00066">66</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__spa06_8c_source.html#l00055">55</a> of file <a class="el" href="baro__spa06_8c_source.html">baro_spa06.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__spa06_8c_source.html#l00127">baro_spa06_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__spa06_8c_source.html#l00094">baro_spa06_event()</a>.</p>
 
 </div>
 </div>

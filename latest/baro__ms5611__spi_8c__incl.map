@@ -1,75 +1,48 @@
 <map id="sw/airborne/modules/sensors/baro_ms5611_spi.c" name="sw/airborne/modules/sensors/baro_ms5611_spi.c">
-<area shape="rect" id="Node000001" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="1178,5,1383,50"/>
-<area shape="rect" id="Node000002" href="$baro__ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="869,98,1034,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1199,51,1045,96,1044,91,1204,50"/>
-<area shape="rect" id="Node000007" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="465,368,638,395"/>
-<area shape="poly" id="edge23_Node000001_Node000007" title=" " alt="" coords="1175,30,1105,37,1023,49,938,69,858,100,810,127,765,159,683,231,617,302,571,357,568,353,613,298,679,227,761,155,807,123,856,96,937,64,1022,44,1104,32,1181,29"/>
-<area shape="rect" id="Node000018" href="$pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities." alt="" coords="1058,106,1183,134"/>
-<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="1245,49,1158,101,1156,96,1240,52"/>
-<area shape="rect" id="Node000020" href="$abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1208,106,1353,134"/>
-<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="1282,48,1283,92,1278,89,1279,52"/>
-<area shape="rect" id="Node000022" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1322,283,1461,311"/>
-<area shape="poly" id="edge26_Node000001_Node000022" title=" " alt="" coords="1319,48,1347,69,1368,97,1386,141,1395,188,1398,232,1396,270,1392,266,1392,232,1390,188,1381,143,1364,99,1343,73,1318,53"/>
-<area shape="rect" id="Node000025" title=" " alt="" coords="1428,199,1584,227"/>
-<area shape="poly" id="edge30_Node000001_Node000025" title=" " alt="" coords="1332,48,1373,69,1412,96,1457,141,1492,187,1486,186,1453,144,1408,100,1370,74,1331,53"/>
-<area shape="rect" id="Node000026" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1804,106,2013,134"/>
-<area shape="poly" id="edge31_Node000001_Node000026" title=" " alt="" coords="1383,41,1805,103,1800,104,1383,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="1114,460,1167,488"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="932,142,916,166,903,192,898,218,897,248,906,311,924,367,944,402,979,430,1019,449,1061,461,1101,470,1096,469,1060,466,1018,454,976,434,940,405,919,369,901,312,892,248,892,218,898,190,911,164,928,145"/>
-<area shape="rect" id="Node000004" href="$ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="912,191,1062,235"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="961,141,976,177,971,175,959,145"/>
-<area shape="rect" id="Node000005" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="678,283,811,311"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="925,235,799,280,797,275,920,237"/>
-<area shape="rect" id="Node000016" href="$ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="948,283,1110,311"/>
-<area shape="poly" id="edge17_Node000004_Node000016" title=" " alt="" coords="999,233,1018,270,1013,268,997,238"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="767,309,842,357,870,381,899,401,951,424,1005,441,1101,466,1096,466,1004,446,949,429,897,406,867,385,839,361,766,314"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="661,368,828,395"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="746,310,747,354,743,350,743,314"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="716,311,597,364,595,359,711,312"/>
-<area shape="rect" id="Node000011" href="$threads_8h.html" title=" " alt="" coords="244,368,418,395"/>
-<area shape="poly" id="edge12_Node000005_Node000011" title=" " alt="" coords="676,313,414,367,412,361,681,311"/>
-<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="609,393,649,401,904,440,1101,468,1096,468,903,446,648,406,609,398"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="1792,460,1878,488"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="605,393,649,401,890,423,1218,443,1779,470,1774,471,1218,448,889,428,648,406,605,398"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="638,460,707,488"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="570,393,646,451,640,450,568,398"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="488,460,614,488"/>
-<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="553,394,553,447,549,443,549,397"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="5,460,87,488"/>
-<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="280,397,197,423,99,454,92,457,90,452,97,449,195,418,285,395"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="110,452,272,496"/>
-<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="314,395,239,445,236,441,309,396"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="296,460,366,488"/>
-<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="333,394,334,446,329,444,329,397"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="391,460,464,488"/>
-<area shape="poly" id="edge16_Node000011_Node000015" title=" " alt="" coords="346,393,405,450,400,449,344,398"/>
-<area shape="poly" id="edge18_Node000016_Node000003" title=" " alt="" coords="1058,309,1090,329,1117,357,1129,379,1136,401,1142,446,1138,443,1131,403,1124,381,1113,361,1087,333,1057,314"/>
-<area shape="rect" id="Node000017" href="$ms5611__regs_8h.html" title="Register definitions for MS5611 barometer." alt="" coords="954,359,1104,404"/>
-<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="1030,310,1031,345,1027,341,1027,314"/>
-<area shape="poly" id="edge21_Node000018_Node000003" title=" " alt="" coords="1134,132,1153,158,1169,190,1176,225,1180,261,1176,333,1165,398,1151,448,1148,444,1160,397,1171,333,1174,262,1171,226,1163,192,1149,161,1132,137"/>
-<area shape="rect" id="Node000019" title=" " alt="" coords="1087,199,1154,227"/>
-<area shape="poly" id="edge22_Node000018_Node000019" title=" " alt="" coords="1122,132,1123,185,1118,182,1119,137"/>
-<area shape="rect" id="Node000021" title=" " alt="" coords="1228,199,1354,227"/>
-<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="1284,132,1290,185,1286,183,1281,137"/>
-<area shape="poly" id="edge29_Node000022_Node000003" title=" " alt="" coords="1369,311,1287,361,1223,409,1168,453,1166,448,1219,404,1285,357,1364,312"/>
-<area shape="rect" id="Node000023" title=" " alt="" coords="1298,368,1472,395"/>
-<area shape="poly" id="edge27_Node000022_Node000023" title=" " alt="" coords="1392,310,1389,354,1385,350,1388,313"/>
-<area shape="rect" id="Node000024" title=" " alt="" coords="1496,368,1687,395"/>
-<area shape="poly" id="edge28_Node000022_Node000024" title=" " alt="" coords="1424,309,1548,362,1543,361,1423,314"/>
-<area shape="poly" id="edge32_Node000026_Node000008" title=" " alt="" coords="2014,118,2125,121,2243,132,2299,141,2347,153,2386,169,2413,189,2421,201,2423,213,2414,237,2389,269,2362,298,2299,347,2229,386,2155,417,2080,439,2010,455,1894,472,1894,466,2009,450,2079,434,2153,412,2226,382,2296,343,2358,294,2385,265,2409,234,2418,212,2416,203,2409,192,2384,173,2346,158,2298,146,2243,137,2124,127,2014,123"/>
-<area shape="poly" id="edge34_Node000026_Node000025" title=" " alt="" coords="1851,134,1596,193,1576,198,1575,193,1595,188,1845,135"/>
-<area shape="rect" id="Node000027" title=" " alt="" coords="2240,199,2399,227"/>
-<area shape="poly" id="edge33_Node000026_Node000027" title=" " alt="" coords="1971,132,2228,188,2250,195,2245,195,2227,193,1970,137"/>
-<area shape="rect" id="Node000028" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="2012,199,2216,227"/>
-<area shape="poly" id="edge35_Node000026_Node000028" title=" " alt="" coords="1939,132,2073,193,2068,192,1938,137"/>
-<area shape="rect" id="Node000030" href="$pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1607,199,1805,227"/>
-<area shape="poly" id="edge38_Node000026_Node000030" title=" " alt="" coords="1882,134,1750,195,1748,190,1877,136"/>
-<area shape="rect" id="Node000032" title=" " alt="" coords="1829,199,1988,227"/>
-<area shape="poly" id="edge41_Node000026_Node000032" title=" " alt="" coords="1910,133,1911,186,1907,182,1907,137"/>
-<area shape="poly" id="edge36_Node000028_Node000003" title=" " alt="" coords="2095,227,2029,266,1933,314,1820,365,1700,406,1628,424,1553,439,1406,459,1277,470,1183,474,1183,469,1277,465,1406,454,1552,434,1627,419,1699,401,1818,360,1931,309,2026,261,2089,228"/>
-<area shape="rect" id="Node000029" title=" " alt="" coords="2033,283,2195,311"/>
-<area shape="poly" id="edge37_Node000028_Node000029" title=" " alt="" coords="2116,225,2116,270,2112,266,2112,229"/>
-<area shape="poly" id="edge40_Node000030_Node000022" title=" " alt="" coords="1658,227,1457,282,1456,276,1653,228"/>
-<area shape="rect" id="Node000031" title=" " alt="" coords="1614,283,1798,311"/>
-<area shape="poly" id="edge39_Node000030_Node000031" title=" " alt="" coords="1708,225,1708,270,1704,266,1704,229"/>
+<area shape="rect" id="Node000001" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="845,5,1050,50"/>
+<area shape="rect" id="Node000002" href="$baro__ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="598,98,763,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="881,52,760,95,758,90,886,49"/>
+<area shape="rect" id="Node000007" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="894,368,1067,395"/>
+<area shape="poly" id="edge23_Node000001_Node000007" title=" " alt="" coords="958,48,975,97,985,169,988,240,985,353,981,350,983,240,979,169,970,99,956,53"/>
+<area shape="rect" id="Node000018" href="$pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities." alt="" coords="835,106,961,134"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="938,49,914,95,911,91,934,52"/>
+<area shape="rect" id="Node000020" href="$abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1036,106,1181,134"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="986,48,1075,99,1069,99,986,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="606,460,659,488"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="624,144,562,178,489,224,453,253,419,285,390,321,367,360,360,382,361,392,367,402,381,414,403,425,463,443,530,457,593,468,588,468,530,462,461,449,401,430,378,418,363,405,356,393,354,382,362,358,386,318,415,281,449,249,486,220,560,173,629,142"/>
+<area shape="rect" id="Node000004" href="$ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="606,191,756,235"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="682,141,683,177,678,174,679,145"/>
+<area shape="rect" id="Node000005" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="470,283,603,311"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="645,235,574,278,572,273,640,237"/>
+<area shape="rect" id="Node000016" href="$ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="628,283,790,311"/>
+<area shape="poly" id="edge17_Node000004_Node000016" title=" " alt="" coords="689,233,702,270,697,267,687,238"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="545,309,621,447,616,446,542,314"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="377,368,544,395"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="527,310,485,358,482,354,522,313"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="603,308,897,363,891,365,603,313"/>
+<area shape="rect" id="Node000011" href="$threads_8h.html" title=" " alt="" coords="128,368,302,395"/>
+<area shape="poly" id="edge12_Node000005_Node000011" title=" " alt="" coords="483,313,282,366,281,361,487,310"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="933,396,675,465,674,459,927,396"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="938,460,1024,488"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="983,394,983,447,979,443,979,397"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1047,460,1117,488"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="996,393,1059,450,1054,449,994,398"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="787,460,913,488"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="964,395,883,453,881,448,959,396"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="103,460,184,488"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="207,394,165,450,161,446,203,397"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="208,452,370,496"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="227,393,264,440,259,439,225,398"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="394,460,464,488"/>
+<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="248,393,383,449,389,454,384,453,381,454,247,398"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="5,460,79,488"/>
+<area shape="poly" id="edge16_Node000011_Node000015" title=" " alt="" coords="191,398,82,455,79,450,189,393"/>
+<area shape="poly" id="edge18_Node000016_Node000003" title=" " alt="" coords="697,310,677,334,660,360,645,404,637,446,633,443,640,402,656,358,673,331,692,313"/>
+<area shape="rect" id="Node000017" href="$ms5611__regs_8h.html" title="Register definitions for MS5611 barometer." alt="" coords="670,359,820,404"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="716,309,731,346,727,344,713,314"/>
+<area shape="poly" id="edge21_Node000018_Node000003" title=" " alt="" coords="897,133,834,405,798,434,756,454,713,466,675,472,675,467,712,461,754,449,795,430,829,402,893,136"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="894,199,961,227"/>
+<area shape="poly" id="edge22_Node000018_Node000019" title=" " alt="" coords="903,132,921,186,916,183,901,137"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1046,199,1172,227"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="1110,132,1111,185,1106,182,1107,137"/>
 </map>

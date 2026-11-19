@@ -1,73 +1,75 @@
 <map id="sw/airborne/math/pprz_isa.h" name="sw/airborne/math/pprz_isa.h">
-<area shape="rect" id="Node000001" title="Paparazzi atmospheric pressure conversion utilities." alt="" coords="2143,5,2310,50"/>
+<area shape="rect" id="Node000001" title="Paparazzi atmospheric pressure conversion utilities." alt="" coords="2254,5,2421,50"/>
 <area shape="rect" id="Node000002" href="$air__data_8c.html" title="Air Data interface." alt="" coords="5,106,163,151"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2125,29,1726,32,1161,41,866,49,591,61,354,78,175,101,144,108,141,104,174,95,353,73,591,56,866,44,1160,35,1726,27,2130,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2235,29,1816,31,1219,39,908,47,616,60,364,77,175,101,144,108,141,104,174,95,364,72,615,54,908,42,1219,33,1816,26,2240,28"/>
 <area shape="rect" id="Node000003" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="187,106,344,151"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2125,29,1758,34,1246,43,980,52,731,64,518,80,356,101,325,108,322,104,356,95,517,75,731,59,980,47,1246,38,1758,29,2130,29"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2236,29,1849,33,1305,42,1022,50,756,62,528,79,356,101,325,108,322,104,356,95,528,74,756,57,1021,45,1305,36,1849,28,2241,28"/>
 <area shape="rect" id="Node000004" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="368,106,525,151"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2125,30,1790,36,1330,46,872,67,682,82,538,101,506,108,504,103,537,95,681,77,872,62,1330,41,1790,31,2130,29"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2236,30,1881,35,1389,45,1135,53,897,65,692,81,538,101,506,108,504,103,537,95,692,76,896,60,1135,48,1389,39,1881,30,2241,29"/>
 <area shape="rect" id="Node000005" href="$ins__float__invariant_8c.html" title=" " alt="" coords="549,106,728,151"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2125,31,1827,40,1426,52,1030,72,865,85,740,101,706,108,704,103,740,95,865,80,1029,67,1426,47,1827,34,2130,30"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2235,31,1917,38,1485,50,1054,70,876,84,740,101,705,108,703,103,740,95,875,79,1054,65,1484,45,1917,33,2241,30"/>
 <area shape="rect" id="Node000006" href="$ins__int_8c.html" title="INS for rotorcrafts combining vertical and horizontal filters." alt="" coords="752,106,909,151"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2125,31,1860,40,1512,53,1170,73,1029,86,922,101,890,108,889,103,921,95,1028,80,1170,68,1512,48,1860,35,2130,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2235,31,1950,39,1570,51,1195,71,1039,85,922,101,890,108,889,103,921,95,1039,79,1194,66,1570,46,1950,34,2241,30"/>
 <area shape="rect" id="Node000007" href="$ins__mekf__wind__wrapper_8c.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter." alt="" coords="933,106,1150,151"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2124,30,1947,37,1708,48,1439,69,1168,101,1126,108,1125,103,1168,95,1439,63,1708,43,1947,32,2130,30"/>
-<area shape="rect" id="Node000008" href="$ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS module." alt="" coords="1967,208,2124,252"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2125,29,1891,32,1602,41,1465,49,1347,62,1260,79,1231,89,1214,100,1204,114,1201,129,1204,143,1214,158,1228,167,1251,176,1324,191,1421,202,1534,211,1772,221,1969,228,1963,228,1772,227,1533,216,1420,207,1323,196,1250,181,1225,172,1210,162,1199,145,1195,129,1199,112,1210,96,1229,84,1258,73,1346,57,1464,44,1601,35,1890,27,2130,28"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2235,30,2041,35,1775,46,1473,66,1319,81,1168,101,1126,108,1124,103,1168,95,1318,76,1472,61,1774,40,2041,30,2241,29"/>
+<area shape="rect" id="Node000008" href="$ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS module." alt="" coords="2079,208,2236,252"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2235,32,1969,42,1638,56,1350,76,1256,87,1227,94,1214,100,1204,114,1201,129,1204,143,1214,158,1230,168,1258,178,1342,194,1455,207,1586,215,1860,224,2081,229,2076,229,1860,230,1586,220,1454,212,1341,200,1256,183,1228,173,1210,162,1199,145,1195,129,1199,112,1210,96,1225,89,1255,82,1349,70,1637,51,1969,37,2241,31"/>
 <area shape="rect" id="Node000012" href="$wind__estimation__quadrotor_8c.html" title=" " alt="" coords="1224,98,1403,160"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2124,31,1987,40,1809,51,1612,71,1415,101,1404,103,1403,98,1414,95,1611,66,1808,46,1986,34,2130,31"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2236,30,2080,37,1874,47,1645,68,1529,82,1415,101,1404,103,1403,98,1414,95,1528,77,1644,62,1874,42,2080,31,2241,29"/>
 <area shape="rect" id="Node000013" href="$nav__rotorcraft__hybrid_8c.html" title="Specific navigation functions for hybrid aircraft." alt="" coords="1427,98,1584,160"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2125,34,1885,56,1740,75,1597,101,1585,103,1584,98,1595,95,1739,69,1884,51,2130,33"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2235,32,2109,40,1948,52,1772,71,1597,101,1585,103,1584,98,1595,95,1771,66,1948,46,2109,34,2241,31"/>
 <area shape="rect" id="Node000014" href="$pca9685__i2c_8c.html" title=" " alt="" coords="1608,106,1784,151"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2125,42,1972,67,1797,101,1766,108,1764,103,1795,95,1971,62,2131,41"/>
-<area shape="rect" id="Node000015" href="$baro__bmp280_8c.html" title="Bosch BMP280 sensor interface." alt="" coords="1808,106,1987,151"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2142,54,1970,109,1969,103,2137,56"/>
-<area shape="rect" id="Node000016" href="$baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C." alt="" coords="2011,106,2216,151"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2193,59,2139,109,2137,104,2188,61"/>
-<area shape="rect" id="Node000017" href="$baro__ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="2239,106,2444,151"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2264,58,2319,107,2314,106,2262,63"/>
-<area shape="rect" id="Node000018" href="$baro__sim_8c.html" title="Simulate barometer pressure measurement using gps.hmsl." alt="" coords="2468,106,2625,151"/>
-<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="2315,52,2457,95,2484,106,2478,106,2455,101,2315,58"/>
-<area shape="rect" id="Node000019" href="$baro__spa06_8c.html" title="Module glue for the Goertek SPA06&#45;003 / SPL06&#45;001 barometer." alt="" coords="2649,106,2815,151"/>
-<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="2326,39,2474,62,2638,95,2669,106,2664,106,2637,101,2473,68,2326,44"/>
-<area shape="rect" id="Node000020" href="$invensense2_8c.html" title="Driver for the Invensense V2 IMUs ICM20948, ICM20648 and ICM20649." alt="" coords="2838,106,3012,151"/>
-<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="2326,32,2556,54,2692,72,2827,95,2862,106,2856,106,2826,101,2691,77,2556,59,2326,38"/>
-<area shape="rect" id="Node000021" href="$invensense3_8c.html" title="Driver for the Invensense v3 IMUs ICM40605, ICM40609, ICM42605, IIM42652 and ICM42688." alt="" coords="3037,106,3211,151"/>
-<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="2326,29,2464,34,2639,46,2832,66,3025,95,3060,106,3055,106,3023,101,2831,71,2638,51,2464,40,2326,34"/>
-<area shape="rect" id="Node000022" href="$invensense3__456_8c.html" title="Driver for the Invensense 456XY IMUs:" alt="" coords="3236,106,3410,151"/>
-<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="2326,26,2496,29,2720,39,2971,60,3099,76,3223,95,3260,106,3254,106,3222,101,3098,81,2971,65,2720,45,2496,35,2326,31"/>
-<area shape="rect" id="Node000023" href="$vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3434,106,3608,151"/>
-<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="2326,29,2888,51,3197,71,3324,82,3422,95,3459,106,3454,106,3421,101,3324,88,3196,76,2887,57,2326,34"/>
-<area shape="rect" id="Node000031" href="$nps__fdm__fixedwing__sim_8c.html" title=" " alt="" coords="3632,106,3797,151"/>
-<area shape="poly" id="edge32_Node000001_Node000031" title=" " alt="" coords="2326,28,2609,34,2983,47,3352,67,3505,80,3620,95,3656,106,3650,106,3620,101,3504,85,3351,72,2983,52,2609,40,2326,33"/>
-<area shape="rect" id="Node000032" href="$nps__fdm__gazebo_8cpp.html" title="Flight Dynamics Model (FDM) for NPS using Gazebo." alt="" coords="3822,106,3981,151"/>
-<area shape="poly" id="edge33_Node000001_Node000032" title=" " alt="" coords="2326,27,2644,32,3073,43,3499,63,3676,78,3810,95,3845,106,3839,106,3809,101,3675,83,3499,69,3072,49,2644,37,2326,33"/>
-<area shape="rect" id="Node000033" href="$nps__fdm__gz_8cpp.html" title="Flight Dynamics Model (FDM) for NPS using the new Gazebo (gz&#45;sim)." alt="" coords="4006,106,4165,151"/>
-<area shape="poly" id="edge34_Node000001_Node000033" title=" " alt="" coords="2326,27,2677,30,3159,40,3409,49,3642,61,3842,76,3994,95,4029,106,4023,106,3993,101,3842,81,3641,66,3409,54,3159,46,2677,35,2326,32"/>
-<area shape="rect" id="Node000034" href="$nps__fdm__pybullet_8c.html" title=" " alt="" coords="4190,106,4349,151"/>
-<area shape="poly" id="edge35_Node000001_Node000034" title=" " alt="" coords="2326,26,2710,28,3246,37,3524,46,3784,58,4009,74,4178,95,4213,106,4207,106,4177,101,4008,80,3784,63,3524,51,3246,43,2710,34,2326,32"/>
-<area shape="rect" id="Node000035" href="$nps__fdm__rover_8c.html" title=" " alt="" coords="4374,106,4533,151"/>
-<area shape="poly" id="edge36_Node000001_Node000035" title=" " alt="" coords="2325,26,2742,27,3331,34,3638,43,3926,55,4175,73,4362,95,4397,106,4391,106,4361,101,4174,78,3926,61,3638,48,3331,40,2742,32,2326,31"/>
-<area shape="rect" id="Node000009" href="$ins__vectornav_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="1863,309,2020,354"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="2014,262,1965,311,1963,306,2009,264"/>
-<area shape="rect" id="Node000010" href="$ins__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2044,309,2254,354"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="2080,261,2129,309,2124,308,2078,266"/>
-<area shape="rect" id="Node000011" href="$ins__vectornav__wrapper_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2045,418,2254,463"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="2151,367,2151,420,2147,416,2147,371"/>
-<area shape="poly" id="edge30_Node000023_Node000008" title=" " alt="" coords="3444,155,3422,162,3304,177,3148,190,2773,210,2399,223,2125,230,2124,224,2398,218,2773,205,3148,185,3303,172,3421,157,3439,156"/>
-<area shape="rect" id="Node000024" href="$ahrs__vectornav_8h.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="3248,208,3416,252"/>
-<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="3469,158,3374,210,3373,205,3464,160"/>
-<area shape="rect" id="Node000028" href="$imu__vectornav_8h.html" title="Vectornav VN&#45;200 IMU module, to be used with other AHRS/INS algorithms." alt="" coords="3440,208,3602,252"/>
-<area shape="poly" id="edge28_Node000023_Node000028" title=" " alt="" coords="3523,165,3523,209,3519,206,3520,169"/>
-<area shape="rect" id="Node000030" href="$vn200__serial_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3626,208,3800,252"/>
-<area shape="poly" id="edge31_Node000023_Node000030" title=" " alt="" coords="3577,156,3674,208,3669,207,3576,161"/>
-<area shape="rect" id="Node000025" href="$ahrs__vectornav_8c.html" title=" " alt="" coords="3135,418,3302,463"/>
-<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="3283,260,3263,281,3246,302,3233,331,3225,363,3220,420,3216,416,3220,362,3228,329,3242,299,3259,277,3278,262"/>
-<area shape="rect" id="Node000026" href="$ahrs__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="3256,300,3413,362"/>
-<area shape="poly" id="edge25_Node000024_Node000026" title=" " alt="" coords="3335,266,3336,302,3332,298,3331,270"/>
-<area shape="poly" id="edge26_Node000026_Node000025" title=" " alt="" coords="3294,372,3243,420,3241,416,3289,374"/>
-<area shape="rect" id="Node000027" href="$ahrs__vectornav__wrapper_8c.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="3327,410,3484,472"/>
-<area shape="poly" id="edge27_Node000026_Node000027" title=" " alt="" coords="3364,373,3388,411,3383,408,3361,377"/>
-<area shape="rect" id="Node000029" href="$imu__vectornav_8c.html" title="Vectornav VN&#45;200 IMU module, to be used with other AHRS/INS algorithms." alt="" coords="3441,309,3602,354"/>
-<area shape="poly" id="edge29_Node000028_Node000029" title=" " alt="" coords="3523,266,3523,310,3519,307,3519,270"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2235,37,2034,62,1915,79,1797,101,1765,108,1763,103,1795,95,1914,74,2033,56,2241,36"/>
+<area shape="rect" id="Node000015" href="$airspeed__uavcan_8c.html" title="Airspeed sensor on the uavcan bus." alt="" coords="1808,106,2008,151"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2241,49,2021,101,1989,109,1987,103,2019,95,2236,50"/>
+<area shape="rect" id="Node000016" href="$baro__bmp280_8c.html" title="Bosch BMP280 sensor interface." alt="" coords="2032,106,2211,151"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2279,56,2169,108,2168,103,2274,58"/>
+<area shape="rect" id="Node000017" href="$baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C." alt="" coords="2235,106,2440,151"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2339,64,2339,108,2335,104,2336,68"/>
+<area shape="rect" id="Node000018" href="$baro__ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="2463,106,2668,151"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="2402,54,2518,106,2513,106,2401,59"/>
+<area shape="rect" id="Node000019" href="$baro__sim_8c.html" title="Simulate barometer pressure measurement using gps.hmsl." alt="" coords="2692,106,2849,151"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="2436,43,2554,66,2681,95,2710,106,2705,106,2679,101,2553,71,2436,48"/>
+<area shape="rect" id="Node000020" href="$baro__spa06_8c.html" title="Module glue for the Goertek SPA06&#45;003 / SPL06&#45;001 barometer." alt="" coords="2873,106,3039,151"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="2437,34,2634,56,2749,74,2862,95,2894,106,2889,106,2861,101,2748,79,2634,62,2437,40"/>
+<area shape="rect" id="Node000021" href="$invensense2_8c.html" title="Driver for the Invensense V2 IMUs ICM20948, ICM20648 and ICM20649." alt="" coords="3062,106,3236,151"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="2436,30,2561,37,2715,49,2883,68,3051,95,3086,106,3081,106,3050,101,2882,73,2714,54,2560,42,2437,35"/>
+<area shape="rect" id="Node000022" href="$invensense3_8c.html" title="Driver for the Invensense v3 IMUs ICM40605, ICM40609, ICM42605, IIM42652 and ICM42688." alt="" coords="3261,106,3435,151"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="2437,27,2594,31,2796,42,3022,63,3137,77,3249,95,3284,106,3279,106,3247,101,3136,82,3022,68,2796,47,2593,37,2437,32"/>
+<area shape="rect" id="Node000023" href="$invensense3__456_8c.html" title="Driver for the Invensense 456XY IMUs:" alt="" coords="3460,106,3634,151"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="2437,25,2625,27,2877,36,3161,57,3306,74,3447,95,3484,106,3478,106,3446,101,3305,79,3161,62,2877,41,2625,32,2437,30"/>
+<area shape="rect" id="Node000024" href="$vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3658,106,3832,151"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="2437,29,2704,36,3053,49,3396,69,3538,81,3646,95,3683,106,3678,106,3645,101,3537,87,3395,74,3053,55,2704,41,2437,34"/>
+<area shape="rect" id="Node000032" href="$nps__fdm__fixedwing__sim_8c.html" title=" " alt="" coords="3856,106,4021,151"/>
+<area shape="poly" id="edge33_Node000001_Node000032" title=" " alt="" coords="2436,28,2741,33,3147,45,3550,65,3718,79,3844,95,3880,106,3875,106,3844,101,3717,84,3550,71,3147,50,2741,39,2437,33"/>
+<area shape="rect" id="Node000033" href="$nps__fdm__gazebo_8cpp.html" title="Flight Dynamics Model (FDM) for NPS using Gazebo." alt="" coords="4046,106,4205,151"/>
+<area shape="poly" id="edge34_Node000001_Node000033" title=" " alt="" coords="2436,27,2775,31,3237,41,3698,62,3889,77,4034,95,4069,106,4063,106,4033,101,3888,82,3697,67,3237,47,2775,36,2437,32"/>
+<area shape="rect" id="Node000034" href="$nps__fdm__gz_8cpp.html" title="Flight Dynamics Model (FDM) for NPS using the new Gazebo (gz&#45;sim)." alt="" coords="4230,106,4389,151"/>
+<area shape="poly" id="edge35_Node000001_Node000034" title=" " alt="" coords="2436,26,2807,29,3323,38,3590,47,3840,59,4055,75,4218,95,4253,106,4247,106,4217,101,4055,80,3840,64,3590,52,3323,44,2807,34,2436,32"/>
+<area shape="rect" id="Node000035" href="$nps__fdm__pybullet_8c.html" title=" " alt="" coords="4414,106,4573,151"/>
+<area shape="poly" id="edge36_Node000001_Node000035" title=" " alt="" coords="2436,26,2840,27,3408,35,3705,44,3982,56,4221,73,4402,95,4437,106,4431,106,4401,101,4221,78,3982,62,3705,49,3408,41,2840,33,2436,31"/>
+<area shape="rect" id="Node000036" href="$nps__fdm__rover_8c.html" title=" " alt="" coords="4598,106,4757,151"/>
+<area shape="poly" id="edge37_Node000001_Node000036" title=" " alt="" coords="2436,26,2872,26,3494,33,3820,41,4125,54,4388,71,4496,83,4586,95,4621,106,4616,106,4585,101,4495,88,4387,77,4125,59,3819,46,3494,38,2872,31,2437,31"/>
+<area shape="rect" id="Node000009" href="$ins__vectornav_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="1975,309,2132,354"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="2126,262,2077,311,2075,306,2121,264"/>
+<area shape="rect" id="Node000010" href="$ins__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2156,309,2366,354"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="2192,261,2241,309,2236,308,2190,266"/>
+<area shape="rect" id="Node000011" href="$ins__vectornav__wrapper_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="2157,418,2366,463"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="2263,367,2263,420,2259,416,2259,371"/>
+<area shape="poly" id="edge31_Node000024_Node000008" title=" " alt="" coords="3668,155,3646,162,3517,178,3347,192,2938,212,2531,224,2237,230,2236,225,2531,219,2938,207,3347,186,3517,173,3645,157,3663,156"/>
+<area shape="rect" id="Node000025" href="$ahrs__vectornav_8h.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="3472,208,3640,252"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="3693,158,3598,210,3597,205,3688,160"/>
+<area shape="rect" id="Node000029" href="$imu__vectornav_8h.html" title="Vectornav VN&#45;200 IMU module, to be used with other AHRS/INS algorithms." alt="" coords="3664,208,3826,252"/>
+<area shape="poly" id="edge29_Node000024_Node000029" title=" " alt="" coords="3747,165,3747,209,3743,206,3744,169"/>
+<area shape="rect" id="Node000031" href="$vn200__serial_8c.html" title="Vectornav VN&#45;200 INS subsystem." alt="" coords="3850,208,4024,252"/>
+<area shape="poly" id="edge32_Node000024_Node000031" title=" " alt="" coords="3801,156,3898,208,3893,207,3800,161"/>
+<area shape="rect" id="Node000026" href="$ahrs__vectornav_8c.html" title=" " alt="" coords="3359,418,3526,463"/>
+<area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="3507,260,3487,281,3470,302,3457,331,3449,363,3444,420,3440,416,3444,362,3452,329,3466,299,3483,277,3502,262"/>
+<area shape="rect" id="Node000027" href="$ahrs__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="3480,300,3637,362"/>
+<area shape="poly" id="edge26_Node000025_Node000027" title=" " alt="" coords="3559,266,3560,302,3556,298,3555,270"/>
+<area shape="poly" id="edge27_Node000027_Node000026" title=" " alt="" coords="3518,372,3467,420,3465,416,3513,374"/>
+<area shape="rect" id="Node000028" href="$ahrs__vectornav__wrapper_8c.html" title="Vectornav VN&#45;200 as AHRS." alt="" coords="3551,410,3708,472"/>
+<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="3588,373,3612,411,3607,408,3585,377"/>
+<area shape="rect" id="Node000030" href="$imu__vectornav_8c.html" title="Vectornav VN&#45;200 IMU module, to be used with other AHRS/INS algorithms." alt="" coords="3665,309,3826,354"/>
+<area shape="poly" id="edge30_Node000029_Node000030" title=" " alt="" coords="3747,266,3747,310,3743,307,3743,270"/>
 </map>

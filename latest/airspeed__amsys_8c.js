@@ -1,7 +1,6 @@
 var airspeed__amsys_8c =
 [
     [ "AIRSPEED_AMSYS_ADDR", "airspeed__amsys_8c.html#af3cdbb5c8c4e6e3a16f46929c43d90d6", null ],
-    [ "AIRSPEED_AMSYS_FILTER", "airspeed__amsys_8c.html#a809d44daaf6333908f2e56dcb2de094c", null ],
     [ "AIRSPEED_AMSYS_I2C_DEV", "airspeed__amsys_8c.html#ae918dadf5d34ff0a936801eb4ea2a22e", null ],
     [ "AIRSPEED_AMSYS_MAXPRESURE", "airspeed__amsys_8c.html#af9b2d89a5d8a3ce670ffa0e33de03f47", null ],
     [ "AIRSPEED_AMSYS_NBSAMPLES_AVRG", "airspeed__amsys_8c.html#aa0607e54bb07f9fcd2c2a6b12c0f448d", null ],
@@ -25,8 +24,6 @@ var airspeed__amsys_8c =
     [ "airspeed_amsys_raw", "airspeed__amsys_8c.html#aa3279eb0d77800f5e2ce43a443b052f5", null ],
     [ "airspeed_amsys_tmp", "airspeed__amsys_8c.html#a6fbbcc73117aaa2621704d1e367791f2", null ],
     [ "airspeed_amsys_valid", "airspeed__amsys_8c.html#ae2989b3d83724ac943b834b70d315870", null ],
-    [ "airspeed_filter", "airspeed__amsys_8c.html#a41b2311caf36c593094429deaa55e89f", null ],
-    [ "airspeed_old", "airspeed__amsys_8c.html#a223e6f251f6d932fec44f7641e0c93db", null ],
     [ "airspeed_scale", "airspeed__amsys_8c.html#a3d8f23b9b0c9cb2a3c4357bcad809041", null ],
     [ "airspeed_temperature", "airspeed__amsys_8c.html#a5ddf9c29e6f33832f1893cdd311dfdd6", null ],
     [ "tempAS_amsys_raw", "airspeed__amsys_8c.html#a30f024ad57f6b9ec5fae02688a287326", null ]

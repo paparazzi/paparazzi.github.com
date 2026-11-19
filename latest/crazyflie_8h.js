@@ -70,7 +70,6 @@ var crazyflie_8h =
     [ "UART6_GPIO_PORT_TX", "crazyflie_8h.html#a73225755857cd90c4c599337fa44de97", null ],
     [ "UART6_GPIO_RX", "crazyflie_8h.html#a1a657746fc043e286c637302b06024a1", null ],
     [ "UART6_GPIO_TX", "crazyflie_8h.html#a6313fd7ca8972bdfc8516ad63c842d1b", null ],
-    [ "USE_BARO_BOARD", "crazyflie_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_LED_1", "crazyflie_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "crazyflie_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],
     [ "USE_LED_3", "crazyflie_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ],

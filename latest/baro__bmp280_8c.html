@@ -98,99 +98,63 @@ $(function(){initNavTree('baro__bmp280_8c.html','',''); });
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="baro__bmp280_8h_source.html">baro_bmp280.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__isa_8h_source.html">math/pprz_isa.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for baro_bmp280.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__bmp280_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2sensors_2baro__bmp280_8c" loading="lazy" alt=""/></div>
 <map name="asw_2airborne_2modules_2sensors_2baro__bmp280_8c" id="asw_2airborne_2modules_2sensors_2baro__bmp280_8c">
-<area shape="rect" title="Bosch BMP280 sensor interface." alt="" coords="719,5,898,50"/>
-<area shape="rect" href="baro__bmp280_8h.html" title="Bosch BMP280 sensor interface." alt="" coords="314,98,436,126"/>
-<area shape="poly" title=" " alt="" coords="716,48,452,99,451,94,720,44"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="470,98,616,126"/>
-<area shape="poly" title=" " alt="" coords="736,52,601,96,599,91,740,49"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1774,350,1913,378"/>
-<area shape="poly" title=" " alt="" coords="898,27,1116,31,1393,41,1533,50,1662,61,1773,77,1856,95,1911,114,1958,138,1975,153,1986,172,1989,194,1983,219,1962,258,1935,292,1905,321,1876,343,1874,338,1901,317,1931,288,1958,255,1978,217,1984,193,1981,173,1971,157,1955,142,1909,119,1854,101,1772,82,1662,67,1532,55,1393,46,1116,36,899,32"/>
-<area shape="rect" title=" " alt="" coords="678,266,833,294"/>
-<area shape="poly" title=" " alt="" coords="806,49,763,253,759,250,802,52"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1004,182,1213,210"/>
-<area shape="poly" title=" " alt="" coords="848,48,1074,174,1069,175,847,53"/>
-<area shape="rect" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities." alt="" coords="646,98,771,126"/>
-<area shape="poly" title=" " alt="" coords="784,49,738,90,735,86,780,52"/>
-<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1630,98,1843,126"/>
-<area shape="poly" title=" " alt="" coords="899,34,1617,98,1613,101,899,40"/>
-<area shape="rect" href="bmp280_8h.html" title="Sensor driver for BMP280 sensor." alt="" coords="290,182,453,210"/>
-<area shape="poly" title=" " alt="" coords="376,124,375,168,370,166,373,129"/>
-<area shape="rect" href="bmp280__regs_8h.html" title=" " alt="" coords="948,342,1099,387"/>
-<area shape="poly" title=" " alt="" coords="412,208,566,264,594,279,623,291,699,312,761,322,823,328,902,339,935,347,930,347,901,345,822,334,760,327,698,317,621,297,592,283,563,269,412,213"/>
-<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="249,266,381,294"/>
-<area shape="poly" title=" " alt="" coords="364,209,334,255,331,252,360,212"/>
-<area shape="rect" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="420,266,552,294"/>
-<area shape="poly" title=" " alt="" coords="390,208,458,257,453,257,389,213"/>
-<area shape="rect" title=" " alt="" coords="1052,443,1106,471"/>
-<area shape="poly" title=" " alt="" coords="1038,385,1065,431,1061,429,1035,389"/>
-<area shape="poly" title=" " alt="" coords="382,290,500,312,554,326,592,340,608,351,618,363,628,374,643,384,705,399,815,417,1040,450,1034,450,814,423,704,404,641,389,624,378,614,366,605,355,590,344,552,331,499,317,382,295"/>
-<area shape="rect" title=" " alt="" coords="17,350,184,378"/>
-<area shape="poly" title=" " alt="" coords="279,297,150,347,148,342,282,293"/>
-<area shape="rect" href="threads_8h.html" title=" " alt="" coords="208,350,382,378"/>
-<area shape="poly" title=" " alt="" coords="314,293,304,337,300,334,310,297"/>
-<area shape="rect" title=" " alt="" coords="197,443,278,471"/>
-<area shape="poly" title=" " alt="" coords="289,377,256,432,252,428,285,380"/>
-<area shape="rect" title=" " alt="" coords="302,435,464,479"/>
-<area shape="poly" title=" " alt="" coords="309,376,354,424,349,423,307,381"/>
-<area shape="rect" title=" " alt="" coords="5,443,76,471"/>
-<area shape="poly" title=" " alt="" coords="252,381,88,437,84,439,81,434,86,432,251,376"/>
-<area shape="rect" title=" " alt="" coords="100,443,173,471"/>
-<area shape="poly" title=" " alt="" coords="275,378,174,438,171,433,269,379"/>
-<area shape="poly" title=" " alt="" coords="552,289,719,317,835,339,921,377,1041,436,1036,436,919,382,833,345,718,322,552,295"/>
-<area shape="poly" title=" " alt="" coords="458,294,341,346,339,342,453,296"/>
-<area shape="rect" title=" " alt="" coords="654,350,822,378"/>
-<area shape="poly" title=" " alt="" coords="527,292,686,345,680,346,526,297"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="406,350,579,378"/>
-<area shape="poly" title=" " alt="" coords="488,292,493,336,488,334,485,297"/>
-<area shape="poly" title=" " alt="" coords="555,376,598,384,847,422,1040,450,1034,450,846,428,597,389,555,381"/>
-<area shape="rect" title=" " alt="" coords="803,443,889,471"/>
-<area shape="poly" title=" " alt="" coords="544,376,790,440,785,441,544,381"/>
-<area shape="rect" title=" " alt="" coords="638,443,707,471"/>
-<area shape="poly" title=" " alt="" coords="519,376,636,436,630,436,518,381"/>
-<area shape="rect" title=" " alt="" coords="488,443,614,471"/>
-<area shape="poly" title=" " alt="" coords="502,376,537,431,532,429,500,381"/>
-<area shape="rect" title=" " alt="" coords="477,182,604,210"/>
-<area shape="poly" title=" " alt="" coords="544,124,544,168,539,165,541,129"/>
-<area shape="poly" title=" " alt="" coords="1796,378,1756,389,1571,416,1389,435,1122,456,1121,451,1389,430,1570,411,1755,384,1790,379"/>
-<area shape="rect" title=" " alt="" coords="1652,443,1826,471"/>
-<area shape="poly" title=" " alt="" coords="1831,378,1767,435,1765,430,1826,379"/>
-<area shape="rect" title=" " alt="" coords="1850,443,2042,471"/>
-<area shape="poly" title=" " alt="" coords="1859,376,1922,434,1917,432,1857,381"/>
-<area shape="poly" title=" " alt="" coords="1006,209,946,233,920,248,897,268,872,306,857,349,850,392,847,429,843,426,845,391,852,348,867,303,893,265,917,244,944,228,1001,211"/>
-<area shape="poly" title=" " alt="" coords="1049,211,827,265,826,260,1054,210"/>
-<area shape="rect" title=" " alt="" coords="1318,266,1478,294"/>
-<area shape="poly" title=" " alt="" coords="1155,208,1339,262,1334,262,1155,213"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1091,266,1294,294"/>
-<area shape="poly" title=" " alt="" coords="1123,208,1171,256,1166,255,1121,213"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1502,266,1699,294"/>
-<area shape="poly" title=" " alt="" coords="1188,208,1509,263,1504,263,1187,213"/>
-<area shape="rect" title=" " alt="" coords="908,266,1067,294"/>
-<area shape="poly" title=" " alt="" coords="1091,209,1020,260,1018,255,1087,211"/>
-<area shape="poly" title=" " alt="" coords="1192,292,1181,338,1171,364,1157,388,1136,414,1111,436,1109,431,1132,410,1153,385,1166,361,1176,336,1188,296"/>
-<area shape="rect" title=" " alt="" coords="1225,350,1386,378"/>
-<area shape="poly" title=" " alt="" coords="1211,292,1278,342,1273,341,1210,297"/>
-<area shape="poly" title=" " alt="" coords="1640,292,1793,345,1788,345,1639,297"/>
-<area shape="rect" title=" " alt="" coords="1509,350,1692,378"/>
-<area shape="poly" title=" " alt="" coords="1602,293,1603,337,1598,333,1599,297"/>
-<area shape="poly" title=" " alt="" coords="698,125,681,149,668,175,657,209,649,238,651,265,668,292,682,304,702,312,754,320,818,320,888,315,958,311,1023,311,1076,319,1097,328,1113,340,1123,362,1122,386,1113,410,1100,432,1097,428,1108,408,1117,385,1118,363,1109,344,1095,332,1075,324,1023,316,959,316,889,321,819,325,754,325,701,317,680,308,664,296,646,266,644,238,651,208,663,173,677,146,694,128"/>
-<area shape="rect" title=" " alt="" coords="678,182,745,210"/>
-<area shape="poly" title=" " alt="" coords="710,124,713,168,708,165,707,128"/>
-<area shape="poly" title=" " alt="" coords="1741,124,1752,174,1756,245,1753,284,1745,322,1730,358,1706,389,1674,404,1615,416,1448,436,1263,450,1122,457,1121,451,1263,444,1447,431,1614,411,1672,399,1703,385,1725,355,1740,320,1748,283,1751,245,1746,175,1738,128"/>
-<area shape="poly" title=" " alt="" coords="1744,124,1834,337,1829,335,1741,128"/>
-<area shape="poly" title=" " alt="" coords="1633,127,1225,182,1224,177,1638,126"/>
-<area shape="rect" title=" " alt="" coords="1825,174,1968,218"/>
-<area shape="poly" title=" " alt="" coords="1763,124,1843,166,1838,166,1762,129"/>
+<area shape="rect" title="Bosch BMP280 sensor interface." alt="" coords="763,5,943,50"/>
+<area shape="rect" href="baro__bmp280_8h.html" title="Bosch BMP280 sensor interface." alt="" coords="481,98,604,126"/>
+<area shape="poly" title=" " alt="" coords="768,52,608,96,606,91,773,49"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="798,342,970,370"/>
+<area shape="poly" title=" " alt="" coords="943,43,987,64,1005,78,1021,97,1034,129,1035,163,1025,197,1008,230,986,261,961,289,913,334,911,329,957,286,982,258,1003,227,1020,195,1030,162,1029,130,1016,99,1002,82,984,68,943,48"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="860,98,1006,126"/>
+<area shape="poly" title=" " alt="" coords="875,48,912,87,907,86,873,53"/>
+<area shape="rect" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities." alt="" coords="710,98,836,126"/>
+<area shape="poly" title=" " alt="" coords="834,49,798,89,795,84,830,52"/>
+<area shape="rect" href="bmp280_8h.html" title="Sensor driver for BMP280 sensor." alt="" coords="418,174,581,201"/>
+<area shape="poly" title=" " alt="" coords="537,124,517,162,513,158,533,128"/>
+<area shape="rect" href="bmp280__regs_8h.html" title=" " alt="" coords="383,249,534,294"/>
+<area shape="poly" title=" " alt="" coords="495,200,478,237,474,234,491,204"/>
+<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="223,258,355,286"/>
+<area shape="poly" title=" " alt="" coords="464,203,338,254,336,249,468,201"/>
+<area shape="rect" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="558,258,690,286"/>
+<area shape="poly" title=" " alt="" coords="520,199,594,249,589,249,519,205"/>
+<area shape="rect" title=" " alt="" coords="658,426,712,454"/>
+<area shape="poly" title=" " alt="" coords="460,292,467,332,474,351,486,368,521,396,563,415,605,427,646,436,640,436,604,432,561,420,518,400,482,371,469,354,462,333,457,297"/>
+<area shape="poly" title=" " alt="" coords="310,283,377,324,463,367,559,402,646,429,640,428,558,407,461,372,375,328,309,289"/>
+<area shape="rect" title=" " alt="" coords="5,342,173,370"/>
+<area shape="poly" title=" " alt="" coords="255,288,136,338,134,333,258,284"/>
+<area shape="rect" href="threads_8h.html" title=" " alt="" coords="196,342,371,370"/>
+<area shape="poly" title=" " alt="" coords="290,284,288,328,283,325,287,288"/>
+<area shape="rect" title=" " alt="" coords="171,426,252,454"/>
+<area shape="poly" title=" " alt="" coords="275,369,234,417,231,413,270,371"/>
+<area shape="rect" title=" " alt="" coords="276,418,438,462"/>
+<area shape="poly" title=" " alt="" coords="296,368,330,406,325,405,294,373"/>
+<area shape="rect" title=" " alt="" coords="462,426,532,454"/>
+<area shape="poly" title=" " alt="" coords="323,368,451,415,458,420,452,419,449,420,322,373"/>
+<area shape="rect" title=" " alt="" coords="74,426,147,454"/>
+<area shape="poly" title=" " alt="" coords="258,370,153,422,151,417,253,371"/>
+<area shape="poly" title=" " alt="" coords="638,283,660,309,678,341,687,377,688,412,684,409,681,377,673,343,656,312,636,288"/>
+<area shape="poly" title=" " alt="" coords="574,287,547,297,359,341,358,336,546,291,579,285"/>
+<area shape="rect" title=" " alt="" coords="496,342,663,370"/>
+<area shape="poly" title=" " alt="" coords="619,285,596,330,592,326,614,288"/>
+<area shape="poly" title=" " alt="" coords="666,283,830,337,825,337,665,289"/>
+<area shape="poly" title=" " alt="" coords="848,370,725,420,722,421,721,416,723,415,842,371"/>
+<area shape="rect" title=" " alt="" coords="979,426,1066,454"/>
+<area shape="poly" title=" " alt="" coords="907,368,990,418,984,417,905,373"/>
+<area shape="rect" title=" " alt="" coords="736,426,805,454"/>
+<area shape="poly" title=" " alt="" coords="868,369,801,419,799,415,863,371"/>
+<area shape="rect" title=" " alt="" coords="828,426,955,454"/>
+<area shape="poly" title=" " alt="" coords="887,368,891,412,887,409,883,372"/>
+<area shape="rect" title=" " alt="" coords="880,174,1007,201"/>
+<area shape="poly" title=" " alt="" coords="936,124,942,160,937,157,933,128"/>
+<area shape="poly" title=" " alt="" coords="772,125,695,412,690,409,767,128"/>
+<area shape="rect" title=" " alt="" coords="789,174,856,201"/>
+<area shape="poly" title=" " alt="" coords="783,124,808,161,803,160,781,129"/>
 </map>
 </div>
 </div>
@@ -205,7 +169,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a798ccb8ecf31e12b46e2f7738e240ab6" id="r_a798ccb8ecf31e12b46e2f7738e240ab6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a798ccb8ecf31e12b46e2f7738e240ab6">send_baro_bmp_data</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="memitem:a56a1810f9a1561f66ef4ea248a1eac87" id="r_a56a1810f9a1561f66ef4ea248a1eac87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56a1810f9a1561f66ef4ea248a1eac87">baro_bmp280_init</a> (void)</td></tr>
 <tr class="memitem:a4502d13651216544e7d39c3142094972" id="r_a4502d13651216544e7d39c3142094972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4502d13651216544e7d39c3142094972">baro_bmp280_periodic</a> (void)</td></tr>
 <tr class="memitem:af54cb2d222ce142b39a34c7c777c6be0" id="r_af54cb2d222ce142b39a34c7c777c6be0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af54cb2d222ce142b39a34c7c777c6be0">baro_bmp280_event</a> (void)</td></tr>
@@ -238,9 +201,9 @@ Variables</h2></td></tr>
 
 <p>default slave address </p>
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00051">51</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00045">45</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00062">baro_bmp280_init()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +219,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00055">55</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00049">49</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00062">baro_bmp280_init()</a>.</p>
 
 </div>
 </div>
@@ -274,7 +237,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00044">44</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00038">38</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
 </div>
 </div>
@@ -294,9 +257,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00103">103</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00081">81</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__bmp280_8c_source.html#l00059">baro_alt</a>, <a class="el" href="baro__bmp280_8c_source.html#l00062">baro_alt_valid</a>, <a class="el" href="baro__bmp280_8c_source.html#l00065">baro_bmp280</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00048">BARO_BMP_SENDER_ID</a>, <a class="el" href="baro__bmp280_8c_source.html#l00061">baro_press</a>, <a class="el" href="baro__bmp280_8c_source.html#l00060">baro_temp</a>, <a class="el" href="bmp280_8c_source.html#l00157">bmp280_event()</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00273">p</a>, <a class="el" href="pprz__isa_8h_source.html#l00082">pprz_isa_altitude_of_pressure()</a>, and <a class="el" href="light__solar_8c_source.html#l00048">up</a>.</p>
+<p class="reference">References <a class="el" href="baro__bmp280_8c_source.html#l00053">baro_alt</a>, <a class="el" href="baro__bmp280_8c_source.html#l00056">baro_alt_valid</a>, <a class="el" href="baro__bmp280_8c_source.html#l00059">baro_bmp280</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00054">BARO_BMP_SENDER_ID</a>, <a class="el" href="baro__bmp280_8c_source.html#l00055">baro_press</a>, <a class="el" href="baro__bmp280_8c_source.html#l00054">baro_temp</a>, <a class="el" href="bmp280_8c_source.html#l00157">bmp280_event()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_usec()</a>, <a class="el" href="pprz__isa_8h_source.html#l00082">pprz_isa_altitude_of_pressure()</a>, and <a class="el" href="abi__common_8h_source.html#l00091">TEMPERATURE_TYPE_BARO</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
@@ -350,23 +313,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00081">81</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00062">62</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__bmp280_8c_source.html#l00065">baro_bmp280</a>, <a class="el" href="bmp280_8h_source.html#l00054">BMP280_I2C</a>, <a class="el" href="bmp280_8c_source.html#l00048">bmp280_init()</a>, <a class="el" href="baro__bmp280_8c_source.html#l00051">BMP280_SLAVE_ADDR</a>, <a class="el" href="baro__bmp280_8c_source.html#l00055">BMP280_SLAVE_IDX</a>, <a class="el" href="bmp280_8h_source.html#l00053">BMP280_SPI</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, and <a class="el" href="baro__bmp280_8c_source.html#l00068">send_baro_bmp_data()</a>.</p>
+<p class="reference">References <a class="el" href="baro__bmp280_8c_source.html#l00059">baro_bmp280</a>, <a class="el" href="bmp280_8h_source.html#l00054">BMP280_I2C</a>, <a class="el" href="bmp280_8c_source.html#l00048">bmp280_init()</a>, <a class="el" href="baro__bmp280_8c_source.html#l00045">BMP280_SLAVE_ADDR</a>, <a class="el" href="baro__bmp280_8c_source.html#l00049">BMP280_SLAVE_IDX</a>, and <a class="el" href="bmp280_8h_source.html#l00053">BMP280_SPI</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__bmp280_8c_a56a1810f9a1561f66ef4ea248a1eac87_cgraph.png" border="0" usemap="#abaro__bmp280_8c_a56a1810f9a1561f66ef4ea248a1eac87_cgraph" loading="lazy" alt=""/></div>
 <map name="abaro__bmp280_8c_a56a1810f9a1561f66ef4ea248a1eac87_cgraph" id="abaro__bmp280_8c_a56a1810f9a1561f66ef4ea248a1eac87_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,144,109"/>
-<area shape="rect" href="bmp280_8c.html#a1cfc1a5c4fa2d195848230ee351f0a56" title="Initialize the bmp280 sensor instance." alt="" coords="241,29,344,57"/>
-<area shape="poly" title=" " alt="" coords="135,78,229,57,224,60,137,83"/>
-<area shape="rect" href="telemetry_8c.html#a7caab442e31bff660862d3372fd9737c" title="Register a telemetry callback function." alt="" coords="192,81,393,109"/>
-<area shape="poly" title=" " alt="" coords="143,93,179,94,174,96,144,98"/>
-<area shape="rect" href="baro__bmp280_8c.html#a798ccb8ecf31e12b46e2f7738e240ab6" title=" " alt="" coords="212,133,372,161"/>
-<area shape="poly" title=" " alt="" coords="136,107,219,128,214,130,136,112"/>
-<area shape="poly" title=" " alt="" coords="255,28,249,20,254,11,268,5,292,3,318,5,333,14,328,14,317,10,292,8,270,10,257,15,254,20,260,29"/>
+<area shape="rect" title=" " alt="" coords="5,29,144,57"/>
+<area shape="rect" href="bmp280_8c.html#a1cfc1a5c4fa2d195848230ee351f0a56" title="Initialize the bmp280 sensor instance." alt="" coords="192,29,294,57"/>
+<area shape="poly" title=" " alt="" coords="144,41,178,43,173,43,144,46"/>
+<area shape="poly" title=" " alt="" coords="213,28,209,20,212,11,224,5,243,3,263,5,275,14,270,14,261,10,243,8,226,10,216,15,214,20,218,30"/>
 </map>
 </div>
 
@@ -387,9 +346,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00098">98</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00076">76</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">References <a class="el" href="baro__bmp280_8c_source.html#l00065">baro_bmp280</a>, and <a class="el" href="bmp280_8c_source.html#l00101">bmp280_periodic()</a>.</p>
+<p class="reference">References <a class="el" href="baro__bmp280_8c_source.html#l00059">baro_bmp280</a>, and <a class="el" href="bmp280_8c_source.html#l00101">bmp280_periodic()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
@@ -422,52 +381,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a798ccb8ecf31e12b46e2f7738e240ab6" name="a798ccb8ecf31e12b46e2f7738e240ab6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a798ccb8ecf31e12b46e2f7738e240ab6">&#9670;&#160;</a></span>send_baro_bmp_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void send_baro_bmp_data </td>
-          <td>(</td>
-          <td class="paramtype">struct transport_tx *</td>          <td class="paramname"><span class="paramname"><em>trans</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct link_device *</td>          <td class="paramname"><span class="paramname"><em>dev</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00068">68</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
-
-<p class="reference">References <a class="el" href="baro__bmp280_8c_source.html#l00059">baro_alt</a>, <a class="el" href="baro__bmp280_8c_source.html#l00061">baro_press</a>, <a class="el" href="baro__bmp280_8c_source.html#l00060">baro_temp</a>, and <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_init()</a>.</p>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="baro__bmp280_8c_a798ccb8ecf31e12b46e2f7738e240ab6_icgraph.png" border="0" usemap="#abaro__bmp280_8c_a798ccb8ecf31e12b46e2f7738e240ab6_icgraph" loading="lazy" alt=""/></div>
-<map name="abaro__bmp280_8c_a798ccb8ecf31e12b46e2f7738e240ab6_icgraph" id="abaro__bmp280_8c_a798ccb8ecf31e12b46e2f7738e240ab6_icgraph">
-<area shape="rect" title=" " alt="" coords="192,5,352,33"/>
-<area shape="rect" href="baro__bmp280_8c.html#a56a1810f9a1561f66ef4ea248a1eac87" title=" " alt="" coords="5,5,144,33"/>
-<area shape="poly" title=" " alt="" coords="174,19,144,22,144,17,179,19"/>
-</map>
-</div>
-
-</div>
-</div>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
 <a id="a67176009749d07b3d9a4045a35aad016" name="a67176009749d07b3d9a4045a35aad016"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67176009749d07b3d9a4045a35aad016">&#9670;&#160;</a></span>baro_alt</h2>
@@ -481,9 +394,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00059">59</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00053">53</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00103">baro_bmp280_event()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00541">ins_mekf_wind_update_baro()</a>, and <a class="el" href="baro__bmp280_8c_source.html#l00068">send_baro_bmp_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_event()</a>, and <a class="el" href="ins__mekf__wind_8cpp_source.html#l00541">ins_mekf_wind_update_baro()</a>.</p>
 
 </div>
 </div>
@@ -499,9 +412,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00062">62</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00056">56</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00103">baro_bmp280_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_event()</a>.</p>
 
 </div>
 </div>
@@ -517,9 +430,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00065">65</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00059">59</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00103">baro_bmp280_event()</a>, <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_init()</a>, and <a class="el" href="baro__bmp280_8c_source.html#l00098">baro_bmp280_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_event()</a>, <a class="el" href="baro__bmp280_8c_source.html#l00062">baro_bmp280_init()</a>, and <a class="el" href="baro__bmp280_8c_source.html#l00076">baro_bmp280_periodic()</a>.</p>
 
 </div>
 </div>
@@ -535,9 +448,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00061">61</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00055">55</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00103">baro_bmp280_event()</a>, and <a class="el" href="baro__bmp280_8c_source.html#l00068">send_baro_bmp_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_event()</a>.</p>
 
 </div>
 </div>
@@ -553,9 +466,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00060">60</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="baro__bmp280_8c_source.html#l00054">54</a> of file <a class="el" href="baro__bmp280_8c_source.html">baro_bmp280.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00103">baro_bmp280_event()</a>, and <a class="el" href="baro__bmp280_8c_source.html#l00068">send_baro_bmp_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="baro__bmp280_8c_source.html#l00081">baro_bmp280_event()</a>.</p>
 
 </div>
 </div>

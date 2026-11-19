@@ -766,66 +766,62 @@ $(function(){initNavTree('tawaki_8h_source.html','',''); });
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a0bb8407cbad582149d6c82588b77f100">  711</a></span><span class="preprocessor">#define SPI_SELECT_SLAVE5_PORT  PAL_PORT(LINE_SPI4_INTERNAL_CS)</span></div>
 <div class="line"><a id="l00712" name="l00712"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a045b009e33c6c53c43c8ff352a2fd507">  712</a></span><span class="preprocessor">#define SPI_SELECT_SLAVE5_PIN   PAL_PAD(LINE_SPI4_INTERNAL_CS)</span></div>
 <div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span></div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span><span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  721</a></span><span class="preprocessor">#define USE_BARO_BOARD 0</span></div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span></div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aead66bc65b8e434c97f28429baeb2800">  727</a></span><span class="preprocessor">#define SDIO_D0_PORT  PAL_PORT(LINE_SDMMC1_D0)</span></div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">  728</a></span><span class="preprocessor">#define SDIO_D0_PIN   PAL_PAD(LINE_SDMMC1_D0)</span></div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno"><a class="line" href="tawaki_8h.html#abf25aa536f76d47dc6dc73da99210ac7">  729</a></span><span class="preprocessor">#define SDIO_D1_PORT  PAL_PORT(LINE_SDMMC1_D1)</span></div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a7769af3a5d7785eb756c5d0378ed7051">  730</a></span><span class="preprocessor">#define SDIO_D1_PIN   PAL_PAD(LINE_SDMMC1_D1)</span></div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a719da4653e9f8f406b223235e09bf853">  731</a></span><span class="preprocessor">#define SDIO_D2_PORT  PAL_PORT(LINE_SDMMC1_D2)</span></div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a9f35b196f10e4942483d526f7f25df31">  732</a></span><span class="preprocessor">#define SDIO_D2_PIN   PAL_PAD(LINE_SDMMC1_D2)</span></div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a1307338bc6abca9bbc5a1b217eee257e">  733</a></span><span class="preprocessor">#define SDIO_D3_PORT  PAL_PORT(LINE_SDMMC1_D3)</span></div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno"><a class="line" href="tawaki_8h.html#ad62e199253d055f0de7aa50ee2492263">  734</a></span><span class="preprocessor">#define SDIO_D3_PIN   PAL_PAD(LINE_SDMMC1_D3)</span></div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">  735</a></span><span class="preprocessor">#define SDIO_CK_PORT  PAL_PORT(LINE_SDMMC1_CK)</span></div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a7306050aa843659659499bde3429b417">  736</a></span><span class="preprocessor">#define SDIO_CK_PIN   PAL_PAD(LINE_SDMMC1_CK)</span></div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a2f973750f9134ee2fa55e004db3c6edc">  737</a></span><span class="preprocessor">#define SDIO_CMD_PORT PAL_PORT(LINE_SDMMC1_CMD)</span></div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">  738</a></span><span class="preprocessor">#define SDIO_CMD_PIN  PAL_PAD(LINE_SDMMC1_CMD)</span></div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">  739</a></span><span class="preprocessor">#define SDIO_AF       AF_SDMMC1_CK</span></div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="comment">// bat monitoring for file closing</span></div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a10df201a6a0340fdb61816a617b6bab9">  741</a></span><span class="preprocessor">#define SDLOG_BAT_ADC CONCAT_BOARD_PARAM(ADCD, VBAT_MEAS_ADC)</span></div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno"><a class="line" href="tawaki_8h.html#afa171425c899787769e5d3612c80acd2">  742</a></span><span class="preprocessor">#define SDLOG_BAT_CHAN CONCAT_BOARD_PARAM(ADC_CHANNEL_IN, VBAT_MEAS_ADC_IN)</span></div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span><span class="comment">// usb led status</span></div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a3eca81ff4917508b17002a96844e0904">  744</a></span><span class="preprocessor">#define SDLOG_USB_LED 4</span></div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">  745</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_PORT PAL_PORT(LINE_USB_VBUS)</span></div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a22e2edaeffd24afc57074815c42628d7">  746</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_PIN  PAL_PAD(LINE_USB_VBUS)</span></div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span> </div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span> </div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="comment"> * Actuators for fixedwing</span></div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span> <span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  753</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">  754</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorPwmSet</span></div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno"><a class="line" href="tawaki_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  755</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  756</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span></div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a17e208399ce330289bcaef37bd2e9b08">  761</a></span><span class="preprocessor">#define WS2812D1_GPIO PAL_PORT(LINE_AUX_A1)</span></div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aec52babc287e1d061dec870b9f43b083">  762</a></span><span class="preprocessor">#define WS2812D1_PIN  PAL_PAD(LINE_AUX_A1)</span></div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno"><a class="line" href="tawaki_8h.html#afd8cee2fb7cfce1b91317be24260b39c">  763</a></span><span class="preprocessor">#define WS2812D1_AF 2</span></div>
-<div class="foldopen" id="foldopen00764" data-start="" data-end="">
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">  764</a></span><span class="preprocessor">#define WS2812D1_CFG_DEF { \</span></div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="preprocessor">  .dma_stream = STM32_PWM5_UP_DMA_STREAM, \</span></div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="preprocessor">  .dma_channel = STM32_PWM5_UP_DMA_CHANNEL, \</span></div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="preprocessor">  .dma_priority = STM32_PWM5_UP_DMA_PRIORITY, \</span></div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="preprocessor">  .pwm_channel = 0, \</span></div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="preprocessor">  .pwmp = &amp;PWMD5 \</span></div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aead66bc65b8e434c97f28429baeb2800">  717</a></span><span class="preprocessor">#define SDIO_D0_PORT  PAL_PORT(LINE_SDMMC1_D0)</span></div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">  718</a></span><span class="preprocessor">#define SDIO_D0_PIN   PAL_PAD(LINE_SDMMC1_D0)</span></div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno"><a class="line" href="tawaki_8h.html#abf25aa536f76d47dc6dc73da99210ac7">  719</a></span><span class="preprocessor">#define SDIO_D1_PORT  PAL_PORT(LINE_SDMMC1_D1)</span></div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a7769af3a5d7785eb756c5d0378ed7051">  720</a></span><span class="preprocessor">#define SDIO_D1_PIN   PAL_PAD(LINE_SDMMC1_D1)</span></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a719da4653e9f8f406b223235e09bf853">  721</a></span><span class="preprocessor">#define SDIO_D2_PORT  PAL_PORT(LINE_SDMMC1_D2)</span></div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a9f35b196f10e4942483d526f7f25df31">  722</a></span><span class="preprocessor">#define SDIO_D2_PIN   PAL_PAD(LINE_SDMMC1_D2)</span></div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a1307338bc6abca9bbc5a1b217eee257e">  723</a></span><span class="preprocessor">#define SDIO_D3_PORT  PAL_PORT(LINE_SDMMC1_D3)</span></div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno"><a class="line" href="tawaki_8h.html#ad62e199253d055f0de7aa50ee2492263">  724</a></span><span class="preprocessor">#define SDIO_D3_PIN   PAL_PAD(LINE_SDMMC1_D3)</span></div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">  725</a></span><span class="preprocessor">#define SDIO_CK_PORT  PAL_PORT(LINE_SDMMC1_CK)</span></div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a7306050aa843659659499bde3429b417">  726</a></span><span class="preprocessor">#define SDIO_CK_PIN   PAL_PAD(LINE_SDMMC1_CK)</span></div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a2f973750f9134ee2fa55e004db3c6edc">  727</a></span><span class="preprocessor">#define SDIO_CMD_PORT PAL_PORT(LINE_SDMMC1_CMD)</span></div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">  728</a></span><span class="preprocessor">#define SDIO_CMD_PIN  PAL_PAD(LINE_SDMMC1_CMD)</span></div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">  729</a></span><span class="preprocessor">#define SDIO_AF       AF_SDMMC1_CK</span></div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span><span class="comment">// bat monitoring for file closing</span></div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a10df201a6a0340fdb61816a617b6bab9">  731</a></span><span class="preprocessor">#define SDLOG_BAT_ADC CONCAT_BOARD_PARAM(ADCD, VBAT_MEAS_ADC)</span></div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno"><a class="line" href="tawaki_8h.html#afa171425c899787769e5d3612c80acd2">  732</a></span><span class="preprocessor">#define SDLOG_BAT_CHAN CONCAT_BOARD_PARAM(ADC_CHANNEL_IN, VBAT_MEAS_ADC_IN)</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span><span class="comment">// usb led status</span></div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a3eca81ff4917508b17002a96844e0904">  734</a></span><span class="preprocessor">#define SDLOG_USB_LED 4</span></div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">  735</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_PORT PAL_PORT(LINE_USB_VBUS)</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a22e2edaeffd24afc57074815c42628d7">  736</a></span><span class="preprocessor">#define SDLOG_USB_VBUS_PIN  PAL_PAD(LINE_USB_VBUS)</span></div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span> </div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span> </div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="comment"> * Actuators for fixedwing</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> <span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  743</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">  744</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorPwmSet</span></div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno"><a class="line" href="tawaki_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  745</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  746</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span></div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a17e208399ce330289bcaef37bd2e9b08">  751</a></span><span class="preprocessor">#define WS2812D1_GPIO PAL_PORT(LINE_AUX_A1)</span></div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aec52babc287e1d061dec870b9f43b083">  752</a></span><span class="preprocessor">#define WS2812D1_PIN  PAL_PAD(LINE_AUX_A1)</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno"><a class="line" href="tawaki_8h.html#afd8cee2fb7cfce1b91317be24260b39c">  753</a></span><span class="preprocessor">#define WS2812D1_AF 2</span></div>
+<div class="foldopen" id="foldopen00754" data-start="" data-end="">
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">  754</a></span><span class="preprocessor">#define WS2812D1_CFG_DEF { \</span></div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="preprocessor">  .dma_stream = STM32_PWM5_UP_DMA_STREAM, \</span></div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="preprocessor">  .dma_channel = STM32_PWM5_UP_DMA_CHANNEL, \</span></div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span><span class="preprocessor">  .dma_priority = STM32_PWM5_UP_DMA_PRIORITY, \</span></div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="preprocessor">  .pwm_channel = 0, \</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="preprocessor">  .pwmp = &amp;PWMD5 \</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="preprocessor">}</span></div>
 </div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="comment"> * For the buzzer (buzzer_tunes module)</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="comment"> * ALARM pin (TIM5_CH1), BUZZER pin AUX_A1</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a08a0ee9cbc67f32d977b57cfa32dab5a">  766</a></span><span class="preprocessor">#define BUZZER_GPIO         PAL_PORT(LINE_AUX_A1)</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno"><a class="line" href="tawaki_8h.html#ab61d0981ed42df9e18211b273d22cfcd">  767</a></span><span class="preprocessor">#define BUZZER_PIN          PAL_PAD(LINE_AUX_A1)</span></div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aad244718de175c1d06263555b6798ad5">  768</a></span><span class="preprocessor">#define BUZZER_AF           AUX_A1_TIM_AF</span></div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a94ebf7d00dfdeedbf303d9435965990f">  769</a></span><span class="preprocessor">#define BUZZER_PWMD         PWMD5</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno"><a class="line" href="tawaki_8h.html#af405b55f4a5a653d3177a3603620e0dd">  770</a></span><span class="preprocessor">#define BUZZER_PWM_CHANNEL  0</span></div>
 <div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span> </div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span><span class="comment"> * For the buzzer (buzzer_tunes module)</span></div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span><span class="comment"> * ALARM pin (TIM5_CH1), BUZZER pin AUX_A1</span></div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a08a0ee9cbc67f32d977b57cfa32dab5a">  776</a></span><span class="preprocessor">#define BUZZER_GPIO         PAL_PORT(LINE_AUX_A1)</span></div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno"><a class="line" href="tawaki_8h.html#ab61d0981ed42df9e18211b273d22cfcd">  777</a></span><span class="preprocessor">#define BUZZER_PIN          PAL_PAD(LINE_AUX_A1)</span></div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno"><a class="line" href="tawaki_8h.html#aad244718de175c1d06263555b6798ad5">  778</a></span><span class="preprocessor">#define BUZZER_AF           AUX_A1_TIM_AF</span></div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno"><a class="line" href="tawaki_8h.html#a94ebf7d00dfdeedbf303d9435965990f">  779</a></span><span class="preprocessor">#define BUZZER_PWMD         PWMD5</span></div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno"><a class="line" href="tawaki_8h.html#af405b55f4a5a653d3177a3603620e0dd">  780</a></span><span class="preprocessor">#define BUZZER_PWM_CHANNEL  0</span></div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_TAWAKI_1_00_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span> </div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_TAWAKI_1_00_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

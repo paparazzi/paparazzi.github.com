@@ -1563,31 +1563,27 @@ $(function(){initNavTree('lisa__mx_2chibios_2v2_81_2board_8h_source.html','','')
 <div class="line"><a id="l01347" name="l01347"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a75623f9270b0dc2e890eefb7033282be"> 1347</a></span><span class="preprocessor">#define SPI2_GPIO_NSS GPIO12</span></div>
 <div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span> </div>
 <div class="line"><a id="l01349" name="l01349"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9b9a3bf9f095e4f2a8976d5889f81316"> 1349</a></span><span class="preprocessor">#define SPI3_GPIO_PORT_NSS GPIO</span></div>
-<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span></div>
-<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span><span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3f7278cf218a92fa0a1514dea823cd9d"> 1358</a></span><span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
-<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span> </div>
-<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span><span class="comment">/*</span></div>
-<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span><span class="comment"> * Actuators for fixedwing</span></div>
-<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span><span class="comment"> */</span></div>
-<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span> <span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307"> 1365</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b"> 1366</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorPwmSet</span></div>
-<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2"> 1367</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0ceadf6a913477832e04b0cb7cd17210"> 1368</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span> </div>
+<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span><span class="comment">/*</span></div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span><span class="comment"> * Actuators for fixedwing</span></div>
+<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span><span class="comment"> */</span></div>
+<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span> <span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307"> 1355</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b"> 1356</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorPwmSet</span></div>
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2"> 1357</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0ceadf6a913477832e04b0cb7cd17210"> 1358</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span> </div>
+<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span><span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
+<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>}</div>
+<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span><span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span> </div>
-<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span><span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
-<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>}</div>
-<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span><span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span> </div>
-<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span><span class="preprocessor">#endif </span><span class="comment">/* _BOARD_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span><span class="preprocessor">#endif </span><span class="comment">/* _BOARD_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code.</div><div class="ttdef"><b>Definition</b> <a href="arch_2chibios_2board_8c_source.html#l00317">board.c:317</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

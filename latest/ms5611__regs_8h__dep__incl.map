@@ -1,27 +1,23 @@
 <map id="sw/airborne/peripherals/ms5611_regs.h" name="sw/airborne/peripherals/ms5611_regs.h">
-<area shape="rect" id="Node000001" title="Register definitions for MS5611 barometer." alt="" coords="346,5,520,50"/>
-<area shape="rect" id="Node000002" href="$ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="346,98,520,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,63,436,99,431,97,432,68"/>
-<area shape="rect" id="Node000003" href="$ms5611_8c.html" title="MS5611 and MS5607 barometer driver common functions (I2C and SPI)." alt="" coords="147,191,322,235"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,151,283,192,281,188,374,148"/>
-<area shape="rect" id="Node000004" href="$ms5611__i2c_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="346,191,520,235"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="435,156,436,192,431,189,432,160"/>
-<area shape="rect" id="Node000009" href="$ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="773,191,947,235"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="535,141,775,192,770,194,535,146"/>
-<area shape="rect" id="Node000005" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="5,283,200,328"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="338,242,183,285,181,280,341,238"/>
-<area shape="rect" id="Node000006" href="$baro__ms5611__i2c_8h.html" title=" " alt="" coords="224,283,429,328"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="398,244,353,285,351,281,394,247"/>
-<area shape="rect" id="Node000008" href="$ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="453,283,627,328"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="471,243,517,283,512,283,469,248"/>
-<area shape="rect" id="Node000007" href="$baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C." alt="" coords="224,376,429,421"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="328,342,329,377,324,374,325,346"/>
-<area shape="rect" id="Node000010" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="651,283,845,328"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="824,244,776,285,773,280,819,246"/>
-<area shape="rect" id="Node000011" href="$baro__ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="869,283,1074,328"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="899,243,948,283,942,282,897,248"/>
-<area shape="rect" id="Node000013" href="$ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="1098,283,1272,328"/>
-<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="952,237,1110,283,1105,283,952,242"/>
-<area shape="rect" id="Node000012" href="$baro__ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="870,376,1074,421"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="974,342,974,378,970,374,970,345"/>
+<area shape="rect" id="Node000001" title="Register definitions for MS5611 barometer." alt="" coords="234,5,408,50"/>
+<area shape="rect" id="Node000002" href="$ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="234,98,408,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="322,63,324,99,319,97,320,68"/>
+<area shape="rect" id="Node000003" href="$ms5611_8c.html" title="MS5611 and MS5607 barometer driver common functions (I2C and SPI)." alt="" coords="36,191,210,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,151,172,192,169,188,262,148"/>
+<area shape="rect" id="Node000004" href="$ms5611__i2c_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="234,191,408,235"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="323,156,324,192,319,189,320,161"/>
+<area shape="rect" id="Node000008" href="$ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="448,191,622,235"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="386,146,486,190,481,191,386,152"/>
+<area shape="rect" id="Node000005" href="$baro__ms5611__i2c_8h.html" title=" " alt="" coords="5,283,211,328"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="254,244,160,285,158,280,258,240"/>
+<area shape="rect" id="Node000007" href="$ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="234,283,408,328"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="323,249,324,284,319,282,320,253"/>
+<area shape="rect" id="Node000006" href="$baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C." alt="" coords="6,376,210,421"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="110,342,110,377,106,375,106,346"/>
+<area shape="rect" id="Node000009" href="$baro__ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="432,283,637,328"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="536,249,537,285,532,282,533,253"/>
+<area shape="rect" id="Node000011" href="$ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="661,283,835,328"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="600,239,700,283,694,283,599,244"/>
+<area shape="rect" id="Node000010" href="$baro__ms5611__spi_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI." alt="" coords="432,376,637,421"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="537,342,537,378,533,374,533,345"/>
 </map>

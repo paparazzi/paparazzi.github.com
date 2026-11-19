@@ -132,7 +132,6 @@ var tawaki__v2_80_8h =
     [ "UART8_GPIO_RX", "tawaki__v2_80_8h.html#afe9c0c4cb75f1c36995b5d548b23e6cf", null ],
     [ "UART8_GPIO_TX", "tawaki__v2_80_8h.html#adaa9756d35caf4f05302140e2a98e0d3", null ],
     [ "USE_ADC_9", "tawaki__v2_80_8h.html#adfaeefbfc9ae1699e43972664d02c72c", null ],
-    [ "USE_BARO_BOARD", "tawaki__v2_80_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_DSHOT_TIM3", "tawaki__v2_80_8h.html#a71c683b6011228d3539e045fa723ce65", null ],
     [ "USE_LED_1", "tawaki__v2_80_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "tawaki__v2_80_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],

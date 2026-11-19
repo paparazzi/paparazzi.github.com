@@ -117,7 +117,6 @@ var px4fmu_8h =
     [ "USE_ADC_1", "px4fmu_8h.html#aab83c950c69c702e02d7ff473e0c25a3", null ],
     [ "USE_ADC_2", "px4fmu_8h.html#aa8cec6176c74ddb15142542d304aa6a7", null ],
     [ "USE_ADC_4", "px4fmu_8h.html#a3c7828080fe4221adb89ff72d286254d", null ],
-    [ "USE_BARO_BOARD", "px4fmu_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_LED_1", "px4fmu_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "px4fmu_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],
     [ "USE_LED_3", "px4fmu_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ],

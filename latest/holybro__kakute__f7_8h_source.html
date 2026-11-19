@@ -460,22 +460,18 @@ $(function(){initNavTree('holybro__kakute__f7_8h_source.html','',''); });
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="comment">// SLAVE2 on OSD</span></div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#ad1fce2206d522b24623e9b742b1f2988">  397</a></span><span class="preprocessor">#define SPI_SELECT_SLAVE2_PORT  PAL_PORT(LINE_OSD_CS)</span></div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#ae006e4c20f82ac5d2104debcd8615f06">  398</a></span><span class="preprocessor">#define SPI_SELECT_SLAVE2_PIN   PAL_PAD(LINE_OSD_CS)</span></div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span></div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  407</a></span><span class="preprocessor">#define USE_BARO_BOARD 0</span></div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="comment"> * Actuators for fixedwing</span></div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> <span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  414</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">  415</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorPwmSet</span></div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  416</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  417</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_HOLYBRO_KAKUTE_F7_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment"> * Actuators for fixedwing</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> <span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  404</a></span><span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#a158135e7a139f5c1dfa1c1cfc09c780b">  405</a></span><span class="preprocessor">#define ActuatorDefaultSet ActuatorPwmSet</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  406</a></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno"><a class="line" href="holybro__kakute__f7_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  407</a></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span><span class="preprocessor">#endif </span><span class="comment">/* CONFIG_HOLYBRO_KAKUTE_F7_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html">board.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

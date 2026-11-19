@@ -7,7 +7,6 @@ var disco_8h =
     [ "DEFAULT_ACTUATORS", "disco_8h.html#aa7699f41fbe105c8f5061cc48a5f6307", null ],
     [ "GPX_UBX_UCENTER_ENABLE_NMEA", "disco_8h.html#a484689312dd0e9cb279a27dda7139ce5", null ],
     [ "MS45XX_I2C_DEV", "disco_8h.html#a3723de8b0fa913e00bb51cf175fbc10c", null ],
-    [ "MS45XX_LOWPASS_TAU", "disco_8h.html#a0e66f9da0ae757d8312ddc3e12e2b78d", null ],
     [ "MS45XX_OUTPUT_TYPE", "disco_8h.html#a32a84107f1cd5e45239321240d480d0d", null ],
     [ "MS45XX_PRESSURE_OUTPUT_TYPE_InH2O", "disco_8h.html#a0a6da70b0d6ba228fcd5d258f7bce7e7", null ],
     [ "MS45XX_PRESSURE_RANGE", "disco_8h.html#a290e8bdfa317a6b511add38211c4bbd9", null ],
@@ -26,8 +25,6 @@ var disco_8h =
     [ "UART5_DEV", "disco_8h.html#a053f051ecef9aaeae10378556c6e244c", null ],
     [ "UART6_DEV", "disco_8h.html#ae435a1a8306a4acbe00ef9f980abc9b2", null ],
     [ "USE_AIRSPEED", "disco_8h.html#a634090af23161c4f7fef1dcabdc71335", null ],
-    [ "USE_AIRSPEED_LOWPASS_FILTER", "disco_8h.html#ae4db6d792956c6002d91d931d0beab12", null ],
-    [ "USE_BARO_BOARD", "disco_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "bottom_camera", "disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82", null ],
     [ "front_camera", "disco_8h.html#abe211b229633c3f39cbfb50c5765b4b4", null ]
 ];

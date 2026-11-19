@@ -642,14 +642,13 @@ Sensors modules</h2>
 <li><a class="el" href="module__aoa_adc.html">aoa_adc module</a> : Angle of Attack using internal ADC</li>
 <li><a class="el" href="module__aoa_pwm.html">aoa_pwm module</a> : Angle of Attack sensor using PWM input</li>
 <li><a class="el" href="module__airspeed_adc.html">airspeed_adc module</a> : Airspeed sensor (ADC).</li>
-<li><a class="el" href="module__airspeed_ads1114.html">airspeed_ads1114 module</a> : ADS1114 airspeed sensor.</li>
 <li><a class="el" href="module__airspeed_amsys.html">airspeed_amsys module</a> : Airspeed AMSYS (I2C)</li>
 <li><a class="el" href="module__airspeed_ets.html">airspeed_ets module</a> : Airspeed ETS (I2C).</li>
 <li><a class="el" href="module__airspeed_ms45xx_i2c.html">airspeed_ms45xx_i2c module</a> : MS45XX differential or gauge type of pressure sensor for e.g measuring airspeed.</li>
 <li><a class="el" href="module__airspeed_otf.html">airspeed_otf module</a> : OTF! airspeed/flow angle sensor</li>
 <li><a class="el" href="module__airspeed_sdp3x.html">airspeed_sdp3x module</a> : SDP3X differential pressure sensor for e.g measuring airspeed.</li>
 <li><a class="el" href="module__airspeed_uadc.html">airspeed_uadc module</a> : Driver for the Aeroprobe uADC air data computer.</li>
-<li><a class="el" href="module__airspeed_uavcan.html">airspeed_uavcan module</a> : Airspeed sensor over the uavcan protocol and optionally publishes over ABI.</li>
+<li><a class="el" href="module__airspeed_uavcan.html">airspeed_uavcan module</a> : Airspeed sensor over the uavcan protocol.</li>
 <li><a class="el" href="module__alt_srf08.html">alt_srf08 module</a> : SRF08 ultrasonic range meter</li>
 <li><a class="el" href="module__aoa_t4.html">aoa_t4 module</a> : Angle of Attack (AOA) sensor using angle input from a modiefied hall servo connected to a T4 Actuators Board.</li>
 <li><a class="el" href="module__baro_ms5534a.html">baro_ms5534a module</a> : MS5534a barometer (SPI)</li>
@@ -657,8 +656,6 @@ Sensors modules</h2>
 <li><a class="el" href="module__baro_bmp.html">baro_bmp module</a> : Bosch BMP085 pressure sensor</li>
 <li><a class="el" href="module__baro_bmp280.html">baro_bmp280 module</a> : Bosch-Sensortech BMP280xx pressure sensor (I2C or SPI)</li>
 <li><a class="el" href="module__baro_bmp3.html">baro_bmp3 module</a> : Bosch-Sensortech BMP3xx pressure sensor</li>
-<li><a class="el" href="module__baro_board.html">baro_board module</a> : Magic module to load the proper baro for a board (if supported)</li>
-<li><a class="el" href="module__baro_board_common.html">baro_board_common module</a> : Baro module calling internal barometer functions for boards supporting them</li>
 <li><a class="el" href="module__baro_dps310.html">baro_dps310 module</a> : Infineon DPS310 pressure sensor driver</li>
 <li><a class="el" href="module__baro_ets.html">baro_ets module</a> : Baro ETS (I2C).</li>
 <li><a class="el" href="module__baro_hca.html">baro_hca module</a> : Baro sensortechnics HCA (I2C)</li>
@@ -753,11 +750,12 @@ System_Identification modules</h2>
 <h2 class="doxsection"><a class="anchor" id="modules_category_misc"></a>
 Misc modules</h2>
 <ul>
-<li><a class="el" href="module__air_data.html">air_data module</a> : <a class="el" href="air__data_8h.html#structAirData" title="Air Data strucute.">AirData</a> interface.</li>
+<li><a class="el" href="module__air_data.html">air_data module</a> : <a class="el" href="air__data_8h.html#structAirData" title="Air Data structure.">AirData</a> interface.</li>
 <li><a class="el" href="module__airborne_ant_track.html">airborne_ant_track module</a> : Airborne Antenna tracker</li>
 <li><a class="el" href="module__autopilot_gnc.html">autopilot_gnc module</a> : Autopilot Guidance Navigation anc Control</li>
 <li><a class="el" href="module__autopilot_gnc_fw.html">autopilot_gnc_fw module</a> : Autopilot GNC specific to fixedwing part</li>
 <li><a class="el" href="module__autopilot_guided.html">autopilot_guided module</a> : Guided mode interface for autpilote</li>
+<li><a class="el" href="module__baro_apogee.html">baro_apogee module</a> : MPL3115 barometer of the Apogee board.</li>
 <li><a class="el" href="module__bebop_cam.html">bebop_cam module</a> : Compile and control the settings of the Bebop front and bottom cameras.</li>
 <li><a class="el" href="module__buzzer_tunes.html">buzzer_tunes module</a> : Play tunes on a passive piezo buzzer</li>
 <li><a class="el" href="module__collective_tracking_control.html">collective_tracking_control module</a> : Algorithm that makes the centroid of a team of aircraft (with different speeds) to track a (possibly moving) target/waypoint.</li>
