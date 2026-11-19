@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,186,97,154,120,116,150,80,187,50,246,25,309,11,371,6,430,8,426,10,372,11,310,17,248,30,190,55,154,83,124,119,101,156,86,188"/>
 <area shape="rect" id="Node000003" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="193,196,376,224"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,207,179,208,175,211,142,212"/>
-<area shape="rect" id="Node000004" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="218,248,351,292"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle Kill always kills, also when motors_on is already false (fixedwing in flight)." alt="" coords="218,248,351,292"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,226,205,245,200,248,141,232"/>
 <area shape="rect" id="Node000013" href="$autopilot_8c.html#a1b657630df5b70390e96f4964390210a" title="set autopilot mode" alt="" coords="444,81,594,109"/>
 <area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="84,186,124,130,153,102,188,81,221,69,257,61,328,57,397,63,457,76,452,78,396,68,328,62,257,66,223,74,190,86,157,106,128,134,89,188"/>
@@ -18,7 +18,7 @@
 <area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="140,191,188,182,319,164,439,153,434,155,319,169,189,187,143,196"/>
 <area shape="rect" id="Node000021" href="$rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181" title="Includes generated code from tuning_rc.xml." alt="" coords="238,420,330,448"/>
 <area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="82,230,98,270,120,317,151,364,190,405,225,424,220,424,187,409,146,368,115,319,93,272,81,235"/>
-<area shape="rect" id="Node000005" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="428,256,610,284"/>
+<area shape="rect" id="Node000005" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly: kill_thro..." alt="" coords="428,256,610,284"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="351,267,415,269,410,271,352,272"/>
 <area shape="rect" id="Node000006" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="658,300,854,328"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="597,282,666,296,660,297,597,287"/>

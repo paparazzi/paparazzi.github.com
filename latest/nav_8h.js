@@ -32,6 +32,7 @@ var nav_8h =
     [ "NAVIGATION_FREQUENCY", "nav_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f", null ],
     [ "NavKillThrottle", "nav_8h.html#ab4d16c33e2792978452a6b33e26df83c", null ],
     [ "NavQdrCloseTo", "nav_8h.html#a9f9ad9045eda753a7ea58359bd6a0581", null ],
+    [ "NavResurrect", "nav_8h.html#aafcbbd9d0a89a2546170dda462af29a1", null ],
     [ "NavSegment", "nav_8h.html#ace040d4295064ba78ba5c0339fb5fc9d", null ],
     [ "NavSetMaxSpeed", "nav_8h.html#af150f704b8414699b4a2978027c01faf", null ],
     [ "NavVerticalAltitudeMode", "nav_8h.html#ad8b75deb4546e944bed16b5b19455ff5", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX198 =
 {
+"sim_2modules_2actuators_2actuators__pwm__arch_8h_source.html":[9,0,1,0,0,2,1,0,4],
 "sim_2modules_2actuators_2actuators__t4__arch_8c.html":[9,0,1,0,0,2,1,0,5],
 "sim_2modules_2actuators_2actuators__t4__arch_8c.html#a1fdf366dab5b0e8ce0973c0b70b2b15a":[9,0,1,0,0,2,1,0,5,8],
 "sim_2modules_2actuators_2actuators__t4__arch_8c.html#a35effeab7b143c621334457c86396a1c":[9,0,1,0,0,2,1,0,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX198 =
 "snake__gate__detection_8h_source.html":[9,0,1,0,6,12,35],
 "socket_8c.html":[9,0,1,0,6,19,0,7],
 "socket_8c.html#a0068a45ed495c84a28a2f653d86092e8":[9,0,1,0,6,19,0,7,1],
-"socket_8c.html#a1107d9688336d08754e74a2a32c17dfa":[9,0,1,0,6,19,0,7,2],
-"socket_8c.html#a120b3c12a694462fcedc15e429a53bd6":[9,0,1,0,6,19,0,7,0]
+"socket_8c.html#a1107d9688336d08754e74a2a32c17dfa":[9,0,1,0,6,19,0,7,2]
 };

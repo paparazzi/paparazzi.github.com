@@ -1,6 +1,6 @@
 <map id="nav_bungee_takeoff_run" name="nav_bungee_takeoff_run">
 <area shape="rect" id="Node000001" title="Bungee takeoff run function." alt="" coords="5,436,186,464"/>
-<area shape="rect" id="Node000002" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="252,211,385,255"/>
+<area shape="rect" id="Node000002" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle Kill always kills, also when motors_on is already false (fixedwing in flight)." alt="" coords="252,211,385,255"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,435,153,363,190,318,232,278,257,262,254,266,235,282,194,322,158,366,108,437"/>
 <area shape="rect" id="Node000011" href="$nav__bungee__takeoff_8c.html#a2f53e9b3f76ff0a80bf595380900e71a" title=" " alt="" coords="237,292,400,337"/>
 <area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="114,434,166,396,232,353,256,342,252,346,235,358,169,400,118,438"/>
@@ -16,7 +16,7 @@
 <area shape="poly" id="edge38_Node000001_Node000034" title=" " alt="" coords="107,462,159,525,195,561,235,593,257,607,252,607,232,598,191,565,155,529,106,467"/>
 <area shape="rect" id="Node000036" href="$group__state__position.html#gad8543c43fa0915a0b6314403d3341d55" title="Get position in UTM coordinates (float)." alt="" coords="234,666,403,694"/>
 <area shape="poly" id="edge42_Node000001_Node000036" title=" " alt="" coords="103,462,122,501,150,551,188,605,210,629,235,651,245,659,239,658,232,655,207,633,184,608,145,554,117,503,102,467"/>
-<area shape="rect" id="Node000003" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="451,195,633,223"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly: kill_thro..." alt="" coords="451,195,633,223"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,223,438,219,433,222,387,228"/>
 <area shape="rect" id="Node000004" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="700,83,895,111"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="575,192,752,116,748,119,577,197"/>

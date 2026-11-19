@@ -2,13 +2,13 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,192,186,220"/>
 <area shape="rect" id="Node000002" href="$boards_2disco_2actuators_8c.html#ae8447f1d6fb4ecea09c6223c57a0d5b1" title=" " alt="" coords="234,102,430,130"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,190,172,164,233,139,256,133,251,136,235,143,175,169,124,194"/>
-<area shape="rect" id="Node000003" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="265,153,398,198"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle Kill always kills, also when motors_on is already false (fixedwing in flight)." alt="" coords="265,153,398,198"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,192,252,185,248,187,187,197"/>
 <area shape="rect" id="Node000012" href="$group__i2c.html#gadb65ae9b3d1a1c6408dea85bd1cc610a" title="Submit a write/read transaction and wait for it to complete." alt="" coords="243,222,420,250"/>
 <area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="186,215,230,222,225,223,186,220"/>
 <area shape="rect" id="Node000016" href="$group__i2c.html#gacf37d0137b4d0b9ace8386bde48ff4e1" title="Submit a write only transaction and wait for it to complete." alt="" coords="250,274,414,302"/>
 <area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="130,218,235,258,262,269,257,269,233,264,129,223"/>
-<area shape="rect" id="Node000004" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="478,162,660,190"/>
+<area shape="rect" id="Node000004" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly: kill_thro..." alt="" coords="478,162,660,190"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="399,173,465,175,460,176,400,178"/>
 <area shape="rect" id="Node000005" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="708,83,904,111"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="613,159,745,117,750,115,614,164"/>

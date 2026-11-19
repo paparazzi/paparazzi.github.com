@@ -3046,7 +3046,7 @@ vertical_mode</td>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00229">229</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00229">autopilot_get_mode()</a>, and <a class="el" href="autopilot_8c_source.html#l00257">autopilot_set_motors_on()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00229">autopilot_get_mode()</a>, and <a class="el" href="autopilot_8c_source.html#l00258">autopilot_set_motors_on()</a>.</p>
 <div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
@@ -3056,7 +3056,7 @@ vertical_mode</td>
 <area shape="rect" title=" " alt="" coords="5,114,125,142"/>
 <area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="188,87,340,115"/>
 <area shape="poly" title=" " alt="" coords="124,117,175,112,171,115,126,122"/>
-<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="173,139,355,167"/>
+<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly: kill_thro..." alt="" coords="173,139,355,167"/>
 <area shape="poly" title=" " alt="" coords="125,133,160,138,155,141,126,138"/>
 <area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="403,83,598,111"/>
 <area shape="poly" title=" " alt="" coords="325,136,427,114,422,116,326,141"/>
@@ -3102,9 +3102,7 @@ vertical_mode</td>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00233">233</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00229">autopilot_get_mode()</a>, and <a class="el" href="autopilot_8c_source.html#l00257">autopilot_set_motors_on()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00136">nav_takeoff_run()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00229">autopilot_get_mode()</a>, and <a class="el" href="autopilot_8c_source.html#l00258">autopilot_set_motors_on()</a>.</p>
 <div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
@@ -3114,7 +3112,7 @@ vertical_mode</td>
 <area shape="rect" title=" " alt="" coords="5,114,115,142"/>
 <area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="178,87,330,115"/>
 <area shape="poly" title=" " alt="" coords="114,118,165,112,161,115,116,123"/>
-<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="163,139,345,167"/>
+<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly: kill_thro..." alt="" coords="163,139,345,167"/>
 <area shape="poly" title=" " alt="" coords="114,132,149,138,145,140,116,137"/>
 <area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="393,83,588,111"/>
 <area shape="poly" title=" " alt="" coords="315,136,417,114,412,116,316,141"/>
@@ -3130,23 +3128,6 @@ vertical_mode</td>
 <area shape="poly" title=" " alt="" coords="551,187,643,200,638,200,551,192"/>
 <area shape="rect" href="preflight__checks_8c.html#a6b367b7eff152e0b65185b1192056985" title="Register a preflight success used inside the preflight checking functions." alt="" coords="646,247,779,275"/>
 <area shape="poly" title=" " alt="" coords="532,194,637,232,659,242,654,241,635,237,531,199"/>
-</map>
-</div>
-<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2navigation_8h_abf64106cb814fd5078fba37a4bc6bc65_icgraph.png" border="0" usemap="#arotorcraft_2navigation_8h_abf64106cb814fd5078fba37a4bc6bc65_icgraph" loading="lazy" alt=""/></div>
-<map name="arotorcraft_2navigation_8h_abf64106cb814fd5078fba37a4bc6bc65_icgraph" id="arotorcraft_2navigation_8h_abf64106cb814fd5078fba37a4bc6bc65_icgraph">
-<area shape="rect" title=" " alt="" coords="607,32,717,60"/>
-<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="434,32,559,60"/>
-<area shape="poly" title=" " alt="" coords="589,46,560,48,559,43,594,46"/>
-<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a9c8b52ecea38f3c635710cede8a5aa8f" title="Takeoff from current location." alt="" coords="215,5,386,33"/>
-<area shape="poly" title=" " alt="" coords="416,35,387,34,387,28,421,35"/>
-<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a30277e646937f013f8858f21254fdbb7" title="Takeoff from a waypoint." alt="" coords="220,57,381,85"/>
-<area shape="poly" title=" " alt="" coords="421,56,382,63,381,58,416,56"/>
-<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a849b2c38b2c512661e75b0f01580b394" title=" " alt="" coords="5,5,167,33"/>
-<area shape="poly" title=" " alt="" coords="196,20,167,22,167,17,202,19"/>
 </map>
 </div>
 
@@ -3182,10 +3163,10 @@ vertical_mode</td>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00311">311</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00406">waypoint_get_enu_f()</a>.</p>
-<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2navigation_8h_a843b85f784aa3a5535ea21a6cfee4117_cgraph.png" border="0" usemap="#arotorcraft_2navigation_8h_a843b85f784aa3a5535ea21a6cfee4117_cgraph" loading="lazy" alt=""/></div>
 <map name="arotorcraft_2navigation_8h_a843b85f784aa3a5535ea21a6cfee4117_cgraph" id="arotorcraft_2navigation_8h_a843b85f784aa3a5535ea21a6cfee4117_cgraph">
 <area shape="rect" title=" " alt="" coords="5,57,111,85"/>
@@ -3247,10 +3228,10 @@ vertical_mode</td>
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2navigation_8h_source.html#l00355">355</a> of file <a class="el" href="rotorcraft_2navigation_8h_source.html">navigation.h</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2navigation_8c_source.html#l00051">nav</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00406">waypoint_get_enu_f()</a>.</p>
-<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2navigation_8h_a4119553265f6ca797389fe69ee58ae68_cgraph.png" border="0" usemap="#arotorcraft_2navigation_8h_a4119553265f6ca797389fe69ee58ae68_cgraph" loading="lazy" alt=""/></div>
 <map name="arotorcraft_2navigation_8h_a4119553265f6ca797389fe69ee58ae68_cgraph" id="arotorcraft_2navigation_8h_a4119553265f6ca797389fe69ee58ae68_cgraph">
 <area shape="rect" title=" " alt="" coords="5,57,57,85"/>

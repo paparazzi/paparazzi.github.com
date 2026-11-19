@@ -1,12 +1,12 @@
 <map id="nav_bungee_takeoff_setup" name="nav_bungee_takeoff_setup">
 <area shape="rect" id="Node000001" title="Initialization function." alt="" coords="5,331,158,375"/>
-<area shape="rect" id="Node000002" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="224,225,357,270"/>
+<area shape="rect" id="Node000002" href="$autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle Kill always kills, also when motors_on is already false (fixedwing in flight)." alt="" coords="224,225,357,270"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,328,232,275,229,280,129,332"/>
 <area shape="rect" id="Node000011" href="$nav__bungee__takeoff_8c.html#a2f53e9b3f76ff0a80bf595380900e71a" title=" " alt="" coords="209,331,372,375"/>
 <area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="157,351,195,351,191,355,159,355"/>
 <area shape="rect" id="Node000027" href="$group__state__position.html#gad8543c43fa0915a0b6314403d3341d55" title="Get position in UTM coordinates (float)." alt="" coords="206,435,375,463"/>
 <area shape="poly" id="edge28_Node000001_Node000027" title=" " alt="" coords="132,373,246,427,242,429,132,379"/>
-<area shape="rect" id="Node000003" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="423,195,605,223"/>
+<area shape="rect" id="Node000003" href="$autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly: kill_thro..." alt="" coords="423,195,605,223"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,234,418,225,413,227,359,239"/>
 <area shape="rect" id="Node000004" href="$autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="653,83,849,111"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="544,192,708,116,704,119,547,197"/>

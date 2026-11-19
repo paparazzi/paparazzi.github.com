@@ -1,5 +1,6 @@
 var NAVTREEINDEX216 =
 {
+"tawaki_2chibios_2v2_80_2board_8h.html#a7463424d9e371e104d9ea1a1a883bdb0":[9,0,1,0,1,14,0,3,0,110],
 "tawaki_2chibios_2v2_80_2board_8h.html#a75295235d5edd068b5e42b523ded75f8":[9,0,1,0,1,14,0,3,0,37],
 "tawaki_2chibios_2v2_80_2board_8h.html#a7543f04fa6799015c04039794a777f34":[9,0,1,0,1,14,0,3,0,465],
 "tawaki_2chibios_2v2_80_2board_8h.html#a75a0b1b6c1efbdaa358e5b686f7a345c":[9,0,1,0,1,14,0,3,0,275],
@@ -248,6 +249,5 @@ var NAVTREEINDEX216 =
 "tawaki_2chibios_2v2_80_2board_8h.html#af68affc97f50aec5d61affa81f9a138f":[9,0,1,0,1,14,0,3,0,406],
 "tawaki_2chibios_2v2_80_2board_8h.html#af6efc271ae93ac03d50fd82d9b60eed6":[9,0,1,0,1,14,0,3,0,187],
 "tawaki_2chibios_2v2_80_2board_8h.html#af7781aa7337afb1213c3facc6fc00a64":[9,0,1,0,1,14,0,3,0,292],
-"tawaki_2chibios_2v2_80_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13":[9,0,1,0,1,14,0,3,0,157],
-"tawaki_2chibios_2v2_80_2board_8h.html#af8828d9ec1d3ab546bd6d4d2c325c49c":[9,0,1,0,1,14,0,3,0,118]
+"tawaki_2chibios_2v2_80_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13":[9,0,1,0,1,14,0,3,0,157]
 };

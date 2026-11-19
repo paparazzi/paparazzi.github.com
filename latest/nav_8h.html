@@ -351,6 +351,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ade046c5227910bd6f3ea18f9b4d6c514" id="r_ade046c5227910bd6f3ea18f9b4d6c514"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade046c5227910bd6f3ea18f9b4d6c514">nav_IncreaseShift</a>(x)</td></tr>
 <tr class="memitem:ae1dfe610bee226ce313ba07538805322" id="r_ae1dfe610bee226ce313ba07538805322"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1dfe610bee226ce313ba07538805322">nav_SetNavRadius</a>(x)</td></tr>
 <tr class="memitem:ab4d16c33e2792978452a6b33e26df83c" id="r_ab4d16c33e2792978452a6b33e26df83c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4d16c33e2792978452a6b33e26df83c">NavKillThrottle</a>()</td></tr>
+<tr class="memitem:aafcbbd9d0a89a2546170dda462af29a1" id="r_aafcbbd9d0a89a2546170dda462af29a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafcbbd9d0a89a2546170dda462af29a1">NavResurrect</a>()</td></tr>
 <tr class="memitem:ac500a50330425cb4a3054774289bb205" id="r_ac500a50330425cb4a3054774289bb205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac500a50330425cb4a3054774289bb205">GetPosX</a>()</td></tr>
 <tr class="memdesc:ac500a50330425cb4a3054774289bb205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current x (east) position in local coordinates.  <br /></td></tr>
 <tr class="memitem:a10961173ac6973d795af2f62eb67edca" id="r_a10961173ac6973d795af2f62eb67edca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10961173ac6973d795af2f62eb67edca">GetPosY</a>()</td></tr>
@@ -574,7 +575,7 @@ Variables</h2></td></tr>
 <p>Get current altitude reference for local coordinates. </p>
 <p>This is the ground_alt from the flight plan at first, but might be updated later through a call to <a class="el" href="rotorcraft_2navigation_8h.html#a1b58af4e8c7d8f13f39c63a25570ccd6">NavSetGroundReferenceHere()</a> or <a class="el" href="rotorcraft_2navigation_8h.html#aaeae5c2d8073c868ce0016ada19aee8b">NavSetAltitudeReferenceHere()</a>, e.g. in the GeoInit flight plan block. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00242">242</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00243">243</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="max7456_8c_source.html#l00264">home_direction()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00359">nav_land_at_loc()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00342">nav_land_at_wp()</a>, and <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00245">nav_land_run()</a>.</p>
 
@@ -600,7 +601,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Get current altitude above MSL. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00233">233</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00234">234</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="uav__recovery_8c_source.html#l00148">calculate_wind_no_airspeed()</a>, <a class="el" href="max7456_8c_source.html#l00644">draw_osd()</a>, and <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00245">nav_land_run()</a>.</p>
 
@@ -626,7 +627,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Get current height above reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00235">235</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00236">236</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -649,7 +650,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Get current x (east) position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00229">229</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00230">230</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -672,7 +673,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Get current y (north) position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00231">231</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00232">232</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1199,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ <a class="code hl_function" href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e">autopilot_set_kill_throttle</a>(<span class="keyword">true</span>); }</div>
-<div class="ttc" id="aautopilot_8c_html_ab83712cb24bab637f3f254d4a96ada1e"><div class="ttname"><a href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e">autopilot_set_kill_throttle</a></div><div class="ttdeci">void autopilot_set_kill_throttle(bool kill)</div><div class="ttdoc">set kill throttle</div><div class="ttdef"><b>Definition</b> <a href="autopilot_8c_source.html#l00309">autopilot.c:309</a></div></div>
+<div class="ttc" id="aautopilot_8c_html_ab83712cb24bab637f3f254d4a96ada1e"><div class="ttname"><a href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e">autopilot_set_kill_throttle</a></div><div class="ttdeci">void autopilot_set_kill_throttle(bool kill)</div><div class="ttdoc">set kill throttle Kill always kills, also when motors_on is already false (fixedwing in flight).</div><div class="ttdef"><b>Definition</b> <a href="autopilot_8c_source.html#l00312">autopilot.c:312</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00226">226</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
@@ -1228,6 +1229,28 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00161">161</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00633">nav_eight()</a>, <a class="el" href="nav__line__border_8c_source.html#l00045">nav_line_border_run()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav_2nav__line_8c_source.html#l00068">nav_line_run()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00176">nav_oval()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00166">nav_oval()</a>, <a class="el" href="nav_8c_source.html#l00762">nav_oval()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="nav__survey__disc_8c_source.html#l00058">nav_survey_disc_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__vertical__raster_8c_source.html#l00048">nav_vertical_raster_run()</a>, <a class="el" href="nav__smooth_8c_source.html#l00121">snav_circle1()</a>, and <a class="el" href="nav__smooth_8c_source.html#l00140">snav_circle2()</a>.</p>
+
+</div>
+</div>
+<a id="aafcbbd9d0a89a2546170dda462af29a1" name="aafcbbd9d0a89a2546170dda462af29a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafcbbd9d0a89a2546170dda462af29a1">&#9670;&#160;</a></span>NavResurrect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NavResurrect</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>void</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ <a class="code hl_function" href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e">autopilot_set_kill_throttle</a>(<span class="keyword">false</span>); }</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00227">227</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00136">nav_takeoff_run()</a>.</p>
 
 </div>
 </div>
@@ -1563,7 +1586,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="apprz__geodetic__float_8h_html_structEnuCoor__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a></div><div class="ttdoc">vector in East North Up coordinates Units: meters</div><div class="ttdef"><b>Definition</b> <a href="pprz__geodetic__float_8h_source.html#l00072">pprz_geodetic_float.h:72</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00245">245</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00246">246</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00585">nav_parse_BLOCK()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00163">navigation_task()</a>, and <a class="el" href="nav_8c_source.html#l00477">send_nav()</a>.</p>
 
@@ -2794,7 +2817,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00585">585</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="common__flight__plan_8c_source.html#l00069">nav_goto_block()</a>, and <a class="el" href="nav_8h_source.html#l00245">SEND_NAVIGATION</a>.</p>
+<p class="reference">References <a class="el" href="e__identification__fr_8c_source.html#l00040">dev</a>, <a class="el" href="common__flight__plan_8c_source.html#l00069">nav_goto_block()</a>, and <a class="el" href="nav_8h_source.html#l00246">SEND_NAVIGATION</a>.</p>
 <div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
