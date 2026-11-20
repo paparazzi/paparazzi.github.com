@@ -220,13 +220,8 @@ var NAVTREEINDEX130 =
 "module__cam_gimbal.html#module_xml__cam_gimbal":[1,46,1,0],
 "module__can.html":[1,275],
 "module__can.html#configuration__can":[1,275,1],
-"module__can.html#configure":[1,275,1,0],
-"module__can.html#define":[1,275,1,1],
-"module__can.html#files":[1,275,2],
-"module__can.html#headers":[1,275,2,0],
 "module__can.html#module_load_example__can":[1,275,0],
-"module__can.html#module_xml__can":[1,275,2,2],
-"module__can.html#sources":[1,275,2,1],
+"module__can.html#module_xml__can":[1,275,1,0],
 "module__can_fuelcell.html":[1,148],
 "module__can_fuelcell.html#functions__can_fuelcell":[1,148,1],
 "module__can_fuelcell.html#module_load_example__can_fuelcell":[1,148,0],
@@ -249,5 +244,10 @@ var NAVTREEINDEX130 =
 "module__cloud_sim.html#functions__cloud_sim":[1,286,1],
 "module__cloud_sim.html#module_load_example__cloud_sim":[1,286,0],
 "module__cloud_sim.html#module_xml__cloud_sim":[1,286,1,0],
-"module__collective_tracking_control.html":[1,479]
+"module__collective_tracking_control.html":[1,479],
+"module__collective_tracking_control.html#configuration__collective_tracking_control":[1,479,1],
+"module__collective_tracking_control.html#datalink_functions__collective_tracking_control":[1,479,3],
+"module__collective_tracking_control.html#functions__collective_tracking_control":[1,479,2],
+"module__collective_tracking_control.html#module_load_example__collective_tracking_control":[1,479,0],
+"module__collective_tracking_control.html#module_xml__collective_tracking_control":[1,479,3,0]
 };

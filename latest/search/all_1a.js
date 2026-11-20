@@ -885,7 +885,7 @@ var searchData=
   ['performance_5freporting_882',['PERFORMANCE_REPORTING',['../ahrs__float__dcm_8h.html#a36080880bb75413765c103f942b7db3a',1,'ahrs_float_dcm.h']]],
   ['period_5fnsec_883',['period_nsec',['../pwm__sysfs_8h.html#aa2f4d712af0ab00617225b247ced9248',1,'PWM_Sysfs']]],
   ['period_5fpath_884',['period_path',['../pwm__sysfs_8h.html#adb901430787f90762c5060238a01e35c',1,'PWM_Sysfs']]],
-  ['periodic_20functions_885',['Periodic Functions',['../module__px4_gimbal.html#periodic_functions',1,'']]],
+  ['periodic_20functions_885',['Periodic Functions',['../module__opticflow_pmw3901.html#periodic_functions',1,'']]],
   ['periodic_5f10hz_5fdemo_886',['periodic_10Hz_demo',['../demo__module_8c.html#a225849cdcf82c061fad8b334b93bdbe1',1,'periodic_10Hz_demo(void):&#160;demo_module.c'],['../demo__module_8h.html#a225849cdcf82c061fad8b334b93bdbe1',1,'periodic_10Hz_demo(void):&#160;demo_module.c']]],
   ['periodic_5f1hz_5fdemo_887',['periodic_1Hz_demo',['../demo__module_8c.html#a2bac67deb690d7000f9ea95d4724f996',1,'periodic_1Hz_demo(void):&#160;demo_module.c'],['../demo__module_8h.html#a2bac67deb690d7000f9ea95d4724f996',1,'periodic_1Hz_demo(void):&#160;demo_module.c']]],
   ['periodic_5f50hz_5fi2c_5fabuse_5ftest_888',['periodic_50Hz_i2c_abuse_test',['../i2c__abuse__test_8c.html#a14445e39bee1c596dfcb0930e8b99103',1,'periodic_50Hz_i2c_abuse_test(void):&#160;i2c_abuse_test.c'],['../i2c__abuse__test_8h.html#a14445e39bee1c596dfcb0930e8b99103',1,'periodic_50Hz_i2c_abuse_test(void):&#160;i2c_abuse_test.c']]],
