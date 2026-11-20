@@ -1,5 +1,10 @@
 var NAVTREEINDEX132 =
 {
+"module__eff_scheduling_rotwing_rpm_ctrl.html#module_load_example__eff_scheduling_rotwing_rpm_ctrl":[1,98,0],
+"module__eff_scheduling_rotwing_rpm_ctrl.html#module_xml__eff_scheduling_rotwing_rpm_ctrl":[1,98,2,0],
+"module__eff_scheduling_rotwing_v2.html":[1,96],
+"module__eff_scheduling_rotwing_v2.html#configuration__eff_scheduling_rotwing_v2":[1,96,1],
+"module__eff_scheduling_rotwing_v2.html#functions__eff_scheduling_rotwing_v2":[1,96,2],
 "module__eff_scheduling_rotwing_v2.html#module_load_example__eff_scheduling_rotwing_v2":[1,96,0],
 "module__eff_scheduling_rotwing_v2.html#module_xml__eff_scheduling_rotwing_v2":[1,96,2,0],
 "module__ekf_aw.html":[1,288],
@@ -121,9 +126,10 @@ var NAVTREEINDEX132 =
 "module__gimbal_caddx_gm3.html#module_xml__gimbal_caddx_gm3":[1,47,1,0],
 "module__glide_wing_lock.html":[1,493],
 "module__glide_wing_lock.html#configuration__glide_wing_lock":[1,493,1],
+"module__glide_wing_lock.html#event_functions":[1,493,2,0],
 "module__glide_wing_lock.html#functions__glide_wing_lock":[1,493,2],
 "module__glide_wing_lock.html#module_load_example__glide_wing_lock":[1,493,0],
-"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,493,2,0],
+"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,493,2,1],
 "module__gpio_ext_common.html":[1,155],
 "module__gpio_ext_common.html#module_load_example__gpio_ext_common":[1,155,0],
 "module__gpio_ext_common.html#module_xml__gpio_ext_common":[1,155,0,0],
@@ -221,12 +227,9 @@ var NAVTREEINDEX132 =
 "module__gps_udp.html#module_xml__gps_udp":[1,174,2,0],
 "module__ground_detect.html":[1,324],
 "module__ground_detect.html#configuration__ground_detect":[1,324,1],
-"module__ground_detect.html#define":[1,324,1,0],
 "module__ground_detect.html#functions__ground_detect":[1,324,2],
-"module__ground_detect.html#init_functions":[1,324,2,0],
 "module__ground_detect.html#module_load_example__ground_detect":[1,324,0],
-"module__ground_detect.html#module_xml__ground_detect":[1,324,2,2],
-"module__ground_detect.html#periodic_functions":[1,324,2,1],
+"module__ground_detect.html#module_xml__ground_detect":[1,324,2,0],
 "module__gsm.html":[1,494],
 "module__gsm.html#functions__gsm":[1,494,1],
 "module__gsm.html#module_load_example__gsm":[1,494,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX132 =
 "module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw":[1,177,2],
 "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw":[1,177,0],
 "module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw":[1,177,2,0],
-"module__guidance_hybrid.html":[1,178],
-"module__guidance_hybrid.html#functions__guidance_hybrid":[1,178,1],
-"module__guidance_hybrid.html#module_load_example__guidance_hybrid":[1,178,0],
-"module__guidance_hybrid.html#module_xml__guidance_hybrid":[1,178,1,0]
+"module__guidance_hybrid.html":[1,178]
 };
