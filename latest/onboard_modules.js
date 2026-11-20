@@ -686,9 +686,7 @@ var onboard_modules =
     ] ],
     [ "object_tracking module", "module__object_tracking.html", [
       [ "Example for airframe file", "module__object_tracking.html#module_load_example__object_tracking", null ],
-      [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", [
-        [ "Airframe file section", "module__object_tracking.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", null ],
       [ "Module functions", "module__object_tracking.html#functions__object_tracking", [
         [ "Raw object_tracking.xml file:", "module__object_tracking.html#module_xml__object_tracking", null ]
       ] ]
@@ -1350,12 +1348,12 @@ var onboard_modules =
       ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
@@ -1374,7 +1372,9 @@ var onboard_modules =
     ] ],
     [ "imu_bebop module", "module__imu_bebop.html", [
       [ "Example for airframe file", "module__imu_bebop.html#module_load_example__imu_bebop", null ],
-      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
+      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", [
+        [ "Airframe file section", "module__imu_bebop.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
         [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
       ] ]
@@ -1420,7 +1420,9 @@ var onboard_modules =
     ] ],
     [ "imu_icm42688 module", "module__imu_icm42688.html", [
       [ "Example for airframe file", "module__imu_icm42688.html#module_load_example__imu_icm42688", null ],
-      [ "Module configuration options", "module__imu_icm42688.html#configuration__imu_icm42688", null ],
+      [ "Module configuration options", "module__imu_icm42688.html#configuration__imu_icm42688", [
+        [ "Configure Options", "module__imu_icm42688.html#configure", null ]
+      ] ],
       [ "Module functions", "module__imu_icm42688.html#functions__imu_icm42688", [
         [ "Raw imu_icm42688.xml file:", "module__imu_icm42688.html#module_xml__imu_icm42688", null ]
       ] ]
@@ -1812,12 +1814,6 @@ var onboard_modules =
     [ "can module", "module__can.html", [
       [ "Example for airframe file", "module__can.html#module_load_example__can", null ],
       [ "Module configuration options", "module__can.html#configuration__can", [
-        [ "Configure Options", "module__can.html#configure", null ],
-        [ "Define Options", "module__can.html#define", null ]
-      ] ],
-      [ "Files", "module__can.html#files", [
-        [ "Header Files", "module__can.html#headers", null ],
-        [ "Source Files", "module__can.html#sources", null ],
         [ "Raw can.xml file:", "module__can.html#module_xml__can", null ]
       ] ]
     ] ],
@@ -2123,8 +2119,12 @@ var onboard_modules =
     ] ],
     [ "ground_detect module", "module__ground_detect.html", [
       [ "Example for airframe file", "module__ground_detect.html#module_load_example__ground_detect", null ],
-      [ "Module configuration options", "module__ground_detect.html#configuration__ground_detect", null ],
+      [ "Module configuration options", "module__ground_detect.html#configuration__ground_detect", [
+        [ "Define Options", "module__ground_detect.html#define", null ]
+      ] ],
       [ "Module functions", "module__ground_detect.html#functions__ground_detect", [
+        [ "Init Functions", "module__ground_detect.html#init_functions", null ],
+        [ "Periodic Functions", "module__ground_detect.html#periodic_functions", null ],
         [ "Raw ground_detect.xml file:", "module__ground_detect.html#module_xml__ground_detect", null ]
       ] ]
     ] ],
@@ -2876,6 +2876,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__sonar_bebop.html#module_load_example__sonar_bebop", null ],
       [ "Module configuration options", "module__sonar_bebop.html#configuration__sonar_bebop", null ],
       [ "Module functions", "module__sonar_bebop.html#functions__sonar_bebop", [
+        [ "Event Functions", "module__sonar_bebop.html#event_functions", null ],
         [ "Raw sonar_bebop.xml file:", "module__sonar_bebop.html#module_xml__sonar_bebop", null ]
       ] ]
     ] ],
@@ -2982,7 +2983,10 @@ var onboard_modules =
       ] ]
     ] ],
     [ "stabilization_passthrough module", "module__stabilization_passthrough.html", [
-      [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", [
+      [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", null ],
+      [ "Files", "module__stabilization_passthrough.html#files", [
+        [ "Header Files", "module__stabilization_passthrough.html#headers", null ],
+        [ "Source Files", "module__stabilization_passthrough.html#sources", null ],
         [ "Raw stabilization_passthrough.xml file:", "module__stabilization_passthrough.html#module_xml__stabilization_passthrough", null ]
       ] ]
     ] ],
@@ -3242,7 +3246,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__glide_wing_lock.html#module_load_example__glide_wing_lock", null ],
       [ "Module configuration options", "module__glide_wing_lock.html#configuration__glide_wing_lock", null ],
       [ "Module functions", "module__glide_wing_lock.html#functions__glide_wing_lock", [
-        [ "Event Functions", "module__glide_wing_lock.html#event_functions", null ],
         [ "Raw glide_wing_lock.xml file:", "module__glide_wing_lock.html#module_xml__glide_wing_lock", null ]
       ] ]
     ] ],
@@ -3457,8 +3460,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__time_countdown.html#module_load_example__time_countdown", null ],
       [ "Module configuration options", "module__time_countdown.html#configuration__time_countdown", null ],
       [ "Module functions", "module__time_countdown.html#functions__time_countdown", [
-        [ "Init Functions", "module__time_countdown.html#init_functions", null ],
-        [ "Periodic Functions", "module__time_countdown.html#periodic_functions", null ],
         [ "Raw time_countdown.xml file:", "module__time_countdown.html#module_xml__time_countdown", null ]
       ] ]
     ] ],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__logger_file.html":[1,270],
 "module__logger_file.html#configuration__logger_file":[1,270,1],
 "module__logger_file.html#functions__logger_file":[1,270,2],
 "module__logger_file.html#module_load_example__logger_file":[1,270,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX135 =
 "module__nav_survey_poly_rotorcraft.html":[1,354],
 "module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,354,1],
 "module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft":[1,354,0],
-"module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,354,1,0]
+"module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,354,1,0],
+"module__nav_survey_polygon.html":[1,355]
 };
