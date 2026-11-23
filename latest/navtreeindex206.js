@@ -1,5 +1,8 @@
 var NAVTREEINDEX206 =
 {
+"stereo__avoid__sim_8c.html#aa8a30b33178414e6d1c8d872781cb7b5":[9,0,1,0,6,70,1,4,0],
+"stereo__avoid__sim_8c.html#abc56b22c4aea28b46faeb1ba3cd3a718":[9,0,1,0,6,70,1,4,3],
+"stereo__avoid__sim_8c.html#ace7b98c58ff30c23353ae3d546f69475":[9,0,1,0,6,70,1,4,2],
 "stereo__avoid__sim_8c_source.html":[9,0,1,0,6,70,1,4],
 "stereocam_2stereocam__follow__me_2follow__me_8c.html":[9,0,1,0,6,70,2,0],
 "stereocam_2stereocam__follow__me_2follow__me_8c.html#a23bf18281639df0caac231dacd08b1e7":[9,0,1,0,6,70,2,0,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX206 =
 "switch__uart_8h.html#a401eedc08b81ee7fb028235a4042fb43":[9,0,1,0,6,71,5,1],
 "switch__uart_8h.html#a745cc51a03d7b005f5435a42fc54f286":[9,0,1,0,6,71,5,4],
 "switch__uart_8h.html#aca6e2644d3a1608bd8e93c13cb80be7c":[9,0,1,0,6,71,5,2],
-"switch__uart_8h_source.html":[9,0,1,0,6,71,5],
-"sys__id__auto__doublets_8c.html":[9,0,1,0,6,72,6],
-"sys__id__auto__doublets_8c.html#a08e119b165fde1c3671ca29f4afd9a46":[9,0,1,0,6,72,6,13],
-"sys__id__auto__doublets_8c.html#a099e7f8e6b56c6dc629d852f4a5a565a":[9,0,1,0,6,72,6,1]
+"switch__uart_8h_source.html":[9,0,1,0,6,71,5]
 };

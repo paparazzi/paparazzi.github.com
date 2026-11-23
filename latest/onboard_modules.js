@@ -1007,6 +1007,7 @@ var onboard_modules =
     ] ],
     [ "electrical module", "module__electrical.html", [
       [ "Example for airframe file", "module__electrical.html#module_load_example__electrical", null ],
+      [ "Module configuration options", "module__electrical.html#configuration__electrical", null ],
       [ "Module functions", "module__electrical.html#functions__electrical", [
         [ "Raw electrical.xml file:", "module__electrical.html#module_xml__electrical", null ]
       ] ]

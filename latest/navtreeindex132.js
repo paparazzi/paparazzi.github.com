@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__eff_scheduling_rotwing_v2.html#functions__eff_scheduling_rotwing_v2":[1,96,2],
+"module__eff_scheduling_rotwing_v2.html#module_load_example__eff_scheduling_rotwing_v2":[1,96,0],
 "module__eff_scheduling_rotwing_v2.html#module_xml__eff_scheduling_rotwing_v2":[1,96,2,0],
 "module__ekf_aw.html":[1,288],
 "module__ekf_aw.html#configuration__ekf_aw":[1,288,1],
@@ -7,9 +9,10 @@ var NAVTREEINDEX132 =
 "module__ekf_aw.html#module_load_example__ekf_aw":[1,288,0],
 "module__ekf_aw.html#module_xml__ekf_aw":[1,288,2,0],
 "module__electrical.html":[1,149],
-"module__electrical.html#functions__electrical":[1,149,1],
+"module__electrical.html#configuration__electrical":[1,149,1],
+"module__electrical.html#functions__electrical":[1,149,2],
 "module__electrical.html#module_load_example__electrical":[1,149,0],
-"module__electrical.html#module_xml__electrical":[1,149,1,0],
+"module__electrical.html#module_xml__electrical":[1,149,2,0],
 "module__encoder_amt22.html":[1,414],
 "module__encoder_amt22.html#functions__encoder_amt22":[1,414,1],
 "module__encoder_amt22.html#module_load_example__encoder_amt22":[1,414,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX132 =
 "module__guidance_hybrid.html":[1,178],
 "module__guidance_hybrid.html#functions__guidance_hybrid":[1,178,1],
 "module__guidance_hybrid.html#module_load_example__guidance_hybrid":[1,178,0],
-"module__guidance_hybrid.html#module_xml__guidance_hybrid":[1,178,1,0],
-"module__guidance_indi.html":[1,179],
-"module__guidance_indi.html#module_load_example__guidance_indi":[1,179,0],
-"module__guidance_indi.html#module_xml__guidance_indi":[1,179,0,0]
+"module__guidance_hybrid.html#module_xml__guidance_hybrid":[1,178,1,0]
 };

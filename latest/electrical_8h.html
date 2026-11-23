@@ -198,10 +198,14 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a479a2b46ea741517cdd5ec8bddf09777" id="r_a479a2b46ea741517cdd5ec8bddf09777"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a479a2b46ea741517cdd5ec8bddf09777">LOW_BAT_LEVEL</a>&#160;&#160;&#160;10.5</td></tr>
-<tr class="memdesc:a479a2b46ea741517cdd5ec8bddf09777"><td class="mdescLeft">&#160;</td><td class="mdescRight">low battery level in Volts (for 3S LiPo)  <br /></td></tr>
-<tr class="memitem:a750ae88746939044885e47e1c11ea136" id="r_a750ae88746939044885e47e1c11ea136"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a750ae88746939044885e47e1c11ea136">CRITIC_BAT_LEVEL</a>&#160;&#160;&#160;9.8</td></tr>
-<tr class="memdesc:a750ae88746939044885e47e1c11ea136"><td class="mdescLeft">&#160;</td><td class="mdescRight">critical battery level in Volts (for 3S LiPo)  <br /></td></tr>
+<tr class="memitem:a1706cc82d73533c8693747f9026e4980" id="r_a1706cc82d73533c8693747f9026e4980"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1706cc82d73533c8693747f9026e4980">BAT_NB_CELLS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a1706cc82d73533c8693747f9026e4980"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of battery cells in series (default 3S)  <br /></td></tr>
+<tr class="memitem:a479a2b46ea741517cdd5ec8bddf09777" id="r_a479a2b46ea741517cdd5ec8bddf09777"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a479a2b46ea741517cdd5ec8bddf09777">LOW_BAT_LEVEL</a>&#160;&#160;&#160;(3.5<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> * <a class="el" href="#a1706cc82d73533c8693747f9026e4980">BAT_NB_CELLS</a>)</td></tr>
+<tr class="memdesc:a479a2b46ea741517cdd5ec8bddf09777"><td class="mdescLeft">&#160;</td><td class="mdescRight">low battery level in Volts (default 3.5 V per cell)  <br /></td></tr>
+<tr class="memitem:a750ae88746939044885e47e1c11ea136" id="r_a750ae88746939044885e47e1c11ea136"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a750ae88746939044885e47e1c11ea136">CRITIC_BAT_LEVEL</a>&#160;&#160;&#160;(3.25<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> * <a class="el" href="#a1706cc82d73533c8693747f9026e4980">BAT_NB_CELLS</a>)</td></tr>
+<tr class="memdesc:a750ae88746939044885e47e1c11ea136"><td class="mdescLeft">&#160;</td><td class="mdescRight">critical battery level in Volts (default 3.25 V per cell)  <br /></td></tr>
+<tr class="memitem:abc02cf4c70382fbe8ef130a5d8129303" id="r_abc02cf4c70382fbe8ef130a5d8129303"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc02cf4c70382fbe8ef130a5d8129303">CATASTROPHIC_BAT_LEVEL</a>&#160;&#160;&#160;(3.0f * <a class="el" href="#a1706cc82d73533c8693747f9026e4980">BAT_NB_CELLS</a>)</td></tr>
+<tr class="memdesc:abc02cf4c70382fbe8ef130a5d8129303"><td class="mdescLeft">&#160;</td><td class="mdescRight">catastrophic battery level in Volts (default 3.0 V per cell)  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -230,7 +234,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="electrical_8h_source.html#l00044">44</a> of file <a class="el" href="electrical_8h_source.html">electrical.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="electrical_8h_source.html#l00054">54</a> of file <a class="el" href="electrical_8h_source.html">electrical.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -292,6 +296,44 @@ supply voltage in V </td></tr>
 </div>
 </div>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a1706cc82d73533c8693747f9026e4980" name="a1706cc82d73533c8693747f9026e4980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1706cc82d73533c8693747f9026e4980">&#9670;&#160;</a></span>BAT_NB_CELLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BAT_NB_CELLS&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>number of battery cells in series (default 3S) </p>
+
+<p class="definition">Definition at line <a class="el" href="electrical_8h_source.html#l00036">36</a> of file <a class="el" href="electrical_8h_source.html">electrical.h</a>.</p>
+
+</div>
+</div>
+<a id="abc02cf4c70382fbe8ef130a5d8129303" name="abc02cf4c70382fbe8ef130a5d8129303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc02cf4c70382fbe8ef130a5d8129303">&#9670;&#160;</a></span>CATASTROPHIC_BAT_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CATASTROPHIC_BAT_LEVEL&#160;&#160;&#160;(3.0f * <a class="el" href="#a1706cc82d73533c8693747f9026e4980">BAT_NB_CELLS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>catastrophic battery level in Volts (default 3.0 V per cell) </p>
+
+<p class="definition">Definition at line <a class="el" href="electrical_8h_source.html#l00051">51</a> of file <a class="el" href="electrical_8h_source.html">electrical.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00199">monitor_task()</a>.</p>
+
+</div>
+</div>
 <a id="a750ae88746939044885e47e1c11ea136" name="a750ae88746939044885e47e1c11ea136"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a750ae88746939044885e47e1c11ea136">&#9670;&#160;</a></span>CRITIC_BAT_LEVEL</h2>
 
@@ -299,14 +341,14 @@ supply voltage in V </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CRITIC_BAT_LEVEL&#160;&#160;&#160;9.8</td>
+          <td class="memname">#define CRITIC_BAT_LEVEL&#160;&#160;&#160;(3.25<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> * <a class="el" href="#a1706cc82d73533c8693747f9026e4980">BAT_NB_CELLS</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>critical battery level in Volts (for 3S LiPo) </p>
+<p>critical battery level in Volts (default 3.25 V per cell) </p>
 
-<p class="definition">Definition at line <a class="el" href="electrical_8h_source.html#l00041">41</a> of file <a class="el" href="electrical_8h_source.html">electrical.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="electrical_8h_source.html#l00046">46</a> of file <a class="el" href="electrical_8h_source.html">electrical.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="electrical_8c_source.html#l00166">electrical_periodic()</a>.</p>
 
@@ -319,14 +361,14 @@ supply voltage in V </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LOW_BAT_LEVEL&#160;&#160;&#160;10.5</td>
+          <td class="memname">#define LOW_BAT_LEVEL&#160;&#160;&#160;(3.5<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> * <a class="el" href="#a1706cc82d73533c8693747f9026e4980">BAT_NB_CELLS</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>low battery level in Volts (for 3S LiPo) </p>
+<p>low battery level in Volts (default 3.5 V per cell) </p>
 
-<p class="definition">Definition at line <a class="el" href="electrical_8h_source.html#l00036">36</a> of file <a class="el" href="electrical_8h_source.html">electrical.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="electrical_8h_source.html#l00041">41</a> of file <a class="el" href="electrical_8h_source.html">electrical.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="max7456_8c_source.html#l00644">draw_osd()</a>, and <a class="el" href="electrical_8c_source.html#l00166">electrical_periodic()</a>.</p>
 
@@ -444,7 +486,7 @@ supply voltage in V </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="electrical_8c_source.html#l00166">166</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p class="reference">References <a class="el" href="adc_8h_source.html#l00076">adc_buf_get()</a>, <a class="el" href="autopilot_8c_source.html#l00324">autopilot_throttle_killed()</a>, <a class="el" href="electrical_8c_source.html#l00053">BAT_CHECKER_DELAY</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="electrical_8h_source.html#l00041">CRITIC_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="electrical_8h_source.html#l00036">LOW_BAT_LEVEL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="electrical_8c_source.html#l00076">MilliAmpereOfAdc</a>, <a class="el" href="electrical_8c_source.html#l00057">MIN_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00073">VBoardOfAdc</a>, and <a class="el" href="electrical_8c_source.html#l00070">VoltageOfAdc</a>.</p>
+<p class="reference">References <a class="el" href="adc_8h_source.html#l00076">adc_buf_get()</a>, <a class="el" href="autopilot_8c_source.html#l00324">autopilot_throttle_killed()</a>, <a class="el" href="electrical_8c_source.html#l00053">BAT_CHECKER_DELAY</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="electrical_8h_source.html#l00046">CRITIC_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="electrical_8h_source.html#l00041">LOW_BAT_LEVEL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="electrical_8c_source.html#l00076">MilliAmpereOfAdc</a>, <a class="el" href="electrical_8c_source.html#l00057">MIN_MEASURABLE_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00073">VBoardOfAdc</a>, and <a class="el" href="electrical_8c_source.html#l00070">VoltageOfAdc</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="main__fbw_8c_source.html#l00174">main_fbw_periodic()</a>, and <a class="el" href="main__recovery_8c_source.html#l00136">main_recovery_periodic()</a>.</p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>

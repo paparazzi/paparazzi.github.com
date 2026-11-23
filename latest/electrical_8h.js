@@ -11,6 +11,8 @@ var electrical_8h =
       [ "vboard", "electrical_8h.html#ad41146a16b45a27522a6d7f9c7da4e65", null ],
       [ "vsupply", "electrical_8h.html#ad5e535e39613e6ec89d498019ef62030", null ]
     ] ],
+    [ "BAT_NB_CELLS", "electrical_8h.html#a1706cc82d73533c8693747f9026e4980", null ],
+    [ "CATASTROPHIC_BAT_LEVEL", "electrical_8h.html#abc02cf4c70382fbe8ef130a5d8129303", null ],
     [ "CRITIC_BAT_LEVEL", "electrical_8h.html#a750ae88746939044885e47e1c11ea136", null ],
     [ "LOW_BAT_LEVEL", "electrical_8h.html#a479a2b46ea741517cdd5ec8bddf09777", null ],
     [ "electrical_avg_reset", "electrical_8h.html#a0196bc119a6b247e969ed35a121f76a1", null ],

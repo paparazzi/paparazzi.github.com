@@ -1,5 +1,7 @@
 var NAVTREEINDEX86 =
 {
+"hx711_8c.html#structhx711__dev__t":[9,0,1,0,0,0,1,5,0,0],
+"hx711_8c.html#structhx711__t":[9,0,1,0,0,0,1,5,0,1],
 "hx711_8c_source.html":[9,0,1,0,0,0,1,5,0],
 "hx711_8h.html":[9,0,1,0,0,0,1,5,1],
 "hx711_8h.html#ae08a717fc956ef28c13da88d33e703c6":[9,0,1,0,0,0,1,5,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX86 =
 "image_8h.html#af039c7afe08a5eb2cff06e357227cdb8ae57daacf0b164b5e0c959eb664e3421b":[9,0,1,0,6,12,1,3,8,6,2],
 "image_8h.html#af715f74ca485995f0f4d0f40020ac81a":[9,0,1,0,6,12,1,3,8,4,1],
 "image_8h.html#af8fc6003afdb4b14bd2f8112491f2dc4":[9,0,1,0,6,12,1,3,8,8],
-"image_8h.html#afc5615de31e098e68a4d2e3b4b686a1b":[9,0,1,0,6,12,1,3,8,21],
-"image_8h.html#structcrop__t":[9,0,1,0,6,12,1,3,8,5],
-"image_8h.html#structflow__t":[9,0,1,0,6,12,1,3,8,3]
+"image_8h.html#afc5615de31e098e68a4d2e3b4b686a1b":[9,0,1,0,6,12,1,3,8,21]
 };

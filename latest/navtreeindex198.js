@@ -1,5 +1,8 @@
 var NAVTREEINDEX198 =
 {
+"sim_2mcu__periph_2udp__arch_8h.html":[9,0,1,0,0,2,0,17],
+"sim_2mcu__periph_2udp__arch_8h.html#a4be35a8b5d4506ed8be6f018dcef46e4":[9,0,1,0,0,2,0,17,0],
+"sim_2mcu__periph_2udp__arch_8h.html#a665732768aad2a0f4b0a396d96485cc2":[9,0,1,0,0,2,0,17,1],
 "sim_2mcu__periph_2udp__arch_8h_source.html":[9,0,1,0,0,2,0,17],
 "sim_2modules_2actuators_2actuators__dshot__arch_8c.html":[9,0,1,0,0,2,1,0,0],
 "sim_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29":[9,0,1,0,0,2,1,0,0,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX198 =
 "snake__gate__detection_8h.html#aaea667ba25897bf3e74ae601112a5558":[9,0,1,0,6,12,35,0,6],
 "snake__gate__detection_8h.html#ab8c72cf9993935e358c258374c2a1857":[9,0,1,0,6,12,35,9],
 "snake__gate__detection_8h.html#ab91652886737bcd921e3293a9a953aef":[9,0,1,0,6,12,35,0,8],
-"snake__gate__detection_8h.html#ac1ed4c7026af2f6090d0098ea9276559":[9,0,1,0,6,12,35,18],
-"snake__gate__detection_8h.html#ac85a4014d727f77ad95e35cee27a42a7":[9,0,1,0,6,12,35,1],
-"snake__gate__detection_8h.html#ace002ac27557c54636e18910bbf442b8":[9,0,1,0,6,12,35,4],
-"snake__gate__detection_8h.html#ad4206ef3d03f1c557535c9f144b979dc":[9,0,1,0,6,12,35,0,1]
+"snake__gate__detection_8h.html#ac1ed4c7026af2f6090d0098ea9276559":[9,0,1,0,6,12,35,18]
 };

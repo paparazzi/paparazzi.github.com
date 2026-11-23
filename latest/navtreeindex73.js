@@ -1,5 +1,7 @@
 var NAVTREEINDEX73 =
 {
+"group__mcu__periph.html#ga6b6870a4cf318dde4658a59ceca4f4a0":[6,0,2],
+"group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc":[6,0,3],
 "group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b":[6,0,8],
 "group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[6,0,5],
 "group__mcu__periph.html#gaf03b4daf531cef44873167b77770dcad":[6,0,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX73 =
 "group__state__rate.html#ga4b9ab70faf440560375d0e492f409891":[6,4,3,8],
 "group__state__rate.html#ga52294469408c263566a43c4c903cb3ca":[6,4,3,2],
 "group__state__rate.html#ga71f169bc30580aceb3480ab83c226452":[6,4,3,0],
-"group__state__rate.html#ga7f86e8d9743c1cc28439f1019d5b7e6a":[6,4,3,9],
-"group__state__rate.html#ga95b2cf34bb81dce903081a414cc8dc3d":[6,4,3,1],
-"group__state__rate.html#gaa06b41002d0092717b594a99b2bf7582":[6,4,3,5]
+"group__state__rate.html#ga7f86e8d9743c1cc28439f1019d5b7e6a":[6,4,3,9]
 };

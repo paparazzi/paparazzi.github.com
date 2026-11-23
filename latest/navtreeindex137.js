@@ -1,5 +1,8 @@
 var NAVTREEINDEX137 =
 {
+"module__rotorcraft_cam.html":[1,48],
+"module__rotorcraft_cam.html#configuration__rotorcraft_cam":[1,48,1],
+"module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam":[1,48,3],
 "module__rotorcraft_cam.html#functions__rotorcraft_cam":[1,48,2],
 "module__rotorcraft_cam.html#module_load_example__rotorcraft_cam":[1,48,0],
 "module__rotorcraft_cam.html#module_xml__rotorcraft_cam":[1,48,3,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX137 =
 "module__syslink_dl.html#module_xml__syslink_dl":[1,525,2,0],
 "module__system_core.html":[1,82],
 "module__system_core.html#functions__system_core":[1,82,1],
-"module__system_core.html#module_load_example__system_core":[1,82,0],
-"module__system_core.html#module_xml__system_core":[1,82,1,0],
-"module__tag_tracking.html":[1,65],
-"module__tag_tracking.html#configuration__tag_tracking":[1,65,1]
+"module__system_core.html#module_load_example__system_core":[1,82,0]
 };

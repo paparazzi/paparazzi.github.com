@@ -98,7 +98,44 @@ $(function(){initNavTree('module__electrical.html','',''); });
 <h1 class="doxsection"><a class="anchor" id="module_load_example__electrical"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;electrical&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="functions__electrical"></a>
+</div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__electrical"></a>
+Module configuration options</h1>
+<h2 class="doxsection"><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
+<ul>
+<li><b>section</b> name: <code>BAT</code> <ul>
+<li><b>name</b> <code>MAX_BAT_LEVEL</code> <b>value:</b> <em>12.4</em> <br  />
+ Description: voltage of a full battery in V (NPS and HITL start voltage, GCS)</li>
+<li><b>name</b> <code>LOW_BAT_LEVEL</code> <b>value:</b> <em>3.5*BAT_NB_CELLS</em> <br  />
+ Description: low battery warning level in V (default 3.5 V per cell)</li>
+<li><b>name</b> <code>CRITIC_BAT_LEVEL</code> <b>value:</b> <em>3.25*BAT_NB_CELLS</em> <br  />
+ Description: critical battery level in V (default 3.25 V per cell)</li>
+<li><b>name</b> <code>CATASTROPHIC_BAT_LEVEL</code> <b>value:</b> <em>3.0*BAT_NB_CELLS</em> <br  />
+ Description: catastrophic battery level in V (default 3.0 V per cell; fixedwing: kills the throttle)</li>
+<li><b>name</b> <code>TAKEOFF_BAT_LEVEL</code> <b>value:</b> <em>LOW_BAT_LEVEL</em> <br  />
+ Description: minimum voltage for takeoff in V (preflight check)</li>
+<li><b>name</b> <code>MIN_MEASURABLE_BAT_LEVEL</code> <b>value:</b> <em>3</em> <br  />
+ Description: the battery checks start once the voltage is above this level in V</li>
+<li><b>name</b> <code>BAT_NB_CELLS</code> <b>value:</b> <em>3</em> <br  />
+ Description: number of cells in series (default 3), sets the default levels (also in the server and the GCS)</li>
+<li><b>name</b> <code>BAT_CAPACITY</code> <b>value:</b> <em>5000</em> <br  />
+ Description: battery capacity in mAh (GCS energy panel)</li>
+<li><b>name</b> <code>BAT_TYPE</code> <b>value:</b> <em>LIPO</em> <br  />
+ Description: battery type (chemistry): LIPO (default), LIHV, LIION or LIFE (GCS energy panel)</li>
+<li><b>name</b> <code>BAT_CELL_RESISTANCE</code> <b>value:</b> <em>2.0</em> <br  />
+ Description: internal resistance per cell in mOhm (GCS energy panel)</li>
+<li><b>name</b> <code>MILLIAMP_AT_FULL_THROTTLE</code> <b>value:</b> <em>20000</em> <br  />
+ Description: current at full throttle in mA, to estimate the current without a sensor</li>
+<li><b>name</b> <code>MILLIAMP_AT_IDLE_THROTTLE</code> <b>value:</b> <em>0</em> <br  />
+ Description: current at idle throttle in mA, to estimate the current without a sensor</li>
+<li><b>name</b> <code>CURRENT_ESTIMATION_NONLINEARITY</code> <b>value:</b> <em>1.2</em> <br  />
+ Description: nonlinearity of the estimated current (1 = linear)</li>
+<li><b>name</b> <code>BAT_CHECKER_DELAY</code> <b>value:</b> <em>5</em> <br  />
+ Description: time in s below a level before the low or critical flag is set</li>
+</ul>
+</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="functions__electrical"></a>
 Module functions</h1>
 <h2 class="doxsection"><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -142,6 +179,22 @@ Raw electrical.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">General</span> <span class="keyword">electrical</span> <span class="keyword">interface</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BAT&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_BAT_LEVEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;12.4&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;V&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;voltage of a full battery in V (NPS and HITL start voltage, GCS)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LOW_BAT_LEVEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3.5*BAT_NB_CELLS&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;V&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;low battery warning level in V (default 3.5 V per cell)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CRITIC_BAT_LEVEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3.25*BAT_NB_CELLS&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;V&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;critical battery level in V (default 3.25 V per cell)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CATASTROPHIC_BAT_LEVEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3.0*BAT_NB_CELLS&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;V&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;catastrophic battery level in V (default 3.0 V per cell; fixedwing: kills the throttle)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TAKEOFF_BAT_LEVEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;LOW_BAT_LEVEL&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;V&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;minimum voltage for takeoff in V (preflight check)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MIN_MEASURABLE_BAT_LEVEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;V&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;the battery checks start once the voltage is above this level in V&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BAT_NB_CELLS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;number of cells in series (default 3), sets the default levels (also in the server and the GCS)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BAT_CAPACITY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5000&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;mAh&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;battery capacity in mAh (GCS energy panel)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BAT_TYPE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;LIPO&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;battery type (chemistry): LIPO (default), LIHV, LIION or LIFE (GCS energy panel)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BAT_CELL_RESISTANCE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2.0&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;mOhm&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;internal resistance per cell in mOhm (GCS energy panel)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MILLIAMP_AT_FULL_THROTTLE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;20000&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;mA&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;current at full throttle in mA, to estimate the current without a sensor&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MILLIAMP_AT_IDLE_THROTTLE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;mA&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;current at idle throttle in mA, to estimate the current without a sensor&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CURRENT_ESTIMATION_NONLINEARITY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.2&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;nonlinearity of the estimated current (1 = linear)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BAT_CHECKER_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;time in s below a level before the low or critical flag is set&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>

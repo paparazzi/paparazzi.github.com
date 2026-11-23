@@ -1,5 +1,7 @@
 var NAVTREEINDEX72 =
 {
+"group__math__algebra__int.html#structUint16Vect3":[6,8,1,3,2],
+"group__math__algebra__int.html#structUint8Vect3":[6,8,1,3,0],
 "group__math__geodetic.html":[6,8,2],
 "group__math__geodetic__double.html":[6,8,2,1],
 "group__math__geodetic__double.html#a0d447af9ac85591862c4d07867968b69":[6,8,2,1,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX72 =
 "group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2":[6,8,0,6],
 "group__math__orientation__representation.html#structOrientationReps":[6,8,0,0],
 "group__mcu__periph.html":[6,0],
-"group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa":[6,0,9],
-"group__mcu__periph.html#ga6b6870a4cf318dde4658a59ceca4f4a0":[6,0,2],
-"group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc":[6,0,3]
+"group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa":[6,0,9]
 };

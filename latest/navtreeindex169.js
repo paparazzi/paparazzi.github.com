@@ -1,5 +1,8 @@
 var NAVTREEINDEX169 =
 {
+"paparazzi_messages.html#ACTUATORS":[2,0,153],
+"paparazzi_messages.html#ACTUATORS_RAW":[2,0,90],
+"paparazzi_messages.html#ACTUATORS_T4_IN":[2,0,165],
 "paparazzi_messages.html#ACTUATORS_T4_OUT":[2,0,166],
 "paparazzi_messages.html#ADC":[2,0,89],
 "paparazzi_messages.html#ADC_GENERIC":[2,0,16],
@@ -246,8 +249,5 @@ var NAVTREEINDEX169 =
 "paparazzi_messages.html#PPRZ_MODE":[2,0,9],
 "paparazzi_messages.html#RANGEFINDER":[2,0,27],
 "paparazzi_messages.html#RATE_LOOP":[2,0,117],
-"paparazzi_messages.html#RAW_DATALINK":[2,2,27],
-"paparazzi_messages.html#RC":[2,0,86],
-"paparazzi_messages.html#RC_UP":[2,1,44],
-"paparazzi_messages.html#REMOTE_GPS_LOCAL":[2,1,37]
+"paparazzi_messages.html#RAW_DATALINK":[2,2,27]
 };

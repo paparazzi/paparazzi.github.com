@@ -1,5 +1,8 @@
 var NAVTREEINDEX174 =
 {
+"pprz__polyfit__float_8c.html#abfdb5a4da651dc25d7361010d48ea2fa":[9,0,1,0,4,27,0],
+"pprz__polyfit__float_8c_source.html":[9,0,1,0,4,27],
+"pprz__polyfit__float_8h.html":[9,0,1,0,4,28],
 "pprz__polyfit__float_8h.html#abfdb5a4da651dc25d7361010d48ea2fa":[9,0,1,0,4,28,0],
 "pprz__polyfit__float_8h_source.html":[9,0,1,0,4,28],
 "pprz__random_8c.html":[9,0,1,0,4,29],
@@ -246,8 +249,5 @@ var NAVTREEINDEX174 =
 "pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[9,0,1,0,0,0,0,14,2,1],
 "pwm__input__arch_8h.html#abe33bea00528e95fa8fe858d374f2820":[9,0,1,0,0,0,0,14,1],
 "pwm__input__arch_8h.html#ad78f99c222ee381826dc71959004de9f":[9,0,1,0,0,0,0,14,0],
-"pwm__input__arch_8h_source.html":[9,0,1,0,0,0,0,14],
-"pwm__meas_8c.html":[9,0,1,0,6,13,5],
-"pwm__meas_8c.html#a84d3630a1807bc21333ea5cf9e9357f8":[9,0,1,0,6,13,5,0],
-"pwm__meas_8c_source.html":[9,0,1,0,6,13,5]
+"pwm__input__arch_8h_source.html":[9,0,1,0,0,0,0,14]
 };

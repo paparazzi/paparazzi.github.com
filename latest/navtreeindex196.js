@@ -1,5 +1,8 @@
 var NAVTREEINDEX196 =
 {
+"sdlog__linux_8c.html#a936f5a74e8b8aa15309464eb51b1c1f4":[9,0,1,0,6,42,13,1],
+"sdlog__linux_8c.html#a96e1dc6c6552909bca46901dd5c89c0d":[9,0,1,0,6,42,13,21],
+"sdlog__linux_8c.html#a9988fa9164781fcdba3d62a105567140":[9,0,1,0,6,42,13,34],
 "sdlog__linux_8c.html#a9f56d63e10956262c0d6f9b2d92c5bfe":[9,0,1,0,6,42,13,17],
 "sdlog__linux_8c.html#a9f9b049b6368d8306e16bad97dd30b91":[9,0,1,0,6,42,13,12],
 "sdlog__linux_8c.html#aa49fd1aa4c54ff8fa78acee506265c91":[9,0,1,0,6,42,13,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX196 =
 "shell__arch_8c.html#a0d71d20b7713f8ddabd21f854e7ebbc4":[9,0,1,0,0,0,1,1,3,3],
 "shell__arch_8c.html#a2f63715d4417957054da76e9d83340cf":[9,0,1,0,0,0,1,1,3,1],
 "shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12":[9,0,1,0,0,0,1,1,3,4],
-"shell__arch_8c.html#a478c47dc57833d570ee21412e97c11c0":[9,0,1,0,0,0,1,1,3,5],
-"shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491":[9,0,1,0,0,0,1,1,3,2],
-"shell__arch_8c.html#ae96cb88b7db05439ce2524ce5c571002":[9,0,1,0,0,0,1,1,3,0],
-"shell__arch_8c_source.html":[9,0,1,0,0,0,1,1,3]
+"shell__arch_8c.html#a478c47dc57833d570ee21412e97c11c0":[9,0,1,0,0,0,1,1,3,5]
 };

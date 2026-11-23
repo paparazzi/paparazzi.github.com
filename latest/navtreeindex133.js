@@ -1,5 +1,8 @@
 var NAVTREEINDEX133 =
 {
+"module__guidance_indi.html":[1,179],
+"module__guidance_indi.html#module_load_example__guidance_indi":[1,179,0],
+"module__guidance_indi.html#module_xml__guidance_indi":[1,179,0,0],
 "module__guidance_indi_base.html":[1,180],
 "module__guidance_indi_base.html#functions__guidance_indi_base":[1,180,1],
 "module__guidance_indi_base.html#module_load_example__guidance_indi_base":[1,180,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_mpu6000_hmc5883.html#configuration__imu_mpu6000_hmc5883":[1,221,1],
 "module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883":[1,221,2],
 "module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,221,0],
-"module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,221,2,0],
-"module__imu_mpu60x0_i2c.html":[1,222],
-"module__imu_mpu60x0_i2c.html#configuration__imu_mpu60x0_i2c":[1,222,1],
-"module__imu_mpu60x0_i2c.html#functions__imu_mpu60x0_i2c":[1,222,2]
+"module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,221,2,0]
 };

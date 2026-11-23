@@ -1,5 +1,7 @@
 var NAVTREEINDEX130 =
 {
+"module__airspeed_adc.html#functions__airspeed_adc":[1,390,2],
+"module__airspeed_adc.html#module_load_example__airspeed_adc":[1,390,0],
 "module__airspeed_adc.html#module_xml__airspeed_adc":[1,390,2,0],
 "module__airspeed_amsys.html":[1,391],
 "module__airspeed_amsys.html#configuration__airspeed_amsys":[1,391,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX130 =
 "module__collective_tracking_control.html#configuration__collective_tracking_control":[1,479,1],
 "module__collective_tracking_control.html#datalink_functions__collective_tracking_control":[1,479,3],
 "module__collective_tracking_control.html#functions__collective_tracking_control":[1,479,2],
-"module__collective_tracking_control.html#module_load_example__collective_tracking_control":[1,479,0],
-"module__collective_tracking_control.html#module_xml__collective_tracking_control":[1,479,3,0],
-"module__collective_tracking_control_target.html":[1,480]
+"module__collective_tracking_control.html#module_load_example__collective_tracking_control":[1,479,0]
 };

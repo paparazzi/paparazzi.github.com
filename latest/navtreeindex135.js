@@ -1,5 +1,8 @@
 var NAVTREEINDEX135 =
 {
+"module__logger_file.html#module_load_example__logger_file":[1,270,0],
+"module__logger_file.html#module_xml__logger_file":[1,270,2,0],
+"module__logger_sd_chibios.html":[1,271],
 "module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,271,1],
 "module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,271,3],
 "module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,271,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX135 =
 "module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,354,1,0],
 "module__nav_survey_polygon.html":[1,355],
 "module__nav_survey_polygon.html#module_load_example__nav_survey_polygon":[1,355,0],
-"module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,355,0,0],
-"module__nav_survey_rectangle_rotorcraft.html":[1,356],
-"module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,356,1],
-"module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft":[1,356,2]
+"module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,355,0,0]
 };

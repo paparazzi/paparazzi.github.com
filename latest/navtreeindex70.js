@@ -1,5 +1,7 @@
 var NAVTREEINDEX70 =
 {
+"group__math__algebra__double.html#gaf56db5ad752a153d0b6960808754e84c":[6,8,1,2,7],
+"group__math__algebra__double.html#gaf9ed28addc83df34dd7855eed36d7163":[6,8,1,2,26],
 "group__math__algebra__double.html#structDoubleEulers":[6,8,1,2,5],
 "group__math__algebra__double.html#structDoubleMat33":[6,8,1,2,3],
 "group__math__algebra__double.html#structDoubleQuat":[6,8,1,2,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX70 =
 "group__math__algebra__generic.html#ga9cd20d2a6658f4a930cdd9836a18cbe2":[6,8,1,1,74],
 "group__math__algebra__generic.html#ga9e8795e09776456dcb35b07cd5527d25":[6,8,1,1,92],
 "group__math__algebra__generic.html#gaa05e2d86379889bd3ca31eb1f50b12e9":[6,8,1,1,7],
-"group__math__algebra__generic.html#gaa7a609f5773ee008953038092165f2ba":[6,8,1,1,12],
-"group__math__algebra__generic.html#gaaae673d8256df41e2e2db87b03f60a6b":[6,8,1,1,55],
-"group__math__algebra__generic.html#gaabe6b68b36e19217c178ddc14515c9af":[6,8,1,1,79]
+"group__math__algebra__generic.html#gaa7a609f5773ee008953038092165f2ba":[6,8,1,1,12]
 };

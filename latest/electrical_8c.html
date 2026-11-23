@@ -196,7 +196,7 @@ $(function(){initNavTree('electrical_8c.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a122d018ddd148a99f19e44723b6c7c49" id="r_a122d018ddd148a99f19e44723b6c7c49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a122d018ddd148a99f19e44723b6c7c49">BAT_CHECKER_DELAY</a>&#160;&#160;&#160;5</td></tr>
-<tr class="memitem:ae718155e6e9f20accaa19604a341f982" id="r_ae718155e6e9f20accaa19604a341f982"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae718155e6e9f20accaa19604a341f982">MIN_BAT_LEVEL</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:a7b10d82e0f129551fd3f815dc6678603" id="r_a7b10d82e0f129551fd3f815dc6678603"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b10d82e0f129551fd3f815dc6678603">MIN_MEASURABLE_BAT_LEVEL</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memitem:aa6a4248794975c30aee23af064ce8a21" id="r_aa6a4248794975c30aee23af064ce8a21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6a4248794975c30aee23af064ce8a21">TAKEOFF_BAT_LEVEL</a>&#160;&#160;&#160;<a class="el" href="electrical_8h.html#a479a2b46ea741517cdd5ec8bddf09777">LOW_BAT_LEVEL</a></td></tr>
 <tr class="memitem:a3a244669d0d9c86f4339f5d6fe83fdb9" id="r_a3a244669d0d9c86f4339f5d6fe83fdb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a244669d0d9c86f4339f5d6fe83fdb9">VoltageOfAdc</a>(adc)</td></tr>
 <tr class="memitem:a6261ffe3463dca4208fb1a2d53e94138" id="r_a6261ffe3463dca4208fb1a2d53e94138"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6261ffe3463dca4208fb1a2d53e94138">VBoardOfAdc</a>(adc)</td></tr>
@@ -277,14 +277,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae718155e6e9f20accaa19604a341f982" name="ae718155e6e9f20accaa19604a341f982"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae718155e6e9f20accaa19604a341f982">&#9670;&#160;</a></span>MIN_BAT_LEVEL</h2>
+<a id="a7b10d82e0f129551fd3f815dc6678603" name="a7b10d82e0f129551fd3f815dc6678603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b10d82e0f129551fd3f815dc6678603">&#9670;&#160;</a></span>MIN_MEASURABLE_BAT_LEVEL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MIN_BAT_LEVEL&#160;&#160;&#160;3</td>
+          <td class="memname">#define MIN_MEASURABLE_BAT_LEVEL&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -445,7 +445,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="electrical_8c_source.html#l00166">166</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p class="reference">References <a class="el" href="adc_8h_source.html#l00076">adc_buf_get()</a>, <a class="el" href="autopilot_8c_source.html#l00324">autopilot_throttle_killed()</a>, <a class="el" href="electrical_8c_source.html#l00053">BAT_CHECKER_DELAY</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="electrical_8h_source.html#l00041">CRITIC_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="electrical_8h_source.html#l00036">LOW_BAT_LEVEL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="electrical_8c_source.html#l00076">MilliAmpereOfAdc</a>, <a class="el" href="electrical_8c_source.html#l00057">MIN_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00073">VBoardOfAdc</a>, and <a class="el" href="electrical_8c_source.html#l00070">VoltageOfAdc</a>.</p>
+<p class="reference">References <a class="el" href="adc_8h_source.html#l00076">adc_buf_get()</a>, <a class="el" href="autopilot_8c_source.html#l00324">autopilot_throttle_killed()</a>, <a class="el" href="electrical_8c_source.html#l00053">BAT_CHECKER_DELAY</a>, <a class="el" href="shell__arch_8c_source.html#l00077">commands</a>, <a class="el" href="electrical_8h_source.html#l00046">CRITIC_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="electrical_8h_source.html#l00041">LOW_BAT_LEVEL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="electrical_8c_source.html#l00076">MilliAmpereOfAdc</a>, <a class="el" href="electrical_8c_source.html#l00057">MIN_MEASURABLE_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00073">VBoardOfAdc</a>, and <a class="el" href="electrical_8c_source.html#l00070">VoltageOfAdc</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="main__fbw_8c_source.html#l00174">main_fbw_periodic()</a>, and <a class="el" href="main__recovery_8c_source.html#l00136">main_recovery_periodic()</a>.</p>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
