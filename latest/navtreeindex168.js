@@ -1,6 +1,5 @@
 var NAVTREEINDEX168 =
 {
-"opticflow__calculator_8h.html#a089f6e08cb72710e2cd379c0e577b9ed":[9,0,1,0,6,12,2,4,0,34],
 "opticflow__calculator_8h.html#a0b04e288db8c4c22a0354161df3e7873":[9,0,1,0,6,12,2,4,4],
 "opticflow__calculator_8h.html#a1967c8fbb6d7220052ba19a3859e5d9f":[9,0,1,0,6,12,2,4,0,10],
 "opticflow__calculator_8h.html#a1e4ae6d4816b337a16747a2c072572ec":[9,0,1,0,6,12,2,4,0,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX168 =
 "paparazzi_messages.html#AHRS_LKF":[2,0,167],
 "paparazzi_messages.html#AHRS_QUAT_INT":[2,0,137],
 "paparazzi_messages.html#AHRS_REF_QUAT":[2,0,149],
-"paparazzi_messages.html#AIRCRAFTS":[2,2,2]
+"paparazzi_messages.html#AIRCRAFTS":[2,2,2],
+"paparazzi_messages.html#AIRCRAFTS_REQ":[2,2,3]
 };

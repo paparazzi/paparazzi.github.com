@@ -1,6 +1,5 @@
 var NAVTREEINDEX201 =
 {
-"sst25vfxxxx_8h.html#structSST25VFxxxx":[9,0,1,0,7,137,0],
 "sst25vfxxxx_8h_source.html":[9,0,1,0,7,137],
 "stabilization_8c.html":[9,0,1,0,3,1,23],
 "stabilization_8c.html#a057132685a68b5ca5fce4a765c78e1d8":[9,0,1,0,3,1,23,34],
@@ -249,5 +248,6 @@ var NAVTREEINDEX201 =
 "stabilization__andi_8c.html#a20ba48f390637e5c9b78ff9a41cfd06d":[9,0,1,0,3,1,2,2,9],
 "stabilization__andi_8c.html#a23bca54f1b6dd90f9b49fc81f87919d4":[9,0,1,0,3,1,2,2,50],
 "stabilization__andi_8c.html#a23f862ca823e6fd23fc9c111178be077":[9,0,1,0,3,1,2,2,34],
-"stabilization__andi_8c.html#a26c813e30f8245e662ddf37cac9fdcf1":[9,0,1,0,3,1,2,2,6]
+"stabilization__andi_8c.html#a26c813e30f8245e662ddf37cac9fdcf1":[9,0,1,0,3,1,2,2,6],
+"stabilization__andi_8c.html#a2ddafced5fdd1b05b4d6f5861600bc9f":[9,0,1,0,3,1,2,2,62]
 };

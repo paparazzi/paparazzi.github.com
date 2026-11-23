@@ -1,6 +1,5 @@
 var NAVTREEINDEX191 =
 {
-"rotorcraft_2navigation_8h.html#a4c7a077d8caffd6b82413a798bbaf71e":[9,0,1,0,3,1,21,96],
 "rotorcraft_2navigation_8h.html#a4ce28277bc41cf19f00470dad20965c9":[9,0,1,0,3,1,21,0,10],
 "rotorcraft_2navigation_8h.html#a4e4de9e10721304a4413fb1aac2cb63c":[9,0,1,0,3,1,21,0,5],
 "rotorcraft_2navigation_8h.html#a5261b49b03ac8f13e89a3366e599d7b1":[9,0,1,0,3,1,21,42],
@@ -249,5 +248,6 @@ var NAVTREEINDEX191 =
 "rover_2autopilot__firmware_8c.html#acaec1d6d2a2c682a3236c28974830807":[9,0,1,0,3,2,2,3],
 "rover_2autopilot__firmware_8c_source.html":[9,0,1,0,3,2,2],
 "rover_2autopilot__firmware_8h.html":[9,0,1,0,3,2,3],
-"rover_2autopilot__firmware_8h.html#a2bb31e995242a89c837b4eda1d08fe57":[9,0,1,0,3,2,3,0]
+"rover_2autopilot__firmware_8h.html#a2bb31e995242a89c837b4eda1d08fe57":[9,0,1,0,3,2,3,0],
+"rover_2autopilot__firmware_8h_source.html":[9,0,1,0,3,2,3]
 };

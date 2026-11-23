@@ -1,6 +1,5 @@
 var NAVTREEINDEX195 =
 {
-"sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c":[9,0,1,0,6,42,0,4,9],
 "sdLog_8c.html#a275a34cd0d8f3b9b04ee91df269136e3":[9,0,1,0,6,42,0,4,0],
 "sdLog_8c.html#a4922593f9f95a4fabc34eacf23ac4550":[9,0,1,0,6,42,0,4,1],
 "sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81":[9,0,1,0,6,42,0,4,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX195 =
 "sdlog__linux_8c.html#ac0ee0ad51e0e9f6a0b8d57dd1d935a84":[9,0,1,0,6,42,13,16],
 "sdlog__linux_8c.html#ac8299efda124ae70cdad4ea8a17abb08":[9,0,1,0,6,42,13,10],
 "sdlog__linux_8c.html#acce5c6f8f715b5ecce72973ad8a8d3b3":[9,0,1,0,6,42,13,25],
-"sdlog__linux_8c.html#ace5244a4001a7470da6fafbb2b4be96e":[9,0,1,0,6,42,13,35]
+"sdlog__linux_8c.html#ace5244a4001a7470da6fafbb2b4be96e":[9,0,1,0,6,42,13,35],
+"sdlog__linux_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6":[9,0,1,0,6,42,13,6]
 };

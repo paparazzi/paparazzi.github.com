@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__eff_scheduling_rotwing_rpm_ctrl.html#module_load_example__eff_scheduling_rotwing_rpm_ctrl":[1,98,0],
 "module__eff_scheduling_rotwing_rpm_ctrl.html#module_xml__eff_scheduling_rotwing_rpm_ctrl":[1,98,2,0],
 "module__eff_scheduling_rotwing_v2.html":[1,96],
 "module__eff_scheduling_rotwing_v2.html#configuration__eff_scheduling_rotwing_v2":[1,96,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw":[1,177,2],
 "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw":[1,177,0],
 "module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw":[1,177,2,0],
-"module__guidance_hybrid.html":[1,178]
+"module__guidance_hybrid.html":[1,178],
+"module__guidance_hybrid.html#functions__guidance_hybrid":[1,178,1]
 };

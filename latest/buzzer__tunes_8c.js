@@ -70,7 +70,6 @@ var buzzer__tunes_8c =
     [ "buzzer_tunes_periodic", "buzzer__tunes_8c.html#a799f4657982f3455c89b3589f34dbd8c", null ],
     [ "buzzer_tunes_play", "buzzer__tunes_8c.html#ac39106c3cef4271ffdf4df15f2b89b06", null ],
     [ "buzzer_tunes_set_events", "buzzer__tunes_8c.html#a4e39f400c22360546b550c551e621293", null ],
-    [ "event_start", "buzzer__tunes_8c.html#a7c161dbcd64d7befedd11244124ba524", null ],
     [ "event_update", "buzzer__tunes_8c.html#a7c0928a61cf5d99cbbbfb64ce0a31421", null ],
     [ "next_note", "buzzer__tunes_8c.html#a9a1c8fee94bd2d6cf85eb094f85401de", null ],
     [ "rtttl_next", "buzzer__tunes_8c.html#ab160fa509bbf120bc64127e166f84881", null ],

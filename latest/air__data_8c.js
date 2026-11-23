@@ -42,7 +42,7 @@ var air__data_8c =
     [ "air_data_sensor_healthy", "air__data_8c.html#a27506607dccc132147824c98fbd24a2b", null ],
     [ "air_data_sensor_temp", "air__data_8c.html#a4250b35011513771248ea64fdd04f13e", null ],
     [ "air_data_sensor_update", "air__data_8c.html#aebdf484eae58a2d9dbf6a49b5cde0c68", null ],
-    [ "air_data_set_airspeed", "air__data_8c.html#afd13e85a2620e95f974ec39d4b3644f4", null ],
+    [ "air_data_set_airspeed", "air__data_8c.html#af89f3d923f0c7ddeadc06d907b34d56c", null ],
     [ "air_data_set_pressure", "air__data_8c.html#ace863c525f25f3895281d8a993f9a93f", null ],
     [ "air_data_SetAirspeedFilter", "air__data_8c.html#a48700a068b6090277e9992ad83bb0bc3", null ],
     [ "air_data_start_calibration", "air__data_8c.html#ad13ed1ae2983b209c3366da9caad878a", null ],

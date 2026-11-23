@@ -1,6 +1,5 @@
 var NAVTREEINDEX73 =
 {
-"group__math__orientation__representation.html#gaf011b13c3151cd69abc70881cce5ce8c":[6,8,0,16],
 "group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2":[6,8,0,6],
 "group__math__orientation__representation.html#structOrientationReps":[6,8,0,0],
 "group__mcu__periph.html":[6,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX73 =
 "group__state__position.html#gaf52f0203510b08aa7949a33012143184":[6,4,0,52],
 "group__state__position.html#gaf54a860cc402c1b101ecef3a22e557ac":[6,4,0,22],
 "group__state__position.html#gaf61c3a86bc000852a2d27d5727ceaa91":[6,4,0,15],
-"group__state__rate.html":[6,4,3]
+"group__state__rate.html":[6,4,3],
+"group__state__rate.html#ga3820a3226e22579e5271f18e059d09a7":[6,4,3,12]
 };

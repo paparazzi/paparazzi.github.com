@@ -1,6 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"module__airborne_ant_track.html#module_load_example__airborne_ant_track":[1,472,0],
 "module__airborne_ant_track.html#module_xml__airborne_ant_track":[1,472,1,0],
 "module__airspeed_adc.html":[1,390],
 "module__airspeed_adc.html#configuration__airspeed_adc":[1,390,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX130 =
 "module__cloud_sim.html#functions__cloud_sim":[1,286,1],
 "module__cloud_sim.html#module_load_example__cloud_sim":[1,286,0],
 "module__cloud_sim.html#module_xml__cloud_sim":[1,286,1,0],
-"module__collective_tracking_control.html":[1,479]
+"module__collective_tracking_control.html":[1,479],
+"module__collective_tracking_control.html#configuration__collective_tracking_control":[1,479,1]
 };

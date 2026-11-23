@@ -288,7 +288,7 @@ $(function(){initNavTree('traffic__info_8c_source.html','',''); });
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>      }</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>      <span class="keywordflow">case</span> DL_GPS_INT: {</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keyword">struct </span><a class="code hl_struct" href="group__math__geodetic__int.html#structLtpDef__i">LtpDef_i</a> def = {0};</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keyword">struct </span><a class="code hl_struct" href="group__math__geodetic__int.html#structLtpDef__i">LtpDef_i</a> def; <span class="comment">// set by ltp_def_from_ecef_i</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keyword">struct </span><a class="code hl_struct" href="group__math__geodetic__int.html#structEcefCoor__i">EcefCoor_i</a> ecef_pos = {</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>          .x = DL_GPS_INT_ecef_x(buf),</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>          .y = DL_GPS_INT_ecef_y(buf),</div>

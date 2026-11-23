@@ -1,6 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"filter__1euro__imu_8h.html#structFilter1eImu":[9,0,1,0,6,36,1,0],
 "filter__1euro__imu_8h_source.html":[9,0,1,0,6,36,1],
 "fixedwing_2autopilot__firmware_8c.html":[9,0,1,0,3,0,3],
 "fixedwing_2autopilot__firmware_8c.html#a1f8fa85842c4d2ac6c69cf4d960ee0d6":[9,0,1,0,3,0,3,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX60 =
 "flight__gear_8h.html#a29fdf3000b0991749978a944004209b1":[9,0,1,1,2,1,3,15],
 "flight__gear_8h.html#a2a4c9acbee677586b60ab6f753539868":[9,0,1,1,2,1,1,43],
 "flight__gear_8h.html#a2baab4bb35a1c18ba2f961cb8378ba02":[9,0,1,1,2,1,0,30],
-"flight__gear_8h.html#a2d0a8692ad4de5b40b0d5885c5b2c731":[9,0,1,1,2,1,1,20]
+"flight__gear_8h.html#a2d0a8692ad4de5b40b0d5885c5b2c731":[9,0,1,1,2,1,1,20],
+"flight__gear_8h.html#a2d0b9bb729d85a8bffa21a7c61f55dae":[9,0,1,1,2,1,1,11]
 };

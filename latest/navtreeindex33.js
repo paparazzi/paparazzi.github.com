@@ -1,6 +1,5 @@
 var NAVTREEINDEX33 =
 {
-"charge__sens_8c.html#a986b67a708cc587643caeace4052b62f":[9,0,1,0,6,44,1,3],
 "charge__sens_8c.html#aa348dfc4b5bd279a961b061f13a5fb05":[9,0,1,0,6,44,1,1],
 "charge__sens_8c.html#ac8790fb88d5fb6b453ee3859d2eef1f5":[9,0,1,0,6,44,1,7],
 "charge__sens_8c.html#ad18aeb45aca01f11abe1928c6b0d8e9d":[9,0,1,0,6,44,1,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX33 =
 "chibios_2modules_2core_2rtos__mon__arch_8c.html#a5837f98f14d1dd47e1dc966abe9a9632":[9,0,1,0,0,0,1,1,1,2],
 "chibios_2modules_2core_2rtos__mon__arch_8c.html#a5c3f4f5566419904a9dbcfd71b3fcd0d":[9,0,1,0,0,0,1,1,1,0,3],
 "chibios_2modules_2core_2rtos__mon__arch_8c.html#a9571af6f2b95ecc8a17a333aaab6ec6b":[9,0,1,0,0,0,1,1,1,3],
-"chibios_2modules_2core_2rtos__mon__arch_8c.html#a96549131d264efab8644ef7f05fb00f2":[9,0,1,0,0,0,1,1,1,0,6]
+"chibios_2modules_2core_2rtos__mon__arch_8c.html#a96549131d264efab8644ef7f05fb00f2":[9,0,1,0,0,0,1,1,1,0,6],
+"chibios_2modules_2core_2rtos__mon__arch_8c.html#a9a4612d39adc95b5c35cffbe2fcfd016":[9,0,1,0,0,0,1,1,1,0,1]
 };

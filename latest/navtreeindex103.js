@@ -1,6 +1,5 @@
 var NAVTREEINDEX103 =
 {
-"lidar__sf11_8h.html#a2a53d4d1ad730158bc7c0349a8292a5a":[9,0,1,0,6,40,4,0,3],
 "lidar__sf11_8h.html#a33e7a34971e620ee9d1acab000cef8dd":[9,0,1,0,6,40,4,4],
 "lidar__sf11_8h.html#a3d331a95801e14dd3c20b8331394bc65":[9,0,1,0,6,40,4,0,4],
 "lidar__sf11_8h.html#a3f6a565ddb62870d5b278b0dc9f53559":[9,0,1,0,6,40,4,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX103 =
 "linux_2mcu__arch_8h.html":[9,0,1,0,0,1,4],
 "linux_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454":[9,0,1,0,0,1,4,0],
 "linux_2mcu__arch_8h_source.html":[9,0,1,0,0,1,4],
-"linux_2mcu__periph_2adc__arch_8c.html":[9,0,1,0,0,1,0,0]
+"linux_2mcu__periph_2adc__arch_8c.html":[9,0,1,0,0,1,0,0],
+"linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234":[9,0,1,0,0,1,0,0,4]
 };

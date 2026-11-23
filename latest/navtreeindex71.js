@@ -1,6 +1,5 @@
 var NAVTREEINDEX71 =
 {
-"group__math__algebra__generic.html#ga9cc8d10bf25cef4ef2ba79cc6664d9ee":[6,8,1,1,6],
 "group__math__algebra__generic.html#ga9cd20d2a6658f4a930cdd9836a18cbe2":[6,8,1,1,74],
 "group__math__algebra__generic.html#ga9e8795e09776456dcb35b07cd5527d25":[6,8,1,1,92],
 "group__math__algebra__generic.html#gaa05e2d86379889bd3ca31eb1f50b12e9":[6,8,1,1,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX71 =
 "group__math__algebra__int.html#structInt32RMat":[6,8,1,3,10],
 "group__math__algebra__int.html#structInt32Rates":[6,8,1,3,13],
 "group__math__algebra__int.html#structInt32Vect2":[6,8,1,3,4],
-"group__math__algebra__int.html#structInt32Vect3":[6,8,1,3,5]
+"group__math__algebra__int.html#structInt32Vect3":[6,8,1,3,5],
+"group__math__algebra__int.html#structInt64Quat":[6,8,1,3,7]
 };

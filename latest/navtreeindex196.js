@@ -1,6 +1,5 @@
 var NAVTREEINDEX196 =
 {
-"sdlog__linux_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6":[9,0,1,0,6,42,13,6],
 "sdlog__linux_8c.html#ad1a89a9a0aed7d0f8ade575295f762be":[9,0,1,0,6,42,13,18],
 "sdlog__linux_8c.html#adfaa7e26bc87caa5431e40c75ba3a13a":[9,0,1,0,6,42,13,19],
 "sdlog__linux_8c.html#ae827fbce2eaf501bd7097593c7036690":[9,0,1,0,6,42,13,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX196 =
 "shift__tracking_8c.html#a1155f9a7043bccf01b87bfced7aaf073":[9,0,1,0,6,14,42,12],
 "shift__tracking_8c.html#a1945b402048a9ca7216df45f5a36a7df":[9,0,1,0,6,14,42,5],
 "shift__tracking_8c.html#a1ef26dbc75fda9aaebbdbc8920582e8c":[9,0,1,0,6,14,42,8],
-"shift__tracking_8c.html#a234e875bd78fc2f9f707b71031c7b569":[9,0,1,0,6,14,42,11]
+"shift__tracking_8c.html#a234e875bd78fc2f9f707b71031c7b569":[9,0,1,0,6,14,42,11],
+"shift__tracking_8c.html#a33f0ce00bb406bb93dcf6431a10a5370":[9,0,1,0,6,14,42,9]
 };
