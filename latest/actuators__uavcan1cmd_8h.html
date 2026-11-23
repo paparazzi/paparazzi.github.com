@@ -172,7 +172,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">RunOnceEvery(<a class="code hl_define" href="actuators__uavcan_8h.html#accc20c3a91218ebc296e990001c58385">ACTUATORS_UAVCAN_CMD_DIV</a>,<a class="code hl_function" href="actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a">actuators_uavcan_cmd_commit</a>(&amp;uavcan1, <a class="code hl_variable" href="#aa0df3af4de2ba9c3f524fd748043b491">actuators_uavcan1cmd_values</a>, SERVOS_UAVCAN1CMD_NB))</div>
 <div class="ttc" id="aactuators__uavcan1cmd_8h_html_aa0df3af4de2ba9c3f524fd748043b491"><div class="ttname"><a href="#aa0df3af4de2ba9c3f524fd748043b491">actuators_uavcan1cmd_values</a></div><div class="ttdeci">int16_t actuators_uavcan1cmd_values[SERVOS_UAVCAN1CMD_NB]</div><div class="ttdoc">Stub file needed per uavcan interface because of generator.</div></div>
-<div class="ttc" id="aactuators__uavcan_8c_html_ab26539dced9674f526a4a4978305b35a"><div class="ttname"><a href="actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a">actuators_uavcan_cmd_commit</a></div><div class="ttdeci">void actuators_uavcan_cmd_commit(struct uavcan_iface_t *iface, int16_t *values, uint8_t nb)</div><div class="ttdoc">Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND).</div><div class="ttdef"><b>Definition</b> <a href="actuators__uavcan_8c_source.html#l00492">actuators_uavcan.c:492</a></div></div>
+<div class="ttc" id="aactuators__uavcan_8c_html_ab26539dced9674f526a4a4978305b35a"><div class="ttname"><a href="actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a">actuators_uavcan_cmd_commit</a></div><div class="ttdeci">void actuators_uavcan_cmd_commit(struct uavcan_iface_t *iface, int16_t *values, uint8_t nb)</div><div class="ttdoc">Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND).</div><div class="ttdef"><b>Definition</b> <a href="actuators__uavcan_8c_source.html#l00440">actuators_uavcan.c:440</a></div></div>
 <div class="ttc" id="aactuators__uavcan_8h_html_accc20c3a91218ebc296e990001c58385"><div class="ttname"><a href="actuators__uavcan_8h.html#accc20c3a91218ebc296e990001c58385">ACTUATORS_UAVCAN_CMD_DIV</a></div><div class="ttdeci">#define ACTUATORS_UAVCAN_CMD_DIV</div><div class="ttdef"><b>Definition</b> <a href="actuators__uavcan_8h_source.html#l00036">actuators_uavcan.h:36</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="actuators__uavcan1cmd_8h_source.html#l00039">39</a> of file <a class="el" href="actuators__uavcan1cmd_8h_source.html">actuators_uavcan1cmd.h</a>.</p>
@@ -194,7 +194,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda">actuators_uavcan_init</a>(&amp;uavcan1)</div>
-<div class="ttc" id="aactuators__uavcan_8c_html_a1aa57a9995b693dd72264a2eaf8d0bda"><div class="ttname"><a href="actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda">actuators_uavcan_init</a></div><div class="ttdeci">void actuators_uavcan_init(struct uavcan_iface_t *iface)</div><div class="ttdoc">Initialize an uavcan interface.</div><div class="ttdef"><b>Definition</b> <a href="actuators__uavcan_8c_source.html#l00431">actuators_uavcan.c:431</a></div></div>
+<div class="ttc" id="aactuators__uavcan_8c_html_a1aa57a9995b693dd72264a2eaf8d0bda"><div class="ttname"><a href="actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda">actuators_uavcan_init</a></div><div class="ttdeci">void actuators_uavcan_init(struct uavcan_iface_t *iface)</div><div class="ttdoc">Initialize an uavcan interface.</div><div class="ttdef"><b>Definition</b> <a href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan.c:383</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="actuators__uavcan1cmd_8h_source.html#l00038">38</a> of file <a class="el" href="actuators__uavcan1cmd_8h_source.html">actuators_uavcan1cmd.h</a>.</p>
 
@@ -246,23 +246,29 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00269">get_actuator_idx()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00167">get_actuator_idx()</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan1cmd_8h_afd6000ff0053c52cf4faaecc464b729c_icgraph.png" border="0" usemap="#aactuators__uavcan1cmd_8h_afd6000ff0053c52cf4faaecc464b729c_icgraph" loading="lazy" alt=""/></div>
 <map name="aactuators__uavcan1cmd_8h_afd6000ff0053c52cf4faaecc464b729c_icgraph" id="aactuators__uavcan1cmd_8h_afd6000ff0053c52cf4faaecc464b729c_icgraph">
-<area shape="rect" title=" " alt="" coords="641,48,841,76"/>
-<area shape="rect" href="actuators__uavcan_8c.html#ae0af6b75b0e22aa3a03feaceb527eeea" title=" " alt="" coords="463,48,593,76"/>
-<area shape="poly" title=" " alt="" coords="623,62,594,65,594,60,628,62"/>
+<area shape="rect" title=" " alt="" coords="641,118,841,146"/>
+<area shape="rect" href="actuators__uavcan_8c.html#ae0af6b75b0e22aa3a03feaceb527eeea" title=" " alt="" coords="463,118,593,146"/>
+<area shape="poly" title=" " alt="" coords="623,132,594,134,593,129,628,131"/>
 <area shape="rect" href="actuators__uavcan_8c.html#a9a38000601eb4ba446804fbf9082c784" title="Whevener an ACTUATOR_STATUS message from the EQUIPMENT group is received." alt="" coords="218,5,415,50"/>
-<area shape="poly" title=" " alt="" coords="445,49,415,47,415,41,450,49"/>
-<area shape="rect" href="actuators__uavcan_8c.html#a79343cdcbcc91d03b96dfc795647defa" title="Whevener an ESC_STATUS message from the EQUIPMENT group is received." alt="" coords="234,75,399,119"/>
-<area shape="poly" title=" " alt="" coords="450,75,400,86,399,81,445,76"/>
-<area shape="rect" href="actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda" title="Initialize an uavcan interface." alt="" coords="5,48,170,76"/>
-<area shape="poly" title=" " alt="" coords="199,46,171,52,170,47,205,44"/>
-<area shape="poly" title=" " alt="" coords="216,83,170,77,170,72,221,82"/>
+<area shape="poly" title=" " alt="" coords="491,109,414,65,388,53,388,48,416,60,497,109"/>
+<area shape="rect" href="actuators__uavcan_8c.html#a1de002af99f582a86ec39b4660021d33" title="Whevener an DEVICE_TEMPERATURE message from the EQUIPMENT group is received." alt="" coords="223,75,410,119"/>
+<area shape="poly" title=" " alt="" coords="445,119,410,115,410,110,450,118"/>
+<area shape="rect" href="actuators__uavcan_8c.html#a79343cdcbcc91d03b96dfc795647defa" title="Whevener an ESC_STATUS message from the EQUIPMENT group is received." alt="" coords="234,144,399,189"/>
+<area shape="poly" title=" " alt="" coords="445,145,400,155,399,150,450,144"/>
+<area shape="rect" href="actuators__uavcan_8c.html#a83647c9e80b077a2b7e2c5c97962d1dc" title="Whevener an ESC_STATUS_EXTENDED message from the EQUIPMENT group is received." alt="" coords="234,213,399,258"/>
+<area shape="poly" title=" " alt="" coords="497,154,416,203,388,215,387,210,414,199,492,155"/>
+<area shape="rect" href="actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda" title="Initialize an uavcan interface." alt="" coords="5,118,170,146"/>
+<area shape="poly" title=" " alt="" coords="230,58,219,65,162,93,115,119,111,115,160,88,217,60,235,55"/>
+<area shape="poly" title=" " alt="" coords="206,115,171,122,169,117,210,112"/>
+<area shape="poly" title=" " alt="" coords="216,152,170,147,170,141,221,151"/>
+<area shape="poly" title=" " alt="" coords="230,207,217,203,160,175,113,149,113,143,162,171,219,199,235,207"/>
 </map>
 </div>
 
@@ -291,7 +297,7 @@ Variables</h2></td></tr>
 
 <p>Stub file needed per uavcan interface because of generator. </p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00431">actuators_uavcan_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__uavcan_8c_source.html#l00383">actuators_uavcan_init()</a>.</p>
 
 </div>
 </div>

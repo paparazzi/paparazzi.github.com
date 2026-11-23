@@ -94,11 +94,30 @@ $(function(){initNavTree('module__actuators.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Common actuators interface</b></p>
-<p>No detailed description...</p>
+<p>Also keeps the latest feedback of each actuator (ACT_FEEDBACK: RPM, current, voltage, temperatures, output duty cycle and errors, e.g. from UAVCAN or DShot ESCs). ESC_TELEMETRY sends the latest values of all ESCs in one message (element i of each array is the same ESC) with the age of its telemetry. SERVO_TELEMETRY does the same for the servos (position, speed, force, current, voltage, temperature and errors). The ESCs are the actuators with RPM, output or motor temperature feedback, the servos the other ones with position, speed or force feedback, in the actuator order, or the ones in ACTUATORS_TELEMETRY_ESC_IDX and ACTUATORS_TELEMETRY_SERVO_IDX.</p>
 <h1 class="doxsection"><a class="anchor" id="module_load_example__actuators"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="functions__actuators"></a>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_TELEMETRY_ESC_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{SERVO_MOTOR_1_IDX, SERVO_MOTOR_2_IDX}&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_TELEMETRY_ESC_MAX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;12&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_TELEMETRY_SERVO_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{SERVO_AIL_1_IDX, SERVO_AIL_2_IDX}&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_TELEMETRY_SERVO_MAX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;12&quot;</span> /&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
+</div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__actuators"></a>
+Module configuration options</h1>
+<h2 class="doxsection"><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>ACTUATORS_TELEMETRY_ESC_IDX</code> <b>value:</b> <em>{SERVO_MOTOR_1_IDX, SERVO_MOTOR_2_IDX}</em> <br  />
+ Description: Actuator indices of the ESCs in ESC_TELEMETRY, in this order (default: the actuators with ESC feedback)</li>
+<li><b>name:</b> <code>ACTUATORS_TELEMETRY_ESC_MAX</code> <b>value:</b> <em>12</em> <br  />
+ Description: Maximum number of ESCs in ESC_TELEMETRY (13 bytes per ESC)</li>
+<li><b>name:</b> <code>ACTUATORS_TELEMETRY_SERVO_IDX</code> <b>value:</b> <em>{SERVO_AIL_1_IDX, SERVO_AIL_2_IDX}</em> <br  />
+ Description: Actuator indices of the servos in SERVO_TELEMETRY, in this order (default: the actuators with servo feedback)</li>
+<li><b>name:</b> <code>ACTUATORS_TELEMETRY_SERVO_MAX</code> <b>value:</b> <em>12</em> <br  />
+ Description: Maximum number of servos in SERVO_TELEMETRY (15 bytes per servo)</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="functions__actuators"></a>
 Module functions</h1>
 <h2 class="doxsection"><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -138,7 +157,19 @@ Raw actuators.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Common</span> <span class="keyword">actuators</span> <span class="keyword">interface</span></div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">Also</span> <span class="keyword">keeps</span> <span class="keyword">the</span> <span class="keyword">latest</span> <span class="keyword">feedback</span> <span class="keyword">of</span> <span class="keyword">each</span> <span class="keyword">actuator</span> (<span class="keyword">ACT_FEEDBACK:</span> <span class="keyword">RPM</span>, <span class="keyword">current</span>, <span class="keyword">voltage</span>, <span class="keyword">temperatures</span>,</div>
+<div class="line">      <span class="keyword">output</span> <span class="keyword">duty</span> <span class="keyword">cycle</span> <span class="keyword">and</span> <span class="keyword">errors</span>, <span class="keyword">e.g.</span> <span class="keyword">from</span> <span class="keyword">UAVCAN</span> <span class="keyword">or</span> <span class="keyword">DShot</span> <span class="keyword">ESCs</span>). <span class="keyword">ESC_TELEMETRY</span> <span class="keyword">sends</span> <span class="keyword">the</span> <span class="keyword">latest</span></div>
+<div class="line">      <span class="keyword">values</span> <span class="keyword">of</span> <span class="keyword">all</span> <span class="keyword">ESCs</span> <span class="keyword">in</span> <span class="keyword">one</span> <span class="keyword">message</span> (<span class="keyword">element</span> <span class="keyword">i</span> <span class="keyword">of</span> <span class="keyword">each</span> <span class="keyword">array</span> <span class="keyword">is</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">ESC</span>) <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">age</span> <span class="keyword">of</span> <span class="keyword">its</span></div>
+<div class="line">      <span class="keyword">telemetry.</span> <span class="keyword">SERVO_TELEMETRY</span> <span class="keyword">does</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">servos</span> (<span class="keyword">position</span>, <span class="keyword">speed</span>, <span class="keyword">force</span>, <span class="keyword">current</span>, <span class="keyword">voltage</span>,</div>
+<div class="line">      <span class="keyword">temperature</span> <span class="keyword">and</span> <span class="keyword">errors</span>). <span class="keyword">The</span> <span class="keyword">ESCs</span> <span class="keyword">are</span> <span class="keyword">the</span> <span class="keyword">actuators</span> <span class="keyword">with</span> <span class="keyword">RPM</span>, <span class="keyword">output</span> <span class="keyword">or</span> <span class="keyword">motor</span> <span class="keyword">temperature</span> <span class="keyword">feedback</span>,</div>
+<div class="line">      <span class="keyword">the</span> <span class="keyword">servos</span> <span class="keyword">the</span> <span class="keyword">other</span> <span class="keyword">ones</span> <span class="keyword">with</span> <span class="keyword">position</span>, <span class="keyword">speed</span> <span class="keyword">or</span> <span class="keyword">force</span> <span class="keyword">feedback</span>, <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">actuator</span> <span class="keyword">order</span>, <span class="keyword">or</span> <span class="keyword">the</span> <span class="keyword">ones</span></div>
+<div class="line">      <span class="keyword">in</span> <span class="keyword">ACTUATORS_TELEMETRY_ESC_IDX</span> <span class="keyword">and</span> <span class="keyword">ACTUATORS_TELEMETRY_SERVO_IDX.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_TELEMETRY_ESC_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{SERVO_MOTOR_1_IDX, SERVO_MOTOR_2_IDX}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Actuator indices of the ESCs in ESC_TELEMETRY, in this order (default: the actuators with ESC feedback)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_TELEMETRY_ESC_MAX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;12&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum number of ESCs in ESC_TELEMETRY (13 bytes per ESC)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_TELEMETRY_SERVO_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{SERVO_AIL_1_IDX, SERVO_AIL_2_IDX}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Actuator indices of the servos in SERVO_TELEMETRY, in this order (default: the actuators with servo feedback)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_TELEMETRY_SERVO_MAX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;12&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum number of servos in SERVO_TELEMETRY (15 bytes per servo)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>

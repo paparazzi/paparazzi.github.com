@@ -1,11 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"filter__1euro__imu_8h_source.html":[9,0,1,0,6,36,1],
-"fixedwing_2autopilot__firmware_8c.html":[9,0,1,0,3,0,3],
-"fixedwing_2autopilot__firmware_8c.html#a1f8fa85842c4d2ac6c69cf4d960ee0d6":[9,0,1,0,3,0,3,1],
-"fixedwing_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57":[9,0,1,0,3,0,3,3],
-"fixedwing_2autopilot__firmware_8c.html#a3349e614a926a99c63c8b9f2935a29f3":[9,0,1,0,3,0,3,13],
-"fixedwing_2autopilot__firmware_8c.html#a39bb118e4dfd535f85e7106804378972":[9,0,1,0,3,0,3,7],
 "fixedwing_2autopilot__firmware_8c.html#a4c54f26fedcf128f909c7cc5dc071353":[9,0,1,0,3,0,3,4],
 "fixedwing_2autopilot__firmware_8c.html#a5b82f013ab4d5b172d8859488d3d6040":[9,0,1,0,3,0,3,8],
 "fixedwing_2autopilot__firmware_8c.html#a66607b1cbf8f7535ab395e10f531e989":[9,0,1,0,3,0,3,6],
@@ -249,5 +243,11 @@ var NAVTREEINDEX60 =
 "flight__gear_8h.html#a2a4c9acbee677586b60ab6f753539868":[9,0,1,1,2,1,1,43],
 "flight__gear_8h.html#a2baab4bb35a1c18ba2f961cb8378ba02":[9,0,1,1,2,1,0,30],
 "flight__gear_8h.html#a2d0a8692ad4de5b40b0d5885c5b2c731":[9,0,1,1,2,1,1,20],
-"flight__gear_8h.html#a2d0b9bb729d85a8bffa21a7c61f55dae":[9,0,1,1,2,1,1,11]
+"flight__gear_8h.html#a2d0b9bb729d85a8bffa21a7c61f55dae":[9,0,1,1,2,1,1,11],
+"flight__gear_8h.html#a2e2cc95afae2bcdb8ab2716ad7b3f03d":[9,0,1,1,2,1,6],
+"flight__gear_8h.html#a32043edbb08f6ce0a255890f969f5533":[9,0,1,1,2,1,0,29],
+"flight__gear_8h.html#a34bc8d6d04be2ac7522f26e71d58cf1d":[9,0,1,1,2,1,4,6],
+"flight__gear_8h.html#a35ee183e6a346addd2a4fdc32ad7f332":[9,0,1,1,2,1,8],
+"flight__gear_8h.html#a36d1e4f991e81be518c8221872718c20":[9,0,1,1,2,1,0,54],
+"flight__gear_8h.html#a3980db47667253bcc1d1a5a06e454141":[9,0,1,1,2,1,1,8]
 };

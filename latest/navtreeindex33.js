@@ -1,9 +1,5 @@
 var NAVTREEINDEX33 =
 {
-"charge__sens_8c.html#aa348dfc4b5bd279a961b061f13a5fb05":[9,0,1,0,6,44,1,1],
-"charge__sens_8c.html#ac8790fb88d5fb6b453ee3859d2eef1f5":[9,0,1,0,6,44,1,7],
-"charge__sens_8c.html#ad18aeb45aca01f11abe1928c6b0d8e9d":[9,0,1,0,6,44,1,6],
-"charge__sens_8c.html#aec44ed5106ae76e8ddab880c303fa594":[9,0,1,0,6,44,1,2],
 "charge__sens_8c.html#af1ac917471007803b842eb322a89927d":[9,0,1,0,6,44,1,8],
 "charge__sens_8c_source.html":[9,0,1,0,6,44,1],
 "charge__sens_8h.html":[9,0,1,0,6,44,2],
@@ -190,13 +186,12 @@ var NAVTREEINDEX33 =
 "chibios_2mcu__periph_2uart__arch_8h_source.html":[9,0,1,0,0,0,0,25],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html":[9,0,1,0,0,0,1,0,0],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29":[9,0,1,0,0,0,1,0,0,5],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1f78a2730da7d3925ebf7f6657efe64a":[9,0,1,0,0,0,1,0,0,9],
+"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1f78a2730da7d3925ebf7f6657efe64a":[9,0,1,0,0,0,1,0,0,8],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a26451181e783635973207359f1e2f3e4":[9,0,1,0,0,0,1,0,0,1],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a8e7811d9b7a36656fbe9814bafa83e7b":[9,0,1,0,0,0,1,0,0,3],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aa37f9b9de508d0e30c9039b818babd19":[9,0,1,0,0,0,1,0,0,2],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aad0c5b9f4cd9c07eef68c312b0d28c86":[9,0,1,0,0,0,1,0,0,7],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#accc0790cbaf1ef8ceed1f7d5dfcad5fa":[9,0,1,0,0,0,1,0,0,6],
-"chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#acfc5421a5091a1933410c3e63bc765a5":[9,0,1,0,0,0,1,0,0,8],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3":[9,0,1,0,0,0,1,0,0,4],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#aedbb9bf89b3c453a66e6490d6b02d2b4":[9,0,1,0,0,0,1,0,0,0,1],
 "chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#af27677c00bbfec0f35e4d2fa178ac6ff":[9,0,1,0,0,0,1,0,0,0,0],
@@ -249,5 +244,10 @@ var NAVTREEINDEX33 =
 "chibios_2modules_2core_2rtos__mon__arch_8c.html#a5c3f4f5566419904a9dbcfd71b3fcd0d":[9,0,1,0,0,0,1,1,1,0,3],
 "chibios_2modules_2core_2rtos__mon__arch_8c.html#a9571af6f2b95ecc8a17a333aaab6ec6b":[9,0,1,0,0,0,1,1,1,3],
 "chibios_2modules_2core_2rtos__mon__arch_8c.html#a96549131d264efab8644ef7f05fb00f2":[9,0,1,0,0,0,1,1,1,0,6],
-"chibios_2modules_2core_2rtos__mon__arch_8c.html#a9a4612d39adc95b5c35cffbe2fcfd016":[9,0,1,0,0,0,1,1,1,0,1]
+"chibios_2modules_2core_2rtos__mon__arch_8c.html#a9a4612d39adc95b5c35cffbe2fcfd016":[9,0,1,0,0,0,1,1,1,0,1],
+"chibios_2modules_2core_2rtos__mon__arch_8c.html#aad005d7d1dfd88e830bb001dcfd9abe5":[9,0,1,0,0,0,1,1,1,0,2],
+"chibios_2modules_2core_2rtos__mon__arch_8c.html#ab87dfdab2dfa23df675940107d41cb86":[9,0,1,0,0,0,1,1,1,7],
+"chibios_2modules_2core_2rtos__mon__arch_8c.html#abf22d027e6febfbbb2b453559f4e169a":[9,0,1,0,0,0,1,1,1,0,0],
+"chibios_2modules_2core_2rtos__mon__arch_8c.html#ae6e85f5b5d901c06fed1237f02057f31":[9,0,1,0,0,0,1,1,1,0,4],
+"chibios_2modules_2core_2rtos__mon__arch_8c.html#structrtos__mon__cpu__window":[9,0,1,0,0,0,1,1,1,0]
 };

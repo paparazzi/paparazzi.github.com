@@ -1,25 +1,31 @@
 <map id="sw/airborne/modules/actuators/actuators.c" name="sw/airborne/modules/actuators/actuators.c">
-<area shape="rect" id="Node000001" title="Hardware independent actuators code." alt="" coords="255,5,417,50"/>
-<area shape="rect" id="Node000002" href="$modules_2actuators_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="226,98,446,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,48,338,84,334,81,335,53"/>
-<area shape="rect" id="Node000007" href="$commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="5,98,203,126"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="273,53,157,95,154,90,276,49"/>
-<area shape="rect" id="Node000008" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="470,98,642,126"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="395,48,509,92,504,93,394,53"/>
-<area shape="rect" id="Node000003" href="$paparazzi_8h.html" title=" " alt="" coords="89,174,186,201"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,128,188,170,186,165,303,125"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="393,174,447,201"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="352,124,396,163,391,163,350,129"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="210,174,369,201"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="330,125,307,163,304,159,326,128"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="268,249,354,277"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="169,199,269,242,264,244,168,204"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="111,124,128,160,122,159,109,129"/>
-<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="137,124,245,166,240,169,137,129"/>
-<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="547,125,510,165,460,204,414,228,368,246,367,241,412,223,457,199,506,161,542,127"/>
-<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="534,125,459,168,457,164,529,127"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="521,174,591,201"/>
-<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="558,124,558,160,554,156,554,128"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="614,174,740,201"/>
-<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="578,124,646,166,640,165,577,129"/>
+<area shape="rect" id="Node000001" title="Hardware independent actuators code." alt="" coords="561,5,723,50"/>
+<area shape="rect" id="Node000002" href="$modules_2actuators_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="300,98,520,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="578,52,462,95,460,90,583,50"/>
+<area shape="rect" id="Node000007" href="$commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="543,98,740,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="643,48,644,84,640,81,640,53"/>
+<area shape="rect" id="Node000008" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="104,98,276,126"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="559,46,278,97,277,92,562,42"/>
+<area shape="rect" id="Node000011" href="$abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="765,98,910,126"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="694,48,795,92,790,92,694,53"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="935,98,1002,126"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="723,46,922,97,917,97,723,51"/>
+<area shape="rect" id="Node000003" href="$paparazzi_8h.html" title=" " alt="" coords="376,174,473,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="414,124,421,160,417,157,411,128"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="299,174,352,201"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="397,125,354,166,351,161,392,127"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="530,174,690,201"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="446,124,563,168,557,168,445,129"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="300,249,386,277"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="412,201,370,241,367,237,407,203"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="606,126,478,171,477,166,600,127"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="638,125,623,162,620,158,634,128"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="204,123,321,238,316,239,202,128"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="215,124,291,165,286,167,214,129"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="155,174,224,201"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="191,124,192,159,187,157,188,128"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="5,174,132,201"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="166,128,104,168,101,163,170,124"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="775,174,901,201"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="840,124,840,160,836,156,836,128"/>
 </map>

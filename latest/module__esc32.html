@@ -107,6 +107,7 @@ $(function(){initNavTree('module__esc32.html','',''); });
 <h1 class="doxsection"><a class="anchor" id="module_load_example__esc32"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;esc32&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ESC32_ACTUATOR_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SERVO_MOTOR_IDX&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ESC32_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTX&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__esc32"></a>
@@ -116,6 +117,12 @@ Configure Options</h2>
 <ul>
 <li><b>name:</b> <code>ESC32_PORT</code> <b>value:</b> <em>UARTX</em> <br  />
  Description: UART use to get ESC data</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>ESC32_ACTUATOR_IDX</code> <b>value:</b> <em>SERVO_MOTOR_IDX</em> <br  />
+ Description: Actuator index of the ESC, for its feedback (RPM, current and voltage in ESC_TELEMETRY)</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="functions__esc32"></a>
 Module functions</h1>
@@ -178,6 +185,7 @@ Raw esc32.xml file:</h2>
 <div class="line">        - <span class="keyword">https:</span>//<span class="keyword">github.com</span>/<span class="keyword">svn2github</span>/<span class="keyword">esc32</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ESC32_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTX&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART use to get ESC data&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ESC32_ACTUATOR_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SERVO_MOTOR_IDX&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Actuator index of the ESC, for its feedback (RPM, current and voltage in ESC_TELEMETRY)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;esc32.h&quot;</span>/&gt;</div>

@@ -1,5 +1,17 @@
 var NAVTREEINDEX234 =
 {
+"xsens_8c_source.html":[9,0,1,0,6,37,53],
+"xsens_8h.html":[9,0,1,0,6,37,54],
+"xsens_8h.html#a47f12136c89e8cc13ff45e72caab8a19":[9,0,1,0,6,37,54,3],
+"xsens_8h.html#a6345aa5f7a6fc2de9539539d91bf0cba":[9,0,1,0,6,37,54,4],
+"xsens_8h.html#a7dcaa5041c2da4d7b3a8af364132770a":[9,0,1,0,6,37,54,2],
+"xsens_8h.html#ab70c0597795ff7438eb8a723923fc421":[9,0,1,0,6,37,54,5],
+"xsens_8h_source.html":[9,0,1,0,6,37,54],
+"xsens__parser_8c.html":[9,0,1,0,6,37,57],
+"xsens__parser_8c.html#a934ca0061f712fc5b516fb27f5ee24a1":[9,0,1,0,6,37,57,2],
+"xsens__parser_8c.html#a9d0046af933b2f7d8eb98e697b678c6a":[9,0,1,0,6,37,57,0],
+"xsens__parser_8c.html#aeb457d2fb42319908f48ab6713852cd4":[9,0,1,0,6,37,57,1],
+"xsens__parser_8c_source.html":[9,0,1,0,6,37,57],
 "xsens__parser_8h.html":[9,0,1,0,6,37,58],
 "xsens__parser_8h.html#a03da8c250f594fced17c9bb42029bf5f":[9,0,1,0,6,37,58,15],
 "xsens__parser_8h.html#a122dfbc6c30a1e322f2a47d10a0437fd":[9,0,1,0,6,37,58,0,5],

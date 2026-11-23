@@ -1,7 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__guidance_indi.html#module_load_example__guidance_indi":[1,179,0],
-"module__guidance_indi.html#module_xml__guidance_indi":[1,179,0,0],
 "module__guidance_indi_base.html":[1,180],
 "module__guidance_indi_base.html#functions__guidance_indi_base":[1,180,1],
 "module__guidance_indi_base.html#module_load_example__guidance_indi_base":[1,180,0],
@@ -174,19 +172,19 @@ var NAVTREEINDEX133 =
 "module__imu_aspirin_i2c_v1_0.html":[1,202],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,202,1],
 "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,202,0],
-"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,202,1,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,203],
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,203,0],
+"module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1":[1,203,0,0],
 "module__imu_aspirin_v1_0.html":[1,204],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,204,0],
+"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,204,0,0],
 "module__imu_aspirin_v1_5.html":[1,205],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,205,0],
-"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,205,0,0],
 "module__imu_aspirin_v2_1.html":[1,206],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,206,0],
+"module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2":[1,206,0,0],
 "module__imu_aspirin_v2_2.html":[1,207],
 "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2":[1,207,0],
-"module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2":[1,207,0,0],
 "module__imu_aspirin_v2_common.html":[1,208],
 "module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,208,1],
 "module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common":[1,208,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX133 =
 "module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883":[1,221,2],
 "module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,221,0],
 "module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,221,2,0],
-"module__imu_mpu60x0_i2c.html":[1,222]
+"module__imu_mpu60x0_i2c.html":[1,222],
+"module__imu_mpu60x0_i2c.html#configuration__imu_mpu60x0_i2c":[1,222,1],
+"module__imu_mpu60x0_i2c.html#functions__imu_mpu60x0_i2c":[1,222,2]
 };

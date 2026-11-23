@@ -99,35 +99,43 @@ $(function(){initNavTree('modules_2actuators_2actuators_8c.html','',''); });
 <div class="textblock"><code>#include &quot;<a class="el" href="modules_2actuators_2actuators_8h_source.html">modules/actuators/actuators.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="commands_8h_source.html">modules/core/commands.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for actuators.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="modules_2actuators_2actuators_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2actuators_2actuators_8c" loading="lazy" alt=""/></div>
 <map name="asw_2airborne_2modules_2actuators_2actuators_8c" id="asw_2airborne_2modules_2actuators_2actuators_8c">
-<area shape="rect" title="Hardware independent actuators code." alt="" coords="255,5,417,50"/>
-<area shape="rect" href="modules_2actuators_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="226,98,446,126"/>
-<area shape="poly" title=" " alt="" coords="337,48,338,84,334,81,335,53"/>
-<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="5,98,203,126"/>
-<area shape="poly" title=" " alt="" coords="273,53,157,95,154,90,276,49"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="470,98,642,126"/>
-<area shape="poly" title=" " alt="" coords="395,48,509,92,504,93,394,53"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="89,174,186,201"/>
-<area shape="poly" title=" " alt="" coords="298,128,188,170,186,165,303,125"/>
-<area shape="rect" title=" " alt="" coords="393,174,447,201"/>
-<area shape="poly" title=" " alt="" coords="352,124,396,163,391,163,350,129"/>
-<area shape="rect" title=" " alt="" coords="210,174,369,201"/>
-<area shape="poly" title=" " alt="" coords="330,125,307,163,304,159,326,128"/>
-<area shape="rect" title=" " alt="" coords="268,249,354,277"/>
-<area shape="poly" title=" " alt="" coords="169,199,269,242,264,244,168,204"/>
-<area shape="poly" title=" " alt="" coords="111,124,128,160,122,159,109,129"/>
-<area shape="poly" title=" " alt="" coords="137,124,245,166,240,169,137,129"/>
-<area shape="poly" title=" " alt="" coords="547,125,510,165,460,204,414,228,368,246,367,241,412,223,457,199,506,161,542,127"/>
-<area shape="poly" title=" " alt="" coords="534,125,459,168,457,164,529,127"/>
-<area shape="rect" title=" " alt="" coords="521,174,591,201"/>
-<area shape="poly" title=" " alt="" coords="558,124,558,160,554,156,554,128"/>
-<area shape="rect" title=" " alt="" coords="614,174,740,201"/>
-<area shape="poly" title=" " alt="" coords="578,124,646,166,640,165,577,129"/>
+<area shape="rect" title="Hardware independent actuators code." alt="" coords="561,5,723,50"/>
+<area shape="rect" href="modules_2actuators_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="300,98,520,126"/>
+<area shape="poly" title=" " alt="" coords="578,52,462,95,460,90,583,50"/>
+<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="543,98,740,126"/>
+<area shape="poly" title=" " alt="" coords="643,48,644,84,640,81,640,53"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="104,98,276,126"/>
+<area shape="poly" title=" " alt="" coords="559,46,278,97,277,92,562,42"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="765,98,910,126"/>
+<area shape="poly" title=" " alt="" coords="694,48,795,92,790,92,694,53"/>
+<area shape="rect" title=" " alt="" coords="935,98,1002,126"/>
+<area shape="poly" title=" " alt="" coords="723,46,922,97,917,97,723,51"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="376,174,473,201"/>
+<area shape="poly" title=" " alt="" coords="414,124,421,160,417,157,411,128"/>
+<area shape="rect" title=" " alt="" coords="299,174,352,201"/>
+<area shape="poly" title=" " alt="" coords="397,125,354,166,351,161,392,127"/>
+<area shape="rect" title=" " alt="" coords="530,174,690,201"/>
+<area shape="poly" title=" " alt="" coords="446,124,563,168,557,168,445,129"/>
+<area shape="rect" title=" " alt="" coords="300,249,386,277"/>
+<area shape="poly" title=" " alt="" coords="412,201,370,241,367,237,407,203"/>
+<area shape="poly" title=" " alt="" coords="606,126,478,171,477,166,600,127"/>
+<area shape="poly" title=" " alt="" coords="638,125,623,162,620,158,634,128"/>
+<area shape="poly" title=" " alt="" coords="204,123,321,238,316,239,202,128"/>
+<area shape="poly" title=" " alt="" coords="215,124,291,165,286,167,214,129"/>
+<area shape="rect" title=" " alt="" coords="155,174,224,201"/>
+<area shape="poly" title=" " alt="" coords="191,124,192,159,187,157,188,128"/>
+<area shape="rect" title=" " alt="" coords="5,174,132,201"/>
+<area shape="poly" title=" " alt="" coords="166,128,104,168,101,163,170,124"/>
+<area shape="rect" title=" " alt="" coords="775,174,901,201"/>
+<area shape="poly" title=" " alt="" coords="840,124,840,160,836,156,836,128"/>
 </map>
 </div>
 </div>
@@ -158,7 +166,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00321">321</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00512">512</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="px4__gimbal_8c_source.html#l00036">px4_gimbal_init()</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
@@ -190,7 +198,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00322">322</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00513">513</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__eff_scheduling_rotwing_v2.html#module_load_example__eff_scheduling_rotwing_v2":[1,96,0],
 "module__eff_scheduling_rotwing_v2.html#module_xml__eff_scheduling_rotwing_v2":[1,96,2,0],
 "module__ekf_aw.html":[1,288],
 "module__ekf_aw.html#configuration__ekf_aw":[1,288,1],
@@ -121,18 +120,17 @@ var NAVTREEINDEX132 =
 "module__gimbal_caddx_gm3.html#module_xml__gimbal_caddx_gm3":[1,47,1,0],
 "module__glide_wing_lock.html":[1,493],
 "module__glide_wing_lock.html#configuration__glide_wing_lock":[1,493,1],
+"module__glide_wing_lock.html#event_functions":[1,493,2,0],
 "module__glide_wing_lock.html#functions__glide_wing_lock":[1,493,2],
 "module__glide_wing_lock.html#module_load_example__glide_wing_lock":[1,493,0],
-"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,493,2,0],
+"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,493,2,1],
 "module__gpio_ext_common.html":[1,155],
 "module__gpio_ext_common.html#module_load_example__gpio_ext_common":[1,155,0],
 "module__gpio_ext_common.html#module_xml__gpio_ext_common":[1,155,0,0],
 "module__gpio_ext_pca95xx.html":[1,156],
 "module__gpio_ext_pca95xx.html#configuration__gpio_ext_pca95xx":[1,156,1],
-"module__gpio_ext_pca95xx.html#configure":[1,156,1,0],
-"module__gpio_ext_pca95xx.html#define":[1,156,1,1],
 "module__gpio_ext_pca95xx.html#module_load_example__gpio_ext_pca95xx":[1,156,0],
-"module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx":[1,156,1,2],
+"module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx":[1,156,1,0],
 "module__gps.html":[1,157],
 "module__gps.html#configuration__gps":[1,157,1],
 "module__gps.html#datalink_functions__gps":[1,157,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX132 =
 "module__guidance_hybrid.html#functions__guidance_hybrid":[1,178,1],
 "module__guidance_hybrid.html#module_load_example__guidance_hybrid":[1,178,0],
 "module__guidance_hybrid.html#module_xml__guidance_hybrid":[1,178,1,0],
-"module__guidance_indi.html":[1,179]
+"module__guidance_indi.html":[1,179],
+"module__guidance_indi.html#module_load_example__guidance_indi":[1,179,0],
+"module__guidance_indi.html#module_xml__guidance_indi":[1,179,0,0]
 };

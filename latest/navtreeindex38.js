@@ -1,10 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"chimera_8h.html#af754c909b4a07f3a9bfd585238432b00":[9,0,1,0,1,3,0,0,1,35],
-"chimera_8h.html#af93888595216eb71acfec667e7b5bdd2":[9,0,1,0,1,3,0,0,1,124],
-"chimera_8h.html#afa171425c899787769e5d3612c80acd2":[9,0,1,0,1,3,0,0,1,89],
-"chimera_8h.html#afd8cee2fb7cfce1b91317be24260b39c":[9,0,1,0,1,3,0,0,1,172],
-"chimera_8h.html#afe67bca9eb8da8654288c02124683016":[9,0,1,0,1,3,0,0,1,100],
 "chimera_8h.html#afe9c0c4cb75f1c36995b5d548b23e6cf":[9,0,1,0,1,3,0,0,1,141],
 "chimera_8h.html#afeadf07b12eaf0734ffdb1d057a59159":[9,0,1,0,1,3,0,0,1,165],
 "chimera_8h.html#affd1eec19194fa5f68e10a79d48c35d5":[9,0,1,0,1,3,0,0,1,49],
@@ -249,5 +244,10 @@ var NAVTREEINDEX38 =
 "cloud__sensor_8c.html#structLinReg":[9,0,1,0,6,44,3,0],
 "cloud__sensor_8c.html#structMedianFilter":[9,0,1,0,6,44,3,3],
 "cloud__sensor_8c_source.html":[9,0,1,0,6,44,3],
-"cloud__sensor_8h.html":[9,0,1,0,6,44,4]
+"cloud__sensor_8h.html":[9,0,1,0,6,44,4],
+"cloud__sensor_8h.html#a0ad5e90b7356d999781ab2688f879e8e":[9,0,1,0,6,44,4,11],
+"cloud__sensor_8h.html#a0e60f462fe41712399a2c8da51a6186c":[9,0,1,0,6,44,4,7],
+"cloud__sensor_8h.html#a0fd1f1f46cbd6645aa5da5ae3c9dfd76":[9,0,1,0,6,44,4,14],
+"cloud__sensor_8h.html#a22095a1ac0951be7f34bc65bdb7a3a0d":[9,0,1,0,6,44,4,16],
+"cloud__sensor_8h.html#a2f7a0588f61ef3da052c34e75c21e533":[9,0,1,0,6,44,4,0]
 };

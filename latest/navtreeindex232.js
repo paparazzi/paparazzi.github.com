@@ -1,5 +1,17 @@
 var NAVTREEINDEX232 =
 {
+"wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a32adb23063c5f3fa6835193654755a4f":[9,0,1,0,6,77,0,4,2],
+"wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a611aed47ba2e58b169bf9deded04db24":[9,0,1,0,6,77,0,4,0],
+"wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a998b887ac451d124211bdebdbc8f399b":[9,0,1,0,6,77,0,4,1],
+"wedgebug_8c.html#a17e419311a44de1996fd19462767ff73aa14f2633c708d0d27656e6ea0561e8d1":[9,0,1,0,6,77,0,4,4],
+"wedgebug_8c.html#a17e419311a44de1996fd19462767ff73ae14aebbb95cfbb402bfcd5519eda5388":[9,0,1,0,6,77,0,4,3],
+"wedgebug_8c.html#a189a97fc6c9791ed4d8fa84ebd19f42a":[9,0,1,0,6,77,0,52],
+"wedgebug_8c.html#a1975332f6276948cb0992ca7e646303c":[9,0,1,0,6,77,0,27],
+"wedgebug_8c.html#a1d81d1ad8f5b6fc674e0972e1bae92cb":[9,0,1,0,6,77,0,157],
+"wedgebug_8c.html#a1ddd46614cb62484506fdb341ccc5500":[9,0,1,0,6,77,0,61],
+"wedgebug_8c.html#a1e978b830e46dc7b57ce1fdb2bf3b4f5":[9,0,1,0,6,77,0,128],
+"wedgebug_8c.html#a226b1a6010d1911e926419b5cfcf9a5d":[9,0,1,0,6,77,0,108],
+"wedgebug_8c.html#a23019a70364cd05785a67c405170012a":[9,0,1,0,6,77,0,13],
 "wedgebug_8c.html#a243962d79a2ebd5d28098d21720bdf31":[9,0,1,0,6,77,0,87],
 "wedgebug_8c.html#a2551afb9106fa7bd714ee3a9a52528e0":[9,0,1,0,6,77,0,80],
 "wedgebug_8c.html#a26bf5265cbc2dc04f839381633e051a3":[9,0,1,0,6,77,0,79],
@@ -237,17 +249,5 @@ var NAVTREEINDEX232 =
 "wind__estimation__quadrotor_8c.html#a9975ccfa9603e218b5983fca9691b1a7":[9,0,1,0,6,44,51,0,0],
 "wind__estimation__quadrotor_8c.html#aa2c1330998cc99573cc763e9cf300484":[9,0,1,0,6,44,51,26],
 "wind__estimation__quadrotor_8c.html#aa8f0b3e619cd9f486c0ac35ea6af2991":[9,0,1,0,6,44,51,4],
-"wind__estimation__quadrotor_8c.html#aa9118b6591deef47b10f9de265526035":[9,0,1,0,6,44,51,15],
-"wind__estimation__quadrotor_8c.html#ab3bc2d9a2c668044ba44b76a795a62ae":[9,0,1,0,6,44,51,2],
-"wind__estimation__quadrotor_8c.html#ae3004ac4576e61733219698c126d8f1f":[9,0,1,0,6,44,51,28],
-"wind__estimation__quadrotor_8c.html#afdb4078f92a8c82b607a2e685a63183d":[9,0,1,0,6,44,51,5],
-"wind__estimation__quadrotor_8c.html#structwind__estimation__quadrotor":[9,0,1,0,6,44,51,0],
-"wind__estimation__quadrotor_8c_source.html":[9,0,1,0,6,44,51],
-"wind__estimation__quadrotor_8h.html":[9,0,1,0,6,44,52],
-"wind__estimation__quadrotor_8h.html#a01ebd8f95f2c668cf39207f26ca97cc3":[9,0,1,0,6,44,52,4],
-"wind__estimation__quadrotor_8h.html#a0b8640b6ea9df7ad6968a6a1b725268d":[9,0,1,0,6,44,52,0,0],
-"wind__estimation__quadrotor_8h.html#a12628282e6072bb4bae58d9ba1363053":[9,0,1,0,6,44,52,7],
-"wind__estimation__quadrotor_8h.html#a15f51b61543a3bf63e3d33ce21d5cb36":[9,0,1,0,6,44,52,8],
-"wind__estimation__quadrotor_8h.html#a1a51ee96e2d65f6f7986aba14209781c":[9,0,1,0,6,44,52,2],
-"wind__estimation__quadrotor_8h.html#a20c68042d8e46c485c52c129ef7543d0":[9,0,1,0,6,44,52,5]
+"wind__estimation__quadrotor_8c.html#aa9118b6591deef47b10f9de265526035":[9,0,1,0,6,44,51,15]
 };

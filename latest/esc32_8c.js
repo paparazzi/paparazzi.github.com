@@ -39,7 +39,6 @@ var esc32_8c =
     [ "esc32_get_float", "esc32_8c.html#a111e2210c121698430bf93061242fb41", null ],
     [ "esc32_init", "esc32_8c.html#a485a4d236254b9e739e5d413263e31e1", null ],
     [ "esc32_init_ck", "esc32_8c.html#a65f00421365684cb4955f3771a8b7adb", null ],
-    [ "esc32_msg_send", "esc32_8c.html#a1a844aebbf9dc5167f69b9fcd97c681c", null ],
     [ "esc32_parse_msg", "esc32_8c.html#a6791b2b81802d97f5f5fdbfe80bd3b2f", null ],
     [ "esc32_periodic", "esc32_8c.html#a0ea641180adcdfecf85874250a5606cf", null ],
     [ "esc32_put_char", "esc32_8c.html#afa5d15019c0277d9ade815d9954b8c8b", null ],

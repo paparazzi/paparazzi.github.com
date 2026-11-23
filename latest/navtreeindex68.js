@@ -1,11 +1,5 @@
 var NAVTREEINDEX68 =
 {
-"gps__ubx__ucenter_8h.html#a080e2318dbd7b4cb34822c4fbbfc701d":[9,0,1,0,6,29,31,6],
-"gps__ubx__ucenter_8h.html#a0bc8292f330a44c80920e0d49d6d6c65":[9,0,1,0,6,29,31,0,0],
-"gps__ubx__ucenter_8h.html#a3107fadf1e690c29214c96e458671950":[9,0,1,0,6,29,31,0,4],
-"gps__ubx__ucenter_8h.html#a3316ecc8e914f2c8232603da1d962b28":[9,0,1,0,6,29,31,1],
-"gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675":[9,0,1,0,6,29,31,5],
-"gps__ubx__ucenter_8h.html#a4be9a9cf841745f5e6cea8f7fa1131b5":[9,0,1,0,6,29,31,0,3],
 "gps__ubx__ucenter_8h.html#a4c6a3b4aebc4658f28b6dd1caa61fd5c":[9,0,1,0,6,29,31,0,8],
 "gps__ubx__ucenter_8h.html#a4f7e436b36f8b5236aab6b9258a0ccd4":[9,0,1,0,6,29,31,0,13],
 "gps__ubx__ucenter_8h.html#a52454b4ba4263649875f5ed0f243d304":[9,0,1,0,6,29,31,0,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX68 =
 "group__ac__info.html#ga9452b9d19fb1694aac84c7d21bd708f9":[6,2,21],
 "group__ac__info.html#ga989a504e89a23857daca78ccf6e91a7c":[6,2,5],
 "group__ac__info.html#ga9fb193c4a24e8477ee86febe5f4db162":[6,2,6],
-"group__ac__info.html#gaa35b881ac79b26e3504539214918c63f":[6,2,22]
+"group__ac__info.html#gaa35b881ac79b26e3504539214918c63f":[6,2,22],
+"group__ac__info.html#gaaa18212cdf312a0454dfffd202c8564a":[6,2,2],
+"group__ac__info.html#gaae3a5100e3ea09d3da46b4080e33034b":[6,2,33],
+"group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2":[6,2,42],
+"group__ac__info.html#gab1b5edeb3b6a005cd7086e93ae01afb2":[6,2,9],
+"group__ac__info.html#gab3795ba1b3ecde9a2056986e77373342":[6,2,45],
+"group__ac__info.html#gab3877b5ead09fcf8509082fbc94864bb":[6,2,37]
 };

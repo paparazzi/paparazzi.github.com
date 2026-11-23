@@ -99,7 +99,6 @@ $(function(){initNavTree('module__actuators_uavcan.html','',''); });
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_uavcan&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> /&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_TELEM_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{4}&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="configuration__actuators_uavcan"></a>
 Module configuration options</h1>
@@ -108,8 +107,6 @@ Define Options</h2>
 <ul>
 <li><b>name:</b> <code>UAVCAN_ACTUATORS_USE_CURRENT</code> <b>value:</b> <em>TRUE</em> <br  />
  Description: Enable the usage of the current sensing in the ESC telemetry</li>
-<li><b>name:</b> <code>UAVCAN_ACTUATORS_TELEM_IDX</code> <b>value:</b> <em>{4}</em> <br  />
- Description: Only report these ESC indices in the ESC telemetry message (counted over UAVCAN1 then UAVCAN2), to get a higher update rate for them. Default: all ESCs</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="af_section"></a>
 Airframe file section</h2>
@@ -140,6 +137,7 @@ Source Files</h2>
 <li><a class="el" href="actuators__uavcan_8c.html">modules/actuators/actuators_uavcan.c</a></li>
 <li><a class="el" href="pprz__random_8c.html">math/pprz_random.c</a></li>
 <li>/var/include/DSDLcode/src/uavcan.equipment.esc.Status.c</li>
+<li>/var/include/DSDLcode/src/uavcan.equipment.esc.StatusExtended.c</li>
 <li>/var/include/DSDLcode/src/uavcan.equipment.esc.RawCommand.c</li>
 <li>/var/include/DSDLcode/src/uavcan.equipment.actuator.Status.c</li>
 <li>/var/include/DSDLcode/src/uavcan.equipment.actuator.ArrayCommand.c</li>
@@ -156,7 +154,6 @@ Raw actuators_uavcan.xml file:</h2>
 <div class="line">      <span class="keyword">UAVCan</span> <span class="keyword">actuators</span></div>
 <div class="line">   &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_USE_CURRENT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable the usage of the current sensing in the ESC telemetry&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UAVCAN_ACTUATORS_TELEM_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{4}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Only report these ESC indices in the ESC telemetry message (counted over UAVCAN1 then UAVCAN2), to get a higher update rate for them. Default: all ESCs&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_UAVCAN&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_UAVCAN1_CMD_TYPES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{UNITLESS, PWM}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Command types: UNITLESS, POSITION, FORCE, SPEED or PWM. Default: UNITLESS&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATOR_UAVCAN1_CMD_FACTORS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{9600.f, 1.f}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Nonzero divisors for actuator command values. Default: 9600&quot;</span>/&gt;</div>
@@ -178,6 +175,7 @@ Raw actuators_uavcan.xml file:</h2>
 <div class="line">    <span class="comment">&lt;!-- Load DSDL generated files--&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/include&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.esc.Status.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.esc.StatusExtended.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.esc.RawCommand.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.actuator.Status.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uavcan.equipment.actuator.ArrayCommand.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(PAPARAZZI_HOME)/var/include/DSDLcode/src&quot;</span>/&gt;</div>

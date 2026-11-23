@@ -48,6 +48,7 @@ var onboard_modules =
     ] ],
     [ "actuators module", "module__actuators.html", [
       [ "Example for airframe file", "module__actuators.html#module_load_example__actuators", null ],
+      [ "Module configuration options", "module__actuators.html#configuration__actuators", null ],
       [ "Module functions", "module__actuators.html#functions__actuators", [
         [ "Raw actuators.xml file:", "module__actuators.html#module_xml__actuators", null ]
       ] ]
@@ -686,7 +687,9 @@ var onboard_modules =
     ] ],
     [ "object_tracking module", "module__object_tracking.html", [
       [ "Example for airframe file", "module__object_tracking.html#module_load_example__object_tracking", null ],
-      [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", null ],
+      [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", [
+        [ "Airframe file section", "module__object_tracking.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__object_tracking.html#functions__object_tracking", [
         [ "Raw object_tracking.xml file:", "module__object_tracking.html#module_xml__object_tracking", null ]
       ] ]
@@ -1044,8 +1047,6 @@ var onboard_modules =
     [ "gpio_ext_pca95xx module", "module__gpio_ext_pca95xx.html", [
       [ "Example for airframe file", "module__gpio_ext_pca95xx.html#module_load_example__gpio_ext_pca95xx", null ],
       [ "Module configuration options", "module__gpio_ext_pca95xx.html#configuration__gpio_ext_pca95xx", [
-        [ "Configure Options", "module__gpio_ext_pca95xx.html#configure", null ],
-        [ "Define Options", "module__gpio_ext_pca95xx.html#define", null ],
         [ "Raw gpio_ext_pca95xx.xml file:", "module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx", null ]
       ] ]
     ] ],
@@ -1342,28 +1343,28 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1812,6 +1813,12 @@ var onboard_modules =
     [ "can module", "module__can.html", [
       [ "Example for airframe file", "module__can.html#module_load_example__can", null ],
       [ "Module configuration options", "module__can.html#configuration__can", [
+        [ "Configure Options", "module__can.html#configure", null ],
+        [ "Define Options", "module__can.html#define", null ]
+      ] ],
+      [ "Files", "module__can.html#files", [
+        [ "Header Files", "module__can.html#headers", null ],
+        [ "Source Files", "module__can.html#sources", null ],
         [ "Raw can.xml file:", "module__can.html#module_xml__can", null ]
       ] ]
     ] ],
@@ -1823,7 +1830,6 @@ var onboard_modules =
     [ "mcu module", "module__mcu.html", [
       [ "Example for airframe file", "module__mcu.html#module_load_example__mcu", null ],
       [ "Module functions", "module__mcu.html#functions__mcu", [
-        [ "Event Functions", "module__mcu.html#event_functions", null ],
         [ "Raw mcu.xml file:", "module__mcu.html#module_xml__mcu", null ]
       ] ]
     ] ],
@@ -2162,15 +2168,8 @@ var onboard_modules =
     ] ],
     [ "nav_fish module", "module__nav_fish.html", [
       [ "Example for airframe file", "module__nav_fish.html#module_load_example__nav_fish", null ],
-      [ "Module configuration options", "module__nav_fish.html#configuration__nav_fish", [
-        [ "Airframe file section", "module__nav_fish.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__nav_fish.html#configuration__nav_fish", null ],
       [ "Module functions", "module__nav_fish.html#functions__nav_fish", [
-        [ "Init Functions", "module__nav_fish.html#init_functions", null ]
-      ] ],
-      [ "Files", "module__nav_fish.html#files", [
-        [ "Header Files", "module__nav_fish.html#headers", null ],
-        [ "Source Files", "module__nav_fish.html#sources", null ],
         [ "Raw nav_fish.xml file:", "module__nav_fish.html#module_xml__nav_fish", null ]
       ] ]
     ] ],
@@ -2600,7 +2599,6 @@ var onboard_modules =
     [ "alt_srf08 module", "module__alt_srf08.html", [
       [ "Example for airframe file", "module__alt_srf08.html#module_load_example__alt_srf08", null ],
       [ "Module functions", "module__alt_srf08.html#functions__alt_srf08", [
-        [ "Periodic Functions", "module__alt_srf08.html#periodic_functions", null ],
         [ "Raw alt_srf08.xml file:", "module__alt_srf08.html#module_xml__alt_srf08", null ]
       ] ]
     ] ],
@@ -3245,6 +3243,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__glide_wing_lock.html#module_load_example__glide_wing_lock", null ],
       [ "Module configuration options", "module__glide_wing_lock.html#configuration__glide_wing_lock", null ],
       [ "Module functions", "module__glide_wing_lock.html#functions__glide_wing_lock", [
+        [ "Event Functions", "module__glide_wing_lock.html#event_functions", null ],
         [ "Raw glide_wing_lock.xml file:", "module__glide_wing_lock.html#module_xml__glide_wing_lock", null ]
       ] ]
     ] ],
@@ -3459,6 +3458,8 @@ var onboard_modules =
       [ "Example for airframe file", "module__time_countdown.html#module_load_example__time_countdown", null ],
       [ "Module configuration options", "module__time_countdown.html#configuration__time_countdown", null ],
       [ "Module functions", "module__time_countdown.html#functions__time_countdown", [
+        [ "Init Functions", "module__time_countdown.html#init_functions", null ],
+        [ "Periodic Functions", "module__time_countdown.html#periodic_functions", null ],
         [ "Raw time_countdown.xml file:", "module__time_countdown.html#module_xml__time_countdown", null ]
       ] ]
     ] ],

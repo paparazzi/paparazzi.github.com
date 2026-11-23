@@ -186,7 +186,7 @@ var searchData=
   ['vnedwenu_183',['VNEDwenu',['../wedgebug_8c.html#a82ea7cc77b377ce13f3fae0e47c4188a',1,'wedgebug.c']]],
   ['volt_5fbat_184',['volt_bat',['../can__fuelcell_8c.html#a507f9525925970dc0d0ed64944f02aba',1,'uavcan_equipment_fuelcell']]],
   ['volt_5fgeiger_185',['volt_geiger',['../geiger__counter_8c.html#af9dbdd1fb84676af7d2a603f1f7717d3',1,'geiger_counter.c']]],
-  ['voltage_186',['voltage',['../actuators__dshot_8h.html#a8005640683ebe5fbb0375c51d0390547',1,'dshot::voltage'],['../actuators__uavcan_8c.html#a93e39cb253b2c7f71bdd8f1ff5e63d29',1,'actuators_uavcan_telem_t::voltage'],['../esc__dshot_8h.html#ae437ba437f4106903e619bb380574954',1,'DshotTelemetryFrame.__unnamed0__.__unnamed0__::voltage']]],
+  ['voltage_186',['voltage',['../modules_2actuators_2actuators_8h.html#a70dcbec57c3df1343c7a1f88e4381792',1,'act_feedback_t::act_feedback_set_t::voltage'],['../modules_2actuators_2actuators_8h.html#a6fb5952373db7c2c5f8f165451f24d3b',1,'act_feedback_t::voltage'],['../actuators__dshot_8h.html#a8005640683ebe5fbb0375c51d0390547',1,'dshot::voltage'],['../actuators__uavcan_8c.html#a93e39cb253b2c7f71bdd8f1ff5e63d29',1,'actuators_uavcan_telem_t::voltage'],['../esc__dshot_8h.html#ae437ba437f4106903e619bb380574954',1,'DshotTelemetryFrame.__unnamed0__.__unnamed0__::voltage']]],
   ['volts_5fbat_187',['volts_bat',['../esc32_8h.html#ad3176730e583f21f5a88929e8a074489',1,'esc32_parameter']]],
   ['volts_5fmotor_188',['volts_motor',['../esc32_8h.html#acbb78d3e535d0ec2cd1235a8d6c38cdd',1,'esc32_parameter']]],
   ['vpbestedgecoordinateswned_189',['VPBESTEDGECOORDINATESwned',['../wedgebug_8c.html#a2ec152206c4e5420ccefa65ed789ccee',1,'wedgebug.c']]],
