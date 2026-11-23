@@ -1,8 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__logger_file.html#configuration__logger_file":[1,270,1],
-"module__logger_file.html#functions__logger_file":[1,270,2],
-"module__logger_file.html#module_load_example__logger_file":[1,270,0],
 "module__logger_file.html#module_xml__logger_file":[1,270,2,0],
 "module__logger_sd_chibios.html":[1,271],
 "module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,271,1],
@@ -88,9 +85,10 @@ var NAVTREEINDEX135 =
 "module__mcp355x.html#module_load_example__mcp355x":[1,24,0],
 "module__mcp355x.html#module_xml__mcp355x":[1,24,1,0],
 "module__mcu.html":[1,277],
+"module__mcu.html#event_functions":[1,277,1,0],
 "module__mcu.html#functions__mcu":[1,277,1],
 "module__mcu.html#module_load_example__mcu":[1,277,0],
-"module__mcu.html#module_xml__mcu":[1,277,1,0],
+"module__mcu.html#module_xml__mcu":[1,277,1,1],
 "module__meteo_france_daq.html":[1,300],
 "module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,300,2],
 "module__meteo_france_daq.html#functions__meteo_france_daq":[1,300,1],
@@ -156,10 +154,15 @@ var NAVTREEINDEX135 =
 "module__nav_drop.html#module_load_example__nav_drop":[1,330,0],
 "module__nav_drop.html#module_xml__nav_drop":[1,330,0,0],
 "module__nav_fish.html":[1,331],
+"module__nav_fish.html#af_section":[1,331,1,0],
 "module__nav_fish.html#configuration__nav_fish":[1,331,1],
+"module__nav_fish.html#files":[1,331,3],
 "module__nav_fish.html#functions__nav_fish":[1,331,2],
+"module__nav_fish.html#headers":[1,331,3,0],
+"module__nav_fish.html#init_functions":[1,331,2,0],
 "module__nav_fish.html#module_load_example__nav_fish":[1,331,0],
-"module__nav_fish.html#module_xml__nav_fish":[1,331,2,0],
+"module__nav_fish.html#module_xml__nav_fish":[1,331,3,2],
+"module__nav_fish.html#sources":[1,331,3,1],
 "module__nav_flower.html":[1,332],
 "module__nav_flower.html#functions__nav_flower":[1,332,1],
 "module__nav_flower.html#module_load_example__nav_flower":[1,332,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX135 =
 "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,353,0],
 "module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam":[1,353,1,0],
 "module__nav_survey_poly_rotorcraft.html":[1,354],
-"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,354,1],
-"module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft":[1,354,0],
-"module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,354,1,0],
-"module__nav_survey_polygon.html":[1,355]
+"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,354,1]
 };

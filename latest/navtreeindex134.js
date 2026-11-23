@@ -1,8 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,221,0],
-"module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,221,2,0],
-"module__imu_mpu60x0_i2c.html":[1,222],
 "module__imu_mpu60x0_i2c.html#configuration__imu_mpu60x0_i2c":[1,222,1],
 "module__imu_mpu60x0_i2c.html#functions__imu_mpu60x0_i2c":[1,222,2],
 "module__imu_mpu60x0_i2c.html#module_load_example__imu_mpu60x0_i2c":[1,222,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX134 =
 "module__logger_control_effectiveness.html#functions__logger_control_effectiveness":[1,269,2],
 "module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness":[1,269,0],
 "module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness":[1,269,2,0],
-"module__logger_file.html":[1,270]
+"module__logger_file.html":[1,270],
+"module__logger_file.html#configuration__logger_file":[1,270,1],
+"module__logger_file.html#functions__logger_file":[1,270,2],
+"module__logger_file.html#module_load_example__logger_file":[1,270,0]
 };
