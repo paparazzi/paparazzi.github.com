@@ -1,8 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__logger_control_effectiveness.html":[1,269],
-"module__logger_control_effectiveness.html#configuration__logger_control_effectiveness":[1,269,1],
-"module__logger_control_effectiveness.html#functions__logger_control_effectiveness":[1,269,2],
 "module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness":[1,269,0],
 "module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness":[1,269,2,0],
 "module__logger_file.html":[1,270],
@@ -94,9 +91,10 @@ var NAVTREEINDEX135 =
 "module__mcp355x.html#module_load_example__mcp355x":[1,24,0],
 "module__mcp355x.html#module_xml__mcp355x":[1,24,1,0],
 "module__mcu.html":[1,277],
+"module__mcu.html#event_functions":[1,277,1,0],
 "module__mcu.html#functions__mcu":[1,277,1],
 "module__mcu.html#module_load_example__mcu":[1,277,0],
-"module__mcu.html#module_xml__mcu":[1,277,1,0],
+"module__mcu.html#module_xml__mcu":[1,277,1,1],
 "module__meteo_france_daq.html":[1,300],
 "module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,300,2],
 "module__meteo_france_daq.html#functions__meteo_france_daq":[1,300,1],
@@ -162,10 +160,15 @@ var NAVTREEINDEX135 =
 "module__nav_drop.html#module_load_example__nav_drop":[1,330,0],
 "module__nav_drop.html#module_xml__nav_drop":[1,330,0,0],
 "module__nav_fish.html":[1,331],
+"module__nav_fish.html#af_section":[1,331,1,0],
 "module__nav_fish.html#configuration__nav_fish":[1,331,1],
+"module__nav_fish.html#files":[1,331,3],
 "module__nav_fish.html#functions__nav_fish":[1,331,2],
+"module__nav_fish.html#headers":[1,331,3,0],
+"module__nav_fish.html#init_functions":[1,331,2,0],
 "module__nav_fish.html#module_load_example__nav_fish":[1,331,0],
-"module__nav_fish.html#module_xml__nav_fish":[1,331,2,0],
+"module__nav_fish.html#module_xml__nav_fish":[1,331,3,2],
+"module__nav_fish.html#sources":[1,331,3,1],
 "module__nav_flower.html":[1,332],
 "module__nav_flower.html#functions__nav_flower":[1,332,1],
 "module__nav_flower.html#module_load_example__nav_flower":[1,332,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX135 =
 "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid":[1,352,1],
 "module__nav_survey_hybrid.html#functions__nav_survey_hybrid":[1,352,2],
 "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid":[1,352,0],
-"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,352,2,0],
-"module__nav_survey_poly_osam.html":[1,353],
-"module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam":[1,353,1],
-"module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,353,0]
+"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,352,2,0]
 };

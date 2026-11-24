@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"module__sys_time.html#module_load_example__sys_time":[1,281,0],
+"module__sys_time.html#module_xml__sys_time":[1,281,2,0],
 "module__syslink_dl.html":[1,525],
 "module__syslink_dl.html#configuration__syslink_dl":[1,525,1],
 "module__syslink_dl.html#functions__syslink_dl":[1,525,2],
@@ -136,10 +138,8 @@ var NAVTREEINDEX138 =
 "module__time_countdown.html":[1,526],
 "module__time_countdown.html#configuration__time_countdown":[1,526,1],
 "module__time_countdown.html#functions__time_countdown":[1,526,2],
-"module__time_countdown.html#init_functions":[1,526,2,0],
 "module__time_countdown.html#module_load_example__time_countdown":[1,526,0],
-"module__time_countdown.html#module_xml__time_countdown":[1,526,2,2],
-"module__time_countdown.html#periodic_functions":[1,526,2,1],
+"module__time_countdown.html#module_xml__time_countdown":[1,526,2,0],
 "module__tlsf.html":[1,527],
 "module__tlsf.html#configuration__tlsf":[1,527,1],
 "module__tlsf.html#functions__tlsf":[1,527,2],

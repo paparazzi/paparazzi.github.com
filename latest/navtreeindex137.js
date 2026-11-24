@@ -1,5 +1,7 @@
 var NAVTREEINDEX137 =
 {
+"module__range_sensor_uavcan.html#functions__range_sensor_uavcan":[1,430,1],
+"module__range_sensor_uavcan.html#module_load_example__range_sensor_uavcan":[1,430,0],
 "module__range_sensor_uavcan.html#module_xml__range_sensor_uavcan":[1,430,1,0],
 "module__relative_localization_filter.html":[1,520],
 "module__relative_localization_filter.html#functions__relative_localization_filter":[1,520,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX137 =
 "module__sys_mon.html#module_xml__sys_mon":[1,81,1,0],
 "module__sys_time.html":[1,281],
 "module__sys_time.html#configuration__sys_time":[1,281,1],
-"module__sys_time.html#datalink_functions__sys_time":[1,281,2],
-"module__sys_time.html#module_load_example__sys_time":[1,281,0],
-"module__sys_time.html#module_xml__sys_time":[1,281,2,0]
+"module__sys_time.html#datalink_functions__sys_time":[1,281,2]
 };
