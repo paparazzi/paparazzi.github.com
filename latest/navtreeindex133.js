@@ -1,5 +1,13 @@
 var NAVTREEINDEX133 =
 {
+"module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw":[1,177,1],
+"module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw":[1,177,2],
+"module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw":[1,177,0],
+"module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw":[1,177,2,0],
+"module__guidance_hybrid.html":[1,178],
+"module__guidance_hybrid.html#functions__guidance_hybrid":[1,178,1],
+"module__guidance_hybrid.html#module_load_example__guidance_hybrid":[1,178,0],
+"module__guidance_hybrid.html#module_xml__guidance_hybrid":[1,178,1,0],
 "module__guidance_indi.html":[1,179],
 "module__guidance_indi.html#module_load_example__guidance_indi":[1,179,0],
 "module__guidance_indi.html#module_xml__guidance_indi":[1,179,0,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,219,0],
 "module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,219,0,0],
 "module__imu_mpu6000.html":[1,220],
-"module__imu_mpu6000.html#configuration__imu_mpu6000":[1,220,1],
-"module__imu_mpu6000.html#functions__imu_mpu6000":[1,220,2],
-"module__imu_mpu6000.html#module_load_example__imu_mpu6000":[1,220,0],
-"module__imu_mpu6000.html#module_xml__imu_mpu6000":[1,220,2,0],
-"module__imu_mpu6000_hmc5883.html":[1,221],
-"module__imu_mpu6000_hmc5883.html#configuration__imu_mpu6000_hmc5883":[1,221,1],
-"module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883":[1,221,2],
-"module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,221,0],
-"module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,221,2,0]
+"module__imu_mpu6000.html#configuration__imu_mpu6000":[1,220,1]
 };

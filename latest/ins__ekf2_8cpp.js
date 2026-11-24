@@ -46,6 +46,10 @@ var ins__ekf2_8cpp =
     [ "INS_EKF2_EVENT_HOLDOFF", "ins__ekf2_8cpp.html#a218127330b473cd64ff4b2ff10a6d9c3", null ],
     [ "INS_EKF2_EVENT_MSGS", "ins__ekf2_8cpp.html#aa5c06fe6808d6a02b6f73e35d88b29ec", null ],
     [ "INS_EKF2_EVENTS_ALL", "ins__ekf2_8cpp.html#adda3bd998af31bc74dae5ab7e5f00401", null ],
+    [ "INS_EKF2_GNSS_ALT_ALIGN", "ins__ekf2_8cpp.html#a1f2041ad5ffd54b4333c56010f276ca3", null ],
+    [ "INS_EKF2_GNSS_ALT_ALIGN_THR", "ins__ekf2_8cpp.html#a16614a75cf78ad646941c31d1ac8cbfd", null ],
+    [ "INS_EKF2_GNSS_ALT_ALIGN_TIME", "ins__ekf2_8cpp.html#afcfaf8c794596fe1cf51ebb053f3515e", null ],
+    [ "INS_EKF2_GNSS_ALT_ALIGN_VACC", "ins__ekf2_8cpp.html#a267dc4e6cc32eb74107c3a752acb6fb5", null ],
     [ "INS_EKF2_GNSS_CHECK", "ins__ekf2_8cpp.html#a9f39866dee9d7e9679da8d5cce24dfd3", null ],
     [ "INS_EKF2_GNSS_REQ_EPH", "ins__ekf2_8cpp.html#a133a74a825ce263f9a54242e98c4add2", null ],
     [ "INS_EKF2_GNSS_REQ_SACC", "ins__ekf2_8cpp.html#a75851d9c3d1a6df96da8c457aabfadcb", null ],
@@ -82,7 +86,8 @@ var ins__ekf2_8cpp =
       [ "EKF2_IN_ORIGIN", "ins__ekf2_8cpp.html#ad569c34c8393b0224527c94311fb1429a7b6ff08bb46fe0cfd2154f5b096a2e49", null ],
       [ "EKF2_IN_PARAMS", "ins__ekf2_8cpp.html#ad569c34c8393b0224527c94311fb1429a1f8c81bf7d644d3da93c96731209edae", null ],
       [ "EKF2_IN_CONFIG", "ins__ekf2_8cpp.html#ad569c34c8393b0224527c94311fb1429aff43545bb74eb2ae7d79a6414c916c69", null ],
-      [ "EKF2_IN_OUTPUT", "ins__ekf2_8cpp.html#ad569c34c8393b0224527c94311fb1429a95f54cf105643022dbe3a40e39ef1012", null ]
+      [ "EKF2_IN_OUTPUT", "ins__ekf2_8cpp.html#ad569c34c8393b0224527c94311fb1429a95f54cf105643022dbe3a40e39ef1012", null ],
+      [ "EKF2_IN_ALT_RESET", "ins__ekf2_8cpp.html#ad569c34c8393b0224527c94311fb1429af373058a3d8e7cfc059f4ae4e8c56fb4", null ]
     ] ],
     [ "accel_int_cb", "ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b", null ],
     [ "agl_cb", "ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac", null ],
@@ -95,6 +100,7 @@ var ins__ekf2_8cpp =
     [ "gyro_int_cb", "ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b", null ],
     [ "ins_ekf2_airspeed_update", "ins__ekf2_8cpp.html#a2b3b42f0b4951e04557d5ceb26432c6b", null ],
     [ "ins_ekf2_at_rest_update", "ins__ekf2_8cpp.html#a18bbb09da06cb100302295207c485362", null ],
+    [ "ins_ekf2_gnss_alt_align", "ins__ekf2_8cpp.html#aa61e80279502585fa9233aa7a5ab010c", null ],
     [ "ins_ekf2_init", "ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4", null ],
     [ "ins_ekf2_parse_EXTERNAL_POSE", "ins__ekf2_8cpp.html#ab6f0b94516904e1cd8457f4e8a6b2a5e", null ],
     [ "ins_ekf2_parse_EXTERNAL_POSE_SMALL", "ins__ekf2_8cpp.html#ab989cc21994ff030facc52279242c428", null ],

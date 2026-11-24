@@ -1,5 +1,13 @@
 var NAVTREEINDEX140 =
 {
+"motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a":[9,0,1,0,6,0,34,15],
+"motor__mixing_8c.html#a181807730d4a375f848ba139813ce04f":[9,0,1,0,6,0,34,0],
+"motor__mixing_8c.html#a283724cdd12c661eabd1bbdb1af0a853":[9,0,1,0,6,0,34,18],
+"motor__mixing_8c.html#a2ae1edcc370497aedc22bc48bba04dd0":[9,0,1,0,6,0,34,21],
+"motor__mixing_8c.html#a32824363dfc8e0863aa3f6160c50c537":[9,0,1,0,6,0,34,11],
+"motor__mixing_8c.html#a39beb241f4c1584e6a0e73a0a6048cdc":[9,0,1,0,6,0,34,9],
+"motor__mixing_8c.html#a3c8bf9fbab481d7a4fb24a23f827d457":[9,0,1,0,6,0,34,8],
+"motor__mixing_8c.html#a4d6511bd941233c791d1436bb35ebb10":[9,0,1,0,6,0,34,14],
 "motor__mixing_8c.html#a56f7b209886f3636c9c5f7f0431ce3f0":[9,0,1,0,6,0,34,17],
 "motor__mixing_8c.html#a59bcef1ef87e6b3e3b13751914876465":[9,0,1,0,6,0,34,4],
 "motor__mixing_8c.html#a688eb21a22db27c2b2bd5836943cdcbe":[9,0,1,0,6,0,34,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX140 =
 "mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a145d8cfcc93d0cf1c2f18859d5abb0cf":[9,0,1,0,7,102,78,0],
 "mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a2e5cd594e294fde972b58c938f3b7ed5":[9,0,1,0,7,102,78,3],
 "mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a67d78d4162c2dbc6ec1602dec54801e9":[9,0,1,0,7,102,78,1],
-"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7aaaee36a519978ac98aeeebb5c3dd4017":[9,0,1,0,7,102,78,2],
-"mpu60x0__regs_8h.html#a31a2ad22d72073f3100960e75fc389b0":[9,0,1,0,7,102,59],
-"mpu60x0__regs_8h.html#a3333b4a606189db9ffba13a099231023":[9,0,1,0,7,102,17],
-"mpu60x0__regs_8h.html#a37d0838bdcbb748f6e7b9ea6e5793076":[9,0,1,0,7,102,56],
-"mpu60x0__regs_8h.html#a3ae4d20b0c363bac8994bf4c091a6cf7":[9,0,1,0,7,102,0],
-"mpu60x0__regs_8h.html#a3ca608ea59fe8d027e6b2df46546443a":[9,0,1,0,7,102,70],
-"mpu60x0__regs_8h.html#a3ed0c2fccc8788a38170d57becdb4f4f":[9,0,1,0,7,102,52],
-"mpu60x0__regs_8h.html#a4783e4de35dc974b097ae84ee683e5cf":[9,0,1,0,7,102,64],
-"mpu60x0__regs_8h.html#a4d065c3b9aa304aae2ce7d2e9accd245":[9,0,1,0,7,102,38]
+"mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7aaaee36a519978ac98aeeebb5c3dd4017":[9,0,1,0,7,102,78,2]
 };

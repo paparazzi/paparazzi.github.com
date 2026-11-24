@@ -9,6 +9,8 @@ var ins__ekf2_8h_structekf2__t =
     [ "delta_gyro", "ins__ekf2_8h.html#ae4e2f439ebf083c315bf22b29565d225", null ],
     [ "fixed_wing", "ins__ekf2_8h.html#aa1275eaa17ee522db66b59afed698394", null ],
     [ "flow_stamp", "ins__ekf2_8h.html#a9f0b62cb95b5747674325100d501274e", null ],
+    [ "gnss_vacc", "ins__ekf2_8h.html#a521c744d058079f2fa8fe32b7b57dfd5", null ],
+    [ "gnss_vacc_ok_time", "ins__ekf2_8h.html#af88217b64780df70d75443ed9270b619", null ],
     [ "got_imu_data", "ins__ekf2_8h.html#a2742189724f1cb9c30ee3b03791fd0ee", null ],
     [ "gyro_dt", "ins__ekf2_8h.html#a73cbc54c8dfa664f06a3c9ba7cdfd2c1", null ],
     [ "gyro_valid", "ins__ekf2_8h.html#a471a691dac4d300bd626761e058f09d0", null ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX199 =
 {
+"snake__gate__detection_8h.html#a8445b2979324e0950a0d1e41423dad2e":[9,0,1,0,6,12,35,0,3],
+"snake__gate__detection_8h.html#a90a0f78cf0f8818dab080e7730206fe7":[9,0,1,0,6,12,35,0,5],
+"snake__gate__detection_8h.html#aa1c88ef00b5577d170eeb4188e3511e6":[9,0,1,0,6,12,35,0,4],
+"snake__gate__detection_8h.html#aad7ca927df9bf665e0b7e563999cb448":[9,0,1,0,6,12,35,0,7],
+"snake__gate__detection_8h.html#aaea667ba25897bf3e74ae601112a5558":[9,0,1,0,6,12,35,0,6],
+"snake__gate__detection_8h.html#ab8c72cf9993935e358c258374c2a1857":[9,0,1,0,6,12,35,9],
+"snake__gate__detection_8h.html#ab91652886737bcd921e3293a9a953aef":[9,0,1,0,6,12,35,0,8],
+"snake__gate__detection_8h.html#ac1ed4c7026af2f6090d0098ea9276559":[9,0,1,0,6,12,35,18],
 "snake__gate__detection_8h.html#ac85a4014d727f77ad95e35cee27a42a7":[9,0,1,0,6,12,35,1],
 "snake__gate__detection_8h.html#ace002ac27557c54636e18910bbf442b8":[9,0,1,0,6,12,35,4],
 "snake__gate__detection_8h.html#ad4206ef3d03f1c557535c9f144b979dc":[9,0,1,0,6,12,35,0,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX199 =
 "spa06_8h.html#a376b55b333bb58067f1210e40296b8bd":[9,0,1,0,7,134,3,10],
 "spa06_8h.html#a3f538f4688e3aa2aaa0a8f8512200083":[9,0,1,0,7,134,3,14],
 "spa06_8h.html#a42dcdb83fa5ad9fcde616f83aef90569":[9,0,1,0,7,134,9],
-"spa06_8h.html#a4a93d15f3fab73ea7e8c2ce9c5455d9d":[9,0,1,0,7,134,8],
-"spa06_8h.html#a5679a4b75b343e2af609e5270281bf21":[9,0,1,0,7,134,3,17],
-"spa06_8h.html#a5796f1a397170da78bcd43ea9c905eac":[9,0,1,0,7,134,7],
-"spa06_8h.html#a5796f1a397170da78bcd43ea9c905eaca19dd05dfc9fd540ad3feae3771c5e59b":[9,0,1,0,7,134,7,4],
-"spa06_8h.html#a5796f1a397170da78bcd43ea9c905eaca36a2cf62b167c1446bdc6c0e294d06e4":[9,0,1,0,7,134,7,6],
-"spa06_8h.html#a5796f1a397170da78bcd43ea9c905eaca38097016f2f74b4d47d9e48ba1a959ce":[9,0,1,0,7,134,7,0],
-"spa06_8h.html#a5796f1a397170da78bcd43ea9c905eaca9e23968eae513af23ab2626a5c200d04":[9,0,1,0,7,134,7,7],
-"spa06_8h.html#a5796f1a397170da78bcd43ea9c905eacab0fa20a7094e7e86580ddc27222e5b10":[9,0,1,0,7,134,7,5],
-"spa06_8h.html#a5796f1a397170da78bcd43ea9c905eacaba3eb643d91ad083bba4d82034bdf448":[9,0,1,0,7,134,7,1]
+"spa06_8h.html#a4a93d15f3fab73ea7e8c2ce9c5455d9d":[9,0,1,0,7,134,8]
 };

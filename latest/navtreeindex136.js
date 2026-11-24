@@ -1,5 +1,13 @@
 var NAVTREEINDEX136 =
 {
+"module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam":[1,353,1,0],
+"module__nav_survey_poly_rotorcraft.html":[1,354],
+"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,354,1],
+"module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft":[1,354,0],
+"module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,354,1,0],
+"module__nav_survey_polygon.html":[1,355],
+"module__nav_survey_polygon.html#module_load_example__nav_survey_polygon":[1,355,0],
+"module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,355,0,0],
 "module__nav_survey_rectangle_rotorcraft.html":[1,356],
 "module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,356,1],
 "module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft":[1,356,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX136 =
 "module__range_forcefield.html#module_xml__range_forcefield":[1,519,2,0],
 "module__range_sensor_uavcan.html":[1,430],
 "module__range_sensor_uavcan.html#functions__range_sensor_uavcan":[1,430,1],
-"module__range_sensor_uavcan.html#module_load_example__range_sensor_uavcan":[1,430,0],
-"module__range_sensor_uavcan.html#module_xml__range_sensor_uavcan":[1,430,1,0],
-"module__relative_localization_filter.html":[1,520],
-"module__relative_localization_filter.html#functions__relative_localization_filter":[1,520,1],
-"module__relative_localization_filter.html#module_load_example__relative_localization_filter":[1,520,0],
-"module__relative_localization_filter.html#module_xml__relative_localization_filter":[1,520,1,0],
-"module__rng.html":[1,279],
-"module__rng.html#module_load_example__rng":[1,279,0],
-"module__rng.html#module_xml__rng":[1,279,0,0]
+"module__range_sensor_uavcan.html#module_load_example__range_sensor_uavcan":[1,430,0]
 };

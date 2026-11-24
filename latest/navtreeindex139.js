@@ -1,5 +1,13 @@
 var NAVTREEINDEX139 =
 {
+"modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b":[9,0,1,0,6,0,0,1],
+"modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47":[9,0,1,0,6,0,0,0],
+"modules_2actuators_2actuators_8c_source.html":[9,0,1,0,6,0,0],
+"modules_2actuators_2actuators_8h.html":[9,0,1,0,6,0,1],
+"modules_2actuators_2actuators_8h.html#a00b410f54aa812f678b91a195cfd8142":[9,0,1,0,6,0,1,2,6],
+"modules_2actuators_2actuators_8h.html#a1c21086893057024f68ecfc8dc91375b":[9,0,1,0,6,0,1,3],
+"modules_2actuators_2actuators_8h.html#a1c91d56a3813a303fa5f0d80197e3b8b":[9,0,1,0,6,0,1,5],
+"modules_2actuators_2actuators_8h.html#a1e49297cf8a1cf1a2be6dcb0c692d356":[9,0,1,0,6,0,1,0,12],
 "modules_2actuators_2actuators_8h.html#a1ea8c8130374a04bf49c0cc519d0d22d":[9,0,1,0,6,0,1,0,0,8],
 "modules_2actuators_2actuators_8h.html#a1ea8c8130374a04bf49c0cc519d0d22d":[9,0,1,0,6,0,1,1,8],
 "modules_2actuators_2actuators_8h.html#a24f27beefe678936255666a7fe68d845":[9,0,1,0,6,0,1,0,0,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX139 =
 "modules_2ins_2ins__arduimu__basic_8c_source.html":[9,0,1,0,6,37,14],
 "modules_2sensors_2baro__MS5534A_8h.html":[9,0,1,0,6,65,42],
 "modules_2sensors_2baro__MS5534A_8h_source.html":[9,0,1,0,6,65,42],
-"motor__mixing_8c.html":[9,0,1,0,6,0,34],
-"motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a":[9,0,1,0,6,0,34,15],
-"motor__mixing_8c.html#a181807730d4a375f848ba139813ce04f":[9,0,1,0,6,0,34,0],
-"motor__mixing_8c.html#a283724cdd12c661eabd1bbdb1af0a853":[9,0,1,0,6,0,34,18],
-"motor__mixing_8c.html#a2ae1edcc370497aedc22bc48bba04dd0":[9,0,1,0,6,0,34,21],
-"motor__mixing_8c.html#a32824363dfc8e0863aa3f6160c50c537":[9,0,1,0,6,0,34,11],
-"motor__mixing_8c.html#a39beb241f4c1584e6a0e73a0a6048cdc":[9,0,1,0,6,0,34,9],
-"motor__mixing_8c.html#a3c8bf9fbab481d7a4fb24a23f827d457":[9,0,1,0,6,0,34,8],
-"motor__mixing_8c.html#a4d6511bd941233c791d1436bb35ebb10":[9,0,1,0,6,0,34,14]
+"motor__mixing_8c.html":[9,0,1,0,6,0,34]
 };
