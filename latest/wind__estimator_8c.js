@@ -2,7 +2,6 @@ var wind__estimator_8c =
 [
     [ "LOG_WIND_ESTIMATOR", "wind__estimator_8c.html#abae0d6654bab1cd2d5e89bec43987e72", null ],
     [ "MAT_EL", "wind__estimator_8c.html#a2c87f0af13dab41b9fb0bae1edf1aa2b", null ],
-    [ "SEND_WIND_ESTIMATOR", "wind__estimator_8c.html#a5a3f5d89f731d5fe4b433cf889d1132d", null ],
     [ "WE_UKF_ALPHA", "wind__estimator_8c.html#ad03bfc6992df01635b9e7b0f64144779", null ],
     [ "WE_UKF_BETA", "wind__estimator_8c.html#ad526e7cf6b003e5a0f09e397d2621a59", null ],
     [ "WE_UKF_KI", "wind__estimator_8c.html#a4a6369c9531e51c676f574118a63732b", null ],
@@ -17,7 +16,6 @@ var wind__estimator_8c =
     [ "init_calculator", "wind__estimator_8c.html#a74cc0278d635a265eaeb50c18bbaf1d4", null ],
     [ "MUTEX_DECL", "wind__estimator_8c.html#a296f346fc4344c960544819b42e89dfe", null ],
     [ "SEMAPHORE_DECL", "wind__estimator_8c.html#a35d174de7b781927ced6287ddadb89ca", null ],
-    [ "send_wind_estimator", "wind__estimator_8c.html#a4a160ad72a16315f0e50d81fed996d12", null ],
     [ "thd_windestimate", "wind__estimator_8c.html#a6952c23304a7c54b622c76cc1c70c6c9", null ],
     [ "THD_WORKING_AREA", "wind__estimator_8c.html#a901fca8605195102f71d3b208a3a94c1", null ],
     [ "wind_estimator_event", "wind__estimator_8c.html#af175c7aace58699751294cb06ccfa87b", null ],

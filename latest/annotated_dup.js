@@ -86,6 +86,7 @@ var annotated_dup =
     [ "AhrsVectornav", "ahrs__vectornav_8h.html#structAhrsVectornav", "ahrs__vectornav_8h_structAhrsVectornav" ],
     [ "air_data_calib_t", "air__data_8h.html#structair__data__calib__t", "air__data_8h_structair__data__calib__t" ],
     [ "air_data_sensor_t", "air__data_8h.html#structair__data__sensor__t", "air__data_8h_structair__data__sensor__t" ],
+    [ "air_data_wind_t", "air__data_8h.html#structair__data__wind__t", "air__data_8h_structair__data__wind__t" ],
     [ "AirData", "air__data_8h.html#structAirData", "air__data_8h_structAirData" ],
     [ "airspeed_uavcan_t", "airspeed__uavcan_8h.html#structairspeed__uavcan__t", "airspeed__uavcan_8h_structairspeed__uavcan__t" ],
     [ "AirspeedAdc", "airspeed__adc_8h.html#structAirspeedAdc", "airspeed__adc_8h_structAirspeedAdc" ],

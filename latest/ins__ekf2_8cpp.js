@@ -122,7 +122,6 @@ var ins__ekf2_8cpp =
     [ "send_ins_ekf2_ext", "ins__ekf2_8cpp.html#a35fe77bf44c50dfd7f7d4e332fc525a8", null ],
     [ "send_ins_ref", "ins__ekf2_8cpp.html#a6f4ee4900038e15bf441a679acfa913a", null ],
     [ "send_ins_z", "ins__ekf2_8cpp.html#a779c8daa5c837af54a2a999a8e3cae24", null ],
-    [ "send_wind_info_ret", "ins__ekf2_8cpp.html#a9c47b470f3d0e28b4119708b5b106306", null ],
     [ "temperature_cb", "ins__ekf2_8cpp.html#a704d8592956cc0ab315cbe37f9967cf6", null ],
     [ "test_ratio", "ins__ekf2_8cpp.html#a9114eee00450d42034fe9a275ceb698c", null ],
     [ "accel_int_ev", "ins__ekf2_8cpp.html#ad84c4e5df160b1e170812a80cb61e9f9", null ],

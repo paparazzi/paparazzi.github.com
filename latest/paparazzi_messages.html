@@ -1448,26 +1448,16 @@ TMP_STATUS (ID 86)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">temp  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">deg_celsius  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="WIND_INFO_RET"></a>
-WIND_INFO_RET (ID 87)</h2>
-<p>Wind information returned to the ground station. The wind is reported as a vector, it gives the direction the wind is blowing to. This can be used to acknowledge data comming from the ground wind estimator or from an embedded algorithm. Flags field definition:</p><ul>
-<li>bit 0: horizontal wind is valid (east and north fields)</li>
-<li>bit 1: vertical wind is valid (up field)</li>
-<li>bit 2: airspeed is valid</li>
-</ul>
+<h2 class="doxsection"><a class="anchor" id="WIND_RAW"></a>
+WIND_RAW (ID 87)</h2>
+<p>Wind source of air_data (estimator or WIND_INFO from the ground), one source per message. The wind is the direction the wind is blowing to. The wind in use is in AIR_DATA.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">flags  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">bit 0: horizontal wind, bit 1: vertical wind: bit 2: airspeed  </td></tr>
+<td class="markdownTableBodyNone">sensor_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ABI sender id of the wind source  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">east  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">east component of the wind  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">north  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">north component of the wind  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">up  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">vertical component of the wind  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">airspeed  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">local airspeed norm  </td></tr>
+<td class="markdownTableBodyNone">wind  </td><td class="markdownTableBodyNone">float[3]  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">wind north/east/down (NaN if unknown)  </td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="SHT_STATUS"></a>
 SHT_STATUS (ID 89)</h2>
@@ -3986,6 +3976,10 @@ AIR_DATA (ID 222)</h2>
 <td class="markdownTableBodyNone">baro_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ABI sender id of the barometer in use (0 if none)  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">airspeed_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ABI sender id of the airspeed sensor in use (0 if none)  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">wind  </td><td class="markdownTableBodyNone">float[3]  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">wind in use, north/east/down, the direction it is blowing to (NaN if unknown)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">wind_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ABI sender id of the wind source in use (0 if none)  </td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="AMSL"></a>
 AMSL (ID 223)</h2>
@@ -4589,26 +4583,18 @@ MOVE_WP (ID 2)</h2>
 </table>
 <h2 class="doxsection"><a class="anchor" id="WIND_INFO"></a>
 WIND_INFO (ID 3)</h2>
-<p>Wind information. The wind is reported as a vector, it gives the direction the wind is blowing to. This can be comming from the ground wind estimator or from an embedded algorithm. Flags field definition:</p><ul>
-<li>bit 0: horizontal wind is valid (east and north fields)</li>
-<li>bit 1: vertical wind is valid (up field)</li>
-<li>bit 2: airspeed is valid</li>
-</ul>
+<p>Wind and air from the ground (ground wind estimator or ground wind sensor), received by air_data. The wind is the direction the wind is blowing to. Unknown values are NaN.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ac_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">flags  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">bit 0: horizontal wind, bit 1: vertical wind: bit 2: airspeed  </td></tr>
+<td class="markdownTableBodyNone">wind  </td><td class="markdownTableBodyNone">float[3]  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">wind north/east/down  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">east  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">east component of the wind  </td></tr>
+<td class="markdownTableBodyNone">airspeed  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">true airspeed of the aircraft  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">north  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">north component of the wind  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">up  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">vertical component of the wind  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">airspeed  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m/s  </td><td class="markdownTableBodyNone">local airspeed norm  </td></tr>
+<td class="markdownTableBodyNone">temp  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">deg_celsius  </td><td class="markdownTableBodyNone">air temperature  </td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="SETTING"></a>
 SETTING (ID 4)</h2>

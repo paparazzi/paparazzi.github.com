@@ -28,7 +28,10 @@ var air__data_8h_structAirData =
     [ "temp_used", "air__data_8h.html#aada0138229c84e8b667bcbb616e749f9", null ],
     [ "temperature", "air__data_8h.html#a6b6ef60998d353ba9f68c1bb1eaa465e", null ],
     [ "temps", "air__data_8h.html#ae8648947f709a3a912481973cb77c5ab", null ],
-    [ "wind_dir", "air__data_8h.html#a32b2d0e4183ac4e98de557be2bc84a8e", null ],
-    [ "wind_speed", "air__data_8h.html#a87446e1d0149c336219407ff5bb29248", null ],
+    [ "wind", "air__data_8h.html#a94897867816d502bf5449d25be47b9c6", null ],
+    [ "wind_id", "air__data_8h.html#a9d835c3558d0259e4c0451910829a191", null ],
+    [ "wind_send_id", "air__data_8h.html#aa13c5278592527db9e5fc11701f183cd", null ],
+    [ "wind_used", "air__data_8h.html#a7c304ef70a0ecb68d2365f3d7bc002dc", null ],
+    [ "winds", "air__data_8h.html#a9964358727cc213fea1ea9cfdf7b789c", null ],
     [ "zero_airspeed", "air__data_8h.html#a34d46466374647dd7e92066cc75364b7", null ]
 ];

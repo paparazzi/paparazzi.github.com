@@ -1,0 +1,21 @@
+<map id="wind_raw_cb" name="wind_raw_cb">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,136,111,164"/>
+<area shape="rect" id="Node000002" href="$air__data_8c.html#a0e48190813777598f8d75b7968bf687f" title=" " alt="" coords="202,5,342,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,134,103,89,128,64,157,44,189,32,185,35,160,48,132,68,107,93,71,137"/>
+<area shape="rect" id="Node000003" href="$air__data_8c.html#a44455664cad7f7dd83423b783ccf65b5" title="Update the wind in use, in the state when known (the state keeps the last wind when none is healthy)." alt="" coords="190,57,354,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="81,133,117,114,158,95,186,88,182,91,160,100,119,119,84,138"/>
+<area shape="rect" id="Node000007" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="200,109,344,137"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="110,141,186,132,182,136,112,146"/>
+<area shape="rect" id="Node000008" href="$UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title=" " alt="" coords="253,161,291,189"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="111,153,239,169,236,173,111,159"/>
+<area shape="rect" id="Node000009" href="$group__state__wind__airspeed.html#gadc3138563122716d93bfe2dd1d1e920c" title="Set horizontal windspeed (float)." alt="" coords="159,213,385,241"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="83,162,120,180,160,198,187,208,182,209,158,203,117,185,84,167"/>
+<area shape="rect" id="Node000010" href="$group__state__wind__airspeed.html#ga4a753d4ac6d64b7991b6b29a824298a9" title="Set vertical windspeed (float)." alt="" coords="168,265,376,293"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="70,162,107,207,132,230,160,250,175,260,170,259,157,255,128,234,103,210,68,167"/>
+<area shape="rect" id="Node000004" href="$air__data_8c.html#ab101cbc87974f517f29ec14b519157de" title="Select the wind source: the one of the setting if healthy, otherwise the healthy one with the lowest ..." alt="" coords="433,57,591,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="354,69,420,70,415,72,355,74"/>
+<area shape="rect" id="Node000005" href="$air__data_8c.html#abbc2e3e69360e3c325cd6f7beddda515" title="Is a sensor or wind source sending valid values." alt="" coords="648,31,779,58"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="591,58,635,54,630,56,592,63"/>
+<area shape="rect" id="Node000006" href="$air__data_8c.html#a1b6f3809be556597b8da85c1e0bf892a" title="Wind: first the estimators on board, then WIND_INFO from the ground." alt="" coords="639,83,788,110"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="591,78,627,85,621,86,592,84"/>
+</map>

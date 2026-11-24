@@ -19,7 +19,6 @@ var wind__estimation__quadrotor_8c =
     [ "WE_QUAD_VA_Y", "wind__estimation__quadrotor_8c.html#a69e5354dadf7a28bf66c409348e0dfca", null ],
     [ "WE_QUAD_W_X", "wind__estimation__quadrotor_8c.html#a2f06977e97694d42bbc2382225214a39", null ],
     [ "WE_QUAD_W_Y", "wind__estimation__quadrotor_8c.html#aa9118b6591deef47b10f9de265526035", null ],
-    [ "send_wind", "wind__estimation__quadrotor_8c.html#a357545dd91227db6db4548685ef41452", null ],
     [ "wind_estimation_quadrotor_init", "wind__estimation__quadrotor_8c.html#a677f6eb1e2c4f6f4593a141057831f66", null ],
     [ "wind_estimation_quadrotor_periodic", "wind__estimation__quadrotor_8c.html#a1a51ee96e2d65f6f7986aba14209781c", null ],
     [ "wind_estimation_quadrotor_report", "wind__estimation__quadrotor_8c.html#a5f027a6eacf02672bb320c90f1b76afd", null ],

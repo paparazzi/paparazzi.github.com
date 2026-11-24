@@ -15,6 +15,7 @@ var abi__common_8h =
     [ "TEMPERATURE_TYPE_AIR", "abi__common_8h.html#a3569c49aa578338b109a6def1cb5312e", null ],
     [ "TEMPERATURE_TYPE_BARO", "abi__common_8h.html#a7f5b50ce7ff656a0f1a39df970505f51", null ],
     [ "TEMPERATURE_TYPE_DIFF", "abi__common_8h.html#a1624061156c449436e85ac907a835512", null ],
+    [ "TEMPERATURE_TYPE_GROUND", "abi__common_8h.html#a511f8b3c099085764107af1fb6571ac3", null ],
     [ "TEMPERATURE_TYPE_IMU", "abi__common_8h.html#ad9f592e0b0df6344b43aa300173bde97", null ],
     [ "TEMPERATURE_TYPE_OTHER", "abi__common_8h.html#aa639571ad46544fa812cfcd5f6289637", null ],
     [ "abi_callback", "abi__common_8h.html#ae5236ff2a6c26168b88e7d6feebc8de1", null ],

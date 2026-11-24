@@ -49,6 +49,7 @@ var hierarchy =
     [ "AhrsVectornav", "ahrs__vectornav_8h.html#structAhrsVectornav", null ],
     [ "air_data_calib_t", "air__data_8h.html#structair__data__calib__t", null ],
     [ "air_data_sensor_t", "air__data_8h.html#structair__data__sensor__t", null ],
+    [ "air_data_wind_t", "air__data_8h.html#structair__data__wind__t", null ],
     [ "AirData", "air__data_8h.html#structAirData", null ],
     [ "airspeed_uavcan_t", "airspeed__uavcan_8h.html#structairspeed__uavcan__t", null ],
     [ "AirspeedAdc", "airspeed__adc_8h.html#structAirspeedAdc", null ],

@@ -1,5 +1,11 @@
 var NAVTREEINDEX2 =
 {
+"actuators__asctec__v2_8h.html#aebec7af749be96faadbfe79af32144bb":[9,0,1,0,6,0,3,4],
+"actuators__asctec__v2_8h.html#structActuatorsAsctecV2":[9,0,1,0,6,0,3,0],
+"actuators__asctec__v2_8h_source.html":[9,0,1,0,6,0,3],
+"actuators__default_8h.html":[9,0,1,0,6,0,4],
+"actuators__default_8h_source.html":[9,0,1,0,6,0,4],
+"actuators__dshot_8c.html":[9,0,1,0,6,0,5],
 "actuators__dshot_8c.html#a1c51a3d09758dc76182b65b564ecdbfb":[9,0,1,0,6,0,5,0],
 "actuators__dshot_8c.html#aaf9aa75d1fc089615d8cee524e688cac":[9,0,1,0,6,0,5,1],
 "actuators__dshot_8c_source.html":[9,0,1,0,6,0,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX2 =
 "actuators__sbus_8h.html#ab3997efd7eff134de64f3d18d73f7af6":[9,0,1,0,6,0,20,7],
 "actuators__sbus_8h.html#ab4422871190828d23c032d5a917a6c4b":[9,0,1,0,6,0,20,5],
 "actuators__sbus_8h.html#ab7b5de8b8b36ed4319f5412b8ed8a647":[9,0,1,0,6,0,20,1],
-"actuators__sbus_8h.html#ace40f20d8e90b0b1131a5330bad7eaa8":[9,0,1,0,6,0,20,0,1],
-"actuators__sbus_8h.html#structActuatorsSbus":[9,0,1,0,6,0,20,0],
-"actuators__sbus_8h_source.html":[9,0,1,0,6,0,20],
-"actuators__spektrum_8c.html":[9,0,1,0,6,0,21],
-"actuators__spektrum_8c.html#a037bd3a13d238c02d37d7a41c2a19dd3":[9,0,1,0,6,0,21,3],
-"actuators__spektrum_8c.html#a2703f3974dde7b9a91e75477d1c64340":[9,0,1,0,6,0,21,2],
-"actuators__spektrum_8c.html#a2b1a41ae5fde47c81232fcc890961107":[9,0,1,0,6,0,21,0]
+"actuators__sbus_8h.html#ace40f20d8e90b0b1131a5330bad7eaa8":[9,0,1,0,6,0,20,0,1]
 };

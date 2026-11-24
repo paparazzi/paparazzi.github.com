@@ -144,5 +144,10 @@ var abi__sender__ids_8h =
     [ "VEL_OPTICFLOW_PMW3901_ID", "abi__sender__ids_8h.html#a6cc629fab76dcefa9ddfa398eea0d2d7", null ],
     [ "VEL_PX4FLOW_ID", "abi__sender__ids_8h.html#ae0e23da0e84c6db6de96556368dacae2", null ],
     [ "VEL_SP_FCR_ID", "abi__sender__ids_8h.html#a488f7380df6b5f08bd6344607f66ddf9", null ],
-    [ "VEL_STEREOCAM_ID", "abi__sender__ids_8h.html#aff6fe44212fb356543cca4463819483f", null ]
+    [ "VEL_STEREOCAM_ID", "abi__sender__ids_8h.html#aff6fe44212fb356543cca4463819483f", null ],
+    [ "WIND_EKF2_ID", "abi__sender__ids_8h.html#a73fa1ca7d0ff343bd80b526565b227fc", null ],
+    [ "WIND_ESTIMATOR_ID", "abi__sender__ids_8h.html#a7bf4df500b17260a1543abb239dd75aa", null ],
+    [ "WIND_INFO_SENDER_ID", "abi__sender__ids_8h.html#adab7907c228a27e8fee102b9f622cd9c", null ],
+    [ "WIND_MEKF_ID", "abi__sender__ids_8h.html#a4786ae921d82e0e54611f191e0d7c370", null ],
+    [ "WIND_WE_QUAD_ID", "abi__sender__ids_8h.html#a61abf76f4a2c8bcfb87e3ee8c9379b26", null ]
 ];

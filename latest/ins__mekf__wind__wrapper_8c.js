@@ -24,7 +24,6 @@ var ins__mekf__wind__wrapper_8c =
     [ "send_euler", "ins__mekf__wind__wrapper_8c.html#abcc3fa84d1a2a749aed66a3ebd79ea54", null ],
     [ "send_filter_status", "ins__mekf__wind__wrapper_8c.html#a85585514fc863f0407a3f5e85ad9d398", null ],
     [ "send_inv_filter", "ins__mekf__wind__wrapper_8c.html#a13fc1b4c93e8bcbc055c5a147129a03d", null ],
-    [ "send_wind", "ins__mekf__wind__wrapper_8c.html#a357545dd91227db6db4548685ef41452", null ],
     [ "set_state_from_ins", "ins__mekf__wind__wrapper_8c.html#a83584ab974d0141a5807832d8d5f907a", null ],
     [ "accel_ev", "ins__mekf__wind__wrapper_8c.html#a469c2ebc0df160a3ae46ebbbb2aff826", null ],
     [ "airspeed_ev", "ins__mekf__wind__wrapper_8c.html#a20fc0f187d1eb48378c2f2e9ac5c4457", null ],

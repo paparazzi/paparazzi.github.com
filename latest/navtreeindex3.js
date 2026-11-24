@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"actuators__sbus_8h.html#structActuatorsSbus":[9,0,1,0,6,0,20,0],
+"actuators__sbus_8h_source.html":[9,0,1,0,6,0,20],
+"actuators__spektrum_8c.html":[9,0,1,0,6,0,21],
+"actuators__spektrum_8c.html#a037bd3a13d238c02d37d7a41c2a19dd3":[9,0,1,0,6,0,21,3],
+"actuators__spektrum_8c.html#a2703f3974dde7b9a91e75477d1c64340":[9,0,1,0,6,0,21,2],
+"actuators__spektrum_8c.html#a2b1a41ae5fde47c81232fcc890961107":[9,0,1,0,6,0,21,0],
 "actuators__spektrum_8c.html#a6984ce4cd7ccb105043c1f3422a249ca":[9,0,1,0,6,0,21,4],
 "actuators__spektrum_8c.html#abb2976a5407c78fb22f74d2c631dc2c8":[9,0,1,0,6,0,21,1],
 "actuators__spektrum_8c_source.html":[9,0,1,0,6,0,21],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "actuators__uavcan_8c.html#ab26539dced9674f526a4a4978305b35a":[9,0,1,0,6,0,28,9],
 "actuators__uavcan_8c.html#abeed8e3b88f2504775a62a8db0f1272e":[9,0,1,0,6,0,28,16],
 "actuators__uavcan_8c.html#acf4c7af5519e4a5e493b04a5b994a89c":[9,0,1,0,6,0,28,0,0],
-"actuators__uavcan_8c.html#ad372e9594fdbdb703a9850f529d47049":[9,0,1,0,6,0,28,6],
-"actuators__uavcan_8c.html#ae0af6b75b0e22aa3a03feaceb527eeea":[9,0,1,0,6,0,28,15],
-"actuators__uavcan_8c.html#aeb829098b5ac01dda6bdfa56ab3ab775":[9,0,1,0,6,0,28,20],
-"actuators__uavcan_8c.html#afecf1982596a6fbd024bb53685980a54":[9,0,1,0,6,0,28,0,5],
-"actuators__uavcan_8c.html#structactuators__uavcan__telem__t":[9,0,1,0,6,0,28,0],
-"actuators__uavcan_8c_source.html":[9,0,1,0,6,0,28],
-"actuators__uavcan_8h.html":[9,0,1,0,6,0,29]
+"actuators__uavcan_8c.html#ad372e9594fdbdb703a9850f529d47049":[9,0,1,0,6,0,28,6]
 };

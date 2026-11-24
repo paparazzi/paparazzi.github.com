@@ -13,7 +13,7 @@ var searchData=
   ['wind_5fgfi_20module_10',['wind_gfi module',['../module__wind_gfi.html',1,'onboard_modules']]],
   ['wind_5fgfi_20xml_20file_3a_11',['Raw wind_gfi.xml file:',['../module__wind_gfi.html#module_xml__wind_gfi',1,'']]],
   ['wind_5finfo_20id_203_12',['WIND_INFO (ID 3)',['../paparazzi_messages.html#WIND_INFO',1,'']]],
-  ['wind_5finfo_5fret_20id_2087_13',['WIND_INFO_RET (ID 87)',['../paparazzi_messages.html#WIND_INFO_RET',1,'']]],
+  ['wind_5fraw_20id_2087_13',['WIND_RAW (ID 87)',['../paparazzi_messages.html#WIND_RAW',1,'']]],
   ['windtunnel_5fmeas_20id_20211_14',['WINDTUNNEL_MEAS (ID 211)',['../paparazzi_messages.html#WINDTUNNEL_MEAS',1,'']]],
   ['windturbine_20module_15',['windturbine module',['../module__windturbine.html',1,'onboard_modules']]],
   ['windturbine_20xml_20file_3a_16',['Raw windturbine.xml file:',['../module__windturbine.html#module_xml__windturbine',1,'']]],
