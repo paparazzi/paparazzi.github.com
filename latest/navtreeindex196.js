@@ -1,5 +1,9 @@
 var NAVTREEINDEX196 =
 {
+"sdlog__chibios_8h.html#ac634046a6f16111adb0c93b5b05471b0":[9,0,1,0,6,42,12,8],
+"sdlog__chibios_8h.html#ad094fe3bc7f2da71d85d09484e25bfe6":[9,0,1,0,6,42,12,4],
+"sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a":[9,0,1,0,6,42,12,7],
+"sdlog__chibios_8h.html#structchibios__sdlog":[9,0,1,0,6,42,12,0],
 "sdlog__chibios_8h_source.html":[9,0,1,0,6,42,12],
 "sdlog__linux_8c.html":[9,0,1,0,6,42,13],
 "sdlog__linux_8c.html#a02ca74f22cae99ace804a5d9c0f33628":[9,0,1,0,6,42,13,41],
@@ -245,9 +249,5 @@ var NAVTREEINDEX196 =
 "settings_8c.html":[9,0,1,0,6,13,10],
 "settings_8c.html#a2d417ad7e2c3eeb9e2fd5375f50bf370":[9,0,1,0,6,13,10,7],
 "settings_8c.html#a3554f41536872c4a90af91d527f6593f":[9,0,1,0,6,13,10,2],
-"settings_8c.html#a459a862abd0b8b6aa18fcb7910aee254":[9,0,1,0,6,13,10,4],
-"settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e":[9,0,1,0,6,13,10,1],
-"settings_8c.html#a76ba58642034832f6b3c5781b693f13e":[9,0,1,0,6,13,10,0],
-"settings_8c.html#aaaafb969ffa6ec451b6bb2facd5736ee":[9,0,1,0,6,13,10,3],
-"settings_8c.html#abe2013fefe36cd9b1f7e800aa65ee9ea":[9,0,1,0,6,13,10,8]
+"settings_8c.html#a459a862abd0b8b6aa18fcb7910aee254":[9,0,1,0,6,13,10,4]
 };

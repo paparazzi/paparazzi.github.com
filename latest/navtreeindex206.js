@@ -1,5 +1,9 @@
 var NAVTREEINDEX206 =
 {
+"stabilization__rate_8h.html#afe4783ecccebfb6cfe611d7f248801c2":[9,0,1,0,3,1,2,47,10],
+"stabilization__rate_8h_source.html":[9,0,1,0,3,1,2,47],
+"stabilization__rate__indi_8c.html":[9,0,1,0,3,1,2,48],
+"stabilization__rate__indi_8c.html#a3c8ef06f1db709ae713371b0a2a5054d":[9,0,1,0,3,1,2,48,2],
 "stabilization__rate__indi_8c.html#a407235bde22206e1a5dac29a60eb2cfb":[9,0,1,0,3,1,2,48,4],
 "stabilization__rate__indi_8c.html#a5b0c7736504eedf5e497b060e7f887f5":[9,0,1,0,3,1,2,48,5],
 "stabilization__rate__indi_8c.html#a6b8e94ede31416d0e5b7251270d743bb":[9,0,1,0,3,1,2,48,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX206 =
 "swashplate__mixing_8h.html#ad447670ce4543175271869b8233a46a0":[9,0,1,0,6,34,1,2],
 "swashplate__mixing_8h.html#ad7175326e6f7d5009563768413d5919f":[9,0,1,0,6,34,1,0,1],
 "swashplate__mixing_8h.html#af748c76a5f7dea790bb305c6378877a7":[9,0,1,0,6,34,1,1],
-"swashplate__mixing_8h.html#structswashplate__mixing__t":[9,0,1,0,6,34,1,0],
-"swashplate__mixing_8h_source.html":[9,0,1,0,6,34,1],
-"switch__servo_8c.html":[9,0,1,0,6,71,2],
-"switch__servo_8c.html#a78165adef25ba74a594f9872215e3600":[9,0,1,0,6,71,2,3],
-"switch__servo_8c.html#a7e66d3ea310815eb2d959fbf58e419d8":[9,0,1,0,6,71,2,4]
+"swashplate__mixing_8h.html#structswashplate__mixing__t":[9,0,1,0,6,34,1,0]
 };

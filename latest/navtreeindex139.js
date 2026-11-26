@@ -1,5 +1,8 @@
 var NAVTREEINDEX139 =
 {
+"module__wind_gfi.html#module_load_example__wind_gfi":[1,309,0],
+"module__wind_gfi.html#module_xml__wind_gfi":[1,309,1,0],
+"module__windturbine.html":[1,310],
 "module__windturbine.html#functions__windturbine":[1,310,1],
 "module__windturbine.html#module_load_example__windturbine":[1,310,0],
 "module__windturbine.html#module_xml__windturbine":[1,310,1,0],
@@ -12,10 +15,10 @@ var NAVTREEINDEX139 =
 "module__wing_rotation_controller_servo.html#functions__wing_rotation_controller_servo":[1,387,1],
 "module__wing_rotation_controller_servo.html#module_load_example__wing_rotation_controller_servo":[1,387,0],
 "module__wing_rotation_controller_servo.html#module_xml__wing_rotation_controller_servo":[1,387,1,0],
-"module__wls.html":[1,531],
-"module__wls.html#configuration__wls":[1,531,1],
-"module__wls.html#module_load_example__wls":[1,531,0],
-"module__wls.html#module_xml__wls":[1,531,1,0],
+"module__wls.html":[1,532],
+"module__wls.html#configuration__wls":[1,532,1],
+"module__wls.html#module_load_example__wls":[1,532,0],
+"module__wls.html#module_xml__wls":[1,532,1,0],
 "module__xtend_rssi.html":[1,128],
 "module__xtend_rssi.html#configuration__xtend_rssi":[1,128,1],
 "module__xtend_rssi.html#functions__xtend_rssi":[1,128,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX139 =
 "modules_2ins_2ins__arduimu__basic_8c.html":[9,0,1,0,6,37,14],
 "modules_2ins_2ins__arduimu__basic_8c.html#a0156f6669675c216bbcb413ea1879960":[9,0,1,0,6,37,14,8],
 "modules_2ins_2ins__arduimu__basic_8c.html#a3f8fc29cfe14b10518e7275613148bc9":[9,0,1,0,6,37,14,18],
-"modules_2ins_2ins__arduimu__basic_8c.html#a539730afad5660e5a0f9785ef8c2107d":[9,0,1,0,6,37,14,2],
-"modules_2ins_2ins__arduimu__basic_8c.html#a5a51d08f24d0844a38d7226509de72f6":[9,0,1,0,6,37,14,0],
-"modules_2ins_2ins__arduimu__basic_8c.html#a6f80e69d733254b945f208647409073f":[9,0,1,0,6,37,14,9],
-"modules_2ins_2ins__arduimu__basic_8c.html#a70b61a4232cbf0e9acbde8d9b62ce1c5":[9,0,1,0,6,37,14,22]
+"modules_2ins_2ins__arduimu__basic_8c.html#a539730afad5660e5a0f9785ef8c2107d":[9,0,1,0,6,37,14,2]
 };

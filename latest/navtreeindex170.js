@@ -1,5 +1,9 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#MPPT":[2,0,47],
+"paparazzi_messages.html#MULTIGAZE_METERS":[2,0,93],
+"paparazzi_messages.html#NAVIGATION":[2,0,8],
+"paparazzi_messages.html#NAVIGATION_REF":[2,0,7],
 "paparazzi_messages.html#NAV_STATUS":[2,2,12],
 "paparazzi_messages.html#NB_CTRL":[2,0,169],
 "paparazzi_messages.html#NEW_AIRCRAFT":[2,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX170 =
 "pca9685__i2c_8c.html#a6882e1c71a7a8c68a41ec6a417fc56fe":[9,0,1,0,6,52,0,50],
 "pca9685__i2c_8c.html#a6d61c6bfb3607df95b11349456857f2a":[9,0,1,0,6,52,0,5],
 "pca9685__i2c_8c.html#a6f73554a13cfeaed67787c049a4acda2":[9,0,1,0,6,52,0,74],
-"pca9685__i2c_8c.html#a6fa37545b323496b1bbf0a818f6b305f":[9,0,1,0,6,52,0,61],
-"pca9685__i2c_8c.html#a746504b12e64ae0cf6118b0aa54bbad6":[9,0,1,0,6,52,0,26],
-"pca9685__i2c_8c.html#a7561d3fe37f3290581ba9c507f52145f":[9,0,1,0,6,52,0,81],
-"pca9685__i2c_8c.html#a7602c68eb2ca6b0bad5ecb0a477c681e":[9,0,1,0,6,52,0,95],
-"pca9685__i2c_8c.html#a7a17e5c47a1368bb2d2ad0a3bd1e2834":[9,0,1,0,6,52,0,83]
+"pca9685__i2c_8c.html#a6fa37545b323496b1bbf0a818f6b305f":[9,0,1,0,6,52,0,61]
 };

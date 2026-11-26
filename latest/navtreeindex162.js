@@ -1,5 +1,8 @@
 var NAVTREEINDEX162 =
 {
+"obstacle__avoidance_8c.html#a20392982ad3eb535d8ec82e29c2da82f":[9,0,1,0,6,48,2,29],
+"obstacle__avoidance_8c.html#a21413e24a9fb5a67dc927272e9a16280":[9,0,1,0,6,48,2,47],
+"obstacle__avoidance_8c.html#a267e9dd01145b64094f910207a381664":[9,0,1,0,6,48,2,23],
 "obstacle__avoidance_8c.html#a28453333af8aa781cba9bdd8be343bf9":[9,0,1,0,6,48,2,61],
 "obstacle__avoidance_8c.html#a2c3852c9b1f0422f1203934b832781d4":[9,0,1,0,6,48,2,28],
 "obstacle__avoidance_8c.html#a2dbeef7061c210e0ec808ff4a59042bf":[9,0,1,0,6,48,2,75],
@@ -140,7 +143,7 @@ var NAVTREEINDEX162 =
 "onboard_modules.html#modules_category_loggers":[1,0,25],
 "onboard_modules.html#modules_category_mcu_periph":[1,0,26],
 "onboard_modules.html#modules_category_meteo":[1,0,27],
-"onboard_modules.html#modules_category_misc":[1,0,43],
+"onboard_modules.html#modules_category_misc":[1,0,44],
 "onboard_modules.html#modules_category_mission":[1,0,28],
 "onboard_modules.html#modules_category_multi":[1,0,29],
 "onboard_modules.html#modules_category_nav":[1,0,30],
@@ -150,12 +153,13 @@ var NAVTREEINDEX162 =
 "onboard_modules.html#modules_category_radio_control":[1,0,34],
 "onboard_modules.html#modules_category_range_finder":[1,0,35],
 "onboard_modules.html#modules_category_rotwing_drone":[1,0,36],
-"onboard_modules.html#modules_category_sensors":[1,0,37],
-"onboard_modules.html#modules_category_sonar":[1,0,38],
-"onboard_modules.html#modules_category_stabilization":[1,0,39],
-"onboard_modules.html#modules_category_stereocam":[1,0,40],
-"onboard_modules.html#modules_category_switching":[1,0,41],
-"onboard_modules.html#modules_category_system_identification":[1,0,42],
+"onboard_modules.html#modules_category_search_and_rescue":[1,0,37],
+"onboard_modules.html#modules_category_sensors":[1,0,38],
+"onboard_modules.html#modules_category_sonar":[1,0,39],
+"onboard_modules.html#modules_category_stabilization":[1,0,40],
+"onboard_modules.html#modules_category_stereocam":[1,0,41],
+"onboard_modules.html#modules_category_switching":[1,0,42],
+"onboard_modules.html#modules_category_system_identification":[1,0,43],
 "onboard_modules.html#modules_list":[1,0],
 "oneloop__andi_8c.html":[9,0,1,0,3,1,1,0],
 "oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce":[9,0,1,0,3,1,1,0,83],
@@ -245,9 +249,5 @@ var NAVTREEINDEX162 =
 "oneloop__andi_8c.html#a656f174de043fa184d8bd7000cacc60e":[9,0,1,0,3,1,1,0,17],
 "oneloop__andi_8c.html#a65b1c0c20ee44a3488c6b02ae023d496":[9,0,1,0,3,1,1,0,3],
 "oneloop__andi_8c.html#a66a75eba5500f1eabd69b6b6e94d5b03":[9,0,1,0,3,1,1,0,171],
-"oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8":[9,0,1,0,3,1,1,0,57],
-"oneloop__andi_8c.html#a6a52b62ef9507057b8d71370d0607547":[9,0,1,0,3,1,1,0,11],
-"oneloop__andi_8c.html#a6bf7675a6b1dc50b46b973f4837e3607":[9,0,1,0,3,1,1,0,174],
-"oneloop__andi_8c.html#a70e849998890733c853538f89ae95e83":[9,0,1,0,3,1,1,0,38],
-"oneloop__andi_8c.html#a72cf7ca1cd037d486980bdcdac83f988":[9,0,1,0,3,1,1,0,64]
+"oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8":[9,0,1,0,3,1,1,0,57]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX152 =
 {
+"nav__spiral__3D_8c_source.html":[9,0,1,0,6,47,58],
+"nav__spiral__3D_8h.html":[9,0,1,0,6,47,59],
+"nav__spiral__3D_8h.html#a0673e7f58847806553b010453d197ca9":[9,0,1,0,6,47,59,0],
 "nav__spiral__3D_8h.html#a34178cf2e3c93db5e920bb496f7d7cae":[9,0,1,0,6,47,59,2],
 "nav__spiral__3D_8h.html#a7e3c899dd04bcd36fd6a002aec20336d":[9,0,1,0,6,47,59,1],
 "nav__spiral__3D_8h_source.html":[9,0,1,0,6,47,59],
@@ -246,8 +249,5 @@ var NAVTREEINDEX152 =
 "nav__survey__polygon_8h.html#a53893dfd0d2633d82a97fead695aaa11":[9,0,1,0,6,47,69,0,14],
 "nav__survey__polygon_8h.html#a5a927158af0ad8bdeaff816e925a801e":[9,0,1,0,6,47,69,0,16],
 "nav__survey__polygon_8h.html#a73c8efd6c876dec2a786bbefe3cdebf5":[9,0,1,0,6,47,69,0,18],
-"nav__survey__polygon_8h.html#a7d0abb2e1508266e640878a19ed4db4f":[9,0,1,0,6,47,69,0,1],
-"nav__survey__polygon_8h.html#a8dc56efe2a86c83b2d0daa88ee6ec17a":[9,0,1,0,6,47,69,0,4],
-"nav__survey__polygon_8h.html#a982d5405eb6641304a3b5b7244668a1a":[9,0,1,0,6,47,69,0,7],
-"nav__survey__polygon_8h.html#aa59bac993d21a2189cd10c40665aa513":[9,0,1,0,6,47,69,0,5]
+"nav__survey__polygon_8h.html#a7d0abb2e1508266e640878a19ed4db4f":[9,0,1,0,6,47,69,0,1]
 };

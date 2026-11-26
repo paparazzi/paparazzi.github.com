@@ -38,6 +38,7 @@ var onboard_modules =
       [ "Radio_Control modules", "onboard_modules.html#modules_category_radio_control", null ],
       [ "Range_Finder modules", "onboard_modules.html#modules_category_range_finder", null ],
       [ "Rotwing_Drone modules", "onboard_modules.html#modules_category_rotwing_drone", null ],
+      [ "Search_And_Rescue modules", "onboard_modules.html#modules_category_search_and_rescue", null ],
       [ "Sensors modules", "onboard_modules.html#modules_category_sensors", null ],
       [ "Sonar modules", "onboard_modules.html#modules_category_sonar", null ],
       [ "Stabilization modules", "onboard_modules.html#modules_category_stabilization", null ],
@@ -2527,6 +2528,17 @@ var onboard_modules =
         [ "Raw wing_rotation_controller_servo.xml file:", "module__wing_rotation_controller_servo.html#module_xml__wing_rotation_controller_servo", null ]
       ] ]
     ] ],
+    [ "scout_detector module", "module__scout_detector.html", [
+      [ "Example for airframe file", "module__scout_detector.html#module_load_example__scout_detector", null ],
+      [ "Module functions", "module__scout_detector.html#functions__scout_detector", [
+        [ "Raw scout_detector.xml file:", "module__scout_detector.html#module_xml__scout_detector", null ]
+      ] ]
+    ] ],
+    [ "search_map module", "module__search_map.html", [
+      [ "Example for airframe file", "module__search_map.html#module_load_example__search_map", [
+        [ "Raw search_map.xml file:", "module__search_map.html#module_xml__search_map", null ]
+      ] ]
+    ] ],
     [ "aoa_adc module", "module__aoa_adc.html", [
       [ "Example for airframe file", "module__aoa_adc.html#module_load_example__aoa_adc", null ],
       [ "Module configuration options", "module__aoa_adc.html#configuration__aoa_adc", null ],
@@ -3427,12 +3439,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__rust_demo_module.html#module_load_example__rust_demo_module", null ],
       [ "Module functions", "module__rust_demo_module.html#functions__rust_demo_module", [
         [ "Raw rust_demo_module.xml file:", "module__rust_demo_module.html#module_xml__rust_demo_module", null ]
-      ] ]
-    ] ],
-    [ "scout_detector module", "module__scout_detector.html", [
-      [ "Example for airframe file", "module__scout_detector.html#module_load_example__scout_detector", null ],
-      [ "Module functions", "module__scout_detector.html#functions__scout_detector", [
-        [ "Raw scout_detector.xml file:", "module__scout_detector.html#module_xml__scout_detector", null ]
       ] ]
     ] ],
     [ "servo_tester module", "module__servo_tester.html", [
