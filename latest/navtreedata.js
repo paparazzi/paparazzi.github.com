@@ -227,6 +227,7 @@ var NAVTREE =
         [ "AIR_DATA (ID 222)", "paparazzi_messages.html#AIR_DATA", null ],
         [ "AMSL (ID 223)", "paparazzi_messages.html#AMSL", null ],
         [ "DIVERGENCE (ID 224)", "paparazzi_messages.html#DIVERGENCE", null ],
+        [ "MODULE_SPECIFIC (ID 225)", "paparazzi_messages.html#MODULE_SPECIFIC", null ],
         [ "PERIODIC_TELEMETRY_ERR (ID 226)", "paparazzi_messages.html#PERIODIC_TELEMETRY_ERR", null ],
         [ "OPTIC_FLOW_EST (ID 228)", "paparazzi_messages.html#OPTIC_FLOW_EST", null ],
         [ "STEREO_IMG (ID 229)", "paparazzi_messages.html#STEREO_IMG", null ],
@@ -316,7 +317,8 @@ var NAVTREE =
         [ "RTCM_INJECT (ID 157)", "paparazzi_messages.html#RTCM_INJECT", null ],
         [ "DCF_REG_TABLE (ID 158)", "paparazzi_messages.html#DCF_REG_TABLE", null ],
         [ "KEY_EXCHANGE_GCS (ID 159)", "paparazzi_messages.html#KEY_EXCHANGE_GCS", null ],
-        [ "INFO_MSG_UP (ID 160)", "paparazzi_messages.html#INFO_MSG_UP", null ]
+        [ "INFO_MSG_UP (ID 160)", "paparazzi_messages.html#INFO_MSG_UP", null ],
+        [ "MODULE_SPECIFIC_UP (ID 161)", "paparazzi_messages.html#MODULE_SPECIFIC_UP", null ]
       ] ],
       [ "Ground Messages", "paparazzi_messages.html#GROUND_CLASS", [
         [ "NEW_AIRCRAFT (ID 1)", "paparazzi_messages.html#NEW_AIRCRAFT", null ],
@@ -332,11 +334,9 @@ var NAVTREE =
         [ "FLIGHT_PARAM (ID 11)", "paparazzi_messages.html#FLIGHT_PARAM", null ],
         [ "AP_STATUS (ID 12)", "paparazzi_messages.html#AP_STATUS", null ],
         [ "NAV_STATUS (ID 13)", "paparazzi_messages.html#NAV_STATUS", null ],
-        [ "CAM_STATUS (ID 14)", "paparazzi_messages.html#CAM_STATUS", null ],
         [ "ENGINE_STATUS (ID 15)", "paparazzi_messages.html#ENGINE_STATUS", null ],
         [ "SVSINFO (ID 16)", "paparazzi_messages.html#SVSINFO", null ],
         [ "FLY_BY_WIRE (ID 17)", "paparazzi_messages.html#FLY_BY_WIRE", null ],
-        [ "INFLIGH_CALIB (ID 19)", "paparazzi_messages.html#INFLIGH_CALIB", null ],
         [ "WORLD_ENV (ID 20)", "paparazzi_messages.html#WORLD_ENV", null ],
         [ "WORLD_ENV_REQ (ID 21)", "paparazzi_messages.html#WORLD_ENV_REQ", null ],
         [ "CIRCLE_STATUS (ID 22)", "paparazzi_messages.html#CIRCLE_STATUS", null ],
@@ -360,12 +360,11 @@ var NAVTREE =
         [ "GROUND_REF (ID 40)", "paparazzi_messages.html#GROUND_REF", null ],
         [ "JOYSTICK (ID 41)", "paparazzi_messages.html#JOYSTICK", null ],
         [ "AIRCRAFT_REBOOT (ID 42)", "paparazzi_messages.html#AIRCRAFT_REBOOT", null ],
+        [ "RECORD_STATUS (ID 43)", "paparazzi_messages.html#RECORD_STATUS", null ],
+        [ "RECORD_CMD (ID 44)", "paparazzi_messages.html#RECORD_CMD", null ],
+        [ "LOG_MARK (ID 45)", "paparazzi_messages.html#LOG_MARK", null ],
         [ "PLUMES (ID 100)", "paparazzi_messages.html#PLUMES", null ],
         [ "INFO_MSG_GROUND (ID 101)", "paparazzi_messages.html#INFO_MSG_GROUND", null ]
-      ] ],
-      [ "Alert Messages", "paparazzi_messages.html#ALERT_CLASS", [
-        [ "BAT_LOW (ID 1)", "paparazzi_messages.html#BAT_LOW", null ],
-        [ "AIR_PROX (ID 2)", "paparazzi_messages.html#AIR_PROX", null ]
       ] ],
       [ "Intermcu Messages", "paparazzi_messages.html#INTERMCU_CLASS", [
         [ "IMCU_COMMANDS (ID 1)", "paparazzi_messages.html#IMCU_COMMANDS", null ],
@@ -594,7 +593,7 @@ var NAVTREEINDEX =
 "optical__flow__hover_8c.html#a9d679a7239c78ac04b60693343e4c472",
 "opticflow__calculator_8c.html#a5fc097f3ccf99a708563cf7a33626ec6",
 "pano__unwrap_8c.html#adecda28e2269e3a02281633fb62bdf02",
-"paparazzi_messages.html#MPPT",
+"paparazzi_messages.html#NAVIGATION",
 "pca9685__i2c_8c.html#a746504b12e64ae0cf6118b0aa54bbad6",
 "pfc__actuators_8c.html#a068799efe1e8c55bf274e0ed4806e973",
 "power__switch_8h.html#aa1890f26c3d69efce64fb193430e8a87",

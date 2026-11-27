@@ -4013,6 +4013,18 @@ DIVERGENCE (ID 224)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">front_divergence  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">divergence from front cam  </td></tr>
 </table>
+<h2 class="doxsection"><a class="anchor" id="MODULE_SPECIFIC"></a>
+MODULE_SPECIFIC (ID 225)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">module_id  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Unique module ID defined in Paparazzi  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">reserved  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Reserved for future use  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">data  </td><td class="markdownTableBodyNone">uint8[]  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Raw data, module-specific  </td></tr>
+</table>
 <h2 class="doxsection"><a class="anchor" id="PERIODIC_TELEMETRY_ERR"></a>
 PERIODIC_TELEMETRY_ERR (ID 226)</h2>
 <table class="markdownTable">
@@ -5602,6 +5614,20 @@ INFO_MSG_UP (ID 160)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">msg  </td><td class="markdownTableBodyNone">char[]  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2 class="doxsection"><a class="anchor" id="MODULE_SPECIFIC_UP"></a>
+MODULE_SPECIFIC_UP (ID 161)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ac_id  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">module_id  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Unique module ID defined in Paparazzi  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">reserved  </td><td class="markdownTableBodyNone">uint16  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Reserved for future use  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">data  </td><td class="markdownTableBodyNone">uint8[]  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Raw data, module-specific  </td></tr>
+</table>
 <h1 class="doxsection"><a class="anchor" id="GROUND_CLASS"></a>
 Ground Messages</h1>
 <h2 class="doxsection"><a class="anchor" id="NEW_AIRCRAFT"></a>
@@ -5780,22 +5806,6 @@ NAV_STATUS (ID 13)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dist_to_wp  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">m  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="CAM_STATUS"></a>
-CAM_STATUS (ID 14)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">lats  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">longs  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">cam_target_lat  </td><td class="markdownTableBodyNone">double  </td><td class="markdownTableBodyNone">deg  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cam_target_long  </td><td class="markdownTableBodyNone">double  </td><td class="markdownTableBodyNone">deg  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
 <h2 class="doxsection"><a class="anchor" id="ENGINE_STATUS"></a>
 ENGINE_STATUS (ID 15)</h2>
 <table class="markdownTable">
@@ -5856,20 +5866,6 @@ FLY_BY_WIRE (ID 17)</h2>
 <td class="markdownTableBodyNone">rc_mode  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">MANUAL, AUTO, FAILSAFE  </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">rc_rate  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone">Hz  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="INFLIGH_CALIB"></a>
-INFLIGH_CALIB (ID 19)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">if_mode  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">OFF, DOWN, UP  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">if_value1  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">if_value2  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="WORLD_ENV"></a>
 WORLD_ENV (ID 20)</h2>
@@ -6270,6 +6266,55 @@ AIRCRAFT_REBOOT (ID 42)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">reason  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">CPU_TIME, DATALINK_COUNTERS, NEW_LOG_FILE  </td><td class="markdownTableBodyNone">How it was detected  </td></tr>
 </table>
+<h2 class="doxsection"><a class="anchor" id="RECORD_STATUS"></a>
+RECORD_STATUS (ID 43)</h2>
+<p>Sent about once per second by a ground recorder (e.g. PprzGCS recording the pilots' microphones and cameras), for the GCSs to show that it records, the level of each microphone channel and its problems.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">recorder  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Name of the recorder (several can run)  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">state  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone">IDLE, RECORDING, ERROR  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">unix_time  </td><td class="markdownTableBodyNone">double  </td><td class="markdownTableBodyNone">s  </td><td class="markdownTableBodyNone">UTC start of the current recording, 0 when idle  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">labels  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Label of each microphone channel, separated by ';' (e.g. Pilot;Safety_pilot)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">levels  </td><td class="markdownTableBodyNone">float[]  </td><td class="markdownTableBodyNone">dB  </td><td class="markdownTableBodyNone">Peak level of each microphone channel since the last status, in dBFS  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cameras  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Label of each camera being recorded, separated by ';'  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">files  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Files being written (audio and video), separated by ';', relative to var/logs  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">info  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Errors or warnings (e.g. a microphone not connected, a camera without video), empty if none  </td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="RECORD_CMD"></a>
+RECORD_CMD (ID 44)</h2>
+<p>Start or stop a ground recorder (its microphones and cameras)</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">recorder  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Name of the recorder, empty for all  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">command  </td><td class="markdownTableBodyNone">uint8  </td><td class="markdownTableBodyNone">STOP, START  </td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="LOG_MARK"></a>
+LOG_MARK (ID 45)</h2>
+<p>A mark set by an operator (e.g. a button in the GCS) at a moment to look at later. Logged by the server, to find it back in the flight log, the recordings and the transcript.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">unix_time  </td><td class="markdownTableBodyNone">double  </td><td class="markdownTableBodyNone">s  </td><td class="markdownTableBodyNone">UTC time of the mark  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">source  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Who set it (e.g. the name of the GCS)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ac_id  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Selected aircraft, empty if none  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">text  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Short label, empty for a plain mark  </td></tr>
+</table>
 <h2 class="doxsection"><a class="anchor" id="PLUMES"></a>
 PLUMES (ID 100)</h2>
 <table class="markdownTable">
@@ -6288,30 +6333,6 @@ PLUMES (ID 100)</h2>
 INFO_MSG_GROUND (ID 101)</h2>
 <p>Message from ground to be logged on the drone or send to other ground agents</p>
 <p>Field name | Type | Unit/Values | Description | --------&mdash;|---&mdash;|----------&mdash;|----------&mdash;| dest | string | | ac_id:file_descriptor | ground_name | 0 (ground broadcast) | 0xFF (broadcast) | source | string | | ground_name of the agent sending the message | msg | string | | |</p>
-<h1 class="doxsection"><a class="anchor" id="ALERT_CLASS"></a>
-Alert Messages</h1>
-<h2 class="doxsection"><a class="anchor" id="BAT_LOW"></a>
-BAT_LOW (ID 1)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">level  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">CATASTROPHIC, CRITIC, WARNING  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">value  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="AIR_PROX"></a>
-AIR_PROX (ID 2)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Unit/Values  </th><th class="markdownTableHeadNone">Description  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">level  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">CATASTROPHIC, CRITIC, WARNING  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
 <h1 class="doxsection"><a class="anchor" id="INTERMCU_CLASS"></a>
 Intermcu Messages</h1>
 <h2 class="doxsection"><a class="anchor" id="IMCU_COMMANDS"></a>
