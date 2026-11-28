@@ -1,7 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual":[1,378,0],
-"module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual":[1,378,2,0],
 "module__radio_control_spektrum.html":[1,379],
 "module__radio_control_spektrum.html#configuration__radio_control_spektrum":[1,379,1],
 "module__radio_control_spektrum.html#functions__radio_control_spektrum":[1,379,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX137 =
 "module__switch_uart.html#module_load_example__switch_uart":[1,468,0],
 "module__switch_uart.html#module_xml__switch_uart":[1,468,1,0],
 "module__sys_id_auto_doublets.html":[1,469],
-"module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets":[1,469,1]
+"module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets":[1,469,1],
+"module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets":[1,469,2],
+"module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,469,0]
 };

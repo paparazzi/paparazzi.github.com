@@ -237,7 +237,6 @@ var NAVTREEINDEX130 =
 "module__board_tmotor_aiof7.html#module_xml__board_tmotor_aiof7":[1,43,0,0],
 "module__buzzer_tunes.html":[1,480],
 "module__buzzer_tunes.html#configuration__buzzer_tunes":[1,480,1],
-"module__buzzer_tunes.html#configure":[1,480,1,0],
 "module__buzzer_tunes.html#functions__buzzer_tunes":[1,480,2],
 "module__buzzer_tunes.html#module_load_example__buzzer_tunes":[1,480,0],
 "module__buzzer_tunes.html#module_xml__buzzer_tunes":[1,480,2,0],
@@ -247,7 +246,8 @@ var NAVTREEINDEX130 =
 "module__cam_gimbal.html#module_xml__cam_gimbal":[1,46,1,0],
 "module__can.html":[1,275],
 "module__can.html#configuration__can":[1,275,1],
-"module__can.html#module_load_example__can":[1,275,0],
-"module__can.html#module_xml__can":[1,275,1,0],
-"module__can_fuelcell.html":[1,148]
+"module__can.html#configure":[1,275,1,0],
+"module__can.html#define":[1,275,1,1],
+"module__can.html#files":[1,275,2],
+"module__can.html#headers":[1,275,2,0]
 };

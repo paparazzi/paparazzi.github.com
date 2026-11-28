@@ -1,7 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets":[1,469,2],
-"module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,469,0],
 "module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets":[1,469,2,0],
 "module__sys_id_chirp.html":[1,470],
 "module__sys_id_chirp.html#configuration__sys_id_chirp":[1,470,1],
@@ -163,8 +161,10 @@ var NAVTREEINDEX138 =
 "module__time_countdown.html":[1,527],
 "module__time_countdown.html#configuration__time_countdown":[1,527,1],
 "module__time_countdown.html#functions__time_countdown":[1,527,2],
+"module__time_countdown.html#init_functions":[1,527,2,0],
 "module__time_countdown.html#module_load_example__time_countdown":[1,527,0],
-"module__time_countdown.html#module_xml__time_countdown":[1,527,2,0],
+"module__time_countdown.html#module_xml__time_countdown":[1,527,2,2],
+"module__time_countdown.html#periodic_functions":[1,527,2,1],
 "module__tlsf.html":[1,528],
 "module__tlsf.html#configuration__tlsf":[1,528,1],
 "module__tlsf.html#functions__tlsf":[1,528,2],

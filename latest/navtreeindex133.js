@@ -1,5 +1,10 @@
 var NAVTREEINDEX133 =
 {
+"module__gps_udp.html#module_load_example__gps_udp":[1,174,0],
+"module__gps_udp.html#module_xml__gps_udp":[1,174,2,0],
+"module__ground_detect.html":[1,324],
+"module__ground_detect.html#configuration__ground_detect":[1,324,1],
+"module__ground_detect.html#functions__ground_detect":[1,324,2],
 "module__ground_detect.html#module_load_example__ground_detect":[1,324,0],
 "module__ground_detect.html#module_xml__ground_detect":[1,324,2,0],
 "module__gsm.html":[1,496],
@@ -244,10 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_disco.html#configuration__imu_disco":[1,214,1],
 "module__imu_disco.html#functions__imu_disco":[1,214,2],
 "module__imu_disco.html#module_load_example__imu_disco":[1,214,0],
-"module__imu_disco.html#module_xml__imu_disco":[1,214,2,0],
-"module__imu_heater.html":[1,215],
-"module__imu_heater.html#configuration__imu_heater":[1,215,1],
-"module__imu_heater.html#functions__imu_heater":[1,215,2],
-"module__imu_heater.html#module_load_example__imu_heater":[1,215,0],
-"module__imu_heater.html#module_xml__imu_heater":[1,215,2,0]
+"module__imu_disco.html#module_xml__imu_disco":[1,214,2,0]
 };

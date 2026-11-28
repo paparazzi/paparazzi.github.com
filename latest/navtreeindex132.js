@@ -1,5 +1,9 @@
 var NAVTREEINDEX132 =
 {
+"module__eff_scheduling_generic.html":[1,92],
+"module__eff_scheduling_generic.html#functions__eff_scheduling_generic":[1,92,1],
+"module__eff_scheduling_generic.html#module_load_example__eff_scheduling_generic":[1,92,0],
+"module__eff_scheduling_generic.html#module_xml__eff_scheduling_generic":[1,92,1,0],
 "module__eff_scheduling_nederdrone.html":[1,93],
 "module__eff_scheduling_nederdrone.html#functions__eff_scheduling_nederdrone":[1,93,1],
 "module__eff_scheduling_nederdrone.html#module_load_example__eff_scheduling_nederdrone":[1,93,0],
@@ -149,9 +153,10 @@ var NAVTREEINDEX132 =
 "module__gimbal_caddx_gm3.html#module_xml__gimbal_caddx_gm3":[1,47,1,0],
 "module__glide_wing_lock.html":[1,495],
 "module__glide_wing_lock.html#configuration__glide_wing_lock":[1,495,1],
+"module__glide_wing_lock.html#event_functions":[1,495,2,0],
 "module__glide_wing_lock.html#functions__glide_wing_lock":[1,495,2],
 "module__glide_wing_lock.html#module_load_example__glide_wing_lock":[1,495,0],
-"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,495,2,0],
+"module__glide_wing_lock.html#module_xml__glide_wing_lock":[1,495,2,1],
 "module__gpio_ext_common.html":[1,155],
 "module__gpio_ext_common.html#module_load_example__gpio_ext_common":[1,155,0],
 "module__gpio_ext_common.html#module_xml__gpio_ext_common":[1,155,0,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX132 =
 "module__gps_ubx_ucenter.html#module_xml__gps_ubx_ucenter":[1,173,2,0],
 "module__gps_udp.html":[1,174],
 "module__gps_udp.html#configuration__gps_udp":[1,174,1],
-"module__gps_udp.html#functions__gps_udp":[1,174,2],
-"module__gps_udp.html#module_load_example__gps_udp":[1,174,0],
-"module__gps_udp.html#module_xml__gps_udp":[1,174,2,0],
-"module__ground_detect.html":[1,324],
-"module__ground_detect.html#configuration__ground_detect":[1,324,1],
-"module__ground_detect.html#functions__ground_detect":[1,324,2]
+"module__gps_udp.html#functions__gps_udp":[1,174,2]
 };
