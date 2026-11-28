@@ -688,9 +688,7 @@ var onboard_modules =
     ] ],
     [ "object_tracking module", "module__object_tracking.html", [
       [ "Example for airframe file", "module__object_tracking.html#module_load_example__object_tracking", null ],
-      [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", [
-        [ "Airframe file section", "module__object_tracking.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", null ],
       [ "Module functions", "module__object_tracking.html#functions__object_tracking", [
         [ "Raw object_tracking.xml file:", "module__object_tracking.html#module_xml__object_tracking", null ]
       ] ]
@@ -1522,6 +1520,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_vectornav.html#module_load_example__imu_vectornav", null ],
       [ "Module configuration options", "module__imu_vectornav.html#configuration__imu_vectornav", null ],
       [ "Module functions", "module__imu_vectornav.html#functions__imu_vectornav", [
+        [ "Event Functions", "module__imu_vectornav.html#event_functions", null ],
         [ "Raw imu_vectornav.xml file:", "module__imu_vectornav.html#module_xml__imu_vectornav", null ]
       ] ]
     ] ],
@@ -1815,12 +1814,6 @@ var onboard_modules =
     [ "can module", "module__can.html", [
       [ "Example for airframe file", "module__can.html#module_load_example__can", null ],
       [ "Module configuration options", "module__can.html#configuration__can", [
-        [ "Configure Options", "module__can.html#configure", null ],
-        [ "Define Options", "module__can.html#define", null ]
-      ] ],
-      [ "Files", "module__can.html#files", [
-        [ "Header Files", "module__can.html#headers", null ],
-        [ "Source Files", "module__can.html#sources", null ],
         [ "Raw can.xml file:", "module__can.html#module_xml__can", null ]
       ] ]
     ] ],
@@ -3148,7 +3141,9 @@ var onboard_modules =
     ] ],
     [ "buzzer_tunes module", "module__buzzer_tunes.html", [
       [ "Example for airframe file", "module__buzzer_tunes.html#module_load_example__buzzer_tunes", null ],
-      [ "Module configuration options", "module__buzzer_tunes.html#configuration__buzzer_tunes", null ],
+      [ "Module configuration options", "module__buzzer_tunes.html#configuration__buzzer_tunes", [
+        [ "Configure Options", "module__buzzer_tunes.html#configure", null ]
+      ] ],
       [ "Module functions", "module__buzzer_tunes.html#functions__buzzer_tunes", [
         [ "Raw buzzer_tunes.xml file:", "module__buzzer_tunes.html#module_xml__buzzer_tunes", null ]
       ] ]
@@ -3256,7 +3251,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__glide_wing_lock.html#module_load_example__glide_wing_lock", null ],
       [ "Module configuration options", "module__glide_wing_lock.html#configuration__glide_wing_lock", null ],
       [ "Module functions", "module__glide_wing_lock.html#functions__glide_wing_lock", [
-        [ "Event Functions", "module__glide_wing_lock.html#event_functions", null ],
         [ "Raw glide_wing_lock.xml file:", "module__glide_wing_lock.html#module_xml__glide_wing_lock", null ]
       ] ]
     ] ],
@@ -3324,8 +3318,17 @@ var onboard_modules =
     ] ],
     [ "mag_calib_ukf module", "module__mag_calib_ukf.html", [
       [ "Example for airframe file", "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf", null ],
-      [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", null ],
+      [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", [
+        [ "Define Options", "module__mag_calib_ukf.html#define", null ],
+        [ "Airframe file section", "module__mag_calib_ukf.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__mag_calib_ukf.html#functions__mag_calib_ukf", [
+        [ "Init Functions", "module__mag_calib_ukf.html#init_functions", null ],
+        [ "Periodic Functions", "module__mag_calib_ukf.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__mag_calib_ukf.html#files", [
+        [ "Header Files", "module__mag_calib_ukf.html#headers", null ],
+        [ "Source Files", "module__mag_calib_ukf.html#sources", null ],
         [ "Raw mag_calib_ukf.xml file:", "module__mag_calib_ukf.html#module_xml__mag_calib_ukf", null ]
       ] ]
     ] ],
@@ -3465,8 +3468,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__time_countdown.html#module_load_example__time_countdown", null ],
       [ "Module configuration options", "module__time_countdown.html#configuration__time_countdown", null ],
       [ "Module functions", "module__time_countdown.html#functions__time_countdown", [
-        [ "Init Functions", "module__time_countdown.html#init_functions", null ],
-        [ "Periodic Functions", "module__time_countdown.html#periodic_functions", null ],
         [ "Raw time_countdown.xml file:", "module__time_countdown.html#module_xml__time_countdown", null ]
       ] ]
     ] ],

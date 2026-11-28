@@ -1,9 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__lidar_vl53l5cx.html#configuration__lidar_vl53l5cx":[1,262,1],
-"module__lidar_vl53l5cx.html#functions__lidar_vl53l5cx":[1,262,2],
-"module__lidar_vl53l5cx.html#module_load_example__lidar_vl53l5cx":[1,262,0],
-"module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx":[1,262,2,0],
 "module__light.html":[1,266],
 "module__light.html#configuration__light":[1,266,1],
 "module__light.html#functions__light":[1,266,2],
@@ -42,10 +38,17 @@ var NAVTREEINDEX135 =
 "module__logger_utils.html#module_load_example__logger_utils":[1,272,0],
 "module__logger_utils.html#module_xml__logger_utils":[1,272,0,0],
 "module__mag_calib_ukf.html":[1,506],
+"module__mag_calib_ukf.html#af_section":[1,506,1,1],
 "module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,506,1],
+"module__mag_calib_ukf.html#define":[1,506,1,0],
+"module__mag_calib_ukf.html#files":[1,506,3],
 "module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,506,2],
+"module__mag_calib_ukf.html#headers":[1,506,3,0],
+"module__mag_calib_ukf.html#init_functions":[1,506,2,0],
 "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,506,0],
-"module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,506,2,0],
+"module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,506,3,2],
+"module__mag_calib_ukf.html#periodic_functions":[1,506,2,1],
+"module__mag_calib_ukf.html#sources":[1,506,3,1],
 "module__mag_hmc5843.html":[1,420],
 "module__mag_hmc5843.html#configuration__mag_hmc5843":[1,420,1],
 "module__mag_hmc5843.html#functions__mag_hmc5843":[1,420,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX135 =
 "module__nav_shakestart.html#module_load_example__nav_shakestart":[1,346,0],
 "module__nav_shakestart.html#module_xml__nav_shakestart":[1,346,1,0],
 "module__nav_skid_landing.html":[1,347],
-"module__nav_skid_landing.html#configuration__nav_skid_landing":[1,347,1],
-"module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,347,0],
-"module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,347,1,0],
-"module__nav_smooth.html":[1,348]
+"module__nav_skid_landing.html#configuration__nav_skid_landing":[1,347,1]
 };

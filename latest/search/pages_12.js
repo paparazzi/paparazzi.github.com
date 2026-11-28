@@ -342,7 +342,7 @@ var searchData=
   ['info_5fmsg_20id_20215_339',['INFO_MSG (ID 215)',['../paparazzi_messages.html#INFO_MSG',1,'']]],
   ['info_5fmsg_5fground_20id_20101_340',['INFO_MSG_GROUND (ID 101)',['../paparazzi_messages.html#INFO_MSG_GROUND',1,'']]],
   ['info_5fmsg_5fup_20id_20160_341',['INFO_MSG_UP (ID 160)',['../paparazzi_messages.html#INFO_MSG_UP',1,'']]],
-  ['init_20functions_342',['Init Functions',['../module__digital_cam_video.html#init_functions',1,'']]],
+  ['init_20functions_342',['Init Functions',['../module__meteo_france_daq.html#init_functions',1,'']]],
   ['inputs_343',['Doxygen Text Inputs',['../styledoxygen.html#styledoxytext',1,'']]],
   ['ins_20id_20198_344',['INS (ID 198)',['../paparazzi_messages.html#INS',1,'']]],
   ['ins_20module_345',['ins module',['../module__ins.html',1,'onboard_modules']]],

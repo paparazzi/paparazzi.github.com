@@ -1,5 +1,8 @@
 var NAVTREEINDEX136 =
 {
+"module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,347,0],
+"module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,347,1,0],
+"module__nav_smooth.html":[1,348],
 "module__nav_smooth.html#module_load_example__nav_smooth":[1,348,0],
 "module__nav_smooth.html#module_xml__nav_smooth":[1,348,0,0],
 "module__nav_spiral.html":[1,349],
@@ -57,7 +60,6 @@ var NAVTREEINDEX136 =
 "module__nps_hitl_sensors.html#module_load_example__nps_hitl_sensors":[1,429,0],
 "module__nps_hitl_sensors.html#module_xml__nps_hitl_sensors":[1,429,0,0],
 "module__object_tracking.html":[1,101],
-"module__object_tracking.html#af_section":[1,101,1,0],
 "module__object_tracking.html#configuration__object_tracking":[1,101,1],
 "module__object_tracking.html#functions__object_tracking":[1,101,2],
 "module__object_tracking.html#module_load_example__object_tracking":[1,101,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "module__radio_control_sbus.html#module_xml__radio_control_sbus":[1,377,2,0],
 "module__radio_control_sbus_dual.html":[1,378],
 "module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual":[1,378,1],
-"module__radio_control_sbus_dual.html#functions__radio_control_sbus_dual":[1,378,2],
-"module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual":[1,378,0],
-"module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual":[1,378,2,0]
+"module__radio_control_sbus_dual.html#functions__radio_control_sbus_dual":[1,378,2]
 };
